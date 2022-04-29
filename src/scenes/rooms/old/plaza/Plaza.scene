@@ -1,0 +1,346 @@
+{
+    "id": "ae2549c0-6ea9-4446-8617-33e0cd41dc29",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/plaza/plaza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Plaza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "abb3dfe8-abca-4679-99b9-0558156893d6",
+            "label": "sky_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "sky.png"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "f2b66689-cc3d-4d93-a3a8-7f98100bf25b",
+            "label": "tree2_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree2.png"
+            },
+            "x": 47,
+            "y": 321
+        },
+        {
+            "type": "Image",
+            "id": "850de973-e3c1-4f56-bc7e-7748a97053a7",
+            "label": "tree3_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree3.png"
+            },
+            "x": 105,
+            "y": 300
+        },
+        {
+            "type": "Image",
+            "id": "5b4b4fc6-abbd-4bc5-b936-ae55f6e4c614",
+            "label": "tree4_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree4.png"
+            },
+            "x": 195,
+            "y": 279
+        },
+        {
+            "type": "Image",
+            "id": "d071f2a6-7b52-411e-8b0e-d319a0789df6",
+            "label": "tree9_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree9.png"
+            },
+            "x": 1450,
+            "y": 287
+        },
+        {
+            "type": "Image",
+            "id": "f3e0d66b-1bd3-463b-ad65-e872b5f19b56",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "bg.png"
+            },
+            "x": 759,
+            "y": 569
+        },
+        {
+            "type": "Image",
+            "id": "e3b06f3e-b99f-4d99-af8c-0c6877947ec3",
+            "label": "tree1_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree1.png"
+            },
+            "x": 185,
+            "y": 362
+        },
+        {
+            "type": "Image",
+            "id": "602dab94-8847-4afb-9ae4-1f9f826c4e93",
+            "label": "snow2_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "snow2.png"
+            },
+            "x": 781,
+            "y": 318
+        },
+        {
+            "type": "Image",
+            "id": "12cbf85c-d6c4-482a-8f6a-b7d9522341fc",
+            "label": "petbuilding_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "petbuilding.png"
+            },
+            "x": 455,
+            "y": 293
+        },
+        {
+            "type": "Image",
+            "id": "925a3477-e3b4-443b-97a4-80ece8a0ba1b",
+            "label": "tree5_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree5.png"
+            },
+            "x": 667,
+            "y": 441,
+            "originX": 0.013089005235602094,
+            "originY": 1.0458333333333334
+        },
+        {
+            "type": "Image",
+            "id": "d322dda8-74b5-4ecd-982b-f8c60b282455",
+            "label": "snow1_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "snow1.png"
+            },
+            "x": 744,
+            "y": 416
+        },
+        {
+            "type": "Image",
+            "id": "7ebc3d10-e409-47c8-af32-3307c5b21944",
+            "label": "signholder_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "signholder.png"
+            },
+            "x": 287,
+            "y": 212
+        },
+        {
+            "type": "Image",
+            "id": "5cf9a004-b7d6-4efa-b945-0cbc2536ef62",
+            "label": "pufflesign_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "pufflesign.png"
+            },
+            "x": 254,
+            "y": 220
+        },
+        {
+            "type": "Image",
+            "id": "e5fce5a7-5e55-4c22-835e-091155fefc5a",
+            "label": "tree7_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree7.png"
+            },
+            "x": 951,
+            "y": 233
+        },
+        {
+            "type": "Image",
+            "id": "fead9ac7-14bb-483e-b2fe-f68e2e3c16d3",
+            "label": "tree8_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree8.png"
+            },
+            "x": 1033,
+            "y": 214
+        },
+        {
+            "type": "Image",
+            "id": "2be7a07d-238f-4b5f-8a16-748c19492385",
+            "label": "tree6_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "tree6.png"
+            },
+            "x": 987,
+            "y": 284
+        },
+        {
+            "type": "Image",
+            "id": "7e588f8d-52f0-4f0a-94d0-d5446427e3dc",
+            "label": "pizzabuilding_png",
+            "components": [],
+            "texture": {
+                "key": "pizza_bd_correct"
+            },
+            "x": 1252,
+            "y": 269
+        },
+        {
+            "type": "Image",
+            "id": "3f9a67d1-60c1-4c03-a18b-a3a58c753a58",
+            "label": "pufflessign_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "pufflessign.png"
+            },
+            "x": 494,
+            "y": 387
+        },
+        {
+            "type": "Image",
+            "id": "b936fa2e-1a52-41f1-9e12-f6f03d6972a3",
+            "label": "lightpost_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "lightpost.png"
+            },
+            "x": 136,
+            "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "09f1c9e2-91d6-47c2-93a8-56f2313e3461",
+            "label": "petdoor_png",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "petdoor.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 343,
+            "MoveTo.y": 501,
+            "texture": {
+                "key": "plaza",
+                "frame": "petdoor.png"
+            },
+            "x": 343,
+            "y": 451
+        },
+        {
+            "type": "Image",
+            "id": "2d44e6d8-693a-4258-b97a-ea279e41fdaa",
+            "label": "manhole_png",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "manhole.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 568,
+            "MoveTo.y": 474,
+            "texture": {
+                "key": "plaza",
+                "frame": "manhole.png"
+            },
+            "x": 568,
+            "y": 474
+        },
+        {
+            "type": "Image",
+            "id": "6675fc0a-78ce-4532-808c-1ddda43a7b50",
+            "label": "pizzadoor_png",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "pizzadoor.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 1186,
+            "MoveTo.y": 515,
+            "texture": {
+                "key": "plaza",
+                "frame": "pizzadoor.png"
+            },
+            "x": 1186,
+            "y": 416
+        },
+        {
+            "type": "Image",
+            "id": "b2c9f9ca-9190-496e-af27-8a3844587912",
+            "label": "table2_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "table2.png"
+            },
+            "x": 926,
+            "y": 415
+        },
+        {
+            "type": "Image",
+            "id": "13fda2ba-86ac-4329-bf44-87e06acf9863",
+            "label": "table1_png",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "table1.png"
+            },
+            "x": 853,
+            "y": 425
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "9c185332-22f1-4d89-8194-2666eda5e6ad",
+            "label": "sort"
+        }
+    ]
+}

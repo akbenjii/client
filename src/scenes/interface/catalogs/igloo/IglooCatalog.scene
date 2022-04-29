@@ -1,0 +1,310 @@
+{
+    "id": "c2098db6-d80a-4923-a4ff-c301eadc8a3d",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "yukon/assets/media/interface/catalogs/clothing/sep05-pack.json",
+            "yukon/assets/media/interface/catalogs/igloo/igloocatalog-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "IglooCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "83c24ee5-976a-4dad-a2c6-9c3fa82fd0d9",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "61c683d3-f7ce-4502-bfc5-1f7fb44841b8",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b8580596-4c85-4b0b-a935-17a678344f39",
+                    "label": "lastpage",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooupgrade",
+                        "frame": "lastpage"
+                    },
+                    "x": 469,
+                    "y": 44,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "prefabId": "dd2cf1b5-b2d6-447c-8482-206fa3c10657",
+                    "id": "09a074a7-f7de-461c-a4d5-78609827d01b",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "igloo"
+                    ],
+                    "label": "upgradeButton_2",
+                    "igloo": 1,
+                    "components": [],
+                    "x": 584,
+                    "y": 526
+                },
+                {
+                    "type": "Image",
+                    "id": "1775987f-8b2f-48f7-b0e7-a036e0a1899d",
+                    "label": "exit0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 997,
+                    "y": 86
+                },
+                {
+                    "type": "Image",
+                    "id": "ca4c4a4f-8a47-4fe1-8dda-5c410be3bf3f",
+                    "label": "last_page0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 545,
+                    "y": 692
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "cdf3b25e-e9fc-4b9e-b558-585eaf28a25e",
+            "label": "page2",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "f232b914-8ad0-40bc-85ac-3c831987691a",
+                    "label": "page1_png",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooupgrade",
+                        "frame": "page1.png"
+                    },
+                    "x": 760,
+                    "y": 430
+                },
+                {
+                    "prefabId": "dd2cf1b5-b2d6-447c-8482-206fa3c10657",
+                    "id": "07d4086b-9832-4bbf-87f3-adabcea72ce1",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "igloo"
+                    ],
+                    "label": "upgradeButton",
+                    "igloo": 3,
+                    "components": [],
+                    "x": 298,
+                    "y": 526
+                },
+                {
+                    "prefabId": "dd2cf1b5-b2d6-447c-8482-206fa3c10657",
+                    "id": "97d56eda-f6fb-4fc4-ae1a-344f9ff4cce1",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "igloo"
+                    ],
+                    "label": "upgradeButton_1",
+                    "igloo": 2,
+                    "components": [],
+                    "x": 866,
+                    "y": 526
+                },
+                {
+                    "type": "Image",
+                    "id": "8b658a66-28b7-48f0-b2c2-df5c14df92b4",
+                    "label": "next_page0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1267,
+                    "y": 697
+                },
+                {
+                    "type": "Image",
+                    "id": "bc1b9b8e-a4b6-42e9-9c9f-0e069da1d089",
+                    "label": "exit0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1285,
+                    "y": 92
+                },
+                {
+                    "type": "Image",
+                    "id": "e56266c9-59bf-46d8-9997-2c0176387af3",
+                    "label": "last_page0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 251,
+                    "y": 698
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2f9f293f-2e21-4e6c-80f4-da94bf036675",
+            "label": "page1",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "39dd6ada-c3de-48e8-b4c1-3eacc3c3a415",
+                    "label": "cover_png",
+                    "components": [],
+                    "texture": {
+                        "key": "iglooupgrade",
+                        "frame": "cover.png"
+                    },
+                    "x": 469,
+                    "y": 44,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "852f0092-fb91-41cd-a214-7d9a87ed5f77",
+                    "label": "exit0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 997,
+                    "y": 86
+                },
+                {
+                    "type": "Image",
+                    "id": "84f3a21f-909b-4c0e-9b66-a161fba2a0d5",
+                    "label": "next_page0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 979,
+                    "y": 691
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "52c5108b-b474-446a-a90a-c2b5d7e95409",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 190,
+            "y": 41,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "ed9524af-0457-4fde-b412-5f65ef95f5fa",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1130,
+                    "y": 790,
+                    "originX": 1,
+                    "text": "YOUR COINS:",
+                    "fixedWidth": 600,
+                    "align": "right",
+                    "fontFamily": "CCComiccrazy",
+                    "fontSize": "32px",
+                    "stroke": "#000",
+                    "strokeThickness": 9
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5e08f588-9759-41cd-8e1c-89fcc74627af",
+            "label": "pages",
+            "objectIds": [
+                "2f9f293f-2e21-4e6c-80f4-da94bf036675",
+                "cdf3b25e-e9fc-4b9e-b558-585eaf28a25e",
+                "61c683d3-f7ce-4502-bfc5-1f7fb44841b8"
+            ]
+        }
+    ]
+}

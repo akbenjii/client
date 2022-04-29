@@ -1,0 +1,112 @@
+{
+    "id": "094cef14-46d9-40e6-841e-063f6ca30042",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/hq/hq-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "HQ",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c425b317-715e-40cf-9fb4-32a3abb26685",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "hq",
+                "frame": "bg.png"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "1ec636ff-3253-4767-9a06-4da794438a03",
+            "label": "light_png",
+            "components": [],
+            "texture": {
+                "key": "hq",
+                "frame": "light.png"
+            },
+            "x": 744,
+            "y": 415
+        },
+        {
+            "type": "Image",
+            "id": "670fa469-9a73-46f1-b53c-b318e22961cb",
+            "label": "wire_png",
+            "components": [],
+            "texture": {
+                "key": "hq",
+                "frame": "wire.png"
+            },
+            "x": 738,
+            "y": -26
+        },
+        {
+            "type": "Image",
+            "id": "c1855175-d0d9-412c-ad24-d25a27e1bd11",
+            "label": "board_png",
+            "components": [],
+            "texture": {
+                "key": "hq",
+                "frame": "board.png"
+            },
+            "x": 1073,
+            "y": 413
+        },
+        {
+            "type": "Image",
+            "id": "ce6d9c23-c406-4af9-ba10-e9c11e15ffff",
+            "label": "tv_png",
+            "components": [],
+            "texture": {
+                "key": "hq",
+                "frame": "tv.png"
+            },
+            "x": 382,
+            "y": 281
+        },
+        {
+            "type": "Image",
+            "id": "54f7a16d-245d-435c-9fc6-85b712546822",
+            "label": "yumyuck",
+            "components": [
+                "MoveTo",
+                "Button",
+                "ShowHint"
+            ],
+            "MoveTo.y": 720,
+            "Button.spriteName": "yumyuck",
+            "Button.callback": "() => this.triggerGame(\"yumyuck\", 911)",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Play Yum Yuck",
+            "texture": {
+                "key": "yumyuck",
+                "frame": "yumyuck"
+            },
+            "x": 515,
+            "y": 505,
+            "scaleX": 0.8615145908643389,
+            "scaleY": 0.8615145908643389,
+            "originX": 0.6785130589134409,
+            "originY": 0.21059460069954655
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

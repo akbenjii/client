@@ -1,0 +1,278 @@
+{
+    "id": "79a7c5e8-e143-439d-97dd-8b257ce6a9c8",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "yukon/assets/media/rooms/dock/dock-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dock",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "104a7f34-9cfd-4210-925d-8d25a4186d3d",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "bg"
+            },
+            "x": 843,
+            "y": 457
+        },
+        {
+            "type": "Sprite",
+            "id": "fb3e3028-ad9f-4ed1-980d-bd510aa7b1df",
+            "label": "bench",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "bench"
+            },
+            "x": 177,
+            "y": 336
+        },
+        {
+            "type": "Sprite",
+            "id": "d4e13ef0-8182-4435-ad88-10f693f9b2c2",
+            "label": "bencharm",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "bencharm"
+            },
+            "x": 117,
+            "y": 385.10402802800803,
+            "originY": 0.621806677645226
+        },
+        {
+            "type": "Sprite",
+            "id": "5ddacfb4-6b0f-4437-b14d-04ce24b5e0c9",
+            "label": "trees",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "trees"
+            },
+            "x": 1469,
+            "y": 531
+        },
+        {
+            "type": "Sprite",
+            "id": "81b3cdfa-2333-469e-b16c-22d873b82b6e",
+            "label": "fence",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "fence"
+            },
+            "x": 1219,
+            "y": 679
+        },
+        {
+            "type": "Sprite",
+            "id": "1256d930-c80b-498d-af5b-ae0ef426fe1c",
+            "label": "stairs",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "stairs"
+            },
+            "x": 368,
+            "y": 502
+        },
+        {
+            "type": "Sprite",
+            "id": "37d41a77-b93a-47f5-a172-9fb767261dbd",
+            "label": "lantern",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "lantern"
+            },
+            "x": 475,
+            "y": 510
+        },
+        {
+            "type": "Sprite",
+            "id": "7d60032f-2b38-4be7-8b49-c583636c60f7",
+            "label": "boat",
+            "scope": "CLASS",
+            "components": [
+                "ShowHint",
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "ShowHint.text": "Hydro Hopper",
+            "MoveTo.x": 200,
+            "MoveTo.y": 650,
+            "texture": {
+                "key": "dock-new",
+                "frame": "floatyboaty0001"
+            },
+            "x": 174,
+            "y": 652
+        },
+        {
+            "type": "Sprite",
+            "id": "5baf7dab-bf27-46d4-bf06-1d2a306a7feb",
+            "label": "wharf",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "wharf"
+            },
+            "x": 232,
+            "y": 633
+        },
+        {
+            "type": "Sprite",
+            "id": "f6bc6d4a-ca25-4d82-8fb9-e1ba34b8bb4a",
+            "label": "barrier2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "barrier2"
+            },
+            "x": 532,
+            "y": 637
+        },
+        {
+            "type": "Sprite",
+            "id": "f6ffb331-824e-4e35-9c22-41007dcf45b4",
+            "label": "barrier",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "barrier"
+            },
+            "x": 296,
+            "y": 839
+        },
+        {
+            "type": "Sprite",
+            "id": "586cfd95-9992-49a8-aba5-d9b2e427302f",
+            "label": "tubes",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onTubesHover()",
+            "texture": {
+                "key": "dock-new",
+                "frame": "tubes0001"
+            },
+            "x": 536,
+            "y": 678
+        },
+        {
+            "type": "Sprite",
+            "id": "e5d93d8c-a947-425f-973b-d81f76e4997c",
+            "label": "table",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dock-new",
+                "frame": "table"
+            },
+            "x": 939,
+            "y": 342
+        },
+        {
+            "type": "Container",
+            "id": "646a91b1-ab58-490e-8352-7d762e09e5a2",
+            "label": "board_container",
+            "components": [],
+            "x": 753,
+            "y": 656,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "dc876cb1-1cae-480e-b672-cb13df149ec4",
+                    "label": "board",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "dock-new",
+                        "frame": "board"
+                    },
+                    "x": 34
+                },
+                {
+                    "type": "Sprite",
+                    "id": "963316e0-4746-44b0-8d5a-bb16ddbb73e9",
+                    "label": "shop",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onShopOver()",
+                    "SimpleButton.hoverOutCallback": "() => this.onShopOut()",
+                    "texture": {
+                        "key": "dock-new",
+                        "frame": "uncurl0001"
+                    },
+                    "y": 8,
+                    "scaleX": -1.5,
+                    "scaleY": 1.5
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d5947ad2-4d37-40ae-b0f0-523fe8e16abe",
+                    "label": "tape",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "dock-new",
+                        "frame": "tape"
+                    },
+                    "x": 7,
+                    "y": -25,
+                    "scaleX": -1.5,
+                    "scaleY": 1.5
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "672dde11-c1fa-4288-8b95-0278f69713f1",
+            "label": "sort",
+            "objectIds": [
+                "f6bc6d4a-ca25-4d82-8fb9-e1ba34b8bb4a",
+                "586cfd95-9992-49a8-aba5-d9b2e427302f",
+                "f6ffb331-824e-4e35-9c22-41007dcf45b4",
+                "d4e13ef0-8182-4435-ad88-10f693f9b2c2",
+                "fb3e3028-ad9f-4ed1-980d-bd510aa7b1df",
+                "37d41a77-b93a-47f5-a172-9fb767261dbd",
+                "e5d93d8c-a947-425f-973b-d81f76e4997c",
+                "646a91b1-ab58-490e-8352-7d762e09e5a2"
+            ]
+        }
+    ]
+}

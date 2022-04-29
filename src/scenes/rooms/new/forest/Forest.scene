@@ -1,0 +1,297 @@
+{
+    "id": "6fc6429c-88a9-499f-bc93-ad79ff673de2",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/new/forest/forest-pack-new.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forest",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "551b3436-48e1-4013-a224-2dfb211e5e87",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "bg"
+            },
+            "x": 792,
+            "y": 453
+        },
+        {
+            "type": "Sprite",
+            "id": "e6e4f2d2-63ad-4fdb-8f54-ab25a1eed1cb",
+            "label": "wateranimbottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "wateranimbottom0001"
+            },
+            "x": 843,
+            "y": 308
+        },
+        {
+            "type": "Sprite",
+            "id": "49f2edd5-856f-40e9-b460-bd4466fb7c27",
+            "label": "waterfallanimtop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "waterfallanimtop0001"
+            },
+            "x": 831,
+            "y": 163
+        },
+        {
+            "type": "Sprite",
+            "id": "d7832ecc-892d-4b01-af2d-952a9cd461e1",
+            "label": "waterfallanimmid",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "waterfallanimmid0001"
+            },
+            "x": 839,
+            "y": 232
+        },
+        {
+            "type": "Sprite",
+            "id": "c4b4f62e-3a99-445c-8903-88123a23ad99",
+            "label": "waterfallanimdrops",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "waterfallanimdrops0001"
+            },
+            "x": 842,
+            "y": 239
+        },
+        {
+            "type": "Sprite",
+            "id": "59efca49-21c3-4b92-944e-2f5d3150abca",
+            "label": "stump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "stump"
+            },
+            "x": 496,
+            "y": 308
+        },
+        {
+            "type": "Sprite",
+            "id": "4b275ad9-1170-4baa-a316-0e85ec3dcb35",
+            "label": "backtree",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "backtree"
+            },
+            "x": 391,
+            "y": 139
+        },
+        {
+            "type": "Sprite",
+            "id": "831e9220-785b-4ede-b416-de6b6290fe5c",
+            "label": "bgfront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "bgfront"
+            },
+            "x": 631,
+            "y": 181
+        },
+        {
+            "type": "Sprite",
+            "id": "7344ad03-5b26-4cec-9854-7ee25e03767c",
+            "label": "fallen",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "fallen"
+            },
+            "x": 728,
+            "y": 313
+        },
+        {
+            "type": "Sprite",
+            "id": "7b63a336-4995-4d8c-b8d4-244de0e4f99d",
+            "label": "cave",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "cave"
+            },
+            "x": 1112.8677120524321,
+            "y": 334.0015293780231,
+            "originX": 0.5377353005325134,
+            "originY": 0.9133918791542961
+        },
+        {
+            "type": "Sprite",
+            "id": "fe4c982b-3b64-48f2-a20b-9f7627be969b",
+            "label": "cavepebble",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "cavepebble"
+            },
+            "x": 1174,
+            "y": 345
+        },
+        {
+            "type": "Sprite",
+            "id": "5dde9b7e-d03c-4548-8b4a-632fbf460655",
+            "label": "islandright",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "islandright"
+            },
+            "x": 1010.655152937067,
+            "y": 468.2069082377599,
+            "originX": 0.7026897466489224,
+            "originY": 0.23470527515225756
+        },
+        {
+            "type": "Sprite",
+            "id": "12ddc56a-1e34-4be9-9d6a-9bc0a79a1544",
+            "label": "islandmid",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "islandmid"
+            },
+            "x": 757,
+            "y": 535
+        },
+        {
+            "type": "Sprite",
+            "id": "1ac74eac-d4a3-4375-bd06-f35344501b26",
+            "label": "islandleft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "islandleft"
+            },
+            "x": 618.4875151319026,
+            "y": 522.9441207316119,
+            "originX": 0.49647439424685913,
+            "originY": 0.3743868499376673
+        },
+        {
+            "type": "Sprite",
+            "id": "42accabb-bed5-4cfd-8306-d01482866384",
+            "label": "righttrees",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "righttrees"
+            },
+            "x": 1515,
+            "y": 329
+        },
+        {
+            "type": "Sprite",
+            "id": "d4d648f3-b53e-44b3-a167-783e091ae5c8",
+            "label": "rightbush",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "rightbush"
+            },
+            "x": 1488,
+            "y": 699
+        },
+        {
+            "type": "Sprite",
+            "id": "c9f35533-76a7-4022-8e95-d44db153b480",
+            "label": "stairs",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "stairs"
+            },
+            "x": 1399,
+            "y": 828
+        },
+        {
+            "type": "Sprite",
+            "id": "676116da-3ed4-429d-b5b4-aac40d769c84",
+            "label": "rock",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onRockOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onRockOut()",
+            "texture": {
+                "key": "forest-new",
+                "frame": "rockopen0001"
+            },
+            "x": 83,
+            "y": 698
+        },
+        {
+            "type": "Sprite",
+            "id": "4563f17e-99a6-4897-8a8d-60541841b5be",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forest-new",
+                "frame": "fg"
+            },
+            "x": 609,
+            "y": 722
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "adc6dee8-ab4a-4215-92af-f5272ec15c19",
+            "label": "sort",
+            "objectIds": [
+                "1ac74eac-d4a3-4375-bd06-f35344501b26",
+                "5dde9b7e-d03c-4548-8b4a-632fbf460655",
+                "12ddc56a-1e34-4be9-9d6a-9bc0a79a1544",
+                "7b63a336-4995-4d8c-b8d4-244de0e4f99d",
+                "fe4c982b-3b64-48f2-a20b-9f7627be969b"
+            ]
+        }
+    ]
+}

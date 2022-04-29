@@ -1,0 +1,54 @@
+{
+    "id": "e82cdde3-cf4b-4b2b-8510-aa5b055c47c9",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "yukon/assets/media/interface/menus/load/load-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "yumYuck",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "efafb7b8-121a-4712-b93f-b3df902a354b",
+            "label": "bg",
+            "components": [
+                "Interactive"
+            ],
+            "texture": {
+                "key": "load",
+                "frame": "bg"
+            },
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "5072c773-630a-4865-a396-9b2b19df62b2",
+            "label": "loading",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cpv_logo"
+            },
+            "x": 769,
+            "y": 413,
+            "scaleX": 0.2,
+            "scaleY": 0.2
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

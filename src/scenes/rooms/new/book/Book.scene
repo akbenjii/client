@@ -1,0 +1,438 @@
+{
+    "id": "df2b8f6e-3879-4e7f-9478-1d779dd8a41d",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/new/bookRoom/bookRoom-pack-new.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Book",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "4299b317-6110-4b36-9934-2be6bf8f9048",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "bg.png"
+            },
+            "x": 756,
+            "y": 491
+        },
+        {
+            "type": "Sprite",
+            "id": "55e0fb74-a5eb-48ed-83de-9714642921f6",
+            "label": "bookshelf",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "bookshelf.png"
+            },
+            "x": 419,
+            "y": 333
+        },
+        {
+            "type": "Sprite",
+            "id": "0ef77724-fbd5-4b42-b502-841dbd31cd50",
+            "label": "bottomDeskDivider",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "bottomDeskDivider.png"
+            },
+            "x": 877,
+            "y": 633
+        },
+        {
+            "type": "Sprite",
+            "id": "e7b9bf4e-d527-4982-9e8a-3bdf163e2b37",
+            "label": "bottomDeskLeftChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "bottomDeskLeftChair.png"
+            },
+            "x": 794,
+            "y": 756
+        },
+        {
+            "type": "Sprite",
+            "id": "efa82833-ad81-40ed-8c24-1a4ed4137b30",
+            "label": "bottomDeskLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "bottomDeskLeft.png"
+            },
+            "x": 890.7078354253503,
+            "y": 786.2114846592042,
+            "originX": 0.4892319618779188,
+            "originY": 0.6530934115617574
+        },
+        {
+            "type": "Sprite",
+            "id": "13f44798-7ade-4841-ae06-4a7b9b809d76",
+            "label": "bottomDeskRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "bottomDeskRight.png"
+            },
+            "x": 999,
+            "y": 784
+        },
+        {
+            "type": "Sprite",
+            "id": "f645de27-717d-4fe6-8594-9248dcdf4f69",
+            "label": "sofaBack",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "sofaBack.png"
+            },
+            "x": 1396,
+            "y": 504
+        },
+        {
+            "type": "Sprite",
+            "id": "5cd6889a-9644-4be8-98cb-bdce85b2f958",
+            "label": "coffeeTable",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "coffeeTable.png"
+            },
+            "x": 1440,
+            "y": 628
+        },
+        {
+            "type": "Sprite",
+            "id": "61056da2-f649-4579-a02d-2001f7d61f4f",
+            "label": "sofaFront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "sofaFront.png"
+            },
+            "x": 1367,
+            "y": 826
+        },
+        {
+            "type": "Sprite",
+            "id": "268bb2a4-ac75-4be0-a561-52b7afd43a3f",
+            "label": "topDeskLeftStorage",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "topDeskLeftStorage.png"
+            },
+            "x": 318,
+            "y": 443
+        },
+        {
+            "type": "Sprite",
+            "id": "c7460b55-e672-4969-8400-573b7c893f40",
+            "label": "noticeboard",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "noticeboard.png"
+            },
+            "x": 290.27413229285713,
+            "y": 664.3737525085712,
+            "originX": 0.532044635651353,
+            "originY": 0.707832351224489
+        },
+        {
+            "type": "Sprite",
+            "id": "1e6f4303-7279-4410-bd19-7cc290302b74",
+            "label": "hatStand",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "hatStand.png"
+            },
+            "x": 797,
+            "y": 312
+        },
+        {
+            "type": "Sprite",
+            "id": "ea0ee424-1c19-44ea-bc18-014a7e5682bc",
+            "label": "topDeskLeftChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "topDeskLeftChair.png"
+            },
+            "x": 638,
+            "y": 311
+        },
+        {
+            "type": "Sprite",
+            "id": "a1b78521-da38-40ad-84d9-f1838f6582cf",
+            "label": "topDeskLeft",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "topDeskLeft.png"
+            },
+            "x": 611,
+            "y": 409
+        },
+        {
+            "type": "Sprite",
+            "id": "e2611479-043d-466a-b6ca-1c4048dfe9b6",
+            "label": "topDeskRightStorage",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "topDeskRightStorage.png"
+            },
+            "x": 991,
+            "y": 337
+        },
+        {
+            "type": "Sprite",
+            "id": "12625016-650e-468a-8c42-963b51f15224",
+            "label": "topDeskDivider",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "topDeskDivider.png"
+            },
+            "x": 835,
+            "y": 261
+        },
+        {
+            "type": "Sprite",
+            "id": "66e2b0f1-add7-47da-8e11-bd6fddb3c14c",
+            "label": "topDeskRightChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "topDeskRightChair.png"
+            },
+            "x": 1054,
+            "y": 409
+        },
+        {
+            "type": "Sprite",
+            "id": "dda57bd5-6160-4b31-ba9f-090cfb685237",
+            "label": "topDeskRight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "topDeskRight.png"
+            },
+            "x": 1081,
+            "y": 469
+        },
+        {
+            "type": "Sprite",
+            "id": "c53b198f-e4a1-444f-94fa-07525c1af53f",
+            "label": "conveyorBottom",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "conveyorBottom.png"
+            },
+            "x": 365.20391795238095,
+            "y": 877.1037335238099,
+            "originX": 0.497664392655892,
+            "originY": 0.7982802019952697
+        },
+        {
+            "type": "Sprite",
+            "id": "d2dc239a-0fff-40bf-b492-25a154a22378",
+            "label": "newspapers",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "newspapers0001.png"
+            },
+            "x": 300.38824614285704,
+            "y": 920.3455175238088,
+            "originX": 0.5063615656940461,
+            "originY": 0.922607540616245
+        },
+        {
+            "type": "Sprite",
+            "id": "b17d926e-34dd-4c9a-82f8-e831cc500350",
+            "label": "conveyorTop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "conveyorTop.png"
+            },
+            "x": 477.81567180952385,
+            "y": 806.5057847142859,
+            "originX": 0.4865713491766801,
+            "originY": 0.3183737255216702
+        },
+        {
+            "type": "Sprite",
+            "id": "8b73100e-43f7-48dd-b2b7-45dd1492ba4c",
+            "label": "mancalaTable1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "mancalaTable0001.png"
+            },
+            "x": 1241,
+            "y": 584
+        },
+        {
+            "type": "Sprite",
+            "id": "1a64c4d0-1dc8-435d-95ed-aea0ad6dfbc5",
+            "label": "mancalaTable2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "mancalaTable0001.png"
+            },
+            "x": 1123,
+            "y": 666
+        },
+        {
+            "type": "Sprite",
+            "id": "8670f17f-37df-496f-b135-621525e64eb7",
+            "label": "mancalaTable3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "mancalaTable0001.png"
+            },
+            "x": 1270,
+            "y": 708
+        },
+        {
+            "type": "Sprite",
+            "id": "90deffe5-7996-436c-8767-a55fcd4931a6",
+            "label": "mancalaTable4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "mancalaTable0001.png"
+            },
+            "x": 1169,
+            "y": 810
+        },
+        {
+            "type": "Sprite",
+            "id": "2385cf65-bfb4-45db-8e46-fc8e9ca8e1e7",
+            "label": "stool1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "stool.png"
+            },
+            "x": 481,
+            "y": 708.5106262196813,
+            "originY": 0.17695885633757666
+        },
+        {
+            "type": "Sprite",
+            "id": "22ae5fd3-c75c-4f3f-8900-3e81793fa695",
+            "label": "stool2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "stool.png"
+            },
+            "x": 597.7078354253503,
+            "y": 713.4488730816558,
+            "originX": 0.48343378750449045,
+            "originY": 0.20059601319092496
+        },
+        {
+            "type": "Sprite",
+            "id": "0aa6da28-bb68-45c4-ac5b-174e6054a2d5",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "bookRoom-new",
+                "frame": "fg.png"
+            },
+            "x": 748,
+            "y": 991,
+            "originY": 1
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "8bce6f73-b3e7-48cf-9a02-7e5412e5397d",
+            "label": "sort",
+            "objectIds": [
+                "22ae5fd3-c75c-4f3f-8900-3e81793fa695",
+                "2385cf65-bfb4-45db-8e46-fc8e9ca8e1e7",
+                "90deffe5-7996-436c-8767-a55fcd4931a6",
+                "8670f17f-37df-496f-b135-621525e64eb7",
+                "1a64c4d0-1dc8-435d-95ed-aea0ad6dfbc5",
+                "8b73100e-43f7-48dd-b2b7-45dd1492ba4c",
+                "dda57bd5-6160-4b31-ba9f-090cfb685237",
+                "66e2b0f1-add7-47da-8e11-bd6fddb3c14c",
+                "12625016-650e-468a-8c42-963b51f15224",
+                "e2611479-043d-466a-b6ca-1c4048dfe9b6",
+                "a1b78521-da38-40ad-84d9-f1838f6582cf",
+                "ea0ee424-1c19-44ea-bc18-014a7e5682bc",
+                "1e6f4303-7279-4410-bd19-7cc290302b74",
+                "c7460b55-e672-4969-8400-573b7c893f40",
+                "268bb2a4-ac75-4be0-a561-52b7afd43a3f",
+                "5cd6889a-9644-4be8-98cb-bdce85b2f958",
+                "13f44798-7ade-4841-ae06-4a7b9b809d76",
+                "efa82833-ad81-40ed-8c24-1a4ed4137b30",
+                "e7b9bf4e-d527-4982-9e8a-3bdf163e2b37",
+                "0ef77724-fbd5-4b42-b502-841dbd31cd50",
+                "55e0fb74-a5eb-48ed-83de-9714642921f6",
+                "0aa6da28-bb68-45c4-ac5b-174e6054a2d5",
+                "c53b198f-e4a1-444f-94fa-07525c1af53f",
+                "d2dc239a-0fff-40bf-b492-25a154a22378",
+                "b17d926e-34dd-4c9a-82f8-e831cc500350"
+            ]
+        }
+    ]
+}

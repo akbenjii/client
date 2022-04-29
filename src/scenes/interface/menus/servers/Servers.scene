@@ -1,0 +1,105 @@
+{
+    "id": "06606f01-d6a4-4dd8-89a5-389d49270e4b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [],
+        "createMethodName": "_create",
+        "sceneKey": "Servers",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "482a2f2e-3efc-41e8-88fe-42fbd001d05a",
+            "label": "og_start_bg_png",
+            "components": [],
+            "texture": {
+                "key": "startscreen",
+                "frame": "og-start-bg.png"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "915d2eb9-7362-4642-a783-2f2c6bc11da5",
+            "label": "more",
+            "components": [],
+            "texture": {
+                "key": "servers",
+                "frame": "more"
+            },
+            "x": 1300,
+            "y": 630,
+            "originY": 0.5027322404371585,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "26ea3402-ea2d-4f1b-810c-e634e778977b",
+            "label": "uS0001_png",
+            "components": [],
+            "texture": {
+                "key": "servers-og",
+                "frame": "US0001.png"
+            },
+            "x": 130,
+            "y": 139,
+            "scaleX": 0.7936874912862225,
+            "scaleY": 0.7936874912862225
+        },
+        {
+            "type": "Image",
+            "id": "f494c0ab-24ee-468a-820b-936ab1caa898",
+            "label": "select_server_png",
+            "components": [],
+            "texture": {
+                "key": "servers-og",
+                "frame": "select server.png"
+            },
+            "x": 1090,
+            "y": 93
+        },
+        {
+            "type": "Image",
+            "id": "2d07e763-a5e2-4882-84fc-2fbee17a1259",
+            "label": "smileyfull",
+            "components": [],
+            "texture": {
+                "key": "servers-og",
+                "frame": "smileyfull"
+            },
+            "x": 79,
+            "y": 898,
+            "scaleX": 1.0915949077138825,
+            "scaleY": 1.0915949077138825
+        },
+        {
+            "type": "Text",
+            "id": "dba1b15e-fe1b-41cf-b881-e0fbdb2fdb4b",
+            "label": "text",
+            "components": [],
+            "x": 105,
+            "y": 889,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5,
+            "text": "Amount of penguins in each server",
+            "fontSize": "20px"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

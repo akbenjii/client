@@ -1,0 +1,116 @@
+{
+    "id": "156d24c8-6e70-41ad-8198-5566b18e964b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/forts/forts-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forts",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "0c49e528-73c8-4e0f-8060-b8cd711af156",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "bg.png"
+            },
+            "x": 772,
+            "y": 488
+        },
+        {
+            "type": "Image",
+            "id": "3b0a083d-486e-4fc6-95e5-139b93b8e7d8",
+            "label": "snowballs2_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "snowballs2.png"
+            },
+            "x": 608,
+            "y": 623
+        },
+        {
+            "type": "Sprite",
+            "id": "29cc4e3f-9330-4e49-a419-f06974708cb9",
+            "label": "redflag",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "flag10001.png"
+            },
+            "x": 632.4024546201628,
+            "y": 641.907951743897,
+            "originX": 0.46472994725649763,
+            "originY": 0.9978153200881809
+        },
+        {
+            "type": "Image",
+            "id": "509d06cc-596f-44b1-b6ce-1c7c04a9055a",
+            "label": "fort1_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "fort1.png"
+            },
+            "x": 706,
+            "y": 685
+        },
+        {
+            "type": "Sprite",
+            "id": "19294353-e946-430c-b807-40978469e39f",
+            "label": "blueflag",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "flag20001.png"
+            },
+            "x": 962,
+            "y": 329
+        },
+        {
+            "type": "Image",
+            "id": "8a26e66d-5d23-4529-9a9f-1c3d182355d4",
+            "label": "fort2_png",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "fort2.png"
+            },
+            "x": 1021,
+            "y": 432
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1e3d1d79-bbc9-4969-8105-70209fd3fab9",
+            "label": "sort",
+            "objectIds": [
+                "8a26e66d-5d23-4529-9a9f-1c3d182355d4",
+                "509d06cc-596f-44b1-b6ce-1c7c04a9055a",
+                "3b0a083d-486e-4fc6-95e5-139b93b8e7d8",
+                "29cc4e3f-9330-4e49-a419-f06974708cb9",
+                "19294353-e946-430c-b807-40978469e39f"
+            ]
+        }
+    ]
+}

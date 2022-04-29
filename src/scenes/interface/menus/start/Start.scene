@@ -1,0 +1,96 @@
+{
+    "id": "ba7dc8df-af93-4730-8143-9dc3bef1ebe4",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseScene",
+        "preloadPackFiles": [],
+        "sceneKey": "Start",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "242f31ff-3fbb-49c9-a014-565db63f6927",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "startscreen",
+                "frame": "og-start-bg.png"
+            },
+            "x": 761,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "cb7a1fa9-413d-4a08-adcb-6008e5320614",
+            "label": "crebutton",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "texture": {
+                "key": "startscreen",
+                "frame": "create"
+            },
+            "x": 753,
+            "y": 755,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "3eff7755-786a-4fcf-bc84-492f434b6e3a",
+            "label": "rectangle",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCreateHover()",
+            "SimpleButton.hoverOutCallback": "() => this.onCreateOut()",
+            "SimpleButton.callback": "() => this.onCreateClick()",
+            "x": 752,
+            "y": 753,
+            "scaleX": 4.711306974412683,
+            "scaleY": 1.088834620938614,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "79b51416-6b24-4d30-b222-26239361fd94",
+            "label": "startscreen1_png",
+            "components": [],
+            "texture": {
+                "key": "startscreen",
+                "frame": "startscreen1.png"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "3679ba12-d4fc-474a-aa68-494e9d0c3c7a",
+            "label": "start",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "start",
+            "Button.callback": "() => this.onStartClick()",
+            "texture": {
+                "key": "startscreen",
+                "frame": "start"
+            },
+            "x": 760,
+            "y": 553
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

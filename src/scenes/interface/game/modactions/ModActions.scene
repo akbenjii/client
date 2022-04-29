@@ -1,0 +1,486 @@
+{
+    "id": "e1fd9cda-cb4e-4071-8083-ad30ac555494",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 20,
+        "snapHeight": 20,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "80b40d42-bac6-4d3b-ac21-b81f37ee9a54",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 460,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "53d24e23-8fba-49a5-ba05-717bca67799f",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b56a1e1d-4eec-4add-b553-2d767c61bb03",
+                    "label": "rectangle",
+                    "scope": "CLASS",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 800,
+                    "height": 600
+                },
+                {
+                    "type": "Image",
+                    "id": "8621979a-5a8b-4fb0-a9f5-7591660d7e29",
+                    "label": "card_photo",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-photo"
+                    },
+                    "x": -156,
+                    "y": -2
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "d6bbac10-17e0-44da-902d-f6dfbbe8bc93",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -156,
+                    "y": -2,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Text",
+                    "id": "e96707d4-a8b8-4cf9-bdd5-3babddd9ac5c",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -156,
+                    "y": -238,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 360,
+                    "align": "center",
+                    "fontFamily": "Arial",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c872414d-cfa7-46ab-bf78-7618077e1f55",
+                    "label": "badge",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-badge-free"
+                    },
+                    "x": -305,
+                    "y": -217
+                },
+                {
+                    "type": "Image",
+                    "id": "274b2a17-fd19-4625-8207-2ce436778aba",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => { this.hide() }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 347,
+                    "y": -253
+                },
+                {
+                    "type": "Image",
+                    "id": "0a074237-0457-4002-a588-2d9705f5aaf4",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 347,
+                    "y": -255
+                },
+                {
+                    "type": "Text",
+                    "id": "41323b7b-a2e7-4992-b3c1-b2c6e3078c0e",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 246,
+                    "y": -183,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "add coins: 000000",
+                    "fixedWidth": 250,
+                    "fontFamily": "Arial",
+                    "fontSize": "24px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "6e0b3192-1f75-484c-ba84-d76ccd3a3345",
+                    "label": "card_coin",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "card-coin"
+                    },
+                    "x": 90,
+                    "y": -185
+                },
+                {
+                    "type": "Text",
+                    "id": "2475fc48-596e-4a71-b4be-e9083d438a99",
+                    "label": "item_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 247,
+                    "y": -82,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "add item by id",
+                    "fixedWidth": 250,
+                    "fontFamily": "Arial",
+                    "fontSize": "24px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "2a280f6e-db38-4bb1-9e4e-76f651cdfca8",
+                    "label": "item_icon",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "buddy/icon-mascot"
+                    },
+                    "x": 90,
+                    "y": -81
+                },
+                {
+                    "type": "Text",
+                    "id": "5b9ee991-bdd9-46c9-8013-6ce1f30dde02",
+                    "label": "ban_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 247,
+                    "y": 31,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "ban player until date",
+                    "fixedWidth": 250,
+                    "fontFamily": "Arial",
+                    "fontSize": "24px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "33d9821e-c0f3-4cc6-bbce-ddb6959636a1",
+                    "label": "ban_icon",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mod-icon"
+                    },
+                    "x": 90,
+                    "y": 31
+                },
+                {
+                    "type": "Text",
+                    "id": "6f911e5e-44ab-42a3-8127-9176a53d3e88",
+                    "label": "stamps_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 247,
+                    "y": 138,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "change username",
+                    "fixedWidth": 250,
+                    "fontFamily": "Arial",
+                    "fontSize": "24px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "18c594e3-883d-4da2-a3c3-fabd42b12e1d",
+                    "label": "help_icon",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "help-icon"
+                    },
+                    "x": 90,
+                    "y": 137
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0671e508-7449-4e10-b6d7-852f9c796e78",
+                    "label": "username_rounded",
+                    "components": [],
+                    "x": 124,
+                    "y": 180,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 30,
+                    "height": 30
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "7cbbe2b5-f545-40db-b1e5-e66f10ebf1d4",
+                    "label": "username_bg",
+                    "components": [],
+                    "x": 223,
+                    "y": 180,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 200,
+                    "height": 30
+                },
+                {
+                    "type": "Image",
+                    "id": "87439787-2b41-4695-a24d-152ad1f5215f",
+                    "label": "username_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.handleChangeUsername()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 322,
+                    "y": 180,
+                    "angle": 90
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a9306b6c-a979-43b1-853e-acb6d7feadad",
+                    "label": "ban_rounded",
+                    "components": [],
+                    "x": 124,
+                    "y": 77,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 30,
+                    "height": 30
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c8fe4f91-edff-445b-81e8-4155cd584749",
+                    "label": "ban_bg",
+                    "components": [],
+                    "x": 223,
+                    "y": 77,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 200,
+                    "height": 30
+                },
+                {
+                    "type": "Image",
+                    "id": "a60bfdee-c23c-4425-91ee-c9e48666af0d",
+                    "label": "ban_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.handleBanPlayer()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 322,
+                    "y": 77,
+                    "angle": 90
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "44ec62a1-dd1f-4d4c-83b4-994665b8036f",
+                    "label": "items_rounded",
+                    "components": [],
+                    "x": 124,
+                    "y": -32,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 30,
+                    "height": 30
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ca2d8ee2-661f-4a62-a68f-6c776927e10e",
+                    "label": "items_bg",
+                    "components": [],
+                    "x": 223,
+                    "y": -32,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 200,
+                    "height": 30
+                },
+                {
+                    "type": "Image",
+                    "id": "b0841ce8-901b-405d-b32e-082a6c9cacd7",
+                    "label": "items_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.handleAddItems()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 322,
+                    "y": -32,
+                    "angle": 90
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "4a4f37b7-a323-429b-be89-a6c6309e73ab",
+                    "label": "coins_rounded",
+                    "components": [],
+                    "x": 124,
+                    "y": -137,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 30,
+                    "height": 30
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "18caea45-9875-450e-86b2-584ff5a2c8fd",
+                    "label": "coins_bg",
+                    "components": [],
+                    "x": 223,
+                    "y": -137,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 200,
+                    "height": 30
+                },
+                {
+                    "type": "Image",
+                    "id": "3956d050-46f5-46c9-b2bc-13dafbecadaa",
+                    "label": "coins_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.handleAddCoins()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 322,
+                    "y": -137,
+                    "angle": 90
+                },
+                {
+                    "type": "Text",
+                    "id": "cf5f79cd-5074-4ed4-87c6-b0694eabc942",
+                    "label": "ban_count_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 150,
+                    "y": 235,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "banned 0 times",
+                    "fixedWidth": 180,
+                    "fontFamily": "Arial",
+                    "fontSize": "20px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "b3116a3d-9eb4-4210-b937-7743eda52dbe",
+                    "label": "banned_until_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -157,
+                    "y": 235,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "not currently banned",
+                    "fixedWidth": 430,
+                    "fontFamily": "Arial",
+                    "fontSize": "20px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "41f79f9a-0b6d-4531-8c11-6afec56a3cad",
+                    "label": "joindate_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -157,
+                    "y": 265,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "no join time recorded",
+                    "fixedWidth": 430,
+                    "fontFamily": "Arial",
+                    "fontSize": "20px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "57790cb6-ae99-4354-8acc-273f3eb7e8b4",
+                    "label": "username_status_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 150,
+                    "y": 265,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "status: pending",
+                    "fixedWidth": 180,
+                    "fontFamily": "Arial",
+                    "fontSize": "20px",
+                    "color": "#000000ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

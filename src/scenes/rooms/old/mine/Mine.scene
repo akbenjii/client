@@ -1,0 +1,201 @@
+{
+    "id": "3d6ce162-0854-4e02-9619-7d680d7efc11",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/mine/mine-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Mine",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "1d0c1497-3c01-4601-a15f-cb91e91aa1a7",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "bg.png"
+            },
+            "x": 760,
+            "y": 480,
+            "scaleX": 1.01,
+            "scaleY": 1.01
+        },
+        {
+            "type": "Image",
+            "id": "e5f4b85a-9cf3-42b9-8d23-6152e252e551",
+            "label": "lamp_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "lamp.png"
+            },
+            "x": 677,
+            "y": 234
+        },
+        {
+            "type": "Image",
+            "id": "a3608527-5de8-4806-9791-cb64301804cf",
+            "label": "wall1_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "wall1.png"
+            },
+            "x": 301,
+            "y": 344,
+            "scaleX": 1.01,
+            "scaleY": 1.01
+        },
+        {
+            "type": "Image",
+            "id": "5e16abf2-7fd9-42bc-90e4-eea4259cc0d7",
+            "label": "wood_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "wood.png"
+            },
+            "x": 1126,
+            "y": 236
+        },
+        {
+            "type": "Sprite",
+            "id": "b0358b75-7c8d-44bc-a524-e8b7cfc2f41a",
+            "label": "cart",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "hover-game-cart0001.png"
+            },
+            "x": 1367,
+            "y": 312
+        },
+        {
+            "type": "Image",
+            "id": "cd8b79d5-e19b-4893-be1a-0955dc72bce7",
+            "label": "wall2_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "wall2.png"
+            },
+            "x": 1207,
+            "y": 289
+        },
+        {
+            "type": "Image",
+            "id": "0afa8ccf-22dc-44ab-922c-32b4c0a90bfb",
+            "label": "shovel_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "shovel.png"
+            },
+            "x": 917,
+            "y": 406
+        },
+        {
+            "type": "Image",
+            "id": "a9e57ead-5eab-4ba2-b244-2ba2da036c57",
+            "label": "cart2_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "cart2.png"
+            },
+            "x": 1138,
+            "y": 398
+        },
+        {
+            "type": "Image",
+            "id": "44ca887f-8cbd-423f-9358-f1b9902cb13b",
+            "label": "cart1_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "cart1.png"
+            },
+            "x": 1015,
+            "y": 436
+        },
+        {
+            "type": "Image",
+            "id": "de2bbd65-8f8c-4eee-af07-18a3e87eb394",
+            "label": "foreground_png",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "foreground.png"
+            },
+            "x": 757,
+            "y": 838,
+            "scaleX": 1.01,
+            "scaleY": 1.01
+        },
+        {
+            "type": "Rectangle",
+            "id": "cfb71630-f86d-44d4-8a6a-7088e9657f41",
+            "label": "rectangle",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCartHover()",
+            "SimpleButton.hoverOutCallback": "() => this.onCartOut()",
+            "ShowHint.text": "Cart Surfer",
+            "x": 1278,
+            "y": 339,
+            "scaleX": 1.077792846929269,
+            "scaleY": 1.7030288165217038,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "4406f606-351e-4c5e-bd45-640e45dd864e",
+            "label": "fire",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "mine",
+                "frame": "fire0001.png"
+            },
+            "x": 309,
+            "y": 191
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "ec88df7b-6dbc-49c0-b31b-3f401f52c99c",
+            "label": "sort",
+            "objectIds": [
+                "44ca887f-8cbd-423f-9358-f1b9902cb13b",
+                "0afa8ccf-22dc-44ab-922c-32b4c0a90bfb",
+                "a9e57ead-5eab-4ba2-b244-2ba2da036c57"
+            ]
+        }
+    ]
+}

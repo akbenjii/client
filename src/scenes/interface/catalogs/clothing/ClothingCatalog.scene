@@ -1,0 +1,1230 @@
+{
+    "id": "7061cec6-f747-46aa-89d9-4b0909826568",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "yukon/assets/media/interface/catalogs/clothing/sep05-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "ClothingCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "52f3005a-7ddb-490b-87f4-cf073294cbde",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "7776572e-39a3-4406-a915-c957a8f958e1",
+            "label": "page6",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "256c5015-e138-49c1-912d-a98842a26602",
+                    "label": "pAGE_6_png",
+                    "components": [],
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "PAGE 6.png"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "433b6fe9-799a-4703-acfe-975e8753e3b0",
+                    "label": "exit0001_png_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1090,
+                    "y": 88
+                },
+                {
+                    "type": "Image",
+                    "id": "204f8503-5af0-4e4a-aa4c-cd3af0ada3d7",
+                    "label": "last_page0001_png_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 552,
+                    "y": 700
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "7e49884d-1f61-4d5f-9dc1-85c711fb6205",
+                    "label": "sec-pinkhoodie",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(222)",
+                    "x": 950,
+                    "y": 160,
+                    "scaleX": 0.6015478759037696,
+                    "scaleY": 0.6076696363018034,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ce3c6a8c-9e7d-4477-bb3d-636d22cb5a70",
+                    "label": "sec-blackguitar",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(338)",
+                    "x": 928,
+                    "y": 285,
+                    "scaleX": 0.32044521325286934,
+                    "scaleY": 0.22640347288105034,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2498cde4-22bf-4afc-8d9c-eae398e4ca64",
+                    "label": "sec-princess",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(228)",
+                    "x": 566,
+                    "y": 501,
+                    "scaleX": 0.1622754245157175,
+                    "scaleY": 0.1622754245157175,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "68294cf7-4ce2-4ceb-a8b5-f89870e52726",
+                    "label": "sec-sneaks",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(352)",
+                    "x": 764,
+                    "y": 731,
+                    "scaleX": 0.17290545073937777,
+                    "scaleY": 0.4243124042033608,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "9fa9718a-8910-485f-b9dd-4c716de871c4",
+                    "label": "sec-baller",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(256)",
+                    "x": 859,
+                    "y": 494,
+                    "scaleX": 0.17290545073937777,
+                    "scaleY": 0.4243124042033608,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "ed7d98e2-2102-4467-a0ea-fb8f18a5ecf2",
+            "label": "page5",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "347bfe40-839e-4649-a5d0-1daca677b894",
+                    "label": "pAGE_5_png",
+                    "components": [],
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "PAGE 5.png"
+                    },
+                    "x": 768,
+                    "y": 431
+                },
+                {
+                    "type": "Image",
+                    "id": "4a3462ea-90c2-49b8-8051-d00ea2c72f75",
+                    "label": "exit0001_png_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1299,
+                    "y": 93
+                },
+                {
+                    "type": "Image",
+                    "id": "1a30f8fa-eabe-41de-920b-609dcddd8dc5",
+                    "label": "next_page0001_png_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1276,
+                    "y": 700
+                },
+                {
+                    "type": "Image",
+                    "id": "17a947a7-840b-47ea-b510-4f70869a2bf8",
+                    "label": "last_page0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 260,
+                    "y": 700
+                },
+                {
+                    "type": "Image",
+                    "id": "099e83b5-aea2-4a96-8c3b-50543c1262d5",
+                    "label": "blue0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(1)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "blue0001.png"
+                    },
+                    "x": 909,
+                    "y": 236
+                },
+                {
+                    "type": "Image",
+                    "id": "8ed92d53-9f21-4df3-9cb7-0793bf4dfe68",
+                    "label": "green0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "green0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(2)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "green0001.png"
+                    },
+                    "x": 1054,
+                    "y": 237
+                },
+                {
+                    "type": "Image",
+                    "id": "0130aa01-d025-45e0-9f60-cfef46d163a3",
+                    "label": "pink0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "pink0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(3)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "pink0001.png"
+                    },
+                    "x": 1198,
+                    "y": 237
+                },
+                {
+                    "type": "Image",
+                    "id": "d84095be-b01b-436b-94b7-cb9ff2704c9f",
+                    "label": "black0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "black0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(4)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "black0001.png"
+                    },
+                    "x": 909,
+                    "y": 372
+                },
+                {
+                    "type": "Image",
+                    "id": "bafd518b-cec9-4e95-a4bd-6e5cdc6f17d7",
+                    "label": "red0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "red0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(5)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "red0001.png"
+                    },
+                    "x": 1054,
+                    "y": 372
+                },
+                {
+                    "type": "Image",
+                    "id": "a2f57595-10b2-4073-8c03-237c68c5b3a6",
+                    "label": "orange0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "orange0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(6)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "orange0001.png"
+                    },
+                    "x": 1198,
+                    "y": 372
+                },
+                {
+                    "type": "Image",
+                    "id": "a082a176-f974-41cd-9d21-bb9c9800f0bb",
+                    "label": "yellow0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "yellow0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(7)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "yellow0001.png"
+                    },
+                    "x": 909,
+                    "y": 507
+                },
+                {
+                    "type": "Image",
+                    "id": "b3f6a776-4a5c-41ce-a9ae-55b9354162d2",
+                    "label": "purple0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "purple0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(8)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "purple0001.png"
+                    },
+                    "x": 1054,
+                    "y": 507
+                },
+                {
+                    "type": "Image",
+                    "id": "51dd0cc1-7b2f-4465-8276-6af9447f6436",
+                    "label": "brown0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "brown0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(9)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "brown0001.png"
+                    },
+                    "x": 1198,
+                    "y": 507
+                },
+                {
+                    "type": "Image",
+                    "id": "f282a79a-cccc-4f16-b8dc-9f0360ca591a",
+                    "label": "darkgreen0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "darkgreen0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(11)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "darkgreen0001.png"
+                    },
+                    "x": 1054,
+                    "y": 642
+                },
+                {
+                    "type": "Image",
+                    "id": "b5cab010-65b6-4fe0-a98c-5214a18a0b17",
+                    "label": "lightblue0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "lightblue0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(12)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "lightblue0001.png"
+                    },
+                    "x": 1198,
+                    "y": 642
+                },
+                {
+                    "type": "Image",
+                    "id": "cb8740c7-5b24-45d6-9643-430425f398d0",
+                    "label": "darkpink0001_png",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "darkpink0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(10)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "darkpink0001.png"
+                    },
+                    "x": 909,
+                    "y": 642
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "78f91af8-631b-4da1-8353-23ded230b50b",
+                    "label": "ellipse",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(13)",
+                    "x": 326,
+                    "y": 436,
+                    "scaleX": 0.6015478759037696,
+                    "scaleY": 0.6076696363018034,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "949b9cb9-749a-4dd8-af3d-c6bf8238d4ac",
+            "label": "page4",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "3e92672d-cd40-44bf-84a4-0e631049c8b8",
+                    "label": "pAGE_4_png",
+                    "components": [],
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "PAGE 4.png"
+                    },
+                    "x": 768,
+                    "y": 431
+                },
+                {
+                    "type": "Image",
+                    "id": "6c00cd29-c74a-452e-8b17-5f2dc9c5c54b",
+                    "label": "buy-sweat",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "big-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(221)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "big-buy0001.png"
+                    },
+                    "x": 332,
+                    "y": 599
+                },
+                {
+                    "type": "Image",
+                    "id": "eefac3d1-61fc-40ed-9994-d8a70ac1728d",
+                    "label": "exit0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1297,
+                    "y": 92
+                },
+                {
+                    "type": "Image",
+                    "id": "9c1c2b8a-82f9-46bd-8aef-98de4b3c74c2",
+                    "label": "last_page0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 258,
+                    "y": 700
+                },
+                {
+                    "type": "Image",
+                    "id": "ecc99149-7220-4102-a8e4-be67ba069083",
+                    "label": "next_page0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1274,
+                    "y": 699
+                },
+                {
+                    "type": "Image",
+                    "id": "bf133251-be1b-42c7-ab41-341000e42a29",
+                    "label": "buy-duffle",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "big-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(219)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "big-buy0001.png"
+                    },
+                    "x": 632,
+                    "y": 273
+                },
+                {
+                    "type": "Image",
+                    "id": "2e80cbb2-de36-47db-bc60-06dc10bf42bf",
+                    "label": "small-night",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(102)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 912,
+                    "y": 353
+                },
+                {
+                    "type": "Image",
+                    "id": "9f0cd094-75d2-4846-8b1c-d555a433aab2",
+                    "label": "small-bowtie",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(214)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1169,
+                    "y": 525
+                },
+                {
+                    "type": "Image",
+                    "id": "d0ac1b95-6004-4d06-b7cb-ccb020a451ea",
+                    "label": "small-sunglasses",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(101)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 946,
+                    "y": 739
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0ef8d5bd-ce2e-4dbd-8d60-e4cf4e437ba5",
+                    "label": "sec-roman",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(451)",
+                    "x": 1282,
+                    "y": 327,
+                    "scaleX": 0.3205912312918101,
+                    "scaleY": 0.3004642695097448,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "3cb07d17-88a2-49ab-ab28-6e2201aaf7b0",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "88250dcf-4699-40f2-95e3-51adc93097fd",
+                    "label": "pAGE_3_png",
+                    "components": [],
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "PAGE 3.png"
+                    },
+                    "x": 768,
+                    "y": 431
+                },
+                {
+                    "type": "Image",
+                    "id": "09017332-28e4-4b4f-99b5-72f4ac2de597",
+                    "label": "buy-hockey",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "big-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(220)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "big-buy0001.png"
+                    },
+                    "x": 349,
+                    "y": 671
+                },
+                {
+                    "type": "Image",
+                    "id": "751d8fa6-c5bc-4c2c-a0aa-197d61c0059d",
+                    "label": "next_page0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1284,
+                    "y": 698
+                },
+                {
+                    "type": "Image",
+                    "id": "b73580d1-6129-4b73-b871-98282e90d911",
+                    "label": "last_page0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 269,
+                    "y": 699
+                },
+                {
+                    "type": "Image",
+                    "id": "2428ec25-db79-4bd1-898c-240187e88c3b",
+                    "label": "exit0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1302,
+                    "y": 103
+                },
+                {
+                    "type": "Image",
+                    "id": "36451c19-9953-423e-a1c0-b240148b0a66",
+                    "label": "small-3d",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(103)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 622,
+                    "y": 739
+                },
+                {
+                    "type": "Image",
+                    "id": "c8c780aa-b0c1-4283-9418-2127b8bb510a",
+                    "label": "small-snork",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(131)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 622,
+                    "y": 364
+                },
+                {
+                    "type": "Image",
+                    "id": "71b5782b-efd9-45ac-bd9e-c684b5621366",
+                    "label": "small-flowerhat",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(408)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1141,
+                    "y": 208
+                },
+                {
+                    "type": "Image",
+                    "id": "46049a75-a9b7-427d-aae8-ba8dd5d76cb1",
+                    "label": "small-grass",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(212)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1228,
+                    "y": 420
+                },
+                {
+                    "type": "Image",
+                    "id": "136fa77a-0a6a-4336-91f5-3946f6824a10",
+                    "label": "small-headphones",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(481)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1214,
+                    "y": 727
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "60925db5-9cdd-4ff0-aca3-676c466e4d5a",
+                    "label": "sec-tiara",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(412)",
+                    "x": 959,
+                    "y": 166,
+                    "scaleX": 0.3205912312918101,
+                    "scaleY": 0.3004642695097448,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "fcc04132-f320-4596-900e-40f11fb2f4d7",
+                    "label": "sec-snork",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(139)",
+                    "x": 616,
+                    "y": 209,
+                    "scaleX": 0.3205912312918101,
+                    "scaleY": 0.3004642695097448,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5298570c-6e44-4b29-bc08-47d30f906bae",
+                    "label": "sec-ballshoes",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(353)",
+                    "x": 1114,
+                    "y": 314,
+                    "scaleX": 0.3205912312918101,
+                    "scaleY": 0.3004642695097448,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "647a8a3a-4d1e-4ac9-9d36-e2abeba085d9",
+            "label": "page2",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "e299b57a-eff3-4dfd-acf2-3cd501f2a8a8",
+                    "label": "pAGE_2_png",
+                    "components": [],
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "PAGE 2.png"
+                    },
+                    "x": 768,
+                    "y": 431
+                },
+                {
+                    "type": "Image",
+                    "id": "3b192cc5-278a-4fae-ae8d-368f73877898",
+                    "label": "buy-poloshirt",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "big-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(201)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "big-buy0001.png"
+                    },
+                    "x": 608,
+                    "y": 662
+                },
+                {
+                    "type": "Image",
+                    "id": "542aa672-a784-4975-9c18-d45fab915024",
+                    "label": "next_page0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1277,
+                    "y": 699
+                },
+                {
+                    "type": "Image",
+                    "id": "f18bcc7d-0785-452d-b9cc-547bd9f1de8c",
+                    "label": "last_page0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 259,
+                    "y": 699
+                },
+                {
+                    "type": "Image",
+                    "id": "d15c20f8-f800-4752-a190-6285ab171ca2",
+                    "label": "buy-hardhat",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "big-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(403)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "big-buy0001.png"
+                    },
+                    "x": 608,
+                    "y": 300
+                },
+                {
+                    "type": "Image",
+                    "id": "d674e596-baf0-4396-8cda-1523c6a0b7f6",
+                    "label": "buy-hardhat_1",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "big-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(401)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "big-buy0001.png"
+                    },
+                    "x": 907,
+                    "y": 728
+                },
+                {
+                    "type": "Image",
+                    "id": "6b7a1eaa-5c81-4e52-8117-7f7ed3c16c13",
+                    "label": "small-cowboyhat",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(404)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 901,
+                    "y": 522
+                },
+                {
+                    "type": "Image",
+                    "id": "7646e241-4946-4779-875c-3d2363e48b82",
+                    "label": "small-cowboyhat_1",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(405)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1248,
+                    "y": 352
+                },
+                {
+                    "type": "Image",
+                    "id": "1d422892-5057-4b94-96ba-d39c1661eb3e",
+                    "label": "exit0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1294,
+                    "y": 99
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "3cf89cf2-4dc3-4f83-8507-1901f575a0e2",
+                    "label": "vikinghelmet-rec",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(452)",
+                    "x": 877,
+                    "y": 144,
+                    "scaleX": 1.1244893036950843,
+                    "scaleY": 0.39346023211918507,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "66ed3a7d-25a0-414d-ac5b-1d4cc580477f",
+                    "label": "sec-toque",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(420)",
+                    "x": 368,
+                    "y": 347,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4d6b5a52-5818-4ee0-977e-d5ac0b712b2a",
+            "label": "page1",
+            "components": [],
+            "x": -1,
+            "y": 1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "e9563996-9407-4681-816f-e8640aef4468",
+                    "label": "pAGE_1_png",
+                    "components": [],
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "PAGE 1.png"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "a5acc942-78d0-4d84-a260-1b666242faef",
+                    "label": "exit0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1090,
+                    "y": 88
+                },
+                {
+                    "type": "Image",
+                    "id": "b72b214c-b8b4-4d59-900f-11e900460d19",
+                    "label": "next_page0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 984,
+                    "y": 697
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "94cd2ee2-d86f-457a-8744-88f53b46d8d9",
+                    "label": "sec-yscarf",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(172)",
+                    "x": 647,
+                    "y": 215,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "338c8849-6677-4ea2-9430-b9de5126880c",
+                    "label": "sec-pscarf",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(175)",
+                    "x": 886,
+                    "y": 293,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "c2f85475-f081-414e-b5c8-022e0b148d70",
+                    "label": "sec-pduff",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(283)",
+                    "x": 603,
+                    "y": 115,
+                    "scaleX": 0.14043680007744766,
+                    "scaleY": -0.3687249726285998,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f754888f-b0a5-474f-981c-815c9db2d940",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 189,
+            "y": 41,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "03e2c332-7c90-4eef-b439-0ff416fed521",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1130,
+                    "y": 790,
+                    "originX": 1,
+                    "text": "YOUR COINS:",
+                    "fixedWidth": 600,
+                    "align": "right",
+                    "fontFamily": "CCComiccrazy",
+                    "fontSize": "32px",
+                    "stroke": "#000",
+                    "strokeThickness": 9
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "f5986f3f-53b8-4425-98a1-7981e4c2dc88",
+            "label": "pages",
+            "objectIds": [
+                "4d6b5a52-5818-4ee0-977e-d5ac0b712b2a",
+                "647a8a3a-4d1e-4ac9-9d36-e2abeba085d9",
+                "3cb07d17-88a2-49ab-ab28-6e2201aaf7b0",
+                "949b9cb9-749a-4dd8-af3d-c6bf8238d4ac",
+                "ed7d98e2-2102-4467-a0ea-fb8f18a5ecf2",
+                "7776572e-39a3-4406-a915-c957a8f958e1"
+            ]
+        }
+    ]
+}

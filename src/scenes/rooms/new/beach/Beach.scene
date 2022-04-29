@@ -1,0 +1,194 @@
+{
+    "id": "24db8785-cf30-469d-a74f-ea97eb924543",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/new/beach/beach-pack-new.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beach",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f176a212-358b-4a65-bee4-9a385141e98d",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "bg"
+            },
+            "x": 726,
+            "y": 456
+        },
+        {
+            "type": "Sprite",
+            "id": "a69a8d80-f8fe-4d25-a391-35cc3817bf6b",
+            "label": "woodrailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "woodrailing"
+            },
+            "x": 161,
+            "y": 524
+        },
+        {
+            "type": "Sprite",
+            "id": "ec2fe9f6-69f2-44fe-a027-3535b7894fbe",
+            "label": "leftrocks",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "leftrocks"
+            },
+            "x": 249,
+            "y": 650
+        },
+        {
+            "type": "Sprite",
+            "id": "13bf777a-4902-4f0d-9c03-0574d13f69aa",
+            "label": "lighthousedoor",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "lighthousedoor",
+            "Button.activeFrame": false,
+            "MoveTo.x": 420,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "beach-new",
+                "frame": "lighthousedoor"
+            },
+            "x": 397,
+            "y": 322
+        },
+        {
+            "type": "Sprite",
+            "id": "def5f1f1-50e3-475e-a229-789df4bbf0bc",
+            "label": "lighthouserailing",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "lighthouserailing"
+            },
+            "x": 382,
+            "y": 411
+        },
+        {
+            "type": "Sprite",
+            "id": "8144771e-495e-4766-991e-ae53550edd3f",
+            "label": "rightchair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "rightchair"
+            },
+            "x": 1013,
+            "y": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "11e7b262-2a8d-4740-82b2-73f4a1f9a766",
+            "label": "rightchairarm",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "rightchairarm"
+            },
+            "x": 948.0086684597807,
+            "y": 559.7832885054825,
+            "originX": 0.48642011588740636,
+            "originY": 0.7478328850548246
+        },
+        {
+            "type": "Sprite",
+            "id": "1088e840-1ad8-47c4-8531-7ffdf6b1dc4e",
+            "label": "leftchair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "leftchair"
+            },
+            "x": 850,
+            "y": 545
+        },
+        {
+            "type": "Sprite",
+            "id": "e22b9cab-1acc-4988-b4ad-66f0335de76d",
+            "label": "snowcastle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "snowcastle"
+            },
+            "x": 775,
+            "y": 690
+        },
+        {
+            "type": "Sprite",
+            "id": "8ef3c7a2-c715-445d-8cc1-12788b62c3ef",
+            "label": "trees",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "trees"
+            },
+            "x": 1382,
+            "y": 441
+        },
+        {
+            "type": "Sprite",
+            "id": "d033677e-6b0a-417c-ab7c-83ea96fc9d93",
+            "label": "rightrocks",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beach-new",
+                "frame": "rightrocks"
+            },
+            "x": 1352,
+            "y": 616
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "d033677e-6b0a-417c-ab7c-83ea96fc9d93",
+                "8ef3c7a2-c715-445d-8cc1-12788b62c3ef",
+                "e22b9cab-1acc-4988-b4ad-66f0335de76d",
+                "1088e840-1ad8-47c4-8531-7ffdf6b1dc4e",
+                "11e7b262-2a8d-4740-82b2-73f4a1f9a766",
+                "8144771e-495e-4766-991e-ae53550edd3f",
+                "def5f1f1-50e3-475e-a229-789df4bbf0bc",
+                "13bf777a-4902-4f0d-9c03-0574d13f69aa"
+            ]
+        }
+    ]
+}

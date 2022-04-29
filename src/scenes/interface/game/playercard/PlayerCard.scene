@@ -1,0 +1,354 @@
+{
+    "id": "aa26f680-5a55-46f1-b89f-e40211af8a8d",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 20,
+        "snapHeight": 20,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "80b40d42-bac6-4d3b-ac21-b81f37ee9a54",
+            "label": "container_1",
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "playercard_1",
+            "x": 760,
+            "y": 460,
+            "list": [
+                {
+                    "type": "Container",
+                    "id": "ae5ef1eb-31ba-4fb6-b949-c7cdbb0f48f4",
+                    "label": "photo",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -2,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "8621979a-5a8b-4fb0-a9f5-7591660d7e29",
+                            "label": "card_photo",
+                            "components": [
+                                "Interactive"
+                            ],
+                            "texture": {
+                                "key": "main",
+                                "frame": "card-photo"
+                            },
+                            "tintTopLeft": "#00659c",
+                            "tintTopRight": "#00659c",
+                            "tintBottomLeft": "#00659c",
+                            "tintBottomRight": "#00659c",
+                            "tintFill": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "25ac9549-256b-4802-905b-b375770d52e0",
+                    "label": "playercard_1",
+                    "components": [],
+                    "texture": {
+                        "key": "playercard_1"
+                    }
+                },
+                {
+                    "prefabId": "7b4017c1-c8f3-4f6b-9aae-61bbce16ce08",
+                    "id": "d6bbac10-17e0-44da-902d-f6dfbbe8bc93",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "paperDoll",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": -7,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "8808181a-7877-4aef-982e-f4ba2441da75",
+                    "id": "b958363f-47ef-45d1-ab73-8ee745452d50",
+                    "unlock": [
+                        "visible",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buttons",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": 255,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Container",
+                    "id": "b173b409-a478-4303-9fbc-f0300fea9f35",
+                    "label": "stats",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -13,
+                    "y": 255,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "41323b7b-a2e7-4992-b3c1-b2c6e3078c0e",
+                            "label": "coins",
+                            "scope": "CLASS",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your Coins: 000000",
+                            "fixedWidth": 300,
+                            "align": "right",
+                            "fontFamily": "Arial",
+                            "fontSize": "24px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "5bba5028-646b-4254-8d39-2a8ca6144211",
+                            "label": "coins_png",
+                            "components": [],
+                            "texture": {
+                                "key": "playercard",
+                                "frame": "coins.png"
+                            },
+                            "x": -125,
+                            "y": -5,
+                            "scaleX": 0.7779987388695455,
+                            "scaleY": 0.7779987388695455
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "e96707d4-a8b8-4cf9-bdd5-3babddd9ac5c",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -233,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 360,
+                    "align": "center",
+                    "fontFamily": "Arial",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "274b2a17-fd19-4625-8207-2ce436778aba",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 177,
+                    "y": -237
+                },
+                {
+                    "type": "Image",
+                    "id": "0a074237-0457-4002-a588-2d9705f5aaf4",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 177,
+                    "y": -239
+                },
+                {
+                    "type": "Container",
+                    "id": "a6c82d6c-4883-42b0-b72d-486954985eb4",
+                    "label": "edit_player_button",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 104,
+                    "y": -259,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "a365d664-c29f-417d-b168-f20b54bc92cd",
+                            "label": "edit_player_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "blue-button",
+                            "Button.callback": "() => this.editPlayer()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "blue-button"
+                            },
+                            "x": 13,
+                            "y": 22
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1ae2537a-904d-49d5-a93b-4c36a132da9d",
+                            "label": "edit_player_txt",
+                            "components": [],
+                            "y": -1,
+                            "text": "?",
+                            "fontFamily": "Arial",
+                            "fontSize": "35px",
+                            "color": "#ffffffff",
+                            "stroke": "#00013cff",
+                            "strokeThickness": 5
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "f899f745-ff23-4ae4-b9d6-7f7d851be1b6",
+                    "label": "playericon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "playercard",
+                        "frame": "playercard-icon0004.png"
+                    },
+                    "x": -156,
+                    "y": -227,
+                    "scaleX": 0.95,
+                    "scaleY": 0.95
+                },
+                {
+                    "type": "Image",
+                    "id": "c4db31e9-de50-49ee-bd64-7a2f96b171de",
+                    "label": "playericonbuddy",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "playercard",
+                        "frame": "playercard-icon0002.png"
+                    },
+                    "x": -155,
+                    "y": -228,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "a379181c-67e8-4e84-8e25-1fa753eff0aa",
+                    "label": "nobuddyon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "playercard",
+                        "frame": "playercard-icon0001.png"
+                    },
+                    "x": -155,
+                    "y": -228,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "e4a700f1-057e-4bfc-9d53-9b82e32ca70a",
+                    "label": "notbuddyicon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "playercard",
+                        "frame": "playercard-icon0003.png"
+                    },
+                    "x": -155,
+                    "y": -228,
+                    "scaleX": 0.9,
+                    "scaleY": 0.9,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "eb6a4b43-4070-4381-8d8b-84a21e444ea9",
+                    "label": "modbadge",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "playercard",
+                        "frame": "mod-badge.png"
+                    },
+                    "x": 144,
+                    "y": -145,
+                    "scaleX": 0.7613167824088007,
+                    "scaleY": 0.7613167824088007,
+                    "visible": false
+                },
+                {
+                    "prefabId": "676b9d5e-1fcd-4a27-8667-0f19254fc582",
+                    "id": "1e195136-b37b-4455-8b80-df6580175885",
+                    "unlock": [
+                        "visible",
+                        "x",
+                        "y"
+                    ],
+                    "label": "inventorySort",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 434,
+                    "y": 318,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "092e5111-82e2-4289-8f29-b8d9568e9497",
+                    "id": "2c78d474-38e5-4639-85d4-0191679ebb81",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "inventory",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -135,
+                    "y": 35,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "f94c81d7-15a8-448d-bbf1-c0bfceee0001",
+                    "id": "10754f41-4372-40bc-97bc-d8d1f06d9bbf",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "inventoryBottom",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -135,
+                    "y": 35,
+                    "nestedPrefabs": []
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

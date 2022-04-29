@@ -1,0 +1,422 @@
+{
+    "id": "dc649c7a-1824-4b21-8431-e3d1168a4506",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "bfaa02be-42e7-4151-a022-1a38f8f54b3a",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "43dbb293-36da-4727-8b01-a9969fda2bec",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Image",
+                    "id": "3b02b716-3b32-4703-89fd-ec27acfcacf2",
+                    "label": "bg",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "map",
+                        "frame": "bg"
+                    },
+                    "y": -35,
+                    "originY": 0.5007429420505201
+                },
+                {
+                    "type": "Image",
+                    "id": "ac515e14-94e2-4872-845c-ff165b0bb45d",
+                    "label": "dojo",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "dojo",
+                    "Button.callback": "() => this.onRoomClick(321)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Dojo Exterior",
+                    "texture": {
+                        "key": "map",
+                        "frame": "dojo"
+                    },
+                    "x": 69,
+                    "y": -310,
+                    "originX": 0.5038759689922481,
+                    "originY": 0.5056179775280899
+                },
+                {
+                    "type": "Image",
+                    "id": "78f24163-a8fc-466e-aef4-9d47733701c5",
+                    "label": "mountains",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "mountains"
+                    },
+                    "x": 29,
+                    "y": -276
+                },
+                {
+                    "type": "Image",
+                    "id": "7195e0a7-5c4e-4f00-9419-5a583b6c23e2",
+                    "label": "island",
+                    "components": [],
+                    "texture": {
+                        "key": "map",
+                        "frame": "island"
+                    },
+                    "x": -12,
+                    "y": -30,
+                    "originX": 0.5005417118093174
+                },
+                {
+                    "type": "Image",
+                    "id": "0641ff28-946b-4d7c-8d9d-368067367dc1",
+                    "label": "mtn",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "mtn",
+                    "Button.callback": "() => this.onRoomClick(230)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Ski Hill",
+                    "texture": {
+                        "key": "map",
+                        "frame": "mtn"
+                    },
+                    "x": -232,
+                    "y": -256
+                },
+                {
+                    "type": "Image",
+                    "id": "50d7b312-f4fe-47d2-bf65-2e4d25bfeebc",
+                    "label": "village",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "village",
+                    "Button.callback": "() => this.onRoomClick(200)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Ski Village",
+                    "texture": {
+                        "key": "map",
+                        "frame": "village"
+                    },
+                    "x": -181,
+                    "y": -179,
+                    "originX": 0.503030303030303,
+                    "originY": 0.5041322314049587
+                },
+                {
+                    "type": "Image",
+                    "id": "a389ddf6-8668-40bf-8f74-ccddc823e608",
+                    "label": "beach",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "beach",
+                    "Button.callback": "() => this.onRoomClick(400)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Beach",
+                    "texture": {
+                        "key": "map",
+                        "frame": "beach"
+                    },
+                    "x": -390,
+                    "y": -94
+                },
+                {
+                    "type": "Image",
+                    "id": "df5b5b0b-75a3-4fcf-9d3c-0949e2b203a6",
+                    "label": "dock",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "dock",
+                    "Button.callback": "() => this.onRoomClick(800)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Dock",
+                    "texture": {
+                        "key": "map",
+                        "frame": "dock"
+                    },
+                    "x": -370,
+                    "y": 114,
+                    "originY": 0.5037037037037037
+                },
+                {
+                    "type": "Image",
+                    "id": "6ebf11b0-353f-4461-b443-5b908e39f478",
+                    "label": "town",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "town",
+                    "Button.callback": "() => this.onRoomClick(100)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Town",
+                    "texture": {
+                        "key": "map",
+                        "frame": "town"
+                    },
+                    "x": -128,
+                    "y": 22
+                },
+                {
+                    "type": "Image",
+                    "id": "a9575e75-c858-4cb9-8a36-d203a05d6f41",
+                    "label": "forts",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "forts",
+                    "Button.callback": "() => this.onRoomClick(801)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Snow Forts",
+                    "texture": {
+                        "key": "map",
+                        "frame": "forts"
+                    },
+                    "x": 78,
+                    "y": 30,
+                    "originX": 0.5045045045045045,
+                    "originY": 0.5045871559633027
+                },
+                {
+                    "type": "Image",
+                    "id": "4cd7313a-df16-45c5-982d-47ef02db8644",
+                    "label": "igloo",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "igloo",
+                    "Button.callback": "() => this.iglooMap.show()",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Igloo Map",
+                    "texture": {
+                        "key": "map",
+                        "frame": "igloo"
+                    },
+                    "x": 201,
+                    "y": 141
+                },
+                {
+                    "type": "Image",
+                    "id": "d3b40e62-b025-4aa8-8921-e44f27622978",
+                    "label": "plaza",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "plaza",
+                    "Button.callback": "() => this.onRoomClick(300)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Plaza",
+                    "texture": {
+                        "key": "map",
+                        "frame": "plaza"
+                    },
+                    "x": 264,
+                    "y": 22,
+                    "originY": 0.5038167938931297
+                },
+                {
+                    "type": "Image",
+                    "id": "ad02f0a0-536f-4527-916d-160fbff13923",
+                    "label": "rink",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "rink",
+                    "Button.callback": "() => this.onRoomClick(802)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Stadium",
+                    "texture": {
+                        "key": "map",
+                        "frame": "rink"
+                    },
+                    "x": 52,
+                    "y": -98,
+                    "originX": 0.5023041474654378
+                },
+                {
+                    "type": "Image",
+                    "id": "49d0d4bf-c5a0-4b1d-8ca8-f81b4bf1e890",
+                    "label": "forest",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "forest",
+                    "Button.callback": "() => this.onRoomClick(809)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Forest",
+                    "texture": {
+                        "key": "map",
+                        "frame": "forest"
+                    },
+                    "x": 291,
+                    "y": -84,
+                    "originX": 0.5027027027027027,
+                    "originY": 0.5057471264367817
+                },
+                {
+                    "type": "Image",
+                    "id": "b44b0389-8323-44c5-9b76-6930d99d787c",
+                    "label": "cove",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "cove",
+                    "Button.callback": "() => this.onRoomClick(810)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Cove",
+                    "texture": {
+                        "key": "map",
+                        "frame": "cove"
+                    },
+                    "x": 334,
+                    "y": -169,
+                    "originY": 0.5058823529411764
+                },
+                {
+                    "type": "Image",
+                    "id": "a36839c5-3b16-4c3f-b57f-bba9dc74caa9",
+                    "label": "mine",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "mine",
+                    "Button.callback": "() => this.onRoomClick(807)",
+                    "Button.activeFrame": false,
+                    "ShowHint.text": "Mine Shack",
+                    "texture": {
+                        "key": "map",
+                        "frame": "mine"
+                    },
+                    "x": 168,
+                    "y": -214,
+                    "originX": 0.5042016806722689
+                },
+                {
+                    "type": "Image",
+                    "id": "6ef9d490-a6ca-4c85-88d6-7a6a329da016",
+                    "label": "berg",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "berg",
+                    "Button.callback": "() => this.onRoomClick(805)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "map",
+                        "frame": "berg"
+                    },
+                    "x": 402,
+                    "y": -210
+                },
+                {
+                    "type": "Image",
+                    "id": "6ff6b726-9bc1-4d27-8da8-381fb36f8e39",
+                    "label": "note",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "map",
+                        "frame": "note"
+                    },
+                    "x": 419,
+                    "y": 242,
+                    "originX": 0.5017667844522968
+                },
+                {
+                    "type": "Image",
+                    "id": "6466fda5-512e-4d12-9c12-084e900d2f3e",
+                    "label": "grey_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "grey-button",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-button"
+                    },
+                    "x": 483,
+                    "y": -333
+                },
+                {
+                    "type": "Image",
+                    "id": "45830b5d-99cb-41f8-8903-65046e08ebfe",
+                    "label": "grey_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-x"
+                    },
+                    "x": 483,
+                    "y": -335
+                },
+                {
+                    "prefabId": "9f793ade-93a8-4ab2-bd68-ccd899fb9179",
+                    "id": "10280413-fe4e-43c5-87a0-4ff109f3c31a",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "iglooMap",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": 0,
+                    "visible": false,
+                    "nestedPrefabs": []
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

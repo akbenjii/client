@@ -1,0 +1,158 @@
+{
+    "id": "e9c19287-fa83-4af9-bd21-7a82f0bdfe45",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/boiler/boiler-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Boiler",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c187177f-c691-4014-91aa-29d3c35f0aff",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "boiler",
+                "frame": "bg.png"
+            },
+            "x": 760,
+            "y": 485,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "8cb3a29b-3fc4-46e1-bc15-7f2a90764eaf",
+            "label": "boiler_door_png",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "boiler-door.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 582,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "boiler",
+                "frame": "boiler-door.png"
+            },
+            "x": 582,
+            "y": 363,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "b234f62a-0f70-4dd0-87e6-76ba44f861d0",
+            "label": "drawer1.png",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onDrawerOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onDrawerOut()",
+            "SimpleButton.pixelPerfect": true,
+            "ShowHint.text": "Coming Soon",
+            "texture": {
+                "key": "boiler",
+                "frame": "drawer1.png0001"
+            },
+            "x": 826,
+            "y": 550,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "3db0f1d8-bc51-4d2a-805b-7d6e89fd1e5e",
+            "label": "drawer1_png0001",
+            "components": [],
+            "texture": {
+                "key": "boiler",
+                "frame": "drawer1.png0001"
+            },
+            "x": 828,
+            "y": 473
+        },
+        {
+            "type": "Image",
+            "id": "2397942b-2014-4c27-be33-1d12dfdd25ef",
+            "label": "drawer1_png0001_1",
+            "components": [],
+            "texture": {
+                "key": "boiler",
+                "frame": "drawer1.png0001"
+            },
+            "x": 832,
+            "y": 397
+        },
+        {
+            "type": "Image",
+            "id": "a22dc112-d268-4be7-a686-0441b4689069",
+            "label": "drawer1_png0001_1_1",
+            "components": [],
+            "texture": {
+                "key": "boiler",
+                "frame": "drawer1.png0001"
+            },
+            "x": 947,
+            "y": 472
+        },
+        {
+            "type": "Image",
+            "id": "6d23ac76-10cc-41eb-8d98-69fa8eee65cc",
+            "label": "drawer1_png0001_2",
+            "components": [],
+            "texture": {
+                "key": "boiler",
+                "frame": "drawer1.png0001"
+            },
+            "x": 943,
+            "y": 548
+        },
+        {
+            "type": "Image",
+            "id": "7fbb6657-dcb6-4d71-87b1-8d13c92d333b",
+            "label": "drawer1_png0001_1_1_1",
+            "components": [],
+            "texture": {
+                "key": "boiler",
+                "frame": "drawer1.png0001"
+            },
+            "x": 949,
+            "y": 399
+        },
+        {
+            "type": "Sprite",
+            "id": "d1eca388-a25e-40c0-b0b5-4f7629d9ba57",
+            "label": "smoke0001_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "boiler",
+                "frame": "smoke0001.png"
+            },
+            "x": 250,
+            "y": 198
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

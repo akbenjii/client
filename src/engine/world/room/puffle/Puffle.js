@@ -1,0 +1,215 @@
+import BaseContainer from '@scenes/base/BaseContainer'
+
+export default class Puffle extends BaseContainer {
+
+    constructor(puffle, room) {
+
+        // picks a random x and y position to spawn in. it cannot be within 200 pixels of the edge of the screen
+        let xpos = Phaser.Math.Between(200, 1320)
+        let ypos = Phaser.Math.Between(200, 760)
+
+        // makes sure the spawn position is not blocked by the blockmap
+        while (room.matter.containsPoint(room.block, xpos, ypos)) {
+            xpos = Phaser.Math.Between(200, 1320)
+            ypos = Phaser.Math.Between(200, 760)
+        }
+
+        super(room, xpos, ypos)
+
+        this.room = room
+        this.isButton = true
+        this.id = puffle.id
+        this.name = puffle.name
+
+        // adds the sprite for the puffle
+        this.sprite = this.room.add.sprite(xpos, ypos, 'blue', 'stand/south')
+
+        this.x = this.sprite.x
+        this.y = this.sprite.y
+
+        // makes sure that the puffle is layered correctly
+        this.sprite.depth = this.y
+
+        // if the penguin owns the igloo, this allows the puffles to be clicked on
+        if (this.world.client.penguin.id == this.room.id) {
+            this.addPuffleInput()
+        }
+
+        this.room.puffles[this.id] = this
+
+        // the puffle will decide whether or not to walk every 10 seconds
+        setInterval(this.puffleAi.bind(this), 10000)
+    }
+
+    addPuffleInput() {
+        // creates the hitbox to open the puffle care menu
+        this.hitArea = new Phaser.Geom.Ellipse(0, 0, 50, 50)
+        this.setInteractive({
+            cursor: 'pointer',
+            hitArea: this.hitArea,
+            hitAreaCallback: Phaser.Geom.Ellipse.Contains
+        })
+        this.on('pointerup', () => this.onPuffleClick())
+    }
+
+    onPuffleClick() {
+        // sends a packet to the server which requests the wellbeing information for the care menu to use
+        this.network.send('get_wellbeing', {
+            puffle: this.id
+        })
+    }
+
+    puffleAi() {
+        // tells the puffle how to manage the screen position for each possible walking direction 
+        this.directions = [
+            ["n", 0, -1],
+            ["ne", 1, -1],
+            ["e", 1, 0],
+            ["se", 1, 1],
+            ["s", -0, 1],
+            ["sw", -1, 1],
+            ["w", -1, 0],
+            ["nw", -1, -1]
+        ]
+
+        // if the puffle is currently walking, this makes sure it does not try and walk somewhere else
+        if (this.tween || this.isTweening) {
+            return
+        }
+
+        // 1 in 5 chance that the puffle will decide to walk
+        else if (Phaser.Math.Between(0, 5) == 5) {
+
+            // chooses a random direction from the array
+            var arrayentry = this.directions[Math.floor(Math.random() * this.directions.length)]
+
+            // gets the letter code for the direction
+            var direction = arrayentry[0]
+
+            // chooses a random co-ordinate to walk to, between 50 and 120(horizontally) or 100 (vertically) pixels to move 
+            let xmove = arrayentry[1] * Phaser.Math.Between(50, 120)
+            let ymove = arrayentry[2] * Phaser.Math.Between(50, 100)
+
+            // finds the final position that the puffle will end up in after moving
+            let xdest = this.x + xmove
+            let ydest = this.y + ymove
+
+            // if the puffle is going to walk into an area that in not accessible, or too close to the edge of the screen, it will not walk
+            if (this.room.matter.containsPoint(this.room.block, xdest, ydest) || xdest > 1320 || ydest > 760) {
+                return
+            }
+
+            // starts the animation for the puffle walking
+            let anim = "walk-" + direction
+            this.sprite.play(anim)
+
+            this.movePuffle(xdest, ydest)
+        }
+    }
+
+    movePuffle(x, y) {
+        let path = this.getPath({
+            x,
+            y
+        })
+        if (path) {
+            // adds the tween for the puffle to change its screen position each frame
+            this.addMoveTween(path)
+        }
+    }
+
+    getPath(target) {
+        // sets the speed for the puffle to walk at. higher is faster (obviously)
+        const speed = 100
+
+        // calculates the distance between the puffle and the final destination
+        // there should be a phaser math component (Phaser.Math.Distance.BetweenPoints) for this, but it kept breaking for me
+        let dx = this.x - target.x
+        let dy = this.y - target.y;
+        let distance = Math.sqrt(dx * dx + dy * dy)
+
+        // calculates the time the puffle should be walking for
+        let duration = (distance / speed) * 1000
+
+        return {
+            target: target,
+            duration: duration
+        }
+    }
+
+    addMoveTween(path) {
+        if (this.tween) {
+            // if the puffle is currently walking, this makes sure it does not try and walk somewhere else
+            return
+        }
+
+        // adds the tween for the puffle to change its screen position each frame to the room
+        this.tween = this.room.tweens.add({
+            targets: this.sprite,
+            duration: path.duration,
+            x: Math.round(path.target.x),
+            y: Math.round(path.target.y),
+            onUpdate: () => this.onMoveUpdate(),
+            onComplete: () => this.onMoveComplete()
+        })
+    }
+
+    onMoveUpdate() {
+        this.x = this.sprite.x
+        this.y = this.sprite.y
+        // makes sure that the puffle is layered correctly even whilst moving
+        this.sprite.depth = this.y
+    }
+
+    onMoveComplete() {
+        if (!this.tween) {
+            return
+        }
+
+        // removes the tween from the puffle, allowing it to walk again
+        this.tween.remove()
+        this.tween = null
+
+        // stops the walking animation, and returns the puffle to its original direction
+        this.sprite.anims.stop()
+        this.sprite.setFrame('stand/south')
+    }
+
+    chewGum() {
+        this.play("bubblegum")
+    }
+
+    eatCookie() {
+        this.play("cookie")
+    }
+
+    eatOs() {
+        this.play("eating")
+    }
+
+    bathe() {
+        this.play("wash")
+    }
+
+    sleep() {
+        this.play("sleep")
+    }
+
+    ball() {
+        let rng = Phaser.Math.Between(1, 3)
+        this.play("ball" + rng)
+    }
+
+    play(anim) {
+        var anim = this.sprite.play(anim)
+        // puffle cannot choose to walk whilst performing an animation
+        this.isTweening = true
+        this.removeInteractive()
+
+        anim.on('animationcomplete', function() {
+            this.sprite.setFrame('stand/south')
+            this.isTweening = false
+            this.addPuffleInput()
+        }, this)
+    }
+}

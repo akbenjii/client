@@ -1,0 +1,1168 @@
+{
+    "id": "8dc6fe04-32d6-4182-9571-c3ba476d5bc1",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "yukon/assets/media/interface/catalogs/furniture/furniturecatalog-pack.json",
+            "yukon/assets/media/interface/catalogs/clothing/sep05-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "FurnitureCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "b140aae9-525c-46f1-8fcd-bee244557386",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "63041e57-2f6b-49a5-985d-80b58018c733",
+            "label": "page8",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "1072a457-b0a4-4901-a747-5ab8e5900c82",
+                    "label": "lastpage_png",
+                    "components": [],
+                    "texture": {
+                        "key": "furniture",
+                        "frame": "lastpage.png"
+                    },
+                    "x": 521,
+                    "y": 395
+                },
+                {
+                    "type": "Image",
+                    "id": "748bda71-a738-4f3c-bc2e-3e57c2187cb6",
+                    "label": "exit0001_png_1_1_1_1_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 982,
+                    "y": 109
+                },
+                {
+                    "type": "Image",
+                    "id": "9d9d7370-b17b-49d2-892c-bdff31a73ed6",
+                    "label": "last_page0001_png_1_1_1_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 538,
+                    "y": 691
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "476ec2cc-1be9-4995-b537-9a016a1d098e",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_30_1",
+                    "item": 107,
+                    "components": [],
+                    "x": 782,
+                    "y": 100
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "4b4b4337-d332-4b8e-9376-68485e174d6c",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_30_1_1",
+                    "item": 108,
+                    "components": [],
+                    "x": 560,
+                    "y": 560
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "18e7a4dc-6573-48d9-84f4-e878c951344e",
+            "label": "page7",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "02ce1141-4676-4cfa-9af5-5c96f137ae91",
+                    "label": "page5_png",
+                    "components": [],
+                    "texture": {
+                        "key": "furniture",
+                        "frame": "page5.png"
+                    },
+                    "x": 615,
+                    "y": 394
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "9f9132cc-a6c2-4df4-acf5-cf12e6dce9c6",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_30",
+                    "item": 110,
+                    "components": [],
+                    "x": 437,
+                    "y": 379
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "6db980e1-6c9a-4185-b217-c0d6885f3802",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_31",
+                    "item": 114,
+                    "components": [],
+                    "x": 309,
+                    "y": 608
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "cd4f1180-a945-4508-9a8f-dd68df3e06a1",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_34",
+                    "item": 113,
+                    "components": [],
+                    "x": 1162,
+                    "y": 624,
+                    "scaleX": 0.8168502009576887,
+                    "scaleY": 0.8168502009576887
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "1bbcfae8-1481-4fca-86fe-56706de6e3fc",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_34_1",
+                    "item": 112,
+                    "components": [],
+                    "x": 1003,
+                    "y": 458,
+                    "scaleX": 0.8168502009576887,
+                    "scaleY": 0.8168502009576887
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "81111871-2b47-4a9c-a01f-420df66450e9",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_34_1_1",
+                    "item": 111,
+                    "components": [],
+                    "x": 1143,
+                    "y": 290,
+                    "scaleX": 0.8168502009576887,
+                    "scaleY": 0.8168502009576887
+                },
+                {
+                    "type": "Image",
+                    "id": "30b17553-e733-4550-809b-cf48dc4caad4",
+                    "label": "next_page0001_png_1_1_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1286,
+                    "y": 696
+                },
+                {
+                    "type": "Image",
+                    "id": "1190f394-7d0f-48dc-a23a-d21fedcd51be",
+                    "label": "exit0001_png_1_1_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1298,
+                    "y": 99
+                },
+                {
+                    "type": "Image",
+                    "id": "055e02d2-d7bf-4c4a-9533-8fee42c15a0e",
+                    "label": "last_page0001_png_1_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 271,
+                    "y": 697
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "0be8018b-9f5f-41ea-a820-35f045768c86",
+            "label": "page6",
+            "components": [],
+            "y": -2,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "077196c9-bad2-4a10-bf7d-95597c196ff4",
+                    "label": "page4_png",
+                    "components": [],
+                    "texture": {
+                        "key": "furniture",
+                        "frame": "page4.png"
+                    },
+                    "x": 780,
+                    "y": 447
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "270cf695-fc33-4be6-8d8d-68c6a5fa5b4d",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_23",
+                    "item": 100,
+                    "components": [],
+                    "x": 547,
+                    "y": 268
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "3c00db8d-71da-4856-871f-0ff01e509479",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_24",
+                    "item": 106,
+                    "components": [],
+                    "x": 324,
+                    "y": 607
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "cdda4b79-b413-4675-8d2a-61563c2236f1",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_27",
+                    "item": 103,
+                    "components": [],
+                    "x": 1128,
+                    "y": 349
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "44061db5-7765-45d4-98c9-e803eac7e2bb",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_28",
+                    "item": 104,
+                    "components": [],
+                    "x": 1154,
+                    "y": 638,
+                    "scaleX": 0.8163092426869883,
+                    "scaleY": 0.8163092426869883
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "dde9bfc9-df5d-4382-ae8f-143abb42cd41",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_28_1",
+                    "item": 101,
+                    "components": [],
+                    "x": 1087,
+                    "y": 183,
+                    "scaleX": 0.8163092426869883,
+                    "scaleY": 0.8163092426869883
+                },
+                {
+                    "type": "Image",
+                    "id": "72696845-5388-42bf-9a4a-cea87a4eff59",
+                    "label": "last_page0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 271,
+                    "y": 700
+                },
+                {
+                    "type": "Image",
+                    "id": "8a5faab4-93eb-45f3-81f9-5f220b5165e0",
+                    "label": "exit0001_png_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1303,
+                    "y": 94
+                },
+                {
+                    "type": "Image",
+                    "id": "9022e99e-dbff-47e0-9299-15239f59d3fe",
+                    "label": "next_page0001_png_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1288,
+                    "y": 700
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f82b4445-9386-443e-a1ff-d097d30929af",
+            "label": "page5",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b4e3230d-c328-41fd-8c30-5a18bcaa1ed5",
+                    "label": "page3_png",
+                    "components": [],
+                    "texture": {
+                        "key": "furniture",
+                        "frame": "page3.png"
+                    },
+                    "x": 615,
+                    "y": 394
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "fe538bb8-90c3-4131-b3c1-5c566f3c0455",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_15",
+                    "item": 31,
+                    "components": [],
+                    "x": 264,
+                    "y": 579
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "87a99769-4963-4c13-8581-cdaa0f893c3e",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_16",
+                    "item": 33,
+                    "components": [],
+                    "x": 551,
+                    "y": 676,
+                    "scaleX": 0.8492537964378466,
+                    "scaleY": 0.8492537964378466
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "0402e0be-3468-462b-b6a8-bbd3a8a91f2b",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_18",
+                    "item": 109,
+                    "components": [],
+                    "x": 874,
+                    "y": 432
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "ac706db0-2ab0-42e7-83b7-955007555551",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_16_1",
+                    "item": 32,
+                    "components": [],
+                    "x": 553,
+                    "y": 377,
+                    "scaleX": 0.8492537964378466,
+                    "scaleY": 0.8492537964378466
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "b7f5801b-23a2-4f1a-8735-ee30d065bb88",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_16_1_1",
+                    "item": 105,
+                    "components": [],
+                    "x": 1056,
+                    "y": 675,
+                    "scaleX": 0.8492537964378466,
+                    "scaleY": 0.8492537964378466
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "b6a2dd68-c4a6-462d-8de4-0ddb56146a5b",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_16_1_2",
+                    "item": 102,
+                    "components": [],
+                    "x": 1155,
+                    "y": 448,
+                    "scaleX": 0.8492537964378466,
+                    "scaleY": 0.8492537964378466
+                },
+                {
+                    "type": "Image",
+                    "id": "367d6c5a-2871-4495-9f36-57449d67999a",
+                    "label": "next_page0001_png_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1286,
+                    "y": 694
+                },
+                {
+                    "type": "Image",
+                    "id": "d674ebe3-4922-4ac0-abf0-ffbfe2f42cff",
+                    "label": "exit0001_png_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1303,
+                    "y": 94
+                },
+                {
+                    "type": "Image",
+                    "id": "183ca284-3ef6-4845-9870-fb314ed4da4c",
+                    "label": "last_page0001_png_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 271,
+                    "y": 695
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "5c1bdab7-e01f-41cb-a8e1-e79491902245",
+            "label": "page4",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "4d4f2ee9-3381-4c6c-83be-0fbcce9aa4a5",
+                    "label": "page2_png",
+                    "components": [],
+                    "texture": {
+                        "key": "furniture",
+                        "frame": "page2.png"
+                    },
+                    "x": 615,
+                    "y": 394
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "e65a6b7e-0e13-4198-85c2-9807763acfc9",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_10",
+                    "item": 22,
+                    "components": [],
+                    "x": 280,
+                    "y": 264
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "aaea8ab2-3856-46fb-a0bb-5a1465b4592f",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_11",
+                    "item": 25,
+                    "components": [],
+                    "x": 541,
+                    "y": 488
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "e0cfc846-21de-4796-add5-94d9fff6c9e5",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_12",
+                    "item": 23,
+                    "components": [],
+                    "x": 1065,
+                    "y": 179,
+                    "scaleX": 0.864365405564014,
+                    "scaleY": 0.864365405564014
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "e2bc0b44-7a8a-4fee-b64b-6981ca26eb16",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_14",
+                    "item": 24,
+                    "components": [],
+                    "x": 1129,
+                    "y": 588
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "24878741-d099-41fe-b0fe-fa85a9f59dc5",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_12_1",
+                    "item": 21,
+                    "components": [],
+                    "x": 857,
+                    "y": 454,
+                    "scaleX": 0.864365405564014,
+                    "scaleY": 0.864365405564014
+                },
+                {
+                    "type": "Image",
+                    "id": "1733e2d2-5238-4b9e-8c09-96518ec29e43",
+                    "label": "next_page0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1285,
+                    "y": 694
+                },
+                {
+                    "type": "Image",
+                    "id": "28f9515a-ded8-44d7-8437-3fee60351c51",
+                    "label": "exit0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1303,
+                    "y": 94
+                },
+                {
+                    "type": "Image",
+                    "id": "f383863b-566c-4d1c-913c-352b84e1b3de",
+                    "label": "last_page0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 269,
+                    "y": 695
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "d84391c2-6260-4f39-9740-5454ba5f2dcd",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "08235465-ef66-4159-a3c4-afc2809d23bc",
+                    "label": "hgf_png",
+                    "components": [],
+                    "texture": {
+                        "key": "pink",
+                        "frame": "hgf.png"
+                    },
+                    "x": 615,
+                    "y": 394
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "cf9d3237-1108-478c-aaca-708dafd165d9",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_5",
+                    "item": 1,
+                    "components": [],
+                    "x": 519,
+                    "y": 259,
+                    "scaleX": 0.8485573892810738,
+                    "scaleY": 0.8485573892810738
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "a1412eb8-cc35-4309-af8e-32ff1e19a60e",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_6",
+                    "item": 5,
+                    "components": [],
+                    "x": 886,
+                    "y": 605
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "397c2234-5f77-4d45-b736-1843ee577fc4",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_8",
+                    "item": 4,
+                    "components": [],
+                    "x": 1098,
+                    "y": 332
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "c3b771bd-c3fd-4e68-b699-5be8b99d5437",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_5_1",
+                    "item": 6,
+                    "components": [],
+                    "x": 549,
+                    "y": 461,
+                    "scaleX": 0.8485573892810738,
+                    "scaleY": 0.8485573892810738
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "20171578-567b-4122-a24a-64659058f558",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_5_1_1",
+                    "item": 2,
+                    "components": [],
+                    "x": 413,
+                    "y": 624,
+                    "scaleX": 0.8485573892810738,
+                    "scaleY": 0.8485573892810738
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "be6dbe26-0811-43e9-b930-ad336ac59e7a",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y",
+                        "scaleX",
+                        "scaleY"
+                    ],
+                    "label": "buyButton_5_2",
+                    "item": 3,
+                    "components": [],
+                    "x": 838,
+                    "y": 131,
+                    "scaleX": 0.8485573892810738,
+                    "scaleY": 0.8485573892810738
+                },
+                {
+                    "type": "Image",
+                    "id": "877ea3e7-7a32-46be-8c19-43e45d0da94e",
+                    "label": "last_page0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 271,
+                    "y": 699
+                },
+                {
+                    "type": "Image",
+                    "id": "d56660f9-3393-4b66-8cab-6f215c5ffec7",
+                    "label": "exit0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1304,
+                    "y": 93
+                },
+                {
+                    "type": "Image",
+                    "id": "2c0a2267-1f0d-4ab8-9323-565823fc0cf8",
+                    "label": "next_page0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1287,
+                    "y": 698
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "5297ac81-910b-4858-8677-ee19dd13f211",
+            "label": "page2",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "12038809-0d93-40f2-814f-a17474c5c434",
+                    "label": "page1_png",
+                    "components": [],
+                    "texture": {
+                        "key": "furniture",
+                        "frame": "page1.png"
+                    },
+                    "x": 772,
+                    "y": 442
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "5813ffa7-d6d3-4315-9106-7e74ca3addaf",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton",
+                    "item": 11,
+                    "components": [],
+                    "x": 559,
+                    "y": 353
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "e33344bd-9a54-4aac-ad7b-ab6664c351de",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_1",
+                    "item": 10,
+                    "components": [],
+                    "x": 271,
+                    "y": 608
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "84e0a135-5c11-46c7-99c6-8e27832956f9",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_2",
+                    "item": 12,
+                    "components": [],
+                    "x": 1040,
+                    "y": 148
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "18392c3a-b5b6-487c-b3ec-2539fd5d45fe",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_3",
+                    "item": 14,
+                    "components": [],
+                    "x": 881,
+                    "y": 407
+                },
+                {
+                    "prefabId": "dd77dec9-5b4e-4467-bec6-4b227fd1d6ac",
+                    "id": "6ab7fdb9-8c6f-4bfe-95d3-0e0823baf143",
+                    "unlock": [
+                        "item",
+                        "x",
+                        "y"
+                    ],
+                    "label": "buyButton_4",
+                    "item": 13,
+                    "components": [],
+                    "x": 1083,
+                    "y": 590
+                },
+                {
+                    "type": "Image",
+                    "id": "c0bca291-accd-435b-bdfe-1d7f78425c7a",
+                    "label": "next_page0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 1280,
+                    "y": 694
+                },
+                {
+                    "type": "Image",
+                    "id": "b882e22a-f6d3-40b5-b949-3d53a8e6bfcf",
+                    "label": "exit0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 1303,
+                    "y": 94
+                },
+                {
+                    "type": "Image",
+                    "id": "03502058-9c0f-49cd-bed8-091621ed45c8",
+                    "label": "last_page0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "last-page0001.png",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "last-page0001.png"
+                    },
+                    "x": 263,
+                    "y": 695
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "656d8755-0e55-47b6-ab34-f3ab123ef07e",
+            "label": "page1",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "62794d0b-80ca-4cc9-91f2-f73acbfbab17",
+                    "label": "frontpage_png",
+                    "components": [],
+                    "texture": {
+                        "key": "furniture",
+                        "frame": "frontpage.png"
+                    },
+                    "x": 469,
+                    "y": 44,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "62a53c00-6e86-443e-94ed-23c2c42a4131",
+                    "label": "next_page0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next-page0001.png",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "next-page0001.png"
+                    },
+                    "x": 978,
+                    "y": 691
+                },
+                {
+                    "type": "Image",
+                    "id": "3e33262d-da44-45c7-894d-2393b8b16297",
+                    "label": "exit0001_png",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit0001.png",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "exit0001.png"
+                    },
+                    "x": 996,
+                    "y": 86
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "4a83ca42-dcc0-40ab-995c-ca2d016469c1",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 190,
+            "y": 41,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "503959d0-20cb-4325-9fbd-add974a4f537",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1130,
+                    "y": 790,
+                    "originX": 1,
+                    "text": "YOUR COINS:",
+                    "fixedWidth": 600,
+                    "align": "right",
+                    "fontFamily": "CCComiccrazy",
+                    "fontSize": "32px",
+                    "stroke": "#000",
+                    "strokeThickness": 9
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "19275786-9bf3-47e4-b6e5-d33e69e8eeca",
+            "label": "pages",
+            "objectIds": [
+                "656d8755-0e55-47b6-ab34-f3ab123ef07e",
+                "5297ac81-910b-4858-8677-ee19dd13f211",
+                "d84391c2-6260-4f39-9740-5454ba5f2dcd",
+                "5c1bdab7-e01f-41cb-a8e1-e79491902245",
+                "f82b4445-9386-443e-a1ff-d097d30929af",
+                "0be8018b-9f5f-41ea-a820-35f045768c86",
+                "18e7a4dc-6573-48d9-84f4-e878c951344e",
+                "63041e57-2f6b-49a5-985d-80b58018c733"
+            ]
+        }
+    ]
+}

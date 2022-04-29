@@ -1,0 +1,62 @@
+{
+    "id": "05012b94-9781-4d73-a4ab-f38896dce170",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/dojo/dojo-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Dojo",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "a7eb42af-c787-42ac-a4d4-1e72ee50cdfe",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "dojo",
+                "frame": "dojo_bg_2005.png"
+            },
+            "x": 764,
+            "y": 481,
+            "scaleX": 1.01,
+            "scaleY": 1.01
+        },
+        {
+            "type": "Sprite",
+            "id": "d660443d-ce2b-4cf1-9c41-c3470e69d7d1",
+            "label": "dojodoor_png",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "dojodoor.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 386,
+            "MoveTo.y": 508,
+            "texture": {
+                "key": "dojo",
+                "frame": "dojodoor.png"
+            },
+            "x": 386,
+            "y": 505
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

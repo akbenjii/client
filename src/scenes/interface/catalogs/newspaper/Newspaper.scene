@@ -1,0 +1,714 @@
+{
+    "id": "fb95e46c-77af-4d6d-aa59-42ad42a14b65",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "News",
+        "preloadPackFiles": [
+            "yukon/assets/media/interface/catalogs/newspaper/news-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Newspaper",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "41b9af2c-1775-4714-9527-c74cca74f92b",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.1,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "12f14f8a-c260-4b17-9367-ced27296edca",
+            "label": "page6",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7bfb9fcf-f927-4f19-a044-c0f6b53afba1",
+                    "label": "pAPER_png_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "PAPER.png"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "49dc6626-6e95-4964-8d90-2de0888a4a7f",
+                    "label": "content6_png",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "content6.png"
+                    },
+                    "x": 760,
+                    "y": 436,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "faaa62dd-1011-449a-90d9-85ed8c450298",
+                    "label": "exit_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit",
+                    "Button.callback": "() => this.close()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "exit"
+                    },
+                    "x": 1276,
+                    "y": 117
+                },
+                {
+                    "type": "Image",
+                    "id": "1884c27d-0b09-4bf2-95eb-bb418eabb526",
+                    "label": "back_button_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "back-button",
+                    "Button.callback": "() => this.firstPage()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "back-button"
+                    },
+                    "x": 218,
+                    "y": 165
+                },
+                {
+                    "type": "Image",
+                    "id": "37f0dd7a-e9a4-4ead-93bf-1caca622624b",
+                    "label": "next_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next",
+                    "Button.callback": "() => this.firstPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "next"
+                    },
+                    "x": 1309,
+                    "y": 434,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "698d60d6-eeb3-4f12-a47f-e6e75d30f330",
+                    "label": "biglines_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "biglines"
+                    },
+                    "x": 752,
+                    "y": 138,
+                    "angle": -2.2000000000000455
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "356ebe38-0a0c-487b-9621-921ca7ec54d6",
+            "label": "page5",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "088c06dc-b33f-42bb-879b-fb4cf2f3b108",
+                    "label": "pAPER_png_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "PAPER.png"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "64fc93dd-81b9-4ecf-b61c-90bfbdf519bf",
+                    "label": "content5_png",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "content5.png"
+                    },
+                    "x": 760,
+                    "y": 495,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "00b5cf35-c35c-4f16-82b0-bed71fc5eb52",
+                    "label": "back_button_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "back-button",
+                    "Button.callback": "() => this.firstPage()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "back-button"
+                    },
+                    "x": 218,
+                    "y": 165
+                },
+                {
+                    "type": "Image",
+                    "id": "469aa453-70d9-4ac5-9b69-e6d018d4447f",
+                    "label": "exit_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit",
+                    "Button.callback": "() => this.close()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "exit"
+                    },
+                    "x": 1276,
+                    "y": 117
+                },
+                {
+                    "type": "Image",
+                    "id": "773f4bcd-a7c7-4117-ab35-8645c9ac9193",
+                    "label": "next_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "next"
+                    },
+                    "x": 1309,
+                    "y": 434,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "583ecd06-c255-4c13-a635-56c4845c87d9",
+                    "label": "biglines_2",
+                    "components": [],
+                    "texture": {
+                        "key": "biglines"
+                    },
+                    "x": 752,
+                    "y": 138,
+                    "angle": -2.2000000000000455
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "a9174fd5-0287-4d4d-bb63-d2c0803b0f3a",
+            "label": "page4",
+            "components": [],
+            "x": -1,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "43089e8e-b809-4d7f-a622-c54e906540f3",
+                    "label": "pAPER_png_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "PAPER.png"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "496e22fb-de54-4b4c-ad4a-98a3696aceed",
+                    "label": "content4_png",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "content4.png"
+                    },
+                    "x": 760,
+                    "y": 500,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "8846ca6a-1b5a-4cc7-8147-66b3f311dca4",
+                    "label": "exit_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit",
+                    "Button.callback": "() => this.close()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "exit"
+                    },
+                    "x": 1276,
+                    "y": 117
+                },
+                {
+                    "type": "Image",
+                    "id": "296ad318-8a5c-431e-bd78-c5390e6f8b90",
+                    "label": "back_button_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "back-button",
+                    "Button.callback": "() => this.firstPage()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "back-button"
+                    },
+                    "x": 218,
+                    "y": 165
+                },
+                {
+                    "type": "Image",
+                    "id": "b6231910-7115-4cd3-8d91-3104efad6379",
+                    "label": "next",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "next"
+                    },
+                    "x": 1309,
+                    "y": 434,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "86ed8faf-2fb7-413a-b088-1525e05e1fa6",
+                    "label": "biglines_1",
+                    "components": [],
+                    "texture": {
+                        "key": "biglines"
+                    },
+                    "x": 752,
+                    "y": 138,
+                    "angle": -2.2000000000000455
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "36e786eb-aaf2-42f2-9502-446badb594e7",
+            "label": "page3",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "e125d9d0-70b7-4ab6-988b-f916aebda624",
+                    "label": "pAPER_png_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "PAPER.png"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "d012815d-4880-4691-8200-eb3fc0d1460e",
+                    "label": "content3_png",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "content3.png"
+                    },
+                    "x": 761,
+                    "y": 456,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "9aa2863d-24ab-4cfe-ab82-29c308fa99fc",
+                    "label": "exit_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit",
+                    "Button.callback": "() => this.close()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "exit"
+                    },
+                    "x": 1276,
+                    "y": 117
+                },
+                {
+                    "type": "Image",
+                    "id": "bcde9c9d-5ed6-42fa-a0a0-ee104e3c0abf",
+                    "label": "back_button_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "back-button",
+                    "Button.callback": "() => this.firstPage()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "back-button"
+                    },
+                    "x": 218,
+                    "y": 165
+                },
+                {
+                    "type": "Image",
+                    "id": "45c0d843-f0a7-405a-ade3-ba785c08e6f1",
+                    "label": "next_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "next"
+                    },
+                    "x": 1309,
+                    "y": 434,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "e8b64f62-3da5-4892-be50-397099ccf5fe",
+                    "label": "biglines",
+                    "components": [],
+                    "texture": {
+                        "key": "biglines"
+                    },
+                    "x": 752,
+                    "y": 138,
+                    "angle": -2.2000000000000455
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "511d64f8-e5ca-4845-b9fe-7c8d28372189",
+            "label": "page2",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "4e69a5c5-8030-49cf-b92b-61a46a647125",
+                    "label": "pAPER_png_1",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "PAPER.png"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "2bb7151c-3f57-407a-9f87-d8ed21dde29b",
+                    "label": "content2_png",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "content2.png"
+                    },
+                    "x": 761,
+                    "y": 426,
+                    "angle": -2.5
+                },
+                {
+                    "type": "Image",
+                    "id": "f7b9b437-6f50-4ea4-adbe-637ceb7ac20a",
+                    "label": "exit_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit",
+                    "Button.callback": "() => this.close()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "exit"
+                    },
+                    "x": 1276,
+                    "y": 117
+                },
+                {
+                    "type": "Image",
+                    "id": "f489e72f-eb6e-433b-bf64-0ab19f32beed",
+                    "label": "back_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "back-button",
+                    "Button.callback": "() => this.prevPage()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "back-button"
+                    },
+                    "x": 218,
+                    "y": 165
+                },
+                {
+                    "type": "Image",
+                    "id": "648f9783-0fcc-4bf9-b8a3-5fd7804c92c2",
+                    "label": "next_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "next",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "next"
+                    },
+                    "x": 1309,
+                    "y": 434,
+                    "angle": -2.2000000000000455
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2147c74d-be30-4de0-bb64-56c10d927575",
+            "label": "page1",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9e34f6bf-9cf7-473b-befd-fe02d8385646",
+                    "label": "pAPER_png",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "PAPER.png"
+                    },
+                    "x": 760,
+                    "y": 480
+                },
+                {
+                    "type": "Image",
+                    "id": "21dd7f87-66c5-4de4-b8fc-380bc0500e88",
+                    "label": "content1_png",
+                    "components": [],
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "content1.png"
+                    },
+                    "x": 745,
+                    "y": 458,
+                    "angle": -2.5
+                },
+                {
+                    "type": "Image",
+                    "id": "425aec67-7103-4845-bd37-572ac34b49bd",
+                    "label": "exit",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "exit",
+                    "Button.callback": "() => this.close()",
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "exit"
+                    },
+                    "x": 1276,
+                    "y": 117
+                },
+                {
+                    "type": "Image",
+                    "id": "4336df46-dc86-470a-b730-4a0722845b23",
+                    "label": "events",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "events",
+                    "Button.callback": "() => this.eventPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "events"
+                    },
+                    "x": 1191,
+                    "y": 454,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "6732de4b-2c22-4913-98e6-4d7bf8140e5f",
+                    "label": "line",
+                    "components": [],
+                    "texture": {
+                        "key": "line"
+                    },
+                    "x": 1191,
+                    "y": 428,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "3498ab73-f350-4be2-9994-7735d8cb50a7",
+                    "label": "line_1",
+                    "components": [],
+                    "texture": {
+                        "key": "line"
+                    },
+                    "x": 1193,
+                    "y": 487,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "e906a82e-8994-47f5-8e42-117f3723e92c",
+                    "label": "featured",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "featured",
+                    "Button.callback": "() => this.featuredPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "featured"
+                    },
+                    "x": 1198,
+                    "y": 519,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "2dc26416-c5df-441c-85ba-b6e10a2d3d12",
+                    "label": "line_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "line"
+                    },
+                    "x": 1195,
+                    "y": 551,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "c9601876-5888-4705-a7d2-5b5856e86ecb",
+                    "label": "jokes",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "jokes",
+                    "Button.callback": "() => this.jokesPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "jokes"
+                    },
+                    "x": 1198,
+                    "y": 584,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "6bd0d4b6-7a29-44f2-b3dd-48abfc0096ac",
+                    "label": "line_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "line"
+                    },
+                    "x": 1198,
+                    "y": 617,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "06cafa7e-73be-4285-bf2e-0704ea0a1a83",
+                    "label": "comics",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "comics",
+                    "Button.callback": "() => this.comicsPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "comics"
+                    },
+                    "x": 1199,
+                    "y": 648,
+                    "angle": -2.2000000000000455
+                },
+                {
+                    "type": "Image",
+                    "id": "0f2c9396-7af1-4609-905c-2dba357c9775",
+                    "label": "need",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "need",
+                    "Button.callback": "() => this.needPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "newspaper",
+                        "frame": "need"
+                    },
+                    "x": 1204,
+                    "y": 710,
+                    "angle": -2.2000000000000455
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "110e14c4-8fa3-44cd-b053-2902c2236aa2",
+            "label": "pages",
+            "objectIds": [
+                "2147c74d-be30-4de0-bb64-56c10d927575",
+                "511d64f8-e5ca-4845-b9fe-7c8d28372189",
+                "36e786eb-aaf2-42f2-9502-446badb594e7",
+                "a9174fd5-0287-4d4d-bb63-d2c0803b0f3a",
+                "356ebe38-0a0c-487b-9621-921ca7ec54d6",
+                "12f14f8a-c260-4b17-9367-ced27296edca"
+            ]
+        }
+    ]
+}

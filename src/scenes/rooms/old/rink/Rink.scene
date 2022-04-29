@@ -1,0 +1,174 @@
+{
+    "id": "53214d11-5d69-4d03-b292-75b2ecec737a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/rink/rink-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Rink",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "94ceef56-80c1-42f9-912f-b6de486aec28",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "bg.png"
+            },
+            "x": 751,
+            "y": 379,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Image",
+            "id": "b937a47c-8b50-4a50-a9fe-2da8b324023e",
+            "label": "foreground_png",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "foreground.png"
+            },
+            "x": 761,
+            "y": 564,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Image",
+            "id": "7c7b0cfa-2ad9-4117-8deb-9268cd446006",
+            "label": "glass_png",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "glass.png"
+            },
+            "x": 508,
+            "y": 261,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Image",
+            "id": "302c9d9a-032d-4bfd-9156-a9b96940e244",
+            "label": "left_net2_png",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "left net2.png"
+            },
+            "x": 283,
+            "y": 423,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Image",
+            "id": "6a549977-2648-4ab9-b892-a21ac33426e8",
+            "label": "door_png",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door.png",
+            "Button.activeFrame": false,
+            "MoveTo.x": 781,
+            "MoveTo.y": 280,
+            "texture": {
+                "key": "rink",
+                "frame": "door.png"
+            },
+            "x": 771,
+            "y": 260,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Image",
+            "id": "6f992c59-3ef5-4b83-ad9a-3514ea904044",
+            "label": "left_net_png",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "left net.png"
+            },
+            "x": 244,
+            "y": 460,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Image",
+            "id": "33aacf2f-0548-490b-8949-bd358d5abbbf",
+            "label": "right_net2_png",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "right net2.png"
+            },
+            "x": 1253,
+            "y": 423,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Image",
+            "id": "9d3c0a4f-6308-4284-98e9-19c35ff1f2d5",
+            "label": "right_net_png",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "right net.png"
+            },
+            "x": 1291,
+            "y": 460,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        },
+        {
+            "type": "Sprite",
+            "id": "642047cd-bf41-4814-8711-6b6d54182ef5",
+            "label": "puck_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "rink",
+                "frame": "puck.png"
+            },
+            "x": 791,
+            "y": 481,
+            "scaleX": 1.03,
+            "scaleY": 1.03
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "9e830a7e-9e8a-466e-aec7-18c94d7d6d64",
+            "label": "sort",
+            "objectIds": [
+                "302c9d9a-032d-4bfd-9156-a9b96940e244",
+                "6f992c59-3ef5-4b83-ad9a-3514ea904044",
+                "33aacf2f-0548-490b-8949-bd358d5abbbf",
+                "9d3c0a4f-6308-4284-98e9-19c35ff1f2d5",
+                "7c7b0cfa-2ad9-4117-8deb-9268cd446006"
+            ]
+        }
+    ]
+}

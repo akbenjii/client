@@ -1,0 +1,175 @@
+{
+    "id": "60b45cef-141d-418d-9738-29099a7e710e",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/shack/shack-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shack",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "46646b24-3f8e-4091-a44b-411af87f6ec0",
+            "label": "bg_png_1",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "bg.png"
+            },
+            "x": 758,
+            "y": 485,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "a9f82402-28a1-445d-a439-faf635c85ae1",
+            "label": "left_tree_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "left tree.png"
+            },
+            "x": 121,
+            "y": 738
+        },
+        {
+            "type": "Image",
+            "id": "5c319173-7c1c-4409-ac8d-da91da1f89de",
+            "label": "right_tree_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "right tree.png"
+            },
+            "x": 1372,
+            "y": 743
+        },
+        {
+            "type": "Image",
+            "id": "4a2dd7d0-b2cf-4b14-ad56-88336f1bc24b",
+            "label": "orange_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "orange.png"
+            },
+            "x": 612,
+            "y": 426
+        },
+        {
+            "type": "Image",
+            "id": "2542e85a-7193-4407-8dc5-802d6066a611",
+            "label": "wood_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "wood.png"
+            },
+            "x": 1097,
+            "y": 361
+        },
+        {
+            "type": "Image",
+            "id": "0477c2e9-b4f3-4f57-98f6-b4ef0ccbb545",
+            "label": "cart2_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "cart2.png"
+            },
+            "x": 628,
+            "y": 517
+        },
+        {
+            "type": "Image",
+            "id": "61d239a3-90a1-4ee0-809d-cc078b8bd4d8",
+            "label": "cart1_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "cart1.png"
+            },
+            "x": 530,
+            "y": 557
+        },
+        {
+            "type": "Image",
+            "id": "068ed413-159c-4220-8697-551ace9ca529",
+            "label": "coal2_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "coal2.png"
+            },
+            "x": 785,
+            "y": 601
+        },
+        {
+            "type": "Image",
+            "id": "a380d464-cb62-4ef4-97d5-e23f27ee90e2",
+            "label": "red_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "red.png"
+            },
+            "x": 728,
+            "y": 567
+        },
+        {
+            "type": "Image",
+            "id": "cf4ae24c-460c-4427-ba26-d84d48b78148",
+            "label": "coal1_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "coal1.png"
+            },
+            "x": 692,
+            "y": 604
+        },
+        {
+            "type": "Image",
+            "id": "7c154289-0c2d-4ff6-a872-8fb6aef436b9",
+            "label": "water_png",
+            "components": [],
+            "texture": {
+                "key": "shack",
+                "frame": "water.png"
+            },
+            "x": 938,
+            "y": 577
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5b05df9c-2b13-4c2e-9199-6607fd85e390",
+            "label": "sort",
+            "objectIds": [
+                "a380d464-cb62-4ef4-97d5-e23f27ee90e2",
+                "068ed413-159c-4220-8697-551ace9ca529",
+                "cf4ae24c-460c-4427-ba26-d84d48b78148",
+                "61d239a3-90a1-4ee0-809d-cc078b8bd4d8",
+                "0477c2e9-b4f3-4f57-98f6-b4ef0ccbb545",
+                "4a2dd7d0-b2cf-4b14-ad56-88336f1bc24b"
+            ]
+        }
+    ]
+}

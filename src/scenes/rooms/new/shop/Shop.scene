@@ -1,0 +1,322 @@
+{
+    "id": "ff968ca9-1120-4c82-a657-7584e672fe61",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "editorPreload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/new/clothesShop/clothesShop-pack-new.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Shop",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "0f6fe0ab-5847-48c8-9f4d-ffc53a9b81b8",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "bg"
+            },
+            "x": 765,
+            "y": 468
+        },
+        {
+            "type": "Sprite",
+            "id": "246db7d8-dd44-452b-908a-a1d5ee23d5a6",
+            "label": "rail",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "rail"
+            },
+            "x": 363,
+            "y": 472
+        },
+        {
+            "type": "Sprite",
+            "id": "f1bc8b1a-ad5c-481e-b127-45102e638997",
+            "label": "speakers",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "speakers0001"
+            },
+            "x": 762,
+            "y": 224
+        },
+        {
+            "type": "Sprite",
+            "id": "518abe88-668d-4610-919e-64e852a89337",
+            "label": "chairBody",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "chairBody"
+            },
+            "x": 282,
+            "y": 640
+        },
+        {
+            "type": "Sprite",
+            "id": "b2290f7c-b762-45dd-9b80-8c904c3b0dfe",
+            "label": "chairArm",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "chairArm"
+            },
+            "x": 301,
+            "y": 686
+        },
+        {
+            "type": "Sprite",
+            "id": "fb69f112-3dbc-4f08-8a1a-dbeaec08534f",
+            "label": "chairBody_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "chairBody"
+            },
+            "x": 336,
+            "y": 767
+        },
+        {
+            "type": "Sprite",
+            "id": "51cefb19-f416-41c3-831f-00260702a087",
+            "label": "chairArm_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "chairArm"
+            },
+            "x": 355,
+            "y": 814
+        },
+        {
+            "type": "Sprite",
+            "id": "9b597891-27a5-40ba-b16f-c3e1fd53b72c",
+            "label": "deskChair",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "deskChair"
+            },
+            "x": 1370,
+            "y": 380
+        },
+        {
+            "type": "Container",
+            "id": "d2d7764b-16e7-4f12-9916-1fb5e00eec4e",
+            "label": "desk_container",
+            "components": [],
+            "x": 1337.3141623444612,
+            "y": 415.3218257529371,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "7057c1fb-d5d6-4adf-9afa-65d3c1d1b128",
+                    "label": "desk",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "clothesShop-new",
+                        "frame": "desk"
+                    },
+                    "x": 13.685837655538762,
+                    "y": 45.678174247062884
+                },
+                {
+                    "type": "Sprite",
+                    "id": "95dca7d3-d9f2-4c70-b3f7-f49a4ada0c8a",
+                    "label": "chest",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "clothesShop-new",
+                        "frame": "chest"
+                    },
+                    "x": 15.685837655538762,
+                    "y": 123.67817424706288
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f96aae91-1544-4534-ac8e-9c16c961f5d4",
+                    "label": "register",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "register",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothesShop-new",
+                        "frame": "register"
+                    },
+                    "x": -48.31416234446124,
+                    "y": -46.321825752937116
+                }
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "f4162a4e-747e-4772-bca8-396dccf68162",
+            "label": "spinner",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSpinnerOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onSpinnerOut()",
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "spinner0001"
+            },
+            "x": 1403,
+            "y": 436
+        },
+        {
+            "type": "Sprite",
+            "id": "4b189892-eca8-42d9-aae1-5c7d7fd33e67",
+            "label": "door",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1100,
+            "MoveTo.y": 350,
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "door"
+            },
+            "x": 1103,
+            "y": 248
+        },
+        {
+            "type": "Sprite",
+            "id": "59433cdd-ad0f-4718-b647-1f946cb10ee1",
+            "label": "circularStool",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "circularStool"
+            },
+            "x": 1105.0536438593308,
+            "y": 585.1647632822302,
+            "originX": 0.3927203373794677,
+            "originY": 0.1307307179502602
+        },
+        {
+            "type": "Sprite",
+            "id": "90e4f212-6161-4e69-89ae-d8585ff4f8f7",
+            "label": "squareStool",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "squareStool"
+            },
+            "x": 1032.9632984323307,
+            "y": 645.1017420341761,
+            "originX": 0.3475601335676138,
+            "originY": 0.1008847133406621
+        },
+        {
+            "type": "Sprite",
+            "id": "8d2f885f-611e-42a9-b908-4efe197cfe28",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "fg"
+            },
+            "x": 782,
+            "y": 980.5,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "d9d3f441-7715-4324-826e-6839691ce8d1",
+            "label": "catalog",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "style",
+            "Button.callback": "() => this.interface.loadExternal('ClothingCatalog')",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "style"
+            },
+            "x": 1340,
+            "y": 1055,
+            "originX": 0,
+            "originY": 2
+        },
+        {
+            "type": "Sprite",
+            "id": "e7339a83-166c-40e4-b067-e100e2c7a5dd",
+            "label": "unlock",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "clothesShop-new",
+                "frame": "unlock"
+            },
+            "x": 1415,
+            "y": 771,
+            "visible": false
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "74808b14-d54a-4e8f-8e73-510aada4154f",
+            "label": "sort",
+            "objectIds": [
+                "d9d3f441-7715-4324-826e-6839691ce8d1",
+                "8d2f885f-611e-42a9-b908-4efe197cfe28",
+                "90e4f212-6161-4e69-89ae-d8585ff4f8f7",
+                "59433cdd-ad0f-4718-b647-1f946cb10ee1",
+                "4b189892-eca8-42d9-aae1-5c7d7fd33e67",
+                "f4162a4e-747e-4772-bca8-396dccf68162",
+                "9b597891-27a5-40ba-b16f-c3e1fd53b72c",
+                "51cefb19-f416-41c3-831f-00260702a087",
+                "fb69f112-3dbc-4f08-8a1a-dbeaec08534f",
+                "b2290f7c-b762-45dd-9b80-8c904c3b0dfe",
+                "518abe88-668d-4610-919e-64e852a89337",
+                "f1bc8b1a-ad5c-481e-b127-45102e638997",
+                "246db7d8-dd44-452b-908a-a1d5ee23d5a6",
+                "d2d7764b-16e7-4f12-9916-1fb5e00eec4e"
+            ]
+        }
+    ]
+}
