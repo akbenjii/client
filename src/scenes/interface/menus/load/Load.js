@@ -33,13 +33,14 @@ export default class Load extends BaseScene {
     /** @returns {void} */
     _create() {
 
-        // og_serv_bg
-        this.add.image(760, 480, "og-serv-bg");
+        // bg
+        const bg = this.add.image(0, 0, "load", "bg");
+        bg.setOrigin(0, 0);
 
         // text
         const text = this.add.text(760, 520, "", {});
         text.setOrigin(0.5, 0);
-        text.setStyle({ "align": "center", "fixedWidth":800,"fixedHeight":40,"fontFamily": "Arial", "fontSize": "32px" });
+        text.setStyle({ "align": "center", "fixedWidth":800,"fixedHeight":40,"fontFamily": "Burbank Small", "fontSize": "32px" });
 
         // bar
         const bar = this.add.container(760, 480);
@@ -60,6 +61,9 @@ export default class Load extends BaseScene {
 
         // spinner
         const spinner = this.add.image(760, 400, "load", "spinner");
+
+        // bg (components)
+        new Interactive(bg);
 
         this.text = text;
         this.bar = bar;

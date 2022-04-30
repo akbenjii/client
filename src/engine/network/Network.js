@@ -88,7 +88,7 @@ export default class Network {
         this.disconnect()
 
         let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showError('Connection was lost.\nPlease click to learn more', 'Learn More', () => window.location.href = 'https://cpvanilla.net')
+        prompt.showError('Connection was lost.\nPlease click to reload', 'Reload', () => window.location.reload())
     }
 
     // Saved penguins

@@ -91,7 +91,7 @@
                     "text": "Username",
                     "fixedWidth": 360,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "fontStyle": "bold",
                     "color": "#000000ff"
@@ -149,7 +149,7 @@
                     "originY": 0.5,
                     "text": "add coins: 000000",
                     "fixedWidth": 250,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -177,7 +177,7 @@
                     "originY": 0.5,
                     "text": "add item by id",
                     "fixedWidth": 250,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -205,7 +205,7 @@
                     "originY": 0.5,
                     "text": "ban player until date",
                     "fixedWidth": 250,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -233,7 +233,7 @@
                     "originY": 0.5,
                     "text": "change username",
                     "fixedWidth": 250,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -421,7 +421,7 @@
                     "originY": 0.5,
                     "text": "banned 0 times",
                     "fixedWidth": 180,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 },
@@ -437,7 +437,7 @@
                     "originY": 0.5,
                     "text": "not currently banned",
                     "fixedWidth": 430,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 },
@@ -453,7 +453,7 @@
                     "originY": 0.5,
                     "text": "no join time recorded",
                     "fixedWidth": 430,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 },
@@ -469,7 +469,7 @@
                     "originY": 0.5,
                     "text": "status: pending",
                     "fixedWidth": 180,
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "20px",
                     "color": "#000000ff"
                 }

@@ -28,7 +28,7 @@ export default class Buddy extends BaseContainer {
         const text = scene.add.text(0, -236, "", {});
         text.setOrigin(0.5, 0.5);
         text.text = "Your Friends";
-        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":420,"fontFamily": "Arial Narrow", "fontSize": "30px" });
+        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":420,"fontFamily": "Burbank Small", "fontSize": "30px" });
         this.add(text);
 
         // x_button
@@ -119,7 +119,7 @@ export default class Buddy extends BaseContainer {
         // total
         const total = scene.add.text(-132, 279, "", {});
         total.setOrigin(0.5, 0.5);
-        total.setStyle({ "color": "#003366", "fixedWidth":100,"fixedHeight":64,"fontFamily": "Arial Narrow", "fontSize": "24px" });
+        total.setStyle({ "color": "#003366", "fixedWidth":100,"fixedHeight":64,"fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(total);
 
         // lists

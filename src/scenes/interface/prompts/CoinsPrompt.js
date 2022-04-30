@@ -33,7 +33,7 @@ export default class CoinsPrompt extends BaseContainer {
         const coins = scene.add.text(-30, -200, "", {});
         coins.setOrigin(0.5, 0.5);
         coins.text = "69 coins.";
-        coins.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":628,"fontFamily": "Arial", "fontSize": "26px", "shadow.offsetX":3,"shadow.offsetY":2,"shadow.color": "#012855ff" });
+        coins.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":628,"fontFamily": "Burbank Small", "fontSize": "26px", "shadow.offsetX":3,"shadow.offsetY":2,"shadow.color": "#012855ff" });
         coins.setPadding({"left":175});
         this.add(coins);
 

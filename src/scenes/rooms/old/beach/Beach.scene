@@ -19,10 +19,11 @@
         {
             "type": "Image",
             "id": "9a259df7-1373-4bf3-a753-d668e57e0d31",
-            "label": "bg_beach_2006",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "bg_beach_2006"
+                "key": "beach",
+                "frame": "bg"
             },
             "x": -25,
             "y": -20,
@@ -45,11 +46,10 @@
                 "key": "beach",
                 "frame": "lighthouse_door"
             },
-            "x": 388,
-            "y": 216,
+            "x": 383,
+            "y": 214,
             "originX": 0,
-            "originY": 0,
-            "visible": false
+            "originY": 0
         },
         {
             "type": "Image",
@@ -219,17 +219,6 @@
             "y": 612,
             "originX": 0.8863109,
             "originY": 0.94611727
-        },
-        {
-            "type": "Image",
-            "id": "f246c051-3b0e-4c48-9a65-981df9e3a6b7",
-            "label": "coming2006",
-            "components": [],
-            "texture": {
-                "key": "coming2006"
-            },
-            "x": 445,
-            "y": 296
         }
     ],
     "plainObjects": [],

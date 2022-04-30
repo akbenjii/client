@@ -7,7 +7,7 @@ export default class PenguinLoader extends SpriteLoader {
         super(world)
 
         this.nameStyle = {
-            fontFamily: 'Arial',
+            fontFamily: 'Burbank Small',
             fontSize: 24,
             color: '#000000',
             align: 'center',

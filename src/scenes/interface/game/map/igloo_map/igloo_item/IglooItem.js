@@ -27,7 +27,7 @@ export default class IglooItem extends BaseContainer {
         // username
         const username = scene.add.text(25, 0, "", {});
         username.setOrigin(0.5, 0.5);
-        username.setStyle({ "color": "#000", "fixedWidth":270,"fontFamily": "Arial", "fontSize": "24px" });
+        username.setStyle({ "color": "#000", "fixedWidth":270,"fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(username);
 
         // buddy_item (components)

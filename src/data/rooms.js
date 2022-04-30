@@ -246,6 +246,12 @@ if (localStorage.clientMode == "vanilla") {
             x: 1120,
             y: 640
         },
+		122: {
+            key: 'School',
+            scene: require('@rooms/new/school/School').default,
+            x: 1120,
+            y: 640
+        },
         130: {
             key: 'Shop',
             scene: require('@rooms/new/shop/Shop').default,
@@ -344,7 +350,7 @@ if (localStorage.clientMode == "vanilla") {
         },
         805: {
             key: 'Berg',
-            scene: require('@rooms/new/berg/Berg').default,
+            scene: require('@rooms/old/berg/Berg').default,
             x: 652,
             y: 448
         },

@@ -21,7 +21,7 @@ export default class Beach extends RoomScene {
         this.roomTriggers = {
             'village': () => this.triggerRoom(200, 450, 750),
             'dock': () => this.triggerRoom(800, 240, 420),
-            'lighthouse': null,
+            'lighthouse': () => this.unimplementedPrompt(),
             'ship': null
         }
         this.roomAnims = true
@@ -38,14 +38,13 @@ export default class Beach extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg_beach_2006
-        const bg_beach_2006 = this.add.image(-25, -20, "bg_beach_2006");
-        bg_beach_2006.setOrigin(0, 0);
+        // bg
+        const bg = this.add.image(-25, -20, "beach", "bg");
+        bg.setOrigin(0, 0);
 
         // lighthouse_door
-        const lighthouse_door = this.add.image(388, 216, "beach", "lighthouse_door");
+        const lighthouse_door = this.add.image(383, 214, "beach", "lighthouse_door");
         lighthouse_door.setOrigin(0, 0);
-        lighthouse_door.visible = false;
 
         // cage
         const cage = this.add.image(232, 352, "beach", "cage");
@@ -94,9 +93,6 @@ export default class Beach extends RoomScene {
         // bucket
         const bucket = this.add.sprite(1078, 612, "beach", "bucket/bucket0001");
         bucket.setOrigin(0.8863109, 0.94611727);
-
-        // coming2006
-        this.add.image(445, 296, "coming2006");
 
         // lists
         const sort = [bucket, chair_1_front, chair_1, chair_2_front, chair_2, net, fish, buoy, cage];

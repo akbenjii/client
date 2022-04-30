@@ -55,7 +55,7 @@
             "Button.spriteName": "boat",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
-            "ShowHint.text": "Ballistic Biscuit",
+            "ShowHint.text": "Hydro Hopper",
             "texture": {
                 "key": "dock",
                 "frame": "boat"

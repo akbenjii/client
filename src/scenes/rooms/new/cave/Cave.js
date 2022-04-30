@@ -11,7 +11,7 @@ export default class Cave extends RoomScene {
 
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
-            'boiler': () => this.unimplementedPrompt(),
+            'boiler': () => this.triggerRoom(804, 590, 560),
             'mine': () => this.triggerRoom(808, 360, 520),
             'plaza': () => this.triggerRoom(300, 700, 450)
         }

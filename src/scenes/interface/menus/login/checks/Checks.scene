@@ -32,7 +32,7 @@
                     "text": "Remember my password",
                     "lineSpacing": 25,
                     "align": "right",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 },
@@ -47,7 +47,7 @@
                     "text": "Remember me on this computer",
                     "lineSpacing": 25,
                     "align": "right",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 },

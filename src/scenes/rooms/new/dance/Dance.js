@@ -14,7 +14,7 @@ export default class Dance extends RoomScene {
 
         this.roomTriggers = {
             'arcade': () => this.triggerRoom(121, 1200, 400),
-            'boiler': () => this.unimplementedPrompt(),
+            'boiler': () => this.triggerRoom(804, 1040, 580),
             'contest': () => this.triggerGame("danceContest", 952),
             'soundstudio': () => this.unimplementedPrompt(),
             'town': () => this.triggerRoom(100, 1200, 400),
@@ -28,7 +28,7 @@ export default class Dance extends RoomScene {
     /** @returns {void} */
     editorPreload() {
 
-        this.load.pack("danceClub-pack", "assets/media/rooms/danceClub/danceClub-pack.json");
+        this.load.pack("danceClub-pack-new", "assets/media/rooms/new/danceClub/danceClub-pack-new.json");
     }
 
     /** @returns {void} */
@@ -164,7 +164,7 @@ export default class Dance extends RoomScene {
         boiler_btnSimpleButton.hoverOutCallback = () => this.onSpeakerOut();
         const boiler_btnMoveTo = new MoveTo(boiler_btn);
         boiler_btnMoveTo.x = 1000;
-        boiler_btnMoveTo.y = 400;
+        boiler_btnMoveTo.y = 360;
 
         this.danceFloor = danceFloor;
         this.door = door;

@@ -14,76 +14,149 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "242f31ff-3fbb-49c9-a014-565db63f6927",
-            "label": "bg_png",
+            "id": "96cc930f-376d-4def-b717-53a62834f7f0",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "startscreen",
-                "frame": "og-start-bg.png"
+                "key": "load",
+                "frame": "bg"
             },
-            "x": 761,
-            "y": 480
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "cb7a1fa9-413d-4a08-adcb-6008e5320614",
-            "label": "crebutton",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "texture": {
-                "key": "startscreen",
-                "frame": "create"
-            },
-            "x": 753,
-            "y": 755,
-            "visible": false
-        },
-        {
-            "type": "Rectangle",
-            "id": "3eff7755-786a-4fcf-bc84-492f434b6e3a",
-            "label": "rectangle",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onCreateHover()",
-            "SimpleButton.hoverOutCallback": "() => this.onCreateOut()",
-            "SimpleButton.callback": "() => this.onCreateClick()",
-            "x": 752,
-            "y": 753,
-            "scaleX": 4.711306974412683,
-            "scaleY": 1.088834620938614,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Image",
-            "id": "79b51416-6b24-4d30-b222-26239361fd94",
-            "label": "startscreen1_png",
+            "id": "533f6f60-9a4c-4425-b6bc-e454b4d5ef33",
+            "label": "startscreen",
             "components": [],
             "texture": {
-                "key": "startscreen",
-                "frame": "startscreen1.png"
+                "key": "start",
+                "frame": "startscreen"
             },
             "x": 760,
-            "y": 480
+            "y": 420
         },
         {
-            "type": "Sprite",
-            "id": "3679ba12-d4fc-474a-aa68-494e9d0c3c7a",
-            "label": "start",
+            "type": "Image",
+            "id": "17b698fc-769a-49c8-acd0-5b4f8e354a86",
+            "label": "bottom",
+            "components": [],
+            "texture": {
+                "key": "start",
+                "frame": "bottom"
+            },
+            "x": 760,
+            "y": 766
+        },
+        {
+            "type": "Text",
+            "id": "36df7a9b-3d60-457c-9af9-38bbdcbbe71f",
+            "label": "blog-text",
+            "components": [],
+            "x": 363,
+            "y": 885,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "CHECK OUT WHAT'S NEW",
+            "fixedWidth": 300,
+            "align": "center",
+            "fontFamily": "CCFaceFront",
+            "fontSize": "20px",
+            "fontStyle": "italic",
+            "stroke": "#ffffffff"
+        },
+        {
+            "type": "Image",
+            "id": "bddc35f3-b9b5-4828-9ab3-7a052dc44556",
+            "label": "blogButton",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => window.open('https://cpforever.net/blog', '_blank').focus();",
+            "texture": {
+                "key": "start",
+                "frame": "blog"
+            },
+            "x": 364,
+            "y": 812
+        },
+        {
+            "type": "Image",
+            "id": "d7fb6570-52e7-40af-97a3-0badc5bf7df4",
+            "label": "createButton",
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "start",
+            "Button.spriteName": "create-button",
+            "Button.callback": "() => this.onCreateClick()",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "start",
+                "frame": "create-button"
+            },
+            "x": 1101,
+            "y": 828,
+            "scaleX": 1.2,
+            "scaleY": 1.2
+        },
+        {
+            "type": "Image",
+            "id": "fe3e6e46-ff99-4094-8992-0b287cd9a319",
+            "label": "penguin_1",
+            "components": [],
+            "texture": {
+                "key": "start",
+                "frame": "penguin-1"
+            },
+            "x": 1296,
+            "y": 820,
+            "scaleX": 1.3,
+            "scaleY": 1.3
+        },
+        {
+            "type": "Sprite",
+            "id": "e857ac4c-0c2e-41e9-bc47-b7a5d595c755",
+            "label": "startButton",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "start-button",
             "Button.callback": "() => this.onStartClick()",
             "texture": {
-                "key": "startscreen",
-                "frame": "start"
+                "key": "start",
+                "frame": "start-button"
             },
             "x": 760,
-            "y": 553
+            "y": 826
+        },
+        {
+            "type": "Text",
+            "id": "ead6ff64-ea0f-4064-960b-b333009d2a5f",
+            "label": "startText",
+            "components": [],
+            "x": 760,
+            "y": 828,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "START",
+            "fixedWidth": 250,
+            "align": "center",
+            "fontFamily": "CCFaceFront",
+            "fontSize": "40px",
+            "fontStyle": "italic",
+            "stroke": "#000000ff",
+            "strokeThickness": 10
+        },
+        {
+            "type": "Image",
+            "id": "2dded06f-d699-4d10-b5be-b8d036c25a58",
+            "label": "logo",
+            "components": [],
+            "texture": {
+                "key": "cpf_logo"
+            },
+            "x": 760,
+            "y": 680
         }
     ],
     "plainObjects": [],

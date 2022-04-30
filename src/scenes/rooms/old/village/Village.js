@@ -11,7 +11,7 @@ export default class Village extends RoomScene {
         super("Village");
 
         /** @type {Phaser.GameObjects.Sprite} */
-        this.ski_lift;
+        this.skiLift;
         /** @type {Phaser.GameObjects.Sprite} */
         this.bouncingtubes;
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
@@ -69,8 +69,8 @@ export default class Village extends RoomScene {
         const phone_door = this.add.image(1370, 382, "village", "phone_door");
         phone_door.setOrigin(0.22797927461139897, 0.6206896551724138);
 
-        // ski-lift
-        const ski_lift = this.add.sprite(267, 132, "ski-lift", "sprite 390001.png");
+        // skiLift
+        const skiLift = this.add.sprite(267, 132, "ski-lift", "sprite 390001.png");
 
         // smoke
         const smoke = this.add.sprite(1110, 32, "village", "smoke0001");
@@ -115,7 +115,7 @@ export default class Village extends RoomScene {
         bouncingtubesSimpleButton.hoverOutCallback = () => this.onTubesOut();
         bouncingtubesSimpleButton.pixelPerfect = true;
 
-        this.ski_lift = ski_lift;
+        this.skiLift = skiLift;
         this.bouncingtubes = bouncingtubes;
         this.sort = sort;
 
@@ -130,6 +130,12 @@ export default class Village extends RoomScene {
 
     onTubesOut() {
         this.bouncingtubes.stopAfterRepeat()
+    }
+
+    create() {
+        super.create()
+		
+        this.skiLift.play("ski-lift")
     }
     /* END-USER-CODE */
 }

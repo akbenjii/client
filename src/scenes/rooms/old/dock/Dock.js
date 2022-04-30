@@ -105,7 +105,7 @@ export default class Dock extends RoomScene {
         boatButton.pixelPerfect = true;
         new MoveTo(boat);
         const boatShowHint = new ShowHint(boat);
-        boatShowHint.text = "Ballistic Biscuit";
+        boatShowHint.text = "Hydro Hopper";
 
         // rings (components)
         const ringsAnimation = new Animation(rings);

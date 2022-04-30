@@ -27,18 +27,6 @@
             "originY": 0
         },
         {
-            "type": "Image",
-            "id": "657d3ee8-8489-4283-b0f8-8366c3619bdc",
-            "label": "og_start_bg_png",
-            "components": [],
-            "texture": {
-                "key": "startscreen",
-                "frame": "og-start-bg.png"
-            },
-            "x": 760,
-            "y": 480
-        },
-        {
             "type": "Sprite",
             "id": "d16ac858-4ea0-46e8-93ab-a50f3a460376",
             "label": "backButton",
@@ -121,7 +109,7 @@
             "text": "Back",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -137,7 +125,7 @@
             "text": "Create a free account now",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "35px",
             "color": "#ffffffff"
         },
@@ -153,7 +141,7 @@
             "text": "Don't have a penguin?",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -169,27 +157,41 @@
             "text": "Forgot your password?",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
         {
-            "type": "TileSprite",
-            "id": "ce419f08-e154-4462-884c-074e8484abab",
-            "label": "loginbutton",
+            "type": "Sprite",
+            "id": "d54f4f4f-2569-4441-a370-6e29e4af5074",
+            "label": "loginButton",
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "loginbutton",
+            "Button.spriteName": "login-button",
             "Button.callback": "() => this.onLoginSubmit()",
             "texture": {
-                "key": "playercard_2",
-                "frame": "loginbutton"
+                "key": "login",
+                "frame": "login-button"
             },
             "x": 760,
+            "y": 483
+        },
+        {
+            "type": "Text",
+            "id": "ad2e73b7-d14d-456d-8cb0-7ea3cf7a150b",
+            "label": "loginText",
+            "components": [],
+            "x": 760,
             "y": 483,
-            "width": 318,
-            "height": 105
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Login",
+            "lineSpacing": 25,
+            "align": "right",
+            "fontFamily": "Burbank Small",
+            "fontSize": "38px",
+            "color": "#ffffffff"
         },
         {
             "type": "Text",
@@ -202,7 +204,7 @@
             "text": "Password:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#000000ff"
         },
@@ -217,7 +219,7 @@
             "text": "Penguin Name:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#000000ff"
         },

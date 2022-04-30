@@ -35,7 +35,7 @@ export default class IglooMusic extends BaseContainer {
         const title = scene.add.text(0, -297, "", {});
         title.setOrigin(0.5, 0);
         title.text = "Music List";
-        title.setStyle({ "align": "center", "color": "#000", "fixedWidth":600,"fontFamily": "Arial Narrow", "fontSize": "32px" });
+        title.setStyle({ "align": "center", "color": "#000", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "32px" });
         this.add(title);
 
         // musicItem

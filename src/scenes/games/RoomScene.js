@@ -225,7 +225,7 @@ export default class RoomScene extends BaseScene {
 	
 	unimplementedPrompt(){
 		let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showError('This feature is not yet implemented!\CP Vanilla is in beta, and is being actively\nupdated. Check back soon!',)
+        prompt.showError('This feature is not yet implemented!\CPForever is in beta, and is being actively\nupdated. Check back soon!',)
 	}
 
 }

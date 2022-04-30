@@ -1198,7 +1198,7 @@
                     "text": "YOUR COINS:",
                     "fixedWidth": 600,
                     "align": "right",
-                    "fontFamily": "CCComiccrazy",
+                    fontFamily: 'Burbank Small',
                     "fontSize": "32px",
                     "stroke": "#000",
                     "strokeThickness": 9

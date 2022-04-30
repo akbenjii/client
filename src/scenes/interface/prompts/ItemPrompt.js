@@ -3,6 +3,7 @@ import BaseContainer from '@scenes/base/BaseContainer'
 import { Interactive, NineSlice } from '@components/components'
 
 import DualButtons from './buttons/DualButtons'
+import ItemPromptLoader from '@engine/loaders/ItemPromptLoader'
 
 
 /* START OF COMPILED CODE */
@@ -12,6 +13,8 @@ export default class ItemPrompt extends BaseContainer {
     constructor(scene, x, y) {
         super(scene, x ?? 760, y ?? 480);
 
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.bg;
         /** @type {Phaser.GameObjects.Text} */
         this.text;
         /** @type {DualButtons} */
@@ -27,11 +30,11 @@ export default class ItemPrompt extends BaseContainer {
         block.fillAlpha = 0.2;
         this.add(block);
 
-        // popup_png
-        const popup_png = scene.add.image(0, -40, "items", "popup.png");
-        popup_png.scaleX = 0.44942410071195926;
-        popup_png.scaleY = 0.44942410071195926;
-        this.add(popup_png);
+        // bg
+        const bg = scene.add.rectangle(0, -40, 708, 584);
+        bg.isFilled = true;
+        bg.fillColor = 164045;
+        this.add(bg);
 
         // text
         const text = scene.add.text(0, 0, "", {});
@@ -47,6 +50,11 @@ export default class ItemPrompt extends BaseContainer {
         // block (components)
         new Interactive(block);
 
+        // bg (components)
+        const bgNineSlice = new NineSlice(bg);
+        bgNineSlice.corner = 50;
+
+        this.bg = bg;
         this.text = text;
         this.dual = dual;
 
@@ -54,42 +62,17 @@ export default class ItemPrompt extends BaseContainer {
 
         this.text.setWordWrapWidth(616, true)
 
-        this.item = null // Active item ID
-        this.icon = null // Icon sprite
+        this.item // Active item ID
+        this.icon // Icon sprite
         this.type
 
-        this.load = new Phaser.Loader.LoaderPlugin(this.scene)
-        this.prefix = 'icon/large'
-
-        this.load.on('filecomplete', this.onFileComplete, this)
+        this.loader = new ItemPromptLoader(scene, this)
 
         /* END-USER-CTR-CODE */
     }
 
 
     /* START-USER-CODE */
-
-    get url() {
-        switch (this.type) {
-            case 'clothing':
-                return '/assets/media/clothing/icon/large'
-            case 'furniture':
-                return '/assets/media/furniture/icon/@5x'
-            default:
-                break
-        }
-    }
-
-    get iconScale() {
-        switch (this.type) {
-            case 'clothing':
-                return 0.75
-            case 'furniture':
-                return 0.65
-            default:
-                return 1
-        }
-    }
 
     showItem(item) {
         if (this.inventoryIncludes(item)) {
@@ -104,7 +87,9 @@ export default class ItemPrompt extends BaseContainer {
     }
 
     show(item, crumb, type) {
-        if (!crumb) return
+        if (!crumb) {
+            return
+        }
 
         this.item = item
         this.type = type
@@ -112,7 +97,7 @@ export default class ItemPrompt extends BaseContainer {
         this.text.text = this.getText(crumb.name, crumb.cost)
         this.visible = true
 
-        this.loadIcon()
+        this.loader.loadIcon(item)
     }
 
     inventoryIncludes(item) {
@@ -126,35 +111,6 @@ export default class ItemPrompt extends BaseContainer {
         } else {
             return `Would you like to buy ${name} for ${cost} coins. You currently have ${this.world.client.coins} coins.`
         }
-    }
-
-    loadIcon() {
-        if (this.icon) this.icon.destroy()
-
-        let key = `${this.type}/${this.prefix}/${this.item}`
-
-        if (this.scene.textures.exists(key)) return this.onFileComplete(key)
-
-        this.load.image({
-            key: key,
-            url: `${this.url}/${this.item}.png`,
-        })
-
-        this.load.start()
-    }
-
-    onFileComplete(key) {
-        if (!this.visible) return
-        if (!this.scene.textures.exists(key)) return
-
-        let item = parseInt(key.split('/')[3])
-        if (item != this.item) return
-
-        let icon = this.scene.add.image(0, -182, key)
-        icon.scale = this.iconScale
-
-        this.add(icon)
-        this.icon = icon
     }
 
     callback() {

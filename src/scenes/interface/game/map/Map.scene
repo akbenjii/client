@@ -1,5 +1,5 @@
 {
-    "id": "dc649c7a-1824-4b21-8431-e3d1168a4506",
+    "id": "c629639f-0d6b-46d0-8a19-c4ddcf2e748a",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
@@ -224,7 +224,7 @@
                     "Button.spriteName": "igloo",
                     "Button.callback": "() => this.iglooMap.show()",
                     "Button.activeFrame": false,
-                    "ShowHint.text": "Igloo Map",
+                    "ShowHint.text": "Player Igloos",
                     "texture": {
                         "key": "map",
                         "frame": "igloo"

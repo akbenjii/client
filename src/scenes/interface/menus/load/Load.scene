@@ -17,14 +17,17 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "6d00e0b8-f422-4468-b17a-bcd6cd1ba996",
-            "label": "og_serv_bg",
-            "components": [],
+            "id": "a57c75e9-6bb6-4de4-99aa-f0fac23f918f",
+            "label": "bg",
+            "components": [
+                "Interactive"
+            ],
             "texture": {
-                "key": "og-serv-bg"
+                "key": "load",
+                "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Text",
@@ -38,7 +41,7 @@
             "fixedWidth": 800,
             "fixedHeight": 40,
             "align": "center",
-            "fontFamily": "Arial",
+            "fontFamily": "Burbank Small",
             "fontSize": "32px"
         },
         {

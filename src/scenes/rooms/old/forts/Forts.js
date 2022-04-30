@@ -70,6 +70,13 @@ export default class Forts extends RoomScene {
 
     /* START-USER-CODE */
 
+	create(){
+		super.create()
+		
+		this.redflag.play("redflag")
+		this.blueflag.play("blueflag")
+		
+	}
 
     /* END-USER-CODE */
 }

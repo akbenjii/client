@@ -127,7 +127,7 @@
         {
             "type": "Sprite",
             "id": "e473bd64-fe6e-42d1-8ad3-78346751baa5",
-            "label": "ski-lift",
+            "label": "skiLift",
             "scope": "CLASS",
             "components": [],
             "texture": {

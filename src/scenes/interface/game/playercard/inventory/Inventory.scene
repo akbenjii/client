@@ -31,20 +31,20 @@
                     "components": [],
                     "x": -56,
                     "y": -272,
-                    "scaleY": 0.9710566380541222,
                     "visible": false,
                     "list": [
                         {
                             "type": "Image",
-                            "id": "8e2ff713-cdb4-4431-8955-23c3e8e00cba",
-                            "label": "items_wrapper_png",
+                            "id": "f20da11a-78aa-4baf-ac70-37e03e3cd66c",
+                            "label": "inventory_bg",
+                            "scope": "CLASS",
                             "components": [],
                             "texture": {
-                                "key": "playercard",
-                                "frame": "items-wrapper.png"
+                                "key": "main",
+                                "frame": "inventory/bg"
                             },
                             "x": 56,
-                            "y": 262
+                            "y": 270
                         },
                         {
                             "type": "Image",
@@ -313,6 +313,40 @@
                                 "frame": "large-box"
                             },
                             "y": 43
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1bad3a32-320a-4ad1-a924-2575a398eb7d",
+                            "label": "inventory_sort_button",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "inventory/sort-button",
+                            "Button.callback": "() => this.parentContainer.inventorySort.showMenu()",
+                            "Button.activeFrame": false,
+                            "texture": {
+                                "key": "main",
+                                "frame": "inventory/sort-button"
+                            },
+                            "x": 131,
+                            "y": 553
+                        },
+                        {
+                            "type": "Text",
+                            "id": "4b101eea-f513-4768-87a2-2fc527df43e5",
+                            "label": "active_text",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 130,
+                            "y": 553,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "All Items",
+                            "fixedWidth": 268,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "color": "#000000ff"
                         }
                     ]
                 },
@@ -326,6 +360,22 @@
                     "list": [
                         {
                             "type": "Image",
+                            "id": "640c38ba-bfaf-49da-a89a-7f82f3210d62",
+                            "label": "tab_handle",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => { this.onTabClick() }",
+                            "texture": {
+                                "key": "main",
+                                "frame": "tab"
+                            },
+                            "x": 8,
+                            "y": 2,
+                            "angle": -90
+                        },
+                        {
+                            "type": "Image",
                             "id": "52c457ab-fc2c-4c34-8c62-d5a976701bdd",
                             "label": "arrow",
                             "scope": "CLASS",
@@ -335,20 +385,6 @@
                                 "frame": "tab-arrow"
                             },
                             "angle": -90
-                        },
-                        {
-                            "type": "Image",
-                            "id": "00c0c51a-e720-41d9-b858-a200acc47bb9",
-                            "label": "playercard_clothing_2",
-                            "components": [
-                                "SimpleButton"
-                            ],
-                            "SimpleButton.callback": "() => { this.onTabClick() }",
-                            "texture": {
-                                "key": "playercard-clothing-2"
-                            },
-                            "x": 8,
-                            "y": 2
                         }
                     ]
                 }

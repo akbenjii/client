@@ -15,15 +15,91 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "482a2f2e-3efc-41e8-88fe-42fbd001d05a",
-            "label": "og_start_bg_png",
+            "id": "2df8eaea-42ca-488c-b2db-030beeb2c591",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "startscreen",
-                "frame": "og-start-bg.png"
+                "key": "load",
+                "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Text",
+            "id": "cd539005-a4ee-493d-9699-024f0c3cf9ec",
+            "label": "text_2",
+            "components": [],
+            "x": 1095,
+            "y": 908,
+            "originY": 0.5,
+            "text": "Ultimate safe chat",
+            "fixedWidth": 200,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px"
+        },
+        {
+            "type": "Image",
+            "id": "301a85ab-d65d-42bf-a328-82daaa6b311c",
+            "label": "safe_small",
+            "components": [],
+            "texture": {
+                "key": "servers",
+                "frame": "safe_small"
+            },
+            "x": 1070,
+            "y": 908,
+            "originY": 0.5161290322580645
+        },
+        {
+            "type": "Text",
+            "id": "a2357d40-ba85-4524-8b48-0a0427ad447b",
+            "label": "text_1",
+            "components": [],
+            "x": 645,
+            "y": 908,
+            "originY": 0.5,
+            "text": "Amount of penguins online",
+            "fixedWidth": 300,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px"
+        },
+        {
+            "type": "Image",
+            "id": "55e6d159-ef2d-4438-8e91-c7de6e621fea",
+            "label": "bar_full_small",
+            "components": [],
+            "texture": {
+                "key": "servers",
+                "frame": "bar_full_small"
+            },
+            "x": 620,
+            "y": 908
+        },
+        {
+            "type": "Text",
+            "id": "6b9c5da6-539b-470a-b4c3-8fa5a68e143f",
+            "label": "text",
+            "components": [],
+            "x": 277,
+            "y": 908,
+            "originY": 0.5,
+            "text": "Buddies online",
+            "fixedWidth": 200,
+            "fontFamily": "Burbank Small",
+            "fontSize": "28px"
+        },
+        {
+            "type": "Image",
+            "id": "568eed78-10bd-4110-a4e1-6fe1c0a26263",
+            "label": "online_small",
+            "components": [],
+            "texture": {
+                "key": "servers",
+                "frame": "online_small"
+            },
+            "x": 252,
+            "y": 908
         },
         {
             "type": "Image",
@@ -40,59 +116,23 @@
             "visible": false
         },
         {
-            "type": "Image",
-            "id": "26ea3402-ea2d-4f1b-810c-e634e778977b",
-            "label": "uS0001_png",
-            "components": [],
-            "texture": {
-                "key": "servers-og",
-                "frame": "US0001.png"
-            },
-            "x": 130,
-            "y": 139,
-            "scaleX": 0.7936874912862225,
-            "scaleY": 0.7936874912862225
-        },
-        {
-            "type": "Image",
-            "id": "f494c0ab-24ee-468a-820b-936ab1caa898",
-            "label": "select_server_png",
-            "components": [],
-            "texture": {
-                "key": "servers-og",
-                "frame": "select server.png"
-            },
-            "x": 1090,
-            "y": 93
-        },
-        {
-            "type": "Image",
-            "id": "2d07e763-a5e2-4882-84fc-2fbee17a1259",
-            "label": "smileyfull",
-            "components": [],
-            "texture": {
-                "key": "servers-og",
-                "frame": "smileyfull"
-            },
-            "x": 79,
-            "y": 898,
-            "scaleX": 1.0915949077138825,
-            "scaleY": 1.0915949077138825
-        },
-        {
             "type": "Text",
-            "id": "dba1b15e-fe1b-41cf-b881-e0fbdb2fdb4b",
-            "label": "text",
+            "id": "fbbe9c79-7a12-47b5-884a-b75493fb5d17",
+            "label": "suggested",
             "components": [],
-            "x": 105,
-            "y": 889,
-            "alpha": 0.5,
-            "alphaTopLeft": 0.5,
-            "alphaTopRight": 0.5,
-            "alphaBottomLeft": 0.5,
-            "alphaBottomRight": 0.5,
-            "text": "Amount of penguins in each server",
-            "fontSize": "20px"
+            "x": 760,
+            "y": 85,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "YOUR SUGGESTED SERVERS",
+            "fixedWidth": 1200,
+            "align": "center",
+            fontFamily: 'Burbank Small',
+            "fontSize": "40px",
+            "fontStyle": "bold italic",
+            "stroke": "#003366",
+            "strokeThickness": 10,
+            "shadow.color": "#000000ff"
         }
     ],
     "plainObjects": [],

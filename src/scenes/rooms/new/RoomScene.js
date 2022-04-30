@@ -186,7 +186,7 @@ export default class RoomScene extends BaseScene {
     }
 
     triggerRoom(id, x, y) {
-        let room = this.crumbs.rooms[id]
+        let room = this.crumbs.scenes.rooms[id]
 
         this.world.client.sendJoinRoom(id, room.key, x, y)
     }
@@ -225,7 +225,7 @@ export default class RoomScene extends BaseScene {
 	
 	unimplementedPrompt(){
 		let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showError('This feature is not yet implemented!\nCPA is in beta, and is being actively\nupdated. Check back soon!',)
+        prompt.showError('This feature is not yet implemented!\nCPForever is in beta, and is being actively\nupdated. Check back soon!',)
 	}
 
 }

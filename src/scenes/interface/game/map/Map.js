@@ -188,7 +188,7 @@ export default class Map extends BaseContainer {
         iglooButton.callback = () => this.iglooMap.show();
         iglooButton.activeFrame = false;
         const iglooShowHint = new ShowHint(igloo);
-        iglooShowHint.text = "Igloo Map";
+        iglooShowHint.text = "Player Igloos";
 
         // plaza (components)
         const plazaButton = new Button(plaza);

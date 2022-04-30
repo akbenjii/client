@@ -47,7 +47,7 @@
                     "text": "Your Friends",
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "30px",
                     "color": "#000000"
                 },
@@ -354,7 +354,7 @@
                     "originY": 0.5,
                     "fixedWidth": 100,
                     "fixedHeight": 64,
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#003366"
                 }

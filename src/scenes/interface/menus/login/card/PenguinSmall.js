@@ -40,7 +40,7 @@ export default class PenguinSmall extends BaseContainer {
         // username
         const username = scene.add.text(90, 0, "", {});
         username.setOrigin(0.5, 0.5);
-        username.setStyle({ "align": "center", "fixedWidth":420,"fontFamily": "CCFaceFront", "fontSize": "48px", "fontStyle": "bold italic", "stroke": "#003366", "strokeThickness":10,"shadow.color": "#000000ff" });
+        username.setStyle({ "align": "center", "fixedWidth":420,fontFamily: 'Burbank Small', "fontSize": "48px", "fontStyle": "bold italic", "stroke": "#003366", "strokeThickness":10,"shadow.color": "#000000ff" });
         this.add(username);
 
         // bg (components)

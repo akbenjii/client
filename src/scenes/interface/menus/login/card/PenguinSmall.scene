@@ -79,7 +79,7 @@
                     "originY": 0.5,
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "CCFaceFront",
+                    fontFamily: 'Burbank Small',
                     "fontSize": "48px",
                     "fontStyle": "bold italic",
                     "stroke": "#003366",

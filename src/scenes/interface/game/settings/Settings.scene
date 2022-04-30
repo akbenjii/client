@@ -59,7 +59,7 @@
                     "originY": 0.5,
                     "text": "88/100 Buddies",
                     "fixedWidth": 300,
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "#000000ff"
                 },
@@ -101,7 +101,7 @@
                     "text": "Manage Account",
                     "fixedWidth": 562,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "40px",
                     "fontStyle": "bold",
                     "color": "#ffffffff"
@@ -117,7 +117,7 @@
                     "originY": 0.5,
                     "text": "Mute Music",
                     "fixedWidth": 348,
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "#000000ff"
                 },
@@ -132,7 +132,7 @@
                     "text": "Your penguin is 0 days old",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "#000000ff"
                 },
@@ -147,7 +147,7 @@
                     "text": "You're on Server Name",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "30px",
                     "color": "#000000ff"
                 },
@@ -162,7 +162,7 @@
                     "text": "SETTINGS",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "CCFaceFront",
+                    fontFamily: 'Burbank Small',
                     "fontSize": "40px",
                     "fontStyle": "bold italic",
                     "stroke": "#003366",

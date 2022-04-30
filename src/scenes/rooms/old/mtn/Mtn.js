@@ -1,6 +1,6 @@
 import RoomScene from '../RoomScene'
 
-import { Animation, Zone, MoveTo } from '@components/components'
+import { Animation, Zone, MoveTo, ShowHint, SimpleButton } from '@components/components'
 
 import MtnSeat from './MtnSeat'
 
@@ -49,7 +49,7 @@ export default class Mtn extends RoomScene {
     _create() {
 
         // bg_mtn_2005
-        const bg_mtn_2005 = this.add.image(-7, 3, "bg_mtn_2005");
+        const bg_mtn_2005 = this.add.image(-7, 3, "mtn", "bg");
         bg_mtn_2005.scaleX = 1.02;
         bg_mtn_2005.scaleY = 1.02;
         bg_mtn_2005.setOrigin(0, 0);
@@ -162,32 +162,24 @@ export default class Mtn extends RoomScene {
         // zone4
         const zone4 = this.add.rectangle(1127, 657, 180, 90);
         zone4.angle = -33;
-        zone4.visible = false;
         zone4.alpha = 0.5;
-        zone4.isFilled = true;
         zone4.fillColor = 65280;
 
         // zone3
         const zone3 = this.add.rectangle(899, 753, 180, 90);
-        zone3.visible = false;
         zone3.alpha = 0.5;
-        zone3.isFilled = true;
         zone3.fillColor = 65280;
 
         // zone2
         const zone2 = this.add.rectangle(633, 709, 200, 90);
         zone2.angle = 11;
-        zone2.visible = false;
         zone2.alpha = 0.5;
-        zone2.isFilled = true;
         zone2.fillColor = 65280;
 
         // zone1
         const zone1 = this.add.rectangle(334, 568, 230, 90);
         zone1.angle = 33;
-        zone1.visible = false;
         zone1.alpha = 0.5;
-        zone1.isFilled = true;
         zone1.fillColor = 65280;
 
         // lists
@@ -258,16 +250,36 @@ export default class Mtn extends RoomScene {
         mtnSeat1.offsetY = -70;
 
         // zone4 (components)
-        new MoveTo(zone4);
+        const zone4MoveTo = new MoveTo(zone4);
+        zone4MoveTo.x = 1130;
+        zone4MoveTo.y = 660;
+        const zone4ShowHint = new ShowHint(zone4);
+        zone4ShowHint.text = "Sled Racing";
+        new SimpleButton(zone4);
 
         // zone3 (components)
-        new MoveTo(zone3);
+        const zone3MoveTo = new MoveTo(zone3);
+        zone3MoveTo.x = 900;
+        zone3MoveTo.y = 750;
+        const zone3ShowHint = new ShowHint(zone3);
+        zone3ShowHint.text = "Sled Racing";
+        new SimpleButton(zone3);
 
         // zone2 (components)
-        new MoveTo(zone2);
+        const zone2MoveTo = new MoveTo(zone2);
+        zone2MoveTo.x = 630;
+        zone2MoveTo.y = 710;
+        const zone2ShowHint = new ShowHint(zone2);
+        zone2ShowHint.text = "Sled Racing";
+        new SimpleButton(zone2);
 
         // zone1 (components)
-        new MoveTo(zone1);
+        const zone1MoveTo = new MoveTo(zone1);
+        zone1MoveTo.x = 330;
+        zone1MoveTo.y = 570;
+        const zone1ShowHint = new ShowHint(zone1);
+        zone1ShowHint.text = "Sled Racing";
+        new SimpleButton(zone1);
 
         this.sort = sort;
         this.seats100 = seats100;

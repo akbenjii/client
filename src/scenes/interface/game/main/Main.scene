@@ -378,7 +378,7 @@
                     "originY": 0.5,
                     "fixedWidth": 380,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000"
                 }
@@ -460,7 +460,7 @@
                 "Button"
             ],
             "Button.spriteName": "news-button",
-            "Button.callback": "() => this.interface.loadExternal('Newspaper');",
+            "Button.callback": "() => window.open('https://cpforever.net/blog', '_blank').focus();",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
@@ -578,22 +578,6 @@
                     "y": 436,
                     "visible": false,
                     "nestedPrefabs": []
-                },
-                {
-                    "prefabId": "00690da0-e05f-48fd-8310-c43600a5a9da",
-                    "id": "3ee2e882-982c-4793-920f-2fe6588c2453",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "puffleCare",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 445,
-                    "y": 436,
-                    "visible": false,
-                    "nestedPrefabs": []
                 }
             ]
         },
@@ -646,22 +630,6 @@
             "nestedPrefabs": []
         },
         {
-            "prefabId": "dc649c7a-1824-4b21-8431-e3d1168a4506",
-            "id": "75179079-5eb1-4135-9798-34cea7db0f09",
-            "unlock": [
-                "visible",
-                "x",
-                "y"
-            ],
-            "label": "map",
-            "scope": "CLASS",
-            "components": [],
-            "x": 760,
-            "y": 460,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
             "prefabId": "032db1d9-1eac-4321-b4b3-ef359e514589",
             "id": "58867d94-848d-4c51-92e4-57a5a38c3871",
             "unlock": [
@@ -674,22 +642,6 @@
             "components": [],
             "x": 733,
             "y": 422,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
-            "prefabId": "f2e8b538-6469-4a45-b23d-beac8cbf03a0",
-            "id": "4904443b-abe1-429f-9557-f064db674790",
-            "unlock": [
-                "visible",
-                "x",
-                "y"
-            ],
-            "label": "settings",
-            "scope": "CLASS",
-            "components": [],
-            "x": 760,
-            "y": 480,
             "visible": false,
             "nestedPrefabs": []
         }
@@ -708,7 +660,6 @@
             "objectIds": [
                 "9770a528-0c5a-4720-a6db-eabd53c787e1",
                 "9acd4a58-cbf9-4751-b96a-2822f121af9c",
-                "75179079-5eb1-4135-9798-34cea7db0f09",
                 "9774c68e-f80f-4832-8d58-7c3ce94f98fd",
                 "4904443b-abe1-429f-9557-f064db674790",
                 "7b10953c-f288-40da-8b3f-44af0dea100d"

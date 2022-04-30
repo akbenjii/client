@@ -85,7 +85,7 @@
                     "text": "Music List",
                     "fixedWidth": 600,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "#000"
                 },

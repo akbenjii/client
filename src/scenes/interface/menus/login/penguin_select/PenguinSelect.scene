@@ -18,15 +18,15 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "1981f52c-072b-4883-bfb0-6f5e3796cec9",
-            "label": "og_start_bg_png",
+            "id": "7644d214-9644-4ebc-97c8-ce4ad34056c9",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "startscreen",
-                "frame": "og-start-bg.png"
+                "key": "load",
+                "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Rectangle",
@@ -95,7 +95,7 @@
             "fixedWidth": 400,
             "lineSpacing": 25,
             "align": "center",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#ffffffff"
         },

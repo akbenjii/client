@@ -41,20 +41,20 @@
                 },
                 {
                     "type": "Image",
-                    "id": "e81e8c7c-3309-47dc-a6f0-7ce903121beb",
-                    "label": "yesNo_1",
+                    "id": "b8c7eb26-4d81-40c9-ab5f-c0c8c3684cb3",
+                    "label": "yes_button",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "YesNo",
-                    "Button.callback": "() => this.onNoClick()",
+                    "Button.spriteName": "window-button-small",
+                    "Button.callback": "() => this.onYesClick()",
+                    "Button.activeFrame": false,
                     "texture": {
-                        "key": "message",
-                        "frame": "YesNo"
+                        "key": "prompt",
+                        "frame": "window-button-small"
                     },
-                    "x": 110,
-                    "scaleX": 0.3962191358024689,
-                    "scaleY": 0.3962191358024689
+                    "x": -110,
+                    "originY": 0.49523809523809526
                 },
                 {
                     "type": "Text",
@@ -70,23 +70,6 @@
                     "fontFamily": "Arial Narrow",
                     "fontSize": "40px",
                     "fontStyle": "bold"
-                },
-                {
-                    "type": "Image",
-                    "id": "c7db0fc7-551b-4a2b-8ee3-90d1d9f35cfd",
-                    "label": "yesNo",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "YesNo",
-                    "Button.callback": "() => this.onYesClick()",
-                    "texture": {
-                        "key": "message",
-                        "frame": "YesNo"
-                    },
-                    "x": -110,
-                    "scaleX": 0.3962191358024689,
-                    "scaleY": 0.3962191358024689
                 },
                 {
                     "type": "Text",

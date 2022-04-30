@@ -36,17 +36,19 @@
                     "height": 960
                 },
                 {
-                    "type": "Image",
-                    "id": "c6d00e3a-fc49-4915-812c-030f5023a077",
-                    "label": "popup_png",
-                    "components": [],
-                    "texture": {
-                        "key": "items",
-                        "frame": "popup.png"
-                    },
+                    "type": "Rectangle",
+                    "id": "ea7aecd9-8f35-461e-ac72-54a2f8a8e074",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
                     "y": -40,
-                    "scaleX": 0.44942410071195926,
-                    "scaleY": 0.44942410071195926
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 708,
+                    "height": 584
                 },
                 {
                     "type": "Text",

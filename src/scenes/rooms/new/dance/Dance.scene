@@ -7,7 +7,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
-            "testEnvironment/assets/media/rooms/danceClub/danceClub-pack.json"
+            "client/assets/media/rooms/new/danceClub/danceClub-pack-new.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Dance",
@@ -396,7 +396,7 @@
             "SimpleButton.hoverCallback": "() => this.onSpeakerOver()",
             "SimpleButton.hoverOutCallback": "() => this.onSpeakerOut()",
             "MoveTo.x": 1000,
-            "MoveTo.y": 400,
+            "MoveTo.y": 360,
             "x": 1030,
             "y": 306,
             "fillColor": "#00d9da",

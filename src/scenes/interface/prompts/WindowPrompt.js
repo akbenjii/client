@@ -13,6 +13,8 @@ export default class WindowPrompt extends BaseContainer {
     constructor(scene, x, y) {
         super(scene, x ?? 760, y ?? 480);
 
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.bg;
         /** @type {Phaser.GameObjects.Text} */
         this.text;
         /** @type {SingleButton} */
@@ -30,17 +32,17 @@ export default class WindowPrompt extends BaseContainer {
         block.fillAlpha = 0.2;
         this.add(block);
 
-        // popup_png
-        const popup_png = scene.add.image(0, -95, "message", "popup.png");
-        popup_png.scaleX = 0.4244055060296128;
-        popup_png.scaleY = 0.4244055060296128;
-        this.add(popup_png);
+        // bg
+        const bg = scene.add.rectangle(0, -95, 708, 324);
+        bg.isFilled = true;
+        bg.fillColor = 164045;
+        this.add(bg);
 
         // text
         const text = scene.add.text(0, -161, "", {});
         text.setOrigin(0.5, 0.5);
         text.text = "Message goes here\nMessage goes here";
-        text.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":628,"fontFamily": "Arial Narrow", "fontSize": "32px" });
+        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":628,"fontFamily": "Arial Narrow", "fontSize": "32px" });
         this.add(text);
 
         // single
@@ -55,6 +57,11 @@ export default class WindowPrompt extends BaseContainer {
         // block (components)
         new Interactive(block);
 
+        // bg (components)
+        const bgNineSlice = new NineSlice(bg);
+        bgNineSlice.corner = 50;
+
+        this.bg = bg;
         this.text = text;
         this.single = single;
         this.dual = dual;

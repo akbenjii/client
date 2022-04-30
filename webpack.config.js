@@ -7,7 +7,7 @@ let config = {
     mode: 'development',
     entry: './src/Game.js',
     output: {
-        filename: 'cpvanilla.js',
+        filename: 'cpforever.js',
         path: path.resolve(__dirname, 'assets/scripts/client')
     },
     optimization : {
@@ -71,7 +71,7 @@ let config = {
 
 module.exports = (env, argv) => {
     if (argv.mode === 'production') {
-        config.output.filename = 'cpvanilla.min.js'
+        config.output.filename = 'cpforever.min.js'
         config.optimization.minimize = true
 
         if (env.obfuscate === 'true') {

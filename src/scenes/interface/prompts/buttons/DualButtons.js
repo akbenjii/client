@@ -15,11 +15,10 @@ export default class DualButtons extends BaseContainer {
         no_button.setOrigin(0.5, 0.49523809523809526);
         this.add(no_button);
 
-        // yesNo_1
-        const yesNo_1 = scene.add.image(110, 0, "message", "YesNo");
-        yesNo_1.scaleX = 0.3962191358024689;
-        yesNo_1.scaleY = 0.3962191358024689;
-        this.add(yesNo_1);
+        // yes_button
+        const yes_button = scene.add.image(-110, 0, "prompt", "window-button-small");
+        yes_button.setOrigin(0.5, 0.49523809523809526);
+        this.add(yes_button);
 
         // text_2
         const text_2 = scene.add.text(110, 0, "", {});
@@ -27,12 +26,6 @@ export default class DualButtons extends BaseContainer {
         text_2.text = "No";
         text_2.setStyle({ "align": "center", "fixedWidth":150,"fontFamily": "Arial Narrow", "fontSize": "40px", "fontStyle": "bold" });
         this.add(text_2);
-
-        // yesNo
-        const yesNo = scene.add.image(-110, 0, "message", "YesNo");
-        yesNo.scaleX = 0.3962191358024689;
-        yesNo.scaleY = 0.3962191358024689;
-        this.add(yesNo);
 
         // text_1
         const text_1 = scene.add.text(-110, 0, "", {});
@@ -47,15 +40,11 @@ export default class DualButtons extends BaseContainer {
         no_buttonButton.callback = () => this.onNoClick();
         no_buttonButton.activeFrame = false;
 
-        // yesNo_1 (components)
-        const yesNo_1Button = new Button(yesNo_1);
-        yesNo_1Button.spriteName = "YesNo";
-        yesNo_1Button.callback = () => this.onNoClick();
-
-        // yesNo (components)
-        const yesNoButton = new Button(yesNo);
-        yesNoButton.spriteName = "YesNo";
-        yesNoButton.callback = () => this.onYesClick();
+        // yes_button (components)
+        const yes_buttonButton = new Button(yes_button);
+        yes_buttonButton.spriteName = "window-button-small";
+        yes_buttonButton.callback = () => this.onYesClick();
+        yes_buttonButton.activeFrame = false;
 
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
@@ -65,7 +54,6 @@ export default class DualButtons extends BaseContainer {
 
     onYesClick() {
         this.parentContainer.callback()
-        this.parentContainer.visible = false
     }
 
     onNoClick() {

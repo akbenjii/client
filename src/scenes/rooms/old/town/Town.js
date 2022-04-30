@@ -42,9 +42,9 @@ export default class Town extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg_2005
-        const bg_2005 = this.add.image(-11, 1, "bg_2005");
-        bg_2005.setOrigin(0, 0);
+        // bg
+        const bg = this.add.image(-11, 1, "town", "bg");
+        bg.setOrigin(0, 0);
 
         // fg
         const fg = this.add.image(-63, 976, "town", "fg");

@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "editorPreload",
         "preloadPackFiles": [
-            "yukon/assets/media/rooms/dock/dock-pack.json"
+            "client/assets/media/rooms/new/dock/dock-pack-new.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Dock",

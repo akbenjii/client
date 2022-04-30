@@ -28,8 +28,9 @@ export default class PenguinSelect extends BaseScene {
     /** @returns {void} */
     _create() {
 
-        // og_start_bg_png
-        this.add.image(760, 480, "startscreen", "og-start-bg.png");
+        // bg
+        const bg = this.add.image(0, 0, "load", "bg");
+        bg.setOrigin(0, 0);
 
         // largeBg
         const largeBg = this.add.rectangle(760, 430, 1368, 664);
@@ -50,7 +51,7 @@ export default class PenguinSelect extends BaseScene {
         const backText = this.add.text(760, 876, "", {});
         backText.setOrigin(0.5, 0.5);
         backText.text = "Login as a different penguin";
-        backText.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":400,"fontFamily": "Arial Narrow", "fontSize": "30px" });
+        backText.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":400,"fontFamily": "Burbank Small", "fontSize": "30px" });
         backText.setLineSpacing(25);
 
         // container

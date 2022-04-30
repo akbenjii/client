@@ -12,7 +12,7 @@ export default class Boiler extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.drawer1_png;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.smoke0001_png;
+        this.smoke;
 
 
         /* START-USER-CTR-CODE */
@@ -64,8 +64,8 @@ export default class Boiler extends RoomScene {
         // drawer1_png0001_1_1_1
         this.add.image(949, 399, "boiler", "drawer1.png0001");
 
-        // smoke0001_png
-        const smoke0001_png = this.add.sprite(250, 198, "boiler", "smoke0001.png");
+        // smoke
+        const smoke = this.add.sprite(250, 198, "boiler", "smoke0001.png");
 
         // boiler_door_png (components)
         const boiler_door_pngButton = new Button(boiler_door_png);
@@ -85,7 +85,7 @@ export default class Boiler extends RoomScene {
         drawer1_pngShowHint.text = "Coming Soon";
 
         this.drawer1_png = drawer1_png;
-        this.smoke0001_png = smoke0001_png;
+        this.smoke = smoke;
 
         this.events.emit("scene-awake");
     }
@@ -99,6 +99,12 @@ export default class Boiler extends RoomScene {
 
     onDrawerOut() {
         this.drawer1_png.play('drawerout')
+    }
+
+    create() {
+        super.create()
+
+        this.smoke.play("boiler-steam")
     }
 
     /* END-USER-CODE */

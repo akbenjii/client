@@ -75,7 +75,7 @@
                     "text": "All Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -107,7 +107,7 @@
                     "text": "Other Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -139,7 +139,7 @@
                     "text": "Colors",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -171,7 +171,7 @@
                     "text": "Feet Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -203,7 +203,7 @@
                     "text": "Hand Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -235,7 +235,7 @@
                     "text": "Body Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -267,7 +267,7 @@
                     "text": "Neck Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -299,7 +299,7 @@
                     "text": "Face Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -331,7 +331,7 @@
                     "text": "Head Items",
                     "fixedWidth": 268,
                     "align": "center",
-                    "fontFamily": "Arial",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
                 },
@@ -402,7 +402,7 @@
                             "text": "Pins/Flags",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Arial",
+                            "fontFamily": "Burbank Small",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         },
@@ -417,7 +417,7 @@
                             "text": "Awards",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Arial",
+                            "fontFamily": "Burbank Small",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         },
@@ -432,7 +432,7 @@
                             "text": "Backgrounds",
                             "fixedWidth": 268,
                             "align": "center",
-                            "fontFamily": "Arial",
+                            "fontFamily": "Burbank Small",
                             "fontSize": "24px",
                             "color": "#000000ff"
                         }

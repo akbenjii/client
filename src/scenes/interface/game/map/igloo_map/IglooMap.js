@@ -326,7 +326,7 @@ export default class IglooMap extends BaseContainer {
         // username
         const username = scene.add.text(180, 72, "", {});
         username.setOrigin(0.5, 0.5);
-        username.setStyle({ "color": "#000", "fixedWidth":270,"fontFamily": "Arial", "fontSize": "24px" });
+        username.setStyle({ "color": "#000", "fixedWidth":270,"fontFamily": "Burbank Small", "fontSize": "24px" });
         panel.add(username);
 
         // iglooItem_7

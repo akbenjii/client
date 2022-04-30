@@ -27,7 +27,7 @@ export default class MusicItem extends BaseContainer {
         // title
         const title = scene.add.text(1, 0, "", {});
         title.setOrigin(0.5, 0.5);
-        title.setStyle({ "fixedWidth":300,"fontFamily": "Arial", "fontSize": "24px" });
+        title.setStyle({ "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(title);
 
         // item (components)

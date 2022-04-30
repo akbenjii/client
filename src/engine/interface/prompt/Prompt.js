@@ -13,7 +13,7 @@ export default class Prompt extends BaseContainer {
         this.visible = false
 
         this.textStyle = {
-            fontFamily: 'Arial',
+            fontFamily: 'Burbank Small',
             fontSize: 32,
             color: '#000000',
             align: 'center',
@@ -22,7 +22,7 @@ export default class Prompt extends BaseContainer {
         }
 
         this.buttonTextStyle = {
-            fontFamily: 'Arial',
+            fontFamily: 'Burbank Small',
             fontSize: 40,
             color: '#ffffff',
             align: 'center'

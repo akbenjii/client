@@ -11,15 +11,13 @@ export default class Server extends BaseContainer {
         super(scene, x ?? 760, y ?? 480);
 
         /** @type {Phaser.GameObjects.Image} */
+        this.server;
+        /** @type {Phaser.GameObjects.Image} */
         this.buddy;
         /** @type {Phaser.GameObjects.Image} */
         this.safe;
-        /** @type {Phaser.GameObjects.Image} */
-        this.server;
         /** @type {Phaser.GameObjects.Text} */
         this.name;
-        /** @type {Phaser.GameObjects.Image} */
-        this.server_smiley_box_png;
         /** @type {Phaser.GameObjects.Image} */
         this.full;
         /** @type {Phaser.GameObjects.Image[]} */
@@ -30,54 +28,50 @@ export default class Server extends BaseContainer {
         this.safe = false;
 
 
+        // server
+        const server = scene.add.image(0, 0, "servers", "server");
+        this.add(server);
+
+        // bar_5
+        const bar_5 = scene.add.image(322, 1, "servers", "bar_empty");
+        bar_5.setOrigin(0.5161290322580645, 0.5098039215686274);
+        this.add(bar_5);
+
+        // bar_4
+        const bar_4 = scene.add.image(277, 1, "servers", "bar_empty");
+        bar_4.setOrigin(0.5161290322580645, 0.5098039215686274);
+        this.add(bar_4);
+
+        // bar_3
+        const bar_3 = scene.add.image(232, 1, "servers", "bar_empty");
+        bar_3.setOrigin(0.5161290322580645, 0.5098039215686274);
+        this.add(bar_3);
+
+        // bar_2
+        const bar_2 = scene.add.image(187, 1, "servers", "bar_empty");
+        bar_2.setOrigin(0.5161290322580645, 0.5098039215686274);
+        this.add(bar_2);
+
+        // bar_1
+        const bar_1 = scene.add.image(142, 1, "servers", "bar_full");
+        bar_1.setOrigin(0.5135135135135135, 0.5084745762711864);
+        this.add(bar_1);
+
         // buddy
         const buddy = scene.add.image(-338, 0, "servers", "offline");
         buddy.setOrigin(0.509090909090909, 0.509090909090909);
-        buddy.visible = false;
         this.add(buddy);
 
         // safe
         const safe = scene.add.image(79, 1, "servers", "safe");
         safe.setOrigin(0.509090909090909, 0.5094339622641509);
-        safe.visible = false;
         this.add(safe);
 
-        // server
-        const server = scene.add.image(-234, 0, "servers-og", "serveroutline");
-        server.scaleX = 1.1923458007194458;
-        this.add(server);
-
         // name
-        const name = scene.add.text(-270, 0, "", {});
+        const name = scene.add.text(-125, 0, "", {});
         name.setOrigin(0.5, 0.5);
-        name.setStyle({ "fixedWidth":350,"fontFamily": "Arial", "fontSize": "30px", "fontStyle": "bold" });
+        name.setStyle({ "fixedWidth":350,"fontFamily": "Burbank Small", "fontSize": "50px" });
         this.add(name);
-
-        // server_smiley_box_png
-        const server_smiley_box_png = scene.add.image(-106, 0, "servers-og", "server-smiley-box.png");
-        this.add(server_smiley_box_png);
-
-        // bar_1
-        const bar_1 = scene.add.image(-179, 0, "servers-og", "smileyfull");
-        bar_1.scaleX = 0.9;
-        bar_1.scaleY = 0.9;
-        this.add(bar_1);
-
-        // bar_2
-        const bar_2 = scene.add.image(-142, 0, "servers-og", "smiley-empty");
-        this.add(bar_2);
-
-        // bar_3
-        const bar_3 = scene.add.image(-105, 0, "servers-og", "smiley-empty");
-        this.add(bar_3);
-
-        // bar_4
-        const bar_4 = scene.add.image(-71, 0, "servers-og", "smiley-empty");
-        this.add(bar_4);
-
-        // bar_5
-        const bar_5 = scene.add.image(-37, 0, "servers-og", "smiley-empty");
-        this.add(bar_5);
 
         // full
         const full = scene.add.image(240, 0, "servers", "full");
@@ -86,17 +80,17 @@ export default class Server extends BaseContainer {
         this.add(full);
 
         // lists
-        const bars = [bar_1, bar_5, bar_4, bar_3, bar_2];
+        const bars = [bar_1, bar_2, bar_3, bar_4, bar_5];
 
         // server (components)
         const serverButton = new Button(server);
-        serverButton.spriteName = "serveroutline";
+        serverButton.spriteName = "server";
+        serverButton.activeFrame = false;
 
+        this.server = server;
         this.buddy = buddy;
         this.safe = safe;
-        this.server = server;
         this.name = name;
-        this.server_smiley_box_png = server_smiley_box_png;
         this.full = full;
         this.bars = bars;
 
@@ -112,7 +106,7 @@ export default class Server extends BaseContainer {
 
     setPopulation(population) {
         for (let [index, bar] of this.bars.entries()) {
-            let frame = (index + 1 <= population) ? 'smileyfull' : 'smiley-empty'
+            let frame = (index + 1 <= population) ? 'bar_full' : 'bar_empty'
 
             bar.setFrame(frame)
 

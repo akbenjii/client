@@ -13,6 +13,7 @@ import ChatLog from '../chatlog/ChatLog'
 import EmotesMenu from '../floating/emotes/EmotesMenu'
 import Waddle from '../waddle/Waddle'
 import Map from '../map/Map'
+import NewMap from '../map/NewMap'
 import Moderator from '../moderator/Moderator'
 import ModActions from '../modactions/ModActions'
 import PlayerCard from '../playercard/PlayerCard'
@@ -98,21 +99,15 @@ export default class Main extends BaseScene {
         this.buddy;
         /** @type {PlayerCard} */
         this.playerCard;
-        /** @type {PuffleCare} */
-        this.puffleCare;
         /** @type {ActionsMenu} */
         this.actionsMenu;
         /** @type {EmotesMenu} */
         this.emotesMenu;
         /** @type {Safe} */
         this.safe;
-        /** @type {Map} */
-        this.map;
         /** @type {Waddle} */
         this.waddle;
-        /** @type {Settings} */
-        this.settings;
-        /** @type {Array<PlayerCard|Buddy|Map|Settings|Moderator>} */
+        /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
         this.interfaceList;
@@ -199,7 +194,7 @@ export default class Main extends BaseScene {
         // popupText
         const popupText = this.add.text(-6, 0, "", {});
         popupText.setOrigin(0.5, 0.5);
-        popupText.setStyle({ "align": "center", "color": "#000000", "fixedWidth":380,"fontFamily": "Arial", "fontSize": "24px" });
+        popupText.setStyle({ "align": "center", "color": "#000000", "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "24px" });
         onlinePopup.add(popupText);
 
         // chatLog
@@ -255,11 +250,6 @@ export default class Main extends BaseScene {
         playerCard.visible = false;
         widgetLayer.add(playerCard);
 
-        // puffleCare
-        const puffleCare = new PuffleCare(this, 445, 436);
-        puffleCare.visible = false;
-        widgetLayer.add(puffleCare);
-
         // actionsMenu
         const actionsMenu = new ActionsMenu(this, 366, 872);
         this.add.existing(actionsMenu);
@@ -275,23 +265,13 @@ export default class Main extends BaseScene {
         this.add.existing(safe);
         safe.visible = false;
 
-        // map
-        const map = new Map(this, 760, 460);
-        this.add.existing(map);
-        map.visible = false;
-
         // waddle
         const waddle = new Waddle(this, 733, 422);
         this.add.existing(waddle);
         waddle.visible = false;
 
-        // settings
-        const settings = new Settings(this, 760, 480);
-        this.add.existing(settings);
-        settings.visible = false;
-
         // lists
-        const hideOnSleep = [playerCard, buddy, map, settings, moderator];
+        const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, chat_icon, chat_button, chat_box, map_button, news_button, mod_button, mod_m, chatLog, badge_member, emote_icon];
 
         // dock (components)
@@ -382,7 +362,7 @@ export default class Main extends BaseScene {
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
-        news_buttonButton.callback = () => this.interface.loadExternal('Newspaper');;
+        news_buttonButton.callback = () => window.open('https://cpforever.net/blog', '_blank').focus();;
         news_buttonButton.activeFrame = false;
 
         // mod_button (components)
@@ -426,13 +406,10 @@ export default class Main extends BaseScene {
         this.widgetLayer = widgetLayer;
         this.buddy = buddy;
         this.playerCard = playerCard;
-        this.puffleCare = puffleCare;
         this.actionsMenu = actionsMenu;
         this.emotesMenu = emotesMenu;
         this.safe = safe;
-        this.map = map;
         this.waddle = waddle;
-        this.settings = settings;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -443,7 +420,16 @@ export default class Main extends BaseScene {
     /* START-USER-CODE */
 
     create() {
+
         this._create()
+		
+		// map
+		var map;
+        if (localStorage.clientMode == 'vanilla') map = new NewMap(this, 760, 460)
+		if (localStorage.clientMode == 'legacy') map = new Map(this, 760, 460)
+        this.add.existing(map);
+        map.visible = false;
+        this.map = map;
 
         this.events.on('sleep', this.onSleep, this)
 
@@ -727,7 +713,7 @@ export default class Main extends BaseScene {
 
     unimplementedPrompt(){
         let prompt = this.game.scene.getScene('InterfaceController').prompt
-        prompt.showError('This feature is not yet implemented!\nCPVanilla is in development, and is being\nactively updated. Check back soon!',)
+        prompt.showError('This feature is not yet implemented!\nCPForever is in development, and is being\nactively updated. Check back soon!',)
     }
 
     hide(){

@@ -23,19 +23,33 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "82383b09-833f-49a3-ad55-dace33143d8a",
-                    "label": "prompt_button",
+                    "id": "13fd6c69-6da4-4aa3-b666-875ad02c51c5",
+                    "label": "button",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "prompt-button",
-                    "Button.callback": "() => this.parentContainer.visible = false",
+                    "Button.spriteName": "window-button",
+                    "Button.callback": "() => this.onClick()",
+                    "Button.activeFrame": false,
                     "texture": {
-                        "key": "message",
-                        "frame": "prompt-button"
+                        "key": "prompt",
+                        "frame": "window-button"
                     },
-                    "scaleX": 0.44247050877704736,
-                    "scaleY": 0.44247050877704736
+                    "originY": 0.5047619047619047
+                },
+                {
+                    "type": "Text",
+                    "id": "7cebd0b7-9243-4401-8fde-0d271502364a",
+                    "label": "text_1",
+                    "components": [],
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Ok",
+                    "fixedWidth": 280,
+                    "align": "center",
+                    "fontFamily": "Arial Narrow",
+                    "fontSize": "40px",
+                    "fontStyle": "bold"
                 }
             ]
         }

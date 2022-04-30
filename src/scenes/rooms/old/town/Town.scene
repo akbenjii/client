@@ -19,10 +19,11 @@
         {
             "type": "Image",
             "id": "afe103f5-0272-4e27-9cda-ef96bc562b52",
-            "label": "bg_2005",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "bg_2005"
+                "key": "town",
+                "frame": "bg"
             },
             "x": -11,
             "y": 1,

@@ -22,7 +22,8 @@
             "label": "bg_mtn_2005",
             "components": [],
             "texture": {
-                "key": "bg_mtn_2005"
+                "key": "mtn",
+                "frame": "bg"
             },
             "x": -7,
             "y": 3,
@@ -436,14 +437,17 @@
             "id": "ef9b8944-1657-4c42-93e1-635ccc3f68d1",
             "label": "zone4",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
+            "MoveTo.x": 1130,
+            "MoveTo.y": 660,
+            "ShowHint.text": "Sled Racing",
             "x": 1127,
             "y": 657,
             "angle": -33,
-            "visible": false,
             "alpha": 0.5,
-            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 180,
             "height": 90
@@ -453,13 +457,16 @@
             "id": "d637b1ba-4403-4f67-8df7-3e2a39c20182",
             "label": "zone3",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
+            "MoveTo.x": 900,
+            "MoveTo.y": 750,
+            "ShowHint.text": "Sled Racing",
             "x": 899,
             "y": 753,
-            "visible": false,
             "alpha": 0.5,
-            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 180,
             "height": 90
@@ -469,14 +476,17 @@
             "id": "fae5d3e7-f9ac-4eb1-af04-c7191621bab5",
             "label": "zone2",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
+            "MoveTo.x": 630,
+            "MoveTo.y": 710,
+            "ShowHint.text": "Sled Racing",
             "x": 633,
             "y": 709,
             "angle": 11,
-            "visible": false,
             "alpha": 0.5,
-            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 200,
             "height": 90
@@ -486,14 +496,17 @@
             "id": "e7292dc1-8f98-4fc6-b456-4d5a059a7447",
             "label": "zone1",
             "components": [
-                "MoveTo"
+                "MoveTo",
+                "ShowHint",
+                "SimpleButton"
             ],
+            "MoveTo.x": 330,
+            "MoveTo.y": 570,
+            "ShowHint.text": "Sled Racing",
             "x": 334,
             "y": 568,
             "angle": 33,
-            "visible": false,
             "alpha": 0.5,
-            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 230,
             "height": 90

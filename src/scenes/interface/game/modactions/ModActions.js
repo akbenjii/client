@@ -66,7 +66,7 @@ export default class ModActions extends BaseContainer {
         const username = scene.add.text(-156, -238, "", {});
         username.setOrigin(0.5, 0.5);
         username.text = "Username";
-        username.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":360,"fontFamily": "Arial", "fontSize": "32px", "fontStyle": "bold" });
+        username.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":360,"fontFamily": "Burbank Small", "fontSize": "32px", "fontStyle": "bold" });
         this.add(username);
 
         // badge
@@ -85,7 +85,7 @@ export default class ModActions extends BaseContainer {
         const coins = scene.add.text(246, -183, "", {});
         coins.setOrigin(0.5, 0.5);
         coins.text = "add coins: 000000";
-        coins.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Arial", "fontSize": "24px" });
+        coins.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(coins);
 
         // card_coin
@@ -96,7 +96,7 @@ export default class ModActions extends BaseContainer {
         const item_txt = scene.add.text(247, -82, "", {});
         item_txt.setOrigin(0.5, 0.5);
         item_txt.text = "add item by id";
-        item_txt.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Arial", "fontSize": "24px" });
+        item_txt.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(item_txt);
 
         // item_icon
@@ -107,7 +107,7 @@ export default class ModActions extends BaseContainer {
         const ban_txt = scene.add.text(247, 31, "", {});
         ban_txt.setOrigin(0.5, 0.5);
         ban_txt.text = "ban player until date";
-        ban_txt.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Arial", "fontSize": "24px" });
+        ban_txt.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(ban_txt);
 
         // ban_icon
@@ -118,7 +118,7 @@ export default class ModActions extends BaseContainer {
         const stamps_txt = scene.add.text(247, 138, "", {});
         stamps_txt.setOrigin(0.5, 0.5);
         stamps_txt.text = "change username";
-        stamps_txt.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Arial", "fontSize": "24px" });
+        stamps_txt.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(stamps_txt);
 
         // help_icon
@@ -197,28 +197,28 @@ export default class ModActions extends BaseContainer {
         const ban_count_txt = scene.add.text(150, 235, "", {});
         ban_count_txt.setOrigin(0.5, 0.5);
         ban_count_txt.text = "banned 0 times";
-        ban_count_txt.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Arial", "fontSize": "20px" });
+        ban_count_txt.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Burbank Small", "fontSize": "20px" });
         this.add(ban_count_txt);
 
         // banned_until_txt
         const banned_until_txt = scene.add.text(-157, 235, "", {});
         banned_until_txt.setOrigin(0.5, 0.5);
         banned_until_txt.text = "not currently banned";
-        banned_until_txt.setStyle({ "color": "#000000ff", "fixedWidth":430,"fontFamily": "Arial", "fontSize": "20px" });
+        banned_until_txt.setStyle({ "color": "#000000ff", "fixedWidth":430,"fontFamily": "Burbank Small", "fontSize": "20px" });
         this.add(banned_until_txt);
 
         // joindate_txt
         const joindate_txt = scene.add.text(-157, 265, "", {});
         joindate_txt.setOrigin(0.5, 0.5);
         joindate_txt.text = "no join time recorded";
-        joindate_txt.setStyle({ "color": "#000000ff", "fixedWidth":430,"fontFamily": "Arial", "fontSize": "20px" });
+        joindate_txt.setStyle({ "color": "#000000ff", "fixedWidth":430,"fontFamily": "Burbank Small", "fontSize": "20px" });
         this.add(joindate_txt);
 
         // username_status_txt
         const username_status_txt = scene.add.text(150, 265, "", {});
         username_status_txt.setOrigin(0.5, 0.5);
         username_status_txt.text = "status: pending";
-        username_status_txt.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Arial", "fontSize": "20px" });
+        username_status_txt.setStyle({ "color": "#000000ff", "fixedWidth":180,"fontFamily": "Burbank Small", "fontSize": "20px" });
         this.add(username_status_txt);
 
         // block (components)

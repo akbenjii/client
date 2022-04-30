@@ -36,17 +36,19 @@
                     "height": 960
                 },
                 {
-                    "type": "Image",
-                    "id": "024f43cc-8790-4fab-88e7-6c16d416170a",
-                    "label": "popup_png",
-                    "components": [],
-                    "texture": {
-                        "key": "message",
-                        "frame": "popup.png"
-                    },
+                    "type": "Rectangle",
+                    "id": "b1d2b3c9-97eb-44a3-b924-b6118c43f33e",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
                     "y": -95,
-                    "scaleX": 0.4244055060296128,
-                    "scaleY": 0.4244055060296128
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 708,
+                    "height": 324
                 },
                 {
                     "type": "Text",
@@ -62,7 +64,7 @@
                     "align": "center",
                     "fontFamily": "Arial Narrow",
                     "fontSize": "32px",
-                    "color": "#000000ff"
+                    "color": "#000000"
                 },
                 {
                     "prefabId": "48dfbf63-271b-4c3d-9fcc-6406eb7a0754",

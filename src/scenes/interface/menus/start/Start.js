@@ -10,10 +10,6 @@ export default class Start extends BaseScene {
     constructor() {
         super("Start");
 
-        /** @type {Phaser.GameObjects.Image} */
-        this.crebutton;
-
-
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
     }
@@ -21,48 +17,69 @@ export default class Start extends BaseScene {
     /** @returns {void} */
     create() {
 
-        // bg_png
-        this.add.image(761, 480, "startscreen", "og-start-bg.png");
+        // bg
+        const bg = this.add.image(0, 0, "load", "bg");
+        bg.setOrigin(0, 0);
 
-        // crebutton
-        const crebutton = this.add.image(753, 755, "startscreen", "create");
-        crebutton.visible = false;
+        // startscreen
+        this.add.image(760, 420, "start", "startscreen");
 
-        // rectangle
-        const rectangle = this.add.rectangle(752, 753, 128, 128);
-        rectangle.scaleX = 4.711306974412683;
-        rectangle.scaleY = 1.088834620938614;
+        // bottom
+        this.add.image(760, 766, "start", "bottom");
 
-        // startscreen1_png
-        this.add.image(760, 480, "startscreen", "startscreen1.png");
+        // blog-text
+        const blog_text = this.add.text(363, 885, "", {});
+        blog_text.setOrigin(0.5, 0.5);
+        blog_text.text = "CHECK OUT WHAT'S NEW";
+        blog_text.setStyle({ "align": "center", "fixedWidth":300,"fontFamily": "CCFaceFront", "fontSize": "20px", "fontStyle": "italic", "stroke": "#ffffffff" });
 
-        // start
-        const start = this.add.sprite(760, 553, "startscreen", "start");
+        // blogButton
+        const blogButton = this.add.image(364, 812, "start", "blog");
 
-        // crebutton (components)
-        new SimpleButton(crebutton);
+        // createButton
+        const createButton = this.add.image(1101, 828, "start", "create-button");
+        createButton.scaleX = 1.2;
+        createButton.scaleY = 1.2;
 
-        // rectangle (components)
-        const rectangleSimpleButton = new SimpleButton(rectangle);
-        rectangleSimpleButton.hoverCallback = () => this.onCreateHover();
-        rectangleSimpleButton.hoverOutCallback = () => this.onCreateOut();
-        rectangleSimpleButton.callback = () => this.onCreateClick();
+        // penguin_1
+        const penguin_1 = this.add.image(1296, 820, "start", "penguin-1");
+        penguin_1.scaleX = 1.3;
+        penguin_1.scaleY = 1.3;
 
-        // start (components)
-        const startButton = new Button(start);
-        startButton.spriteName = "start";
-        startButton.callback = () => this.onStartClick();
+        // startButton
+        const startButton = this.add.sprite(760, 826, "start", "start-button");
 
-        this.crebutton = crebutton;
+        // startText
+        const startText = this.add.text(760, 828, "", {});
+        startText.setOrigin(0.5, 0.5);
+        startText.text = "START";
+        startText.setStyle({ "align": "center", "fixedWidth":250,"fontFamily": "CCFaceFront", "fontSize": "40px", "fontStyle": "italic", "stroke": "#000000ff", "strokeThickness":10});
+
+        // logo
+        this.add.image(760, 680, "cpf_logo");
+
+        // blogButton (components)
+        const blogButtonSimpleButton = new SimpleButton(blogButton);
+        blogButtonSimpleButton.callback = () => window.open('https://cpforever.net/blog', '_blank').focus();;
+
+        // createButton (components)
+        const createButtonButton = new Button(createButton);
+        createButtonButton.spriteName = "create-button";
+        createButtonButton.callback = () => this.onCreateClick();
+        createButtonButton.activeFrame = false;
+
+        // startButton (components)
+        const startButtonButton = new Button(startButton);
+        startButtonButton.spriteName = "start-button";
+        startButtonButton.callback = () => this.onStartClick();
 
         this.events.emit("scene-awake");
     }
 
-
     /* START-USER-CODE */
 
     onBlogClick() {
-        window.location.href = 'https://cpvanilla.net'
+
     }
 
     onStartClick() {
@@ -73,14 +90,6 @@ export default class Start extends BaseScene {
 
     onCreateClick() {
         window.location.href = '/create'
-    }
-
-    onCreateHover() {
-        this.crebutton.visible = true
-    }
-
-    onCreateOut() {
-        this.crebutton.visible = false
     }
 
     /* END-USER-CODE */

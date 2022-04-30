@@ -1,8 +1,8 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import { Button, Interactive, SimpleButton } from '@components/components'
+import { Button, SimpleButton } from '@components/components'
 
-import InventoryLoader from '@engine/interface/inventory/InventoryLoader'
+import InventoryLoader from '@engine/loaders/InventoryLoader'
 
 
 /* START OF COMPILED CODE */
@@ -15,6 +15,10 @@ export default class Inventory extends BaseContainer {
         /** @type {Phaser.GameObjects.Container} */
         this.container;
         /** @type {Phaser.GameObjects.Image} */
+        this.inventory_bg;
+        /** @type {Phaser.GameObjects.Text} */
+        this.active_text;
+        /** @type {Phaser.GameObjects.Image} */
         this.arrow;
         /** @type {Phaser.GameObjects.Image[]} */
         this.slots;
@@ -22,13 +26,12 @@ export default class Inventory extends BaseContainer {
 
         // container
         const container = scene.add.container(-56, -272);
-        container.scaleY = 0.9710566380541222;
         container.visible = false;
         this.add(container);
 
-        // items_wrapper_png
-        const items_wrapper_png = scene.add.image(56, 262, "playercard", "items-wrapper.png");
-        container.add(items_wrapper_png);
+        // inventory_bg
+        const inventory_bg = scene.add.image(56, 270, "main", "inventory/bg");
+        container.add(inventory_bg);
 
         // inventory_scroll
         const inventory_scroll = scene.add.image(368, 245, "main", "inventory/scroll");
@@ -99,18 +102,30 @@ export default class Inventory extends BaseContainer {
         const slot_1 = scene.add.image(0, 43, "main", "large-box");
         container.add(slot_1);
 
+        // inventory_sort_button
+        const inventory_sort_button = scene.add.image(131, 553, "main", "inventory/sort-button");
+        container.add(inventory_sort_button);
+
+        // active_text
+        const active_text = scene.add.text(130, 553, "", {});
+        active_text.setOrigin(0.5, 0.5);
+        active_text.text = "All Items";
+        active_text.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":268,"fontFamily": "Burbank Small", "fontSize": "24px" });
+        container.add(active_text);
+
         // tab
         const tab = scene.add.container(369, -156);
         this.add(tab);
+
+        // tab_handle
+        const tab_handle = scene.add.image(8, 2, "main", "tab");
+        tab_handle.angle = -90;
+        tab.add(tab_handle);
 
         // arrow
         const arrow = scene.add.image(0, 0, "main", "tab-arrow");
         arrow.angle = -90;
         tab.add(arrow);
-
-        // playercard_clothing_2
-        const playercard_clothing_2 = scene.add.image(8, 2, "playercard-clothing-2");
-        tab.add(playercard_clothing_2);
 
         // lists
         const slots = [slot_1, slot_2, slot_3, slot_4, slot_5, slot_6, slot_7, slot_8, slot_9, slot_10, slot_11, slot_12];
@@ -197,11 +212,19 @@ export default class Inventory extends BaseContainer {
         slot_1Button.callback = () => { this.onSlotClick(0) };
         slot_1Button.activeFrame = false;
 
-        // playercard_clothing_2 (components)
-        const playercard_clothing_2SimpleButton = new SimpleButton(playercard_clothing_2);
-        playercard_clothing_2SimpleButton.callback = () => { this.onTabClick() };
+        // inventory_sort_button (components)
+        const inventory_sort_buttonButton = new Button(inventory_sort_button);
+        inventory_sort_buttonButton.spriteName = "inventory/sort-button";
+        inventory_sort_buttonButton.callback = () => this.parentContainer.inventorySort.showMenu();
+        inventory_sort_buttonButton.activeFrame = false;
+
+        // tab_handle (components)
+        const tab_handleSimpleButton = new SimpleButton(tab_handle);
+        tab_handleSimpleButton.callback = () => { this.onTabClick() };
 
         this.container = container;
+        this.inventory_bg = inventory_bg;
+        this.active_text = active_text;
         this.arrow = arrow;
         this.slots = slots;
 
@@ -211,7 +234,9 @@ export default class Inventory extends BaseContainer {
         this.pageSize = 12
         this.filter = null
 
-        this.inventoryLoader = new InventoryLoader(this, this.slots)
+        this.inventoryLoader = new InventoryLoader(scene, this)
+
+        this.inventory_bg.setInteractive({ pixelPerfect: true })
 
         /* END-USER-CTR-CODE */
     }
@@ -222,9 +247,12 @@ export default class Inventory extends BaseContainer {
     get inventory() {
         let inventory = this.world.client.inventory
 
-        let returned_inventory = inventory.head.concat(inventory.face, inventory.neck, inventory.body, inventory.hand, inventory.feet)
+        if (this.filter) {
+            // If filter is other then inventory results in concat of flags, photos and awards
+            inventory = (this.filter == 'other') ? inventory.flag.concat(inventory.photo, inventory.award) : inventory[this.filter]
+        }
 
-        return Object.values(returned_inventory).flat()
+        return Object.values(inventory).flat()
     }
 
     get maxPage() {

@@ -7,7 +7,7 @@ import rooms from './rooms'
 if (!localStorage.getItem('webgl')) { localStorage.setItem('webgl', 'true')}
 if (!localStorage.getItem('clientMode')) { localStorage.setItem('clientMode', 'legacy')}
 
-const cpvanilla = {
+const cpforever = {
     type: (localStorage.getItem('webgl') == 'true')
         ? Phaser.WEBGL
         : Phaser.CANVAS,
@@ -55,4 +55,4 @@ const cpvanilla = {
     }
 }
 
-export default cpvanilla
+export default cpforever

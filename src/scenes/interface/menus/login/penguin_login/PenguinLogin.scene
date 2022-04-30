@@ -15,15 +15,15 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "387ca4a5-35ec-44f4-a525-bff518548933",
-            "label": "og_start_bg_png",
+            "id": "385f13f1-fb27-4bc9-8d86-2ea5ae428468",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "startscreen",
-                "frame": "og-start-bg.png"
+                "key": "load",
+                "frame": "bg"
             },
-            "x": 760,
-            "y": 480
+            "originX": 0,
+            "originY": 0
         },
         {
             "prefabId": "ad6f3593-431e-4451-9b81-a589ddd72242",
@@ -111,7 +111,7 @@
             "fixedWidth": 400,
             "lineSpacing": 25,
             "align": "center",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -127,7 +127,7 @@
             "text": "Forget my penguin",
             "fixedWidth": 300,
             "lineSpacing": 25,
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
@@ -143,25 +143,42 @@
             "text": "Forgot your password?",
             "fixedWidth": 300,
             "lineSpacing": 25,
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#ffffffff"
         },
         {
-            "type": "Image",
-            "id": "003b67d8-a1d8-4593-b1cd-f6ef6a301d8c",
-            "label": "loginbutton",
+            "type": "Sprite",
+            "id": "7f8e9d38-c33c-4377-bdce-9aada9f2160e",
+            "label": "loginButton",
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "loginbutton",
+            "Button.spriteName": "login-button",
             "Button.callback": "() => this.onLoginSubmit()",
             "texture": {
-                "key": "playercard_2",
-                "frame": "loginbutton"
+                "key": "login",
+                "frame": "login-button"
             },
             "x": 935,
             "y": 487
+        },
+        {
+            "type": "Text",
+            "id": "a976a534-7052-4d70-b43d-afa82f6d59a5",
+            "label": "loginText",
+            "components": [],
+            "x": 935,
+            "y": 487,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Login",
+            "fixedWidth": 100,
+            "lineSpacing": 25,
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "38px",
+            "color": "#ffffffff"
         },
         {
             "type": "Text",
@@ -174,7 +191,7 @@
             "text": "Password:",
             "lineSpacing": 25,
             "align": "right",
-            "fontFamily": "Arial Narrow",
+            "fontFamily": "Burbank Small",
             "fontSize": "30px",
             "color": "#000000ff"
         },

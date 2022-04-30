@@ -32,8 +32,9 @@ export default class PenguinLogin extends BaseScene {
     /** @returns {void} */
     _create() {
 
-        // og_start_bg_png
-        this.add.image(760, 480, "startscreen", "og-start-bg.png");
+        // bg
+        const bg = this.add.image(0, 0, "load", "bg");
+        bg.setOrigin(0, 0);
 
         // container
         const container = new PenguinLarge(this, 475, 430);
@@ -52,31 +53,38 @@ export default class PenguinLogin extends BaseScene {
         const backText = this.add.text(760, 876, "", {});
         backText.setOrigin(0.5, 0.5);
         backText.text = "Login as a different penguin";
-        backText.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":400,"fontFamily": "Arial Narrow", "fontSize": "30px" });
+        backText.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":400,"fontFamily": "Burbank Small", "fontSize": "30px" });
         backText.setLineSpacing(25);
 
         // forgotText_1
         const forgotText_1 = this.add.text(929, 661, "", {});
         forgotText_1.setOrigin(0.5, 0.5);
         forgotText_1.text = "Forget my penguin";
-        forgotText_1.setStyle({ "color": "#ffffffff", "fixedWidth":300,"fontFamily": "Arial Narrow", "fontSize": "30px" });
+        forgotText_1.setStyle({ "color": "#ffffffff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "30px" });
         forgotText_1.setLineSpacing(25);
 
         // forgotText
         const forgotText = this.add.text(929, 604, "", {});
         forgotText.setOrigin(0.5, 0.5);
         forgotText.text = "Forgot your password?";
-        forgotText.setStyle({ "color": "#ffffffff", "fixedWidth":300,"fontFamily": "Arial Narrow", "fontSize": "30px" });
+        forgotText.setStyle({ "color": "#ffffffff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "30px" });
         forgotText.setLineSpacing(25);
 
-        // loginbutton
-        const loginbutton = this.add.image(935, 487, "playercard_2", "loginbutton");
+        // loginButton
+        const loginButton = this.add.sprite(935, 487, "login", "login-button");
+
+        // loginText
+        const loginText = this.add.text(935, 487, "", {});
+        loginText.setOrigin(0.5, 0.5);
+        loginText.text = "Login";
+        loginText.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":100,"fontFamily": "Burbank Small", "fontSize": "38px" });
+        loginText.setLineSpacing(25);
 
         // passwordText
         const passwordText = this.add.text(783, 194, "", {});
         passwordText.setOrigin(0, 0.5);
         passwordText.text = "Password:";
-        passwordText.setStyle({ "align": "right", "color": "#000000ff", "fontFamily": "Arial Narrow", "fontSize": "30px" });
+        passwordText.setStyle({ "align": "right", "color": "#000000ff", "fontFamily": "Burbank Small", "fontSize": "30px" });
         passwordText.setLineSpacing(25);
 
         // input
@@ -125,10 +133,10 @@ export default class PenguinLogin extends BaseScene {
         forgotButtonAnimation.repeat = 0;
         forgotButtonAnimation.onHover = true;
 
-        // loginbutton (components)
-        const loginbuttonButton = new Button(loginbutton);
-        loginbuttonButton.spriteName = "loginbutton";
-        loginbuttonButton.callback = () => this.onLoginSubmit();
+        // loginButton (components)
+        const loginButtonButton = new Button(loginButton);
+        loginButtonButton.spriteName = "login-button";
+        loginButtonButton.callback = () => this.onLoginSubmit();
 
         this.container = container;
         this.checks = checks;

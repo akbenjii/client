@@ -22,27 +22,31 @@
             "y": 480,
             "list": [
                 {
-                    "type": "Image",
-                    "id": "a48f413c-64b8-4a60-8f7c-88e691602662",
-                    "label": "playercard_png",
-                    "components": [],
-                    "texture": {
-                        "key": "playercard_2",
-                        "frame": "playercard.png"
-                    }
+                    "type": "Rectangle",
+                    "id": "846d9c56-c43a-4eb9-bc0f-a6f23fbc30db",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 488,
+                    "height": 664
                 },
                 {
                     "type": "Image",
-                    "id": "bcb0648b-6f68-4ad7-94fa-806456a523b3",
+                    "id": "d897b6cc-195c-4eb5-a6dd-ec48f8d723d6",
                     "label": "penguinLarge",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "playercardgradient",
+                    "Button.spriteName": "player_large",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "playercard_2",
-                        "frame": "playercardgradient"
+                        "key": "login",
+                        "frame": "player_large"
                     }
                 },
                 {
@@ -72,7 +76,7 @@
                     "originY": 0.5,
                     "fixedWidth": 420,
                     "align": "center",
-                    "fontFamily": "CCFaceFront",
+                    fontFamily: 'Burbank Small',
                     "fontSize": "44px",
                     "fontStyle": "bold italic",
                     "stroke": "#003366",
