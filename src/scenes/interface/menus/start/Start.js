@@ -31,7 +31,7 @@ export default class Start extends BaseScene {
         const blog_text = this.add.text(363, 885, "", {});
         blog_text.setOrigin(0.5, 0.5);
         blog_text.text = "CHECK OUT WHAT'S NEW";
-        blog_text.setStyle({ "align": "center", "fixedWidth":300,"fontFamily": "CCFaceFront", "fontSize": "20px", "fontStyle": "italic", "stroke": "#ffffffff" });
+        blog_text.setStyle({ "align": "center", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "italic", "stroke": "#ffffffff" });
 
         // blogButton
         const blogButton = this.add.image(364, 812, "start", "blog");

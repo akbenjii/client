@@ -1,6 +1,6 @@
 export default class TextInput extends Phaser.GameObjects.DOMElement {
 
-    constructor(scene, x, y, type, style, callback = () => {}, maxLength = 100, preventTab = true, id) {
+    constructor(scene, x, y, type, style, callback = () => {}, maxLength = 100, preventTab = true, id, allowSpecialCharacters = false, allowNumbers = false) {
         let element = document.createElement('input')
 
         // Combine default styles with passed in styles
@@ -18,6 +18,8 @@ export default class TextInput extends Phaser.GameObjects.DOMElement {
         element.spellcheck = false
         element.maxLength = maxLength
 		element.id = id
+        element.allowSpecialCharacters = allowSpecialCharacters
+        element.allowNumbers = allowNumbers
 
 
         super(scene, x, y, element, style)
@@ -87,12 +89,16 @@ export default class TextInput extends Phaser.GameObjects.DOMElement {
 
         this.on('destroy', () => this.onDestroy())
 		
-		if (element.type == 'text'){
-		
+		if (element.type == 'text' && !element.allowSpecialCharacters) {
 			this.setInputFilter(element, function(value) {
             	return /^[A-Z _!?#]*$/i.test(value);
         	});
 		}
+        else if (element.allowNumbers) {
+            this.setInputFilter(element, function(value) {
+                return /^[A-Z0-9 ]*$/i.test(value);
+            });
+        }
 		
     }
 

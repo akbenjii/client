@@ -43,7 +43,7 @@ export default class Settings extends BaseContainer {
         this.add(button);
 
         // account
-        const account = scene.add.text(21, 66, "", {});
+        const account = scene.add.text(0, 66, "", {});
         account.setOrigin(0.5, 0.5);
         account.text = "Manage Account";
         account.setStyle({ "align": "center", "color": "#ffffffff", "fixedWidth":562,"fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold" });
@@ -74,7 +74,7 @@ export default class Settings extends BaseContainer {
         const settings = scene.add.text(0, -238, "", {});
         settings.setOrigin(0.5, 0.5);
         settings.text = "SETTINGS";
-        settings.setStyle({ "align": "center", "fixedWidth":600,fontFamily: 'Burbank Small', "fontSize": "40px", "fontStyle": "bold italic", "stroke": "#003366", "strokeThickness":10});
+        settings.setStyle({ "align": "center", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold italic", "stroke": "#003366", "strokeThickness":10});
         this.add(settings);
 
         // checkbox
@@ -100,6 +100,7 @@ export default class Settings extends BaseContainer {
         // button (components)
         const buttonButton = new Button(button);
         buttonButton.spriteName = "help-button";
+        buttonButton.callback = () => this.onManagePress();
 
         // checkbox (components)
         const checkboxSimpleButton = new SimpleButton(checkbox);
@@ -155,6 +156,11 @@ export default class Settings extends BaseContainer {
 
         checkbox.checked = !checkbox.checked
         checkbox.setTexture('login', texture)
+    }
+
+    onManagePress() {
+        this.interface.main.manage.show()
+        this.visible = false
     }
 
     /* END-USER-CODE */

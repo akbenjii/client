@@ -85,14 +85,14 @@ export default class Login extends BaseScene {
         loginText.setLineSpacing(25);
 
         // passwordText
-        const passwordText = this.add.text(503, 258, "", {});
+        const passwordText = this.add.text(477.5, 258, "", {});
         passwordText.setOrigin(0, 0.5);
         passwordText.text = "Password:";
         passwordText.setStyle({ "align": "right", "color": "#000000ff", "fontFamily": "Burbank Small", "fontSize": "30px" });
         passwordText.setLineSpacing(25);
 
         // usernameText
-        const usernameText = this.add.text(448, 200, "", {});
+        const usernameText = this.add.text(415, 200, "", {});
         usernameText.setOrigin(0, 0.5);
         usernameText.text = "Penguin Name:";
         usernameText.setStyle({ "align": "right", "color": "#000000ff", "fontFamily": "Burbank Small", "fontSize": "30px" });
@@ -181,7 +181,7 @@ export default class Login extends BaseScene {
 
         let passwordStyle = {
             ...style,
-            fontFamily: 'Asterisk'
+            fontFamily: 'Burbank Small'
         }
 
         this.usernameInput = new TextInput(this, 815, 200, 'text', style, () => this.onLoginSubmit(), 12, false)

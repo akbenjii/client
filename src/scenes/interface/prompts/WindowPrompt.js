@@ -42,7 +42,7 @@ export default class WindowPrompt extends BaseContainer {
         const text = scene.add.text(0, -161, "", {});
         text.setOrigin(0.5, 0.5);
         text.text = "Message goes here\nMessage goes here";
-        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":628,"fontFamily": "Burbank Small", "fontSize": "32px" });
+        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":650,"fontFamily": "Burbank Small", "fontSize": "30px" });
         this.add(text);
 
         // single

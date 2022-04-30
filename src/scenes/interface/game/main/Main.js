@@ -20,6 +20,7 @@ import PlayerCard from '../playercard/PlayerCard'
 import PuffleCare from '../puffle/PuffleCare'
 import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
+import Manage from '../manage/Manage'
 
 
 /* START OF COMPILED CODE */
@@ -89,6 +90,10 @@ export default class Main extends BaseScene {
         this.mod_button;
         /** @type {Phaser.GameObjects.Sprite} */
         this.mod_m;
+        /** @type {Settings} */
+        this.settings;
+        /** @type {Manage} */
+        this.manage;
         /** @type {ModActions} */
         this.modActions;
         /** @type {Moderator} */
@@ -99,6 +104,8 @@ export default class Main extends BaseScene {
         this.buddy;
         /** @type {PlayerCard} */
         this.playerCard;
+        /** @type {PuffleCare} */
+        this.puffleCare;
         /** @type {ActionsMenu} */
         this.actionsMenu;
         /** @type {EmotesMenu} */
@@ -216,8 +223,7 @@ export default class Main extends BaseScene {
         const news_button = this.add.image(70, 61, "main", "news-button");
 
         // mod_btn
-        const mod_btn = this.add.container(1331, 69);
-        mod_btn.visible = false;
+        const mod_btn = this.add.container(174, 62);
 
         // mod_button
         const mod_button = this.add.image(0, 0, "main", "mod/button");
@@ -226,6 +232,16 @@ export default class Main extends BaseScene {
         // mod_m
         const mod_m = this.add.sprite(0, 0, "main", "mod/m");
         mod_btn.add(mod_m);
+
+        // settings
+        const settings = new Settings(this, 760, 480);
+        this.add.existing(settings);
+        settings.visible = false;
+
+        // manage
+        const manage = new Manage(this, 760, 480);
+        this.add.existing(manage);
+        manage.visible = false;
 
         // modActions
         const modActions = new ModActions(this, 760, 460);
@@ -249,6 +265,11 @@ export default class Main extends BaseScene {
         const playerCard = new PlayerCard(this, 446, 436);
         playerCard.visible = false;
         widgetLayer.add(playerCard);
+
+        // puffleCare
+        const puffleCare = new PuffleCare(this, 551, 480);
+        puffleCare.visible = false;
+        widgetLayer.add(puffleCare);
 
         // actionsMenu
         const actionsMenu = new ActionsMenu(this, 366, 872);
@@ -401,11 +422,14 @@ export default class Main extends BaseScene {
         this.mod_btn = mod_btn;
         this.mod_button = mod_button;
         this.mod_m = mod_m;
+        this.settings = settings;
+        this.manage = manage;
         this.modActions = modActions;
         this.moderator = moderator;
         this.widgetLayer = widgetLayer;
         this.buddy = buddy;
         this.playerCard = playerCard;
+        this.puffleCare = puffleCare;
         this.actionsMenu = actionsMenu;
         this.emotesMenu = emotesMenu;
         this.safe = safe;
@@ -422,11 +446,9 @@ export default class Main extends BaseScene {
     create() {
 
         this._create()
-		
-		// map
-		var map;
-        if (localStorage.clientMode == 'vanilla') map = new NewMap(this, 760, 460)
-		if (localStorage.clientMode == 'legacy') map = new Map(this, 760, 460)
+
+        // map
+        const map = (localStorage.clientMode == 'vanilla') ? new NewMap(this, 760, 460) : new Map(this, 760, 460)
         this.add.existing(map);
         map.visible = false;
         this.map = map;
@@ -497,8 +519,22 @@ export default class Main extends BaseScene {
         this.banplayer = new TextInput(this, 974, 536, 'datetime-local', actionsstyle, () => this.modActions.handleBanPlayer(), 48, true, 'banplayer')
         this.changeusername = new TextInput(this, 974, 639, 'text', actionsstyle, () => this.modActions.handleChangeUsername(), 48, true, 'changeusername')
 
+        let managestyle = {
+            width: 250,
+            height: 37.5,
+            fontFamily: 'Burbank Small',
+            fontSize: 25,
+            color: '#fff',
+            visibility: 'hidden'
+        }
 
-        if (this.world.client.penguin.rank > 1) {
+        this.newuser = new TextInput(this, 600, 352, 'text', managestyle, null, 48, true, 'newuser', false, true)
+        this.newuserconfirm = new TextInput(this, 600, 459, 'text', managestyle, null, 48, true, 'newuserconfirm', false, true)
+        this.newpass = new TextInput(this, 920, 352, 'text', managestyle, null, 48, true, 'newpass', true)
+        this.newpassconfirm = new TextInput(this, 920, 459, 'text', managestyle, null, 48, true, 'newpassconfirm', true)
+
+
+        if (this.world.client.penguin.rank > 3) {
             this.add.existing(this.addcoins)
             this.add.existing(this.additems)
             this.add.existing(this.banplayer)
@@ -506,6 +542,11 @@ export default class Main extends BaseScene {
 
             this.add.existing(this.search)
         }
+
+        this.add.existing(this.newuser)
+        this.add.existing(this.newuserconfirm)
+        this.add.existing(this.newpass)
+        this.add.existing(this.newpassconfirm)
 
         // Input
 

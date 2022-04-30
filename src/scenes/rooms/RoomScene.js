@@ -143,9 +143,9 @@ export default class RoomScene extends BaseScene {
 
     get roomPhysics() {
         let key = this.key.toLowerCase()
+		let newphysics = this.cache.json.get(`${key}-physics-new`)
 
-        if (localStorage.clientMode == 'legacy') return this.cache.json.get(`${key}-physics`)
-		if (localStorage.clientMode == 'vanilla') return this.cache.json.get(`${key}-physics-new`)
+        return (newphysics) ? newphysics : this.cache.json.get(`${key}-physics`)
     }
 
 

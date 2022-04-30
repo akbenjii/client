@@ -1,5 +1,5 @@
 {
-    "id": "f2e8b538-6469-4a45-b23d-beac8cbf03a0",
+    "id": "b9280638-332a-4861-be5f-9128b9fe72d3",
     "sceneType": "PREFAB",
     "settings": {
         "compilerInsertSpaces": true,
@@ -83,6 +83,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "help-button",
+                    "Button.callback": "() => this.onManagePress()",
                     "texture": {
                         "key": "main",
                         "frame": "help-button"
@@ -94,7 +95,6 @@
                     "id": "d8459f02-8216-49b8-9a56-e9a7ff51b303",
                     "label": "account",
                     "components": [],
-                    "x": 21,
                     "y": 66,
                     "originX": 0.5,
                     "originY": 0.5,
@@ -162,7 +162,7 @@
                     "text": "SETTINGS",
                     "fixedWidth": 600,
                     "align": "center",
-                    fontFamily: 'Burbank Small',
+                    "fontFamily": "Burbank Small",
                     "fontSize": "40px",
                     "fontStyle": "bold italic",
                     "stroke": "#003366",

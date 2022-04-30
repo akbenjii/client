@@ -67,7 +67,7 @@
                     "text": "No",
                     "fixedWidth": 150,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "40px",
                     "fontStyle": "bold"
                 },
@@ -82,7 +82,7 @@
                     "text": "Yes",
                     "fixedWidth": 150,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "40px",
                     "fontStyle": "bold"
                 }

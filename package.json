@@ -1,23 +1,23 @@
 {
   "name": "cpforever",
-  "version": "1.0.7-beta",
+  "version": "0.1.0-beta",
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
-    "dev": "webpack serve",
+    "devclient": "webpack serve",
     "editor": "phasereditor2d-launcher -project . -max-number-files 100000",
     "build": "webpack --mode production --env obfuscate=true",
     "build-crumbs": "node ./utils/build-crumbs.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dirkdog/cpv.git"
+    "url": "git+https://github.com/cpforever/client.git"
   },
-  "author": "wizguin",
+  "author": "sahmyool, DirkD",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dirkdog/cpv/issues"
+    "url": "https://github.com/cpforever/client/issues"
   },
-  "homepage": "https://cpvanilla.net",
+  "homepage": "https://cpforever.net",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",

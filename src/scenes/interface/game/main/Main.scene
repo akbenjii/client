@@ -475,9 +475,8 @@
             "label": "mod_btn",
             "scope": "CLASS",
             "components": [],
-            "x": 1331,
-            "y": 69,
-            "visible": false,
+            "x": 174,
+            "y": 62,
             "list": [
                 {
                     "type": "Image",
@@ -507,6 +506,38 @@
                     }
                 }
             ]
+        },
+        {
+            "prefabId": "b9280638-332a-4861-be5f-9128b9fe72d3",
+            "id": "4eedf146-dbbc-43ac-9802-84d0d57d8eec",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "settings",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "visible": false,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "f2e8b538-6469-4a45-b23d-beac8cbf03a0",
+            "id": "42ba9bd1-bc37-460b-95b2-e93f5cef7eb7",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "manage",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "visible": false,
+            "nestedPrefabs": []
         },
         {
             "prefabId": "e1fd9cda-cb4e-4071-8083-ad30ac555494",
@@ -576,6 +607,22 @@
                     "components": [],
                     "x": 446,
                     "y": 436,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "prefabId": "00690da0-e05f-48fd-8310-c43600a5a9da",
+                    "id": "019ddc56-478d-449a-970f-76ca8d47ed89",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "puffleCare",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 551,
+                    "y": 480,
                     "visible": false,
                     "nestedPrefabs": []
                 }

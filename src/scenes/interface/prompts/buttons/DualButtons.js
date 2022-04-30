@@ -24,14 +24,14 @@ export default class DualButtons extends BaseContainer {
         const text_2 = scene.add.text(110, 0, "", {});
         text_2.setOrigin(0.5, 0.5);
         text_2.text = "No";
-        text_2.setStyle({ "align": "center", "fixedWidth":150,"fontFamily": "Arial Narrow", "fontSize": "40px", "fontStyle": "bold" });
+        text_2.setStyle({ "align": "center", "fixedWidth":150,"fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold" });
         this.add(text_2);
 
         // text_1
         const text_1 = scene.add.text(-110, 0, "", {});
         text_1.setOrigin(0.5, 0.5);
         text_1.text = "Yes";
-        text_1.setStyle({ "align": "center", "fixedWidth":150,"fontFamily": "Arial Narrow", "fontSize": "40px", "fontStyle": "bold" });
+        text_1.setStyle({ "align": "center", "fixedWidth":150,"fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold" });
         this.add(text_1);
 
         // no_button (components)
@@ -54,12 +54,12 @@ export default class DualButtons extends BaseContainer {
 
     onYesClick() {
         this.parentContainer.callback()
-		this.parentContainer.visible = false
+        this.parentContainer.visible = false
     }
 
     onNoClick() {
         this.parentContainer.noCallback()
-		this.parentContainer.visible = false
+        this.parentContainer.visible = false
     }
 
     /* END-USER-CODE */

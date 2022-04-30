@@ -44,10 +44,10 @@
                     "components": [],
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "Ok",
+                    "text": "Okay",
                     "fixedWidth": 280,
                     "align": "center",
-                    "fontFamily": "Arial Narrow",
+                    "fontFamily": "Burbank Small",
                     "fontSize": "40px",
                     "fontStyle": "bold"
                 }

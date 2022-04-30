@@ -60,7 +60,7 @@
             "text": "CHECK OUT WHAT'S NEW",
             "fixedWidth": 300,
             "align": "center",
-            "fontFamily": "CCFaceFront",
+            "fontFamily": "Burbank Small",
             "fontSize": "20px",
             "fontStyle": "italic",
             "stroke": "#ffffffff"
