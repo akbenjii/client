@@ -1,4 +1,4 @@
-import RoomScene from '../RoomScene'
+import RoomScene from '@scenes/rooms/RoomScene'
 
 import { Interactive } from '@components/components'
 

@@ -24,8 +24,8 @@
             "list": [
                 {
                     "type": "Rectangle",
-                    "id": "122082e3-8384-43a3-9fe1-1f944e5dec49",
-                    "label": "block",
+                    "id": "94774812-2284-4f54-9145-e85577687e68",
+                    "label": "block_1",
                     "components": [
                         "Interactive"
                     ],
@@ -36,16 +36,32 @@
                     "height": 960
                 },
                 {
-                    "type": "Image",
-                    "id": "77166297-bbbf-47b7-ba67-45f8cff2982c",
-                    "label": "popup_png",
+                    "type": "Rectangle",
+                    "id": "0ad093fe-a619-459d-84de-4d9d3f84059d",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 708,
+                    "height": 324
+                },
+                {
+                    "prefabId": "48dfbf63-271b-4c3d-9fcc-6406eb7a0754",
+                    "id": "10c05f07-ffb7-42bb-a639-4465e441e1f2",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "single",
+                    "scope": "CLASS",
                     "components": [],
-                    "texture": {
-                        "key": "coins",
-                        "frame": "popup.png"
-                    },
-                    "scaleX": 0.41532636092319475,
-                    "scaleY": 0.41532636092319475
+                    "x": 0,
+                    "y": 50,
+                    "nestedPrefabs": []
                 },
                 {
                     "type": "Text",
@@ -53,13 +69,11 @@
                     "label": "coins",
                     "scope": "CLASS",
                     "components": [],
-                    "x": -30,
-                    "y": -200,
+                    "y": -75,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "69 coins.",
+                    "text": "You have earned 69 coins.\nYou now have 420 coins.",
                     "fixedWidth": 628,
-                    "paddingLeft": 175,
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "26px",
@@ -67,36 +81,6 @@
                     "shadow.offsetX": 3,
                     "shadow.offsetY": 2,
                     "shadow.color": "#012855ff"
-                },
-                {
-                    "type": "Image",
-                    "id": "7a235d31-e79f-4c38-96d7-dda194fa4205",
-                    "label": "coins_png",
-                    "components": [],
-                    "texture": {
-                        "key": "playercard",
-                        "frame": "coins.png"
-                    },
-                    "y": -35,
-                    "scaleX": 1.870324564247692,
-                    "scaleY": 1.870324564247692
-                },
-                {
-                    "type": "Image",
-                    "id": "7ae39a3b-c677-4b76-99ce-9b01874f422b",
-                    "label": "button_active_png",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "game-button",
-                    "Button.callback": "() => this.visible = false",
-                    "texture": {
-                        "key": "coins",
-                        "frame": "game-button"
-                    },
-                    "y": 128,
-                    "scaleX": 0.37138841256607324,
-                    "scaleY": 0.37138841256607324
                 }
             ]
         }

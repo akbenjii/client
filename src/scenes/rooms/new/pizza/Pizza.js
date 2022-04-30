@@ -1,4 +1,4 @@
-import RoomScene from '../RoomScene'
+import RoomScene from '@scenes/rooms/RoomScene'
 import { SimpleButton, MoveTo, ShowHint } from '@components/components'
 
 

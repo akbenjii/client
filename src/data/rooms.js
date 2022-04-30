@@ -87,6 +87,12 @@ if (localStorage.clientMode == "legacy") {
             x: 780,
             y: 790
         },
+		321: {
+            key: 'Dojoext',
+            scene: require('@rooms/old/dojoext/Dojoext').default,
+            x: 780,
+            y: 790
+        },
         330: {
             key: 'Pizza',
             scene: require('@rooms/old/pizza/Pizza').default,
@@ -303,6 +309,12 @@ if (localStorage.clientMode == "vanilla") {
         320: {
             key: 'Dojo',
             scene: require('@rooms/old/dojo/Dojo').default,
+            x: 780,
+            y: 790
+        },
+		321: {
+            key: 'Dojoext',
+            scene: require('@rooms/new/dojoext/Dojoext').default,
             x: 780,
             y: 790
         },

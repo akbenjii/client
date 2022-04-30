@@ -40,7 +40,7 @@ export default class ItemPrompt extends BaseContainer {
         const text = scene.add.text(0, 0, "", {});
         text.setOrigin(0.5, 0.5);
         text.text = "You have found a party hat.\nWould you like to pick it up?";
-        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":628,"fixedHeight":136,"fontFamily": "Arial Narrow", "fontSize": "32px" });
+        text.setStyle({ "align": "center", "color": "#000000", "fixedWidth":628,"fixedHeight":136,"fontFamily": "Burbank Small", "fontSize": "32px" });
         this.add(text);
 
         // dual

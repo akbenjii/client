@@ -54,10 +54,12 @@ export default class DualButtons extends BaseContainer {
 
     onYesClick() {
         this.parentContainer.callback()
+		this.parentContainer.visible = false
     }
 
     onNoClick() {
         this.parentContainer.noCallback()
+		this.parentContainer.visible = false
     }
 
     /* END-USER-CODE */

@@ -66,7 +66,7 @@ export default class LoadingPrompt extends BaseContainer {
         // text
         const text = scene.add.text(0, 19, "", {});
         text.setOrigin(0.5, 0);
-        text.setStyle({ "align": "center", "fixedWidth":800,"fixedHeight":40,"fontFamily": "Arial", "fontSize": "32px" });
+        text.setStyle({ "align": "center", "fixedWidth":800,"fixedHeight":40,"fontFamily": "Burbank Small", "fontSize": "32px" });
         this.add(text);
 
         // spinner

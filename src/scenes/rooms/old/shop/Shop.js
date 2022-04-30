@@ -1,4 +1,4 @@
-import RoomScene from '../RoomScene'
+import RoomScene from '@scenes/rooms/RoomScene'
 
 import { Animation, Button, MoveTo, SimpleButton, Zone } from '@components/components'
 
