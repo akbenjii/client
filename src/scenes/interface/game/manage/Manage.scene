@@ -1,0 +1,411 @@
+{
+    "id": "f2e8b538-6469-4a45-b23d-beac8cbf03a0",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "8bb89fb5-8fd3-4d6d-a8b9-f11a53a7735f",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "9d274e25-df95-406f-883b-f4102166d431",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "4e000c0f-ca29-40d6-955a-108ebfdb90f7",
+                    "label": "rectangle",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "y": -22,
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 708,
+                    "height": 600
+                },
+                {
+                    "type": "Image",
+                    "id": "601cc5f2-06bb-4a01-a439-462f0b4932d6",
+                    "label": "button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "help-button",
+                    "Button.callback": "() => this.delete()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "help-button"
+                    },
+                    "y": 153
+                },
+                {
+                    "type": "Text",
+                    "id": "d8459f02-8216-49b8-9a56-e9a7ff51b303",
+                    "label": "account",
+                    "components": [],
+                    "y": 153,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Delete Account",
+                    "fixedWidth": 562,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Image",
+                    "id": "5775c2e8-89b4-45f1-b3a6-08135e896fc8",
+                    "label": "newuser_btn",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "help-button",
+                    "Button.callback": "() => this.username()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "help-button"
+                    },
+                    "x": -160,
+                    "y": 48,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Text",
+                    "id": "51b43a30-0862-4fda-9b1f-6e19eac3647f",
+                    "label": "newuser_btntext",
+                    "components": [],
+                    "x": -160,
+                    "y": 48,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Change Username",
+                    "fixedWidth": 250,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Image",
+                    "id": "d2123007-b21d-47b3-87ff-72f3271bfd85",
+                    "label": "newpass_btn",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "help-button",
+                    "Button.callback": "() => this.password()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "help-button"
+                    },
+                    "x": 160,
+                    "y": 48,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Text",
+                    "id": "9e0aa459-1a48-41ca-9adf-fc0943852a69",
+                    "label": "newpass_btntext",
+                    "components": [],
+                    "x": 160,
+                    "y": 48,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Change Password",
+                    "fixedWidth": 250,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff"
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "20d0d866-c72b-4278-9495-fe5bc6bd1784",
+                    "label": "newpass_confirm_rounded2",
+                    "components": [],
+                    "x": 285,
+                    "y": -21,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "e61a2b59-391f-4f9d-9b2c-f92b107c72d2",
+                    "label": "newpass_confirm_rounded1",
+                    "components": [],
+                    "x": 35,
+                    "y": -21,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "fff037af-5a3d-4b04-a634-00f118608dd9",
+                    "label": "newpass_confirm_bg",
+                    "components": [],
+                    "x": 161,
+                    "y": -21,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 250,
+                    "height": 37.5
+                },
+                {
+                    "type": "Text",
+                    "id": "2495823a-b7f5-40be-a22e-7659ea8b4126",
+                    "label": "newpass_confirm_text",
+                    "components": [],
+                    "x": 165,
+                    "y": -64,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Confirm new password",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "7b357963-5d8b-427e-bdd4-306178a822e2",
+                    "label": "newpass_rounded2",
+                    "components": [],
+                    "x": 285,
+                    "y": -128,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a34ee816-c301-41ed-a385-8686520ce030",
+                    "label": "newpass_rounded1",
+                    "components": [],
+                    "x": 35,
+                    "y": -128,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "66f79b53-b7c6-4f28-bfe7-4c327e27b59d",
+                    "label": "newpass_bg",
+                    "components": [],
+                    "x": 161,
+                    "y": -128,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 250,
+                    "height": 37.5
+                },
+                {
+                    "type": "Text",
+                    "id": "a36a0fc2-4331-4474-9e72-dd6a52e00e68",
+                    "label": "newpass_text",
+                    "components": [],
+                    "x": 160,
+                    "y": -171,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Enter new password",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "aeb9225b-8426-4ee1-8935-48fca47ae3c8",
+                    "label": "newuser_confirm_rounded2",
+                    "components": [],
+                    "x": -36,
+                    "y": -21,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a089ac7c-4b21-4a73-b2f2-7f37228a0c59",
+                    "label": "newuser_confirm_rounded1",
+                    "components": [],
+                    "x": -286,
+                    "y": -21,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "24f780ac-f724-4506-aa9c-14ed5158ec32",
+                    "label": "newuser_confirm_bg",
+                    "components": [],
+                    "x": -160,
+                    "y": -21,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 250,
+                    "height": 37.5
+                },
+                {
+                    "type": "Text",
+                    "id": "91ff8bd6-a1bd-4825-9322-e77618f08ec9",
+                    "label": "newuser_confirm_text",
+                    "components": [],
+                    "x": -165,
+                    "y": -64,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Confirm new username",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "15b1f537-ab83-48a3-a43f-3eac22f0c6bd",
+                    "label": "newuser_rounded2",
+                    "components": [],
+                    "x": -36,
+                    "y": -128,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "202ad77c-bc21-4b76-ba94-41225a717bca",
+                    "label": "newuser_rounded1",
+                    "components": [],
+                    "x": -286,
+                    "y": -128,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 37.5,
+                    "height": 37.5
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "a8391f5a-5679-47ce-a20d-016cb150310d",
+                    "label": "newuser_bg",
+                    "components": [],
+                    "x": -160,
+                    "y": -128,
+                    "isFilled": true,
+                    "fillColor": "#115594",
+                    "width": 250,
+                    "height": 37.5
+                },
+                {
+                    "type": "Text",
+                    "id": "0f617c00-3b0c-4a3a-ba55-417cbd1a260f",
+                    "label": "newuser_text",
+                    "components": [],
+                    "x": -160,
+                    "y": -171,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Enter new username",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "049efdf7-a9e9-4774-81b7-5a3c6b0e7c7e",
+                    "label": "manage",
+                    "components": [],
+                    "y": -238,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "MANAGE ACCOUNT",
+                    "fixedWidth": 600,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold italic",
+                    "stroke": "#003366",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Image",
+                    "id": "e656c20c-78a6-4d94-917f-6cf411b1f4d4",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.hide()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 300,
+                    "y": -268
+                },
+                {
+                    "type": "Image",
+                    "id": "56d93af1-ac83-4be9-a548-efd7ba743bf2",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 300,
+                    "y": -270
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
