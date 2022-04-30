@@ -20,7 +20,7 @@ export default class Mtn extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("skiHill-pack-new", "assets/media/rooms/new/skiHill/skiHill-pack-new.json");
     }

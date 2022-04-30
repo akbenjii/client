@@ -34,7 +34,7 @@ export default class Agentlobby extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("everydayPhoningFacility-pack-new", "assets/media/rooms/new/everydayPhoningFacility/everydayPhoningFacility-pack-new.json");
     }

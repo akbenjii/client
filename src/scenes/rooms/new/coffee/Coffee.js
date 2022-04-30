@@ -25,7 +25,7 @@ export default class Coffee extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("coffeeShop-pack-new", "assets/media/rooms/new/coffeeShop/coffeeShop-pack-new.json");
     }

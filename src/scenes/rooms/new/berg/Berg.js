@@ -27,7 +27,7 @@ export default class Berg extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("berg-pack-new", "assets/media/rooms/new/berg/berg-pack-new.json");
     }

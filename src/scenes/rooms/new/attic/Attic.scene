@@ -6,7 +6,7 @@
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
         "superClassName": "RoomScene",
-        "preloadMethodName": "editorPreload",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [
             "yukon/assets/media/rooms/attic/attic-pack.json"
         ],

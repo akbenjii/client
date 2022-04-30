@@ -23,7 +23,7 @@ export default class DojoExt extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("dojoCourtyard-pack-new", "assets/media/rooms/new/dojoCourtyard/dojoCourtyard-pack-new.json");
     }

@@ -61,7 +61,7 @@ export default class Shop extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("clothesShop-pack-new", "assets/media/rooms/new/clothesShop/clothesShop-pack-new.json");
     }

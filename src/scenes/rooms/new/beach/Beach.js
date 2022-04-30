@@ -48,7 +48,7 @@ export default class Beach extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("beach-pack-new", "assets/media/rooms/new/beach/beach-pack-new.json");
     }

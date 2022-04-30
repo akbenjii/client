@@ -21,7 +21,7 @@ export default class Cave extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("undergroundPool-pack-new", "assets/media/rooms/new/undergroundPool/undergroundPool-pack-new.json");
     }

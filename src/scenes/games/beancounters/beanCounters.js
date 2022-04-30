@@ -15,7 +15,7 @@ export default class beanCounters extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("load-pack", "assets/media/interface/menus/load/load-pack.json");
     }

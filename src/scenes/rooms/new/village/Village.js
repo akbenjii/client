@@ -26,7 +26,7 @@ export default class Village extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("skiVillage-pack-new", "assets/media/rooms/new/skiVillage/skiVillage-pack-new.json");
     }

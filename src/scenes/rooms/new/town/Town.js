@@ -26,7 +26,7 @@ export default class Town extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("town-pack-new", "assets/media/rooms/new/town/town-pack-new.json");
     }

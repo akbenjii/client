@@ -6,7 +6,7 @@
         "javaScriptInitFieldsInConstructor": true,
         "exportClass": true,
         "superClassName": "RoomScene",
-        "preloadMethodName": "editorPreload",
+        "preloadMethodName": "_preload",
         "preloadPackFiles": [
             "client/assets/media/rooms/new/forest/forest-pack-new.json"
         ],

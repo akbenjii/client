@@ -26,7 +26,7 @@ export default class Dance extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("danceClub-pack-new", "assets/media/rooms/new/danceClub/danceClub-pack-new.json");
     }

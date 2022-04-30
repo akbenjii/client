@@ -20,7 +20,7 @@ export default class School extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("school-pack-new", "assets/media/rooms/new/school/school-pack-new.json");
     }

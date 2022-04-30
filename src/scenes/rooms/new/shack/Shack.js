@@ -25,7 +25,7 @@ export default class Shack extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("mineShack-pack-new", "assets/media/rooms/new/mineShack/mineShack-pack-new.json");
     }

@@ -24,7 +24,7 @@ export default class Cavemine extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("goldMine-pack-new", "assets/media/rooms/new/goldMine/goldMine-pack-new.json");
     }

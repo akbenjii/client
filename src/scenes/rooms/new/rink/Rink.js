@@ -21,7 +21,7 @@ export default class Rink extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("pool-pack-new", "assets/media/rooms/new/pool/pool-pack-new.json");
     }

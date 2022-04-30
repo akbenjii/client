@@ -50,7 +50,7 @@ export default class RoomScene extends BaseScene {
     		this.load.audio(this.music, `assets/media/music/${this.music}.mp3`)
 		}
 		
-		this.editorPreload()
+		this._preload()
 	}
 
     sortChildren() {

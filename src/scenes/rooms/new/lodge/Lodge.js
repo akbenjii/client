@@ -75,7 +75,7 @@ export default class Lodge extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("lodge-pack-new", "assets/media/rooms/new/lodge/lodge-pack-new.json");
     }

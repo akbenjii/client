@@ -127,7 +127,7 @@ export default class Lounge extends RoomScene {
     }
 
     /** @returns {void} */
-    editorPreload() {
+    _preload() {
 
         this.load.pack("arcade-pack-new", "assets/media/rooms/new/arcade/arcade-pack-new.json");
     }
