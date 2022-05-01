@@ -21,7 +21,7 @@ export default class Actions extends Plugin {
             return this.room.updateWaiting(args.id, { x: args.x, y: args.y, frame: 1 })
         }
 
-        this.room.penguins[args.id].move(args.x, args.y)
+        if (this.room.penguins[args.id]) this.room.penguins[args.id].move(args.x, args.y)
     }
 
     sendFrame(args) {

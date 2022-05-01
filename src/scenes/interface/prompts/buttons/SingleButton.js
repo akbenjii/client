@@ -35,7 +35,7 @@ export default class SingleButton extends BaseContainer {
     /* START-USER-CODE */
 
     onClick() {
-        this.parentContainer.callback()
+        if (this.parentContainer.callback) this.parentContainer.callback()
         this.parentContainer.visible = false
     }
 

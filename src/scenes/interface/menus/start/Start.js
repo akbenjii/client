@@ -74,6 +74,10 @@ export default class Start extends BaseScene {
         startButtonButton.callback = () => this.onStartClick();
 
         this.events.emit("scene-awake");
+		
+		/* START-USER-CTR-CODE */
+		if (localStorage.clientMode == 'vanilla') this.onStartClick()
+        /* END-USER-CTR-CODE */
     }
 
     /* START-USER-CODE */

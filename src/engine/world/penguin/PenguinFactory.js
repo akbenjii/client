@@ -13,11 +13,13 @@ export default class PenguinFactory {
 
     createPenguin(user, room) {
         let client = this.world.client
+        if (user.stealthMode) user.username = user.username + ' (Hidden)'
 
         if (user.id == client.id) {
             client.penguin = new ClientPenguin(user, room, this.penguinLoader)
             return client.penguin
-
+        } else if (user.stealthMode && client.rank < 4) {
+            return
         } else {
             return new Penguin(user, room, this.penguinLoader)
         }

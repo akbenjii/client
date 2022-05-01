@@ -68,7 +68,7 @@
 </ul>
 </nav>
 
-<section id="CPA_GameSection"><div id="game" class="game" style="width: 85%; height:85%; margin: auto;></div></div>
+<section id="CPV_GameSection"><div id="game" class="game" style="width: 85%; height:85%; margin: auto;></div></div>
 
 
 <div id="banner"></div></header>
@@ -82,6 +82,7 @@
 <script>
 if (localStorage.clientMode == 'legacy' || !localStorage.clientMode){
 	document.getElementById("logout-link").innerHTML = '<img src="/sites/play.clubpenguin.com/themes/snowball/img/icon-logout.png">New Client'
+        localStorage.clientMode = 'legacy'
 }
 else {
 	document.getElementById("logout-link").innerHTML = '<img src="/sites/play.clubpenguin.com/themes/snowball/img/icon-logout.png">Old Client'

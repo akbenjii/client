@@ -63,6 +63,8 @@ export default class RoomScene extends BaseScene {
     }
 
     addPenguin(id, penguin) {
+        if (penguin.stealthMode && this.world.client.rank < 4) return
+
         this.penguins[id] = penguin
 
         this.interface.main.buddy.showPage()

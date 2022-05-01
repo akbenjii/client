@@ -252,9 +252,15 @@
         {
             "type": "Sprite",
             "id": "c090952e-b547-49b3-9d31-1a18d6db315a",
-            "label": "findfour",
+            "label": "findfour_1",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "findfour",
+            "Button.callback": "() => this.triggerWaddle(104)",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
             "texture": {
                 "key": "lodge-new",
                 "frame": "findfour"
@@ -281,9 +287,15 @@
         {
             "type": "Sprite",
             "id": "967c3833-af6d-4aa1-bd0a-d99888658ce4",
-            "label": "findfour_1",
+            "label": "findfour_2",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "findfour",
+            "Button.callback": "() => this.triggerWaddle(105)",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
             "texture": {
                 "key": "lodge-new",
                 "frame": "findfour"
@@ -295,9 +307,15 @@
         {
             "type": "Sprite",
             "id": "36db08be-8901-4c51-92eb-097cf8c6ba6c",
-            "label": "findfour_2",
+            "label": "findfour_3",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "findfour",
+            "Button.callback": "() => this.triggerWaddle(106)",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
             "texture": {
                 "key": "lodge-new",
                 "frame": "findfour"
@@ -383,6 +401,72 @@
             "x": 821,
             "y": 1015.5,
             "originY": 1
+        },
+        {
+            "type": "Ellipse",
+            "id": "175ce1d0-692d-4437-a878-6bd194794dff",
+            "label": "ellipse",
+            "components": [],
+            "x": 928,
+            "y": 592,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "384c371f-f36a-494b-a86d-7336befb64a0",
+            "label": "ellipse_1",
+            "components": [],
+            "x": 1084,
+            "y": 510,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "e74c7087-e137-4c9e-aba7-40c2bfc12263",
+            "label": "ellipse_2",
+            "components": [],
+            "x": 821,
+            "y": 750,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "f356f908-04fb-40b3-9471-7555a0d03883",
+            "label": "ellipse_3",
+            "components": [],
+            "x": 967,
+            "y": 665,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "a39b341f-4789-4cb4-9856-2590fecc0527",
+            "label": "ellipse_4",
+            "components": [],
+            "x": 1053,
+            "y": 632,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "aa694818-fe3d-47c9-898d-4ff08f0bee13",
+            "label": "ellipse_5",
+            "components": [],
+            "x": 1172,
+            "y": 724,
+            "visible": false,
+            "width": 50,
+            "height": 50
         }
     ],
     "plainObjects": [],
@@ -416,6 +500,30 @@
                 "9435734b-9f7c-48ee-894f-aa94732cc89a",
                 "3712298d-2559-4def-bc9e-3ff89fbacd5a",
                 "1197db64-3dcd-4746-9efb-780a41874941"
+            ]
+        },
+        {
+            "id": "250db9a3-ee51-4573-a3f8-a11bcd7c257e",
+            "label": "seats106",
+            "objectIds": [
+                "a39b341f-4789-4cb4-9856-2590fecc0527",
+                "aa694818-fe3d-47c9-898d-4ff08f0bee13"
+            ]
+        },
+        {
+            "id": "38be9253-0d84-4865-af43-65043872568d",
+            "label": "seats105",
+            "objectIds": [
+                "f356f908-04fb-40b3-9471-7555a0d03883",
+                "e74c7087-e137-4c9e-aba7-40c2bfc12263"
+            ]
+        },
+        {
+            "id": "a6845f68-7763-42b2-bf8c-c9aa4345380d",
+            "label": "seats104",
+            "objectIds": [
+                "384c371f-f36a-494b-a86d-7336befb64a0",
+                "175ce1d0-692d-4437-a878-6bd194794dff"
             ]
         }
     ]

@@ -8,13 +8,19 @@ export default class Game extends Phaser.Game {
 
     constructor(config) {
         super(config)
-        
-        this.crumbs = config.crumbs
-        this.network = new Network(this)
 
-        this.scene.add('Boot', Boot, true)
-		
-		this.logBanner()
+        if (window.location.hostname == 'play.cpforever.net' || window.location.hostname == 'localhost') {
+            this.crumbs = config.crumbs
+            this.network = new Network(this)
+
+            this.scene.add('Boot', Boot, true)
+
+            this.logBanner()
+        }
+        else {
+            console.log("%c%s", "color: #ff0000; font-size: 20px;", "You are not on the correct domain.\nPlease visit https://play.cpforever.net to play.")
+			window.open("https://play.cpforever.net","_self")
+        }
     }
 	
 	logBanner() {

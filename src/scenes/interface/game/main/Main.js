@@ -7,6 +7,8 @@ import BalloonFactory from '@engine/interface/balloons/BalloonFactory'
 import Hint from '@engine/interface/hint/Hint'
 import SnowballFactory from '@engine/interface/snowball/SnowballFactory'
 
+import FindFour from '@scenes/games/four/FindFour'
+
 import ActionsMenu from '../floating/actions/ActionsMenu'
 import Buddy from '../buddy/Buddy'
 import ChatLog from '../chatlog/ChatLog'
@@ -114,6 +116,8 @@ export default class Main extends BaseScene {
         this.safe;
         /** @type {Waddle} */
         this.waddle;
+        /** @type {FindFour} */
+        this.findFour;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -291,6 +295,11 @@ export default class Main extends BaseScene {
         this.add.existing(waddle);
         waddle.visible = false;
 
+        // findFour
+        const findFour = new FindFour(this, 736, 472);
+        this.add.existing(findFour);
+        findFour.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, chat_icon, chat_button, chat_box, map_button, news_button, mod_button, mod_m, chatLog, badge_member, emote_icon];
@@ -434,6 +443,7 @@ export default class Main extends BaseScene {
         this.emotesMenu = emotesMenu;
         this.safe = safe;
         this.waddle = waddle;
+        this.findFour = findFour;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -516,7 +526,6 @@ export default class Main extends BaseScene {
 
         this.addcoins = new TextInput(this, 974, 322, 'number', actionsstyle, () => this.modActions.handleAddCoins(), 48, true, 'addcoins')
         this.additems = new TextInput(this, 974, 427, 'number', actionsstyle, () => this.modActions.handleAddItems(), 48, true, 'additems')
-        this.banplayer = new TextInput(this, 974, 536, 'datetime-local', actionsstyle, () => this.modActions.handleBanPlayer(), 48, true, 'banplayer')
         this.changeusername = new TextInput(this, 974, 639, 'text', actionsstyle, () => this.modActions.handleChangeUsername(), 48, true, 'changeusername')
 
         let managestyle = {
@@ -537,7 +546,6 @@ export default class Main extends BaseScene {
         if (this.world.client.penguin.rank > 3) {
             this.add.existing(this.addcoins)
             this.add.existing(this.additems)
-            this.add.existing(this.banplayer)
             this.add.existing(this.changeusername)
 
             this.add.existing(this.search)

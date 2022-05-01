@@ -104,10 +104,10 @@ export default class ModActions extends BaseContainer {
         this.add(item_icon);
 
         // ban_txt
-        const ban_txt = scene.add.text(247, 31, "", {});
+        const ban_txt = scene.add.text(247, 45, "", {});
         ban_txt.setOrigin(0.5, 0.5);
-        ban_txt.text = "ban player until date";
-        ban_txt.setStyle({ "color": "#000000ff", "fixedWidth":250,"fontFamily": "Burbank Small", "fontSize": "24px" });
+        ban_txt.text = "ban player for\n3H  1D  3D  1W  3W PERM";
+        ban_txt.setStyle({ "color": "#000000ff", "fontFamily": "Burbank Small", "fontSize": "24px" });
         this.add(ban_txt);
 
         // ban_icon
@@ -142,20 +142,33 @@ export default class ModActions extends BaseContainer {
         username_btn.angle = 90;
         this.add(username_btn);
 
-        // ban_rounded
-        const ban_rounded = scene.add.ellipse(124, 77, 30, 30);
-        ban_rounded.isFilled = true;
-        ban_rounded.fillColor = 1136020;
-        this.add(ban_rounded);
+        // ban_btn_5
+        const ban_btn_5 = scene.add.image(346, 86, "main", "grey-arrow");
+        ban_btn_5.angle = 90;
+        this.add(ban_btn_5);
 
-        // ban_bg
-        const ban_bg = scene.add.rectangle(223, 77, 200, 30);
-        ban_bg.isFilled = true;
-        ban_bg.fillColor = 1136020;
-        this.add(ban_bg);
+        // ban_btn_4
+        const ban_btn_4 = scene.add.image(294, 86, "main", "grey-arrow");
+        ban_btn_4.angle = 90;
+        this.add(ban_btn_4);
+
+        // ban_btn_3
+        const ban_btn_3 = scene.add.image(249, 86, "main", "grey-arrow");
+        ban_btn_3.angle = 90;
+        this.add(ban_btn_3);
+
+        // ban_btn_2
+        const ban_btn_2 = scene.add.image(206, 86, "main", "grey-arrow");
+        ban_btn_2.angle = 90;
+        this.add(ban_btn_2);
+
+        // ban_btn_1
+        const ban_btn_1 = scene.add.image(167, 86, "main", "grey-arrow");
+        ban_btn_1.angle = 90;
+        this.add(ban_btn_1);
 
         // ban_btn
-        const ban_btn = scene.add.image(322, 77, "main", "grey-arrow");
+        const ban_btn = scene.add.image(128, 86, "main", "grey-arrow");
         ban_btn.angle = 90;
         this.add(ban_btn);
 
@@ -238,19 +251,39 @@ export default class ModActions extends BaseContainer {
 
         // username_btn (components)
         const username_btnSimpleButton = new SimpleButton(username_btn);
-        username_btnSimpleButton.callback = () => this.handleChangeUsername();
+        username_btnSimpleButton.callback = () => this.changeUsernames();
+
+        // ban_btn_5 (components)
+        const ban_btn_5SimpleButton = new SimpleButton(ban_btn_5);
+        ban_btn_5SimpleButton.callback = () => this.banPlayers(5);
+
+        // ban_btn_4 (components)
+        const ban_btn_4SimpleButton = new SimpleButton(ban_btn_4);
+        ban_btn_4SimpleButton.callback = () => this.banPlayers(4);
+
+        // ban_btn_3 (components)
+        const ban_btn_3SimpleButton = new SimpleButton(ban_btn_3);
+        ban_btn_3SimpleButton.callback = () => this.banPlayers(3);
+
+        // ban_btn_2 (components)
+        const ban_btn_2SimpleButton = new SimpleButton(ban_btn_2);
+        ban_btn_2SimpleButton.callback = () => this.banPlayers(2);
+
+        // ban_btn_1 (components)
+        const ban_btn_1SimpleButton = new SimpleButton(ban_btn_1);
+        ban_btn_1SimpleButton.callback = () => this.banPlayers(1);
 
         // ban_btn (components)
         const ban_btnSimpleButton = new SimpleButton(ban_btn);
-        ban_btnSimpleButton.callback = () => this.handleBanPlayer();
+        ban_btnSimpleButton.callback = () => this.banPlayers(0);
 
         // items_btn (components)
         const items_btnSimpleButton = new SimpleButton(items_btn);
-        items_btnSimpleButton.callback = () => this.handleAddItems();
+        items_btnSimpleButton.callback = () => this.addItem();
 
         // coins_btn (components)
         const coins_btnSimpleButton = new SimpleButton(coins_btn);
-        coins_btnSimpleButton.callback = () => this.handleAddCoins();
+        coins_btnSimpleButton.callback = () => this.addCoin();
 
         this.rectangle = rectangle;
         this.paperDoll = paperDoll;
@@ -340,7 +373,6 @@ export default class ModActions extends BaseContainer {
 
         this.addcoins.style.visibility = 'visible'
         this.additems.style.visibility = 'visible'
-        this.banplayer.style.visibility = 'visible'
         this.changeusername.style.visibility = 'visible'
     }
 
@@ -348,30 +380,62 @@ export default class ModActions extends BaseContainer {
         this.visible = false
 
         this.addcoins.style.visibility = 'hidden' 
-        this.additems.style.visibility = 'hidden'  
-        this.banplayer.style.visibility = 'hidden'
+        this.additems.style.visibility = 'hidden'
         this.changeusername.style.visibility = 'hidden'
     }
 
+    show(){
+        this.visible = true
+
+        this.addcoins.style.visibility = 'visible'
+        this.additems.style.visibility = 'visible'
+        this.changeusername.style.visibility = 'visible'
+    }
+
+    addCoin(){
+        this.interface.prompt.showWindow(`Are you sure you want to add ${this.addcoins.value.toString()}\ncoins to ${this.username.text}?`, "dual", () => this.handleAddCoins(), () => this.show())
+        this.hide()
+    }
+
+    addItem(){
+        let item = this.crumbs.items[this.additems.value]
+        this.interface.prompt.showWindow(`Are you sure you want to add\n${item.name} to ${this.username.text}?`, "dual", () => this.handleAddItems(item.name), () => this.show())
+        this.hide()
+    }
+
+    banPlayers(duration){
+        let durationArray = ["3 hours", "1 day", "3 days", "1 week", "3 weeks", "permanent"]
+        this.interface.prompt.showWindow(`Are you sure you want to ban\n ${this.username.text} for ${durationArray[duration]}?`, "dual", () => this.handleBanPlayer(duration, durationArray[duration]), () => this.show())
+        this.hide()
+    }
+
+    changeUsernames(){
+        this.interface.prompt.showWindow(`Are you sure you want to change ${this.username.text}'s\nusername to ${this.changeusername.value}?`, "dual", () => this.handleChangeUsername(), () => this.show())
+        this.hide()
+    }
+
     handleAddCoins(){
-        console.log(this.addcoins)
         let coins = this.addcoins.value.toString()
         this.network.send('add_user_coins', { id: this.id, coins: coins })
+        this.show()
     }
 
-    handleAddItems(){
+    handleAddItems(itemName){
         let item = this.additems.value.toString()
-        this.network.send('add_user_items', { id: this.id, item: item })
+        this.network.send('add_user_items', { id: this.id, item: item, itemName: itemName })
+        this.show()
     }
 
-    handleBanPlayer(){
-        let banDuration = this.banplayer.value.toString()
-        this.network.send('ban_user', { id: this.id, banDuration: banDuration })
+    handleBanPlayer(duration, durationText){
+        let durationArray = [10800000, 86400000, 259200000, 604800000, 2332800000, 315536400000]
+        this.network.send('ban_user', { id: this.id, banDuration: durationArray[duration], durationText: durationText })
+        this.show()
     }
 
     handleChangeUsername(){
         let newUsername = this.changeusername.value.toString()
         this.network.send('change_user_name', { id: this.id, newUsername: newUsername })
+        this.show()
     }
 
 

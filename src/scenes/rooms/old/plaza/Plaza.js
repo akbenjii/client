@@ -10,7 +10,7 @@ export default class Plaza extends RoomScene {
     constructor() {
         super("Plaza");
 
-        /** @type {Array<any>} */
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -20,7 +20,10 @@ export default class Plaza extends RoomScene {
             'forts': () => this.triggerRoom(801, 1284, 720),
             'pet': () => this.triggerRoom(310, 818, 520),
             'cave': () => this.triggerRoom(806, 1180, 614),
-            'pizza': () => this.triggerRoom(330, 837, 500)
+            'stage1': () => this.unimplementedPrompt(),
+            'stage2': () => this.unimplementedPrompt(),
+            'pizza': () => this.triggerRoom(330, 1200, 400),
+            'forest': () => this.triggerRoom(809, 270, 430)
         }
 
         /* END-USER-CTR-CODE */
@@ -35,109 +38,117 @@ export default class Plaza extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // sky_png
-        const sky_png = this.add.image(0, 0, "plaza", "sky.png");
-        sky_png.setOrigin(0, 0);
+        // bg
+        const bg = this.add.image(-18, -2, "plaza", "bg");
+        bg.setOrigin(0, 0);
 
-        // tree2_png
-        this.add.image(47, 321, "plaza", "tree2.png");
+        // pet_door
+        const pet_door = this.add.image(333, 489, "plaza", "pet_door");
+        pet_door.setOrigin(0.473118, 0.678218);
 
-        // tree3_png
-        this.add.image(105, 300, "plaza", "tree3.png");
+        // cave_door
+        const cave_door = this.add.image(564, 510, "plaza", "cave_door");
+        cave_door.setOrigin(0.473684, 0.781513);
 
-        // tree4_png
-        this.add.image(195, 279, "plaza", "tree4.png");
+        // pizza_door
+        const pizza_door = this.add.image(1194, 410, "plaza", "pizza_door");
+        pizza_door.setOrigin(0.5311, 0.442211);
 
-        // tree9_png
-        this.add.image(1450, 287, "plaza", "tree9.png");
+        // stage_lights_back
+        const stage_lights_back = this.add.sprite(851, 174, "plaza", "stage_lights_back0001");
+        stage_lights_back.setOrigin(0.5011764705882353, 0.5);
 
-        // bg_png
-        this.add.image(759, 569, "plaza", "bg.png");
+        // stage_screen
+        this.add.image(847, 221, "plaza", "stage_screen");
 
-        // tree1_png
-        this.add.image(185, 362, "plaza", "tree1.png");
+        // stage_lights_front
+        const stage_lights_front = this.add.sprite(853, 166, "plaza", "stage_lights_front0001");
 
-        // snow2_png
-        this.add.image(781, 318, "plaza", "snow2.png");
+        // lamp
+        const lamp = this.add.image(129, 827, "plaza", "lamp");
+        lamp.setOrigin(0.5099009900990099, 0.9323076923076923);
 
-        // petbuilding_png
-        this.add.image(455, 293, "plaza", "petbuilding.png");
+        // title
+        const title = this.add.image(725, 200, "plaza", "title");
+        title.setOrigin(0, 0);
 
-        // tree5_png
-        const tree5_png = this.add.image(667, 441, "plaza", "tree5.png");
-        tree5_png.setOrigin(0.013089005235602094, 1.0458333333333334);
+        // stage_door_1
+        const stage_door_1 = this.add.image(733, 385, "plaza", "stage_door_1");
+        stage_door_1.setOrigin(0.5045871559633027, 0.4567901234567901);
 
-        // snow1_png
-        this.add.image(744, 416, "plaza", "snow1.png");
+        // stage_door_2
+        const stage_door_2 = this.add.image(958, 385, "plaza", "stage_door_2");
+        stage_door_2.setOrigin(0.5045871559633027, 0.4567901234567901);
 
-        // signholder_png
-        this.add.image(287, 212, "plaza", "signholder.png");
+        // tickets
+        const tickets = this.add.image(846, 457, "plaza", "tickets");
+        tickets.setOrigin(0.49612403100775193, 0.9247311827956989);
 
-        // pufflesign_png
-        this.add.image(254, 220, "plaza", "pufflesign.png");
-
-        // tree7_png
-        this.add.image(951, 233, "plaza", "tree7.png");
-
-        // tree8_png
-        this.add.image(1033, 214, "plaza", "tree8.png");
-
-        // tree6_png
-        this.add.image(987, 284, "plaza", "tree6.png");
-
-        // pizzabuilding_png
-        this.add.image(1252, 269, "pizza_bd_correct");
-
-        // pufflessign_png
-        this.add.image(494, 387, "plaza", "pufflessign.png");
-
-        // lightpost_png
-        this.add.image(136, 680, "plaza", "lightpost.png");
-
-        // petdoor_png
-        const petdoor_png = this.add.image(343, 451, "plaza", "petdoor.png");
-
-        // manhole_png
-        const manhole_png = this.add.image(568, 474, "plaza", "manhole.png");
-
-        // pizzadoor_png
-        const pizzadoor_png = this.add.image(1186, 416, "plaza", "pizzadoor.png");
-
-        // table2_png
-        this.add.image(926, 415, "plaza", "table2.png");
-
-        // table1_png
-        this.add.image(853, 425, "plaza", "table1.png");
+        // text
+        const text = this.add.image(851, 248, "plaza", "text");
+        text.setOrigin(0.5, 0.49333333333333335);
 
         // lists
-        const sort = [];
+        const sort = [lamp, tickets];
 
-        // petdoor_png (components)
-        const petdoor_pngButton = new Button(petdoor_png);
-        petdoor_pngButton.spriteName = "petdoor.png";
-        petdoor_pngButton.activeFrame = false;
-        petdoor_pngButton.pixelPerfect = true;
-        const petdoor_pngMoveTo = new MoveTo(petdoor_png);
-        petdoor_pngMoveTo.x = 343;
-        petdoor_pngMoveTo.y = 501;
+        // pet_door (components)
+        const pet_doorButton = new Button(pet_door);
+        pet_doorButton.spriteName = "pet_door";
+        pet_doorButton.activeFrame = false;
+        pet_doorButton.pixelPerfect = true;
+        const pet_doorMoveTo = new MoveTo(pet_door);
+        pet_doorMoveTo.x = 340;
+        pet_doorMoveTo.y = 540;
 
-        // manhole_png (components)
-        const manhole_pngButton = new Button(manhole_png);
-        manhole_pngButton.spriteName = "manhole.png";
-        manhole_pngButton.activeFrame = false;
-        manhole_pngButton.pixelPerfect = true;
-        const manhole_pngMoveTo = new MoveTo(manhole_png);
-        manhole_pngMoveTo.x = 568;
-        manhole_pngMoveTo.y = 474;
+        // cave_door (components)
+        const cave_doorButton = new Button(cave_door);
+        cave_doorButton.spriteName = "cave_door";
+        cave_doorButton.activeFrame = false;
+        cave_doorButton.pixelPerfect = true;
+        const cave_doorMoveTo = new MoveTo(cave_door);
+        cave_doorMoveTo.x = 560;
+        cave_doorMoveTo.y = 500;
 
-        // pizzadoor_png (components)
-        const pizzadoor_pngButton = new Button(pizzadoor_png);
-        pizzadoor_pngButton.spriteName = "pizzadoor.png";
-        pizzadoor_pngButton.activeFrame = false;
-        pizzadoor_pngButton.pixelPerfect = true;
-        const pizzadoor_pngMoveTo = new MoveTo(pizzadoor_png);
-        pizzadoor_pngMoveTo.x = 1186;
-        pizzadoor_pngMoveTo.y = 515;
+        // pizza_door (components)
+        const pizza_doorButton = new Button(pizza_door);
+        pizza_doorButton.spriteName = "pizza_door";
+        pizza_doorButton.activeFrame = false;
+        pizza_doorButton.pixelPerfect = true;
+        const pizza_doorMoveTo = new MoveTo(pizza_door);
+        pizza_doorMoveTo.x = 1152;
+        pizza_doorMoveTo.y = 500;
+
+        // stage_lights_back (components)
+        const stage_lights_backAnimation = new Animation(stage_lights_back);
+        stage_lights_backAnimation.key = "stage_lights_back";
+        stage_lights_backAnimation.end = 16;
+
+        // stage_lights_front (components)
+        const stage_lights_frontAnimation = new Animation(stage_lights_front);
+        stage_lights_frontAnimation.key = "stage_lights_front";
+        stage_lights_frontAnimation.end = 16;
+
+        // stage_door_1 (components)
+        const stage_door_1Button = new Button(stage_door_1);
+        stage_door_1Button.spriteName = "stage_door_1";
+        stage_door_1Button.activeFrame = false;
+        const stage_door_1MoveTo = new MoveTo(stage_door_1);
+        stage_door_1MoveTo.x = 730;
+        stage_door_1MoveTo.y = 460;
+
+        // stage_door_2 (components)
+        const stage_door_2Button = new Button(stage_door_2);
+        stage_door_2Button.spriteName = "stage_door_2";
+        stage_door_2Button.activeFrame = false;
+        const stage_door_2MoveTo = new MoveTo(stage_door_2);
+        stage_door_2MoveTo.x = 960;
+        stage_door_2MoveTo.y = 460;
+
+        // tickets (components)
+        new SimpleButton(tickets);
+        const ticketsMoveTo = new MoveTo(tickets);
+        ticketsMoveTo.x = 846;
+        ticketsMoveTo.y = 426;
 
         this.sort = sort;
 

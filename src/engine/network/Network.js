@@ -75,6 +75,9 @@ export default class Network {
     }
 
     send(action, args = {}) {
+        if (window.location.hostname == 'localhost') {
+            console.log('[Network] Message sent:', action, args)
+        }
         this.client.emit('message', JSON.stringify({ action: action, args: args }) + '\xdd')
     }
 

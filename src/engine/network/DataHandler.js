@@ -11,7 +11,7 @@ export default class DataHandler {
         try {
             let parsed = JSON.parse(message)
 
-            if (localStorage.logging == 'true') {
+            if (window.location.hostname == 'localhost') {
                 console.log('[DataHandler] Message received:', parsed.action, parsed.args)
             }
 

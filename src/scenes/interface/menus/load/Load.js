@@ -18,6 +18,8 @@ export default class Load extends BaseScene {
         this.progress;
         /** @type {Phaser.GameObjects.Image} */
         this.spinner;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.loading;
 
 
         /* START-USER-CTR-CODE */
@@ -62,6 +64,10 @@ export default class Load extends BaseScene {
         // spinner
         const spinner = this.add.image(760, 400, "load", "spinner");
 
+        // loading
+        const loading = this.add.sprite(760, 340, "loading_assets", "pizzatron0001.png");
+        loading.visible = false;
+
         // bg (components)
         new Interactive(bg);
 
@@ -69,6 +75,7 @@ export default class Load extends BaseScene {
         this.bar = bar;
         this.progress = progress;
         this.spinner = spinner;
+        this.loading = loading;
 
         this.events.emit("scene-awake");
     }
@@ -82,27 +89,62 @@ export default class Load extends BaseScene {
 
         this._create()
 
-        this.setContent(data.text, data.showBar)
+        if (localStorage.clientMode == 'legacy') {
+            this.setContent(data.text, data.showBar)
 
-        this.tween = this.tweens.add({
-            targets: this.spinner,
-            angle: { from: 0, to: 180 },
-            duration: 900,
-            repeat: -1,
-            ease: 'Cubic'
-        })
+            this.tween = this.tweens.add({
+                targets: this.spinner,
+                angle: { from: 0, to: 180 },
+                duration: 900,
+                repeat: -1,
+                ease: 'Cubic'
+            })
+        }
+        else {
+			this.spinner.visible = false
+			this.loading.visible = true
+            this.text.setPosition(760, 600)
+            this.setupLoadingAnims()
+            this.setContent(data.text, false)
+        }
+
+
+    }
+
+    setupLoadingAnims() {
+        var sprite = Phaser.Math.RND.between(0,2)
+            if (sprite == 0){
+                this.loading.setPosition(760, 410)
+                this.loading.play("shovelling")
+            }
+            else if (sprite == 1){
+                this.loading.setPosition(760, 320)
+                this.loading.play("pizzatron")
+            }
+            else{
+                this.loading.setPosition(760, 390)
+                this.loading.play("cartSurfer")
+            }
     }
 
     onSleep() {
-        this.tween.pause()
-        this.spinner.angle = 0
+        if (localStorage.clientMode == 'legacy') {
+            this.tween.pause()
+            this.spinner.angle = 0
+        }
     }
 
     onWake(sys, data) {
-        this.tween.restart()
-        this.tween.play()
+        if (localStorage.clientMode == 'legacy') { 
+            this.tween.restart()
+            this.tween.play()
 
-        this.setContent(data.text, data.showBar)
+            this.setContent(data.text, data.showBar)
+        }
+        else {
+            this.setupLoadingAnims()
+            this.setContent(data.text, false)
+        }
     }
 
     setContent(text, showBar) {

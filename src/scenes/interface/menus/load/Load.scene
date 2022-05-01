@@ -91,6 +91,20 @@
             },
             "x": 760,
             "y": 400
+        },
+        {
+            "type": "Sprite",
+            "id": "5db6d7ce-9d00-480d-8a45-03f9c9a095da",
+            "label": "loading",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "loading_assets",
+                "frame": "pizzatron0001.png"
+            },
+            "x": 760,
+            "y": 340,
+            "visible": false
         }
     ],
     "plainObjects": [],

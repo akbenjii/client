@@ -200,11 +200,10 @@
                     "scope": "CLASS",
                     "components": [],
                     "x": 247,
-                    "y": 31,
+                    "y": 45,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "ban player until date",
-                    "fixedWidth": 250,
+                    "text": "ban player for\n3H  1D  3D  1W  3W PERM",
                     "fontFamily": "Burbank Small",
                     "fontSize": "24px",
                     "color": "#000000ff"
@@ -280,7 +279,7 @@
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.handleChangeUsername()",
+                    "SimpleButton.callback": "() => this.changeUsernames()",
                     "texture": {
                         "key": "main",
                         "frame": "grey-arrow"
@@ -290,28 +289,84 @@
                     "angle": 90
                 },
                 {
-                    "type": "Ellipse",
-                    "id": "a9306b6c-a979-43b1-853e-acb6d7feadad",
-                    "label": "ban_rounded",
-                    "components": [],
-                    "x": 124,
-                    "y": 77,
-                    "isFilled": true,
-                    "fillColor": "#115594",
-                    "width": 30,
-                    "height": 30
+                    "type": "Image",
+                    "id": "0c066bbe-e33b-4e25-b42f-5356ca8e6341",
+                    "label": "ban_btn_5",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.banPlayers(5)",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 346,
+                    "y": 86,
+                    "angle": 90
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "c8fe4f91-edff-445b-81e8-4155cd584749",
-                    "label": "ban_bg",
-                    "components": [],
-                    "x": 223,
-                    "y": 77,
-                    "isFilled": true,
-                    "fillColor": "#115594",
-                    "width": 200,
-                    "height": 30
+                    "type": "Image",
+                    "id": "8ecad958-0fa2-4aeb-963e-6f134388dd61",
+                    "label": "ban_btn_4",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.banPlayers(4)",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 294,
+                    "y": 86,
+                    "angle": 90
+                },
+                {
+                    "type": "Image",
+                    "id": "47f601a3-565c-4e04-8b0a-61408e26fb14",
+                    "label": "ban_btn_3",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.banPlayers(3)",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 249,
+                    "y": 86,
+                    "angle": 90
+                },
+                {
+                    "type": "Image",
+                    "id": "fa57ead6-bf63-44e0-ba8f-31dac7c6f608",
+                    "label": "ban_btn_2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.banPlayers(2)",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 206,
+                    "y": 86,
+                    "angle": 90
+                },
+                {
+                    "type": "Image",
+                    "id": "224dcc8f-4374-4673-b99e-be32f8e1b9c1",
+                    "label": "ban_btn_1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.banPlayers(1)",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-arrow"
+                    },
+                    "x": 167,
+                    "y": 86,
+                    "angle": 90
                 },
                 {
                     "type": "Image",
@@ -320,13 +375,13 @@
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.handleBanPlayer()",
+                    "SimpleButton.callback": "() => this.banPlayers(0)",
                     "texture": {
                         "key": "main",
                         "frame": "grey-arrow"
                     },
-                    "x": 322,
-                    "y": 77,
+                    "x": 128,
+                    "y": 86,
                     "angle": 90
                 },
                 {
@@ -360,7 +415,7 @@
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.handleAddItems()",
+                    "SimpleButton.callback": "() => this.addItem()",
                     "texture": {
                         "key": "main",
                         "frame": "grey-arrow"
@@ -400,7 +455,7 @@
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.handleAddCoins()",
+                    "SimpleButton.callback": "() => this.addCoin()",
                     "texture": {
                         "key": "main",
                         "frame": "grey-arrow"

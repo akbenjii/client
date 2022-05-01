@@ -25,8 +25,11 @@ export default class Lodge extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'village': () => this.triggerRoom(200, 940, 540)
+            'attic': () => this.triggerRoom(221, 966, 560),
+            'village': () => this.triggerRoom(200, 940, 540),
+            'fish': () => this.triggerGame("iceFishing", 904)
         }
+        this.music = '589'
         this.roomAnims = true
 
         this.waddles = {}
@@ -43,10 +46,10 @@ export default class Lodge extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg_lodge_2005
-        const bg_lodge_2005 = this.add.image(777, 461, "bg_lodge_2005");
-        bg_lodge_2005.scaleX = 1.03;
-        bg_lodge_2005.scaleY = 1.03;
+        // bg
+        const bg = this.add.image(766, 501, "lodge", "bg");
+        bg.scaleX = 1.03;
+        bg.scaleY = 1.03;
 
         // door
         const door = this.add.image(122, 474, "lodge", "door");
@@ -54,11 +57,11 @@ export default class Lodge extends RoomScene {
         door.scaleY = 1.02;
 
         // footrest
-        const footrest = this.add.image(1278, 747, "lodge", "footrest");
+        const footrest = this.add.image(1322, 791, "lodge", "footrest");
         footrest.setOrigin(0.49295775, 0.47222222);
 
         // chair
-        const chair = this.add.image(1365, 763, "lodge", "chair");
+        const chair = this.add.image(1409, 807, "lodge", "chair");
         chair.setOrigin(0.5017064846416383, 0.5018450184501845);
 
         // fire
@@ -84,7 +87,8 @@ export default class Lodge extends RoomScene {
         const bird_clock0001 = this.add.sprite(392, 347, "bird-clock0001");
 
         // table3
-        const table3 = this.add.image(809, 672, "lodge", "table3");
+        const table3 = this.add.image(1011, 577, "lodge", "table3");
+        table3.scaleX = -1;
         table3.setOrigin(0.5, 0.6985294117647058);
 
         // seat1
@@ -92,6 +96,39 @@ export default class Lodge extends RoomScene {
 
         // seat2
         const seat2 = this.add.image(870, 706, "seat104");
+
+        // table3_1
+        const table3_1 = this.add.image(889, 711, "lodge", "table3");
+        table3_1.scaleX = -1;
+        table3_1.setOrigin(0.5, 0.6985294117647058);
+
+        // table3_1_1
+        const table3_1_1 = this.add.image(1117, 703, "lodge", "table3");
+        table3_1_1.setOrigin(0.5, 0.6985294117647058);
+
+        // fishing_door
+        const fishing_door = this.add.image(959, 274, "lodge", "fishing_door");
+        fishing_door.setOrigin(0.2916666666666667, 0.3961218836565097);
+
+        // fish0001
+        const fish0001 = this.add.image(1021, 390, "lodge", "fish0001");
+        fish0001.setOrigin(0, 0);
+        fish0001.visible = false;
+
+        // rods
+        this.add.image(828, 351, "lodge", "rods");
+
+        // catalog_small0001
+        const catalog_small0001 = this.add.image(838, 263, "lodge", "catalog_small0001");
+        catalog_small0001.setOrigin(0, 0);
+
+        // catalog_small_tape
+        const catalog_small_tape = this.add.image(855, 261, "lodge", "catalog_small_tape");
+        catalog_small_tape.setOrigin(0, 0);
+
+        // bait
+        const bait = this.add.image(842, 439, "lodge", "bait");
+        bait.setOrigin(0.5060240963855421, 0.5);
 
         // lists
         const sort = [door, footrest, chair, table3];
@@ -138,6 +175,28 @@ export default class Lodge extends RoomScene {
         table3Button.spriteName = "table3";
         table3Button.callback = () => this.triggerWaddle(104);
         table3Button.activeFrame = false;
+
+        // table3_1 (components)
+        const table3_1Button = new Button(table3_1);
+        table3_1Button.spriteName = "table3";
+        table3_1Button.callback = () => this.triggerWaddle(105);
+        table3_1Button.activeFrame = false;
+
+        // table3_1_1 (components)
+        const table3_1_1Button = new Button(table3_1_1);
+        table3_1_1Button.spriteName = "table3";
+        table3_1_1Button.callback = () => this.triggerWaddle(106);
+        table3_1_1Button.activeFrame = false;
+
+        // fishing_door (components)
+        const fishing_doorButton = new Button(fishing_door);
+        fishing_doorButton.spriteName = "fishing_door";
+        const fishing_doorShowHint = new ShowHint(fishing_door);
+        fishing_doorShowHint.text = "Ice Fishing";
+
+        // bait (components)
+        const baitButton = new Button(bait);
+        baitButton.spriteName = "bait";
 
         this.flame = flame;
         this.flame_out = flame_out;

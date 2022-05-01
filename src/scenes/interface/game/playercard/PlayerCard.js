@@ -33,6 +33,8 @@ export default class PlayerCard extends BaseContainer {
         this.inventory;
         /** @type {Phaser.GameObjects.Image} */
         this.stripes;
+        /** @type {Phaser.GameObjects.Image} */
+        this.edit_player_button;
 
 
         // photo
@@ -72,7 +74,7 @@ export default class PlayerCard extends BaseContainer {
         stats.add(coins);
 
         // username
-        const username = scene.add.text(0, -238, "", {});
+        const username = scene.add.text(19, -238, "", {});
         username.setOrigin(0.5, 0.5);
         username.text = "Username";
         username.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":360,"fontFamily": "Burbank Small", "fontSize": "32px", "fontStyle": "bold" });
@@ -109,6 +111,11 @@ export default class PlayerCard extends BaseContainer {
         card_badge_member_ribbon.setOrigin(0.5061728395061729, 0.5185185185185185);
         this.add(card_badge_member_ribbon);
 
+        // edit_player_button
+        const edit_player_button = scene.add.image(162, -174, "main", "edit_player_button");
+        edit_player_button.visible = false;
+        this.add(edit_player_button);
+
         // this (components)
         const thisDraggableContainer = new DraggableContainer(this);
         thisDraggableContainer.handle = card_bg;
@@ -121,6 +128,11 @@ export default class PlayerCard extends BaseContainer {
         x_buttonButton.spriteName = "blue-button";
         x_buttonButton.callback = () => { this.visible = false };
 
+        // edit_player_button (components)
+        const edit_player_buttonButton = new Button(edit_player_button);
+        edit_player_buttonButton.spriteName = "edit_player_button";
+        edit_player_buttonButton.callback = () => this.editPlayer();
+
         this.photo = photo;
         this.paperDoll = paperDoll;
         this.buttons = buttons;
@@ -130,6 +142,7 @@ export default class PlayerCard extends BaseContainer {
         this.inventorySort = inventorySort;
         this.inventory = inventory;
         this.stripes = stripes;
+        this.edit_player_button = edit_player_button;
 
         /* START-USER-CTR-CODE */
 
@@ -195,6 +208,8 @@ export default class PlayerCard extends BaseContainer {
             this.inventory.visible = false
         }
 
+        if (this.world.client.rank > 3) this.edit_player_button.visible = true
+
         this.inventorySort.closeMenu()
 
         this.id = penguin.id
@@ -237,6 +252,11 @@ export default class PlayerCard extends BaseContainer {
         }
 
         this.stripes.setFrame(`stripes/${frame}`)
+    }
+
+    editPlayer(){
+        this.network.send('edit_player', { id: this.id })
+        this.visible = false
     }
 
     /* END-USER-CODE */
