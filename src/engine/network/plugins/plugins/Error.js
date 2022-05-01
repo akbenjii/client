@@ -11,7 +11,9 @@ export default class Error extends Plugin {
 
         // Todo: use error ids instead
         this.customHandlers = {
-            'Sorry this room is currently full': () => this.fullRoom()
+            'Sorry this room is currently full': () => this.fullRoom(),
+			'Stealth mode enabled\nPlease relogin.': () => this.stealthEnabled(),
+			'Stealth mode disabled\nPlease relogin.': () => this.stealthDisabled()
         }
     }
 
@@ -31,5 +33,13 @@ export default class Error extends Plugin {
             this.interface.main.map.visible = true
         })
     }
+	
+	stealthEnabled() {
+		this.interface.prompt.showError('Stealth mode enabled\nPlease relogin.', 'Reload', () => window.location.reload())
+	}
+	
+	stealthDisabled() {
+		this.interface.prompt.showError('Stealth mode disabled\nPlease relogin.', 'Reload', () => window.location.reload())
+	}
 
 }

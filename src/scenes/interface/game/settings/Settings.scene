@@ -213,6 +213,60 @@
                     },
                     "x": 300,
                     "y": -270
+                },
+                {
+                    "type": "Container",
+                    "id": "3588dab5-2727-4a84-bdb0-e5d2f58cfff0",
+                    "label": "stealth",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -312,
+                    "y": -291,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "39d47bb6-4b39-4551-bc92-bf14e6b3df70",
+                            "label": "stealth_button",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "blue-button",
+                            "Button.callback": "() => this.toggleStealth()",
+                            "texture": {
+                                "key": "main",
+                                "frame": "blue-button"
+                            },
+                            "x": 13,
+                            "y": 23
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7da724fd-5a05-4a98-8563-603df8ecb67d",
+                            "label": "stealth_icon",
+                            "components": [],
+                            "text": "S",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "stroke": "#003366",
+                            "strokeThickness": 7,
+                            "shadow.fill": true
+                        },
+                        {
+                            "type": "Text",
+                            "id": "284a2323-6de7-4535-af17-36e1c92a50f8",
+                            "label": "stealth_text",
+                            "components": [],
+                            "x": 46,
+                            "y": -8,
+                            "text": "Toggle\nStealth Mode",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "25px",
+                            "stroke": "#ffffffff",
+                            "shadow.fill": true
+                        }
+                    ]
                 }
             ]
         }

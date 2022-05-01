@@ -17,12 +17,14 @@ export default class Waddle extends Plugin {
     }
 
     joinWaddle(args) {
-        this.interface.main.waddle.showWaddle(args.waddle, args.seat)
+        if (args.game == 'four'){ this.interface.main.findFour.showWaddle(args.waddle, args.seat) }
+        else { this.interface.main.waddle.showWaddle(args.waddle, args.seat) }
     }
 
     updateWaddle(args) {
         if (this.world.room.isReady) {
-            this.interface.main.waddle.updateWaddle(args.waddle, args.seat, args.username)
+            if (args.game == 'four'){ this.interface.main.findFour.updateWaddle(args.waddle, args.seat, args.username)}
+            else { this.interface.main.waddle.updateWaddle(args.waddle, args.seat, args.username) }
         }
     }
 

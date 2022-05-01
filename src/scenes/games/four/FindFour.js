@@ -1,6 +1,7 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
 import Button from '@scenes/components/Button'
+import DraggableContainer from '@scenes/components/DraggableContainer'
 import Interactive from '@scenes/components/Interactive'
 import SimpleButton from '@scenes/components/SimpleButton'
 
@@ -18,6 +19,8 @@ export default class FindFour extends BaseContainer {
         this.hover;
         /** @type {Phaser.GameObjects.Image[]} */
         this.placers;
+        /** @type {FindFourPlayer[]} */
+        this.items;
 
 
         // window
@@ -91,25 +94,25 @@ export default class FindFour extends BaseContainer {
 
         // lists
         const placers = [placer0, placer1, placer2, placer3, placer4, placer5, placer6];
+        const items = [player1, player2];
+
+        // this (components)
+        const thisDraggableContainer = new DraggableContainer(this);
+        thisDraggableContainer.handle = window;
 
         // x_button (components)
         const x_buttonButton = new Button(x_button);
         x_buttonButton.spriteName = "blue-button";
-        x_buttonButton.callback = () => { this.visible = false };
+        x_buttonButton.callback = () => this.onClose();
 
         this.hover = hover;
         this.placers = placers;
+        this.items = items;
 
         /* START-USER-CTR-CODE */
 
-        this.scene = scene
-
-        this.map = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
-        this.buttons = []
-
-        this.shadowIndex = this.getIndex(shadow)
-
-        this.handleStartGame()
+        this.activeWaddleId
+        this.activeSeat
 
         /* END-USER-CTR-CODE */
     }
@@ -118,6 +121,14 @@ export default class FindFour extends BaseContainer {
     /* START-USER-CODE */
 
     handleStartGame() {
+
+        this.scene = scene
+
+        this.map = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+        this.buttons = []
+
+        this.shadowIndex = this.getIndex(shadow)
+
         // Create buttons
         let x = -146
 
@@ -189,6 +200,69 @@ export default class FindFour extends BaseContainer {
             },
             repeat: y
         })
+    }
+
+    get activeWaddle() {
+        return this.world.room.waddles[this.activeWaddleId]
+    }
+
+    getSeat(waddle, seat) {
+        return this.world.room[`seats${waddle}`][seat]
+    }
+
+    onClose() {
+        this.network.send('leave_waddle')
+
+        this.leaveSeat()
+
+        this.activeWaddleId = null
+        this.visible = false
+    }
+
+    showWaddle(waddle, seat) {
+        this.activeWaddleId = waddle
+
+        this.seat = seat
+
+        this.enterSeat(waddle, seat)
+
+        this.items.map(item => item.hideItem())
+
+        for (let [index, username] of this.activeWaddle.entries()) {
+            this.items[index].setItem(username, this.seat)
+        }
+
+        this.visible = true
+    }
+
+    updateWaddle(waddle, seat, username) {
+        let sprite = this.getSeat(waddle, seat)
+        sprite.visible = username != null
+
+        this.world.room.waddles[waddle][seat] = username
+
+        if (waddle == this.activeWaddleId) {
+            this.items[seat].setItem(username)
+        }
+    }
+	
+	init(users, turn) {
+		console.log(users, turn)
+	}
+
+    enterSeat(waddle, seat) {
+        this.activeSeat = this.getSeat(waddle, seat)
+
+        this.world.client.penguin.move(this.activeSeat.x, this.activeSeat.y, this.activeSeat.sitFrame)
+    }
+
+    leaveSeat() {
+        let x = this.activeSeat.x + this.activeSeat.offsetX
+        let y = this.activeSeat.y + this.activeSeat.offsetY
+
+        this.activeSeat = null
+
+        this.world.client.penguin.move(x, y)
     }
 
     /* END-USER-CODE */

@@ -17,7 +17,10 @@
             "type": "Container",
             "id": "c78a9501-c3e6-456b-b088-10901aee86b1",
             "label": "container_1",
-            "components": [],
+            "components": [
+                "DraggableContainer"
+            ],
+            "DraggableContainer.handle": "window",
             "x": 760,
             "y": 480,
             "list": [
@@ -193,7 +196,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "blue-button",
-                    "Button.callback": "() => { this.visible = false }",
+                    "Button.callback": "() => this.onClose()",
                     "texture": {
                         "key": "main",
                         "frame": "blue-button"
@@ -235,6 +238,14 @@
                 "8a5e48dd-707a-49c0-b301-fda55c75b983",
                 "9a887e10-d735-4cb7-ac8f-10507a4efc7b",
                 "a4d398e9-8934-4ee2-8dd8-cabf33dd4843"
+            ]
+        },
+        {
+            "id": "4974b1ce-2910-4903-af1b-8077c4c1c801",
+            "label": "items",
+            "objectIds": [
+                "464b8f4f-cdab-4139-af39-d1ac85c8631e",
+                "df191ca7-415a-4fc9-a8d5-e65fef52082c"
             ]
         }
     ]

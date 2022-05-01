@@ -41,6 +41,40 @@ export default class FindFourPlayer extends Phaser.GameObjects.Container {
 
 
     /* START-USER-CODE */
+
+    setItem(username, seat) {
+        this.visible = true
+		this.seat = (seat) ? seat + 1 : 1
+		
+		
+
+        this.waiting.text = (username) ? username : 'Waiting for Player'
+
+        if (username) {
+            this.stopSpinner()
+            console.log(this.seat)
+        	this.spinner.setTexture('four', 'counter_' + this.seat.toString())
+			
+
+        } else {
+            this.startSpinner()
+        }
+    }
+
+    hideItem() {
+        this.visible = false
+        this.stopSpinner()
+    }
+
+    startSpinner() {
+        this.spinnerTween.seek(0)
+        this.spinnerTween.resume()
+    }
+
+    stopSpinner() {
+        this.spinnerTween.pause()
+    }
+
     /* END-USER-CODE */
 }
 
