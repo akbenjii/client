@@ -215,8 +215,11 @@ export default class Pizza extends RoomScene {
 
     create() {
         super.create()
-        this.fire.play("pizza-fire")
-        this.steam.play("pizza-steam")
+        this.fire.play("fire")
+        this.steam.play("steam")
+        this.candle_fire10001_png.play("candles")
+        this.candle_fire2.play("candles")
+        this.candle_fire3.play("candles")
     }
 
     onRegOver() {
