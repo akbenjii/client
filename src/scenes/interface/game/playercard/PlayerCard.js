@@ -189,7 +189,11 @@ export default class PlayerCard extends BaseContainer {
      */
     _showCard(penguin, items = penguin) {
         // Text
-        this.username.text = penguin.username
+        if (penguin.username_approved == 1) {
+			this.username.text = penguin.username
+		} else {
+			this.username.text = "P" + penguin.id
+		}
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)
