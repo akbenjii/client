@@ -47,22 +47,27 @@ export default class Attic extends RoomScene {
         // table2
         const table2 = this.add.image(438, 751, "attic", "table2");
         table2.setOrigin(0.47058824, 0.56034483);
+        table2.visible = false;
 
         // table1
         const table1 = this.add.image(810, 762, "attic", "table1");
         table1.setOrigin(0.54362416, 0.56818182);
+        table1.visible = false;
 
         // table3
         const table3 = this.add.image(606, 618, "attic", "table3");
         table3.setOrigin(0.49342105, 0.50735294);
+        table3.visible = false;
 
         // table1_1
         const table1_1 = this.add.image(873, 582, "attic", "table1");
         table1_1.setOrigin(0.54362416, 0.56818182);
+        table1_1.visible = false;
 
         // table4
         const table4 = this.add.image(1135, 802, "attic", "table4");
         table4.setOrigin(0.4251497005988024, 0.6060606060606061);
+        table4.visible = false;
 
         // box
         const box = this.add.image(-1, 970, "attic", "box");

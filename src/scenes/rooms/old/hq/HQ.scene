@@ -75,31 +75,6 @@
             },
             "x": 382,
             "y": 281
-        },
-        {
-            "type": "Image",
-            "id": "54f7a16d-245d-435c-9fc6-85b712546822",
-            "label": "yumyuck",
-            "components": [
-                "MoveTo",
-                "Button",
-                "ShowHint"
-            ],
-            "MoveTo.y": 720,
-            "Button.spriteName": "yumyuck",
-            "Button.callback": "() => this.triggerGame(\"yumyuck\", 911)",
-            "Button.activeFrame": false,
-            "ShowHint.text": "Play Yum Yuck",
-            "texture": {
-                "key": "yumyuck",
-                "frame": "yumyuck"
-            },
-            "x": 515,
-            "y": 505,
-            "scaleX": 0.8615145908643389,
-            "scaleY": 0.8615145908643389,
-            "originX": 0.6785130589134409,
-            "originY": 0.21059460069954655
         }
     ],
     "plainObjects": [],

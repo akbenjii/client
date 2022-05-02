@@ -364,7 +364,7 @@
         {
             "type": "Sprite",
             "id": "c4da58e9-3488-4c70-802f-853d43c5b5e1",
-            "label": "smoke0001_png",
+            "label": "steam",
             "scope": "CLASS",
             "components": [],
             "texture": {
@@ -377,7 +377,7 @@
         {
             "type": "Sprite",
             "id": "abb691cb-dc75-432c-b4f0-140d4d532da9",
-            "label": "fire0001_png",
+            "label": "fire",
             "scope": "CLASS",
             "components": [],
             "texture": {
@@ -388,24 +388,6 @@
             "y": 770,
             "scaleX": 1.02,
             "scaleY": 1.02
-        },
-        {
-            "type": "Image",
-            "id": "254cd55d-4171-430a-b747-a35268a8590f",
-            "label": "music_Note_Pin_PNG",
-            "components": [
-                "MoveTo",
-                "SimpleButton"
-            ],
-            "MoveTo.y": 380,
-            "SimpleButton.callback": "() => setTimeout(() => {this.interface.prompt.showItem(551); }, 1000);",
-            "texture": {
-                "key": "Music_Note_Pin.PNG"
-            },
-            "x": 1157,
-            "y": 326,
-            "scaleX": 0.02400738653053537,
-            "scaleY": 0.02400738653053537
         }
     ],
     "plainObjects": [],

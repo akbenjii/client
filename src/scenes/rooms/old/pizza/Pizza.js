@@ -20,9 +20,9 @@ export default class Pizza extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.book_hover0001_png;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.smoke0001_png;
+        this.steam;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.fire0001_png;
+        this.fire;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -158,18 +158,13 @@ export default class Pizza extends RoomScene {
         book_hover0001_png.scaleY = 1.02;
         book_hover0001_png.setOrigin(0.46759919553938006, 2.263818792824983);
 
-        // smoke0001_png
-        const smoke0001_png = this.add.sprite(43, 165, "pizza", "smoke0001.png");
+        // steam
+        const steam = this.add.sprite(43, 165, "pizza", "smoke0001.png");
 
-        // fire0001_png
-        const fire0001_png = this.add.sprite(110, 770, "pizza", "fire0001.png");
-        fire0001_png.scaleX = 1.02;
-        fire0001_png.scaleY = 1.02;
-
-        // music_Note_Pin_PNG
-        const music_Note_Pin_PNG = this.add.image(1157, 326, "Music_Note_Pin.PNG");
-        music_Note_Pin_PNG.scaleX = 0.02400738653053537;
-        music_Note_Pin_PNG.scaleY = 0.02400738653053537;
+        // fire
+        const fire = this.add.sprite(110, 770, "pizza", "fire0001.png");
+        fire.scaleX = 1.02;
+        fire.scaleY = 1.02;
 
         // lists
         const sort = [piano_png, chair1_png, chair2_png, chair3_png, chair4_png, chair5_png, chair6_png, candle_fire10001_png, table1_png, candle_fire2, table2_png, candle_fire3, table3_png, big_table_png, register0001_png, book_hover0001_png];
@@ -203,19 +198,13 @@ export default class Pizza extends RoomScene {
         const book_hover0001_pngSimpleButton = new SimpleButton(book_hover0001_png);
         book_hover0001_pngSimpleButton.hoverCallback = () => this.onBookOver();
 
-        // music_Note_Pin_PNG (components)
-        const music_Note_Pin_PNGMoveTo = new MoveTo(music_Note_Pin_PNG);
-        music_Note_Pin_PNGMoveTo.y = 380;
-        const music_Note_Pin_PNGSimpleButton = new SimpleButton(music_Note_Pin_PNG);
-        music_Note_Pin_PNGSimpleButton.callback = () => setTimeout(() => {this.interface.prompt.showItem(551); }, 1000);;
-
         this.candle_fire10001_png = candle_fire10001_png;
         this.candle_fire2 = candle_fire2;
         this.register0001_png = register0001_png;
         this.candle_fire3 = candle_fire3;
         this.book_hover0001_png = book_hover0001_png;
-        this.smoke0001_png = smoke0001_png;
-        this.fire0001_png = fire0001_png;
+        this.steam = steam;
+        this.fire = fire;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -223,6 +212,12 @@ export default class Pizza extends RoomScene {
 
 
     /* START-USER-CODE */
+
+    create() {
+        super.create()
+        this.fire.play("pizza-fire")
+        this.steam.play("pizza-steam")
+    }
 
     onRegOver() {
         let animation = (this.boardToggle) ? 'cashregover' : 'cashregout'

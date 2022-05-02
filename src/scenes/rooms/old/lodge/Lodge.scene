@@ -87,8 +87,8 @@
                 "key": "lodge",
                 "frame": "fire0001"
             },
-            "x": 1351,
-            "y": 488,
+            "x": 1334,
+            "y": 468,
             "scaleX": 1.02,
             "scaleY": 1.02,
             "originX": 0.5061728395061729
@@ -216,12 +216,16 @@
             "label": "fishing_door",
             "components": [
                 "Button",
-                "ShowHint"
+                "ShowHint",
+                "MoveTo"
             ],
             "Button.spriteName": "fishing_door",
             "Button.hoverCallback": "() => this.onDoorOver()",
             "Button.hoverOutCallback": "() =>this.onDoorOut()",
+            "Button.activeFrame": false,
             "ShowHint.text": "Ice Fishing",
+            "MoveTo.x": 960,
+            "MoveTo.y": 460,
             "texture": {
                 "key": "lodge",
                 "frame": "fishing_door"
@@ -295,6 +299,7 @@
                 "Button"
             ],
             "Button.spriteName": "bait",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "lodge",
                 "frame": "bait"

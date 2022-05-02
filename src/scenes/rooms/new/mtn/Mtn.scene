@@ -16,6 +16,30 @@
     },
     "displayList": [
         {
+            "type": "Rectangle",
+            "id": "d37ce588-a0a9-4275-b0d2-d0c18a030618",
+            "label": "rectangle_1",
+            "components": [],
+            "x": 41,
+            "y": 731,
+            "isFilled": true,
+            "fillColor": "#365f40",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "4c42f116-e21e-42ca-9d12-8ad706143c3d",
+            "label": "rectangle",
+            "components": [],
+            "x": 122,
+            "y": 731,
+            "isFilled": true,
+            "fillColor": "#c4d2d5",
+            "width": 128,
+            "height": 128
+        },
+        {
             "type": "Sprite",
             "id": "2963bf1c-c125-451e-a55d-f315c17c67e8",
             "label": "bg",

@@ -38,11 +38,16 @@ export default class TextBalloon extends Balloon {
         return textSprite
     }
 
-    setContent(text) {
+    setContent(text, filtered = false) {
         this.updatePosition()
 
         text = text.substring(0, this.maxLength)
         this.text.text = text
+        if (filtered) {
+            this.text.setColor('#ff0000')
+        } else {
+            this.text.setColor('#000000')
+        }
 
         this.resizeBalloon(this.balloon.width, this.text.height + this.paddingY)
     }

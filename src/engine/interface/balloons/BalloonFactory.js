@@ -49,7 +49,7 @@ export default class BalloonFactory {
      * @param {number} id - Penguin ID
      * @param {string} text - Message to be displayed
      */
-    showTextBalloon(id, text) {
+    showTextBalloon(id, text, filtered = false) {
         if (!text) {
             return
         }
@@ -75,7 +75,7 @@ export default class BalloonFactory {
             penguin.room.add.existing(penguin.textBalloon)
         }
 
-        penguin.textBalloon.setContent(text)
+        penguin.textBalloon.setContent(text, filtered)
         this.updateBalloon(penguin, penguin.textBalloon)
     }
 

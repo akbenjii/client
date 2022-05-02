@@ -220,14 +220,14 @@ export default class Main extends BaseScene {
         const map_button = this.add.sprite(90, 888, "main", "map-button");
 
         // request_button
-        const request_button = this.add.image(170, 52, "main", "mail-button");
+        const request_button = this.add.image(170, 58, "main", "buddy-button");
         request_button.visible = false;
 
         // news_button
         const news_button = this.add.image(70, 61, "main", "news-button");
 
         // mod_btn
-        const mod_btn = this.add.container(174, 62);
+        const mod_btn = this.add.container(70, 161);
 
         // mod_button
         const mod_button = this.add.image(0, 0, "main", "mod/button");
@@ -302,7 +302,7 @@ export default class Main extends BaseScene {
 
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
-        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, chat_icon, chat_button, chat_box, map_button, news_button, mod_button, mod_m, chatLog, badge_member, emote_icon];
+        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, chat_icon, chat_button, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
 
         // dock (components)
         new Interactive(dock);
@@ -385,7 +385,7 @@ export default class Main extends BaseScene {
 
         // request_button (components)
         const request_buttonButton = new Button(request_button);
-        request_buttonButton.spriteName = "mail-button";
+        request_buttonButton.spriteName = "buddy-button";
         request_buttonButton.callback = () => this.onRequestClick();
         request_buttonButton.activeFrame = false;
 

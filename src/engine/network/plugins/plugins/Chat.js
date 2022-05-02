@@ -8,13 +8,20 @@ export default class Chat extends Plugin {
         this.events = {
             'send_message': this.sendMessage,
             'send_safe': this.sendSafe,
-            'send_emote': this.sendEmote
+            'send_emote': this.sendEmote,
+            'filtered_message': this.filteredMessage,
         }
     }
 
     sendMessage(args) {
         if (this.world.room.isReady) {
             this.interface.showTextBalloon(args.id, args.message)
+        }
+    }
+
+    filteredMessage(args) {
+        if (this.world.room.isReady && this.world.client.penguin.rank > 3) {
+            this.interface.showTextBalloon(args.id, args.message, true)
         }
     }
 

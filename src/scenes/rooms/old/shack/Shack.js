@@ -19,7 +19,7 @@ export default class Shack extends RoomScene {
         this.roomTriggers = {
             'forest': () => this.triggerRoom(809, 1234, 410),
             'eco': null,
-            'mine': null
+            'mine': () => this.triggerRoom(808, 1200, 400)
         }
 
         /* END-USER-CTR-CODE */

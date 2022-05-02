@@ -40,22 +40,6 @@ export default class HQ extends RoomScene {
         // tv_png
         this.add.image(382, 281, "hq", "tv.png");
 
-        // yumyuck
-        const yumyuck = this.add.image(515, 505, "yumyuck", "yumyuck");
-        yumyuck.scaleX = 0.8615145908643389;
-        yumyuck.scaleY = 0.8615145908643389;
-        yumyuck.setOrigin(0.6785130589134409, 0.21059460069954655);
-
-        // yumyuck (components)
-        const yumyuckMoveTo = new MoveTo(yumyuck);
-        yumyuckMoveTo.y = 720;
-        const yumyuckButton = new Button(yumyuck);
-        yumyuckButton.spriteName = "yumyuck";
-        yumyuckButton.callback = () => this.triggerGame("yumyuck", 911);
-        yumyuckButton.activeFrame = false;
-        const yumyuckShowHint = new ShowHint(yumyuck);
-        yumyuckShowHint.text = "Play Yum Yuck";
-
         this.events.emit("scene-awake");
     }
 

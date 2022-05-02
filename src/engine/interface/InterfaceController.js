@@ -102,8 +102,8 @@ export default class InterfaceController extends BaseScene {
         this.main.balloonFactory.showEmoteBalloon(id, emote)
     }
 
-    showTextBalloon(id, text) {
-        this.main.balloonFactory.showTextBalloon(id, text)
+    showTextBalloon(id, text, filtered = false) {
+        this.main.balloonFactory.showTextBalloon(id, text, filtered)
     }
 
     showCard(id, refresh = false) {

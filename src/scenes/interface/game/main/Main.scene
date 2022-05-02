@@ -440,15 +440,15 @@
             "components": [
                 "Button"
             ],
-            "Button.spriteName": "mail-button",
+            "Button.spriteName": "buddy-button",
             "Button.callback": "() => this.onRequestClick()",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
-                "frame": "mail-button"
+                "frame": "buddy-button"
             },
             "x": 170,
-            "y": 52,
+            "y": 58,
             "visible": false
         },
         {
@@ -475,8 +475,8 @@
             "label": "mod_btn",
             "scope": "CLASS",
             "components": [],
-            "x": 174,
-            "y": 62,
+            "x": 70,
+            "y": 161,
             "list": [
                 {
                     "type": "Image",
@@ -752,7 +752,6 @@
                 "2351bf55-0c93-41dd-b444-f89ba39d6a6c",
                 "00577d6e-77b3-4f4d-a972-c43494357612",
                 "b8adf69c-a4a9-47ec-bbac-5e9b86643dec",
-                "3d799d81-5005-4dfc-820b-ddeb0ea8307e",
                 "6dca3f2a-91a7-4ed4-8cf2-5a0ddf89d4c9",
                 "4040e412-ba63-4812-bbe9-fc4ba0f76672",
                 "5e4ed4ed-00af-41ab-80e5-0f59836474bc",

@@ -67,7 +67,7 @@ export default class Lodge extends RoomScene {
         chair.setOrigin(0.5017064846416383, 0.5018450184501845);
 
         // fire
-        const fire = this.add.sprite(1351, 488, "lodge", "fire0001");
+        const fire = this.add.sprite(1334, 468, "lodge", "fire0001");
         fire.scaleX = 1.02;
         fire.scaleY = 1.02;
         fire.setOrigin(0.5061728395061729, 0.5);
@@ -208,12 +208,17 @@ export default class Lodge extends RoomScene {
         fishing_doorButton.spriteName = "fishing_door";
         fishing_doorButton.hoverCallback = () => this.onDoorOver();
         fishing_doorButton.hoverOutCallback = () =>this.onDoorOut();
+        fishing_doorButton.activeFrame = false;
         const fishing_doorShowHint = new ShowHint(fishing_door);
         fishing_doorShowHint.text = "Ice Fishing";
+        const fishing_doorMoveTo = new MoveTo(fishing_door);
+        fishing_doorMoveTo.x = 960;
+        fishing_doorMoveTo.y = 460;
 
         // bait (components)
         const baitButton = new Button(bait);
         baitButton.spriteName = "bait";
+        baitButton.activeFrame = false;
 
         this.bg = bg;
         this.flame = flame;

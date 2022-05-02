@@ -28,6 +28,16 @@ export default class Mtn extends RoomScene {
     /** @returns {void} */
     _create() {
 
+        // rectangle_1
+        const rectangle_1 = this.add.rectangle(41, 731, 128, 128);
+        rectangle_1.isFilled = true;
+        rectangle_1.fillColor = 3563328;
+
+        // rectangle
+        const rectangle = this.add.rectangle(122, 731, 128, 128);
+        rectangle.isFilled = true;
+        rectangle.fillColor = 12899029;
+
         // bg
         const bg = this.add.sprite(729, 452, "skiHill-new", "bg.png");
 
