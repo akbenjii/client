@@ -46,100 +46,18 @@
                     "y": -44
                 },
                 {
-                    "type": "Image",
-                    "id": "a4d398e9-8934-4ee2-8dd8-cabf33dd4843",
-                    "label": "placer6",
+                    "type": "Container",
+                    "id": "0a4b10d7-2a94-4fb2-8652-09e09d0f3ec4",
+                    "label": "counterContainer",
+                    "scope": "CLASS",
                     "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "counter_1"
-                    },
-                    "x": -146,
-                    "y": 77,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "9a887e10-d735-4cb7-ac8f-10507a4efc7b",
-                    "label": "placer5",
-                    "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "counter_1"
-                    },
-                    "x": -146,
-                    "y": 29,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "8a5e48dd-707a-49c0-b301-fda55c75b983",
-                    "label": "placer4",
-                    "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "counter_1"
-                    },
-                    "x": -146,
-                    "y": -20,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "0035373a-2fda-426d-bc5f-7a61c65e06ff",
-                    "label": "placer3",
-                    "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "counter_1"
-                    },
-                    "x": -146,
-                    "y": -68,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "ff00a750-fb33-4a35-b7ea-76512e5df075",
-                    "label": "placer2",
-                    "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "counter_1"
-                    },
-                    "x": -146,
-                    "y": -117,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "fbf856f2-46d2-476f-bd44-5fbd5eb5a2a7",
-                    "label": "placer1",
-                    "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "counter_1"
-                    },
-                    "x": -146,
-                    "y": -165,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "ec4e49e5-b9ab-4e46-b8c1-9972b427aa02",
-                    "label": "placer0",
-                    "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "counter_1"
-                    },
-                    "x": -146,
-                    "y": -205,
-                    "visible": false
+                    "list": []
                 },
                 {
                     "type": "Image",
                     "id": "ffb54173-b9ac-4fe1-bab7-7a6b435da288",
                     "label": "board",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "four",
@@ -175,21 +93,6 @@
                 },
                 {
                     "type": "Image",
-                    "id": "ec828e7e-f8fe-45ce-a6b2-37004b848cde",
-                    "label": "hover",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "four",
-                        "frame": "button/counter_1"
-                    },
-                    "x": -145,
-                    "y": -194,
-                    "originY": 0.7,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
                     "id": "9eee329c-ab1e-4e40-9949-fd7a1f1a0508",
                     "label": "x_button",
                     "components": [
@@ -215,6 +118,137 @@
                     },
                     "x": 181,
                     "y": -245
+                },
+                {
+                    "type": "Image",
+                    "id": "ec828e7e-f8fe-45ce-a6b2-37004b848cde",
+                    "label": "hover",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "four",
+                        "frame": "counter_1"
+                    },
+                    "x": -145,
+                    "y": -194,
+                    "originY": 0.7,
+                    "visible": false
+                },
+                {
+                    "type": "Container",
+                    "id": "679651b3-e1fc-4c54-9ea1-6b6dde4bbb91",
+                    "label": "hitbox",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -152,
+                    "y": -44,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "4fafbb7a-591f-4463-8d07-172b8c6e05dd",
+                            "label": "column1",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(-145)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(0)",
+                            "fillColor": "#e30000",
+                            "fillAlpha": 0.5,
+                            "width": 60,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a93e8a11-ef0a-4709-9dc9-adea848a3ecf",
+                            "label": "column2",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(-97)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(1)",
+                            "x": 55,
+                            "fillColor": "#bae300",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "ea44a581-3a33-4dd7-99bf-bfd9354a5c0b",
+                            "label": "column3",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(-49)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(2)",
+                            "x": 103,
+                            "fillColor": "#00e303",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "b5511c79-353f-462a-af15-ce997e16e3c0",
+                            "label": "column4",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(0)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(3)",
+                            "x": 152,
+                            "fillColor": "#00e3bb",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a98e67e8-76f5-4b03-ad29-da0d84d3bfc8",
+                            "label": "column5",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(49)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(4)",
+                            "x": 201,
+                            "fillColor": "#006be3",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a70bebf6-99db-47bc-9056-936a252ab337",
+                            "label": "column6",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(98)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(5)",
+                            "x": 250,
+                            "fillColor": "#5800e3",
+                            "fillAlpha": 0.5,
+                            "width": 49,
+                            "height": 304
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "a64fbfde-d510-41b5-90c5-d75bbed76702",
+                            "label": "column7",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.hoverCallback": "() => this.onHover(145)",
+                            "SimpleButton.callback": "() => this.onCounterPlace(6)",
+                            "x": 304,
+                            "fillColor": "#e37800",
+                            "fillAlpha": 0.5,
+                            "width": 60,
+                            "height": 304
+                        }
+                    ]
                 }
             ]
         }
@@ -229,16 +263,7 @@
     "lists": [
         {
             "id": "fed2c198-258f-4f6a-b7e3-21b688fed227",
-            "label": "placers",
-            "objectIds": [
-                "ec4e49e5-b9ab-4e46-b8c1-9972b427aa02",
-                "fbf856f2-46d2-476f-bd44-5fbd5eb5a2a7",
-                "ff00a750-fb33-4a35-b7ea-76512e5df075",
-                "0035373a-2fda-426d-bc5f-7a61c65e06ff",
-                "8a5e48dd-707a-49c0-b301-fda55c75b983",
-                "9a887e10-d735-4cb7-ac8f-10507a4efc7b",
-                "a4d398e9-8934-4ee2-8dd8-cabf33dd4843"
-            ]
+            "label": "placers"
         },
         {
             "id": "4974b1ce-2910-4903-af1b-8077c4c1c801",

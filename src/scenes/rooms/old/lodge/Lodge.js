@@ -11,15 +11,21 @@ export default class Lodge extends RoomScene {
         super("Lodge");
 
         /** @type {Phaser.GameObjects.Sprite} */
+        this.bg;
+        /** @type {Phaser.GameObjects.Sprite} */
         this.flame;
         /** @type {Phaser.GameObjects.Sprite} */
         this.flame_out;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.bird_clock0001;
+        this.fish;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Phaser.GameObjects.Ellipse[]} */
         this.seats104;
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats105;
+        /** @type {Phaser.GameObjects.Ellipse[]} */
+        this.seats106;
 
 
         /* START-USER-CTR-CODE */
@@ -47,14 +53,10 @@ export default class Lodge extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.image(766, 501, "lodge", "bg");
-        bg.scaleX = 1.03;
-        bg.scaleY = 1.03;
+        const bg = this.add.sprite(0, 0, "lodge", "bg");
 
         // door
-        const door = this.add.image(122, 474, "lodge", "door");
-        door.scaleX = 1.02;
-        door.scaleY = 1.02;
+        const door = this.add.image(135, 456, "lodge", "door");
 
         // footrest
         const footrest = this.add.image(1322, 791, "lodge", "footrest");
@@ -83,19 +85,10 @@ export default class Lodge extends RoomScene {
         flame_out.setOrigin(0, 0);
         flame_out.visible = false;
 
-        // bird_clock0001
-        const bird_clock0001 = this.add.sprite(392, 347, "bird-clock0001");
-
         // table3
         const table3 = this.add.image(1011, 577, "lodge", "table3");
         table3.scaleX = -1;
         table3.setOrigin(0.5, 0.6985294117647058);
-
-        // seat1
-        const seat1 = this.add.image(736, 621, "seat104");
-
-        // seat2
-        const seat2 = this.add.image(870, 706, "seat104");
 
         // table3_1
         const table3_1 = this.add.image(889, 711, "lodge", "table3");
@@ -110,10 +103,10 @@ export default class Lodge extends RoomScene {
         const fishing_door = this.add.image(959, 274, "lodge", "fishing_door");
         fishing_door.setOrigin(0.2916666666666667, 0.3961218836565097);
 
-        // fish0001
-        const fish0001 = this.add.image(1021, 390, "lodge", "fish0001");
-        fish0001.setOrigin(0, 0);
-        fish0001.visible = false;
+        // fish
+        const fish = this.add.sprite(1021, 390, "lodge", "fish0001");
+        fish.setOrigin(0, 0);
+        fish.visible = false;
 
         // rods
         this.add.image(828, 351, "lodge", "rods");
@@ -130,9 +123,35 @@ export default class Lodge extends RoomScene {
         const bait = this.add.image(842, 439, "lodge", "bait");
         bait.setOrigin(0.5060240963855421, 0.5);
 
+        // ellipse
+        const ellipse = this.add.ellipse(928, 592, 50, 50);
+        ellipse.visible = false;
+
+        // ellipse_1
+        const ellipse_1 = this.add.ellipse(1084, 510, 50, 50);
+        ellipse_1.visible = false;
+
+        // ellipse_2
+        const ellipse_2 = this.add.ellipse(821, 750, 50, 50);
+        ellipse_2.visible = false;
+
+        // ellipse_3
+        const ellipse_3 = this.add.ellipse(967, 665, 50, 50);
+        ellipse_3.visible = false;
+
+        // ellipse_4
+        const ellipse_4 = this.add.ellipse(1053, 632, 50, 50);
+        ellipse_4.visible = false;
+
+        // ellipse_5
+        const ellipse_5 = this.add.ellipse(1172, 724, 50, 50);
+        ellipse_5.visible = false;
+
         // lists
         const sort = [door, footrest, chair, table3];
-        const seats104 = [seat1, seat2];
+        const seats104 = [ellipse_1, ellipse];
+        const seats105 = [ellipse_3, ellipse_2];
+        const seats106 = [ellipse_4, ellipse_5];
 
         // door (components)
         const doorButton = new Button(door);
@@ -166,10 +185,6 @@ export default class Lodge extends RoomScene {
         flame_outAnimation.showOnStart = true;
         flame_outAnimation.hideOnComplete = true;
 
-        // bird_clock0001 (components)
-        const bird_clock0001SimpleButton = new SimpleButton(bird_clock0001);
-        bird_clock0001SimpleButton.hoverCallback = () => this.onClockOver();
-
         // table3 (components)
         const table3Button = new Button(table3);
         table3Button.spriteName = "table3";
@@ -191,6 +206,8 @@ export default class Lodge extends RoomScene {
         // fishing_door (components)
         const fishing_doorButton = new Button(fishing_door);
         fishing_doorButton.spriteName = "fishing_door";
+        fishing_doorButton.hoverCallback = () => this.onDoorOver();
+        fishing_doorButton.hoverOutCallback = () =>this.onDoorOut();
         const fishing_doorShowHint = new ShowHint(fishing_door);
         fishing_doorShowHint.text = "Ice Fishing";
 
@@ -198,11 +215,14 @@ export default class Lodge extends RoomScene {
         const baitButton = new Button(bait);
         baitButton.spriteName = "bait";
 
+        this.bg = bg;
         this.flame = flame;
         this.flame_out = flame_out;
-        this.bird_clock0001 = bird_clock0001;
+        this.fish = fish;
         this.sort = sort;
         this.seats104 = seats104;
+        this.seats105 = seats105;
+        this.seats106 = seats106;
 
         this.events.emit("scene-awake");
     }
@@ -230,8 +250,13 @@ export default class Lodge extends RoomScene {
         this.world.client.penguin.move(1210, 460)
     }
 
-    onClockOver() {
-        this.bird_clock0001.play('clockbird')
+    onDoorOver() {
+        this.fish.visible = true
+        this.fish.play("fish")
+    }
+
+    onDoorOut() {
+        this.fish.visible = false
     }
 
     triggerWaddle(id) {

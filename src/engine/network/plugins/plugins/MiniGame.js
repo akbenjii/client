@@ -10,7 +10,10 @@ export default class MiniGame extends Plugin {
             'send_move': this.sendMove,
             'game_over': this.gameOver,
 			'end_ruffle_mingame': this.endRuffleMinigame,
-            'init_four': this.initFour
+            'init_four': this.initFour,
+			'place_counter': this.placeCounter,
+			'change_turn': this.changeTurn,
+			'four_over': this.fourOver
         }
     }
 	
@@ -43,5 +46,22 @@ export default class MiniGame extends Plugin {
     initFour(args) {
         this.interface.main.findFour.init(args.users, args.turn)
     }
+	
+	placeCounter(args) {
+		let colour;
+		if (args.user == this.world.client.id) { colour = this.interface.main.findFour.seat + 1 }
+		else if ( this.interface.main.findFour.seat == 0 ) { colour = 2 }
+		else { colour = 1 }
+		
+		this.interface.main.findFour.placeCounter(args.row, args.column, colour)
+	}
+	
+	changeTurn(args) {
+		this.interface.main.findFour.changeTurn(args.turn)
+	}
+	
+	fourOver(args) {
+		this.interface.main.findFour.reset()
+	}
 
 }

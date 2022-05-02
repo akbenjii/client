@@ -44,18 +44,13 @@ export default class FindFourPlayer extends Phaser.GameObjects.Container {
 
     setItem(username, seat) {
         this.visible = true
-		this.seat = (seat) ? seat + 1 : 1
-		
-		
+		this.seat = (seat) ? parseInt(seat) + 1 : 1
 
         this.waiting.text = (username) ? username : 'Waiting for Player'
 
         if (username) {
             this.stopSpinner()
-            console.log(this.seat)
         	this.spinner.setTexture('four', 'counter_' + this.seat.toString())
-			
-
         } else {
             this.startSpinner()
         }
@@ -67,6 +62,7 @@ export default class FindFourPlayer extends Phaser.GameObjects.Container {
     }
 
     startSpinner() {
+		this.spinner.setTexture("four", "spinner")
         this.spinnerTween.seek(0)
         this.spinnerTween.resume()
     }

@@ -17,18 +17,15 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "357e0fd7-9d68-4d34-81d1-a6f457a3ffd3",
+            "type": "Sprite",
+            "id": "89ce85fe-fda7-4306-a7f2-2c320fbab811",
             "label": "bg",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "lodge",
                 "frame": "bg"
-            },
-            "x": 766,
-            "y": 501,
-            "scaleX": 1.03,
-            "scaleY": 1.03
+            }
         },
         {
             "type": "Image",
@@ -46,10 +43,8 @@
                 "key": "lodge",
                 "frame": "door"
             },
-            "x": 122,
-            "y": 474,
-            "scaleX": 1.02,
-            "scaleY": 1.02
+            "x": 135,
+            "y": 456
         },
         {
             "type": "Image",
@@ -160,21 +155,6 @@
             "visible": false
         },
         {
-            "type": "Sprite",
-            "id": "9806d96d-e87e-4a73-8c7f-6881d418fbcc",
-            "label": "bird_clock0001",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onClockOver()",
-            "texture": {
-                "key": "bird-clock0001"
-            },
-            "x": 392,
-            "y": 347
-        },
-        {
             "type": "Image",
             "id": "982b7015-0e97-4f1c-be35-6780bb3352c4",
             "label": "table3",
@@ -192,28 +172,6 @@
             "y": 577,
             "scaleX": -1,
             "originY": 0.6985294117647058
-        },
-        {
-            "type": "Image",
-            "id": "9d198458-476a-4e99-860f-18190426395d",
-            "label": "seat1",
-            "components": [],
-            "texture": {
-                "key": "seat104"
-            },
-            "x": 736,
-            "y": 621
-        },
-        {
-            "type": "Image",
-            "id": "e6fe8c36-f197-466a-8eac-2edf860c765d",
-            "label": "seat2",
-            "components": [],
-            "texture": {
-                "key": "seat104"
-            },
-            "x": 870,
-            "y": 706
         },
         {
             "type": "Image",
@@ -261,6 +219,8 @@
                 "ShowHint"
             ],
             "Button.spriteName": "fishing_door",
+            "Button.hoverCallback": "() => this.onDoorOver()",
+            "Button.hoverOutCallback": "() =>this.onDoorOut()",
             "ShowHint.text": "Ice Fishing",
             "texture": {
                 "key": "lodge",
@@ -272,9 +232,10 @@
             "originY": 0.3961218836565097
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "e111e6ca-e2dc-4400-9dca-5d9eff2ab60f",
-            "label": "fish0001",
+            "label": "fish",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "lodge",
@@ -341,6 +302,72 @@
             "x": 842,
             "y": 439,
             "originX": 0.5060240963855421
+        },
+        {
+            "type": "Ellipse",
+            "id": "d2c8e94c-e91c-4313-8312-3d74cf1c050e",
+            "label": "ellipse",
+            "components": [],
+            "x": 928,
+            "y": 592,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "aa78ed4b-2a75-49f1-97eb-bab47fadfd90",
+            "label": "ellipse_1",
+            "components": [],
+            "x": 1084,
+            "y": 510,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "8d507c3b-b680-460b-939e-9f32f1323ef7",
+            "label": "ellipse_2",
+            "components": [],
+            "x": 821,
+            "y": 750,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "33aabb4b-6c81-44ce-b71f-affd41f06002",
+            "label": "ellipse_3",
+            "components": [],
+            "x": 967,
+            "y": 665,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "77fcc290-858b-4f98-8e77-55400d35c4ab",
+            "label": "ellipse_4",
+            "components": [],
+            "x": 1053,
+            "y": 632,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "588fc8b6-07cc-47d2-9ce9-6d9b724ac872",
+            "label": "ellipse_5",
+            "components": [],
+            "x": 1172,
+            "y": 724,
+            "visible": false,
+            "width": 50,
+            "height": 50
         }
     ],
     "plainObjects": [],
@@ -365,8 +392,24 @@
             "id": "81362400-3f0a-4f86-af55-f110469d3231",
             "label": "seats104",
             "objectIds": [
-                "9d198458-476a-4e99-860f-18190426395d",
-                "e6fe8c36-f197-466a-8eac-2edf860c765d"
+                "aa78ed4b-2a75-49f1-97eb-bab47fadfd90",
+                "d2c8e94c-e91c-4313-8312-3d74cf1c050e"
+            ]
+        },
+        {
+            "id": "fa7203a7-851a-4f50-89f1-527a6e210f4f",
+            "label": "seats105",
+            "objectIds": [
+                "33aabb4b-6c81-44ce-b71f-affd41f06002",
+                "8d507c3b-b680-460b-939e-9f32f1323ef7"
+            ]
+        },
+        {
+            "id": "6c0176f6-9d0c-46cb-89ab-11c421ae4f81",
+            "label": "seats106",
+            "objectIds": [
+                "77fcc290-858b-4f98-8e77-55400d35c4ab",
+                "588fc8b6-07cc-47d2-9ce9-6d9b724ac872"
             ]
         }
     ]
