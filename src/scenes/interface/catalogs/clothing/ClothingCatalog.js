@@ -68,6 +68,26 @@ export default class ClothingCatalog extends Book {
         /** @type {Phaser.GameObjects.Image} */
         this.buy2_pinkear;
         /** @type {Phaser.GameObjects.Image} */
+        this.buy2_pinkrollers;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_brownshoes;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_yrubber;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_iceskates;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_blackcheckshoes;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_bluecheckershoes;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_redtenniesshoes;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_bunnyslippers;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_cuckoo;
+        /** @type {Phaser.GameObjects.Image} */
+        this.buy_dressshoes;
+        /** @type {Phaser.GameObjects.Image} */
         this.buy_bletterman;
         /** @type {Phaser.GameObjects.Image} */
         this.buy2_blackhoodie;
@@ -178,273 +198,365 @@ export default class ClothingCatalog extends Book {
         block.fillColor = 0;
         block.fillAlpha = 0.2;
 
-        // page9
-        const page9 = this.add.container(0, 0);
-        page9.visible = false;
+        // page10
+        const page10 = this.add.container(0, 0);
+        page10.visible = false;
 
         // page_page0016
         const page_page0016 = this.add.image(-4, 2, "clothingcatalog", "page/page0016");
         page_page0016.setOrigin(0, 0);
-        page9.add(page_page0016);
+        page10.add(page_page0016);
 
         // close_left_page6_1_1
         const close_left_page6_1_1 = this.add.image(487, 41, "clothingcatalog", "close_left");
         close_left_page6_1_1.setOrigin(0, 0);
-        page9.add(close_left_page6_1_1);
+        page10.add(close_left_page6_1_1);
 
         // page_left_page6_1_1
         const page_left_page6_1_1 = this.add.image(486, 592, "clothingcatalog", "page_left");
         page_left_page6_1_1.setOrigin(0, 0);
-        page9.add(page_left_page6_1_1);
+        page10.add(page_left_page6_1_1);
 
-        // page8
-        const page8 = this.add.container(0, 0);
-        page8.visible = false;
+        // page9
+        const page9 = this.add.container(0, 0);
+        page9.visible = false;
 
         // page_page0002
         const page_page0002 = this.add.image(0, -7, "clothingcatalog", "page/page0002");
         page_page0002.setOrigin(0, 0);
-        page8.add(page_page0002);
+        page9.add(page_page0002);
 
         // blue0001_png
         const blue0001_png = this.add.image(919, 322, "Sep2005", "blue0001.png");
         blue0001_png.scaleX = 0.544399396429802;
         blue0001_png.scaleY = 0.544399396429802;
-        page8.add(blue0001_png);
+        page9.add(blue0001_png);
 
         // green0001_png
         const green0001_png = this.add.image(1034, 323, "Sep2005", "green0001.png");
         green0001_png.scaleX = 0.544399396429802;
         green0001_png.scaleY = 0.544399396429802;
-        page8.add(green0001_png);
+        page9.add(green0001_png);
 
         // pink0001_png
         const pink0001_png = this.add.image(1148, 323, "Sep2005", "pink0001.png");
         pink0001_png.scaleX = 0.544399396429802;
         pink0001_png.scaleY = 0.544399396429802;
-        page8.add(pink0001_png);
+        page9.add(pink0001_png);
 
         // black0001_png
         const black0001_png = this.add.image(919, 412, "Sep2005", "black0001.png");
         black0001_png.scaleX = 0.544399396429802;
         black0001_png.scaleY = 0.544399396429802;
-        page8.add(black0001_png);
+        page9.add(black0001_png);
 
         // red0001_png
         const red0001_png = this.add.image(1034, 412, "Sep2005", "red0001.png");
         red0001_png.scaleX = 0.544399396429802;
         red0001_png.scaleY = 0.544399396429802;
-        page8.add(red0001_png);
+        page9.add(red0001_png);
 
         // orange0001_png
         const orange0001_png = this.add.image(1148, 412, "Sep2005", "orange0001.png");
         orange0001_png.scaleX = 0.544399396429802;
         orange0001_png.scaleY = 0.544399396429802;
-        page8.add(orange0001_png);
+        page9.add(orange0001_png);
 
         // yellow0001_png
         const yellow0001_png = this.add.image(919, 507, "Sep2005", "yellow0001.png");
         yellow0001_png.scaleX = 0.544399396429802;
         yellow0001_png.scaleY = 0.544399396429802;
-        page8.add(yellow0001_png);
+        page9.add(yellow0001_png);
 
         // purple0001_png
         const purple0001_png = this.add.image(1034, 507, "Sep2005", "purple0001.png");
         purple0001_png.scaleX = 0.544399396429802;
         purple0001_png.scaleY = 0.544399396429802;
-        page8.add(purple0001_png);
+        page9.add(purple0001_png);
 
         // brown0001_png
         const brown0001_png = this.add.image(1148, 507, "Sep2005", "brown0001.png");
         brown0001_png.scaleX = 0.544399396429802;
         brown0001_png.scaleY = 0.544399396429802;
-        page8.add(brown0001_png);
+        page9.add(brown0001_png);
 
         // darkgreen0001_png
         const darkgreen0001_png = this.add.image(1034, 598, "Sep2005", "darkgreen0001.png");
         darkgreen0001_png.scaleX = 0.544399396429802;
         darkgreen0001_png.scaleY = 0.544399396429802;
-        page8.add(darkgreen0001_png);
+        page9.add(darkgreen0001_png);
 
         // lightblue0001_png
         const lightblue0001_png = this.add.image(1148, 598, "Sep2005", "lightblue0001.png");
         lightblue0001_png.scaleX = 0.544399396429802;
         lightblue0001_png.scaleY = 0.544399396429802;
-        page8.add(lightblue0001_png);
+        page9.add(lightblue0001_png);
 
         // darkpink0001_png
         const darkpink0001_png = this.add.image(919, 598, "Sep2005", "darkpink0001.png");
         darkpink0001_png.scaleX = 0.544399396429802;
         darkpink0001_png.scaleY = 0.544399396429802;
-        page8.add(darkpink0001_png);
+        page9.add(darkpink0001_png);
 
         // close_left_page6_1
         const close_left_page6_1 = this.add.image(193, 36, "clothingcatalog", "close_left");
         close_left_page6_1.setOrigin(0, 0);
-        page8.add(close_left_page6_1);
+        page9.add(close_left_page6_1);
 
         // page_left_page6_1
         const page_left_page6_1 = this.add.image(190, 580, "clothingcatalog", "page_left");
         page_left_page6_1.setOrigin(0, 0);
-        page8.add(page_left_page6_1);
+        page9.add(page_left_page6_1);
 
         // page_right_page6_1
         const page_right_page6_1 = this.add.image(1201, 582, "clothingcatalog", "page_right");
         page_right_page6_1.setOrigin(0, 0);
-        page8.add(page_right_page6_1);
+        page9.add(page_right_page6_1);
 
         // close_right_page6_1
         const close_right_page6_1 = this.add.image(1202, 36, "clothingcatalog", "close_right");
         close_right_page6_1.setOrigin(0, 0);
-        page8.add(close_right_page6_1);
+        page9.add(close_right_page6_1);
 
-        // page6
-        const page6 = this.add.container(0, 0);
-        page6.visible = false;
+        // page8
+        const page8 = this.add.container(0, 0);
+        page8.visible = false;
+
+        // page7_1
+        const page7_1 = this.add.image(768, 431, "may22cat", "page7");
+        page8.add(page7_1);
+
+        // close_left_page8
+        const close_left_page8 = this.add.image(193, 36, "clothingcatalog", "close_left");
+        close_left_page8.setOrigin(0, 0);
+        page8.add(close_left_page8);
+
+        // page_left_page8
+        const page_left_page8 = this.add.image(190, 580, "clothingcatalog", "page_left");
+        page_left_page8.setOrigin(0, 0);
+        page8.add(page_left_page8);
+
+        // page_right_page8
+        const page_right_page8 = this.add.image(1201, 582, "clothingcatalog", "page_right");
+        page_right_page8.setOrigin(0, 0);
+        page8.add(page_right_page8);
+
+        // close_right_page8
+        const close_right_page8 = this.add.image(1202, 36, "clothingcatalog", "close_right");
+        close_right_page8.setOrigin(0, 0);
+        page8.add(close_right_page8);
+
+        // noir-bg
+        const noir_bg = this.add.rectangle(340, 357, 128, 128);
+        noir_bg.scaleX = 1.6391672389424585;
+        noir_bg.scaleY = 1.6391672389424585;
+        noir_bg.isFilled = true;
+        noir_bg.fillAlpha = 0;
+        page8.add(noir_bg);
+
+        // target-bg
+        const target_bg = this.add.rectangle(586, 358, 128, 128);
+        target_bg.scaleX = 1.6391672389424585;
+        target_bg.scaleY = 1.6391672389424585;
+        target_bg.isFilled = true;
+        target_bg.fillAlpha = 0;
+        page8.add(target_bg);
+
+        // fish-bg
+        const fish_bg = this.add.rectangle(338, 604, 128, 128);
+        fish_bg.scaleX = 1.6391672389424585;
+        fish_bg.scaleY = 1.6391672389424585;
+        fish_bg.isFilled = true;
+        fish_bg.fillAlpha = 0;
+        page8.add(fish_bg);
+
+        // picnic-bg
+        const picnic_bg = this.add.rectangle(586, 606, 128, 128);
+        picnic_bg.scaleX = 1.6391672389424585;
+        picnic_bg.scaleY = 1.6391672389424585;
+        picnic_bg.isFilled = true;
+        picnic_bg.fillAlpha = 0;
+        page8.add(picnic_bg);
+
+        // pizza-bg
+        const pizza_bg = this.add.rectangle(944, 360, 128, 128);
+        pizza_bg.scaleX = 1.6391672389424585;
+        pizza_bg.scaleY = 1.6391672389424585;
+        pizza_bg.isFilled = true;
+        pizza_bg.fillAlpha = 0;
+        page8.add(pizza_bg);
+
+        // fireflies-bg
+        const fireflies_bg = this.add.rectangle(1186, 358, 128, 128);
+        fireflies_bg.scaleX = 1.6391672389424585;
+        fireflies_bg.scaleY = 1.6391672389424585;
+        fireflies_bg.isFilled = true;
+        fireflies_bg.fillAlpha = 0;
+        page8.add(fireflies_bg);
+
+        // western-bg
+        const western_bg = this.add.rectangle(942, 610, 128, 128);
+        western_bg.scaleX = 1.6391672389424585;
+        western_bg.scaleY = 1.6391672389424585;
+        western_bg.isFilled = true;
+        western_bg.fillAlpha = 0;
+        page8.add(western_bg);
+
+        // baseball-bg
+        const baseball_bg = this.add.rectangle(1184, 606, 128, 128);
+        baseball_bg.scaleX = 1.6391672389424585;
+        baseball_bg.scaleY = 1.6391672389424585;
+        baseball_bg.isFilled = true;
+        baseball_bg.fillAlpha = 0;
+        page8.add(baseball_bg);
+
+        // page7
+        const page7 = this.add.container(0, 0);
+        page7.visible = false;
 
         // page6_1
         const page6_1 = this.add.image(768, 431, "may22cat", "page6");
-        page6.add(page6_1);
+        page7.add(page6_1);
 
         // buy_sombrero
         const buy_sombrero = this.add.image(645, 762, "may22cat", "buy");
-        page6.add(buy_sombrero);
+        page7.add(buy_sombrero);
 
         // buy_roman
         const buy_roman = this.add.image(287, 762, "may22cat", "buy");
-        page6.add(buy_roman);
+        page7.add(buy_roman);
 
         // text_roman
         const text_roman = this.add.text(241, 743, "", {});
         text_roman.text = "800";
         text_roman.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_roman);
+        page7.add(text_roman);
 
         // close_right_page6
         const close_right_page6 = this.add.image(1202, 36, "clothingcatalog", "close_right");
         close_right_page6.setOrigin(0, 0);
-        page6.add(close_right_page6);
+        page7.add(close_right_page6);
 
         // page_right_page6
         const page_right_page6 = this.add.image(1201, 582, "clothingcatalog", "page_right");
         page_right_page6.setOrigin(0, 0);
-        page6.add(page_right_page6);
+        page7.add(page_right_page6);
 
         // page_left_page6
         const page_left_page6 = this.add.image(190, 580, "clothingcatalog", "page_left");
         page_left_page6.setOrigin(0, 0);
-        page6.add(page_left_page6);
+        page7.add(page_left_page6);
 
         // close_left_page6
         const close_left_page6 = this.add.image(193, 36, "clothingcatalog", "close_left");
         close_left_page6.setOrigin(0, 0);
-        page6.add(close_left_page6);
+        page7.add(close_left_page6);
 
         // buy_beekeeper
         const buy_beekeeper = this.add.image(287, 381, "may22cat", "buy");
-        page6.add(buy_beekeeper);
+        page7.add(buy_beekeeper);
 
         // text_beekeeper
         const text_beekeeper = this.add.text(246, 364, "", {});
         text_beekeeper.text = "750";
         text_beekeeper.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_beekeeper);
+        page7.add(text_beekeeper);
 
         // buy_trend
         const buy_trend = this.add.image(463, 381, "may22cat", "buy");
-        page6.add(buy_trend);
+        page7.add(buy_trend);
 
         // text_trend
         const text_trend = this.add.text(426, 364, "", {});
         text_trend.text = "450";
         text_trend.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_trend);
+        page7.add(text_trend);
 
         // buy_disco
         const buy_disco = this.add.image(645, 381, "may22cat", "buy");
-        page6.add(buy_disco);
+        page7.add(buy_disco);
 
         // text_disco
         const text_disco = this.add.text(606, 364, "", {});
         text_disco.text = "600";
         text_disco.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_disco);
+        page7.add(text_disco);
 
         // buy_sstriker
         const buy_sstriker = this.add.image(288, 576, "may22cat", "buy");
-        page6.add(buy_sstriker);
+        page7.add(buy_sstriker);
 
         // text_sstriker
         const text_sstriker = this.add.text(246, 559, "", {});
         text_sstriker.text = "550";
         text_sstriker.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_sstriker);
+        page7.add(text_sstriker);
 
         // buy_sk
         const buy_sk = this.add.image(463, 576, "may22cat", "buy");
-        page6.add(buy_sk);
+        page7.add(buy_sk);
 
         // text_sk
         const text_sk = this.add.text(426, 559, "", {});
         text_sk.text = "550";
         text_sk.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_sk);
+        page7.add(text_sk);
 
         // buy_funster
         const buy_funster = this.add.image(645, 576, "may22cat", "buy");
-        page6.add(buy_funster);
+        page7.add(buy_funster);
 
         // text_funster
         const text_funster = this.add.text(606, 559, "", {});
         text_funster.text = "500";
         text_funster.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_funster);
+        page7.add(text_funster);
 
         // text_sombrero
         const text_sombrero = this.add.text(606, 743, "", {});
         text_sombrero.text = "500";
         text_sombrero.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_sombrero);
+        page7.add(text_sombrero);
 
         // buy_pballcap
         const buy_pballcap = this.add.image(463, 762, "may22cat", "buy");
-        page6.add(buy_pballcap);
+        page7.add(buy_pballcap);
 
         // text_pballcap
         const text_pballcap = this.add.text(426, 743, "", {});
         text_pballcap.text = "200";
         text_pballcap.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_pballcap);
+        page7.add(text_pballcap);
 
         // buy_tuft
         const buy_tuft = this.add.image(645, 186, "may22cat", "buy");
-        page6.add(buy_tuft);
+        page7.add(buy_tuft);
 
         // text_tuft
         const text_tuft = this.add.text(606, 169, "", {});
         text_tuft.text = "250";
         text_tuft.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_tuft);
+        page7.add(text_tuft);
 
         // buy_bflutt
         const buy_bflutt = this.add.image(463, 186, "may22cat", "buy");
-        page6.add(buy_bflutt);
+        page7.add(buy_bflutt);
 
         // text_bflutt
         const text_bflutt = this.add.text(426, 169, "", {});
         text_bflutt.text = "350";
         text_bflutt.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_bflutt);
+        page7.add(text_bflutt);
 
         // buy_flouncy
         const buy_flouncy = this.add.image(287, 186, "may22cat", "buy");
-        page6.add(buy_flouncy);
+        page7.add(buy_flouncy);
 
         // text_flouncy
         const text_flouncy = this.add.text(246, 169, "", {});
         text_flouncy.text = "600";
         text_flouncy.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_flouncy);
+        page7.add(text_flouncy);
 
         // buy2_flutterby
         const buy2_flutterby = this.add.image(1110, 381, "clothingcatalog", "buy2");
@@ -452,7 +564,7 @@ export default class ClothingCatalog extends Book {
         buy2_flutterby.scaleY = 0.7060432626289486;
         buy2_flutterby.angle = -135;
         buy2_flutterby.setOrigin(0, 0);
-        page6.add(buy2_flutterby);
+        page7.add(buy2_flutterby);
 
         // buy2_pinkear
         const buy2_pinkear = this.add.image(887, 293, "clothingcatalog", "buy2");
@@ -460,7 +572,7 @@ export default class ClothingCatalog extends Book {
         buy2_pinkear.scaleY = 0.7060432626289486;
         buy2_pinkear.angle = -52.99999999999994;
         buy2_pinkear.setOrigin(0, 0);
-        page6.add(buy2_pinkear);
+        page7.add(buy2_pinkear);
 
         // sec-blackcape
         const sec_blackcape = this.add.ellipse(844, 422, 128, 128);
@@ -468,7 +580,7 @@ export default class ClothingCatalog extends Book {
         sec_blackcape.scaleY = 0.21393876922214905;
         sec_blackcape.isFilled = true;
         sec_blackcape.fillAlpha = 0;
-        page6.add(sec_blackcape);
+        page7.add(sec_blackcape);
 
         // sec-pinkdress
         const sec_pinkdress = this.add.ellipse(1205, 356, 128, 128);
@@ -476,7 +588,133 @@ export default class ClothingCatalog extends Book {
         sec_pinkdress.scaleY = 0.21393876922214905;
         sec_pinkdress.isFilled = true;
         sec_pinkdress.fillAlpha = 0;
-        page6.add(sec_pinkdress);
+        page7.add(sec_pinkdress);
+
+        // page6
+        const page6 = this.add.container(0, 0);
+        page6.visible = false;
+
+        // page8_1
+        const page8_1 = this.add.image(768, 431, "may22cat", "page8");
+        page6.add(page8_1);
+
+        // close_right_page100
+        const close_right_page100 = this.add.image(1202, 36, "clothingcatalog", "close_right");
+        close_right_page100.setOrigin(0, 0);
+        page6.add(close_right_page100);
+
+        // page_right_page100
+        const page_right_page100 = this.add.image(1201, 582, "clothingcatalog", "page_right");
+        page_right_page100.setOrigin(0, 0);
+        page6.add(page_right_page100);
+
+        // page_left_page100
+        const page_left_page100 = this.add.image(190, 580, "clothingcatalog", "page_left");
+        page_left_page100.setOrigin(0, 0);
+        page6.add(page_left_page100);
+
+        // close_left_page100
+        const close_left_page100 = this.add.image(193, 35, "clothingcatalog", "close_left");
+        close_left_page100.setOrigin(0, 0);
+        page6.add(close_left_page100);
+
+        // buy2_pinkrollers
+        const buy2_pinkrollers = this.add.image(691, 511, "clothingcatalog", "buy2");
+        buy2_pinkrollers.scaleX = 0.8414916020698116;
+        buy2_pinkrollers.scaleY = 0.8414916020698116;
+        buy2_pinkrollers.angle = 50;
+        buy2_pinkrollers.setOrigin(0, 0);
+        page6.add(buy2_pinkrollers);
+
+        // buy_brownshoes
+        const buy_brownshoes = this.add.image(870, 463, "may22cat", "buy");
+        page6.add(buy_brownshoes);
+
+        // text_brownshoes
+        const text_brownshoes = this.add.text(829, 446, "", {});
+        text_brownshoes.text = "400";
+        text_brownshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_brownshoes);
+
+        // buy_yrubber
+        const buy_yrubber = this.add.image(1046, 463, "may22cat", "buy");
+        page6.add(buy_yrubber);
+
+        // text_yrubber
+        const text_yrubber = this.add.text(1009, 446, "", {});
+        text_yrubber.text = "280";
+        text_yrubber.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_yrubber);
+
+        // buy_iceskates
+        const buy_iceskates = this.add.image(1215, 463, "may22cat", "buy");
+        page6.add(buy_iceskates);
+
+        // text_iceskates
+        const text_iceskates = this.add.text(1176, 446, "", {});
+        text_iceskates.text = "200";
+        text_iceskates.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_iceskates);
+
+        // buy_blackcheckshoes
+        const buy_blackcheckshoes = this.add.image(871, 655, "may22cat", "buy");
+        page6.add(buy_blackcheckshoes);
+
+        // text_blackcheckshoes
+        const text_blackcheckshoes = this.add.text(829, 638, "", {});
+        text_blackcheckshoes.text = "300";
+        text_blackcheckshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_blackcheckshoes);
+
+        // buy_bluecheckershoes
+        const buy_bluecheckershoes = this.add.image(1046, 655, "may22cat", "buy");
+        page6.add(buy_bluecheckershoes);
+
+        // text_bluecheckershoes
+        const text_bluecheckershoes = this.add.text(1007, 638, "", {});
+        text_bluecheckershoes.text = "300";
+        text_bluecheckershoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_bluecheckershoes);
+
+        // buy_redtenniesshoes
+        const buy_redtenniesshoes = this.add.image(1215, 655, "may22cat", "buy");
+        page6.add(buy_redtenniesshoes);
+
+        // text_redtenniesshoes
+        const text_redtenniesshoes = this.add.text(1176, 638, "", {});
+        text_redtenniesshoes.text = "250";
+        text_redtenniesshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_redtenniesshoes);
+
+        // buy_bunnyslippers
+        const buy_bunnyslippers = this.add.image(1215, 282, "may22cat", "buy");
+        page6.add(buy_bunnyslippers);
+
+        // text_bunnyslippers
+        const text_bunnyslippers = this.add.text(1176, 265, "", {});
+        text_bunnyslippers.text = "200";
+        text_bunnyslippers.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_bunnyslippers);
+
+        // buy_cuckoo
+        const buy_cuckoo = this.add.image(1046, 282, "may22cat", "buy");
+        page6.add(buy_cuckoo);
+
+        // text_cuckoo
+        const text_cuckoo = this.add.text(1009, 265, "", {});
+        text_cuckoo.text = "200";
+        text_cuckoo.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_cuckoo);
+
+        // buy_dressshoes
+        const buy_dressshoes = this.add.image(870, 282, "may22cat", "buy");
+        page6.add(buy_dressshoes);
+
+        // text_dressshoes
+        const text_dressshoes = this.add.text(829, 265, "", {});
+        text_dressshoes.text = "250";
+        text_dressshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_dressshoes);
 
         // page5
         const page5 = this.add.container(0, 0);
@@ -1062,7 +1300,7 @@ export default class ClothingCatalog extends Book {
         buttons.add(coins);
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page8, page9];
+        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10];
 
         // block (components)
         new Interactive(block);
@@ -1177,6 +1415,64 @@ export default class ClothingCatalog extends Book {
         close_right_page6_1Button.spriteName = "close_right";
         close_right_page6_1Button.callback = () => this.close();
         close_right_page6_1Button.pixelPerfect = true;
+
+        // close_left_page8 (components)
+        const close_left_page8Button = new Button(close_left_page8);
+        close_left_page8Button.spriteName = "close_left";
+        close_left_page8Button.callback = () => this.close();
+        close_left_page8Button.pixelPerfect = true;
+
+        // page_left_page8 (components)
+        const page_left_page8Button = new Button(page_left_page8);
+        page_left_page8Button.spriteName = "page_left";
+        page_left_page8Button.callback = () => this.prevPage();
+        page_left_page8Button.activeFrame = false;
+        page_left_page8Button.pixelPerfect = true;
+
+        // page_right_page8 (components)
+        const page_right_page8Button = new Button(page_right_page8);
+        page_right_page8Button.spriteName = "page_right";
+        page_right_page8Button.callback = () => this.nextPage();
+        page_right_page8Button.activeFrame = false;
+        page_right_page8Button.pixelPerfect = true;
+
+        // close_right_page8 (components)
+        const close_right_page8Button = new Button(close_right_page8);
+        close_right_page8Button.spriteName = "close_right";
+        close_right_page8Button.callback = () => this.close();
+        close_right_page8Button.pixelPerfect = true;
+
+        // noir_bg (components)
+        const noir_bgSimpleButton = new SimpleButton(noir_bg);
+        noir_bgSimpleButton.callback = () => this.interface.prompt.showItem(9001);
+
+        // target_bg (components)
+        const target_bgSimpleButton = new SimpleButton(target_bg);
+        target_bgSimpleButton.callback = () => this.interface.prompt.showItem(906);
+
+        // fish_bg (components)
+        const fish_bgSimpleButton = new SimpleButton(fish_bg);
+        fish_bgSimpleButton.callback = () => this.interface.prompt.showItem(954);
+
+        // picnic_bg (components)
+        const picnic_bgSimpleButton = new SimpleButton(picnic_bg);
+        picnic_bgSimpleButton.callback = () => this.interface.prompt.showItem(952);
+
+        // pizza_bg (components)
+        const pizza_bgSimpleButton = new SimpleButton(pizza_bg);
+        pizza_bgSimpleButton.callback = () => this.interface.prompt.showItem(944);
+
+        // fireflies_bg (components)
+        const fireflies_bgSimpleButton = new SimpleButton(fireflies_bg);
+        fireflies_bgSimpleButton.callback = () => this.interface.prompt.showItem(963);
+
+        // western_bg (components)
+        const western_bgSimpleButton = new SimpleButton(western_bg);
+        western_bgSimpleButton.callback = () => this.interface.prompt.showItem(913);
+
+        // baseball_bg (components)
+        const baseball_bgSimpleButton = new SimpleButton(baseball_bg);
+        baseball_bgSimpleButton.callback = () => this.interface.prompt.showItem(965);
 
         // buy_sombrero (components)
         const buy_sombreroButton = new Button(buy_sombrero);
@@ -1293,6 +1589,91 @@ export default class ClothingCatalog extends Book {
         // sec_pinkdress (components)
         const sec_pinkdressSimpleButton = new SimpleButton(sec_pinkdress);
         sec_pinkdressSimpleButton.callback = () => this.interface.prompt.showItem(252);
+
+        // close_right_page100 (components)
+        const close_right_page100Button = new Button(close_right_page100);
+        close_right_page100Button.spriteName = "close_right";
+        close_right_page100Button.callback = () => this.close();
+        close_right_page100Button.pixelPerfect = true;
+
+        // page_right_page100 (components)
+        const page_right_page100Button = new Button(page_right_page100);
+        page_right_page100Button.spriteName = "page_right";
+        page_right_page100Button.callback = () => this.nextPage();
+        page_right_page100Button.activeFrame = false;
+        page_right_page100Button.pixelPerfect = true;
+
+        // page_left_page100 (components)
+        const page_left_page100Button = new Button(page_left_page100);
+        page_left_page100Button.spriteName = "page_left";
+        page_left_page100Button.callback = () => this.prevPage();
+        page_left_page100Button.activeFrame = false;
+        page_left_page100Button.pixelPerfect = true;
+
+        // close_left_page100 (components)
+        const close_left_page100Button = new Button(close_left_page100);
+        close_left_page100Button.spriteName = "close_left";
+        close_left_page100Button.callback = () => this.close();
+        close_left_page100Button.pixelPerfect = true;
+
+        // buy2_pinkrollers (components)
+        const buy2_pinkrollersButton = new Button(buy2_pinkrollers);
+        buy2_pinkrollersButton.spriteName = "buy2";
+        buy2_pinkrollersButton.callback = () => this.interface.prompt.showItem(378);
+
+        // buy_brownshoes (components)
+        const buy_brownshoesButton = new Button(buy_brownshoes);
+        buy_brownshoesButton.spriteName = "buy";
+        buy_brownshoesButton.callback = () => this.interface.prompt.showItem(351);
+        buy_brownshoesButton.activeFrame = false;
+
+        // buy_yrubber (components)
+        const buy_yrubberButton = new Button(buy_yrubber);
+        buy_yrubberButton.spriteName = "buy";
+        buy_yrubberButton.callback = () => this.interface.prompt.showItem(373);
+        buy_yrubberButton.activeFrame = false;
+
+        // buy_iceskates (components)
+        const buy_iceskatesButton = new Button(buy_iceskates);
+        buy_iceskatesButton.spriteName = "buy";
+        buy_iceskatesButton.callback = () => this.interface.prompt.showItem(369);
+        buy_iceskatesButton.activeFrame = false;
+
+        // buy_blackcheckshoes (components)
+        const buy_blackcheckshoesButton = new Button(buy_blackcheckshoes);
+        buy_blackcheckshoesButton.spriteName = "buy";
+        buy_blackcheckshoesButton.callback = () => this.interface.prompt.showItem(6004);
+        buy_blackcheckshoesButton.activeFrame = false;
+
+        // buy_bluecheckershoes (components)
+        const buy_bluecheckershoesButton = new Button(buy_bluecheckershoes);
+        buy_bluecheckershoesButton.spriteName = "buy";
+        buy_bluecheckershoesButton.callback = () => this.interface.prompt.showItem(6104);
+        buy_bluecheckershoesButton.activeFrame = false;
+
+        // buy_redtenniesshoes (components)
+        const buy_redtenniesshoesButton = new Button(buy_redtenniesshoes);
+        buy_redtenniesshoesButton.spriteName = "buy";
+        buy_redtenniesshoesButton.callback = () => this.interface.prompt.showItem(6036);
+        buy_redtenniesshoesButton.activeFrame = false;
+
+        // buy_bunnyslippers (components)
+        const buy_bunnyslippersButton = new Button(buy_bunnyslippers);
+        buy_bunnyslippersButton.spriteName = "buy";
+        buy_bunnyslippersButton.callback = () => this.interface.prompt.showItem(366);
+        buy_bunnyslippersButton.activeFrame = false;
+
+        // buy_cuckoo (components)
+        const buy_cuckooButton = new Button(buy_cuckoo);
+        buy_cuckooButton.spriteName = "buy";
+        buy_cuckooButton.callback = () => this.interface.prompt.showItem(6005);
+        buy_cuckooButton.activeFrame = false;
+
+        // buy_dressshoes (components)
+        const buy_dressshoesButton = new Button(buy_dressshoes);
+        buy_dressshoesButton.spriteName = "buy";
+        buy_dressshoesButton.callback = () => this.interface.prompt.showItem(358);
+        buy_dressshoesButton.activeFrame = false;
 
         // buy_bletterman (components)
         const buy_blettermanButton = new Button(buy_bletterman);
@@ -1697,6 +2078,16 @@ export default class ClothingCatalog extends Book {
         this.buy_flouncy = buy_flouncy;
         this.buy2_flutterby = buy2_flutterby;
         this.buy2_pinkear = buy2_pinkear;
+        this.buy2_pinkrollers = buy2_pinkrollers;
+        this.buy_brownshoes = buy_brownshoes;
+        this.buy_yrubber = buy_yrubber;
+        this.buy_iceskates = buy_iceskates;
+        this.buy_blackcheckshoes = buy_blackcheckshoes;
+        this.buy_bluecheckershoes = buy_bluecheckershoes;
+        this.buy_redtenniesshoes = buy_redtenniesshoes;
+        this.buy_bunnyslippers = buy_bunnyslippers;
+        this.buy_cuckoo = buy_cuckoo;
+        this.buy_dressshoes = buy_dressshoes;
         this.buy_bletterman = buy_bletterman;
         this.buy2_blackhoodie = buy2_blackhoodie;
         this.buy_daisy = buy_daisy;
