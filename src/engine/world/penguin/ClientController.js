@@ -221,6 +221,7 @@ export default class ClientController {
         }
 
         this.interface.showLoading(this.getString('joining', name))
+        this.interface.main.waddle.visible = false
 
         this.lockRotation = false
 

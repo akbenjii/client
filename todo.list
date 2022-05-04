@@ -1,9 +1,14 @@
-- ski hill waddles (new client)
 - lodge attic (new client)
-- book room physics (new client)
+- lodge attic waddles (new and old client)
 - lighthouse and beacon (new and old client)
-- update mine (new and old client)
-- update plaza (old client)
-- update shack (old client)
 - everyday phoning facility (new client)
 - puffle launch (new client)
+- finish puffles
+
+- ski hill waddles (new client)
+- book room physics (new client)
+- update mine (new and old client)
+- change path to lowercase in each loader.swf
+- make sled racing waddle gui invisible when switching rooms (it's bugged)
+- find four diagonals sometimes do not work
+- catalogs

@@ -18,17 +18,15 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "b29830da-fe42-4be0-ab35-18457b681be7",
-            "label": "bg_mtn_2005",
+            "id": "9276e7ab-0fd9-44c4-a644-321d4c8c2888",
+            "label": "bg",
             "components": [],
             "texture": {
                 "key": "mtn",
                 "frame": "bg"
             },
-            "x": -7,
-            "y": 3,
-            "scaleX": 1.02,
-            "scaleY": 1.02,
+            "x": -21,
+            "y": -19,
             "originX": 0,
             "originY": 0
         },
@@ -45,8 +43,8 @@
                 "key": "mtn",
                 "frame": "chair/chair0001"
             },
-            "x": 843,
-            "y": 82,
+            "x": 846,
+            "y": 75,
             "originX": 0,
             "originY": 0
         },
@@ -59,8 +57,8 @@
                 "key": "mtn",
                 "frame": "mountain"
             },
-            "x": -22,
-            "y": 221,
+            "x": -21,
+            "y": 214,
             "originX": 0,
             "originY": 0
         },
@@ -73,10 +71,38 @@
                 "key": "mtn",
                 "frame": "pole"
             },
-            "x": 725,
-            "y": 364,
+            "x": 727,
+            "y": 359,
             "originX": 0.6204081632653061,
             "originY": 0.9194630872483222
+        },
+        {
+            "type": "Image",
+            "id": "124720c1-f214-45b6-88d4-0325da8e2114",
+            "label": "sled",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "sled"
+            },
+            "x": 532,
+            "y": 284,
+            "originX": 0.8289473684210527,
+            "originY": 0.7647058823529411
+        },
+        {
+            "type": "Image",
+            "id": "cd1933ae-fcd6-41e3-96e7-4b9b0636560b",
+            "label": "catalog_small",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "catalog_small"
+            },
+            "x": 520,
+            "y": 407,
+            "originX": 0.49230769230769234,
+            "originY": 3.685185185185185
         },
         {
             "type": "Image",
@@ -414,7 +440,7 @@
                 "frame": "express"
             },
             "x": 1065,
-            "y": 810,
+            "y": 809,
             "originX": 0.4647887323943662,
             "originY": 0.875
         },
@@ -427,8 +453,8 @@
                 "key": "mtn",
                 "frame": "penguin_run"
             },
-            "x": 522,
-            "y": 612,
+            "x": 524,
+            "y": 606,
             "originX": 0.6390977443609023,
             "originY": 0.943089430894309
         },
@@ -437,17 +463,14 @@
             "id": "ef9b8944-1657-4c42-93e1-635ccc3f68d1",
             "label": "zone4",
             "components": [
-                "MoveTo",
-                "ShowHint",
-                "SimpleButton"
+                "Zone"
             ],
-            "MoveTo.x": 1130,
-            "MoveTo.y": 660,
-            "ShowHint.text": "Sled Racing",
             "x": 1127,
             "y": 657,
             "angle": -33,
+            "visible": false,
             "alpha": 0.5,
+            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 180,
             "height": 90
@@ -457,16 +480,13 @@
             "id": "d637b1ba-4403-4f67-8df7-3e2a39c20182",
             "label": "zone3",
             "components": [
-                "MoveTo",
-                "ShowHint",
-                "SimpleButton"
+                "Zone"
             ],
-            "MoveTo.x": 900,
-            "MoveTo.y": 750,
-            "ShowHint.text": "Sled Racing",
             "x": 899,
             "y": 753,
+            "visible": false,
             "alpha": 0.5,
+            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 180,
             "height": 90
@@ -476,17 +496,14 @@
             "id": "fae5d3e7-f9ac-4eb1-af04-c7191621bab5",
             "label": "zone2",
             "components": [
-                "MoveTo",
-                "ShowHint",
-                "SimpleButton"
+                "Zone"
             ],
-            "MoveTo.x": 630,
-            "MoveTo.y": 710,
-            "ShowHint.text": "Sled Racing",
             "x": 633,
             "y": 709,
             "angle": 11,
+            "visible": false,
             "alpha": 0.5,
+            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 200,
             "height": 90
@@ -496,17 +513,14 @@
             "id": "e7292dc1-8f98-4fc6-b456-4d5a059a7447",
             "label": "zone1",
             "components": [
-                "MoveTo",
-                "ShowHint",
-                "SimpleButton"
+                "Zone"
             ],
-            "MoveTo.x": 330,
-            "MoveTo.y": 570,
-            "ShowHint.text": "Sled Racing",
             "x": 334,
             "y": 568,
             "angle": 33,
+            "visible": false,
             "alpha": 0.5,
+            "isFilled": true,
             "fillColor": "#00ff00",
             "width": 230,
             "height": 90

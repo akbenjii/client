@@ -299,6 +299,8 @@ export default class Inventory extends BaseContainer {
 
     onSlotClick(slotId) {
         let item = this.slots[slotId].item
+		
+		console.log(item)
 
         if (!item || !item.id || !item.active) return
 

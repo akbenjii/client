@@ -1,6 +1,5 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Button, MoveTo } from '@components/components'
 
 /* START OF COMPILED CODE */
 
@@ -9,8 +8,6 @@ export default class Rink extends RoomScene {
     constructor() {
         super("Rink");
 
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.puck_png;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -18,7 +15,7 @@ export default class Rink extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'rink': () => this.triggerRoom(801, 560, 400)
+            'forts': () => this.triggerRoom(801, 560, 400)
         }
 
         /* END-USER-CTR-CODE */
@@ -33,63 +30,102 @@ export default class Rink extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg_png
-        const bg_png = this.add.image(751, 379, "rink", "bg.png");
-        bg_png.scaleX = 1.03;
-        bg_png.scaleY = 1.03;
+        // bg
+        const bg = this.add.image(-33, -7, "rink", "bg");
+        bg.setOrigin(0, 0);
 
-        // foreground_png
-        const foreground_png = this.add.image(761, 564, "rink", "foreground.png");
-        foreground_png.scaleX = 1.03;
-        foreground_png.scaleY = 1.03;
+        // rink_border
+        const rink_border = this.add.image(444, 335, "rink", "rink_border");
+        rink_border.setOrigin(0.30707692, 0.42490372);
 
-        // glass_png
-        const glass_png = this.add.image(508, 261, "rink", "glass.png");
-        glass_png.scaleX = 1.03;
-        glass_png.scaleY = 1.03;
+        // sports
+        const sports = this.add.image(1390, 250, "rink", "sports");
+        sports.setOrigin(0.52966102, 0.80970149);
 
-        // left_net2_png
-        const left_net2_png = this.add.image(283, 423, "rink", "left net2.png");
-        left_net2_png.scaleX = 1.03;
-        left_net2_png.scaleY = 1.03;
+        // sports_door0001
+        const sports_door0001 = this.add.image(1327, 280, "rink", "sports_door0001");
+        sports_door0001.setOrigin(0.5125, 0.62962963);
 
-        // door_png
-        const door_png = this.add.image(771, 260, "rink", "door.png");
-        door_png.scaleX = 1.03;
-        door_png.scaleY = 1.03;
+        // ball
+        const ball = this.add.image(765, 537, "rink", "ball");
+        ball.setOrigin(0.5, 0.7037037);
 
-        // left_net_png
-        const left_net_png = this.add.image(244, 460, "rink", "left net.png");
-        left_net_png.scaleX = 1.03;
-        left_net_png.scaleY = 1.03;
+        // fish_dogs
+        const fish_dogs = this.add.image(166, 242, "rink", "fish_dogs");
+        fish_dogs.setOrigin(0.51492537, 0.79347826);
 
-        // right_net2_png
-        const right_net2_png = this.add.image(1253, 423, "rink", "right net2.png");
-        right_net2_png.scaleX = 1.03;
-        right_net2_png.scaleY = 1.03;
+        // left_bleachers
+        const left_bleachers = this.add.image(105, 258, "rink", "left_bleachers");
+        left_bleachers.setOrigin(0.44444444, 0.16260163);
 
-        // right_net_png
-        const right_net_png = this.add.image(1291, 460, "rink", "right net.png");
-        right_net_png.scaleX = 1.03;
-        right_net_png.scaleY = 1.03;
+        // bleachers_rail
+        const bleachers_rail = this.add.image(38, 558, "rink", "bleachers_rail");
+        bleachers_rail.setOrigin(0.82231405, 0.78181818);
 
-        // puck_png
-        const puck_png = this.add.sprite(791, 481, "rink", "puck.png");
-        puck_png.scaleX = 1.03;
-        puck_png.scaleY = 1.03;
+        // right_bleachers
+        const right_bleachers = this.add.image(1415, 258, "rink", "right_bleachers");
+        right_bleachers.setOrigin(0.5473251, 0.16531165);
+
+        // bleachers_rail_1
+        const bleachers_rail_1 = this.add.image(1482, 558, "rink", "bleachers_rail");
+        bleachers_rail_1.setOrigin(0.82231405, 0.78181818);
+        bleachers_rail_1.flipX = true;
+
+        // drink
+        const drink = this.add.image(70, 485, "rink", "drink");
+        drink.setOrigin(0.5, 0.75510204);
+
+        // fg
+        const fg = this.add.image(-64, 1046.9173886139422, "rink", "fg");
+        fg.setOrigin(0, 0.9998385876423137);
+
+        // trash
+        const trash = this.add.image(858, 214, "rink", "trash");
+        trash.setOrigin(0.44117647, 0.69642857);
+
+        // snacks
+        const snacks = this.add.image(1046, 230, "rink", "snacks");
+        snacks.setOrigin(0.44080605, 0.79461279);
+
+        // stand_base
+        const stand_base = this.add.image(731, 126, "rink", "stand_base");
+        stand_base.setOrigin(0.99404762, 0.36328125);
+
+        // stand_middle
+        const stand_middle = this.add.image(528, 167, "rink", "stand_middle");
+        stand_middle.setOrigin(0.51265823, 0.42537313);
+
+        // stand_top
+        const stand_top = this.add.image(522, 236, "rink", "stand_top");
+        stand_top.setOrigin(0.50117647, 2.57831325);
+
+        // goal_back
+        const goal_back = this.add.image(1258, 441, "rink", "goal_back");
+        goal_back.setOrigin(0.97183099, 0.48863636);
+
+        // goal
+        const goal = this.add.image(1273, 578, "rink", "goal");
+        goal.setOrigin(0.58571429, 0.91902834);
+
+        // goal_back_1
+        const goal_back_1 = this.add.image(262, 441, "rink", "goal_back");
+        goal_back_1.setOrigin(0.97183099, 0.48863636);
+        goal_back_1.flipX = true;
+
+        // goal_1
+        const goal_1 = this.add.image(247, 578, "rink", "goal");
+        goal_1.setOrigin(0.58571429, 0.91902834);
+        goal_1.flipX = true;
+
+        // snacks_door0001
+        this.add.image(1214, 185, "rink", "snacks_door0001");
+
+        // snacks_ring
+        this.add.image(1250, 200, "rink", "snacks_ring");
 
         // lists
-        const sort = [left_net2_png, left_net_png, right_net2_png, right_net_png, glass_png];
+        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border];
 
-        // door_png (components)
-        const door_pngButton = new Button(door_png);
-        door_pngButton.spriteName = "door.png";
-        door_pngButton.activeFrame = false;
-        const door_pngMoveTo = new MoveTo(door_png);
-        door_pngMoveTo.x = 781;
-        door_pngMoveTo.y = 280;
-
-        this.puck_png = puck_png;
         this.sort = sort;
 
         this.events.emit("scene-awake");

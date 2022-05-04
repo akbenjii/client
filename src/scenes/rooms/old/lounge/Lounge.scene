@@ -1,5 +1,5 @@
 {
-    "id": "b713d815-a000-41bf-8ace-2c3f4f3074a5",
+    "id": "44391e7c-9ea0-47c1-971c-0ecf27bc9032",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -18,15 +18,14 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "6851776d-61ee-43e2-bec3-59c5a569b196",
-            "label": "bg_dlounge_2005",
+            "id": "c9d8a072-5746-43ad-99db-a0707d77be3a",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "bg_dlounge_2005"
+                "key": "lounge",
+                "frame": "bg"
             },
-            "x": -3,
-            "scaleX": 1.01,
-            "scaleY": 1.01,
+            "x": -2,
             "originX": 0,
             "originY": 0
         },
@@ -44,7 +43,7 @@
             "Button.pixelPerfect": true,
             "MoveTo.x": 940,
             "MoveTo.y": 520,
-            "ShowHint.text": "Astro Barrier",
+            "ShowHint.text": "astro_hint",
             "texture": {
                 "key": "lounge",
                 "frame": "astro"
@@ -56,6 +55,29 @@
         },
         {
             "type": "Image",
+            "id": "3396b008-0eaa-4b47-8d21-f2c6056f64c1",
+            "label": "ice",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "ice",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 672,
+            "MoveTo.y": 512,
+            "ShowHint.text": "thinice_hint",
+            "texture": {
+                "key": "lounge",
+                "frame": "ice"
+            },
+            "x": 626,
+            "y": 377,
+            "originX": 0.5026178010471204
+        },
+        {
+            "type": "Image",
             "id": "da775854-13dc-41bc-8d75-dc350847eb90",
             "label": "plant",
             "components": [],
@@ -63,10 +85,10 @@
                 "key": "lounge",
                 "frame": "plant"
             },
-            "x": 78,
-            "y": 628.4755818872633,
+            "x": 30,
+            "y": 701,
             "originX": 0.45652173913043476,
-            "originY": 0.7581134324229862
+            "originY": 0.9061224489795918
         },
         {
             "type": "Image",
@@ -180,13 +202,13 @@
                 "MoveTo"
             ],
             "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 416,
+            "MoveTo.y": 728,
             "texture": {
                 "key": "lounge",
                 "frame": "chair_1"
             },
-            "x": 562,
-            "y": 400,
+            "x": 627,
+            "y": 718,
             "originX": 0.5225225225225225,
             "originY": 0.4567901234567901
         },
@@ -199,13 +221,13 @@
                 "MoveTo"
             ],
             "SimpleButton.pixelPerfect": true,
-            "MoveTo.y": 416,
+            "MoveTo.y": 739,
             "texture": {
                 "key": "lounge",
                 "frame": "chair_1"
             },
-            "x": 776,
-            "y": 411,
+            "x": 841,
+            "y": 729,
             "originX": 0.5225225225225225,
             "originY": 0.4567901234567901,
             "flipX": true
@@ -219,8 +241,8 @@
                 "key": "lounge",
                 "frame": "table_3"
             },
-            "x": 668,
-            "y": 460,
+            "x": 733,
+            "y": 778,
             "originX": 0.4691358024691358,
             "originY": 0.5379310344827586
         },

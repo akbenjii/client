@@ -18,79 +18,225 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "0c49e528-73c8-4e0f-8060-b8cd711af156",
-            "label": "bg_png",
+            "id": "0502af23-1a8b-4632-b17c-741a3ca0c218",
+            "label": "bg",
             "components": [],
             "texture": {
                 "key": "forts",
-                "frame": "bg.png"
+                "frame": "bg"
             },
-            "x": 772,
-            "y": 488
+            "x": -35,
+            "y": -18,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "3b0a083d-486e-4fc6-95e5-139b93b8e7d8",
-            "label": "snowballs2_png",
+            "id": "6291cd2e-fc87-4b49-9dfe-87efcf8dca79",
+            "label": "red_fort",
             "components": [],
             "texture": {
                 "key": "forts",
-                "frame": "snowballs2.png"
+                "frame": "red_fort"
             },
-            "x": 608,
-            "y": 623
+            "x": 603,
+            "y": 655,
+            "originY": 0.65116279
+        },
+        {
+            "type": "Image",
+            "id": "a7eba68a-1f6e-4778-886c-9b83412c56dd",
+            "label": "red_pole",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "red_pole"
+            },
+            "x": 662,
+            "y": 657,
+            "originX": 0.47058824,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "56c1b41f-3f4f-4dc2-bf62-3703d68a7d75",
+            "label": "red_fort_front",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "red_fort_front"
+            },
+            "x": 703,
+            "y": 702,
+            "originY": 0.6473684210526316
+        },
+        {
+            "type": "Image",
+            "id": "82671712-eb61-4cf9-a79d-a117f9e89798",
+            "label": "blue_pole",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "blue_pole"
+            },
+            "x": 993,
+            "y": 424,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "160a46a9-aa94-4a18-bf7b-bc756cfe9394",
+            "label": "blue_fort",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "blue_fort"
+            },
+            "x": 1023,
+            "y": 477,
+            "originX": 0.49803922,
+            "originY": 0.81818182
+        },
+        {
+            "type": "Image",
+            "id": "3b2a720f-7bd6-4c37-831b-1f6b4ef36eed",
+            "label": "tower_shadow",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "tower_shadow"
+            },
+            "x": 1065,
+            "y": 304,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Sprite",
-            "id": "29cc4e3f-9330-4e49-a419-f06974708cb9",
-            "label": "redflag",
+            "id": "1502a63b-6cb6-4f1e-bab6-e4b217577883",
+            "label": "tower",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "tower",
+            "Animation.end": 24,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
             "texture": {
                 "key": "forts",
-                "frame": "flag10001.png"
+                "frame": "tower0001"
             },
-            "x": 632.4024546201628,
-            "y": 641.907951743897,
-            "originX": 0.46472994725649763,
-            "originY": 0.9978153200881809
+            "x": 1046,
+            "y": -13,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
-            "id": "509d06cc-596f-44b1-b6ce-1c7c04a9055a",
-            "label": "fort1_png",
+            "id": "b2ca6101-5086-4b8d-abd1-92dc5d0fb2b0",
+            "label": "clock",
             "components": [],
             "texture": {
                 "key": "forts",
-                "frame": "fort1.png"
+                "frame": "clock"
             },
-            "x": 706,
-            "y": 685
+            "x": 1082,
+            "y": 104,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "b402d711-30c1-460e-b798-b448eddf538e",
+            "label": "secret_message",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "secret_message"
+            },
+            "x": 1252,
+            "y": 327,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "0b4516d5-7e71-4a28-90f7-821cb7f3bf3f",
+            "label": "sign",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "sign",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "forts",
+                "frame": "sign"
+            },
+            "x": 1390,
+            "y": 291,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "1f0cdaf0-e9e6-4541-a76f-2a26400b2146",
+            "label": "snowballs",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "snowballs"
+            },
+            "x": 676,
+            "y": 786,
+            "originX": 0.49230769,
+            "originY": 0.57777778
         },
         {
             "type": "Sprite",
-            "id": "19294353-e946-430c-b807-40978469e39f",
-            "label": "blueflag",
-            "scope": "CLASS",
-            "components": [],
+            "id": "561077bd-3695-4418-a10f-aa6fb315f3ae",
+            "label": "blue_flag",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "blue_flag",
+            "Animation.end": 16,
             "texture": {
                 "key": "forts",
-                "frame": "flag20001.png"
+                "frame": "blue_flag0001"
             },
-            "x": 962,
-            "y": 329
+            "x": 966,
+            "y": 334,
+            "originY": 1.85185185
         },
         {
-            "type": "Image",
-            "id": "8a26e66d-5d23-4529-9a9f-1c3d182355d4",
-            "label": "fort2_png",
-            "components": [],
+            "type": "Sprite",
+            "id": "9c369ed2-959a-40ca-b717-cd7ab77b82d1",
+            "label": "red_flag",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "red_flag",
+            "Animation.end": 16,
             "texture": {
                 "key": "forts",
-                "frame": "fort2.png"
+                "frame": "red_flag0001"
             },
-            "x": 1021,
-            "y": 432
+            "x": 626,
+            "y": 524,
+            "originY": 1.73913043
+        },
+        {
+            "type": "Rectangle",
+            "id": "6f93abab-6009-4afb-b0ed-a744f686a16d",
+            "label": "hitbox",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1347,
+            "y": 156,
+            "visible": false,
+            "width": 70,
+            "height": 75
         }
     ],
     "plainObjects": [],
@@ -105,11 +251,14 @@
             "id": "1e3d1d79-bbc9-4969-8105-70209fd3fab9",
             "label": "sort",
             "objectIds": [
-                "8a26e66d-5d23-4529-9a9f-1c3d182355d4",
-                "509d06cc-596f-44b1-b6ce-1c7c04a9055a",
-                "3b0a083d-486e-4fc6-95e5-139b93b8e7d8",
-                "29cc4e3f-9330-4e49-a419-f06974708cb9",
-                "19294353-e946-430c-b807-40978469e39f"
+                "9c369ed2-959a-40ca-b717-cd7ab77b82d1",
+                "a7eba68a-1f6e-4778-886c-9b83412c56dd",
+                "82671712-eb61-4cf9-a79d-a117f9e89798",
+                "561077bd-3695-4418-a10f-aa6fb315f3ae",
+                "160a46a9-aa94-4a18-bf7b-bc756cfe9394",
+                "56c1b41f-3f4f-4dc2-bf62-3703d68a7d75",
+                "6291cd2e-fc87-4b49-9dfe-87efcf8dca79",
+                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146"
             ]
         }
     ]

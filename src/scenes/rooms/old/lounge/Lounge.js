@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Button, MoveTo, ShowHint, Zone, SimpleButton } from '@components/components'
+import { Button, MoveTo, ShowHint, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -18,6 +18,7 @@ export default class Lounge extends RoomScene {
 
         this.roomTriggers = {
             'dance': () => this.triggerRoom(120, 1200, 792),
+            'ice': () => this.triggerGame("thinIce", 909),
             'astro': () => this.triggerGame("astroBarrier", 900)
         }
 
@@ -33,19 +34,21 @@ export default class Lounge extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg_dlounge_2005
-        const bg_dlounge_2005 = this.add.image(-3, 0, "bg_dlounge_2005");
-        bg_dlounge_2005.scaleX = 1.01;
-        bg_dlounge_2005.scaleY = 1.01;
-        bg_dlounge_2005.setOrigin(0, 0);
+        // bg
+        const bg = this.add.image(-2, 0, "lounge", "bg");
+        bg.setOrigin(0, 0);
 
         // astro
         const astro = this.add.image(1033, 380, "lounge", "astro");
         astro.setOrigin(0.5022222222222222, 0.501577287066246);
 
+        // ice
+        const ice = this.add.image(626, 377, "lounge", "ice");
+        ice.setOrigin(0.5026178010471204, 0.5);
+
         // plant
-        const plant = this.add.image(78, 628.4755818872633, "lounge", "plant");
-        plant.setOrigin(0.45652173913043476, 0.7581134324229862);
+        const plant = this.add.image(30, 701, "lounge", "plant");
+        plant.setOrigin(0.45652173913043476, 0.9061224489795918);
 
         // chair_1
         const chair_1 = this.add.image(264, 478, "lounge", "chair_1");
@@ -72,16 +75,16 @@ export default class Lounge extends RoomScene {
         table_2.setOrigin(0.4824120603015075, 0.7052631578947368);
 
         // chair_1_2
-        const chair_1_2 = this.add.image(562, 400, "lounge", "chair_1");
+        const chair_1_2 = this.add.image(627, 718, "lounge", "chair_1");
         chair_1_2.setOrigin(0.5225225225225225, 0.4567901234567901);
 
         // chair_1_3
-        const chair_1_3 = this.add.image(776, 411, "lounge", "chair_1");
+        const chair_1_3 = this.add.image(841, 729, "lounge", "chair_1");
         chair_1_3.setOrigin(0.5225225225225225, 0.4567901234567901);
         chair_1_3.flipX = true;
 
         // table_3
-        const table_3 = this.add.image(668, 460, "lounge", "table_3");
+        const table_3 = this.add.image(733, 778, "lounge", "table_3");
         table_3.setOrigin(0.4691358024691358, 0.5379310344827586);
 
         // rail_2
@@ -112,7 +115,18 @@ export default class Lounge extends RoomScene {
         astroMoveTo.x = 940;
         astroMoveTo.y = 520;
         const astroShowHint = new ShowHint(astro);
-        astroShowHint.text = "Astro Barrier";
+        astroShowHint.text = "astro_hint";
+
+        // ice (components)
+        const iceButton = new Button(ice);
+        iceButton.spriteName = "ice";
+        iceButton.activeFrame = false;
+        iceButton.pixelPerfect = true;
+        const iceMoveTo = new MoveTo(ice);
+        iceMoveTo.x = 672;
+        iceMoveTo.y = 512;
+        const iceShowHint = new ShowHint(ice);
+        iceShowHint.text = "thinice_hint";
 
         // chair_1 (components)
         const chair_1SimpleButton = new SimpleButton(chair_1);
@@ -142,13 +156,13 @@ export default class Lounge extends RoomScene {
         const chair_1_2SimpleButton = new SimpleButton(chair_1_2);
         chair_1_2SimpleButton.pixelPerfect = true;
         const chair_1_2MoveTo = new MoveTo(chair_1_2);
-        chair_1_2MoveTo.y = 416;
+        chair_1_2MoveTo.y = 728;
 
         // chair_1_3 (components)
         const chair_1_3SimpleButton = new SimpleButton(chair_1_3);
         chair_1_3SimpleButton.pixelPerfect = true;
         const chair_1_3MoveTo = new MoveTo(chair_1_3);
-        chair_1_3MoveTo.y = 416;
+        chair_1_3MoveTo.y = 739;
 
         this.sort = sort;
 
