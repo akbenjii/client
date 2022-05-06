@@ -817,12 +817,10 @@ export default class Moderator extends BaseContainer {
 
     acceptUsername(gameObject) {
         this.network.send('verify_user', {id: gameObject.userID})
-        this.network.send('get_unverified_users')
     }
 
     rejectUsername(gameObject) {
         this.network.send('reject_user', {id: gameObject.userID})
-        this.network.send('get_unverified_users')
     }
 
     close(){
