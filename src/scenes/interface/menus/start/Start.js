@@ -21,8 +21,8 @@ export default class Start extends BaseScene {
         const bg = this.add.image(0, 0, "load", "bg");
         bg.setOrigin(0, 0);
 
-        // startscreen
-        this.add.image(760, 420, "start", "startscreen");
+        // cpf_beta
+        this.add.image(760, 420, "cpf_beta");
 
         // bottom
         this.add.image(760, 766, "start", "bottom");
@@ -74,10 +74,6 @@ export default class Start extends BaseScene {
         startButtonButton.callback = () => this.onStartClick();
 
         this.events.emit("scene-awake");
-		
-		/* START-USER-CTR-CODE */
-		if (localStorage.clientMode == 'vanilla') this.onStartClick()
-        /* END-USER-CTR-CODE */
     }
 
     /* START-USER-CODE */

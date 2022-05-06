@@ -26,12 +26,11 @@
         },
         {
             "type": "Image",
-            "id": "533f6f60-9a4c-4425-b6bc-e454b4d5ef33",
-            "label": "startscreen",
+            "id": "47adb54d-d36d-4395-9917-47fda53b0830",
+            "label": "cpf_beta",
             "components": [],
             "texture": {
-                "key": "start",
-                "frame": "startscreen"
+                "key": "cpf_beta"
             },
             "x": 760,
             "y": 420
