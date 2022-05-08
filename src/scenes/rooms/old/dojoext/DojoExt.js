@@ -37,6 +37,9 @@ export default class DojoExt extends RoomScene {
         const bg = this.add.image(-15, -6, "dojoext", "bg");
         bg.setOrigin(0, 0);
 
+        // image
+        this.add.image(760, 124, "dojosky");
+
         // trees
         const trees = this.add.image(1364, 915, "dojoext", "trees");
         trees.setOrigin(0.518840579710145, 0.8611111111111112);

@@ -38,6 +38,9 @@ export default class Shack extends RoomScene {
         const bg = this.add.image(-22, 1, "shack", "bg");
         bg.setOrigin(0, 0);
 
+        // image
+        this.add.image(766, 145, "shacksky");
+
         // plant
         const plant = this.add.image(-28, 122, "shack", "plant");
         plant.setOrigin(0, 0);

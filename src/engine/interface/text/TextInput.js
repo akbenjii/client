@@ -94,7 +94,7 @@ export default class TextInput extends Phaser.GameObjects.DOMElement {
                 return /^[A-Z _!?#'"]*$/i.test(value);
             });
         }
-        else if (element.allowNumbers) {
+        else if (element.allowNumbers && !element.allowSpecialCharacters) {
             this.setInputFilter(element, function(value) {
                 return /^[A-Z0-9 ]*$/i.test(value);
             });

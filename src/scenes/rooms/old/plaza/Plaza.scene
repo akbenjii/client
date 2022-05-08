@@ -32,6 +32,17 @@
         },
         {
             "type": "Image",
+            "id": "62feec7b-5aac-4950-8f85-a28290d57a5b",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "plazasky"
+            },
+            "x": 765,
+            "y": 225
+        },
+        {
+            "type": "Image",
             "id": "924c61e4-abb7-4066-8ec9-f7a98abdba1a",
             "label": "pet_door",
             "components": [

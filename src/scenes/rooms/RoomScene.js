@@ -31,6 +31,7 @@ export default class RoomScene extends BaseScene {
     }
 
     create() {
+
         this._create()
         this.sortChildren()
 
@@ -44,11 +45,17 @@ export default class RoomScene extends BaseScene {
         if (this.waddles) this.getWaddles()
 
         this.interface.showInterface()
+
+        if (this.crumbs.pin.id && this.crumbs.pin.room === this.id) this.interface.addPin()
     }
 	
     preload() {
         if (this.music && !this.cache.audio.exists(this.music)) {
             this.load.audio(this.music, `assets/media/music/${this.music}.mp3`)
+        }
+
+        if (this.crumbs.pin.id && this.crumbs.pin.room === this.id) {
+            this.load.image('pin', `assets/media/clothing/icon/${this.crumbs.pin.id}.png`)
         }
 		
         this._preload()
@@ -188,6 +195,18 @@ export default class RoomScene extends BaseScene {
 
         return triggers
     }
+	
+	addZones() {
+		if (!this.roomZones) return null
+		
+		for (let t in this.roomZones) {
+			console.log(this.roomZones)
+            let trigger = this.matter.add.gameObject(this.roomZones[t].key)
+
+            trigger.callback = this.roomZones[t].callback
+            this.triggers.push(trigger)
+        }
+	}
 
     triggerRoom(id, x, y) {
         let room = this.crumbs.scenes.rooms[id]

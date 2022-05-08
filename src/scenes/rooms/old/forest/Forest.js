@@ -37,6 +37,9 @@ export default class Forest extends RoomScene {
         const bg = this.add.image(-24, -13, "forest", "bg");
         bg.setOrigin(0, 0);
 
+        // image
+        this.add.image(757, 150, "forestsky");
+
         // rock0001
         const rock0001 = this.add.image(254, 681, "forest", "rock0001");
         rock0001.setOrigin(0.6005747126436781, 0.7300884955752213);

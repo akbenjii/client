@@ -19,15 +19,27 @@
         {
             "type": "Image",
             "id": "da491502-afff-4bb1-b8e0-b6cf102da406",
-            "label": "bg_vil_2005",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "bg_vil_2005"
+                "key": "village",
+                "frame": "bg"
             },
-            "x": -34,
+            "x": -9,
             "y": -19,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "a2ef3720-1341-4b65-b190-6d1a00498134",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "vilsky"
+            },
+            "x": 772,
+            "y": 182
         },
         {
             "type": "Image",
@@ -45,7 +57,7 @@
                 "key": "village",
                 "frame": "lodge_door"
             },
-            "x": 1069,
+            "x": 1094,
             "y": 308,
             "scaleX": 1.05,
             "scaleY": 1.05,
@@ -61,7 +73,7 @@
                 "key": "village",
                 "frame": "lodge_stairs"
             },
-            "x": 964,
+            "x": 989,
             "y": 443
         },
         {
@@ -73,7 +85,7 @@
                 "key": "village",
                 "frame": "lodge_front"
             },
-            "x": 1080,
+            "x": 1105,
             "y": 383,
             "originX": 0.4807692307692308,
             "originY": 0.5352112676056338
@@ -87,7 +99,7 @@
                 "key": "village",
                 "frame": "lodge_snow"
             },
-            "x": 1106,
+            "x": 1131,
             "y": 425,
             "originX": 0.5368217054263565,
             "originY": 0.4838709677419355
@@ -100,8 +112,8 @@
             "texture": {
                 "key": "sports"
             },
-            "x": 1359,
-            "y": 379
+            "x": 1361,
+            "y": 380
         },
         {
             "type": "Image",
@@ -119,7 +131,7 @@
                 "key": "village",
                 "frame": "phone_door"
             },
-            "x": 1370,
+            "x": 1395,
             "y": 382,
             "originX": 0.22797927461139897,
             "originY": 0.6206896551724138
@@ -134,8 +146,8 @@
                 "key": "ski-lift",
                 "frame": "sprite 390001.png"
             },
-            "x": 267,
-            "y": 132
+            "x": 311,
+            "y": 147
         },
         {
             "type": "Sprite",
@@ -150,7 +162,7 @@
                 "key": "village",
                 "frame": "smoke0001"
             },
-            "x": 1110,
+            "x": 1135,
             "y": 32
         },
         {
@@ -161,7 +173,7 @@
             "texture": {
                 "key": "greentube"
             },
-            "x": 1424,
+            "x": 1449,
             "y": 396
         },
         {
@@ -172,7 +184,7 @@
             "texture": {
                 "key": "tube"
             },
-            "x": 1473,
+            "x": 1498,
             "y": 444,
             "originY": -0.06198347107438017
         },
@@ -190,7 +202,7 @@
             "texture": {
                 "key": "bouncingtubes0001"
             },
-            "x": 1375,
+            "x": 1400,
             "y": 474
         }
     ],

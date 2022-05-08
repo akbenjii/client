@@ -36,6 +36,9 @@ export default class Cove extends RoomScene {
         const bg = this.add.image(-2, -15, "cove", "bg");
         bg.setOrigin(0, 0);
 
+        // image
+        this.add.image(764, 146, "covesky");
+
         // cliff_1
         const cliff_1 = this.add.image(-5, 5, "cove", "cliff_1");
         cliff_1.setOrigin(0, 0);

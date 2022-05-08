@@ -29,6 +29,53 @@
             "y": 2,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "eb05c902-71d1-4761-9b8d-0e0cfebf2462",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "bergsky"
+            },
+            "x": 760,
+            "y": 105
+        },
+        {
+            "type": "Image",
+            "id": "916e8e98-1930-4d21-85e7-bf10d888855d",
+            "label": "scarf",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "scarf"
+            },
+            "x": 946,
+            "y": 495
+        },
+        {
+            "type": "Image",
+            "id": "cf4b65a5-aed0-4469-9342-63786cff51ce",
+            "label": "shoes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "shoes"
+            },
+            "x": 735,
+            "y": 638
+        },
+        {
+            "type": "Image",
+            "id": "edb4ce77-7898-4a62-adc9-6c4d23584a66",
+            "label": "jacket",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "jacket"
+            },
+            "x": 432,
+            "y": 511
         }
     ],
     "plainObjects": [],

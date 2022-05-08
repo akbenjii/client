@@ -32,6 +32,17 @@
         },
         {
             "type": "Image",
+            "id": "cc57da6b-4124-4ec0-91f4-491c5100b324",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "rinksky"
+            },
+            "x": 757,
+            "y": 97
+        },
+        {
+            "type": "Image",
             "id": "139351a3-ad27-4f1c-b1cc-cb39e13fb57d",
             "label": "rink_border",
             "components": [],

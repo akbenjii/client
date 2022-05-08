@@ -17,6 +17,14 @@
     },
     "displayList": [
         {
+            "type": "Container",
+            "id": "756ef120-de12-49f2-9f24-52db327a62bf",
+            "label": "pinContainer",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
+        },
+        {
             "type": "Image",
             "id": "7d205242-0757-4e4c-9298-88832a914a09",
             "label": "dock",

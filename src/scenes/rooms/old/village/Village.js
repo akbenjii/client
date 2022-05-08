@@ -41,49 +41,52 @@ export default class Village extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg_vil_2005
-        const bg_vil_2005 = this.add.image(-34, -19, "bg_vil_2005");
-        bg_vil_2005.setOrigin(0, 0);
+        // bg
+        const bg = this.add.image(-9, -19, "village", "bg");
+        bg.setOrigin(0, 0);
+
+        // image
+        this.add.image(772, 182, "vilsky");
 
         // lodge_door
-        const lodge_door = this.add.image(1069, 308, "village", "lodge_door");
+        const lodge_door = this.add.image(1094, 308, "village", "lodge_door");
         lodge_door.scaleX = 1.05;
         lodge_door.scaleY = 1.05;
         lodge_door.setOrigin(0.27807486631016043, 0.5560538116591929);
 
         // lodge_stairs
-        this.add.image(964, 443, "village", "lodge_stairs");
+        this.add.image(989, 443, "village", "lodge_stairs");
 
         // lodge_front
-        const lodge_front = this.add.image(1080, 383, "village", "lodge_front");
+        const lodge_front = this.add.image(1105, 383, "village", "lodge_front");
         lodge_front.setOrigin(0.4807692307692308, 0.5352112676056338);
 
         // lodge_snow
-        const lodge_snow = this.add.image(1106, 425, "village", "lodge_snow");
+        const lodge_snow = this.add.image(1131, 425, "village", "lodge_snow");
         lodge_snow.setOrigin(0.5368217054263565, 0.4838709677419355);
 
         // sports
-        this.add.image(1359, 379, "sports");
+        this.add.image(1361, 380, "sports");
 
         // phone_door
-        const phone_door = this.add.image(1370, 382, "village", "phone_door");
+        const phone_door = this.add.image(1395, 382, "village", "phone_door");
         phone_door.setOrigin(0.22797927461139897, 0.6206896551724138);
 
         // skiLift
-        const skiLift = this.add.sprite(267, 132, "ski-lift", "sprite 390001.png");
+        const skiLift = this.add.sprite(311, 147, "ski-lift", "sprite 390001.png");
 
         // smoke
-        const smoke = this.add.sprite(1110, 32, "village", "smoke0001");
+        const smoke = this.add.sprite(1135, 32, "village", "smoke0001");
 
         // greentube
-        this.add.image(1424, 396, "greentube");
+        this.add.image(1449, 396, "greentube");
 
         // tube
-        const tube = this.add.image(1473, 444, "tube");
+        const tube = this.add.image(1498, 444, "tube");
         tube.setOrigin(0.5, -0.06198347107438017);
 
         // bouncingtubes
-        const bouncingtubes = this.add.sprite(1375, 474, "bouncingtubes0001");
+        const bouncingtubes = this.add.sprite(1400, 474, "bouncingtubes0001");
 
         // lists
         const sort = [bouncingtubes, tube];
@@ -134,7 +137,7 @@ export default class Village extends RoomScene {
 
     create() {
         super.create()
-		
+
         this.skiLift.play("ski-lift")
     }
     /* END-USER-CODE */

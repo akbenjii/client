@@ -32,6 +32,17 @@
         },
         {
             "type": "Image",
+            "id": "828dc62c-cc7b-4d8f-a63d-e4467b404afa",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "shacksky"
+            },
+            "x": 766,
+            "y": 145
+        },
+        {
+            "type": "Image",
             "id": "ff7b1ff6-a9df-445d-8653-ccaab4b6525d",
             "label": "plant",
             "components": [],

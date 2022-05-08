@@ -42,6 +42,9 @@ export default class Plaza extends RoomScene {
         const bg = this.add.image(-18, -2, "plaza", "bg");
         bg.setOrigin(0, 0);
 
+        // image
+        this.add.image(765, 225, "plazasky");
+
         // pet_door
         const pet_door = this.add.image(333, 489, "plaza", "pet_door");
         pet_door.setOrigin(0.473118, 0.678218);

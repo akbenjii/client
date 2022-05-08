@@ -2,6 +2,7 @@ import BaseScene from '@scenes/base/BaseScene'
 
 import MetricsManager from './metrics/MetricsManager'
 import PromptController from './prompt/PromptController'
+import { SimpleButton } from "@components/components";
 
 
 export default class InterfaceController extends BaseScene {
@@ -108,6 +109,25 @@ export default class InterfaceController extends BaseScene {
 
     showCard(id, refresh = false) {
         this.main.playerCard.showCard(id, refresh)
+    }
+
+    addPin(){
+        if (this.pin) return this.pin.visible = true
+
+        let pin = this.add.sprite((this.crumbs.pin.x) ? this.crumbs.pin.x : 960, (this.crumbs.pin.y) ? this.crumbs.pin.y : 480, "pin",);
+        this.main.pinContainer.add(pin);
+        this.pin = pin;
+
+        this.pin.setInteractive({
+            cursor: 'pointer',
+            pixelPerfect: true
+        })
+
+        this.pin.on('pointerup', () => this.interface.prompt.showItem(this.crumbs.pin.id))
+    }
+
+    destroyPin(){
+        if (this.pin) this.pin.visible = false
     }
 
     /**

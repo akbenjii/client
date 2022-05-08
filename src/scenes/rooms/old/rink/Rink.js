@@ -34,6 +34,9 @@ export default class Rink extends RoomScene {
         const bg = this.add.image(-33, -7, "rink", "bg");
         bg.setOrigin(0, 0);
 
+        // image
+        this.add.image(757, 97, "rinksky");
+
         // rink_border
         const rink_border = this.add.image(444, 335, "rink", "rink_border");
         rink_border.setOrigin(0.30707692, 0.42490372);

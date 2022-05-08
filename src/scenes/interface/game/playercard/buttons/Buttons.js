@@ -173,17 +173,17 @@ export default class Buttons extends BaseContainer {
 
         switch (relationship) {
             case 'online':
-                this.enableButton('buddy', 'buddies-remove-icon', 'remove_buddy_hint')
+                this.enableButton('buddy', 'buddies-remove-icon', 'Remove Buddy')
                 this.enableButtons(['profile', 'igloo', 'mail', 'report'])
                 break
 
             case 'offline':
-                this.enableButton('buddy', 'buddies-remove-icon', 'remove_buddy_hint')
+                this.enableButton('buddy', 'buddies-remove-icon', 'Remove Buddy')
                 this.enableButtons(['igloo', 'mail', 'report'])
                 break
 
             case 'ignore':
-                this.enableButton('ignore', 'ignore-remove-icon', 'remove_ignore_hint')
+                this.enableButton('ignore', 'ignore-remove-icon', 'Unignore Buddy')
                 this.enableButton('report')
                 break
 

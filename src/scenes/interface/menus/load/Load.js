@@ -1,5 +1,5 @@
 import BaseScene from '@scenes/base/BaseScene'
-
+import PathEngine from '@engine/world/penguin/pathfinding/PathEngine'
 import { Interactive } from '@components/components'
 
 
@@ -132,6 +132,7 @@ export default class Load extends BaseScene {
             this.tween.pause()
             this.spinner.angle = 0
         }
+		if (this.timeout) clearTimeout(this.timeout)
     }
 
     onWake(sys, data) {
@@ -145,7 +146,14 @@ export default class Load extends BaseScene {
             this.setupLoadingAnims()
             this.setContent(data.text, false)
         }
+		this.timeout = setTimeout(this.checkForInfiniteLoad, 10000)
     }
+	
+	checkForInfiniteLoad() {
+		if (!this.world.client.newRoom) return
+		let random = PathEngine.getRandomPos(this.world.client.newRoom[1], this.world.client.newRoom[2], this.world.client.newRoom[3])
+        this.network.send('join_room', { room: this.world.client.newRoom[0], x: random.x, y: random.y })
+	}
 
     setContent(text, showBar) {
         this.text.text = text

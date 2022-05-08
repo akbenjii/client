@@ -42,6 +42,9 @@ export default class Forts extends RoomScene {
         const bg = this.add.image(-35, -18, "forts", "bg");
         bg.setOrigin(0, 0);
 
+        // image
+        this.add.image(762, 90, "fortsky");
+
         // red_fort
         const red_fort = this.add.image(603, 655, "forts", "red_fort");
         red_fort.setOrigin(0.5, 0.65116279);

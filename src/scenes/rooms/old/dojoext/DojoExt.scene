@@ -32,6 +32,17 @@
         },
         {
             "type": "Image",
+            "id": "76218d1f-2018-4dd7-8cc4-565a6d2386ea",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "dojosky"
+            },
+            "x": 760,
+            "y": 124
+        },
+        {
+            "type": "Image",
             "id": "0b0f65f9-638b-4650-84a7-b74b3e6c2831",
             "label": "trees",
             "components": [],

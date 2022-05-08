@@ -95,6 +95,8 @@ export default class ClientController {
 
         // Assigns inventory list to slots
         for (let item of this.inventory) {
+			if (!this.crumbs.items[item]) continue
+			
             let type = this.crumbs.items[item].type
             let slot = this.slots[type - 1]
 
@@ -216,9 +218,13 @@ export default class ClientController {
     }
 
     sendJoinRoom(id, name, x, y, randomRange = 40) {
+        this.interface.destroyPin()
+
         if (this.activeSeat) {
             return this.interface.prompt.showError('Please exit your game before leaving the room')
         }
+		
+		this.newRoom = [id, name, x, y, randomRange]
 
         this.interface.showLoading(this.getString('joining', name))
         this.interface.main.waddle.visible = false
@@ -230,6 +236,8 @@ export default class ClientController {
     }
 
     sendJoinIgloo(id) {
+        this.interface.destroyPin()
+
         if (this.world.room.isIgloo && this.world.room.id == id) {
             return
         }

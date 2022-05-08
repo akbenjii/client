@@ -32,6 +32,8 @@ export default class Main extends BaseScene {
     constructor() {
         super("Main");
 
+        /** @type {Phaser.GameObjects.Container} */
+        this.pinContainer;
         /** @type {Phaser.GameObjects.Image} */
         this.dock;
         /** @type {Phaser.GameObjects.Image} */
@@ -130,6 +132,9 @@ export default class Main extends BaseScene {
 
     /** @returns {void} */
     _create() {
+
+        // pinContainer
+        const pinContainer = this.add.container(0, 0);
 
         // dock
         const dock = this.add.image(760, 924, "main", "dock");
@@ -401,6 +406,7 @@ export default class Main extends BaseScene {
         mod_buttonSimpleButton.hoverOutCallback = () => this.onModOut();
         mod_buttonSimpleButton.callback = () => this.onModClick();
 
+        this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
         this.chat_button = chat_button;
@@ -497,7 +503,7 @@ export default class Main extends BaseScene {
             color: '#fff'
         }
 
-        this.chatInput = new TextInput(this, 745, 931, 'text', style, () => this.onChatSend(), 48)
+        this.chatInput = (this.world.client.penguin.rank > 3) ? new TextInput(this, 745, 931, 'text', style, () => this.onChatSend(), 192, true, 'chat', true, true) : new TextInput(this, 745, 931, 'text', style, () => this.onChatSend(), 48, true, 'chat', false, false)
         this.add.existing(this.chatInput)
 
         // Mod search
@@ -511,7 +517,7 @@ export default class Main extends BaseScene {
             visibility: 'hidden'
         }
 
-        this.search = new TextInput(this, 814, 118, 'text', searchstyle, () => this.onSearch(), 48, true, 'search')
+        this.search = new TextInput(this, 814, 118, 'text', searchstyle, () => this.onSearch(), 48, true, 'search', false, true)
 
         // Mod actions
 
@@ -526,7 +532,7 @@ export default class Main extends BaseScene {
 
         this.addcoins = new TextInput(this, 974, 322, 'number', actionsstyle, () => this.modActions.handleAddCoins(), 48, true, 'addcoins')
         this.additems = new TextInput(this, 974, 427, 'number', actionsstyle, () => this.modActions.handleAddItems(), 48, true, 'additems')
-        this.changeusername = new TextInput(this, 974, 639, 'text', actionsstyle, () => this.modActions.handleChangeUsername(), 48, true, 'changeusername')
+        this.changeusername = new TextInput(this, 974, 639, 'text', actionsstyle, () => this.modActions.handleChangeUsername(), 48, true, 'changeusername', false, true)
 
         let managestyle = {
             width: 250,

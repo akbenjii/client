@@ -2,6 +2,7 @@ import fonts from './fonts'
 import igloos from './igloos'
 import interfaces from './interfaces'
 import rooms from './rooms'
+import pin from './pin'
 
 
 if (!localStorage.getItem('webgl')) { localStorage.setItem('webgl', 'true')}
@@ -46,6 +47,7 @@ const cpforever = {
 
     crumbs: {
         fonts: fonts,
+        pin: pin,
         scenes: {
             igloos: igloos,
             interfaces: interfaces,

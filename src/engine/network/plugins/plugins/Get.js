@@ -10,7 +10,8 @@ export default class Get extends Plugin {
             'get_rank': this.getRank,
 			'get_unverified_users': this.getUnverifedUsers,
 			'get_user_info': this.getUserInfo,
-			'edit_player': this.editPlayer
+			'edit_player': this.editPlayer,
+            'get_pin': this.getPin,
         }
     }
 
@@ -32,6 +33,13 @@ export default class Get extends Plugin {
 	
 	editPlayer(args) {
         this.interface.main.modActions._showCard(args.user, args.bancount, args.activeban)
+    }
+
+    getPin(args) {
+        this.crumbs.pin.id = args.id
+        this.crumbs.pin.room = args.room
+        this.crumbs.pin.x = args.x
+        this.crumbs.pin.y = args.y
     }
 
 }

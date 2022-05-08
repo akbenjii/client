@@ -32,6 +32,17 @@
         },
         {
             "type": "Image",
+            "id": "329ae434-8597-4f87-b8fa-e65cc9a49ea1",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "fortsky"
+            },
+            "x": 762,
+            "y": 90
+        },
+        {
+            "type": "Image",
             "id": "6291cd2e-fc87-4b49-9dfe-87efcf8dca79",
             "label": "red_fort",
             "components": [],

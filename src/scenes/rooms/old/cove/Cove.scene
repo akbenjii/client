@@ -32,6 +32,17 @@
         },
         {
             "type": "Image",
+            "id": "e467ba56-c7f1-487d-8c76-a6eaf38a8836",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "covesky"
+            },
+            "x": 764,
+            "y": 146
+        },
+        {
+            "type": "Image",
             "id": "9ce4c0b0-b105-4dd2-9cf7-48c92b24f169",
             "label": "cliff_1",
             "components": [],
