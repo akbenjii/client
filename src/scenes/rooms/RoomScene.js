@@ -200,7 +200,6 @@ export default class RoomScene extends BaseScene {
 		if (!this.roomZones) return null
 		
 		for (let t in this.roomZones) {
-			console.log(this.roomZones)
             let trigger = this.matter.add.gameObject(this.roomZones[t].key)
 
             trigger.callback = this.roomZones[t].callback

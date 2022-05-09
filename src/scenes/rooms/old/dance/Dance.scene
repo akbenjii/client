@@ -22,11 +22,11 @@
             "label": "bg",
             "components": [],
             "texture": {
-                "key": "dance",
+                "key": "beta_dance",
                 "frame": "bg"
             },
             "x": 760,
-            "y": 480
+            "y": 467
         },
         {
             "type": "Image",
@@ -42,47 +42,29 @@
             "originY": 0.5070422535211268
         },
         {
-            "type": "Image",
-            "id": "697cf3b5-7ce2-428e-af72-686676a152f5",
-            "label": "floor_frame",
-            "components": [],
-            "texture": {
-                "key": "dance",
-                "frame": "floor/frame"
-            },
-            "x": 646,
-            "y": 696,
-            "originX": 0.5006273525721455
-        },
-        {
             "type": "Sprite",
             "id": "071b8517-dbfc-456d-b91b-94f2f3c51ffa",
-            "label": "floor",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "floor/floor",
-            "Animation.end": 60,
+            "label": "dancefloor",
+            "scope": "CLASS",
+            "components": [],
             "texture": {
-                "key": "dance",
-                "frame": "floor/floor0001"
+                "key": "beta_dance",
+                "frame": "dancefloor0001"
             },
             "x": 646,
             "y": 693
         },
         {
             "type": "Image",
-            "id": "5b00960f-fbed-4eb1-9360-497cb991b12e",
-            "label": "stage",
+            "id": "8ef1f2c9-ae7e-4670-b1e1-9208d4734267",
+            "label": "speaker_system",
             "components": [],
             "texture": {
-                "key": "dance",
-                "frame": "stage"
+                "key": "beta_dance",
+                "frame": "speaker_system"
             },
-            "x": 660,
-            "y": 388,
-            "originX": 0.5008576329331046,
-            "originY": 0.5028248587570622
+            "x": 435,
+            "y": 202
         },
         {
             "type": "Image",
@@ -99,6 +81,18 @@
             "originY": 0.5063291139240507
         },
         {
+            "type": "Image",
+            "id": "a61597ba-2322-479a-b264-df8cb35a801b",
+            "label": "balloons_left_speaker",
+            "components": [],
+            "texture": {
+                "key": "beta_dance",
+                "frame": "balloons_left_speaker"
+            },
+            "x": 390,
+            "y": 262
+        },
+        {
             "type": "Sprite",
             "id": "2bea90c4-d813-48d7-b039-20dcfd8c051c",
             "label": "fg_speaker_1",
@@ -113,6 +107,18 @@
             },
             "x": 268,
             "y": 151
+        },
+        {
+            "type": "Image",
+            "id": "562298f7-6c56-4889-9778-5bf376a37749",
+            "label": "exit_sign",
+            "components": [],
+            "texture": {
+                "key": "beta_dance",
+                "frame": "exit_sign"
+            },
+            "x": 161,
+            "y": 338
         },
         {
             "type": "Sprite",
@@ -146,6 +152,18 @@
             "originX": 0.5106382978723404,
             "originY": 0.5063291139240507,
             "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "248c1a49-3131-43d0-bffa-e41ad2c3ccfb",
+            "label": "right_balloons",
+            "components": [],
+            "texture": {
+                "key": "beta_dance",
+                "frame": "right_balloons"
+            },
+            "x": 946,
+            "y": 259
         },
         {
             "type": "Sprite",
@@ -278,20 +296,16 @@
             "originX": 0.5031446540880503
         },
         {
-            "type": "Sprite",
-            "id": "3b32268a-d724-470f-a666-e2fca35081db",
-            "label": "lights",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "lights/lights",
-            "Animation.end": 80,
+            "type": "Image",
+            "id": "40f9ba10-0f7b-47c8-baf8-2eed9b6287f4",
+            "label": "fg",
+            "components": [],
             "texture": {
-                "key": "dance",
-                "frame": "lights/lights0001"
+                "key": "beta_dance",
+                "frame": "fg"
             },
-            "x": 666,
-            "y": 94
+            "x": 731,
+            "y": 566
         },
         {
             "type": "Image",
@@ -315,41 +329,16 @@
             "originY": 0.5010141987829615
         },
         {
-            "type": "Container",
-            "id": "4dfc59f6-228a-404e-9295-f232e65fb617",
-            "label": "puffle_speaker",
+            "type": "Image",
+            "id": "5e9e0036-9cd7-409d-9db8-88648fd761a3",
+            "label": "beta_banner",
             "components": [],
-            "x": 1164,
-            "y": 735.5295257801258,
-            "list": [
-                {
-                    "type": "Image",
-                    "id": "6c4cba5d-d47d-4d86-be9f-c3bc2c1f43c5",
-                    "label": "speaker_4",
-                    "components": [],
-                    "texture": {
-                        "key": "dance",
-                        "frame": "speaker_4"
-                    },
-                    "x": 2,
-                    "y": 1.4705234832657652,
-                    "originX": 0.45918367346938777,
-                    "originY": 0.8421052631578947
-                },
-                {
-                    "type": "Sprite",
-                    "id": "0533211a-1c41-4299-9067-7b5f97c80689",
-                    "label": "puffle",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "dance",
-                        "frame": "puffle/puffle0001"
-                    },
-                    "y": -199.52947651673423,
-                    "originY": 0.7933884297520661
-                }
-            ]
+            "texture": {
+                "key": "beta_dance",
+                "frame": "beta_banner"
+            },
+            "x": 677,
+            "y": 106
         },
         {
             "type": "Container",
@@ -402,281 +391,51 @@
             ]
         },
         {
-            "type": "Container",
-            "id": "43e90a8b-ac6b-457f-bed7-77da9a82d963",
-            "label": "dj_speaker",
+            "type": "Image",
+            "id": "8c34d945-ad0a-4ec5-8762-b64df80743d4",
+            "label": "drinks",
             "components": [],
-            "x": 790.7929422877853,
-            "y": 305.10866987575673,
-            "list": [
-                {
-                    "type": "Image",
-                    "id": "50acead0-a33b-4ba0-830c-bad87b5abac2",
-                    "label": "dj_speaker_speaker",
-                    "components": [],
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/speaker"
-                    },
-                    "x": 1.2070577122146915,
-                    "y": -0.10866987575673193,
-                    "originX": 0.4,
-                    "originY": 0.6923076923076923
-                },
-                {
-                    "type": "Sprite",
-                    "id": "39eb4617-23b3-48d5-99a7-218f86ce7ce8",
-                    "label": "dj_speaker_sound",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/speaker_sound",
-                    "Animation.end": 2,
-                    "Animation.repeatDelay": 250,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/speaker_sound0001"
-                    },
-                    "x": 6.2070577122146915,
-                    "y": -39.10866987575673,
-                    "originY": 0.5061728395061729
-                }
-            ]
+            "texture": {
+                "key": "beta_dance",
+                "frame": "drinks"
+            },
+            "x": 1072,
+            "y": 477
         },
         {
             "type": "Container",
-            "id": "fddb63fc-c183-495a-8d07-76dae057349c",
-            "label": "mixer",
+            "id": "4dfc59f6-228a-404e-9295-f232e65fb617",
+            "label": "puffle_speaker",
             "components": [],
-            "x": 656.758588457557,
-            "y": 340.0371580227643,
+            "x": 1164,
+            "y": 735.5295257801258,
             "list": [
                 {
                     "type": "Image",
-                    "id": "6ab927ea-c842-4262-bd7d-6e00f23edbe1",
-                    "label": "dj_mixer_wave_green",
+                    "id": "6c4cba5d-d47d-4d86-be9f-c3bc2c1f43c5",
+                    "label": "speaker_4",
                     "components": [],
                     "texture": {
                         "key": "dance",
-                        "frame": "dj/mixer/wave/green"
+                        "frame": "speaker_4"
                     },
-                    "y": 12
+                    "x": 2,
+                    "y": 1.4705234832657652,
+                    "originX": 0.45918367346938777,
+                    "originY": 0.8421052631578947
                 },
                 {
                     "type": "Sprite",
-                    "id": "c6273a95-4066-47c3-b0a1-69dee637628e",
-                    "label": "dj_mixer_wave",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/mixer/wave/wave0001"
-                    },
-                    "y": 12
-                },
-                {
-                    "type": "Image",
-                    "id": "0795ef57-6abb-45b2-af8a-418015d03a82",
-                    "label": "dj_mixer",
-                    "components": [],
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/mixer/mixer"
-                    },
-                    "x": 0.24141154244296104,
-                    "y": 2.962841977235712
-                },
-                {
-                    "type": "Sprite",
-                    "id": "d5946c7d-94a3-4ac1-963f-7a4d57fc268f",
-                    "label": "dj_mixer_tables_under",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/mixer/tables/tables_under",
-                    "Animation.end": 23,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/mixer/tables/tables_under0001"
-                    },
-                    "x": 1.241411542442961,
-                    "y": -4.037158022764288,
-                    "originX": 0.5027027027027027,
-                    "originY": 0.5128205128205128
-                },
-                {
-                    "type": "Sprite",
-                    "id": "d0f8492f-e678-4257-bd22-7e85b2081829",
-                    "label": "dj_mixer_tables",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/mixer/tables/tables",
-                    "Animation.end": 6,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/mixer/tables/tables0001"
-                    },
-                    "x": 0.24141154244296104,
-                    "y": -7.037158022764288,
-                    "originY": 0.5161290322580645
-                },
-                {
-                    "type": "Sprite",
-                    "id": "7e320690-eb5e-4cbf-bd06-a89d0a3d43c8",
-                    "label": "dj_mixer_lights",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/mixer/lights/lights",
-                    "Animation.end": 23,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/mixer/lights/lights0001"
-                    },
-                    "x": 0.24141154244296104,
-                    "y": -20.037158022764288
-                },
-                {
-                    "type": "Sprite",
-                    "id": "a1828fff-a08b-4f4b-93dc-075ed97f6777",
-                    "label": "dj_mixer_slider",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/mixer/slider/slider",
-                    "Animation.end": 23,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/mixer/slider/slider0001"
-                    },
-                    "x": 0.24141154244296104,
-                    "y": -20.037158022764288
-                },
-                {
-                    "type": "Image",
-                    "id": "d5c83a2b-816d-4200-b174-4916e432af49",
-                    "label": "dj_wires",
-                    "components": [],
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/wires"
-                    },
-                    "x": 5.241411542442961,
-                    "y": 29.962841977235712,
-                    "originX": 0.5014836795252225,
-                    "originY": 0.5050505050505051
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "2e01dc76-ddeb-4860-8a94-ded19a24c254",
-            "label": "box",
-            "components": [],
-            "x": 520.6001395292443,
-            "y": 310.6122881275866,
-            "list": [
-                {
-                    "type": "Sprite",
-                    "id": "0ccf0804-4712-4d46-998e-8067473eedb4",
-                    "label": "dj_box_headphones_back",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/box/headphones/back",
-                    "Animation.end": 30,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/box/headphones/back0001"
-                    },
-                    "x": -52.600168515674795,
-                    "y": -58.61229112964787,
-                    "originX": 0.5135135135135135
-                },
-                {
-                    "type": "Image",
-                    "id": "3310c14a-ebf7-4f05-817d-92c733cc4e67",
-                    "label": "dj_box",
-                    "components": [
-                        "SimpleButton",
-                        "MoveTo"
-                    ],
-                    "SimpleButton.hoverCallback": "() => this.onBoxOver()",
-                    "SimpleButton.hoverOutCallback": "() => this.onBoxOut()",
-                    "MoveTo.x": 520,
-                    "MoveTo.y": 300,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/box/box"
-                    },
-                    "x": 1.3998314843252047,
-                    "y": 2.387708870352128,
-                    "originY": 0.75
-                },
-                {
-                    "type": "Sprite",
-                    "id": "e51b9d3e-302a-4fad-8d41-4bdda94ee5f9",
-                    "label": "dj_box_sliders",
+                    "id": "0533211a-1c41-4299-9067-7b5f97c80689",
+                    "label": "puffle",
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "dance",
-                        "frame": "dj/box/sliders/sliders0001"
+                        "frame": "puffle/puffle0001"
                     },
-                    "x": 30.399831484325205,
-                    "y": 2.387708870352128,
-                    "originY": 0.5151515151515151
-                },
-                {
-                    "type": "Sprite",
-                    "id": "9aafe413-97e6-4a22-b3a8-15b3c451b77e",
-                    "label": "dj_box_lights",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/box/lights/lights",
-                    "Animation.end": 30,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/box/lights/lights0001"
-                    },
-                    "x": 43.399831484325205,
-                    "y": -44.61229112964787,
-                    "originY": 0.5072463768115942
-                },
-                {
-                    "type": "Sprite",
-                    "id": "5554cd5e-9837-4964-b567-012ae8dca542",
-                    "label": "dj_box_headphones_front",
-                    "scope": "CLASS",
-                    "components": [
-                        "Animation"
-                    ],
-                    "Animation.key": "dj/box/headphones/front",
-                    "Animation.end": 30,
-                    "Animation.autoPlay": false,
-                    "texture": {
-                        "key": "dance",
-                        "frame": "dj/box/headphones/front0001"
-                    },
-                    "x": -26.600168515674795,
-                    "y": -70.61229112964787,
-                    "originY": 0.509090909090909
+                    "y": -199.52947651673423,
+                    "originY": 0.7933884297520661
                 }
             ]
         },
@@ -695,6 +454,18 @@
             "fillColor": "#00ff00",
             "width": 60,
             "height": 50
+        },
+        {
+            "type": "Image",
+            "id": "e0430e9d-d606-4f8b-84e5-a432f74a8989",
+            "label": "ropes",
+            "components": [],
+            "texture": {
+                "key": "beta_dance",
+                "frame": "ropes"
+            },
+            "x": 1487,
+            "y": 850
         }
     ],
     "plainObjects": [],
@@ -712,10 +483,8 @@
                 "5afcee12-4520-4be3-ba1c-f7ff61ee1643",
                 "63796597-60bb-489c-b7a9-06624cc1ea34",
                 "595b30dd-eb9e-42d4-91f7-d53fcd6f87c6",
-                "2e01dc76-ddeb-4860-8a94-ded19a24c254",
-                "43e90a8b-ac6b-457f-bed7-77da9a82d963",
-                "fddb63fc-c183-495a-8d07-76dae057349c",
-                "4dfc59f6-228a-404e-9295-f232e65fb617"
+                "4dfc59f6-228a-404e-9295-f232e65fb617",
+                "8c34d945-ad0a-4ec5-8762-b64df80743d4"
             ]
         },
         {
