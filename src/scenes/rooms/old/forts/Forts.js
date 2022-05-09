@@ -114,6 +114,10 @@ export default class Forts extends RoomScene {
         const bottom_beta_sign = this.add.image(736.8397641529618, 742.3561085238694, "beta_forts", "bottom_beta_sign");
         bottom_beta_sign.setOrigin(0.5342836085085878, 1.1272882032066271);
 
+        // bottom_balloons
+        const bottom_balloons = this.add.image(122, 640, "beta_forts", "bottom_balloons");
+        bottom_balloons.setOrigin(0.5168410708463236, 0.4708224608437554);
+
         // lists
         const sort = [red_flag, red_pole, blue_pole, blue_flag, blue_fort, red_fort_front, red_fort, snowballs, right_flag_drape, bottom_beta_sign, top_fort_drape, bottom_fort_drape];
 

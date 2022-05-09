@@ -278,6 +278,20 @@
             "y": 742.3561085238694,
             "originX": 0.5342836085085878,
             "originY": 1.1272882032066271
+        },
+        {
+            "type": "Image",
+            "id": "3006d73c-5acc-4d03-b923-d8b98e6451f5",
+            "label": "bottom_balloons",
+            "components": [],
+            "texture": {
+                "key": "beta_forts",
+                "frame": "bottom_balloons"
+            },
+            "x": 122,
+            "y": 640,
+            "originX": 0.5168410708463236,
+            "originY": 0.4708224608437554
         }
     ],
     "plainObjects": [],
