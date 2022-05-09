@@ -12,8 +12,10 @@ export default class Forts extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.tower;
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.hitbox;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.blue_flag;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.red_flag;
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
         this.sort;
 
@@ -25,6 +27,7 @@ export default class Forts extends RoomScene {
             'rink': () => this.triggerRoom(802, 780, 340),
             'plaza': () => this.triggerRoom(300, 340, 660)
         }
+        this.roomAnims = true
 
         /* END-USER-CTR-CODE */
     }
@@ -41,6 +44,9 @@ export default class Forts extends RoomScene {
         // bg
         const bg = this.add.image(-35, -18, "forts", "bg");
         bg.setOrigin(0, 0);
+
+        // town_flags
+        this.add.image(184, 390, "beta_forts", "town_flags");
 
         // image
         this.add.image(762, 90, "fortsky");
@@ -65,69 +71,55 @@ export default class Forts extends RoomScene {
         const blue_fort = this.add.image(1023, 477, "forts", "blue_fort");
         blue_fort.setOrigin(0.49803922, 0.81818182);
 
-        // tower_shadow
-        const tower_shadow = this.add.image(1065, 304, "forts", "tower_shadow");
-        tower_shadow.setOrigin(0, 0);
+        // penguin_stadium
+        this.add.image(637, 214, "beta_forts", "penguin_stadium");
 
         // tower
-        const tower = this.add.sprite(1046, -13, "forts", "tower0001");
+        const tower = this.add.sprite(1059, 81, "beta_forts", "beta_party_sign");
         tower.setOrigin(0, 0);
 
-        // clock
-        const clock = this.add.image(1082, 104, "forts", "clock");
-        clock.setOrigin(0, 0);
-
-        // secret_message
-        const secret_message = this.add.image(1252, 327, "forts", "secret_message");
-        secret_message.setOrigin(0, 0);
-
-        // sign
-        const sign = this.add.image(1390, 291, "forts", "sign");
-        sign.setOrigin(0, 0);
+        // juice_table
+        this.add.image(874, 216, "beta_forts", "juice_table");
 
         // snowballs
         const snowballs = this.add.image(676, 786, "forts", "snowballs");
         snowballs.setOrigin(0.49230769, 0.57777778);
 
         // blue_flag
-        const blue_flag = this.add.sprite(966, 334, "forts", "blue_flag0001");
+        const blue_flag = this.add.sprite(966, 334, "beta_forts", "pink_flag0001");
         blue_flag.setOrigin(0.5, 1.85185185);
 
         // red_flag
-        const red_flag = this.add.sprite(626, 524, "forts", "red_flag0001");
+        const red_flag = this.add.sprite(626, 524, "beta_forts", "yellow_flag0001");
         red_flag.setOrigin(0.5, 1.73913043);
 
-        // hitbox
-        const hitbox = this.add.rectangle(1347, 156, 70, 75);
-        hitbox.visible = false;
+        // bottom_fort_drape
+        const bottom_fort_drape = this.add.image(586.2403537705574, 767.510448194952, "beta_forts", "bottom_fort_drape");
+        bottom_fort_drape.setOrigin(0.4806072517527184, 1.3271832350795318);
+
+        // top_fort_drape
+        const top_fort_drape = this.add.image(1023.7596462294426, 526.9139859005254, "beta_forts", "top_fort_drape");
+        top_fort_drape.setOrigin(0.526420395547902, 1.6254481137991426);
+
+        // plaza_pink_flag
+        this.add.image(1300, 835, "beta_forts", "plaza_pink_flag");
+
+        // plaza_yellow_flag
+        this.add.image(1469, 410, "beta_forts", "plaza_yellow_flag");
+
+        // right_flag_drape
+        const right_flag_drape = this.add.image(1443, 192, "beta_forts", "right_flag_drape");
+
+        // bottom_beta_sign
+        const bottom_beta_sign = this.add.image(736.8397641529618, 742.3561085238694, "beta_forts", "bottom_beta_sign");
+        bottom_beta_sign.setOrigin(0.5342836085085878, 1.1272882032066271);
 
         // lists
-        const sort = [red_flag, red_pole, blue_pole, blue_flag, blue_fort, red_fort_front, red_fort, snowballs];
-
-        // tower (components)
-        const towerAnimation = new Animation(tower);
-        towerAnimation.key = "tower";
-        towerAnimation.end = 24;
-        towerAnimation.repeat = 0;
-        towerAnimation.autoPlay = false;
-
-        // sign (components)
-        const signButton = new Button(sign);
-        signButton.spriteName = "sign";
-        signButton.activeFrame = false;
-
-        // blue_flag (components)
-        const blue_flagAnimation = new Animation(blue_flag);
-        blue_flagAnimation.key = "blue_flag";
-        blue_flagAnimation.end = 16;
-
-        // red_flag (components)
-        const red_flagAnimation = new Animation(red_flag);
-        red_flagAnimation.key = "red_flag";
-        red_flagAnimation.end = 16;
+        const sort = [red_flag, red_pole, blue_pole, blue_flag, blue_fort, red_fort_front, red_fort, snowballs, right_flag_drape, bottom_beta_sign, top_fort_drape, bottom_fort_drape];
 
         this.tower = tower;
-        this.hitbox = hitbox;
+        this.blue_flag = blue_flag;
+        this.red_flag = red_flag;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -139,8 +131,8 @@ export default class Forts extends RoomScene {
     create() {
         super.create()
 
-        this.bounds = this.hitbox.getBounds()
-        this.tower.on('animationcomplete', () => this.onTowerAnimComplete())
+        this.blue_flag.play('pinkflag')
+        this.red_flag.play('yellowflag')
     }
 
     onSnowballComplete(x, y) {

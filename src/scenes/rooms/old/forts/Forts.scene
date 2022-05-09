@@ -32,6 +32,18 @@
         },
         {
             "type": "Image",
+            "id": "33e15516-6228-4660-bef9-9517d177d6ca",
+            "label": "town_flags",
+            "components": [],
+            "texture": {
+                "key": "beta_forts",
+                "frame": "town_flags"
+            },
+            "x": 184,
+            "y": 390
+        },
+        {
+            "type": "Image",
             "id": "329ae434-8597-4f87-b8fa-e65cc9a49ea1",
             "label": "image",
             "components": [],
@@ -110,84 +122,42 @@
         },
         {
             "type": "Image",
-            "id": "3b2a720f-7bd6-4c37-831b-1f6b4ef36eed",
-            "label": "tower_shadow",
+            "id": "7748a913-59e5-48a2-b2f6-a841bc61b80b",
+            "label": "penguin_stadium",
             "components": [],
             "texture": {
-                "key": "forts",
-                "frame": "tower_shadow"
+                "key": "beta_forts",
+                "frame": "penguin_stadium"
             },
-            "x": 1065,
-            "y": 304,
-            "originX": 0,
-            "originY": 0
+            "x": 637,
+            "y": 214
         },
         {
             "type": "Sprite",
             "id": "1502a63b-6cb6-4f1e-bab6-e4b217577883",
             "label": "tower",
             "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "tower",
-            "Animation.end": 24,
-            "Animation.repeat": 0,
-            "Animation.autoPlay": false,
-            "texture": {
-                "key": "forts",
-                "frame": "tower0001"
-            },
-            "x": 1046,
-            "y": -13,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "b2ca6101-5086-4b8d-abd1-92dc5d0fb2b0",
-            "label": "clock",
             "components": [],
             "texture": {
-                "key": "forts",
-                "frame": "clock"
+                "key": "beta_forts",
+                "frame": "beta_party_sign"
             },
-            "x": 1082,
-            "y": 104,
+            "x": 1059,
+            "y": 81,
             "originX": 0,
             "originY": 0
         },
         {
             "type": "Image",
-            "id": "b402d711-30c1-460e-b798-b448eddf538e",
-            "label": "secret_message",
+            "id": "09692eb2-d1d2-4eab-8f4a-75c146c55615",
+            "label": "juice_table",
             "components": [],
             "texture": {
-                "key": "forts",
-                "frame": "secret_message"
+                "key": "beta_forts",
+                "frame": "juice_table"
             },
-            "x": 1252,
-            "y": 327,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "0b4516d5-7e71-4a28-90f7-821cb7f3bf3f",
-            "label": "sign",
-            "components": [
-                "Button"
-            ],
-            "Button.spriteName": "sign",
-            "Button.activeFrame": false,
-            "texture": {
-                "key": "forts",
-                "frame": "sign"
-            },
-            "x": 1390,
-            "y": 291,
-            "originX": 0,
-            "originY": 0
+            "x": 874,
+            "y": 216
         },
         {
             "type": "Image",
@@ -207,14 +177,11 @@
             "type": "Sprite",
             "id": "561077bd-3695-4418-a10f-aa6fb315f3ae",
             "label": "blue_flag",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "blue_flag",
-            "Animation.end": 16,
+            "scope": "CLASS",
+            "components": [],
             "texture": {
-                "key": "forts",
-                "frame": "blue_flag0001"
+                "key": "beta_forts",
+                "frame": "pink_flag0001"
             },
             "x": 966,
             "y": 334,
@@ -224,30 +191,93 @@
             "type": "Sprite",
             "id": "9c369ed2-959a-40ca-b717-cd7ab77b82d1",
             "label": "red_flag",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "red_flag",
-            "Animation.end": 16,
+            "scope": "CLASS",
+            "components": [],
             "texture": {
-                "key": "forts",
-                "frame": "red_flag0001"
+                "key": "beta_forts",
+                "frame": "yellow_flag0001"
             },
             "x": 626,
             "y": 524,
             "originY": 1.73913043
         },
         {
-            "type": "Rectangle",
-            "id": "6f93abab-6009-4afb-b0ed-a744f686a16d",
-            "label": "hitbox",
-            "scope": "CLASS",
+            "type": "Image",
+            "id": "162ca8e0-2b71-46be-a4e4-ef63edaea6df",
+            "label": "bottom_fort_drape",
             "components": [],
-            "x": 1347,
-            "y": 156,
-            "visible": false,
-            "width": 70,
-            "height": 75
+            "texture": {
+                "key": "beta_forts",
+                "frame": "bottom_fort_drape"
+            },
+            "x": 586.2403537705574,
+            "y": 767.510448194952,
+            "originX": 0.4806072517527184,
+            "originY": 1.3271832350795318
+        },
+        {
+            "type": "Image",
+            "id": "bb13e7fb-22bf-4ff2-9cf8-2d81504f82a4",
+            "label": "top_fort_drape",
+            "components": [],
+            "texture": {
+                "key": "beta_forts",
+                "frame": "top_fort_drape"
+            },
+            "x": 1023.7596462294426,
+            "y": 526.9139859005254,
+            "originX": 0.526420395547902,
+            "originY": 1.6254481137991426
+        },
+        {
+            "type": "Image",
+            "id": "08264e00-fc3a-4a77-9eeb-4915d0f8d35f",
+            "label": "plaza_pink_flag",
+            "components": [],
+            "texture": {
+                "key": "beta_forts",
+                "frame": "plaza_pink_flag"
+            },
+            "x": 1300,
+            "y": 835
+        },
+        {
+            "type": "Image",
+            "id": "a820825a-4250-4a42-a190-71c89d968c36",
+            "label": "plaza_yellow_flag",
+            "components": [],
+            "texture": {
+                "key": "beta_forts",
+                "frame": "plaza_yellow_flag"
+            },
+            "x": 1469,
+            "y": 410
+        },
+        {
+            "type": "Image",
+            "id": "82418e6b-1409-46aa-8400-93005dd6cee9",
+            "label": "right_flag_drape",
+            "components": [],
+            "texture": {
+                "key": "beta_forts",
+                "frame": "right_flag_drape"
+            },
+            "x": 1443,
+            "y": 192
+        },
+        {
+            "type": "Image",
+            "id": "2977bd6a-5b3c-44b6-b190-444fe5b79bdf",
+            "label": "bottom_beta_sign",
+            "components": [],
+            "texture": {
+                "key": "beta_forts",
+                "frame": "bottom_beta_sign"
+            },
+            "x": 736.8397641529618,
+            "y": 742.3561085238694,
+            "originX": 0.5342836085085878,
+            "originY": 1.1272882032066271
         }
     ],
     "plainObjects": [],
@@ -269,7 +299,11 @@
                 "160a46a9-aa94-4a18-bf7b-bc756cfe9394",
                 "56c1b41f-3f4f-4dc2-bf62-3703d68a7d75",
                 "6291cd2e-fc87-4b49-9dfe-87efcf8dca79",
-                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146"
+                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146",
+                "82418e6b-1409-46aa-8400-93005dd6cee9",
+                "2977bd6a-5b3c-44b6-b190-444fe5b79bdf",
+                "bb13e7fb-22bf-4ff2-9cf8-2d81504f82a4",
+                "162ca8e0-2b71-46be-a4e4-ef63edaea6df"
             ]
         }
     ]
