@@ -233,6 +233,7 @@ export default class Main extends BaseScene {
 
         // mod_btn
         const mod_btn = this.add.container(70, 161);
+        mod_btn.visible = false;
 
         // mod_button
         const mod_button = this.add.image(0, 0, "main", "mod/button");
@@ -397,7 +398,7 @@ export default class Main extends BaseScene {
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
-        news_buttonButton.callback = () => window.open('https://cpforever.net/blog', '_blank').focus();;
+        news_buttonButton.callback = () => window.open('https://discord.gg/cpf', '_blank').focus();;
         news_buttonButton.activeFrame = false;
 
         // mod_button (components)

@@ -468,7 +468,7 @@
                 "Button"
             ],
             "Button.spriteName": "news-button",
-            "Button.callback": "() => window.open('https://cpforever.net/blog', '_blank').focus();",
+            "Button.callback": "() => window.open('https://discord.gg/cpf', '_blank').focus();",
             "Button.activeFrame": false,
             "texture": {
                 "key": "main",
@@ -485,6 +485,7 @@
             "components": [],
             "x": 70,
             "y": 161,
+            "visible": false,
             "list": [
                 {
                     "type": "Image",

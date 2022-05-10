@@ -146,13 +146,16 @@ export default class Load extends BaseScene {
             this.setupLoadingAnims()
             this.setContent(data.text, false)
         }
-		this.timeout = setTimeout(this.checkForInfiniteLoad, 10000)
+		this.timeout = setTimeout(() => { this.checkForInfiniteLoad() }, 10000)
     }
 	
 	checkForInfiniteLoad() {
 		if (!this.world.client.newRoom) return
+		
 		let random = PathEngine.getRandomPos(this.world.client.newRoom[1], this.world.client.newRoom[2], this.world.client.newRoom[3])
         this.network.send('join_room', { room: this.world.client.newRoom[0], x: random.x, y: random.y })
+		
+		this.timeout = setTimeout(() => { this.checkForInfiniteLoad() }, 10000)
 	}
 
     setContent(text, showBar) {
