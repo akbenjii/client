@@ -466,6 +466,32 @@
             },
             "x": 1487,
             "y": 850
+        },
+        {
+            "type": "Image",
+            "id": "b9d6a106-63dc-4891-900d-59a9d2ef4cb5",
+            "label": "mp3k_box",
+            "components": [],
+            "texture": {
+                "key": "mp3k_box"
+            },
+            "x": 464,
+            "y": 433,
+            "scaleX": 0.25164770818876825,
+            "scaleY": 0.25164770818876825
+        },
+        {
+            "type": "Ellipse",
+            "id": "fdcd0228-1484-4b9e-a4d6-477adefbac40",
+            "label": "mpZone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 464,
+            "y": 432,
+            "scaleX": 0.9240894734109351,
+            "scaleY": 0.8593799950586576,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],

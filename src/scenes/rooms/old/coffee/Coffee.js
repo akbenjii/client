@@ -14,6 +14,8 @@ export default class Coffee extends RoomScene {
         this.board;
         /** @type {Phaser.GameObjects.Sprite} */
         this.cake;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.turtZone;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -71,11 +73,6 @@ export default class Coffee extends RoomScene {
         // coffee_sign
         const coffee_sign = this.add.image(875, 639, "beta-coffee", "coffee_sign");
 
-        // gift
-        const gift = this.add.image(621, 787, "beta-coffee", "gift");
-        gift.scaleX = 0.3327761386580186;
-        gift.scaleY = 0.3327761386580186;
-
         // machine_1
         const machine_1 = this.add.image(952, 468, "coffee", "machine_1");
         machine_1.setOrigin(0, 0);
@@ -121,8 +118,18 @@ export default class Coffee extends RoomScene {
         // fire_extinguisher
         const fire_extinguisher = this.add.image(100, 617, "beta-coffee", "fire_extinguisher");
 
+        // turt_box
+        const turt_box = this.add.image(628, 743, "turt_box");
+        turt_box.scaleX = 0.3155435710555007;
+        turt_box.scaleY = 0.3155435710555007;
+
+        // turtZone
+        const turtZone = this.add.ellipse(629, 739, 128, 128);
+        turtZone.scaleX = 1.133199938251877;
+        turtZone.scaleY = 1.1524622173037335;
+
         // lists
-        const sort = [beans, bag, table, cake, fire_extinguisher, gift, coffee_sign, coffee_sign_back, coffee_machine, counter_front];
+        const sort = [beans, bag, table, cake, fire_extinguisher, coffee_sign, coffee_sign_back, coffee_machine, counter_front, turt_box];
 
         // smoke (components)
         const smokeAnimation = new Animation(smoke);
@@ -162,6 +169,7 @@ export default class Coffee extends RoomScene {
 
         this.board = board;
         this.cake = cake;
+        this.turtZone = turtZone;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -169,6 +177,19 @@ export default class Coffee extends RoomScene {
 
 
     /* START-USER-CODE */
+
+    create(){
+        super.create()
+
+        this.roomZones = {
+            'turtZone': { 
+                key: this.turtZone,
+                callback: () => this.interface.prompt.showItem(35006)
+            }
+        }
+
+        super.addZones()
+    }
 
     onBoardClick() {
         let animation = (this.boardToggle) ? 'beta_board1' : 'beta_board2'

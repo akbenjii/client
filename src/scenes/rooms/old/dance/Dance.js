@@ -14,6 +14,8 @@ export default class Dance extends RoomScene {
         this.dancefloor;
         /** @type {Phaser.GameObjects.Sprite} */
         this.puffle;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.mpZone;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort;
         /** @type {Array<any>} */
@@ -163,6 +165,16 @@ export default class Dance extends RoomScene {
         // ropes
         this.add.image(1487, 850, "beta_dance", "ropes");
 
+        // mp3k_box
+        const mp3k_box = this.add.image(464, 433, "mp3k_box");
+        mp3k_box.scaleX = 0.25164770818876825;
+        mp3k_box.scaleY = 0.25164770818876825;
+
+        // mpZone
+        const mpZone = this.add.ellipse(464, 432, 128, 128);
+        mpZone.scaleX = 0.9240894734109351;
+        mpZone.scaleY = 0.8593799950586576;
+
         // lists
         const sort = [speaker_3, speaker_1, boiler, puffle_speaker, drinks];
         const animate = [];
@@ -231,6 +243,7 @@ export default class Dance extends RoomScene {
 
         this.dancefloor = dancefloor;
         this.puffle = puffle;
+        this.mpZone = mpZone;
         this.sort = sort;
         this.animate = animate;
 
@@ -247,6 +260,15 @@ export default class Dance extends RoomScene {
 
         this.puffle.play('dj_puffle_idle')
         this.dancefloor.play('beta_floor')
+		
+		this.roomZones = {
+            'mpZone': { 
+                key: this.mpZone,
+                callback: () => this.interface.prompt.showItem(35008)
+            }
+        }
+
+        super.addZones()
     }
 
     onPuffleAnimComplete() {

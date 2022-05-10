@@ -133,20 +133,6 @@
         },
         {
             "type": "Image",
-            "id": "c5a4a6df-9f6d-4ca2-96ae-4e3b87021c8b",
-            "label": "gift",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "gift"
-            },
-            "x": 621,
-            "y": 787,
-            "scaleX": 0.3327761386580186,
-            "scaleY": 0.3327761386580186
-        },
-        {
-            "type": "Image",
             "id": "495e8163-ee24-4674-bfaf-3b1ab8d91de8",
             "label": "machine_1",
             "components": [],
@@ -330,6 +316,32 @@
             },
             "x": 100,
             "y": 617
+        },
+        {
+            "type": "Image",
+            "id": "79197d53-508e-47d5-bab7-a45eb3b00046",
+            "label": "turt_box",
+            "components": [],
+            "texture": {
+                "key": "turt_box"
+            },
+            "x": 628,
+            "y": 743,
+            "scaleX": 0.3155435710555007,
+            "scaleY": 0.3155435710555007
+        },
+        {
+            "type": "Ellipse",
+            "id": "9a32a094-3774-479b-9fcb-ecb275b89a04",
+            "label": "turtZone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 629,
+            "y": 739,
+            "scaleX": 1.133199938251877,
+            "scaleY": 1.1524622173037335,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -349,11 +361,11 @@
                 "c0683d1e-a10b-4a46-ba6b-5416533d98d5",
                 "35931bd9-b33e-48c9-b92b-2ef392cb57be",
                 "b105d046-72d3-430d-a246-5ad47a22a6af",
-                "c5a4a6df-9f6d-4ca2-96ae-4e3b87021c8b",
                 "67dbd9e2-ca61-4888-ab1d-a7f4388e871f",
                 "bed27b8e-8be0-4fb0-b14f-9e72c0f322f4",
                 "7ecf0877-fd40-49d0-8476-4e2312e20722",
-                "4025e1a5-f97d-4dba-87dd-4633cf3557bf"
+                "4025e1a5-f97d-4dba-87dd-4633cf3557bf",
+                "79197d53-508e-47d5-bab7-a45eb3b00046"
             ]
         }
     ]

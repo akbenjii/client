@@ -462,6 +462,32 @@
             "x": 1310,
             "y": 493,
             "originY": 0.5185185185185185
+        },
+        {
+            "type": "Image",
+            "id": "af8db9e3-ea91-4509-bd12-c607450efa3e",
+            "label": "lei_box",
+            "components": [],
+            "texture": {
+                "key": "lei_box"
+            },
+            "x": 897,
+            "y": 366,
+            "scaleX": 0.295239127186554,
+            "scaleY": 0.295239127186554
+        },
+        {
+            "type": "Ellipse",
+            "id": "02b6babd-ed4b-4015-a2a0-9f813e651bfa",
+            "label": "leiZone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 899,
+            "y": 366,
+            "scaleX": 0.8614687697832425,
+            "scaleY": 0.8614687697832425,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -501,7 +527,8 @@
                 "1ec55d4a-8027-4492-8317-2ce1faa6c920",
                 "35270094-7aa8-4910-ade0-99f373a64195",
                 "b64c5402-0391-4e1d-812c-01a3d4f5c353",
-                "0a1bb735-7c0b-4413-ade9-13179d4f0837"
+                "0a1bb735-7c0b-4413-ade9-13179d4f0837",
+                "af8db9e3-ea91-4509-bd12-c607450efa3e"
             ]
         }
     ]
