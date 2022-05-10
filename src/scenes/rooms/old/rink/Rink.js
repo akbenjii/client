@@ -1,5 +1,7 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
+import { Animation, Button, MoveTo, SimpleButton } from '@components/components'
+
 
 /* START OF COMPILED CODE */
 
@@ -8,6 +10,8 @@ export default class Rink extends RoomScene {
     constructor() {
         super("Rink");
 
+        /** @type {Phaser.GameObjects.Image} */
+        this.onepin;
         /** @type {Phaser.GameObjects.Sprite} */
         this.blimp;
         /** @type {Phaser.GameObjects.Image[]} */
@@ -37,6 +41,11 @@ export default class Rink extends RoomScene {
         // bg
         const bg = this.add.image(-33, -7, "beta_stadium", "bg");
         bg.setOrigin(0, 0);
+
+        // onepin
+        const onepin = this.add.image(159, 658, "onepin");
+        onepin.scaleX = 0.5060377412314088;
+        onepin.scaleY = 0.5060377412314088;
 
         // rink_border
         const rink_border = this.add.image(464, 288, "rink", "rink_border");
@@ -74,6 +83,11 @@ export default class Rink extends RoomScene {
         // lists
         const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, rink_border];
 
+        // onepin (components)
+        const onepinSimpleButton = new SimpleButton(onepin);
+        onepinSimpleButton.callback = () => this.interface.prompt.showItem(35005);;
+
+        this.onepin = onepin;
         this.blimp = blimp;
         this.sort = sort;
 

@@ -32,6 +32,23 @@
         },
         {
             "type": "Image",
+            "id": "812571f8-5bab-46e3-8117-9e4cda9ea67e",
+            "label": "onepin",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(35005);",
+            "texture": {
+                "key": "onepin"
+            },
+            "x": 159,
+            "y": 658,
+            "scaleX": 0.5060377412314088,
+            "scaleY": 0.5060377412314088
+        },
+        {
+            "type": "Image",
             "id": "139351a3-ad27-4f1c-b1cc-cb39e13fb57d",
             "label": "rink_border",
             "components": [],
