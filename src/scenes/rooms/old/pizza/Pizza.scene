@@ -388,6 +388,19 @@
             "y": 770,
             "scaleX": 1.02,
             "scaleY": 1.02
+        },
+        {
+            "type": "Ellipse",
+            "id": "0c311a78-6b39-4f00-8b8e-9dbd85e52300",
+            "label": "vikZone",
+            "scope": "CLASS",
+            "components": [],
+            "x": 269,
+            "y": 787,
+            "scaleX": 0.3095944310267841,
+            "scaleY": 0.35722380828374856,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],

@@ -10,6 +10,10 @@ export default class DojoExt extends RoomScene {
     constructor() {
         super("DojoExt");
 
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.dragonZone;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.feetZone;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -68,6 +72,16 @@ export default class DojoExt extends RoomScene {
         const tree = this.add.image(311, 577, "dojoext", "tree");
         tree.setOrigin(0, 0);
 
+        // dragonZone
+        const dragonZone = this.add.ellipse(140, 743, 128, 128);
+        dragonZone.scaleX = 0.3494562002773523;
+        dragonZone.scaleY = 0.4042581942734419;
+
+        // feetZone
+        const feetZone = this.add.ellipse(1092, 668, 128, 128);
+        feetZone.scaleX = 0.2699765262251914;
+        feetZone.scaleY = 0.20674984183994782;
+
         // lists
         const sort = [puffles, fence, trees];
 
@@ -79,6 +93,8 @@ export default class DojoExt extends RoomScene {
         dojo_doorMoveTo.x = 780;
         dojo_doorMoveTo.y = 610;
 
+        this.dragonZone = dragonZone;
+        this.feetZone = feetZone;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -86,6 +102,22 @@ export default class DojoExt extends RoomScene {
 
 
     /* START-USER-CODE */
+    create(){
+        super.create()
+
+        this.roomZones = {
+            'dragonZone': { 
+                key: this.dragonZone,
+                callback: () => this.interface.prompt.showItem(35010)
+            },
+            'feetZone': { 
+                key: this.feetZone,
+                callback: () => this.interface.prompt.showItem(35009)
+            }
+        }
+
+        super.addZones()
+    }
     /* END-USER-CODE */
 }
 
