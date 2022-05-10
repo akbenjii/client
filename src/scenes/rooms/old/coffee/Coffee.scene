@@ -73,7 +73,7 @@
             "SimpleButton.callback": "() => this.onBoardClick()",
             "SimpleButton.pixelPerfect": true,
             "texture": {
-                "key": "coffee",
+                "key": "beta-coffee",
                 "frame": "board0001"
             },
             "x": 947,
@@ -295,9 +295,10 @@
             "originY": 0.5368421052631579
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "35931bd9-b33e-48c9-b92b-2ef392cb57be",
             "label": "cake",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "beta-coffee",

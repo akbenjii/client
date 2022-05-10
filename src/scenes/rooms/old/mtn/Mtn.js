@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Zone } from '@components/components'
+import { Animation, Zone, MoveTo } from '@components/components'
 
 import MtnSeat from './MtnSeat'
 
@@ -28,8 +28,13 @@ export default class Mtn extends RoomScene {
 
         this.roomTriggers = {
             'village': () => this.triggerRoom(200, 480, 560),
+                        'waddle100': () => this.triggerWaddle(100),
+            'waddle101': () => this.triggerWaddle(101),
+            'waddle102': () => this.triggerWaddle(102),
+            'waddle103': () => this.triggerWaddle(103),
         }
 
+        this.waddles = {}
         /* END-USER-CTR-CODE */
     }
 
@@ -261,16 +266,16 @@ export default class Mtn extends RoomScene {
         mtnSeat1.offsetY = -70;
 
         // zone4 (components)
-        new Zone(zone4);
+        new MoveTo(zone4);
 
         // zone3 (components)
-        new Zone(zone3);
+        new MoveTo(zone3);
 
         // zone2 (components)
-        new Zone(zone2);
+        new MoveTo(zone2);
 
         // zone1 (components)
-        new Zone(zone1);
+        new MoveTo(zone1);
 
         this.sort = sort;
         this.seats100 = seats100;
@@ -283,6 +288,20 @@ export default class Mtn extends RoomScene {
 
 
     /* START-USER-CODE */
+        triggerWaddle(id) {
+        if (this.world.client.activeSeat) {
+            return
+        }
+
+        let text = 'Would you like to join this\nSled race?'
+
+        this.interface.prompt.showWindow(text, 'dual', () => {
+            this.network.send('join_waddle', { id: id })
+
+            this.interface.prompt.window.visible = false
+        })
+
+    }
     /* END-USER-CODE */
 }
 

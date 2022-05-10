@@ -45,6 +45,19 @@
             "originY": 0.42490372
         },
         {
+            "type": "Sprite",
+            "id": "9aa545cd-34c8-4d07-bd4f-0f1e8cccb006",
+            "label": "blimp",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "beta_stadium",
+                "frame": "beta_blimp0001"
+            },
+            "x": 788,
+            "y": 46
+        },
+        {
             "type": "Image",
             "id": "4696c680-3ebf-4d19-b173-930fa9100e32",
             "label": "fg",
@@ -80,8 +93,8 @@
                 "key": "rink",
                 "frame": "goal_back"
             },
-            "x": 1258,
-            "y": 441,
+            "x": 1271,
+            "y": 412,
             "originX": 0.97183099,
             "originY": 0.48863636
         },
@@ -94,8 +107,8 @@
                 "key": "rink",
                 "frame": "goal"
             },
-            "x": 1273,
-            "y": 578,
+            "x": 1286,
+            "y": 549,
             "originX": 0.58571429,
             "originY": 0.91902834
         },
@@ -108,8 +121,8 @@
                 "key": "rink",
                 "frame": "goal_back"
             },
-            "x": 262,
-            "y": 441,
+            "x": 275,
+            "y": 412,
             "originX": 0.97183099,
             "originY": 0.48863636,
             "flipX": true
@@ -123,24 +136,11 @@
                 "key": "rink",
                 "frame": "goal"
             },
-            "x": 247,
-            "y": 578,
+            "x": 260,
+            "y": 549,
             "originX": 0.58571429,
             "originY": 0.91902834,
             "flipX": true
-        },
-        {
-            "type": "Sprite",
-            "id": "9aa545cd-34c8-4d07-bd4f-0f1e8cccb006",
-            "label": "blimp",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "beta_stadium",
-                "frame": "beta_blimp0001"
-            },
-            "x": 788,
-            "y": 46
         }
     ],
     "plainObjects": [],

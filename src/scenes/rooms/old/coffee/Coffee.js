@@ -12,7 +12,9 @@ export default class Coffee extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.board;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.cake;
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
@@ -53,7 +55,7 @@ export default class Coffee extends RoomScene {
         smoke.setOrigin(0, 0);
 
         // board
-        const board = this.add.sprite(947, 146, "coffee", "board0001");
+        const board = this.add.sprite(947, 146, "beta-coffee", "board0001");
         board.setOrigin(0, 0);
 
         // coffee_machine
@@ -111,7 +113,7 @@ export default class Coffee extends RoomScene {
         table.setOrigin(0.5217391304347826, 0.5368421052631579);
 
         // cake
-        const cake = this.add.image(342, 613, "beta-coffee", "cake");
+        const cake = this.add.sprite(342, 613, "beta-coffee", "cake");
 
         // streamers
         this.add.image(763, 94, "beta-coffee", "streamers");
@@ -159,6 +161,7 @@ export default class Coffee extends RoomScene {
         doorMoveTo.y = 392;
 
         this.board = board;
+        this.cake = cake;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -168,10 +171,18 @@ export default class Coffee extends RoomScene {
     /* START-USER-CODE */
 
     onBoardClick() {
-        let animation = (this.boardToggle) ? 'board1' : 'board2'
+        let animation = (this.boardToggle) ? 'beta_board1' : 'beta_board2'
 
         this.board.play(animation)
         this.boardToggle = !this.boardToggle
+    }
+
+    onCakeHover() {
+        this.candle_cake.play('candle_lit')
+    }
+
+    onCakeOut() {
+        this.candle_cake.play('candle_unlit')
     }
 
     /* END-USER-CODE */
