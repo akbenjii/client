@@ -6,9 +6,9 @@ export default class Login extends Plugin {
     constructor(network) {
         super(network)
         this.events = {
-            'login': this.login,
-            'game_auth': this.gameAuth,
-            'auth_token': this.authToken
+            'w#l': this.login,
+            'w#ga': this.gameAuth,
+            'p#at': this.authToken
         }
     }
 
@@ -17,9 +17,10 @@ export default class Login extends Plugin {
     }
 
     login(args) {
+        let argsArray = args.split('|')
         this.interface.hideLoading()
 
-        if (args.success) return this.scene.start('Servers', args)
+        if (argsArray[0]) return this.scene.start('Servers', args)
         if (!this.network.lastLoginScene) return this.scene.start('Login')
 
         let scene = this.scene.getScene(this.network.lastLoginScene)
@@ -39,11 +40,11 @@ export default class Login extends Plugin {
     }
 
     gameAuth(args) {
-        if (args.success) this.network.send('load_player')
+        if (args) this.network.sendLoadPlayer()
     }
 
     authToken(args) {
-        if (args.token) this.network.token = args.token
+        if (args) this.network.token = args
     }
 
 }

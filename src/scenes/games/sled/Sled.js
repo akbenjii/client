@@ -214,7 +214,7 @@ class Sled extends GameScene {
             this.addTile()
         }
 
-        this.network.send('start_game')
+        this.network.sendStartGame()
     }
 
     addTile() {

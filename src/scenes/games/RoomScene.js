@@ -93,7 +93,7 @@ export default class RoomScene extends BaseScene {
     }
 
     getWaddles() {
-        this.network.send('get_waddles')
+        this.network.sendGetWaddles()
     }
 
     setWaddles(waddles) {

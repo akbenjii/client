@@ -361,13 +361,13 @@ class SledPlayer extends BaseContainer {
         if (this.isClient && this.fixedX != this.currentX) {
             this.currentX = this.fixedX
 
-            this.network.send('send_move', { id: this.id, x: this.fixedX, y: this.fixedY, time: this.scene.gameTime })
+            this.network.sendMove(this.id,this.fixedX,this.fixedY, this.scene.gameTime)
         }
     }
 
     sendGameOver() {
         if (this.isClient) {
-            this.network.send('game_over', { score: this.scene.finishPos })
+            this.network.sendGameOver(this.scene.finishPos)
         }
 
         this.scene.finishPos++

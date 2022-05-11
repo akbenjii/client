@@ -200,7 +200,7 @@ export default class IglooCatalog extends Book {
         }
 
         this.showPrompt(floor, 'flooring', () => {
-            this.network.send('update_flooring', { flooring: floor })
+            this.network.sendUpdateFlooring(floor)
             this.interface.prompt.window.visible = false
             this.close()
         })
@@ -212,7 +212,7 @@ export default class IglooCatalog extends Book {
         }
 
         this.showPrompt(igloo, 'igloos', () => {
-            this.network.send('add_igloo', { igloo: igloo })
+            this.network.sendAddIgloo(igloo)
             this.interface.prompt.window.visible = false
         })
     }

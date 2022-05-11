@@ -204,7 +204,7 @@ export default class FindFour extends BaseContainer {
     }
 
     onClose() {
-        this.network.send('leave_waddle')
+        this.network.sendLeaveWaddle()
 
         this.leaveSeat()
 
@@ -287,7 +287,7 @@ export default class FindFour extends BaseContainer {
                 this.placeCounter(row, column, (this.seat + 1))
                 this.hitbox.visible = false
                 this.hover.visible = false
-                this.network.send('place_counter', {column: column, row: row} )
+                this.network.sendPlaceCounter(column, row)
                 return
             }
         }

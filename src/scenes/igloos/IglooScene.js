@@ -88,9 +88,7 @@ export default class IglooScene extends RoomScene {
         this.addLocation()
         this.loadAllFurniture()
 
-        this.world.network.send('get_puffles', {
-            userId: this.id
-        })
+        this.world.network.sendGetPuffles(this.id)
     }
 
     addEditBg() {
@@ -227,9 +225,7 @@ export default class IglooScene extends RoomScene {
 
         this.interface.prompt.showWindow(text, 'dual', () => {
             this.interface.showLoading(this.getString('joining', 'igloo'))
-            this.network.send('update_igloo', {
-                type: type
-            })
+            this.network.sendUpdateIgloo(type)
 
             this.interface.prompt.window.visible = false
         })

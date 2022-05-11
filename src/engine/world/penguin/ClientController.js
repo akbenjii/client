@@ -165,7 +165,7 @@ export default class ClientController {
         this.lockRotation = true
 
         this.penguin.playFrame(frame, set)
-        this.network.send('send_frame', { set: set, frame: frame })
+        this.network.sendFrame(set, frame)
     }
 
     sendSit(pointer) {
@@ -186,7 +186,7 @@ export default class ClientController {
         this.lockRotation = true
 
         this.interface.main.snowballFactory.throwBall(this.id, x, y)
-        this.network.send('snowball', { x: x, y: y })
+        this.network.sendSnowball(x, y)
     }
 
     sendEmote(emote) {
@@ -195,7 +195,7 @@ export default class ClientController {
         }
 
         this.interface.showEmoteBalloon(this.id, emote)
-        this.network.send('send_emote', { emote: emote })
+        this.network.sendEmote(emote)
     }
 
     sendSafe(safe) {
@@ -206,7 +206,7 @@ export default class ClientController {
         let message = this.interface.main.safe.safeMessagesMap[safe]
 
         this.interface.showTextBalloon(this.id, message)
-        this.network.send('send_safe', { safe: safe })
+        this.network.sendSafe(safe)
     }
 
     showCrosshair() {
@@ -232,7 +232,7 @@ export default class ClientController {
         this.lockRotation = false
 
         let random = PathEngine.getRandomPos(x, y, randomRange)
-        this.network.send('join_room', { room: id, x: random.x, y: random.y })
+        this.network.sendJoinRoom(id, random.x, random.y)
     }
 
     sendJoinIgloo(id) {
@@ -250,7 +250,7 @@ export default class ClientController {
 
         this.lockRotation = false
 
-        this.network.send('join_igloo', { igloo: id, x: 0, y: 0 })
+        this.network.sendJoinIgloo(id, 0, 0)
     }
 
 }

@@ -72,6 +72,8 @@ export default class Servers extends BaseScene {
     }
 
     createServers(data) {
+        let argsArray = data.split('|')
+        let populationData = argsArray[3].split(':')
         let y = 122
         let worlds = Object.entries(this.crumbs.worlds).slice(0, 5).filter(world => !world[1].login)
 
@@ -83,11 +85,11 @@ export default class Servers extends BaseScene {
             server.name.text = world
             server.safe.visible = config.safe
 
-            let population = data.populations[world] || 1
+            let population = (populationData[0] === world) ? populationData[1] : 1
 
             server.setPopulation(population)
 
-            server.button.callback = () => this.onServerClick(world, data.username, data.key, population >= 6)
+            server.button.callback = () => this.onServerClick(world, argsArray[1], argsArray[2], population >= 6)
 
             this.add.existing(server)
         }

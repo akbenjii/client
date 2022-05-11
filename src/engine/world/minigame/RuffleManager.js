@@ -88,7 +88,7 @@ export default class RuffleManager {
 		let room = this.crumbs.scenes.rooms[roomid]
         this.world.client.sendJoinRoom(roomid, room.key)
 		
-		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game, stamps: stamps })
+		this.world.network.sendEndRuffleGame(coins, game, stamps)
 		window.show()
 		
 	}

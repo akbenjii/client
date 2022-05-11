@@ -29,7 +29,7 @@ export default class WorldController extends BaseScene {
         this.iglooFactory = new IglooFactory(this)
 		this.RuffleManager = new RuffleManager(this, RuffleHolder, this.crumbs)
 
-        this.network.send('get_pin')
+        this.network.sendGetPin()
     }
 
     setClient(args) {

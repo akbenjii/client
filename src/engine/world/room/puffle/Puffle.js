@@ -54,9 +54,7 @@ export default class Puffle extends BaseContainer {
 
     onPuffleClick() {
         // sends a packet to the server which requests the wellbeing information for the care menu to use
-        this.network.send('get_wellbeing', {
-            puffle: this.id
-        })
+        this.network.sendGetWellbeing(this.id)
     }
 
     puffleAi() {

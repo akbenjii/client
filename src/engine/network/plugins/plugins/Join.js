@@ -7,7 +7,7 @@ export default class Join extends Plugin {
         super(network)
 
         this.events = {
-            'load_player': this.loadPlayer,
+            'w#lp': this.loadPlayer,
             'join_room': this.joinRoom,
             'join_game': this.joinGame,
             'join_igloo': this.joinIgloo,
@@ -26,7 +26,7 @@ export default class Join extends Plugin {
         this.scene.start('WorldController')
         this.world.setClient(args)
 
-        this.network.send('join_server')
+        this.network.sendJoinServer()
     }
 
     joinRoom(args) {
@@ -51,9 +51,10 @@ export default class Join extends Plugin {
 
     // Saves a player to local storage
     savePlayer(args) {
+        let argsArray = args.split('|')
         let savedPenguins = this.network.savedPenguins
 
-        if (Object.keys(savedPenguins).length > 6 && !(args.user.username in savedPenguins)) return
+        if (Object.keys(savedPenguins).length > 6 && !(argsArray[0].username in savedPenguins)) return
 
         let { photo, flag, x, y, frame, coins, id, ...penguin } = args.user
 
@@ -62,16 +63,17 @@ export default class Join extends Plugin {
             penguin.token = this.network.token
         }
 
-        savedPenguins[args.user.username.toLowerCase()] = penguin
+        savedPenguins[argsArray[0].username.toLowerCase()] = penguin
         localStorage.setItem('saved_penguins', JSON.stringify(savedPenguins))
     }
 
     // Deletes a player from local storage
     unsavePlayer(args) {
+        let argsArray = args.split('|')
         let savedPenguins = this.network.savedPenguins
 
-        if (args.user.username.toLowerCase() in savedPenguins) {
-            delete savedPenguins[args.user.username.toLowerCase()]
+        if (argsArray[0].username.toLowerCase() in savedPenguins) {
+            delete savedPenguins[argsArray[0].username.toLowerCase()]
             localStorage.setItem('saved_penguins', JSON.stringify(savedPenguins))
         }
     }

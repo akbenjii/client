@@ -258,7 +258,7 @@ export default class IglooEdit extends BaseScene {
             this.world.client.iglooOpen = false
             this.button_lock.__ShowHint.text = 'Open Igloo'
 
-            this.network.send('close_igloo')
+            this.network.sendCloseIgloo()
 
             return
         }
@@ -269,7 +269,7 @@ export default class IglooEdit extends BaseScene {
             this.world.client.iglooOpen = true
             this.button_lock.__ShowHint.text = 'Close Igloo'
 
-            this.network.send('open_igloo')
+            this.network.sendOpenIgloo()
 
             this.interface.prompt.window.visible = false
         })
@@ -336,7 +336,7 @@ export default class IglooEdit extends BaseScene {
             }
         })
 
-        this.network.send('update_furniture', { furniture: furniture })
+        this.network.sendUpdateFurniture(furniture)
     }
 
     setControlsInteractive(interactive) {

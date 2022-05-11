@@ -8,17 +8,16 @@ export default class DataHandler {
     }
 
     handle(message) {
+        let messageArray = message.split('%')
         try {
-            let parsed = JSON.parse(message)
-
             if (window.location.hostname == 'localhost') {
-                console.log('[DataHandler] Message received:', parsed.action, parsed.args)
+                console.log(`[DataHandler] Received: ${message}`)
             }
 
-            this.fireEvent(parsed.action, parsed.args)
+            this.fireEvent(messageArray[0], messageArray[1])
 
-        } catch(error) {
-            console.error(error)
+        } catch (e) {
+            console.error(`[DataHandler] Error: ${e}`)
         }
     }
 

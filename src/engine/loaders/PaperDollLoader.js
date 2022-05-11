@@ -129,7 +129,7 @@ export default class PaperDollLoader extends BaseLoader {
     }
 
     onPaperClick(slot) {
-        this.network.send('remove_item', { type: slot })
+        this.network.sendRemoveItem(slot)
     }
 
     removeItem(slot) {

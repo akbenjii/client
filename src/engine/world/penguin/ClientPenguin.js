@@ -39,7 +39,7 @@ export default class ClientPenguin extends Penguin {
         let frame = direction + 16 // + 16 for sitting frame id
 
         this.playFrame(frame)
-        this.network.send('send_frame', { set: true, frame: frame })
+        this.network.sendFrame(true, frame)
     }
 
     move(x, y, frame = null) {
@@ -51,7 +51,7 @@ export default class ClientPenguin extends Penguin {
 
         if (path) {
             this.addMoveTween(path)
-            this.network.send('send_position', { x: path.target.x, y: path.target.y })
+            this.network.sendPosition(path.target.x, path.target.y)
         }
     }
 
