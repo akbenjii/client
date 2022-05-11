@@ -22,7 +22,9 @@ export default class Mine extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             'cave': () => this.triggerRoom(806, 1280, 520),
-            'cart': () => this.triggerGame('cartsurfer', 905)
+            'cart': () => this.triggerGame('cartsurfer', 905),
+			'underground': () => this.unimplementedPrompt(),
+			'rescue': () => this.unimplementedPrompt()
         }
 
         this.roomAnims = true
@@ -42,6 +44,12 @@ export default class Mine extends RoomScene {
         const bg_png = this.add.image(760, 480, "mine", "bg.png");
         bg_png.scaleX = 1.01;
         bg_png.scaleY = 1.01;
+
+        // mine_door
+        this.add.image(766, 163, "new-mine", "mine_door");
+
+        // puffle_rescue
+        this.add.image(498, 181, "new-mine", "puffle_rescue");
 
         // lamp_png
         this.add.image(677, 234, "mine", "lamp.png");
@@ -85,6 +93,17 @@ export default class Mine extends RoomScene {
         // fire
         const fire = this.add.sprite(309, 191, "mine", "fire0001.png");
 
+        // mine_rocks
+        this.add.image(804, 305, "new-mine", "mine_rocks");
+
+        // pr_chair
+        this.add.image(564, 290, "new-mine", "pr_chair");
+
+        // puffle_rescue_table
+        const puffle_rescue_table = this.add.image(568, 361, "new-mine", "puffle_rescue_table");
+        puffle_rescue_table.scaleX = 1.0773812040986706;
+        puffle_rescue_table.scaleY = 1.0773812040986706;
+
         // lists
         const sort = [cart1_png, shovel_png, cart2_png];
 
@@ -106,6 +125,11 @@ export default class Mine extends RoomScene {
 
 
     /* START-USER-CODE */
+	
+	create() {
+        super.create()
+        this.fire.play('lampflame')
+    }
 
     onCartHover() {
         this.cart.play('cartsurfer')

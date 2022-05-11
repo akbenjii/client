@@ -50,6 +50,164 @@
             },
             "x": 386,
             "y": 505
+        },
+        {
+            "type": "Image",
+            "id": "df8314de-ad0f-4fb3-97bf-27c1ddfe316c",
+            "label": "belt_legend",
+            "components": [],
+            "texture": {
+                "key": "new-dojo",
+                "frame": "belt_legend"
+            },
+            "x": 554,
+            "y": 452
+        },
+        {
+            "type": "Image",
+            "id": "fdf81182-25ac-49d6-b605-eda752882569",
+            "label": "instructions",
+            "components": [],
+            "texture": {
+                "key": "new-dojo",
+                "frame": "instructions"
+            },
+            "x": 673,
+            "y": 451
+        },
+        {
+            "type": "Image",
+            "id": "bd47b07a-6222-4405-9a81-69ad858dbcaf",
+            "label": "cj_spot",
+            "components": [],
+            "texture": {
+                "key": "new-dojo",
+                "frame": "cj_spot"
+            },
+            "x": 1123,
+            "y": 500
+        },
+        {
+            "type": "Image",
+            "id": "38d5aee2-a100-47f7-b8d1-03418a24e0ae",
+            "label": "magic_pot_back",
+            "components": [],
+            "texture": {
+                "key": "new-dojo",
+                "frame": "magic_pot_back"
+            },
+            "x": 941,
+            "y": 562
+        },
+        {
+            "type": "Sprite",
+            "id": "409893eb-7d31-46a3-9d45-6f75881d56e9",
+            "label": "magic_steam0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "new-dojo",
+                "frame": "magic_steam0001"
+            },
+            "x": 940,
+            "y": 502
+        },
+        {
+            "type": "Sprite",
+            "id": "0f2f9411-7359-4c48-85bc-a7c55c45f655",
+            "label": "magic_bubbles0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "new-dojo",
+                "frame": "magic_bubbles0001"
+            },
+            "x": 941,
+            "y": 541
+        },
+        {
+            "type": "Image",
+            "id": "74c37359-cd98-44e7-883f-29325a8025bb",
+            "label": "magic_pot_front",
+            "components": [],
+            "texture": {
+                "key": "new-dojo",
+                "frame": "magic_pot_front"
+            },
+            "x": 942,
+            "y": 567
+        },
+        {
+            "type": "Image",
+            "id": "6412cc7d-600a-452e-b119-0efe6a39ab9c",
+            "label": "cj_mat_bottom",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "cj_mat_bottom",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "new-dojo",
+                "frame": "cj_mat_bottom"
+            },
+            "x": 352,
+            "y": 811
+        },
+        {
+            "type": "Image",
+            "id": "c0fb1220-3dfd-4bb6-89e7-1c65cab8b0bc",
+            "label": "cj_mat_top_left",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "cj_mat_top_left",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "new-dojo",
+                "frame": "cj_mat_top_left"
+            },
+            "x": 598,
+            "y": 704
+        },
+        {
+            "type": "Image",
+            "id": "9611c5bf-c828-4945-bc41-0da50e329ed6",
+            "label": "cj_mat_top_right",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "cj_mat_top_right",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "new-dojo",
+                "frame": "cj_mat_top_right"
+            },
+            "x": 914,
+            "y": 704
+        },
+        {
+            "type": "Image",
+            "id": "28432210-019c-4f59-b72a-a8fd00e10850",
+            "label": "cj_mat_bottom_right",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "cj_mat_bottom_right",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "new-dojo",
+                "frame": "cj_mat_bottom_right"
+            },
+            "x": 1176,
+            "y": 811
         }
     ],
     "plainObjects": [],

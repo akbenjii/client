@@ -88,7 +88,7 @@ if (localStorage.clientMode == "legacy") {
             y: 790
         },
 		321: {
-            key: 'Dojoext',
+            key: 'DojoExt',
             scene: require('@rooms/old/dojoext/Dojoext').default,
             x: 780,
             y: 790
@@ -104,6 +104,18 @@ if (localStorage.clientMode == "legacy") {
             scene: require('@rooms/old/beach/Beach').default,
             x: 840,
             y: 680
+        },
+        410: {
+            key: 'Lighthouse',
+            scene: require('@rooms/old/lighthouse/Lighthouse').default,
+            x: 840,
+            y: 680
+        },
+        411: {
+            key: 'Beacon',
+            scene: require('@rooms/old/beacon/Beacon').default,
+            x: 410,
+            y: 800
         },
         800: {
             key: 'Dock',

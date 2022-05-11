@@ -1,0 +1,133 @@
+{
+    "id": "405494da-4ae3-4907-8d6c-addefe7d492b",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/beacon/beacon-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beacon",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "edce8a24-9fb9-4aef-a422-33ed59eeb3ba",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "bg"
+            },
+            "x": -14,
+            "y": -11,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "e0e83f45-9ffd-415a-9aac-3dda455acd5f",
+            "label": "jp_holder",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "jp_holder"
+            },
+            "x": 1203,
+            "y": 443
+        },
+        {
+            "type": "Sprite",
+            "id": "9363d98b-8770-4724-be2a-e99431f370f1",
+            "label": "jetpack",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "jetpack",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "beacon",
+                "frame": "jetpack"
+            },
+            "x": 1326,
+            "y": 538
+        },
+        {
+            "type": "Image",
+            "id": "67ef6814-9dfa-45a0-95ae-a405c3cfd22e",
+            "label": "front_rail",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "front_rail"
+            },
+            "x": 712.179443359375,
+            "y": 961.9216962032965,
+            "originX": 0.5044360693840665,
+            "originY": 1.0296666844575377
+        },
+        {
+            "type": "Image",
+            "id": "9154b2b9-6d36-4fe2-9e7b-b732321aedc8",
+            "label": "light",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "light"
+            },
+            "x": 708.8609374171064,
+            "y": 737.8601624255746,
+            "originX": 0.4935519917404095,
+            "originY": 1.026630209663789
+        },
+        {
+            "type": "Image",
+            "id": "49eccf24-79ec-49f1-8ca7-89d5efe7ef5d",
+            "label": "crate",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "crate"
+            },
+            "x": 331,
+            "y": 445
+        },
+        {
+            "type": "Image",
+            "id": "2da7e4a6-de9c-41f4-a8f6-15297181c213",
+            "label": "telescope",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "telescope"
+            },
+            "x": 246,
+            "y": 294
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "67ef6814-9dfa-45a0-95ae-a405c3cfd22e",
+                "9154b2b9-6d36-4fe2-9e7b-b732321aedc8"
+            ]
+        }
+    ]
+}
