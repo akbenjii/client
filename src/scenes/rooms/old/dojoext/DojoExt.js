@@ -14,6 +14,8 @@ export default class DojoExt extends RoomScene {
         this.dragonZone;
         /** @type {Phaser.GameObjects.Ellipse} */
         this.feetZone;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.dojoZone;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -22,8 +24,10 @@ export default class DojoExt extends RoomScene {
 
         this.roomTriggers = {
             'map': () => this.interface.main.map.visible = true,
-            'dojohide': null
+            'dojohide': null,
+			'dojo': () => this.triggerRoom(320, 384, 616)
         }
+        this.music = 'dojo'
 
         /* END-USER-CTR-CODE */
     }
@@ -82,6 +86,12 @@ export default class DojoExt extends RoomScene {
         feetZone.scaleX = 0.2699765262251914;
         feetZone.scaleY = 0.20674984183994782;
 
+        // dojoZone
+        const dojoZone = this.add.ellipse(1744.5278048455955, 62.13393065040111, 128, 128);
+        dojoZone.scaleX = 1.6283185066940922;
+        dojoZone.scaleY = 0.5836864266673072;
+        dojoZone.setOrigin(5.156489655372523, -6.364587025960294);
+
         // lists
         const sort = [puffles, fence, trees];
 
@@ -95,6 +105,7 @@ export default class DojoExt extends RoomScene {
 
         this.dragonZone = dragonZone;
         this.feetZone = feetZone;
+        this.dojoZone = dojoZone;
         this.sort = sort;
 
         this.events.emit("scene-awake");

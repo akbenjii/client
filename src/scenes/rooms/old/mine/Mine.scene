@@ -32,6 +32,30 @@
         },
         {
             "type": "Image",
+            "id": "b586146b-da3f-4a66-8a34-5f3501d78a43",
+            "label": "mine_door",
+            "components": [],
+            "texture": {
+                "key": "new-mine",
+                "frame": "mine_door"
+            },
+            "x": 766,
+            "y": 163
+        },
+        {
+            "type": "Image",
+            "id": "aefd64d3-7552-4576-b2d1-f8fbde38950f",
+            "label": "puffle_rescue",
+            "components": [],
+            "texture": {
+                "key": "new-mine",
+                "frame": "puffle_rescue"
+            },
+            "x": 498,
+            "y": 181
+        },
+        {
+            "type": "Image",
             "id": "e5f4b85a-9cf3-42b9-8d23-6152e252e551",
             "label": "lamp_png",
             "components": [],
@@ -178,6 +202,44 @@
             },
             "x": 309,
             "y": 191
+        },
+        {
+            "type": "Image",
+            "id": "ea2cdd3e-347f-4f83-ae3d-ebaebfc83202",
+            "label": "mine_rocks",
+            "components": [],
+            "texture": {
+                "key": "new-mine",
+                "frame": "mine_rocks"
+            },
+            "x": 804,
+            "y": 305
+        },
+        {
+            "type": "Image",
+            "id": "045c9581-984b-4d0a-a344-6e94b91d28da",
+            "label": "pr_chair",
+            "components": [],
+            "texture": {
+                "key": "new-mine",
+                "frame": "pr_chair"
+            },
+            "x": 564,
+            "y": 290
+        },
+        {
+            "type": "Image",
+            "id": "4f46bc03-a525-4a7f-bd11-5d5d1848cd5a",
+            "label": "puffle_rescue_table",
+            "components": [],
+            "texture": {
+                "key": "new-mine",
+                "frame": "puffle_rescue_table"
+            },
+            "x": 568,
+            "y": 361,
+            "scaleX": 1.0773812040986706,
+            "scaleY": 1.0773812040986706
         }
     ],
     "plainObjects": [],

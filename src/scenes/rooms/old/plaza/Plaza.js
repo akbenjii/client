@@ -10,8 +10,6 @@ export default class Plaza extends RoomScene {
     constructor() {
         super("Plaza");
 
-        /** @type {Phaser.GameObjects.Ellipse} */
-        this.egg;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -93,11 +91,6 @@ export default class Plaza extends RoomScene {
         const text = this.add.image(851, 248, "plaza", "text");
         text.setOrigin(0.5, 0.49333333333333335);
 
-        // egg
-        const egg = this.add.ellipse(1194, 154, 128, 128);
-        egg.scaleX = 0.06265322577739635;
-        egg.scaleY = 0.06676476152073879;
-
         // lists
         const sort = [lamp, tickets];
 
@@ -160,11 +153,6 @@ export default class Plaza extends RoomScene {
         ticketsMoveTo.x = 846;
         ticketsMoveTo.y = 426;
 
-        // egg (components)
-        const eggSimpleButton = new SimpleButton(egg);
-        eggSimpleButton.callback = () => this.interface.prompt.showItem(170);
-
-        this.egg = egg;
         this.sort = sort;
 
         this.events.emit("scene-awake");

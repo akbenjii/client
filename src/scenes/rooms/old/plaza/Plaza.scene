@@ -253,22 +253,6 @@
             "x": 851,
             "y": 248,
             "originY": 0.49333333333333335
-        },
-        {
-            "type": "Ellipse",
-            "id": "c40914f5-b247-4fb6-b31d-eafe1ce25ed9",
-            "label": "egg",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => this.interface.prompt.showItem(170)",
-            "x": 1194,
-            "y": 154,
-            "scaleX": 0.06265322577739635,
-            "scaleY": 0.06676476152073879,
-            "width": 128,
-            "height": 128
         }
     ],
     "plainObjects": [],
