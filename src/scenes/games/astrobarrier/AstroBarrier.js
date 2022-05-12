@@ -28,9 +28,7 @@ export default class AstroBarrier extends RoomScene {
         bg.setOrigin(0, 0);
 
         // loading
-        const loading = this.add.sprite(760, 410, "cpv_logo");
-        loading.scaleX = 0.2;
-        loading.scaleY = 0.2;
+        const loading = this.add.sprite(760, 410, "loading_assets", "shovelling0001.png");
 
         // lists
         const sort = [];

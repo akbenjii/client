@@ -1,5 +1,5 @@
 {
-    "id": "eca66e50-ca72-4c1b-84f9-444464446347",
+    "id": "f180751a-6393-4391-a05c-519f07d1c932",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -10,7 +10,7 @@
             "cpadvanced-client/assets/media/interface/menus/load/load-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "cartSurfer",
+        "sceneKey": "jetPackAdventure",
         "borderWidth": 1520,
         "borderHeight": 960
     },

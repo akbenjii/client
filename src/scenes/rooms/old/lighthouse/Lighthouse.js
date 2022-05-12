@@ -12,8 +12,12 @@ export default class Lighthouse extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.to_top0001;
-        /** @type {Phaser.GameObjects.Image} */
+        /** @type {Phaser.GameObjects.Sprite} */
         this.speaker_bottom_stage;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.top_left_speaker0001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.top_right_speaker0001;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -58,6 +62,9 @@ export default class Lighthouse extends RoomScene {
         // stool
         this.add.image(381, 790, "lighthouse", "stool");
 
+        // net_wheel
+        this.add.image(882, 439, "lighthouse", "net_wheel");
+
         // buoy
         this.add.image(1099, 498, "lighthouse", "buoy");
 
@@ -92,13 +99,19 @@ export default class Lighthouse extends RoomScene {
         const to_top0001 = this.add.sprite(327, 63, "lighthouse", "to_top0001");
 
         // speaker_bottom_stage
-        const speaker_bottom_stage = this.add.image(28, 862, "lighthouse", "speaker_bottom_stage0001");
+        const speaker_bottom_stage = this.add.sprite(28, 862, "lighthouse", "speaker_bottom_stage0001");
 
         // lighthouse_cat
         const lighthouse_cat = this.add.image(1436, 861, "lighthouse", "lighthouse_cat");
 
         // mic
         this.add.image(331, 636, "lighthouse", "mic");
+
+        // top_left_speaker0001
+        const top_left_speaker0001 = this.add.sprite(134, 301, "lighthouse", "top_left_speaker0001");
+
+        // top_right_speaker0001
+        const top_right_speaker0001 = this.add.sprite(359, 337, "lighthouse", "top_right_speaker0001");
 
         // lists
         const sort = [drums, chair_top_right, front_rail];
@@ -129,6 +142,8 @@ export default class Lighthouse extends RoomScene {
 
         this.to_top0001 = to_top0001;
         this.speaker_bottom_stage = speaker_bottom_stage;
+        this.top_left_speaker0001 = top_left_speaker0001;
+        this.top_right_speaker0001 = top_right_speaker0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -137,12 +152,15 @@ export default class Lighthouse extends RoomScene {
 
     /* START-USER-CODE */
 
-    onTopOver() {
-        this.to_top0001.play('top_top')
+    create() {
+        super.create()
+        this.speaker_bottom_stage.play('bottom_speaker')
+        this.top_left_speaker0001.play('top_left_speaker')
+        this.top_right_speaker0001.play('top_right_speaker')
     }
 
-    onSpeakerOver() {
-        this.speaker_bottom_stage.play('bottom_speaker')
+    onTopOver() {
+        this.to_top0001.play('top_top')
     }
 
     /* END-USER-CODE */

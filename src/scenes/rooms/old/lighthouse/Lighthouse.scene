@@ -94,6 +94,18 @@
         },
         {
             "type": "Image",
+            "id": "3dfab575-5fa8-4509-9978-edb94b3f582c",
+            "label": "net_wheel",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "net_wheel"
+            },
+            "x": 882,
+            "y": 439
+        },
+        {
+            "type": "Image",
             "id": "3706a4ce-cc1c-44fd-89e6-6b0f3586d53d",
             "label": "buoy",
             "components": [],
@@ -240,7 +252,7 @@
             "y": 63
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "ab89ca20-47a9-4809-82b8-f984bc94d835",
             "label": "speaker_bottom_stage",
             "scope": "CLASS",
@@ -281,6 +293,32 @@
             },
             "x": 331,
             "y": 636
+        },
+        {
+            "type": "Sprite",
+            "id": "ac605a44-12e1-4aba-84c3-ee0fe7f6a3d9",
+            "label": "top_left_speaker0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "top_left_speaker0001"
+            },
+            "x": 134,
+            "y": 301
+        },
+        {
+            "type": "Sprite",
+            "id": "600b0197-ed9f-4e1b-b2e0-482ae6acb86b",
+            "label": "top_right_speaker0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "top_right_speaker0001"
+            },
+            "x": 359,
+            "y": 337
         }
     ],
     "plainObjects": [],

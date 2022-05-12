@@ -211,6 +211,10 @@ if (localStorage.clientMode == "legacy") {
             key: 'puffleRoundup',
             scene: require('@games/puffleroundup/PuffleRoundup').default
         },
+		926: {
+            key: 'jetPackAdventure',
+            scene: require('@games/jetpackadventure/JetPackAdventure').default
+        },
         909: {
             key: 'thinIce',
             scene: require('@games/thinice/ThinIce').default

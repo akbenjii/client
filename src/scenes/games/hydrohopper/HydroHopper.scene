@@ -36,12 +36,11 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "cpv_logo"
+                "key": "loading_assets",
+                "frame": "shovelling0001.png"
             },
             "x": 760,
-            "y": 410,
-            "scaleX": 0.2,
-            "scaleY": 0.2
+            "y": 410
         }
     ],
     "plainObjects": [],

@@ -5,13 +5,12 @@ import { Interactive } from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class CartSurfer extends RoomScene {
+export default class JetPackAdventure extends RoomScene {
 
     constructor() {
-        super("cartSurfer");
+        super("jetPackAdventure");
 
         /* START-USER-CTR-CODE */
-        this.music = "cartsurfer"
         /* END-USER-CTR-CODE */
     }
 
