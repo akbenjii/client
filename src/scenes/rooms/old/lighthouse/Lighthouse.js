@@ -62,7 +62,7 @@ export default class Lighthouse extends RoomScene {
         this.add.image(1099, 498, "lighthouse", "buoy");
 
         // instruments
-        this.add.image(584, 195, "lighthouse", "instruments");
+        const instruments = this.add.image(1182, 559, "lighthouse", "instruments");
 
         // lighthouse_door
         const lighthouse_door = this.add.image(482, 402, "lighthouse", "lighthouse_door");
@@ -94,8 +94,19 @@ export default class Lighthouse extends RoomScene {
         // speaker_bottom_stage
         const speaker_bottom_stage = this.add.image(28, 862, "lighthouse", "speaker_bottom_stage0001");
 
+        // lighthouse_cat
+        const lighthouse_cat = this.add.image(1436, 861, "lighthouse", "lighthouse_cat");
+
+        // mic
+        this.add.image(331, 636, "lighthouse", "mic");
+
         // lists
         const sort = [drums, chair_top_right, front_rail];
+
+        // instruments (components)
+        const instrumentsSimpleButton = new SimpleButton(instruments);
+        instrumentsSimpleButton.callback = () => this.interface.loadExternal('Music');
+        instrumentsSimpleButton.pixelPerfect = true;
 
         // lighthouse_door (components)
         const lighthouse_doorButton = new Button(lighthouse_door);
@@ -108,6 +119,13 @@ export default class Lighthouse extends RoomScene {
         const to_top0001SimpleButton = new SimpleButton(to_top0001);
         to_top0001SimpleButton.hoverCallback = () => this.onTopOver();
         to_top0001SimpleButton.callback = () => this.triggerRoom(411, 272, 680);
+
+        // lighthouse_cat (components)
+        const lighthouse_catButton = new Button(lighthouse_cat);
+        lighthouse_catButton.spriteName = "lighthouse_cat";
+        lighthouse_catButton.callback = () => this.interface.loadExternal('Music');
+        lighthouse_catButton.activeFrame = false;
+        lighthouse_catButton.pixelPerfect = true;
 
         this.to_top0001 = to_top0001;
         this.speaker_bottom_stage = speaker_bottom_stage;

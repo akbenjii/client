@@ -108,13 +108,17 @@
             "type": "Image",
             "id": "0d457cb5-3212-433d-8f81-c43cc97e9a53",
             "label": "instruments",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Music')",
+            "SimpleButton.pixelPerfect": true,
             "texture": {
                 "key": "lighthouse",
                 "frame": "instruments"
             },
-            "x": 584,
-            "y": 195
+            "x": 1182,
+            "y": 559
         },
         {
             "type": "Image",
@@ -247,6 +251,36 @@
             },
             "x": 28,
             "y": 862
+        },
+        {
+            "type": "Image",
+            "id": "9bd56794-162d-4749-b064-c9e2d62dd2aa",
+            "label": "lighthouse_cat",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "lighthouse_cat",
+            "Button.callback": "() => this.interface.loadExternal('Music')",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "lighthouse",
+                "frame": "lighthouse_cat"
+            },
+            "x": 1436,
+            "y": 861
+        },
+        {
+            "type": "Image",
+            "id": "c595d598-f3f9-4e9c-ab2f-da964a841e6e",
+            "label": "mic",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "mic"
+            },
+            "x": 331,
+            "y": 636
         }
     ],
     "plainObjects": [],

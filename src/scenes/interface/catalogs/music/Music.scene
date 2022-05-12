@@ -1,0 +1,282 @@
+{
+    "id": "28d21205-c55d-422c-a0a5-5c7ad10ceedf",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "News",
+        "preloadPackFiles": [
+            "client/assets/media/interface/catalogs/music/music-pack.json",
+            "client/assets/media/interface/catalogs/clothing/may22-clothing.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Music",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "41b9af2c-1775-4714-9527-c74cca74f92b",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.1,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "2147c74d-be30-4de0-bb64-56c10d927575",
+            "label": "page1",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
+                    "label": "musiccatalog",
+                    "components": [],
+                    "texture": {
+                        "key": "musiccatalog"
+                    },
+                    "x": 760,
+                    "y": 460
+                },
+                {
+                    "type": "Image",
+                    "id": "630b83ad-2d98-4813-bc90-0cde99ddddde",
+                    "label": "blue_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.close()",
+                    "Button.pixelPerfect": true,
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 1167,
+                    "y": 144
+                },
+                {
+                    "type": "Image",
+                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 1167,
+                    "y": 142
+                },
+                {
+                    "type": "Image",
+                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
+                    "label": "buy_bass",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => this.interface.prompt.showItem(729)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "may22cat",
+                        "frame": "buy"
+                    },
+                    "x": 583,
+                    "y": 351
+                },
+                {
+                    "type": "Image",
+                    "id": "acb58baf-2ee6-4229-9362-c7a7949deeac",
+                    "label": "buy_acoustic",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => this.interface.prompt.showItem(234)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "may22cat",
+                        "frame": "buy"
+                    },
+                    "x": 1070,
+                    "y": 351
+                },
+                {
+                    "type": "Image",
+                    "id": "1162bc57-8916-40cc-80f4-ad2fb242601c",
+                    "label": "buy_tuba",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => this.interface.prompt.showItem(293)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "may22cat",
+                        "frame": "buy"
+                    },
+                    "x": 422,
+                    "y": 534
+                },
+                {
+                    "type": "Image",
+                    "id": "9bcb71ea-c922-4247-b896-a2d2f72a1fac",
+                    "label": "buy_drumsticks",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => this.interface.prompt.showItem(340)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "may22cat",
+                        "frame": "buy"
+                    },
+                    "x": 1085,
+                    "y": 534
+                },
+                {
+                    "type": "Image",
+                    "id": "62a907f3-3088-43c4-8514-edd36e48c39c",
+                    "label": "buy_red_elec",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => this.interface.prompt.showItem(233)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "may22cat",
+                        "frame": "buy"
+                    },
+                    "x": 394,
+                    "y": 702
+                },
+                {
+                    "type": "Image",
+                    "id": "55061804-3a4e-43b5-a15d-c8cb7433bbdf",
+                    "label": "buy_snare",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy",
+                    "Button.callback": "() => this.interface.prompt.showItem(180)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "may22cat",
+                        "frame": "buy"
+                    },
+                    "x": 878,
+                    "y": 702
+                },
+                {
+                    "type": "Text",
+                    "id": "19d85cd6-5806-474f-b1c6-1bf53334821d",
+                    "label": "text_2_3",
+                    "components": [],
+                    "x": 844,
+                    "y": 683,
+                    "text": "380",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "6f4100"
+                },
+                {
+                    "type": "Text",
+                    "id": "ffb388b5-e805-4676-824d-f7eff7bf212a",
+                    "label": "text_2_3_1",
+                    "components": [],
+                    "x": 355,
+                    "y": 683,
+                    "text": "350",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "6f4100"
+                },
+                {
+                    "type": "Text",
+                    "id": "99abb099-249a-48d4-b4d9-a97cdda2d800",
+                    "label": "text_2_3_1_1",
+                    "components": [],
+                    "x": 1054,
+                    "y": 517,
+                    "text": "120",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "6f4100"
+                },
+                {
+                    "type": "Text",
+                    "id": "0f85516c-b507-4ef3-9e05-ee51f604ecd1",
+                    "label": "text_2_3_1_1_1",
+                    "components": [],
+                    "x": 387,
+                    "y": 517,
+                    "text": "350",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "6f4100"
+                },
+                {
+                    "type": "Text",
+                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
+                    "label": "text_2_3_1_1_1_1",
+                    "components": [],
+                    "x": 550,
+                    "y": 333,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "6f4100"
+                },
+                {
+                    "type": "Text",
+                    "id": "805247bb-de88-4d35-91f8-34d84aa67d40",
+                    "label": "text_2_3_1_1_1_1_1",
+                    "components": [],
+                    "x": 1039,
+                    "y": 333,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "color": "6f4100"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "110e14c4-8fa3-44cd-b053-2902c2236aa2",
+            "label": "pages",
+            "objectIds": [
+                "2147c74d-be30-4de0-bb64-56c10d927575"
+            ]
+        }
+    ]
+}
