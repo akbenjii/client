@@ -1,0 +1,872 @@
+{
+    "id": "c8441ac4-de22-42d7-a9b1-1c8c69cd0d42",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "cpadvanced-client/assets/media/interface/game/stampbook/stampbook-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Stampbook",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "4a42fe8f-b0de-4719-954b-9905e257b91d",
+            "label": "blocker",
+            "scope": "CLASS",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Sprite",
+            "id": "a98d34df-f6ca-4b2f-b738-49d035c24272",
+            "label": "editor_background",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stampbook",
+                "frame": "editor_background"
+            },
+            "x": 760,
+            "y": 480,
+            "visible": false
+        },
+        {
+            "type": "Container",
+            "id": "152a2b8a-5c2f-4cdd-aec8-b2456be8681e",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 95,
+            "y": 152,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "57911d95-2246-4a11-b761-df32a6a8325f",
+                    "label": "bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "bg"
+                    },
+                    "x": 620,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "7d3b07e8-3875-4f6f-99c8-8cc71734a8e3",
+                    "label": "close",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close",
+                    "Button.callback": "() => super.close()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "close"
+                    },
+                    "x": 1297
+                },
+                {
+                    "type": "Image",
+                    "id": "a9e8a251-c051-4fc1-8d87-1783a9894cf3",
+                    "label": "page_back",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => super.prevPage()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "page_back"
+                    },
+                    "y": 605
+                },
+                {
+                    "type": "Image",
+                    "id": "61df8dad-8a0f-461f-8f7c-15c63108c65a",
+                    "label": "page_forward",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => super.nextPage()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "page_forward"
+                    },
+                    "x": 1298,
+                    "y": 608
+                },
+                {
+                    "type": "Image",
+                    "id": "cd903c45-59ce-4241-85ab-4fbfca1c7dd5",
+                    "label": "dividers",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "dividers"
+                    },
+                    "x": 688,
+                    "y": -16
+                },
+                {
+                    "type": "Text",
+                    "id": "96b44a38-529c-44e2-a75f-ed4ef32e04dd",
+                    "label": "pagenum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1130,
+                    "y": -58,
+                    "text": "Page\n1 of 29",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "0a0b4143-d575-4f45-a970-fbe8a9cb1f9a",
+                    "label": "stampcategory",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 898,
+                    "y": -66,
+                    "text": "Total Stamps:",
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "0fd5380f-e635-41d9-b925-1c04950ead44",
+                    "label": "stampnum",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 944,
+                    "y": -33,
+                    "text": "888/888",
+                    "align": "right",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "35px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "81bbbc02-2cef-4174-9170-3e15f3f33778",
+                    "label": "pagename",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 104,
+                    "y": -79,
+                    "text": "Contents",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "70px",
+                    "fontStyle": "bold",
+                    "color": "#585858ff"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "95aea7c6-e781-4e4e-8ed2-6f5353e98557",
+            "label": "page3",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": []
+        },
+        {
+            "type": "Container",
+            "id": "463288d1-ff53-46ea-b708-32400b00ac19",
+            "label": "page2",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "334e0f0c-a4d8-44b4-89b4-486958e1e738",
+                    "label": "pagebgs_contents",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "pagebgs/contents"
+                    },
+                    "x": 744,
+                    "y": 705
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "2fcff564-ee36-42e1-9159-6f0a39be2390",
+            "label": "page1",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "7278d4d5-3c80-4720-8911-ec30f1edd7c4",
+                    "label": "cover",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "colour/1"
+                    },
+                    "x": 743,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "a47175a9-1c7c-483b-8934-fad9002bd80e",
+                    "label": "pattern",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "pattern/1"
+                    },
+                    "x": 740,
+                    "y": 480,
+                    "alpha": 0.15,
+                    "alphaTopLeft": 0.15,
+                    "alphaTopRight": 0.15,
+                    "alphaBottomLeft": 0.15,
+                    "alphaBottomRight": 0.15
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d2ec2178-9638-4ae9-8d1c-00308d49274f",
+                    "label": "clasp_bg",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => super.nextPage()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "clasp"
+                    },
+                    "x": 1358,
+                    "y": 480
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ca5a8ef7-0f92-45f7-9974-53f42c05b06f",
+                    "label": "clasp",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "clasp/1"
+                    },
+                    "x": 1338,
+                    "y": 472
+                },
+                {
+                    "type": "Text",
+                    "id": "66690e3a-abe7-4ffa-af25-524c7bcaaa47",
+                    "label": "total",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 467,
+                    "y": 754,
+                    "text": "Total Stamps 888/888",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold",
+                    "color": "#F4B851",
+                    "shadow.offsetX": 3,
+                    "shadow.offsetY": 3,
+                    "shadow.fill": true
+                },
+                {
+                    "type": "Text",
+                    "id": "069ab41d-8d51-4d03-a1c5-93e279faa937",
+                    "label": "username",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 253,
+                    "y": 639,
+                    "text": "Username",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "100px",
+                    "fontStyle": "bold",
+                    "color": "#F4B851",
+                    "shadow.offsetX": 3,
+                    "shadow.offsetY": 3,
+                    "shadow.fill": true
+                },
+                {
+                    "type": "Sprite",
+                    "id": "34527d6e-d2e1-4789-a552-db1a0cde5d9a",
+                    "label": "edit",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "edit",
+                    "Button.callback": "() => this.editStampbook()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "edit"
+                    },
+                    "x": 1465,
+                    "y": 897
+                },
+                {
+                    "type": "Image",
+                    "id": "220a6b15-5cde-473c-b9a5-f19d75e6a716",
+                    "label": "grey_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "grey-button",
+                    "Button.callback": "() => super.close()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-button"
+                    },
+                    "x": 1358,
+                    "y": 159
+                },
+                {
+                    "type": "Image",
+                    "id": "a1f5cc01-fe51-4dad-b4e0-40b82dcea799",
+                    "label": "grey_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-x"
+                    },
+                    "x": 1358,
+                    "y": 157
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "52b1d16f-c5db-455d-8a2c-f3a89b06f663",
+            "label": "editor",
+            "scope": "CLASS",
+            "components": [],
+            "visible": false,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "c89e0bf3-300d-4c99-a7d0-7c23161f0490",
+                    "label": "editor_top",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "editor_top"
+                    },
+                    "x": 787,
+                    "y": 37
+                },
+                {
+                    "type": "Sprite",
+                    "id": "ee16e781-2112-4c40-a044-51886c91bea4",
+                    "label": "editor_side",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "editor_side"
+                    },
+                    "x": 56,
+                    "y": 243
+                },
+                {
+                    "type": "Sprite",
+                    "id": "275f9e15-a76e-4b8a-860b-1d6243681e84",
+                    "label": "claspthumb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.openClasp()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "thumbs/clasp/1"
+                    },
+                    "x": 76,
+                    "y": 445
+                },
+                {
+                    "type": "Container",
+                    "id": "07ab8038-7fc3-4f70-a683-e919a45bdc39",
+                    "label": "claspselect",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 205,
+                    "y": 375,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "416f0886-a968-4c4b-ab42-affbf38ecc13",
+                            "label": "claspselect_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "editor_options"
+                            },
+                            "x": 51,
+                            "y": 73
+                        },
+                        {
+                            "type": "Image",
+                            "id": "ad6fe51d-c832-4389-9129-fb8826fbd7ec",
+                            "label": "thumbs_clasp_1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(1)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/1"
+                            },
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c7169b4c-cba0-47d3-a899-ef18444331c3",
+                            "label": "thumbs_clasp_2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(2)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/2"
+                            },
+                            "x": 103,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "750c229e-799b-4e8e-a886-e81ab549abcd",
+                            "label": "thumbs_clasp_3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(3)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/3"
+                            },
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "393090b8-9971-4cbf-b725-99430c72efc9",
+                            "label": "thumbs_clasp_4",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(4)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/4"
+                            },
+                            "x": 103,
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7e3c306a-db7b-4f0a-812d-3dfd49e6bb9f",
+                            "label": "thumbs_clasp_5",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(5)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/5"
+                            },
+                            "y": 145,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e8f4d7c5-bd9d-4d36-a276-32b5b40620b7",
+                            "label": "thumbs_clasp_6",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeClasp(6)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/clasp/6"
+                            },
+                            "x": 103,
+                            "y": 144,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        }
+                    ]
+                },
+                {
+                    "type": "Sprite",
+                    "id": "c883d7a4-5c75-4821-a725-2362a5482856",
+                    "label": "patternthumb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.openPattern()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "thumbs/color/1"
+                    },
+                    "x": 76,
+                    "y": 328
+                },
+                {
+                    "type": "Container",
+                    "id": "5d60401d-1aeb-4468-ba4b-d088173ff8f0",
+                    "label": "patternselect",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 205,
+                    "y": 261,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "e5201611-9559-4dd4-9bf3-ad2b803acaa8",
+                            "label": "patternselect_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "editor_options"
+                            },
+                            "x": 51,
+                            "y": 73
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9cfc3f49-d3f0-4bff-9fbb-122baddefba8",
+                            "label": "thumbs_pattern_1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(1)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/1"
+                            },
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "22dabb16-4eaa-402a-9ed5-1308d357dc74",
+                            "label": "thumbs_pattern_2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(2)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/2"
+                            },
+                            "x": 103,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c2fb7dde-8417-4dc7-b676-f50eefbb65ea",
+                            "label": "thumbs_pattern_3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(3)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/3"
+                            },
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "648965d5-4b20-4735-8cd5-9f14ab1c80df",
+                            "label": "thumbs_pattern_4",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(4)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/4"
+                            },
+                            "x": 103,
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "daa51063-cebf-4c6f-94e9-07dce8253d48",
+                            "label": "thumbs_pattern_5",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(5)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/5"
+                            },
+                            "y": 145,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "c980091f-7a15-4ddf-b0f5-a88efe4d11af",
+                            "label": "thumbs_pattern_6",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changePattern(6)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/pattern/6"
+                            },
+                            "x": 103,
+                            "y": 144,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        }
+                    ]
+                },
+                {
+                    "type": "Sprite",
+                    "id": "4a21f2c2-fa96-4c99-a1a4-7acdf3709cd6",
+                    "label": "colorthumb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.openColour()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "thumbs/color/1"
+                    },
+                    "x": 76,
+                    "y": 215
+                },
+                {
+                    "type": "Container",
+                    "id": "915a0bf9-6622-49ef-9047-307bb8688701",
+                    "label": "colorselect",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 205,
+                    "y": 145,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "038de595-b1cb-405a-a63e-9b678d67bc1f",
+                            "label": "colorselect_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "editor_options"
+                            },
+                            "x": 51,
+                            "y": 73
+                        },
+                        {
+                            "type": "Image",
+                            "id": "17ed9666-53b6-4db7-9cb8-3c8583b3f64a",
+                            "label": "thumbs_color_1",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(1)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/1"
+                            },
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "1a84dff2-5948-4cfe-b46f-c520aebe5add",
+                            "label": "thumbs_color_2",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(2)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/2"
+                            },
+                            "x": 103,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e7a9191a-87b4-4c5e-82d4-baada8cb38a1",
+                            "label": "thumbs_color_3",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(3)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/3"
+                            },
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "0e7c0876-54cf-41a2-a671-8bb6e7d08d08",
+                            "label": "thumbs_color_4",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(4)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/4"
+                            },
+                            "x": 103,
+                            "y": 72,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "6f6275c4-f804-4cf6-88f1-8f5a81b34d1f",
+                            "label": "thumbs_color_5",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(5)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/5"
+                            },
+                            "y": 145,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9a4439d3-ee9a-4054-a333-3211ced6c6d0",
+                            "label": "thumbs_color_6",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.changeColor(6)",
+                            "texture": {
+                                "key": "stampbook",
+                                "frame": "thumbs/color/6"
+                            },
+                            "x": 103,
+                            "y": 144,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "id": "f9aaf9c3-c657-4f71-9976-3b49022382da",
+                    "label": "save",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.saveStampbook()",
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "save"
+                    },
+                    "x": 1463,
+                    "y": 899
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "39b4eea7-a6d2-4ed0-b1ab-c2a3191340b4",
+            "label": "pages",
+            "objectIds": [
+                "2fcff564-ee36-42e1-9159-6f0a39be2390",
+                "463288d1-ff53-46ea-b708-32400b00ac19",
+                "95aea7c6-e781-4e4e-8ed2-6f5353e98557"
+            ]
+        }
+    ]
+}
