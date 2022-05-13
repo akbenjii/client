@@ -20,7 +20,7 @@ export default class Beacon extends RoomScene {
 
         this.roomTriggers = {
             'lighthouse': () => this.triggerRoom(410, 1320, 700),
-            'jetpack': () => null
+            'jetpack': null
         }
 
         /* END-USER-CTR-CODE */
@@ -57,7 +57,7 @@ export default class Beacon extends RoomScene {
         this.add.image(331, 445, "beacon", "crate");
 
         // telescope
-        this.add.image(246, 294, "beacon", "telescope");
+        this.add.image(248, 298, "beacon", "telescope");
 
         // lists
         const sort = [front_rail, light];
