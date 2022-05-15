@@ -331,7 +331,7 @@
                 "ShowHint"
             ],
             "Button.spriteName": "blue-button",
-            "Button.callback": "() => this.interface.loadExternal('Stampbook')",
+            "Button.callback": "() => { this.settings.visible = true }",
             "ShowHint.text": "Edit Account",
             "texture": {
                 "key": "main",

@@ -227,6 +227,10 @@ if (localStorage.clientMode == "legacy") {
             key: 'yumYuck',
             scene: require('@games/yumYuck/YumYuck').default
         },
+		998: {
+            key: 'Card',
+            scene: require('@games/card/Card').default
+        },
         999: {
             key: 'Sled',
             scene: require('@games/sled/Sled').default
@@ -451,6 +455,10 @@ if (localStorage.clientMode == "vanilla") {
         911: {
             key: 'yumYuck',
             scene: require('@games/yumYuck/YumYuck').default
+        },
+		998: {
+            key: 'Card',
+            scene: require('@games/card/Card').default
         },
         999: {
             key: 'Sled',

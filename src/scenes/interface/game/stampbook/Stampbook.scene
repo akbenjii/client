@@ -268,7 +268,7 @@
                     "components": [],
                     "x": 210,
                     "y": 217,
-                    "text": "You joined on 1st January 1970\n\nSince then:\nYou have sent 0 chat messages.\nYou have played for 0 minutes! Wow, that's over 0 days!\nYou have won 0 sled races, and 0 games of find four.\nYou have earned 0 coins, and spent 0 coins.\nYou have thrown 0 snowballs.\nYou have been banned 0 times! Good job!\n0 items have been released, and you have bought 0 of them.\n0 pins have been released, and you have found 0 of them.\nYou have earned 0 stamps\nYou have completed 0 tasks at 0 parties.\nYou have never been Penguin of the Week.",
+                    "text": "Loading statistics...",
                     "fontFamily": "Burbank Small",
                     "fontSize": "30px",
                     "color": "#585858ff"

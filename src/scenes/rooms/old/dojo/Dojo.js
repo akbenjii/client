@@ -128,6 +128,10 @@ export default class Dojo extends RoomScene {
         this.magic_steam0001.play('magic_steam')
         this.magic_bubbles0001.play('magic_bubbles')
     }
+
+    onJitsu() {
+        this.triggerGame("card", 998)
+    }
     /* END-USER-CODE */
 }
 

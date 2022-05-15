@@ -12,6 +12,7 @@ export default class Get extends Plugin {
 			'get_user_info': this.getUserInfo,
 			'edit_player': this.editPlayer,
             'get_pin': this.getPin,
+			'get_statistics': this.getStatistics
         }
     }
 
@@ -41,5 +42,9 @@ export default class Get extends Plugin {
         this.crumbs.pin.x = args.x
         this.crumbs.pin.y = args.y
     }
+	
+	getStatistics(args) {
+		this.interface.setStatistics(args)
+	}
 
 }

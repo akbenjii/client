@@ -21,7 +21,8 @@ export default class Beach extends RoomScene {
         this.roomTriggers = {
             'village': () => this.triggerRoom(200, 450, 750),
             'dock': () => this.triggerRoom(800, 240, 420),
-            'lighthouse': () => this.triggerRoom(410, 530, 530),
+            //'lighthouse': () => this.triggerRoom(410, 530, 530),
+			'lighthouse': null,
             'ship': null
         }
         this.roomAnims = true

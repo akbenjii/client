@@ -201,5 +201,17 @@ export default class InterfaceController extends BaseScene {
             }
         })
     }
+	
+	setStatistics(args) {
+        let books = this.scene.manager.getScenes().filter(
+            scene => Object.getPrototypeOf(scene.constructor).name == 'Book'
+        )
+
+        books.map(book => {
+            if (book.statistics) {
+                book.setStatistics(args)
+            }
+        })
+    }
 
 }

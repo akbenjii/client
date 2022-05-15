@@ -1,8 +1,4 @@
-import {
-    SimpleButton,
-    Button,
-    Interactive
-} from '@components/components'
+import { SimpleButton, Button, Interactive } from '@components/components'
 import Book from '@scenes/interface/books/Book'
 import BookStamp from './BookStamp'
 
@@ -120,7 +116,7 @@ export default class Stampbook extends Book {
 
 		// statistics
 		const statistics = this.add.text(210, 217, "", {});
-		statistics.text = "You joined on 1st January 1970\n\nSince then:\nYou have sent 0 chat messages.\nYou have played for 0 minutes! Wow, that's over 0 days!\nYou have won 0 sled races, and 0 games of find four.\nYou have earned 0 coins, and spent 0 coins.\nYou have thrown 0 snowballs.\nYou have been banned 0 times! Good job!\n0 items have been released, and you have bought 0 of them.\n0 pins have been released, and you have found 0 of them.\nYou have earned 0 stamps\nYou have completed 0 tasks at 0 parties.\nYou have never been Penguin of the Week.";
+		statistics.text = "Loading statistics...";
 		statistics.setStyle({ "color": "#585858ff", "fontFamily": "Burbank Small", "fontSize": "30px" });
 		page37.add(statistics);
 
@@ -2367,6 +2363,8 @@ export default class Stampbook extends Book {
             [63, 67, 64, 65, 70, 68, 71, 69, 66], // Thin Ice
             [416, 420, 422, 414, 418] // Treasure Hunt
         ]
+		
+		this.network.send('get_statistics')
     }
 
     changeClasp(id) {
@@ -2449,6 +2447,29 @@ export default class Stampbook extends Book {
             this.stamps.push(this.pageStamps[page][x])
         }
     }
+	
+	setStatistics(args) {
+		let joinTimestamp = new Date(args.joinTime)
+		let month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+		let joinDay = joinTimestamp.getDate()
+		let dayString = ""
+		let joinMonth = month[joinTimestamp.getMonth()]
+		let joinYear = joinTimestamp.getFullYear()
+		if (joinDay === 1 || joinDay === 21 || joinDay === 31) { dayString = `${joinDay}st` }
+		if (joinDay === 2 || joinDay === 22) { dayString = `${joinDay}nd` }
+		if (joinDay === 3 || joinDay === 23) { dayString = `${joinDay}rd` }
+		else { dayString = `${joinDay}th` }
+		let dateString = `${dayString} of ${joinMonth}, ${joinYear}`
+		
+		let banString = ""
+		if (args.banNumber > 2) { banString = `${args.banNumber} times. Watch your behaviour!` } 
+		else if (args.banNumber > 0) { banString = `${args.banNumber} times.`} 
+		else { banString = `0 times! Good job!` }
+		
+		let potwString = (args.hasBeenPOTW) ? "been Penguin of the Week! Nice Job!" : "never been Penguin of the Week"
+			 
+		this.statistics.text = `You joined on ${dateString}\n\nSince then:\nYou have sent ${args.messagesSent} chat messages.\nYou have played for ${Math.round(args.timePlayed / 60)} minutes! Wow, that's over ${Math.round((args.timePlayed / 86400) * 100) /100} days!\nYou have won ${args.sledRacesWon} sled races, and ${args.findFourWon} games of find four.\nYou have earned ${args.coinsEarned} coins, and spent ${Math.abs(args.coinsSpent)} coins.\nYou have thrown ${args.snowballsThrown} snowballs.\nYou have been banned ${banString}\n${args.itemsReleased} items have been released, and you have bought ${args.itemsOwned} of them.\n${args.pinsReleased} pins have been released, and you have found ${args.pinsOwned} of them.\nYou have earned 0 stamps\nYou have completed ${args.partyTasksCompleted} tasks at 0 parties.\nYou have ${potwString}`
+	}
 
     /* END-USER-CODE */
 }
