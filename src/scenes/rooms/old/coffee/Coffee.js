@@ -12,11 +12,7 @@ export default class Coffee extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.board;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.cake;
-        /** @type {Phaser.GameObjects.Ellipse} */
-        this.turtZone;
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -44,34 +40,41 @@ export default class Coffee extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg_1
-        const bg_1 = this.add.image(-51, -113, "beta-coffee", "bg");
-        bg_1.setOrigin(0, 0);
+        // bg
+        const bg = this.add.image(0, -7, "coffee", "bg");
+        bg.setOrigin(0, 0);
 
         // lamp
         const lamp = this.add.image(172, -11, "coffee", "lamp");
         lamp.setOrigin(0, 0);
 
+        // table
+        const table = this.add.image(414, 499, "coffee", "table");
+        table.setOrigin(0.5217391304347826, 0.5368421052631579);
+
+        // counter_back
+        const counter_back = this.add.image(850, 458, "coffee", "counter_back");
+        counter_back.setOrigin(0.27906976744186046, 0.8363636363636363);
+
+        // counter_front
+        const counter_front = this.add.image(808, 621, "coffee", "counter_front");
+        counter_front.setOrigin(0.2864583333333333, 0.8710801393728222);
+
         // smoke
         const smoke = this.add.sprite(903, 180, "coffee", "smoke0001");
         smoke.setOrigin(0, 0);
 
+        // sign_back
+        const sign_back = this.add.image(903, 632, "coffee", "sign_back");
+        sign_back.setOrigin(0.5, 0.4789915966386555);
+
+        // sign_front
+        const sign_front = this.add.image(880, 695, "coffee", "sign_front");
+        sign_front.setOrigin(0.5190839694656488, 0.8827586206896552);
+
         // board
-        const board = this.add.sprite(947, 146, "beta-coffee", "board0001");
+        const board = this.add.sprite(947, 146, "coffee", "board0001");
         board.setOrigin(0, 0);
-
-        // coffee_machine
-        const coffee_machine = this.add.image(878, 401, "beta-coffee", "coffee_machine");
-
-        // counter_front
-        const counter_front = this.add.image(808, 621, "beta-coffee", "coffee_bar");
-        counter_front.setOrigin(0.2864583333333333, 0.8710801393728222);
-
-        // coffee_sign_back
-        const coffee_sign_back = this.add.image(900, 635, "beta-coffee", "coffee_sign_back");
-
-        // coffee_sign
-        const coffee_sign = this.add.image(875, 639, "beta-coffee", "coffee_sign");
 
         // machine_1
         const machine_1 = this.add.image(952, 468, "coffee", "machine_1");
@@ -102,34 +105,11 @@ export default class Coffee extends RoomScene {
         stairs.setOrigin(0, 0);
 
         // door
-        const door = this.add.image(721, 128, "beta-coffee", "door");
+        const door = this.add.image(724, 135, "coffee", "door");
         door.setOrigin(0, 0);
 
-        // table
-        const table = this.add.image(472, 493, "beta-coffee", "coffee_table");
-        table.setOrigin(0.5217391304347826, 0.5368421052631579);
-
-        // cake
-        const cake = this.add.sprite(342, 613, "beta-coffee", "cake");
-
-        // streamers
-        this.add.image(763, 94, "beta-coffee", "streamers");
-
-        // fire_extinguisher
-        const fire_extinguisher = this.add.image(100, 617, "beta-coffee", "fire_extinguisher");
-
-        // turt_box
-        const turt_box = this.add.image(628, 743, "turt_box");
-        turt_box.scaleX = 0.3155435710555007;
-        turt_box.scaleY = 0.3155435710555007;
-
-        // turtZone
-        const turtZone = this.add.ellipse(629, 739, 128, 128);
-        turtZone.scaleX = 1.133199938251877;
-        turtZone.scaleY = 1.1524622173037335;
-
         // lists
-        const sort = [beans, bag, table, cake, fire_extinguisher, coffee_sign, coffee_sign_back, coffee_machine, counter_front, turt_box];
+        const sort = [beans, bag, sign_front, sign_back, counter_front, counter_back, table];
 
         // smoke (components)
         const smokeAnimation = new Animation(smoke);
@@ -148,7 +128,7 @@ export default class Coffee extends RoomScene {
         beansButton.pixelPerfect = true;
         new MoveTo(beans);
         const beansShowHint = new ShowHint(beans);
-        beansShowHint.text = "Play Beans";
+        beansShowHint.text = "Bean Counters";
 
         // stairs (components)
         const stairsButton = new Button(stairs);
@@ -168,8 +148,6 @@ export default class Coffee extends RoomScene {
         doorMoveTo.y = 392;
 
         this.board = board;
-        this.cake = cake;
-        this.turtZone = turtZone;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -178,32 +156,11 @@ export default class Coffee extends RoomScene {
 
     /* START-USER-CODE */
 
-    create(){
-        super.create()
-
-        this.roomZones = {
-            'turtZone': { 
-                key: this.turtZone,
-                callback: () => this.interface.prompt.showItem(35006)
-            }
-        }
-
-        super.addZones()
-    }
-
     onBoardClick() {
-        let animation = (this.boardToggle) ? 'beta_board1' : 'beta_board2'
+        let animation = (this.boardToggle) ? 'board1' : 'board2'
 
         this.board.play(animation)
         this.boardToggle = !this.boardToggle
-    }
-
-    onCakeHover() {
-        this.candle_cake.play('candle_lit')
-    }
-
-    onCakeOut() {
-        this.candle_cake.play('candle_unlit')
     }
 
     /* END-USER-CODE */

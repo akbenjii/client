@@ -151,6 +151,7 @@ export default class Load extends BaseScene {
 	
 	checkForInfiniteLoad() {
 		if (!this.world.client.newRoom) return
+		if (this.world.room.id === this.world.client.newRoom[0]) return
 		
 		let random = PathEngine.getRandomPos(this.world.client.newRoom[1], this.world.client.newRoom[2], this.world.client.newRoom[3])
         this.network.send('join_room', { room: this.world.client.newRoom[0], x: random.x, y: random.y })

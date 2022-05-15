@@ -32,17 +32,6 @@
         },
         {
             "type": "Image",
-            "id": "76218d1f-2018-4dd7-8cc4-565a6d2386ea",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "dojosky"
-            },
-            "x": 760,
-            "y": 124
-        },
-        {
-            "type": "Image",
             "id": "0b0f65f9-638b-4650-84a7-b74b3e6c2831",
             "label": "trees",
             "components": [],
@@ -145,32 +134,6 @@
             "y": 577,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Ellipse",
-            "id": "60a0f022-157b-4027-b2a2-bc7fb36a439f",
-            "label": "dragonZone",
-            "scope": "CLASS",
-            "components": [],
-            "x": 140,
-            "y": 743,
-            "scaleX": 0.3494562002773523,
-            "scaleY": 0.4042581942734419,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Ellipse",
-            "id": "f6c9d98a-4ac9-4ec9-8c6d-6c9b5cc2969f",
-            "label": "feetZone",
-            "scope": "CLASS",
-            "components": [],
-            "x": 1092,
-            "y": 668,
-            "scaleX": 0.2699765262251914,
-            "scaleY": 0.20674984183994782,
-            "width": 128,
-            "height": 128
         }
     ],
     "plainObjects": [],

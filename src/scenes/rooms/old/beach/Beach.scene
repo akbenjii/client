@@ -32,17 +32,6 @@
         },
         {
             "type": "Image",
-            "id": "f31b2ae4-1d92-4221-b1df-5873ec6837f6",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "beachsky"
-            },
-            "x": 755,
-            "y": 76
-        },
-        {
-            "type": "Image",
             "id": "4012baa0-518e-4853-9e83-d20c84ba503d",
             "label": "lighthouse_door",
             "components": [

@@ -46,8 +46,6 @@ export default class PuffleRoundup extends RoomScene {
 
     create() {
         super.create()
-
-        //window.hide()
     }
 
 

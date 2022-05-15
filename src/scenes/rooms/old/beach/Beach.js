@@ -42,9 +42,6 @@ export default class Beach extends RoomScene {
         const bg = this.add.image(-25, -20, "beach", "bg");
         bg.setOrigin(0, 0);
 
-        // image
-        this.add.image(755, 76, "beachsky");
-
         // lighthouse_door
         const lighthouse_door = this.add.image(383, 214, "beach", "lighthouse_door");
         lighthouse_door.setOrigin(0, 0);

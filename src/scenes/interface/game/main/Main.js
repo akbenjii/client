@@ -375,7 +375,7 @@ export default class Main extends BaseScene {
         // help_button (components)
         const help_buttonButton = new Button(help_button);
         help_buttonButton.spriteName = "blue-button";
-        help_buttonButton.callback = () => this.settings.visible = true;
+        help_buttonButton.callback = () => this.interface.loadExternal('Stampbook');
         const help_buttonShowHint = new ShowHint(help_button);
         help_buttonShowHint.text = "Edit Account";
 

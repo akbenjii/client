@@ -18,15 +18,14 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "c454d8d7-eb11-44dc-818e-886854f516dc",
-            "label": "bg_1",
+            "id": "e7ab62b8-6032-4b57-b05e-00934179e5c3",
+            "label": "bg",
             "components": [],
             "texture": {
-                "key": "beta-coffee",
+                "key": "coffee",
                 "frame": "bg"
             },
-            "x": -51,
-            "y": -113,
+            "y": -7,
             "originX": 0,
             "originY": 0
         },
@@ -43,6 +42,48 @@
             "y": -11,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "5beaef60-3e4f-40a3-9fb3-01dc145bfeda",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "table"
+            },
+            "x": 414,
+            "y": 499,
+            "originX": 0.5217391304347826,
+            "originY": 0.5368421052631579
+        },
+        {
+            "type": "Image",
+            "id": "07c938ab-f75d-4718-bf8b-cf3a5b619d64",
+            "label": "counter_back",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "counter_back"
+            },
+            "x": 850,
+            "y": 458,
+            "originX": 0.27906976744186046,
+            "originY": 0.8363636363636363
+        },
+        {
+            "type": "Image",
+            "id": "4025e1a5-f97d-4dba-87dd-4633cf3557bf",
+            "label": "counter_front",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "counter_front"
+            },
+            "x": 808,
+            "y": 621,
+            "originX": 0.2864583333333333,
+            "originY": 0.8710801393728222
         },
         {
             "type": "Sprite",
@@ -63,6 +104,33 @@
             "originY": 0
         },
         {
+            "type": "Image",
+            "id": "9783525f-a865-4877-9de4-bf83985dcb6b",
+            "label": "sign_back",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "sign_back"
+            },
+            "x": 903,
+            "y": 632,
+            "originY": 0.4789915966386555
+        },
+        {
+            "type": "Image",
+            "id": "2af1eeae-7993-4b46-98c7-a63e57822b27",
+            "label": "sign_front",
+            "components": [],
+            "texture": {
+                "key": "coffee",
+                "frame": "sign_front"
+            },
+            "x": 880,
+            "y": 695,
+            "originX": 0.5190839694656488,
+            "originY": 0.8827586206896552
+        },
+        {
             "type": "Sprite",
             "id": "d978b25f-26ad-465e-993e-ef17d62727a8",
             "label": "board",
@@ -73,63 +141,13 @@
             "SimpleButton.callback": "() => this.onBoardClick()",
             "SimpleButton.pixelPerfect": true,
             "texture": {
-                "key": "beta-coffee",
+                "key": "coffee",
                 "frame": "board0001"
             },
             "x": 947,
             "y": 146,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "7ecf0877-fd40-49d0-8476-4e2312e20722",
-            "label": "coffee_machine",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "coffee_machine"
-            },
-            "x": 878,
-            "y": 401
-        },
-        {
-            "type": "Image",
-            "id": "4025e1a5-f97d-4dba-87dd-4633cf3557bf",
-            "label": "counter_front",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "coffee_bar"
-            },
-            "x": 808,
-            "y": 621,
-            "originX": 0.2864583333333333,
-            "originY": 0.8710801393728222
-        },
-        {
-            "type": "Image",
-            "id": "bed27b8e-8be0-4fb0-b14f-9e72c0f322f4",
-            "label": "coffee_sign_back",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "coffee_sign_back"
-            },
-            "x": 900,
-            "y": 635
-        },
-        {
-            "type": "Image",
-            "id": "67dbd9e2-ca61-4888-ab1d-a7f4388e871f",
-            "label": "coffee_sign",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "coffee_sign"
-            },
-            "x": 875,
-            "y": 639
         },
         {
             "type": "Image",
@@ -199,7 +217,7 @@
             "Button.spriteName": "beans",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
-            "ShowHint.text": "Play Beans",
+            "ShowHint.text": "Bean Counters",
             "texture": {
                 "key": "coffee",
                 "frame": "beans"
@@ -258,90 +276,13 @@
             "MoveTo.x": 750,
             "MoveTo.y": 392,
             "texture": {
-                "key": "beta-coffee",
+                "key": "coffee",
                 "frame": "door"
             },
-            "x": 721,
-            "y": 128,
+            "x": 724,
+            "y": 135,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "c0683d1e-a10b-4a46-ba6b-5416533d98d5",
-            "label": "table",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "coffee_table"
-            },
-            "x": 472,
-            "y": 493,
-            "originX": 0.5217391304347826,
-            "originY": 0.5368421052631579
-        },
-        {
-            "type": "Sprite",
-            "id": "35931bd9-b33e-48c9-b92b-2ef392cb57be",
-            "label": "cake",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "cake"
-            },
-            "x": 342,
-            "y": 613
-        },
-        {
-            "type": "Image",
-            "id": "16ac3441-05c1-4c06-822a-fde4d86a45af",
-            "label": "streamers",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "streamers"
-            },
-            "x": 763,
-            "y": 94
-        },
-        {
-            "type": "Image",
-            "id": "b105d046-72d3-430d-a246-5ad47a22a6af",
-            "label": "fire_extinguisher",
-            "components": [],
-            "texture": {
-                "key": "beta-coffee",
-                "frame": "fire_extinguisher"
-            },
-            "x": 100,
-            "y": 617
-        },
-        {
-            "type": "Image",
-            "id": "79197d53-508e-47d5-bab7-a45eb3b00046",
-            "label": "turt_box",
-            "components": [],
-            "texture": {
-                "key": "turt_box"
-            },
-            "x": 628,
-            "y": 743,
-            "scaleX": 0.3155435710555007,
-            "scaleY": 0.3155435710555007
-        },
-        {
-            "type": "Ellipse",
-            "id": "9a32a094-3774-479b-9fcb-ecb275b89a04",
-            "label": "turtZone",
-            "scope": "CLASS",
-            "components": [],
-            "x": 629,
-            "y": 739,
-            "scaleX": 1.133199938251877,
-            "scaleY": 1.1524622173037335,
-            "width": 128,
-            "height": 128
         }
     ],
     "plainObjects": [],
@@ -358,14 +299,11 @@
             "objectIds": [
                 "86153e9a-e9e2-4608-b038-65a44c58761b",
                 "86a80e93-528d-45f0-baa2-6392cf65d675",
-                "c0683d1e-a10b-4a46-ba6b-5416533d98d5",
-                "35931bd9-b33e-48c9-b92b-2ef392cb57be",
-                "b105d046-72d3-430d-a246-5ad47a22a6af",
-                "67dbd9e2-ca61-4888-ab1d-a7f4388e871f",
-                "bed27b8e-8be0-4fb0-b14f-9e72c0f322f4",
-                "7ecf0877-fd40-49d0-8476-4e2312e20722",
+                "2af1eeae-7993-4b46-98c7-a63e57822b27",
+                "9783525f-a865-4877-9de4-bf83985dcb6b",
                 "4025e1a5-f97d-4dba-87dd-4633cf3557bf",
-                "79197d53-508e-47d5-bab7-a45eb3b00046"
+                "07c938ab-f75d-4718-bf8b-cf3a5b619d64",
+                "5beaef60-3e4f-40a3-9fb3-01dc145bfeda"
             ]
         }
     ]

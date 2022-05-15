@@ -31,17 +31,6 @@
             "originY": 0
         },
         {
-            "type": "Image",
-            "id": "86975053-b43d-426d-8213-1e220a966ad6",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "mtnsky"
-            },
-            "x": 759,
-            "y": 146
-        },
-        {
             "type": "Sprite",
             "id": "eaf9e9be-ca78-4327-be22-3bddc6fb28a7",
             "label": "chair",

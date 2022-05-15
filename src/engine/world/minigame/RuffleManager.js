@@ -19,8 +19,8 @@ export default class RuffleManager {
 
         this.RuffleHolder.add.dom(760, 480, this.rufflePlayer)
 		
-		var ruffleplayer = document.getElementsByTagName("ruffle-player")
-		ruffleplayer[0].style.visibility = "hidden";
+		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
+		ruffleplayer.style.visibility = "hidden";
 
 		this.ruffle = window.RufflePlayer;
 		
@@ -29,68 +29,48 @@ export default class RuffleManager {
 		
 		window.killMinigame = this.killMinigame
 		window.killMinigame = killMinigame.bind(this)
+		
+		window.onSSEInit = this.onSSEInit
+		window.onSSEInit = onSSEInit.bind(this)
+		
+		this.swfInstance = this.rufflePlayer.load({
+			url: "assets/media/games/swf/sse.swf",
+			allowScriptAccess: true,
+			quality: "low",
+		});
 	}
 	
 
     handleLoadMinigame(minigame) {
 		
-		var ruffleplayer = document.getElementsByTagName("ruffle-player")
-		ruffleplayer[0].style.visibility = "visible";
+		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
+		ruffleplayer.style.visibility = "visible";
 		ruffleplayer.volume = 0.05;
 		
-        this.currentGame = this.rufflePlayer.load({
-				url: "assets/media/games/swf/" + minigame + "/loader.swf",
-				allowScriptAccess: true,
-				quality: "low",
-			});
+		ruffleplayer.loadMinigame(`${minigame}/bootstrap.swf`)
 		
 		this.inMinigame = true
             
+	}
+	
+	onSSEInit() {
+		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
+		
+		ruffleplayer.setMediaPath("/assets/media/games/swf/")
+		
+		console.log("sse + ruffle init")
 	}
 	
 	getMyPlayerHex(){
 		return this.world.getColor(this.world.client.penguin.color)
 	}
 	
-	checkCoins(){
-		var canvas = document.getElementsByTagName("ruffle-player")[0].shadowRoot.children[2].children[2]
-		var coins = canvas[0].getCoins()
-		return coins
-	}
-	
-	killMinigame(game, roomid, coins, stamps){
-		
-		// any anticheat should be done server-side, samuel, you idiot
-		
-		if (this.inMinigame != true){
-			return
-			// punish player for cheating?
-		}
-		
-		if (coins > 15000){
-			return
-			// punish player for cheating?
-		}
-		
-		stamps.forEach(stamp => checkLegit(stamp, this.crumbs));
-		
-		function checkLegit(stamp, crumbs){
-			if (crumbs.allowedstamps[game].allowedstamps.includes(stamp) == false){
-				return
-				// punish player for cheating?
-			}
-		}
-		
-		var ruffleplayer = document.getElementsByTagName("ruffle-player")
-		this.rufflePlayer.pause();
-		ruffleplayer[0].style.visibility = "hidden";
-		
+	killMinigame(game, roomid, coins){
+		document.getElementsByTagName("ruffle-player")[0].style.visibility = "hidden";
 		let room = this.crumbs.scenes.rooms[roomid]
         this.world.client.sendJoinRoom(roomid, room.key)
 		
-		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game, stamps: stamps })
-		window.show()
-		
+		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game })
 	}
 	
 }

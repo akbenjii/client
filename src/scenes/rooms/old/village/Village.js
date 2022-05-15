@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Button, MoveTo, SimpleButton } from '@components/components'
+import { Animation, Button, MoveTo } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -10,11 +10,7 @@ export default class Village extends RoomScene {
     constructor() {
         super("Village");
 
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.skiLift;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.bouncingtubes;
-        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Image>} */
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -25,9 +21,8 @@ export default class Village extends RoomScene {
             'dock': () => this.triggerRoom(800, 436, 280),
             'beach': () => this.triggerRoom(400, 920, 360),
             'mtn': () => this.triggerRoom(230, 840, 320),
-            'phone': () => this.triggerRoom(210, 1036, 520)
+            'phone': null
         }
-        this.roomAnims = true
 
         /* END-USER-CTR-CODE */
     }
@@ -42,54 +37,62 @@ export default class Village extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.image(-9, -19, "village", "bg");
+        const bg = this.add.image(-25, -15, "village", "bg");
         bg.setOrigin(0, 0);
 
-        // image
-        this.add.image(772, 182, "vilsky");
-
         // lodge_door
-        const lodge_door = this.add.image(1094, 308, "village", "lodge_door");
-        lodge_door.scaleX = 1.05;
-        lodge_door.scaleY = 1.05;
+        const lodge_door = this.add.image(1075, 318, "village", "lodge_door");
         lodge_door.setOrigin(0.27807486631016043, 0.5560538116591929);
 
         // lodge_stairs
-        this.add.image(989, 443, "village", "lodge_stairs");
+        this.add.image(972, 444, "village", "lodge_stairs");
 
         // lodge_front
-        const lodge_front = this.add.image(1105, 383, "village", "lodge_front");
+        const lodge_front = this.add.image(1087, 389, "village", "lodge_front");
         lodge_front.setOrigin(0.4807692307692308, 0.5352112676056338);
 
         // lodge_snow
-        const lodge_snow = this.add.image(1131, 425, "village", "lodge_snow");
+        const lodge_snow = this.add.image(1104, 429, "village", "lodge_snow");
         lodge_snow.setOrigin(0.5368217054263565, 0.4838709677419355);
 
-        // sports
-        this.add.image(1361, 380, "sports");
+        // phone
+        this.add.image(1373, 316, "village", "phone");
 
         // phone_door
-        const phone_door = this.add.image(1395, 382, "village", "phone_door");
+        const phone_door = this.add.image(1350, 387, "village", "phone_door");
         phone_door.setOrigin(0.22797927461139897, 0.6206896551724138);
 
-        // skiLift
-        const skiLift = this.add.sprite(311, 147, "ski-lift", "sprite 390001.png");
+        // phone_snow
+        const phone_snow = this.add.image(1361, 595, "village", "phone_snow");
+        phone_snow.setOrigin(0.509090909090909, 0.5272727272727272);
+
+        // lift
+        this.add.image(348, 200, "village", "lift");
 
         // smoke
-        const smoke = this.add.sprite(1135, 32, "village", "smoke0001");
+        const smoke = this.add.sprite(1110, 32, "village", "smoke0001");
 
-        // greentube
-        this.add.image(1449, 396, "greentube");
+        // left_sign
+        const left_sign = this.add.image(133, 677, "village", "left_sign");
+        left_sign.setOrigin(0.4444444444444444, 0.5217391304347826);
 
-        // tube
-        const tube = this.add.image(1498, 444, "tube");
-        tube.setOrigin(0.5, -0.06198347107438017);
+        // right_sign
+        const right_sign = this.add.image(1471, 668, "village", "right_sign");
+        right_sign.setOrigin(0.4861111111111111, 0.7831325301204819);
 
-        // bouncingtubes
-        const bouncingtubes = this.add.sprite(1400, 474, "bouncingtubes0001");
+        // tours
+        const tours = this.add.image(792, 483, "village", "tours");
+        tours.setOrigin(0.5, 0.8846153846153846);
+
+        // tours_text
+        const tours_text = this.add.image(794, 505.2201404552512, "village", "tours_text");
+        tours_text.setOrigin(0.5, 3.9212529261510674);
+
+        // chair
+        const chair = this.add.sprite(292, 150, "village", "chair0001");
 
         // lists
-        const sort = [bouncingtubes, tube];
+        const sort = [tours, tours_text];
 
         // lodge_door (components)
         const lodge_doorButton = new Button(lodge_door);
@@ -112,14 +115,12 @@ export default class Village extends RoomScene {
         smokeAnimation.key = "smoke";
         smokeAnimation.end = 5;
 
-        // bouncingtubes (components)
-        const bouncingtubesSimpleButton = new SimpleButton(bouncingtubes);
-        bouncingtubesSimpleButton.hoverCallback = () => this.onTubesOver();
-        bouncingtubesSimpleButton.hoverOutCallback = () => this.onTubesOut();
-        bouncingtubesSimpleButton.pixelPerfect = true;
+        // chair (components)
+        const chairAnimation = new Animation(chair);
+        chairAnimation.key = "chair";
+        chairAnimation.end = 179;
+        chairAnimation.repeatDelay = 1500;
 
-        this.skiLift = skiLift;
-        this.bouncingtubes = bouncingtubes;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -127,19 +128,6 @@ export default class Village extends RoomScene {
 
 
     /* START-USER-CODE */
-    onTubesOver() {
-        this.bouncingtubes.play('bouncingtubes')
-    }
-
-    onTubesOut() {
-        this.bouncingtubes.stopAfterRepeat()
-    }
-
-    create() {
-        super.create()
-
-        this.skiLift.play("ski-lift")
-    }
     /* END-USER-CODE */
 }
 

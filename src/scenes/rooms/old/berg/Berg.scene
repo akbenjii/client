@@ -1,5 +1,5 @@
 {
-    "id": "1521f95b-c562-4c24-809f-78a1ce89d4b1",
+    "id": "9e8218da-5f2b-4fd5-a41e-14361921e517",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -18,64 +18,39 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "4de334bf-c586-4891-9a19-fd4b2eba641c",
-            "label": "berg_bg",
+            "id": "009c916f-93cb-4de1-8ffe-0c3d0f4f5b83",
+            "label": "bg",
             "components": [],
             "texture": {
                 "key": "berg",
-                "frame": "bg.png"
+                "frame": "bg"
             },
-            "x": -6,
-            "y": 2,
+            "x": -18,
+            "y": -18,
             "originX": 0,
             "originY": 0
         },
         {
-            "type": "Image",
-            "id": "eb05c902-71d1-4761-9b8d-0e0cfebf2462",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "bergsky"
-            },
-            "x": 760,
-            "y": 105
-        },
-        {
-            "type": "Image",
-            "id": "916e8e98-1930-4d21-85e7-bf10d888855d",
-            "label": "scarf",
+            "type": "Sprite",
+            "id": "0f7a085f-d758-4ba2-98d1-1de608d7e4bf",
+            "label": "aqua",
             "scope": "CLASS",
-            "components": [],
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onAquaOver()",
+            "SimpleButton.callback": "() => this.onAquaClick()",
+            "SimpleButton.pixelPerfect": true,
+            "ShowHint.text": "Aqua Grabber",
             "texture": {
-                "key": "scarf"
+                "key": "berg",
+                "frame": "aqua0001"
             },
-            "x": 946,
-            "y": 495
-        },
-        {
-            "type": "Image",
-            "id": "cf4b65a5-aed0-4469-9342-63786cff51ce",
-            "label": "shoes",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "shoes"
-            },
-            "x": 735,
-            "y": 638
-        },
-        {
-            "type": "Image",
-            "id": "edb4ce77-7898-4a62-adc9-6c4d23584a66",
-            "label": "jacket",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "jacket"
-            },
-            "x": 432,
-            "y": 511
+            "x": 1255,
+            "y": 325,
+            "originY": 0.4014336917562724
         }
     ],
     "plainObjects": [],

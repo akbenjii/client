@@ -41,6 +41,8 @@ export default class Book extends BaseScene {
 
         // Update button visibility
         this.setButtonsVisible()
+		
+		if (this.addPageStamps) this.addPageStamps()
     }
 
     prevPage() {
@@ -62,9 +64,11 @@ export default class Book extends BaseScene {
     }
 
     setButtonsVisible() {
+		let visible
         // Not visible on first and last page
-        let visible = this.page > 0 && this.page < this.pages.length - 1
-
+		if (this.key == "Stampbook") { visible = this.page > 0 }
+		else { visible = this.page > 0 && this.page < this.pages.length - 1 } 
+        
         this.buttons.visible = visible
     }
 

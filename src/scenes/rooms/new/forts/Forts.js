@@ -179,18 +179,18 @@ export default class Forts extends RoomScene {
         this.rightFlag.play("fortsFlagRight");
 
         var now = new Date();
-        var timeInHours = now.getHours();
+        var timeInHours = now.getUTCHours();
         if (timeInHours > 12) {
             timeInHours = timeInHours - 12
             this.am_pm.text = "PM"
         }
-        var timeInMinutes = now.getMinutes();
+        var timeInMinutes = now.getUTCMinutes();
         if (timeInMinutes < 10) {
             this.clockTime.text = timeInHours + ":0" + timeInMinutes;
         } else {
             this.clockTime.text = timeInHours + ":" + timeInMinutes;
         }
-        var day = now.getDay()
+        var day = now.getUTCDay()
 
         if (day == 1) {
             this.day.text = "MONDAY"

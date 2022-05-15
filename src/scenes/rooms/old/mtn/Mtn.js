@@ -51,9 +51,6 @@ export default class Mtn extends RoomScene {
         const bg = this.add.image(-21, -19, "mtn", "bg");
         bg.setOrigin(0, 0);
 
-        // image
-        this.add.image(759, 146, "mtnsky");
-
         // chair
         const chair = this.add.sprite(846, 75, "mtn", "chair/chair0001");
         chair.setOrigin(0, 0);

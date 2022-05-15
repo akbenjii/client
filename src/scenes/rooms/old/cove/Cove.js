@@ -10,8 +10,6 @@ export default class Cove extends RoomScene {
     constructor() {
         super("Cove");
 
-        /** @type {Phaser.GameObjects.Ellipse} */
-        this.leiZone;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -37,9 +35,6 @@ export default class Cove extends RoomScene {
         // bg
         const bg = this.add.image(-2, -15, "cove", "bg");
         bg.setOrigin(0, 0);
-
-        // image
-        this.add.image(764, 146, "covesky");
 
         // cliff_1
         const cliff_1 = this.add.image(-5, 5, "cove", "cliff_1");
@@ -161,18 +156,8 @@ export default class Cove extends RoomScene {
         const hut_stool = this.add.image(1310, 493, "cove", "hut_stool");
         hut_stool.setOrigin(0.5, 0.5185185185185185);
 
-        // lei_box
-        const lei_box = this.add.image(897, 366, "lei_box");
-        lei_box.scaleX = 0.295239127186554;
-        lei_box.scaleY = 0.295239127186554;
-
-        // leiZone
-        const leiZone = this.add.ellipse(899, 366, 128, 128);
-        leiZone.scaleX = 0.8614687697832425;
-        leiZone.scaleY = 0.8614687697832425;
-
         // lists
-        const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, hut_wall, boards, rock_1, fire, chair_arm, binoculars, silver_board, rock_3, rock_2, rock_4, fg, lei_box];
+        const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, hut_wall, boards, rock_1, fire, chair_arm, binoculars, silver_board, rock_3, rock_2, rock_4, fg];
 
         // hut (components)
         const hutButton = new Button(hut);
@@ -187,7 +172,6 @@ export default class Cove extends RoomScene {
         fireAnimation.key = "fire";
         fireAnimation.end = 10;
 
-        this.leiZone = leiZone;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -195,19 +179,7 @@ export default class Cove extends RoomScene {
 
 
     /* START-USER-CODE */
-	
-	    create(){
-        super.create()
 
-        this.roomZones = {
-            'leiZone': { 
-                key: this.leiZone,
-                callback: () => this.interface.prompt.showItem(35007)
-            }
-        }
-
-        super.addZones()
-    }
     /* END-USER-CODE */
 }
 

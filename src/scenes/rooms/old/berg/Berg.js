@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { MoveTo, SimpleButton, ShowHint, Button } from '@components/components'
+import { MoveTo, SimpleButton, ShowHint } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -10,18 +10,18 @@ export default class Berg extends RoomScene {
     constructor() {
         super("Berg");
 
-        /** @type {Phaser.GameObjects.Image} */
-        this.scarf;
-        /** @type {Phaser.GameObjects.Image} */
-        this.shoes;
-        /** @type {Phaser.GameObjects.Image} */
-        this.jacket;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.aqua;
 
 
         /* START-USER-CTR-CODE */
-         this.roomTriggers = {
-            'yumyuck': () => this.triggerGame("yumyuck", 911)
-         }
+
+        this.roomAnims = true
+
+        this.roomTriggers = {
+            'aqua': () => this.triggerGame("aquaGrabber", 916)
+        }
+
         /* END-USER-CTR-CODE */
     }
 
@@ -34,25 +34,24 @@ export default class Berg extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // berg_bg
-        const berg_bg = this.add.image(-6, 2, "berg", "bg.png");
-        berg_bg.setOrigin(0, 0);
+        // bg
+        const bg = this.add.image(-18, -18, "berg", "bg");
+        bg.setOrigin(0, 0);
 
-        // image
-        this.add.image(760, 105, "bergsky");
+        // aqua
+        const aqua = this.add.sprite(1255, 325, "berg", "aqua0001");
+        aqua.setOrigin(0.5, 0.4014336917562724);
 
-        // scarf
-        const scarf = this.add.image(946, 495, "scarf");
+        // aqua (components)
+        const aquaSimpleButton = new SimpleButton(aqua);
+        aquaSimpleButton.hoverCallback = () => this.onAquaOver();
+        aquaSimpleButton.callback = () => this.onAquaClick();
+        aquaSimpleButton.pixelPerfect = true;
+        new MoveTo(aqua);
+        const aquaShowHint = new ShowHint(aqua);
+        aquaShowHint.text = "Aqua Grabber";
 
-        // shoes
-        const shoes = this.add.image(735, 638, "shoes");
-
-        // jacket
-        const jacket = this.add.image(432, 511, "jacket");
-
-        this.scarf = scarf;
-        this.shoes = shoes;
-        this.jacket = jacket;
+        this.aqua = aqua;
 
         this.events.emit("scene-awake");
     }
@@ -60,27 +59,44 @@ export default class Berg extends RoomScene {
 
     /* START-USER-CODE */
 
-    create(){
-        super.create()
-
-        this.roomZones = {
-            'scarf': { 
-                key: this.scarf,
-                callback: () => this.interface.prompt.showItem(35004)
-            },
-            'shoes': { 
-                key: this.shoes, 
-                callback: () => this.interface.prompt.showItem(35003)
-            },
-			'jacket': { 
-                key: this.jacket, 
-                callback: () => this.interface.prompt.showItem(35002)
-            }
-        }
-
-        super.addZones()
+    get aquaFrame() {
+        let frame = this.aqua.frame.name
+        return parseInt(frame.substr(frame.length - 4))
     }
 
+    create() {
+        super.create()
+
+        this.aqua.on('animationcomplete', (animation) => this.onAquaAnimComplete(animation))
+        this.aqua.play('aqua_float')
+    }
+
+    onAquaAnimComplete(animation) {
+        switch (animation.key) {
+            case 'aqua_lights_on':
+                this.aqua.play('aqua_lights_float')
+                break
+            case 'aqua_open':
+                this.aqua.play('aqua_float')
+                break
+            default:
+                break
+        }
+    }
+
+    onAquaOver() {
+        let frame = this.aquaFrame
+        if (frame <= 81 || frame >= 400) {
+            this.aqua.play('aqua_lights_on')
+        }
+    }
+
+    onAquaClick() {
+        let frame = this.aquaFrame
+        if (frame <= 180 || frame >= 348) {
+            this.aqua.play('aqua_open')
+        }
+    }
 
     /* END-USER-CODE */
 }

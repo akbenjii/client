@@ -18,28 +18,17 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "da491502-afff-4bb1-b8e0-b6cf102da406",
+            "id": "0547e328-4d9e-4ae5-a5bd-fb355f7d5b31",
             "label": "bg",
             "components": [],
             "texture": {
                 "key": "village",
                 "frame": "bg"
             },
-            "x": -9,
-            "y": -19,
+            "x": -25,
+            "y": -15,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "a2ef3720-1341-4b65-b190-6d1a00498134",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "vilsky"
-            },
-            "x": 772,
-            "y": 182
         },
         {
             "type": "Image",
@@ -57,10 +46,8 @@
                 "key": "village",
                 "frame": "lodge_door"
             },
-            "x": 1094,
-            "y": 308,
-            "scaleX": 1.05,
-            "scaleY": 1.05,
+            "x": 1075,
+            "y": 318,
             "originX": 0.27807486631016043,
             "originY": 0.5560538116591929
         },
@@ -73,8 +60,8 @@
                 "key": "village",
                 "frame": "lodge_stairs"
             },
-            "x": 989,
-            "y": 443
+            "x": 972,
+            "y": 444
         },
         {
             "type": "Image",
@@ -85,8 +72,8 @@
                 "key": "village",
                 "frame": "lodge_front"
             },
-            "x": 1105,
-            "y": 383,
+            "x": 1087,
+            "y": 389,
             "originX": 0.4807692307692308,
             "originY": 0.5352112676056338
         },
@@ -99,21 +86,22 @@
                 "key": "village",
                 "frame": "lodge_snow"
             },
-            "x": 1131,
-            "y": 425,
+            "x": 1104,
+            "y": 429,
             "originX": 0.5368217054263565,
             "originY": 0.4838709677419355
         },
         {
             "type": "Image",
-            "id": "8ef975ad-84f1-414a-b219-4b77ab3a1d52",
-            "label": "sports",
+            "id": "f0381b07-f18b-4510-9dc6-506b9b011521",
+            "label": "phone",
             "components": [],
             "texture": {
-                "key": "sports"
+                "key": "village",
+                "frame": "phone"
             },
-            "x": 1361,
-            "y": 380
+            "x": 1373,
+            "y": 316
         },
         {
             "type": "Image",
@@ -131,23 +119,36 @@
                 "key": "village",
                 "frame": "phone_door"
             },
-            "x": 1395,
-            "y": 382,
+            "x": 1350,
+            "y": 387,
             "originX": 0.22797927461139897,
             "originY": 0.6206896551724138
         },
         {
-            "type": "Sprite",
-            "id": "e473bd64-fe6e-42d1-8ad3-78346751baa5",
-            "label": "skiLift",
-            "scope": "CLASS",
+            "type": "Image",
+            "id": "70f6f844-57c4-44d2-8fb2-48a153053776",
+            "label": "phone_snow",
             "components": [],
             "texture": {
-                "key": "ski-lift",
-                "frame": "sprite 390001.png"
+                "key": "village",
+                "frame": "phone_snow"
             },
-            "x": 311,
-            "y": 147
+            "x": 1361,
+            "y": 595,
+            "originX": 0.509090909090909,
+            "originY": 0.5272727272727272
+        },
+        {
+            "type": "Image",
+            "id": "846691f5-1c86-454a-8c41-b6f10da5def6",
+            "label": "lift",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "lift"
+            },
+            "x": 348,
+            "y": 200
         },
         {
             "type": "Sprite",
@@ -162,48 +163,79 @@
                 "key": "village",
                 "frame": "smoke0001"
             },
-            "x": 1135,
+            "x": 1110,
             "y": 32
         },
         {
             "type": "Image",
-            "id": "b672b3df-4812-4aaf-ae9b-d8a456510d1d",
-            "label": "greentube",
+            "id": "90385a83-2876-4b63-acb7-cc4d4f0e540f",
+            "label": "left_sign",
             "components": [],
             "texture": {
-                "key": "greentube"
+                "key": "village",
+                "frame": "left_sign"
             },
-            "x": 1449,
-            "y": 396
+            "x": 133,
+            "y": 677,
+            "originX": 0.4444444444444444,
+            "originY": 0.5217391304347826
         },
         {
             "type": "Image",
-            "id": "0a4791f2-6adf-42b3-8787-3c1af21e4495",
-            "label": "tube",
+            "id": "00dfc36c-a436-4c05-af2e-c3a1a3cefd30",
+            "label": "right_sign",
             "components": [],
             "texture": {
-                "key": "tube"
+                "key": "village",
+                "frame": "right_sign"
             },
-            "x": 1498,
-            "y": 444,
-            "originY": -0.06198347107438017
+            "x": 1471,
+            "y": 668,
+            "originX": 0.4861111111111111,
+            "originY": 0.7831325301204819
+        },
+        {
+            "type": "Image",
+            "id": "e8099f35-1e7b-451e-a295-ad3348c46dd4",
+            "label": "tours",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "tours"
+            },
+            "x": 792,
+            "y": 483,
+            "originY": 0.8846153846153846
+        },
+        {
+            "type": "Image",
+            "id": "b11a8fd1-6631-47b7-afb6-828357023244",
+            "label": "tours_text",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "tours_text"
+            },
+            "x": 794,
+            "y": 505.2201404552512,
+            "originY": 3.9212529261510674
         },
         {
             "type": "Sprite",
-            "id": "f80a6c67-854e-41b5-89da-15300ac9e585",
-            "label": "bouncingtubes",
-            "scope": "CLASS",
+            "id": "afa23f89-e095-4594-9ade-31a3e78ae5ae",
+            "label": "chair",
             "components": [
-                "SimpleButton"
+                "Animation"
             ],
-            "SimpleButton.hoverCallback": "() => this.onTubesOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onTubesOut()",
-            "SimpleButton.pixelPerfect": true,
+            "Animation.key": "chair",
+            "Animation.end": 179,
+            "Animation.repeatDelay": 1500,
             "texture": {
-                "key": "bouncingtubes0001"
+                "key": "village",
+                "frame": "chair0001"
             },
-            "x": 1400,
-            "y": 474
+            "x": 292,
+            "y": 150
         }
     ],
     "plainObjects": [],
@@ -218,8 +250,8 @@
             "id": "528d71e2-a474-4325-aa76-2ccaa2e1016f",
             "label": "sort",
             "objectIds": [
-                "f80a6c67-854e-41b5-89da-15300ac9e585",
-                "0a4791f2-6adf-42b3-8787-3c1af21e4495"
+                "e8099f35-1e7b-451e-a295-ad3348c46dd4",
+                "b11a8fd1-6631-47b7-afb6-828357023244"
             ]
         }
     ]

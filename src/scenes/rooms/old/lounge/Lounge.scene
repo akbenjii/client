@@ -43,7 +43,7 @@
             "Button.pixelPerfect": true,
             "MoveTo.x": 940,
             "MoveTo.y": 520,
-            "ShowHint.text": "astro_hint",
+            "ShowHint.text": "Astro Barrier",
             "texture": {
                 "key": "lounge",
                 "frame": "astro"
@@ -67,7 +67,7 @@
             "Button.pixelPerfect": true,
             "MoveTo.x": 672,
             "MoveTo.y": 512,
-            "ShowHint.text": "thinice_hint",
+            "ShowHint.text": "Thin Ice"
             "texture": {
                 "key": "lounge",
                 "frame": "ice"

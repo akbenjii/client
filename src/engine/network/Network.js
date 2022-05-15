@@ -20,6 +20,8 @@ export default class Network {
         this.lastLoginScene = null
 
         this.worldName
+
+
     }
 
     connectLogin(saveUsername, savePassword, onConnect) {

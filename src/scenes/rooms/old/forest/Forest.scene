@@ -32,17 +32,6 @@
         },
         {
             "type": "Image",
-            "id": "63669630-5b2a-4abe-b3b9-997ba18ef49f",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "forestsky"
-            },
-            "x": 757,
-            "y": 150
-        },
-        {
-            "type": "Image",
             "id": "6e3db976-9917-4d00-b9c1-bf0c18983238",
             "label": "rock0001",
             "components": [],

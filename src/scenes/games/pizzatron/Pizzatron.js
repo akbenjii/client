@@ -46,8 +46,6 @@ export default class Pizzatron extends RoomScene {
 
     create() {
         super.create()
-
-        //window.hide()
 	}
 
     /* END-USER-CODE */

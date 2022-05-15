@@ -14,8 +14,6 @@ export default class Dock extends RoomScene {
         this.boat;
         /** @type {Phaser.GameObjects.Sprite} */
         this.rings;
-        /** @type {Phaser.GameObjects.Image} */
-        this.dockglasses;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -44,9 +42,6 @@ export default class Dock extends RoomScene {
         // dock_bg_2005
         const dock_bg_2005 = this.add.image(-48, 0, "dock", "bg");
         dock_bg_2005.setOrigin(0, 0);
-
-        // image
-        this.add.image(760, 59, "docksky");
 
         // post_1
         const post_1 = this.add.image(443, 592, "dock", "post_1");
@@ -100,12 +95,6 @@ export default class Dock extends RoomScene {
         zone.isFilled = true;
         zone.fillColor = 65280;
 
-        // sign
-        this.add.image(782, 158, "sign");
-
-        // dockglasses
-        const dockglasses = this.add.image(778, 397, "dockglasses");
-
         // lists
         const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box];
 
@@ -132,7 +121,6 @@ export default class Dock extends RoomScene {
 
         this.boat = boat;
         this.rings = rings;
-        this.dockglasses = dockglasses;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -151,15 +139,6 @@ export default class Dock extends RoomScene {
             callback: () => this.floatBoat(),
             loop: true
         })
-		
-		this.roomZones = {
-            'dockglasses': { 
-                key: this.dockglasses,
-                callback: () => this.interface.prompt.showItem(35000)
-            }
-        }
-		
-		super.addZones()
     }
 
     onRingsOver() {

@@ -18,41 +18,16 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "afe103f5-0272-4e27-9cda-ef96bc562b52",
+            "id": "21bbb0a2-0327-46f9-8472-29a729848d75",
             "label": "bg",
             "components": [],
             "texture": {
                 "key": "town",
                 "frame": "bg"
             },
-            "x": -11,
-            "y": 1,
+            "x": -10,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "55d7df53-862b-4647-93e3-495b1f43206c",
-            "label": "image_5",
-            "components": [],
-            "texture": {
-                "key": "betatown",
-                "frame": "bg"
-            },
-            "x": 756,
-            "y": 247
-        },
-        {
-            "type": "Image",
-            "id": "183b3ac4-b477-455a-a732-069c7efcbba7",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "betatown",
-                "frame": "sky"
-            },
-            "x": 760,
-            "y": 172
         },
         {
             "type": "Image",
@@ -63,10 +38,38 @@
                 "key": "town",
                 "frame": "fg"
             },
-            "x": -64,
-            "y": 975,
+            "x": -63,
+            "y": 976,
             "originX": 0,
             "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "ee943a05-82e6-40f3-b909-728c73d766d2",
+            "label": "left_sign",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "left_sign"
+            },
+            "x": 179,
+            "y": 450,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "51de414e-abf0-47b2-ba0b-07aa8057153f",
+            "label": "right_sign",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "right_sign"
+            },
+            "x": 1286,
+            "y": 465,
+            "originX": 0,
+            "originY": 0
         },
         {
             "type": "Image",
@@ -85,8 +88,8 @@
                 "key": "town",
                 "frame": "coffee_door"
             },
-            "x": 447,
-            "y": 304,
+            "x": 449,
+            "y": 305,
             "originX": 0,
             "originY": 0
         },
@@ -108,7 +111,7 @@
                 "frame": "gift_door"
             },
             "x": 995,
-            "y": 293,
+            "y": 294,
             "originX": 0,
             "originY": 0
         },
@@ -125,11 +128,11 @@
             "MoveTo.x": 684,
             "MoveTo.y": 410,
             "texture": {
-                "key": "betatown",
+                "key": "town",
                 "frame": "canopy"
             },
             "x": 692,
-            "y": 463,
+            "y": 464,
             "originX": 0.49606299212598426,
             "originY": 0.9403669724770642
         },
@@ -151,7 +154,7 @@
                 "frame": "canopy_lights0001"
             },
             "x": 648,
-            "y": 547,
+            "y": 548,
             "originX": 0,
             "originY": 7.142857142857143,
             "visible": false
@@ -166,7 +169,7 @@
                 "frame": "canopy_stars"
             },
             "x": 647,
-            "y": 547,
+            "y": 548,
             "originX": 0,
             "originY": 7.142857142857143
         },
@@ -188,7 +191,7 @@
                 "frame": "disco_lights0007"
             },
             "x": 766,
-            "y": 331,
+            "y": 332,
             "originX": 0,
             "originY": 0,
             "visible": false
@@ -200,11 +203,11 @@
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "betatown",
+                "key": "town",
                 "frame": "disco"
             },
-            "x": 755,
-            "y": 230,
+            "x": 648,
+            "y": 229,
             "originX": 0,
             "originY": 0
         },
@@ -212,14 +215,18 @@
             "type": "Sprite",
             "id": "c7026824-f8f6-4305-8fe6-dc81d73f5d02",
             "label": "lights",
-            "scope": "CLASS",
-            "components": [],
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "lights",
+            "Animation.end": 69,
+            "Animation.repeatDelay": 1,
             "texture": {
-                "key": "betatown",
+                "key": "town",
                 "frame": "lights0001"
             },
             "x": 518,
-            "y": -76,
+            "y": -75,
             "originX": 0,
             "originY": 0
         },
@@ -233,7 +240,7 @@
                 "frame": "box_1"
             },
             "x": 973,
-            "y": 431,
+            "y": 432,
             "originX": 0.49382716049382713,
             "originY": 0.6268656716417911
         },
@@ -247,7 +254,7 @@
                 "frame": "box_2"
             },
             "x": 954,
-            "y": 482,
+            "y": 483,
             "originX": 0.49504950495049505,
             "originY": 0.6736842105263158
         },
@@ -261,7 +268,7 @@
                 "frame": "box_3"
             },
             "x": 1148,
-            "y": 580,
+            "y": 581,
             "originX": 0.4943820224719101,
             "originY": 0.5569620253164557
         },
@@ -275,7 +282,7 @@
                 "frame": "chair_2"
             },
             "x": 436,
-            "y": 461,
+            "y": 462,
             "originX": 0.49382716049382713,
             "originY": 0.27358490566037735
         },
@@ -289,7 +296,7 @@
                 "frame": "table_2"
             },
             "x": 485,
-            "y": 522,
+            "y": 523,
             "originY": 0.7864077669902912
         },
         {
@@ -302,7 +309,7 @@
                 "frame": "chair_1"
             },
             "x": 402,
-            "y": 510,
+            "y": 511,
             "originX": 0.49411764705882355,
             "originY": 0.2857142857142857
         },
@@ -316,99 +323,9 @@
                 "frame": "table_1"
             },
             "x": 455,
-            "y": 574,
+            "y": 575,
             "originX": 0.49572649572649574,
             "originY": 0.7830188679245284
-        },
-        {
-            "type": "Image",
-            "id": "d1efa87a-eafb-41dd-b607-938b50706ef5",
-            "label": "image_1",
-            "components": [],
-            "texture": {
-                "key": "betatown",
-                "frame": "cake"
-            },
-            "x": 772.7497414706952,
-            "y": 836.0031023516576,
-            "originX": 0.48845558252227883,
-            "originY": 0.7346987529582685
-        },
-        {
-            "type": "Image",
-            "id": "d1f444d0-650b-4ed9-9d07-7887157b9c4f",
-            "label": "image_2",
-            "components": [],
-            "texture": {
-                "key": "betatown",
-                "frame": "hatbox"
-            },
-            "x": 518.7497414706952,
-            "y": 817.5860048028163,
-            "originX": 0.44985109219915337,
-            "originY": 0.64471146786646
-        },
-        {
-            "type": "Image",
-            "id": "d2f23eee-1cf3-49f7-8d20-9a87d86ce1af",
-            "label": "image_3",
-            "components": [],
-            "texture": {
-                "key": "betatown",
-                "frame": "shades_right"
-            },
-            "x": 1025.333678039073,
-            "y": 831.8362633321211,
-            "originX": 0.5645173182130411,
-            "originY": 0.682822800362221
-        },
-        {
-            "type": "Image",
-            "id": "a1c85473-fcda-4be1-a348-b815794bf8ac",
-            "label": "image_4",
-            "components": [],
-            "texture": {
-                "key": "betatown",
-                "frame": "banner"
-            },
-            "x": 391,
-            "y": 194
-        },
-        {
-            "type": "Ellipse",
-            "id": "d1833ffc-a37c-46e9-8c8d-f54b8e56ee1f",
-            "label": "hatZone",
-            "scope": "CLASS",
-            "components": [],
-            "x": 527,
-            "y": 793,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Ellipse",
-            "id": "9f2fcdcc-2bce-4d38-8774-5730fb2f4812",
-            "label": "shadesZone",
-            "scope": "CLASS",
-            "components": [],
-            "x": 1021,
-            "y": 793,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Image",
-            "id": "82255d36-f445-4a45-a4c0-48a6f51ba6af",
-            "label": "image_6",
-            "components": [],
-            "texture": {
-                "key": "betatown",
-                "frame": "streamers"
-            },
-            "x": 803.5231173313728,
-            "y": 993.3405305450697,
-            "originX": 0.5262638171044299,
-            "originY": 1.2533863482462706
         }
     ],
     "plainObjects": [],
@@ -433,11 +350,7 @@
                 "52130162-4cfc-4f67-b4b2-fa16fd824ee2",
                 "bfabdf1f-c4c7-4ece-8599-ca93c8326447",
                 "cae986f7-795f-4d18-9618-d35f387c2e18",
-                "45fa492b-a213-4d30-acbe-ebe11fa805c1",
-                "d1efa87a-eafb-41dd-b607-938b50706ef5",
-                "d2f23eee-1cf3-49f7-8d20-9a87d86ce1af",
-                "d1f444d0-650b-4ed9-9d07-7887157b9c4f",
-                "82255d36-f445-4a45-a4c0-48a6f51ba6af"
+                "45fa492b-a213-4d30-acbe-ebe11fa805c1"
             ]
         }
     ]

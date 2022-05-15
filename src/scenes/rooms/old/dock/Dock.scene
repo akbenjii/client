@@ -31,17 +31,6 @@
         },
         {
             "type": "Image",
-            "id": "3f9aecd0-a0d4-4e52-b26e-720f05879f3d",
-            "label": "image",
-            "components": [],
-            "texture": {
-                "key": "docksky"
-            },
-            "x": 760,
-            "y": 59
-        },
-        {
-            "type": "Image",
             "id": "363b2306-4ab4-4dee-8ae4-e8f85beb4c8c",
             "label": "post_1",
             "components": [],
@@ -234,29 +223,6 @@
             "fillColor": "#00ff00",
             "width": 135,
             "height": 160
-        },
-        {
-            "type": "Image",
-            "id": "e21f1b49-e68d-4579-8f98-5255e487157f",
-            "label": "sign",
-            "components": [],
-            "texture": {
-                "key": "sign"
-            },
-            "x": 782,
-            "y": 158
-        },
-        {
-            "type": "Image",
-            "id": "aaa4af9a-bfe7-4865-98de-cc43346dbb7c",
-            "label": "dockglasses",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "dockglasses"
-            },
-            "x": 778,
-            "y": 397
         }
     ],
     "plainObjects": [],

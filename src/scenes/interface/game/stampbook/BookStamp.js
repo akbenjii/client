@@ -22,7 +22,7 @@ export default class BookStamp extends BaseContainer {
     addStamp() {
 		// shadow
         const shadow = this.scene.add.image(4, 5, `stamps/${this.id}`);
-        shadow.alpha = 0.5;
+        shadow.alpha = 0.3;
         shadow.tintFill = true;
         shadow.tintTopLeft = 0;
         shadow.tintTopRight = 0;
@@ -36,12 +36,8 @@ export default class BookStamp extends BaseContainer {
 
         // locked
         const locked = this.scene.add.image(0, 0, `stamps/${this.id}`);
-        locked.alpha = 0.8;
+        locked.alpha = 0.5;
         locked.tintFill = true;
-        locked.tintTopLeft = 0;
-        locked.tintTopRight = 0;
-        locked.tintBottomLeft = 0;
-        locked.tintBottomRight = 0;
         this.add(locked);
 		
 		this.shadow = shadow

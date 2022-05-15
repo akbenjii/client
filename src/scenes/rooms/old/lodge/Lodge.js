@@ -53,7 +53,8 @@ export default class Lodge extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.sprite(0, 0, "lodge", "bg");
+        const bg = this.add.sprite(766.729415226033, 491.21569204338834, "lodge", "bg");
+        bg.setOrigin(0.5043248169833117, 0.5115150842334583);
 
         // door
         const door = this.add.image(135, 456, "lodge", "door");
