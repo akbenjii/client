@@ -101,13 +101,12 @@ export default class Lodge extends RoomScene {
         table3_1_1.setOrigin(0.5, 0.6985294117647058);
 
         // fishing_door
-        const fishing_door = this.add.image(959, 274, "lodge", "fishing_door");
+        const fishing_door = this.add.image(951, 254, "lodge", "fishing_door");
         fishing_door.setOrigin(0.2916666666666667, 0.3961218836565097);
 
         // fish
-        const fish = this.add.sprite(1021, 390, "lodge", "fish0001");
+        const fish = this.add.sprite(1015, 370, "lodge", "fish0001");
         fish.setOrigin(0, 0);
-        fish.visible = false;
 
         // rods
         this.add.image(828, 351, "lodge", "rods");

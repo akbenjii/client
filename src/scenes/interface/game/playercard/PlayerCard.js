@@ -74,7 +74,7 @@ export default class PlayerCard extends BaseContainer {
         stats.add(coins);
 
         // username
-        const username = scene.add.text(19, -238, "", {});
+        const username = scene.add.text(0, -238, "", {});
         username.setOrigin(0.5, 0.5);
         username.text = "Username";
         username.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":360,"fontFamily": "Burbank Small", "fontSize": "32px", "fontStyle": "bold" });
@@ -190,10 +190,10 @@ export default class PlayerCard extends BaseContainer {
     _showCard(penguin, items = penguin) {
         // Text
         if (penguin.username_approved == 1) {
-			this.username.text = penguin.username
-		} else {
-			this.username.text = "P" + penguin.id
-		}
+            this.username.text = penguin.username
+        } else {
+            this.username.text = "P" + penguin.id
+        }
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)

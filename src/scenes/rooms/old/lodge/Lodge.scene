@@ -234,8 +234,8 @@
                 "key": "lodge",
                 "frame": "fishing_door"
             },
-            "x": 959,
-            "y": 274,
+            "x": 951,
+            "y": 254,
             "originX": 0.2916666666666667,
             "originY": 0.3961218836565097
         },
@@ -249,11 +249,10 @@
                 "key": "lodge",
                 "frame": "fish0001"
             },
-            "x": 1021,
-            "y": 390,
+            "x": 1015,
+            "y": 370,
             "originX": 0,
-            "originY": 0,
-            "visible": false
+            "originY": 0
         },
         {
             "type": "Image",

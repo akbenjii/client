@@ -131,7 +131,6 @@
                     "label": "username",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 19,
                     "y": -238,
                     "originX": 0.5,
                     "originY": 0.5,

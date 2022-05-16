@@ -24,7 +24,7 @@ export default class Rink extends RoomScene {
     /** @returns {void} */
     _preload() {
 
-        this.load.pack("rink-pack", "assets/media/rooms/rink/rink-pack.json");
+        this.load.pack("rink-pack", "assets/media/rooms/old/rink/rink-pack.json");
     }
 
     /** @returns {void} */
@@ -49,6 +49,7 @@ export default class Rink extends RoomScene {
         // ball
         const ball = this.add.image(765, 537, "rink", "ball");
         ball.setOrigin(0.5, 0.7037037);
+        ball.visible = false;
 
         // fish_dogs
         const fish_dogs = this.add.image(166, 242, "rink", "fish_dogs");

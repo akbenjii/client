@@ -46,7 +46,14 @@
             "type": "Image",
             "id": "aefd64d3-7552-4576-b2d1-f8fbde38950f",
             "label": "puffle_rescue",
-            "components": [],
+            "components": [
+                "MoveTo",
+                "SimpleButton",
+                "ShowHint"
+            ],
+            "MoveTo.x": 590,
+            "MoveTo.y": 380,
+            "ShowHint.text": "Puffle Rescue",
             "texture": {
                 "key": "new-mine",
                 "frame": "puffle_rescue"
@@ -231,7 +238,12 @@
             "type": "Image",
             "id": "4f46bc03-a525-4a7f-bd11-5d5d1848cd5a",
             "label": "puffle_rescue_table",
-            "components": [],
+            "components": [
+                "MoveTo",
+                "SimpleButton"
+            ],
+            "MoveTo.x": 590,
+            "MoveTo.y": 380,
             "texture": {
                 "key": "new-mine",
                 "frame": "puffle_rescue_table"

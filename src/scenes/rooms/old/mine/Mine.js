@@ -23,8 +23,8 @@ export default class Mine extends RoomScene {
         this.roomTriggers = {
             'cave': () => this.triggerRoom(806, 1280, 520),
             'cart': () => this.triggerGame('cartsurfer', 905),
-			'underground': () => this.unimplementedPrompt(),
-			'rescue': () => this.unimplementedPrompt()
+            'underground': () => this.unimplementedPrompt(),
+            'rescue': () => this.triggerGame('puffleRescue', 927),
         }
 
         this.roomAnims = true
@@ -49,7 +49,7 @@ export default class Mine extends RoomScene {
         this.add.image(766, 163, "new-mine", "mine_door");
 
         // puffle_rescue
-        this.add.image(498, 181, "new-mine", "puffle_rescue");
+        const puffle_rescue = this.add.image(498, 181, "new-mine", "puffle_rescue");
 
         // lamp_png
         this.add.image(677, 234, "mine", "lamp.png");
@@ -107,6 +107,14 @@ export default class Mine extends RoomScene {
         // lists
         const sort = [cart1_png, shovel_png, cart2_png];
 
+        // puffle_rescue (components)
+        const puffle_rescueMoveTo = new MoveTo(puffle_rescue);
+        puffle_rescueMoveTo.x = 590;
+        puffle_rescueMoveTo.y = 380;
+        new SimpleButton(puffle_rescue);
+        const puffle_rescueShowHint = new ShowHint(puffle_rescue);
+        puffle_rescueShowHint.text = "Puffle Rescue";
+
         // rectangle (components)
         const rectangleSimpleButton = new SimpleButton(rectangle);
         rectangleSimpleButton.hoverCallback = () => this.onCartHover();
@@ -114,6 +122,12 @@ export default class Mine extends RoomScene {
         new MoveTo(rectangle);
         const rectangleShowHint = new ShowHint(rectangle);
         rectangleShowHint.text = "Cart Surfer";
+
+        // puffle_rescue_table (components)
+        const puffle_rescue_tableMoveTo = new MoveTo(puffle_rescue_table);
+        puffle_rescue_tableMoveTo.x = 590;
+        puffle_rescue_tableMoveTo.y = 380;
+        new SimpleButton(puffle_rescue_table);
 
         this.cart = cart;
         this.rectangle = rectangle;
@@ -125,8 +139,8 @@ export default class Mine extends RoomScene {
 
 
     /* START-USER-CODE */
-	
-	create() {
+
+    create() {
         super.create()
         this.fire.play('lampflame')
     }

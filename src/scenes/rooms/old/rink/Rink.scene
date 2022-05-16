@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "yukon/assets/media/rooms/rink/rink-pack.json"
+            "client/assets/media/rooms/old/rink/rink-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Rink",
@@ -83,7 +83,8 @@
             },
             "x": 765,
             "y": 537,
-            "originY": 0.7037037
+            "originY": 0.7037037,
+            "visible": false
         },
         {
             "type": "Image",

@@ -26,8 +26,8 @@ const cpforever = {
         default: 'matter',
         matter: {
             debug: {
-                renderFill: false,
-                renderLine: false,
+                renderFill: (window.location.hostname == 'localhost') ? true : false,
+                renderLine: (window.location.hostname == 'localhost') ? true : false,
                 showInternalEdges: true
             },
             gravity: false
