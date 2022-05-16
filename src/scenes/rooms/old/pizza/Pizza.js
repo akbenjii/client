@@ -23,8 +23,6 @@ export default class Pizza extends RoomScene {
         this.steam;
         /** @type {Phaser.GameObjects.Sprite} */
         this.fire;
-        /** @type {Phaser.GameObjects.Ellipse} */
-        this.vikZone;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -168,11 +166,6 @@ export default class Pizza extends RoomScene {
         fire.scaleX = 1.02;
         fire.scaleY = 1.02;
 
-        // vikZone
-        const vikZone = this.add.ellipse(269, 787, 128, 128);
-        vikZone.scaleX = 0.3095944310267841;
-        vikZone.scaleY = 0.35722380828374856;
-
         // lists
         const sort = [piano_png, chair1_png, chair2_png, chair3_png, chair4_png, chair5_png, chair6_png, candle_fire10001_png, table1_png, candle_fire2, table2_png, candle_fire3, table3_png, big_table_png, register0001_png, book_hover0001_png];
 
@@ -212,7 +205,6 @@ export default class Pizza extends RoomScene {
         this.book_hover0001_png = book_hover0001_png;
         this.steam = steam;
         this.fire = fire;
-        this.vikZone = vikZone;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -228,14 +220,6 @@ export default class Pizza extends RoomScene {
         this.candle_fire10001_png.play("candles")
         this.candle_fire2.play("candles")
         this.candle_fire3.play("candles")
-        this.roomZones = {
-            'vikZone': { 
-                key: this.vikZone,
-                callback: () => this.interface.prompt.showItem(35011)
-            }
-        }
-
-        super.addZones()
     }
 
     onRegOver() {
