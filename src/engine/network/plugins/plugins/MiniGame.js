@@ -37,6 +37,7 @@ export default class MiniGame extends Plugin {
 	
 	endRuffleMinigame(args){
 		this.client.coins = args.coins
+		this.client.stamps = args.stamps
 		let prompt = this.world.game.scene.getScene('InterfaceController').prompt
 		if (args.coinsEarned == null){
 			args.coinsEarned = 0

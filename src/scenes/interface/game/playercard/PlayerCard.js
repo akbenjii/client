@@ -26,6 +26,8 @@ export default class PlayerCard extends BaseContainer {
         /** @type {Phaser.GameObjects.Text} */
         this.coins;
         /** @type {Phaser.GameObjects.Text} */
+        this.coins_1;
+        /** @type {Phaser.GameObjects.Text} */
         this.username;
         /** @type {InventorySort} */
         this.inventorySort;
@@ -62,16 +64,27 @@ export default class PlayerCard extends BaseContainer {
         const stats = scene.add.container(-13, 255);
         this.add(stats);
 
+        // stamps_btn
+        const stamps_btn = scene.add.image(-132, 23, "main", "blue-button");
+        stats.add(stamps_btn);
+
         // card_coin
-        const card_coin = scene.add.image(177, 0, "main", "card-coin");
+        const card_coin = scene.add.image(-133, -29, "main", "card-coin");
         stats.add(card_coin);
 
         // coins
-        const coins = scene.add.text(0, 0, "", {});
+        const coins = scene.add.text(50, -27, "", {});
         coins.setOrigin(0.5, 0.5);
         coins.text = "Your Coins: 000000";
-        coins.setStyle({ "align": "right", "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
+        coins.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
         stats.add(coins);
+
+        // coins_1
+        const coins_1 = scene.add.text(50, 23, "", {});
+        coins_1.setOrigin(0.5, 0.5);
+        coins_1.text = "Your Stamps: 69/420";
+        coins_1.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
+        stats.add(coins_1);
 
         // username
         const username = scene.add.text(0, -238, "", {});
@@ -123,6 +136,11 @@ export default class PlayerCard extends BaseContainer {
         // card_photo (components)
         new Interactive(card_photo);
 
+        // stamps_btn (components)
+        const stamps_btnButton = new Button(stamps_btn);
+        stamps_btnButton.spriteName = "blue-button";
+        stamps_btnButton.callback = () => { this.interface.loadExternal('Stampbook') };
+
         // x_button (components)
         const x_buttonButton = new Button(x_button);
         x_buttonButton.spriteName = "blue-button";
@@ -138,6 +156,7 @@ export default class PlayerCard extends BaseContainer {
         this.buttons = buttons;
         this.stats = stats;
         this.coins = coins;
+        this.coins_1 = coins_1;
         this.username = username;
         this.inventorySort = inventorySort;
         this.inventory = inventory;

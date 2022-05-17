@@ -193,9 +193,9 @@ export default class Buttons extends BaseContainer {
         }
 
         if (this.world.client.isModerator) {
-            this.enableButton('profile', 'mute-icon', 'Warn Player')
+            this.enableButton('report', 'mute-icon', 'Warn Player')
             this.enableButton('ignore', 'ignore-icon', 'Kick Player')
-            this.enableButton('report', 'mod-icon', 'Ban Player')
+			this.enableButton('profile', 'help-icon', 'Find Player')
         }
 
         if (!['online', 'offline'].includes(relationship)) {
@@ -241,12 +241,7 @@ export default class Buttons extends BaseContainer {
     }
 
     onFindClick() {
-		if (this.world.client.isModerator) {
-            this.showWarn()
-        }
-		else {
-        	this.network.send('buddy_find', { id: this.parentContainer.id })
-		}
+        this.network.send('buddy_find', { id: this.parentContainer.id })
     }
 
     onIglooClick() {
@@ -265,7 +260,7 @@ export default class Buttons extends BaseContainer {
 
     onReportClick() {
         if (this.world.client.isModerator) {
-            this.showBan()
+            this.showWarn()
         }
     }
 

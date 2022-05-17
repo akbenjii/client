@@ -99,6 +99,22 @@
                     "list": [
                         {
                             "type": "Image",
+                            "id": "7ddd32c4-e02e-4526-8380-775b7c5b3e8b",
+                            "label": "stamps_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "blue-button",
+                            "Button.callback": "() => { this.interface.loadExternal('Stampbook') }",
+                            "texture": {
+                                "key": "main",
+                                "frame": "blue-button"
+                            },
+                            "x": -132,
+                            "y": 23
+                        },
+                        {
+                            "type": "Image",
                             "id": "6e0b3192-1f75-484c-ba84-d76ccd3a3345",
                             "label": "card_coin",
                             "components": [],
@@ -106,7 +122,8 @@
                                 "key": "main",
                                 "frame": "card-coin"
                             },
-                            "x": 177
+                            "x": -133,
+                            "y": -29
                         },
                         {
                             "type": "Text",
@@ -114,11 +131,28 @@
                             "label": "coins",
                             "scope": "CLASS",
                             "components": [],
+                            "x": 50,
+                            "y": -27,
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "Your Coins: 000000",
                             "fixedWidth": 300,
-                            "align": "right",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "24px",
+                            "color": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1454e881-7bde-480a-b858-7a0708d1cefc",
+                            "label": "coins_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 50,
+                            "y": 23,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your Stamps: 69/420",
+                            "fixedWidth": 300,
                             "fontFamily": "Burbank Small",
                             "fontSize": "24px",
                             "color": "#000000ff"

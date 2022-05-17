@@ -17,6 +17,7 @@ const crumbs = {
     secret_frames: require(`${assets}/secret_frames.json`),
     strings: require(`${assets}/strings.json`),
     worlds: require(`${assets}/worlds.json`)
+    stamps: require(`${assets}/stamps.json`)
 }
 
 try {

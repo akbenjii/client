@@ -51,6 +51,7 @@ export default class Preload extends BaseScene {
         this.crumbs.secretFrames = crumbs.secret_frames
         this.crumbs.strings = crumbs.strings
         this.crumbs.worlds = crumbs.worlds
+        this.crumbs.stamps = crumbs.stamps
 
         // Start
         this.interface.hideLoading()
