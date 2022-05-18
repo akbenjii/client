@@ -17,7 +17,7 @@ export default class BookStamp extends BaseContainer {
 			this.addStamp()
 		}
 		
-		this.locked = (!this.world.client.stamps.includes(id))
+		this.unlocked = (this.world.client.stamps.includes(id))
 
     }
 
@@ -36,7 +36,7 @@ export default class BookStamp extends BaseContainer {
         const stamp = this.scene.add.image(0, 0, `stamps/${this.id}`);
         this.add(stamp);
 
-		if (this.locked) {
+		if (!this.unlocked) {
 			
         	// locked
         	const locked = this.scene.add.image(0, 0, `stamps/${this.id}`);

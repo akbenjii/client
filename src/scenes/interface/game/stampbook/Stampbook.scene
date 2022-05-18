@@ -3834,6 +3834,70 @@
                     "y": 899
                 }
             ]
+        },
+        {
+            "type": "Container",
+            "id": "bf9f2082-0805-4061-981e-508f96765900",
+            "label": "stampLayer",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
+        },
+        {
+            "type": "Container",
+            "id": "f131a004-7964-4155-b27e-b28e2441add3",
+            "label": "stampInfo",
+            "components": [],
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "bf8c8808-5d07-477f-a35f-ed8c8e0dd8e8",
+                    "label": "rectangle",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.texture": "{\"key\":\"main\",\"frame\":\"list/small\"}",
+                    "x": 550,
+                    "y": 562,
+                    "isFilled": true,
+                    "width": 300,
+                    "height": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "6e765939-af14-43fd-94f6-46772311fd38",
+                    "label": "text",
+                    "components": [],
+                    "x": 550,
+                    "y": 441,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Full House",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "1d72cc0d-a7b6-4855-b5aa-beb24f3c4265",
+                    "label": "text_1",
+                    "components": [],
+                    "x": 550,
+                    "y": 510,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Get all ya mates together and play in a band innit",
+                    "fixedWidth": 300,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "26px",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 300
+                }
+            ]
         }
     ],
     "plainObjects": [],

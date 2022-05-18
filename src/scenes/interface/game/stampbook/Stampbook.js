@@ -1,4 +1,4 @@
-import { SimpleButton, Button, Interactive } from '@components/components'
+import { SimpleButton, Button, Interactive, NineSlice } from '@components/components'
 import Book from '@scenes/interface/books/Book'
 import BookStamp from './BookStamp'
 
@@ -1484,6 +1484,32 @@ export default class Stampbook extends Book {
 		const save = this.add.image(1463, 899, "stampbook", "save");
 		editor.add(save);
 
+		// stampLayer
+		const stampLayer = this.add.container(0, 0);
+
+		// stampInfo
+		const stampInfo = this.add.container(0, 0);
+
+		// rectangle
+		const rectangle = this.add.rectangle(550, 562, 300, 300);
+		rectangle.isFilled = true;
+		stampInfo.add(rectangle);
+
+		// text
+		const text = this.add.text(550, 441, "", {});
+		text.setOrigin(0.5, 0.5);
+		text.text = "Full House";
+		text.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "26px", "fontStyle": "bold" });
+		stampInfo.add(text);
+
+		// text_1
+		const text_1 = this.add.text(550, 510, "", {});
+		text_1.setOrigin(0.5, 0.5);
+		text_1.text = "Get all ya mates together and play in a band innit";
+		text_1.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "26px" });
+		text_1.setWordWrapWidth(300);
+		stampInfo.add(text_1);
+
 		// lists
 		const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13, page14, page15, page16, page17, page18, page19, page20, page21, page22, page23, page24, page25, page26, page27, page28, page29, page30, page31, page32, page33, page34, page35, page36, page37, page38];
 
@@ -1605,6 +1631,10 @@ export default class Stampbook extends Book {
 		// save (components)
 		const saveSimpleButton = new SimpleButton(save);
 		saveSimpleButton.callback = () => this.saveStampbook();
+
+		// rectangle (components)
+		const rectangleNineSlice = new NineSlice(rectangle);
+		rectangleNineSlice.texture = {"key":"main","frame":"list/small"};
 
 		this.blocker = blocker;
 		this.editor_background = editor_background;
@@ -1839,6 +1869,7 @@ export default class Stampbook extends Book {
 		this.thumbs_color_5 = thumbs_color_5;
 		this.thumbs_color_6 = thumbs_color_6;
 		this.save = save;
+		this.stampLayer = stampLayer;
 		this.pages = pages;
 
 		this.events.emit("scene-awake");
@@ -2310,6 +2341,8 @@ export default class Stampbook extends Book {
 	thumbs_color_6;
 	/** @type {Phaser.GameObjects.Image} */
 	save;
+	/** @type {Phaser.GameObjects.Container} */
+	stampLayer;
 	/** @type {Phaser.GameObjects.Container[]} */
 	pages;
 
@@ -2363,7 +2396,7 @@ export default class Stampbook extends Book {
             [63, 67, 64, 65, 70, 68, 71, 69, 66], // Thin Ice
             [416, 420, 422, 414, 418] // Treasure Hunt
         ]
-		
+
 		this.network.send('get_statistics')
     }
 
@@ -2441,13 +2474,13 @@ export default class Stampbook extends Book {
 
             let id = this.pageStamps[page][x]
             this.pageStamps[page][x] = new BookStamp(this, posArray[this.stampsOnPage.length][0], posArray[this.stampsOnPage.length][1], id);
-            this.add.existing(this.pageStamps[page][x]);
+            this.stampLayer.add(this.pageStamps[page][x]);
 
 			this.stampsOnPage.push(this.pageStamps[page][x])
             this.stamps.push(this.pageStamps[page][x])
         }
     }
-	
+
 	setStatistics(args) {
 		let joinTimestamp = new Date(args.joinTime)
 		let month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -2460,14 +2493,14 @@ export default class Stampbook extends Book {
 		if (joinDay === 3 || joinDay === 23) { dayString = `${joinDay}rd` }
 		else { dayString = `${joinDay}th` }
 		let dateString = `${dayString} of ${joinMonth}, ${joinYear}`
-		
+
 		let banString = ""
 		if (args.banNumber > 2) { banString = `${args.banNumber} times. Watch your behaviour!` } 
 		else if (args.banNumber > 0) { banString = `${args.banNumber} times.`} 
 		else { banString = `0 times! Good job!` }
-		
+
 		let potwString = (args.hasBeenPOTW) ? "been Penguin of the Week! Nice Job!" : "never been Penguin of the Week"
-			 
+
 		this.statistics.text = `You joined on ${dateString}\n\nSince then:\nYou have sent ${args.messagesSent} chat messages.\nYou have played for ${Math.round(args.timePlayed / 60)} minutes! Wow, that's over ${Math.round((args.timePlayed / 86400) * 100) /100} days!\nYou have won ${args.sledRacesWon} sled races, and ${args.findFourWon} games of find four.\nYou have earned ${args.coinsEarned} coins, and spent ${Math.abs(args.coinsSpent)} coins.\nYou have thrown ${args.snowballsThrown} snowballs.\nYou have been banned ${banString}\n${args.itemsReleased} items have been released, and you have bought ${args.itemsOwned} of them.\n${args.pinsReleased} pins have been released, and you have found ${args.pinsOwned} of them.\nYou have earned 0 stamps\nYou have completed ${args.partyTasksCompleted} tasks at 0 parties.\nYou have ${potwString}`
 	}
 
