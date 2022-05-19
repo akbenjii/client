@@ -26,7 +26,7 @@ export default class PlayerCard extends BaseContainer {
         /** @type {Phaser.GameObjects.Text} */
         this.coins;
         /** @type {Phaser.GameObjects.Text} */
-        this.coins_1;
+        this.stamps;
         /** @type {Phaser.GameObjects.Text} */
         this.username;
         /** @type {InventorySort} */
@@ -66,25 +66,27 @@ export default class PlayerCard extends BaseContainer {
 
         // stamps_btn
         const stamps_btn = scene.add.image(-132, 23, "main", "blue-button");
+        stamps_btn.visible = false;
         stats.add(stamps_btn);
 
         // card_coin
-        const card_coin = scene.add.image(-133, -29, "main", "card-coin");
+        const card_coin = scene.add.image(-133, -5, "main", "card-coin");
         stats.add(card_coin);
 
         // coins
-        const coins = scene.add.text(50, -27, "", {});
+        const coins = scene.add.text(50, -3, "", {});
         coins.setOrigin(0.5, 0.5);
         coins.text = "Your Coins: 000000";
         coins.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
         stats.add(coins);
 
-        // coins_1
-        const coins_1 = scene.add.text(50, 23, "", {});
-        coins_1.setOrigin(0.5, 0.5);
-        coins_1.text = "Your Stamps: 69/420";
-        coins_1.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
-        stats.add(coins_1);
+        // stamps
+        const stamps = scene.add.text(50, 23, "", {});
+        stamps.setOrigin(0.5, 0.5);
+        stamps.visible = false;
+        stamps.text = "Your Stamps: 69/420";
+        stamps.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
+        stats.add(stamps);
 
         // username
         const username = scene.add.text(0, -238, "", {});
@@ -156,7 +158,7 @@ export default class PlayerCard extends BaseContainer {
         this.buttons = buttons;
         this.stats = stats;
         this.coins = coins;
-        this.coins_1 = coins_1;
+        this.stamps = stamps;
         this.username = username;
         this.inventorySort = inventorySort;
         this.inventory = inventory;

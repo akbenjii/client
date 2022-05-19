@@ -111,7 +111,8 @@
                                 "frame": "blue-button"
                             },
                             "x": -132,
-                            "y": 23
+                            "y": 23,
+                            "visible": false
                         },
                         {
                             "type": "Image",
@@ -123,7 +124,7 @@
                                 "frame": "card-coin"
                             },
                             "x": -133,
-                            "y": -29
+                            "y": -5
                         },
                         {
                             "type": "Text",
@@ -132,7 +133,7 @@
                             "scope": "CLASS",
                             "components": [],
                             "x": 50,
-                            "y": -27,
+                            "y": -3,
                             "originX": 0.5,
                             "originY": 0.5,
                             "text": "Your Coins: 000000",
@@ -144,13 +145,14 @@
                         {
                             "type": "Text",
                             "id": "1454e881-7bde-480a-b858-7a0708d1cefc",
-                            "label": "coins_1",
+                            "label": "stamps",
                             "scope": "CLASS",
                             "components": [],
                             "x": 50,
                             "y": 23,
                             "originX": 0.5,
                             "originY": 0.5,
+                            "visible": false,
                             "text": "Your Stamps: 69/420",
                             "fixedWidth": 300,
                             "fontFamily": "Burbank Small",

@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Button, MoveTo, SimpleButton } from '@components/components'
+import { Button, MoveTo, SimpleButton, ShowHint } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -69,6 +69,8 @@ export default class Beacon extends RoomScene {
         const jetpackMoveTo = new MoveTo(jetpack);
         jetpackMoveTo.x = 1270;
         jetpackMoveTo.y = 575;
+        const jetpackShowHint = new ShowHint(jetpack);
+        jetpackShowHint.text = "Jetpack Adventure";
 
         this.jetpack = jetpack;
         this.sort = sort;

@@ -49,12 +49,14 @@
             "scope": "CLASS",
             "components": [
                 "Button",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "Button.spriteName": "jetpack",
             "Button.activeFrame": false,
             "MoveTo.x": 1270,
             "MoveTo.y": 575,
+            "ShowHint.text": "Jetpack Adventure",
             "texture": {
                 "key": "beacon",
                 "frame": "jetpack"

@@ -765,13 +765,17 @@
                             "id": "4309d80b-913e-43c1-8dbb-71ee50bf5329",
                             "label": "musiccatalog",
                             "scope": "CLASS",
-                            "components": [],
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(410)",
+                            "ShowHint.text": "Music Catalog",
                             "texture": {
                                 "key": "map-new",
                                 "frame": "shops/musiccatalog0001"
                             },
-                            "y": 386,
-                            "visible": false
+                            "y": 386
                         },
                         {
                             "type": "Sprite",

@@ -315,7 +315,6 @@ export default class NewMap extends BaseContainer {
 
         // musiccatalog
         const musiccatalog = scene.add.sprite(0, 386, "map-new", "shops/musiccatalog0001");
-        musiccatalog.visible = false;
         shops_container.add(musiccatalog);
 
         // penguinstyle
@@ -567,6 +566,12 @@ export default class NewMap extends BaseContainer {
         sledSimpleButton.callback = () => this.onRoomClick(230);
         const sledShowHint = new ShowHint(sled);
         sledShowHint.text = "Sled Racing";
+
+        // musiccatalog (components)
+        const musiccatalogSimpleButton = new SimpleButton(musiccatalog);
+        musiccatalogSimpleButton.callback = () => this.onRoomClick(410);
+        const musiccatalogShowHint = new ShowHint(musiccatalog);
+        musiccatalogShowHint.text = "Music Catalog";
 
         // penguinstyle (components)
         const penguinstyleSimpleButton = new SimpleButton(penguinstyle);
