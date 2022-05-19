@@ -20,7 +20,7 @@ export default class Beacon extends RoomScene {
 
         this.roomTriggers = {
             'lighthouse': () => this.triggerRoom(410, 1320, 700),
-            'jetpack': null
+            'jetpack': () => this.triggerGame("jetpackAdventure", 926),
         }
 
         /* END-USER-CTR-CODE */
@@ -50,8 +50,8 @@ export default class Beacon extends RoomScene {
         front_rail.setOrigin(0.5044360693840665, 1.0296666844575377);
 
         // light
-        const light = this.add.image(708.8609374171064, 737.8601624255746, "beacon", "light");
-        light.setOrigin(0.4935519917404095, 1.026630209663789);
+        const light = this.add.image(702.1988459228754, 11.688948040327034, "beacon", "light");
+        light.setOrigin(0.485192994157257, 0.027770241243949233);
 
         // crate
         this.add.image(331, 445, "beacon", "crate");
@@ -66,7 +66,9 @@ export default class Beacon extends RoomScene {
         const jetpackButton = new Button(jetpack);
         jetpackButton.spriteName = "jetpack";
         jetpackButton.activeFrame = false;
-        jetpackButton.pixelPerfect = true;
+        const jetpackMoveTo = new MoveTo(jetpack);
+        jetpackMoveTo.x = 1270;
+        jetpackMoveTo.y = 575;
 
         this.jetpack = jetpack;
         this.sort = sort;

@@ -389,7 +389,7 @@
                                 "frame": "games/aquagrabber0001"
                             },
                             "x": 1230,
-                            "y": 202
+                            "y": 204
                         },
                         {
                             "type": "Sprite",
@@ -414,14 +414,18 @@
                             "id": "a57bdeaf-9e0f-4b25-8fbe-07dd01fdd101",
                             "label": "counters",
                             "scope": "CLASS",
-                            "components": [],
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(110)",
+                            "ShowHint.text": "Bean Counters",
                             "texture": {
                                 "key": "map-new",
                                 "frame": "games/beancounters0001"
                             },
                             "x": 302,
-                            "y": 379,
-                            "visible": false
+                            "y": 379
                         },
                         {
                             "type": "Sprite",
@@ -434,7 +438,7 @@
                                 "frame": "games/cardjitsu0001"
                             },
                             "x": 789,
-                            "y": 49,
+                            "y": 50,
                             "visible": false
                         },
                         {
@@ -546,14 +550,14 @@
                                 "SimpleButton",
                                 "ShowHint"
                             ],
+                            "SimpleButton.callback": "() => this.onRoomClick(411)",
                             "ShowHint.text": "Jetpack Adventure",
                             "texture": {
                                 "key": "map-new",
                                 "frame": "games/jetpackadventure0001"
                             },
                             "x": 6,
-                            "y": 341,
-                            "visible": false
+                            "y": 341
                         },
                         {
                             "type": "Sprite",
@@ -571,7 +575,7 @@
                                 "frame": "games/pizzatron0001"
                             },
                             "x": 954,
-                            "y": 393
+                            "y": 394
                         },
                         {
                             "type": "Sprite",
@@ -589,7 +593,7 @@
                                 "frame": "games/pufflelaunch0001"
                             },
                             "x": 749,
-                            "y": 422,
+                            "y": 423,
                             "visible": false
                         },
                         {
@@ -608,7 +612,7 @@
                                 "frame": "games/pufflerescue0001"
                             },
                             "x": 916,
-                            "y": 239
+                            "y": 240
                         },
                         {
                             "type": "Sprite",
@@ -626,7 +630,7 @@
                                 "frame": "games/puffleroundup0001"
                             },
                             "x": 740,
-                            "y": 284
+                            "y": 285
                         },
                         {
                             "type": "Sprite",
@@ -639,7 +643,7 @@
                                 "frame": "games/pufflescape0001"
                             },
                             "x": 855,
-                            "y": 490,
+                            "y": 491,
                             "visible": false
                         },
                         {
@@ -647,14 +651,18 @@
                             "id": "a5a704cb-8ef6-4756-acf2-d18c864b5b1c",
                             "label": "sled",
                             "scope": "CLASS",
-                            "components": [],
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(230)",
+                            "ShowHint.text": "Sled Racing",
                             "texture": {
                                 "key": "map-new",
                                 "frame": "games/sledracing0001"
                             },
                             "x": 153,
-                            "y": 88,
-                            "visible": false
+                            "y": 89
                         },
                         {
                             "type": "Sprite",
@@ -667,7 +675,7 @@
                                 "frame": "games/smoothiesmash0001"
                             },
                             "x": 322,
-                            "y": 530,
+                            "y": 529,
                             "visible": false
                         }
                     ]

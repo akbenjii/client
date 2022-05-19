@@ -330,7 +330,7 @@
             "SimpleButton.hoverOutCallback": "() => this.onBoltsOut()",
             "MoveTo.x": 310,
             "MoveTo.y": 485,
-            "ShowHint.text": "Bits And Bolts",
+            "ShowHint.text": "Bits and Bolts",
             "texture": {
                 "key": "arcade-new",
                 "frame": "bitsAndBoltsHover0001.png"

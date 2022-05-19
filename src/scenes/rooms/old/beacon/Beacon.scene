@@ -48,11 +48,13 @@
             "label": "jetpack",
             "scope": "CLASS",
             "components": [
-                "Button"
+                "Button",
+                "MoveTo"
             ],
             "Button.spriteName": "jetpack",
             "Button.activeFrame": false,
-            "Button.pixelPerfect": true,
+            "MoveTo.x": 1270,
+            "MoveTo.y": 575,
             "texture": {
                 "key": "beacon",
                 "frame": "jetpack"
@@ -83,10 +85,10 @@
                 "key": "beacon",
                 "frame": "light"
             },
-            "x": 708.8609374171064,
-            "y": 737.8601624255746,
-            "originX": 0.4935519917404095,
-            "originY": 1.026630209663789
+            "x": 702.1988459228754,
+            "y": 11.688948040327034,
+            "originX": 0.485192994157257,
+            "originY": 0.027770241243949233
         },
         {
             "type": "Image",

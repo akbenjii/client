@@ -206,7 +206,7 @@ export default class NewMap extends BaseContainer {
         this.add(games_container);
 
         // aqua
-        const aqua = scene.add.sprite(1230, 202, "map-new", "games/aquagrabber0001");
+        const aqua = scene.add.sprite(1230, 204, "map-new", "games/aquagrabber0001");
         games_container.add(aqua);
 
         // arcade
@@ -215,11 +215,10 @@ export default class NewMap extends BaseContainer {
 
         // counters
         const counters = scene.add.sprite(302, 379, "map-new", "games/beancounters0001");
-        counters.visible = false;
         games_container.add(counters);
 
         // jitsu
-        const jitsu = scene.add.sprite(789, 49, "map-new", "games/cardjitsu0001");
+        const jitsu = scene.add.sprite(789, 50, "map-new", "games/cardjitsu0001");
         jitsu.visible = false;
         games_container.add(jitsu);
 
@@ -251,38 +250,36 @@ export default class NewMap extends BaseContainer {
 
         // jetpack
         const jetpack = scene.add.sprite(6, 341, "map-new", "games/jetpackadventure0001");
-        jetpack.visible = false;
         games_container.add(jetpack);
 
         // pizzatron
-        const pizzatron = scene.add.sprite(954, 393, "map-new", "games/pizzatron0001");
+        const pizzatron = scene.add.sprite(954, 394, "map-new", "games/pizzatron0001");
         games_container.add(pizzatron);
 
         // cannon
-        const cannon = scene.add.sprite(749, 422, "map-new", "games/pufflelaunch0001");
+        const cannon = scene.add.sprite(749, 423, "map-new", "games/pufflelaunch0001");
         cannon.visible = false;
         games_container.add(cannon);
 
         // rescue
-        const rescue = scene.add.sprite(916, 239, "map-new", "games/pufflerescue0001");
+        const rescue = scene.add.sprite(916, 240, "map-new", "games/pufflerescue0001");
         games_container.add(rescue);
 
         // roundup
-        const roundup = scene.add.sprite(740, 284, "map-new", "games/puffleroundup0001");
+        const roundup = scene.add.sprite(740, 285, "map-new", "games/puffleroundup0001");
         games_container.add(roundup);
 
         // pufflescape
-        const pufflescape = scene.add.sprite(855, 490, "map-new", "games/pufflescape0001");
+        const pufflescape = scene.add.sprite(855, 491, "map-new", "games/pufflescape0001");
         pufflescape.visible = false;
         games_container.add(pufflescape);
 
         // sled
-        const sled = scene.add.sprite(153, 88, "map-new", "games/sledracing0001");
-        sled.visible = false;
+        const sled = scene.add.sprite(153, 89, "map-new", "games/sledracing0001");
         games_container.add(sled);
 
         // smoothie
-        const smoothie = scene.add.sprite(322, 530, "map-new", "games/smoothiesmash0001");
+        const smoothie = scene.add.sprite(322, 529, "map-new", "games/smoothiesmash0001");
         smoothie.visible = false;
         games_container.add(smoothie);
 
@@ -505,6 +502,12 @@ export default class NewMap extends BaseContainer {
         const arcadeShowHint = new ShowHint(arcade);
         arcadeShowHint.text = "Arcade";
 
+        // counters (components)
+        const countersSimpleButton = new SimpleButton(counters);
+        countersSimpleButton.callback = () => this.onRoomClick(110);
+        const countersShowHint = new ShowHint(counters);
+        countersShowHint.text = "Bean Counters";
+
         // surfer (components)
         const surferSimpleButton = new SimpleButton(surfer);
         surferSimpleButton.callback = () => this.onRoomClick(808);
@@ -530,7 +533,8 @@ export default class NewMap extends BaseContainer {
         fishingShowHint.text = "Ice Fishing";
 
         // jetpack (components)
-        new SimpleButton(jetpack);
+        const jetpackSimpleButton = new SimpleButton(jetpack);
+        jetpackSimpleButton.callback = () => this.onRoomClick(411);
         const jetpackShowHint = new ShowHint(jetpack);
         jetpackShowHint.text = "Jetpack Adventure";
 
@@ -557,6 +561,12 @@ export default class NewMap extends BaseContainer {
         roundupSimpleButton.callback = () => this.onRoomClick(310);
         const roundupShowHint = new ShowHint(roundup);
         roundupShowHint.text = "Puffle Roundup\n";
+
+        // sled (components)
+        const sledSimpleButton = new SimpleButton(sled);
+        sledSimpleButton.callback = () => this.onRoomClick(230);
+        const sledShowHint = new ShowHint(sled);
+        sledShowHint.text = "Sled Racing";
 
         // penguinstyle (components)
         const penguinstyleSimpleButton = new SimpleButton(penguinstyle);
@@ -710,8 +720,8 @@ export default class NewMap extends BaseContainer {
     }
 
     select(gameObject){
-        gameObject.scaleX = 1.1
-        gameObject.scaleY = 1.1
+        gameObject.scaleX = 1.05
+        gameObject.scaleY = 1.05
     }
 
     unselect(gameObject){

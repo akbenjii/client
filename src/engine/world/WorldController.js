@@ -15,7 +15,7 @@ export default class WorldController extends BaseScene {
         this.client
         this.room
 
-        this.muteMusic = false
+        this.muteMusic = (localStorage.muteMusic == 'true') ? true : false
     }
 
     create() {

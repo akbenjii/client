@@ -152,6 +152,8 @@ export default class Coffee extends RoomScene {
         const smashTopMoveTo = new MoveTo(smashTop);
         smashTopMoveTo.x = 100;
         smashTopMoveTo.y = 700;
+        const smashTopShowHint = new ShowHint(smashTop);
+        smashTopShowHint.text = "Smoothie Smash";
 
         // registerTop (components)
         const registerTopSimpleButton = new SimpleButton(registerTop);
@@ -173,6 +175,8 @@ export default class Coffee extends RoomScene {
         const beanTrolleyMoveTo = new MoveTo(beanTrolley);
         beanTrolleyMoveTo.x = 1360;
         beanTrolleyMoveTo.y = 760;
+        const beanTrolleyShowHint = new ShowHint(beanTrolley);
+        beanTrolleyShowHint.text = "Bean Counters";
 
         this.bg = bg;
         this.sofaStool = sofaStool;

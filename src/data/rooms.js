@@ -184,51 +184,51 @@ if (localStorage.clientMode == "legacy") {
             y: 480
         },
         916: {
-            key: 'aquaGrabber',
+            key: 'AquaGrabber',
             scene: require('@games/aquagrabber/AquaGrabber').default
         },
         900: {
-            key: 'astroBarrier',
+            key: 'AstroBarrier',
             scene: require('@games/astrobarrier/AstroBarrier').default
         },
         905: {
-            key: 'cartSurfer',
+            key: 'CartSurfer',
             scene: require('@games/cartsurfer/CartSurfer').default
         },
         924: {
-            key: 'hydroHopper',
+            key: 'HydroHopper',
             scene: require('@games/hydrohopper/HydroHopper').default
         },
         904: {
-            key: 'iceFishing',
+            key: 'IceFishing',
             scene: require('@games/icefishing/IceFishing').default
         },
         910: {
-            key: 'pizzatron',
+            key: 'Pizzatron',
             scene: require('@games/pizzatron/Pizzatron').default
         },
         925: {
-            key: 'puffleRoundup',
+            key: 'PuffleRoundup',
             scene: require('@games/puffleroundup/PuffleRoundup').default
         },
 		926: {
-            key: 'jetPackAdventure',
+            key: 'JetPackAdventure',
             scene: require('@games/jetpackadventure/JetPackAdventure').default
         },
 		927: {
-            key: 'puffleRescue',
+            key: 'PuffleRescue',
             scene: require('@games/pufflerescue/puffleRescue').default
         },
         909: {
-            key: 'thinIce',
+            key: 'ThinIce',
             scene: require('@games/thinice/ThinIce').default
         },
         908: {
-            key: 'beanCounters',
+            key: 'BeanCounters',
             scene: require('@games/beanCounters/BeanCounters').default
         },
         911: {
-            key: 'yumYuck',
+            key: 'YumYuck',
             scene: require('@games/yumYuck/YumYuck').default
         },
 		998: {
@@ -354,6 +354,18 @@ if (localStorage.clientMode == "vanilla") {
             x: 840,
             y: 680
         },
+        410: {
+            key: 'Lighthouse',
+            scene: require('@rooms/old/lighthouse/Lighthouse').default,
+            x: 840,
+            y: 680
+        },
+        411: {
+            key: 'Beacon',
+            scene: require('@rooms/old/beacon/Beacon').default,
+            x: 410,
+            y: 800
+        },
         800: {
             key: 'Dock',
             scene: require('@rooms/new/dock/Dock').default,
@@ -421,51 +433,51 @@ if (localStorage.clientMode == "vanilla") {
             y: 480
         },
         916: {
-            key: 'aquaGrabber',
+            key: 'AquaGrabber',
             scene: require('@games/aquagrabber/AquaGrabber').default
         },
         900: {
-            key: 'astroBarrier',
+            key: 'AstroBarrier',
             scene: require('@games/astrobarrier/AstroBarrier').default
         },
         905: {
-            key: 'cartSurfer',
+            key: 'CartSurfer',
             scene: require('@games/cartsurfer/CartSurfer').default
         },
         924: {
-            key: 'hydroHopper',
+            key: 'HydroHopper',
             scene: require('@games/hydrohopper/HydroHopper').default
         },
         904: {
-            key: 'iceFishing',
+            key: 'IceFishing',
             scene: require('@games/icefishing/IceFishing').default
         },
         910: {
-            key: 'pizzatron',
+            key: 'Pizzatron',
             scene: require('@games/pizzatron/Pizzatron').default
         },
         925: {
-            key: 'puffleRoundup',
+            key: 'PuffleRoundup',
             scene: require('@games/puffleroundup/PuffleRoundup').default
         },
 		926: {
-            key: 'jetPackAdventure',
+            key: 'JetPackAdventure',
             scene: require('@games/jetpackadventure/JetPackAdventure').default
         },
 		927: {
-            key: 'puffleRescue',
+            key: 'PuffleRescue',
             scene: require('@games/pufflerescue/puffleRescue').default
         },
         909: {
-            key: 'thinIce',
+            key: 'ThinIce',
             scene: require('@games/thinice/ThinIce').default
         },
         908: {
-            key: 'beanCounters',
+            key: 'BeanCounters',
             scene: require('@games/beanCounters/BeanCounters').default
         },
         911: {
-            key: 'yumYuck',
+            key: 'YumYuck',
             scene: require('@games/yumYuck/YumYuck').default
         },
 		998: {

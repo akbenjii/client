@@ -314,7 +314,7 @@ export default class Lounge extends RoomScene {
         bitsAndBoltsHoverMoveTo.x = 310;
         bitsAndBoltsHoverMoveTo.y = 485;
         const bitsAndBoltsHoverShowHint = new ShowHint(bitsAndBoltsHover);
-        bitsAndBoltsHoverShowHint.text = "Bits And Bolts";
+        bitsAndBoltsHoverShowHint.text = "Bits and Bolts";
 
         // thinIceHover (components)
         const thinIceHoverSimpleButton = new SimpleButton(thinIceHover);

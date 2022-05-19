@@ -145,12 +145,14 @@
             "scope": "CLASS",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "SimpleButton.hoverCallback": "() => this.onSmoothieOver()",
             "SimpleButton.hoverOutCallback": "() => this.onSmoothieOut()",
             "MoveTo.x": 100,
             "MoveTo.y": 700,
+            "ShowHint.text": "Smoothie Smash",
             "texture": {
                 "key": "coffeeShop-new",
                 "frame": "smashTopDefault.png"
@@ -330,12 +332,14 @@
             "scope": "CLASS",
             "components": [
                 "SimpleButton",
-                "MoveTo"
+                "MoveTo",
+                "ShowHint"
             ],
             "SimpleButton.hoverCallback": "() => this.onBeansOver()",
             "SimpleButton.hoverOutCallback": "() => this.onBeansOut()",
             "MoveTo.x": 1360,
             "MoveTo.y": 760,
+            "ShowHint.text": "Bean Counters",
             "texture": {
                 "key": "coffeeShop-new",
                 "frame": "beanTrolley0001.png"
