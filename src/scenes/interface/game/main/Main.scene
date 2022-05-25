@@ -69,18 +69,12 @@
         {
             "type": "Image",
             "id": "6791cf27-2369-4375-b006-df8d483ad73a",
-            "label": "chat_button",
+            "label": "puffle_button",
             "scope": "CLASS",
-            "components": [
-                "Button",
-                "ShowHint"
-            ],
-            "Button.spriteName": "blue-button",
-            "Button.callback": "() => this.safe.visible = true",
-            "ShowHint.text": "Messages",
+            "components": [],
             "texture": {
                 "key": "main",
-                "frame": "blue-button"
+                "frame": "blue-button-disabled"
             },
             "x": 246,
             "y": 931
@@ -88,15 +82,15 @@
         {
             "type": "Image",
             "id": "aa9caccb-a731-4b3b-bfe5-984fe2f6d4ac",
-            "label": "chat_icon",
+            "label": "puffle_icon",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "main",
-                "frame": "chat-icon"
+                "frame": "puffle-icon-disabled"
             },
-            "x": 246,
-            "y": 929
+            "x": 245,
+            "y": 930
         },
         {
             "type": "Image",
@@ -220,9 +214,9 @@
             "components": [],
             "texture": {
                 "key": "main",
-                "frame": "chat-icon"
+                "frame": "chat-send0001"
             },
-            "x": 1026,
+            "x": 1027,
             "y": 929
         },
         {
@@ -716,6 +710,38 @@
             "y": 472,
             "visible": false,
             "nestedPrefabs": []
+        },
+        {
+            "type": "Image",
+            "id": "1336b11c-fc2a-4b8c-8db0-9b3244d95b57",
+            "label": "chat_button",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "ShowHint"
+            ],
+            "Button.spriteName": "blue-button",
+            "Button.callback": "() => this.safe.visible = true",
+            "ShowHint.text": "Messages",
+            "texture": {
+                "key": "main",
+                "frame": "blue-button"
+            },
+            "x": 490,
+            "y": 931
+        },
+        {
+            "type": "Image",
+            "id": "980ed16f-2969-4e44-ad27-f3f28486ae8f",
+            "label": "chat_icon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "main",
+                "frame": "chat-icon"
+            },
+            "x": 490,
+            "y": 929
         }
     ],
     "plainObjects": [],

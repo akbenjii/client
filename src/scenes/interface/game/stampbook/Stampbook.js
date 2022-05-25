@@ -1,6 +1,7 @@
 import { SimpleButton, Button, Interactive, NineSlice } from '@components/components'
 import Book from '@scenes/interface/books/Book'
 import BookStamp from './BookStamp'
+import PinLoader from "@engine/loaders/PinLoader";
 
 /* START OF COMPILED CODE */
 
@@ -121,7 +122,7 @@ export default class Stampbook extends Book {
 		page37.add(statistics);
 
 		// page36
-		const page36 = this.add.container(0, 0);
+		const page36 = this.add.container(0, -2);
 		page36.visible = false;
 
 		// pagenum36
@@ -148,8 +149,12 @@ export default class Stampbook extends Book {
 		pagename36.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page36.add(pagename36);
 
+		// pageicon36
+		const pageicon36 = this.add.image(255, 120, "stampbook", "categories/9001");
+		page36.add(pageicon36);
+
 		// page35
-		const page35 = this.add.container(0, 0);
+		const page35 = this.add.container(0, -1);
 		page35.visible = false;
 
 		// pagebg35
@@ -181,8 +186,12 @@ export default class Stampbook extends Book {
 		pagename35.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page35.add(pagename35);
 
+		// pageicon35
+		const pageicon35 = this.add.image(255, 120, "stampbook", "categories/56");
+		page35.add(pageicon35);
+
 		// page34
-		const page34 = this.add.container(0, 0);
+		const page34 = this.add.container(0, -1);
 		page34.visible = false;
 
 		// pagebg34
@@ -214,8 +223,12 @@ export default class Stampbook extends Book {
 		pagename34.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page34.add(pagename34);
 
+		// pageicon34
+		const pageicon34 = this.add.image(255, 120, "stampbook", "categories/16");
+		page34.add(pageicon34);
+
 		// page33
-		const page33 = this.add.container(0, 0);
+		const page33 = this.add.container(0, -1);
 		page33.visible = false;
 
 		// pagebg33
@@ -247,8 +260,12 @@ export default class Stampbook extends Book {
 		pagename33.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page33.add(pagename33);
 
+		// pageicon33
+		const pageicon33 = this.add.image(255, 120, "stampbook", "categories/46");
+		page33.add(pageicon33);
+
 		// page32
-		const page32 = this.add.container(0, 0);
+		const page32 = this.add.container(0, -1);
 		page32.visible = false;
 
 		// pagebg32
@@ -280,8 +297,12 @@ export default class Stampbook extends Book {
 		pagename32.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page32.add(pagename32);
 
+		// pageicon32
+		const pageicon32 = this.add.image(255, 120, "stampbook", "categories/58");
+		page32.add(pageicon32);
+
 		// page31
-		const page31 = this.add.container(0, 0);
+		const page31 = this.add.container(0, -1);
 		page31.visible = false;
 
 		// pagebg31
@@ -313,8 +334,12 @@ export default class Stampbook extends Book {
 		pagename31.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page31.add(pagename31);
 
+		// pageicon31
+		const pageicon31 = this.add.image(255, 120, "stampbook", "categories/57");
+		page31.add(pageicon31);
+
 		// page30
-		const page30 = this.add.container(0, 0);
+		const page30 = this.add.container(0, -1);
 		page30.visible = false;
 
 		// pagebg30
@@ -346,8 +371,12 @@ export default class Stampbook extends Book {
 		pagename30.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page30.add(pagename30);
 
+		// pageicon30
+		const pageicon30 = this.add.image(255, 120, "stampbook", "categories/19");
+		page30.add(pageicon30);
+
 		// page29
-		const page29 = this.add.container(0, 0);
+		const page29 = this.add.container(0, -1);
 		page29.visible = false;
 
 		// pagebg29
@@ -379,8 +408,12 @@ export default class Stampbook extends Book {
 		pagename29.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page29.add(pagename29);
 
+		// pageicon29
+		const pageicon29 = this.add.image(255, 120, "stampbook", "categories/19");
+		page29.add(pageicon29);
+
 		// page28
-		const page28 = this.add.container(0, 0);
+		const page28 = this.add.container(0, -1);
 		page28.visible = false;
 
 		// pagebg28
@@ -412,8 +445,12 @@ export default class Stampbook extends Book {
 		pagename28.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page28.add(pagename28);
 
+		// pageicon28
+		const pageicon28 = this.add.image(255, 120, "stampbook", "categories/48");
+		page28.add(pageicon28);
+
 		// page27
-		const page27 = this.add.container(0, 0);
+		const page27 = this.add.container(0, -1);
 		page27.visible = false;
 
 		// pagebg27
@@ -445,8 +482,12 @@ export default class Stampbook extends Book {
 		pagename27.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page27.add(pagename27);
 
+		// pageicon27
+		const pageicon27 = this.add.image(255, 120, "stampbook", "categories/54");
+		page27.add(pageicon27);
+
 		// page26
-		const page26 = this.add.container(0, 0);
+		const page26 = this.add.container(0, -1);
 		page26.visible = false;
 
 		// pagebg26
@@ -478,8 +519,12 @@ export default class Stampbook extends Book {
 		pagename26.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page26.add(pagename26);
 
+		// pageicon26
+		const pageicon26 = this.add.image(255, 120, "stampbook", "categories/22");
+		page26.add(pageicon26);
+
 		// page25
-		const page25 = this.add.container(0, 0);
+		const page25 = this.add.container(0, -1);
 		page25.visible = false;
 
 		// pagebg25
@@ -511,8 +556,12 @@ export default class Stampbook extends Book {
 		pagename25.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page25.add(pagename25);
 
+		// pageicon25
+		const pageicon25 = this.add.image(255, 120, "stampbook", "categories/22");
+		page25.add(pageicon25);
+
 		// page24
-		const page24 = this.add.container(0, 0);
+		const page24 = this.add.container(0, -1);
 		page24.visible = false;
 
 		// pagebg24
@@ -544,8 +593,12 @@ export default class Stampbook extends Book {
 		pagename24.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "50px", "fontStyle": "bold" });
 		page24.add(pagename24);
 
+		// pageicon24
+		const pageicon24 = this.add.image(255, 120, "stampbook", "categories/11");
+		page24.add(pageicon24);
+
 		// page23
-		const page23 = this.add.container(0, 0);
+		const page23 = this.add.container(0, -1);
 		page23.visible = false;
 
 		// pagebg23
@@ -577,8 +630,12 @@ export default class Stampbook extends Book {
 		pagename23.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "50px", "fontStyle": "bold" });
 		page23.add(pagename23);
 
+		// pageicon23
+		const pageicon23 = this.add.image(255, 120, "stampbook", "categories/11");
+		page23.add(pageicon23);
+
 		// page22
-		const page22 = this.add.container(0, 0);
+		const page22 = this.add.container(0, -1);
 		page22.visible = false;
 
 		// pagebg22
@@ -609,6 +666,10 @@ export default class Stampbook extends Book {
 		pagename22.text = "Ice Fishing";
 		pagename22.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page22.add(pagename22);
+
+		// pageicon22
+		const pageicon22 = this.add.image(255, 120, "stampbook", "categories/52");
+		page22.add(pageicon22);
 
 		// page21
 		const page21 = this.add.container(0, 0);
@@ -643,8 +704,12 @@ export default class Stampbook extends Book {
 		pagename21.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page21.add(pagename21);
 
+		// pageicon21
+		const pageicon21 = this.add.image(255, 120, "stampbook", "categories/15");
+		page21.add(pageicon21);
+
 		// page20
-		const page20 = this.add.container(0, 0);
+		const page20 = this.add.container(0, -1);
 		page20.visible = false;
 
 		// pagebg20
@@ -675,6 +740,10 @@ export default class Stampbook extends Book {
 		pagename20.text = "Catchin' Waves";
 		pagename20.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page20.add(pagename20);
+
+		// pageicon20
+		const pageicon20 = this.add.image(255, 120, "stampbook", "categories/15");
+		page20.add(pageicon20);
 
 		// page19
 		const page19 = this.add.container(0, 0);
@@ -709,6 +778,10 @@ export default class Stampbook extends Book {
 		pagename19.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page19.add(pagename19);
 
+		// pageicon19
+		const pageicon19 = this.add.image(255, 120, "stampbook", "categories/28");
+		page19.add(pageicon19);
+
 		// page18
 		const page18 = this.add.container(0, 0);
 		page18.visible = false;
@@ -741,6 +814,10 @@ export default class Stampbook extends Book {
 		pagename18.text = "Card-Jitsu Water";
 		pagename18.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page18.add(pagename18);
+
+		// pageicon18
+		const pageicon18 = this.add.image(255, 120, "stampbook", "categories/34");
+		page18.add(pageicon18);
 
 		// page17
 		const page17 = this.add.container(0, 0);
@@ -775,6 +852,10 @@ export default class Stampbook extends Book {
 		pagename17.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page17.add(pagename17);
 
+		// pageicon17
+		const pageicon17 = this.add.image(255, 120, "stampbook", "categories/60");
+		page17.add(pageicon17);
+
 		// page16
 		const page16 = this.add.container(0, 0);
 		page16.visible = false;
@@ -807,6 +888,10 @@ export default class Stampbook extends Book {
 		pagename16.text = "Card-Jitsu Snow";
 		pagename16.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page16.add(pagename16);
+
+		// pageicon16
+		const pageicon16 = this.add.image(255, 120, "stampbook", "categories/60");
+		page16.add(pageicon16);
 
 		// page15
 		const page15 = this.add.container(0, 0);
@@ -841,6 +926,10 @@ export default class Stampbook extends Book {
 		pagename15.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page15.add(pagename15);
 
+		// pageicon15
+		const pageicon15 = this.add.image(255, 120, "stampbook", "categories/32");
+		page15.add(pageicon15);
+
 		// page14
 		const page14 = this.add.container(0, 0);
 		page14.visible = false;
@@ -873,6 +962,10 @@ export default class Stampbook extends Book {
 		pagename14.text = "Card Jitsu";
 		pagename14.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page14.add(pagename14);
+
+		// pageicon14
+		const pageicon14 = this.add.image(255, 120, "stampbook", "categories/38");
+		page14.add(pageicon14);
 
 		// page13
 		const page13 = this.add.container(0, 0);
@@ -907,6 +1000,10 @@ export default class Stampbook extends Book {
 		pagename13.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page13.add(pagename13);
 
+		// pageicon13
+		const pageicon13 = this.add.image(255, 120, "stampbook", "categories/14");
+		page13.add(pageicon13);
+
 		// page12
 		const page12 = this.add.container(0, 0);
 		page12.visible = false;
@@ -939,6 +1036,10 @@ export default class Stampbook extends Book {
 		pagename12.text = "Aqua Grabber";
 		pagename12.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page12.add(pagename12);
+
+		// pageicon12
+		const pageicon12 = this.add.image(255, 120, "stampbook", "categories/13");
+		page12.add(pageicon12);
 
 		// page11
 		const page11 = this.add.container(0, 0);
@@ -973,6 +1074,10 @@ export default class Stampbook extends Book {
 		pagename11.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page11.add(pagename11);
 
+		// pageicon11
+		const pageicon11 = this.add.image(255, 120, "stampbook", "categories/13");
+		page11.add(pageicon11);
+
 		// page10
 		const page10 = this.add.container(0, 0);
 		page10.visible = false;
@@ -1005,6 +1110,390 @@ export default class Stampbook extends Book {
 		pagename10.text = "Games";
 		pagename10.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page10.add(pagename10);
+
+		// pageicon10
+		const pageicon10 = this.add.image(255, 120, "stampbook", "categories/8");
+		page10.add(pageicon10);
+
+		// aquaText
+		const aquaText = this.add.text(275, 231, "", {});
+		aquaText.setOrigin(0, 0.5);
+		aquaText.text = "Aqua Grabber";
+		aquaText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		aquaText.setWordWrapWidth(140);
+		page10.add(aquaText);
+
+		// aquaIcon
+		const aquaIcon = this.add.image(231, 231, "stampbook", "categories/13");
+		aquaIcon.scaleX = 0.7;
+		aquaIcon.scaleY = 0.7;
+		page10.add(aquaIcon);
+
+		// aquaButton
+		const aquaButton = this.add.rectangle(314, 231, 240, 70);
+		aquaButton.fillColor = 3729407;
+		aquaButton.fillAlpha = 0.5;
+		page10.add(aquaButton);
+
+		// astroText
+		const astroText = this.add.text(514, 231, "", {});
+		astroText.setOrigin(0, 0.5);
+		astroText.text = "Astro Barrier";
+		astroText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		astroText.setWordWrapWidth(140);
+		page10.add(astroText);
+
+		// astroIcon
+		const astroIcon = this.add.image(471, 231, "stampbook", "categories/14");
+		astroIcon.scaleX = 0.7;
+		astroIcon.scaleY = 0.7;
+		page10.add(astroIcon);
+
+		// astroButton
+		const astroButton = this.add.rectangle(554, 231, 240, 70);
+		astroButton.fillColor = 3729407;
+		astroButton.fillAlpha = 0.5;
+		page10.add(astroButton);
+
+		// jitsuText
+		const jitsuText = this.add.text(754, 231, "", {});
+		jitsuText.setOrigin(0, 0.5);
+		jitsuText.text = "Card-Jitsu";
+		jitsuText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		jitsuText.setWordWrapWidth(140);
+		page10.add(jitsuText);
+
+		// jitsuIcon
+		const jitsuIcon = this.add.image(712, 231, "stampbook", "categories/38");
+		jitsuIcon.scaleX = 0.7;
+		jitsuIcon.scaleY = 0.7;
+		page10.add(jitsuIcon);
+
+		// jitsuButton
+		const jitsuButton = this.add.rectangle(794, 231, 240, 70);
+		jitsuButton.fillColor = 3729407;
+		jitsuButton.fillAlpha = 0.5;
+		page10.add(jitsuButton);
+
+		// fireJitsuText
+		const fireJitsuText = this.add.text(994, 231, "", {});
+		fireJitsuText.setOrigin(0, 0.5);
+		fireJitsuText.text = "Card-Jitsu Fire";
+		fireJitsuText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		fireJitsuText.setWordWrapWidth(140);
+		page10.add(fireJitsuText);
+
+		// fireJitsuIcon
+		const fireJitsuIcon = this.add.image(953, 231, "stampbook", "categories/32");
+		fireJitsuIcon.scaleX = 0.7;
+		fireJitsuIcon.scaleY = 0.7;
+		page10.add(fireJitsuIcon);
+
+		// fireJitsuButton
+		const fireJitsuButton = this.add.rectangle(1034, 231, 240, 70);
+		fireJitsuButton.fillColor = 3729407;
+		fireJitsuButton.fillAlpha = 0.5;
+		page10.add(fireJitsuButton);
+
+		// snowJitsuText
+		const snowJitsuText = this.add.text(1230, 231, "", {});
+		snowJitsuText.setOrigin(0, 0.5);
+		snowJitsuText.text = "Card-Jitsu Snow";
+		snowJitsuText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		snowJitsuText.setWordWrapWidth(160);
+		page10.add(snowJitsuText);
+
+		// snowJitsuIcon
+		const snowJitsuIcon = this.add.image(1191, 231, "stampbook", "categories/60");
+		snowJitsuIcon.scaleX = 0.7;
+		snowJitsuIcon.scaleY = 0.7;
+		page10.add(snowJitsuIcon);
+
+		// snowJitsuButton
+		const snowJitsuButton = this.add.rectangle(1274, 231, 240, 70);
+		snowJitsuButton.fillColor = 3729407;
+		snowJitsuButton.fillAlpha = 0.5;
+		page10.add(snowJitsuButton);
+
+		// waterJitsuText
+		const waterJitsuText = this.add.text(275, 306, "", {});
+		waterJitsuText.setOrigin(0, 0.5);
+		waterJitsuText.text = "Card-Jitsu Water";
+		waterJitsuText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		waterJitsuText.setWordWrapWidth(140);
+		page10.add(waterJitsuText);
+
+		// waterJistuIcon
+		const waterJistuIcon = this.add.image(231, 306, "stampbook", "categories/34");
+		waterJistuIcon.scaleX = 0.7;
+		waterJistuIcon.scaleY = 0.7;
+		page10.add(waterJistuIcon);
+
+		// waterJitsuButton
+		const waterJitsuButton = this.add.rectangle(314, 306, 240, 70);
+		waterJitsuButton.fillColor = 3729407;
+		waterJitsuButton.fillAlpha = 0.5;
+		page10.add(waterJitsuButton);
+
+		// cartSurferText
+		const cartSurferText = this.add.text(514, 306, "", {});
+		cartSurferText.setOrigin(0, 0.5);
+		cartSurferText.text = "Cart Surfer";
+		cartSurferText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		cartSurferText.setWordWrapWidth(140);
+		page10.add(cartSurferText);
+
+		// cartSurferIcon
+		const cartSurferIcon = this.add.image(471, 306, "stampbook", "categories/28");
+		cartSurferIcon.scaleX = 0.7;
+		cartSurferIcon.scaleY = 0.7;
+		page10.add(cartSurferIcon);
+
+		// cartSurferButton
+		const cartSurferButton = this.add.rectangle(554, 306, 240, 70);
+		cartSurferButton.fillColor = 3729407;
+		cartSurferButton.fillAlpha = 0.5;
+		page10.add(cartSurferButton);
+
+		// wavesText
+		const wavesText = this.add.text(754, 306, "", {});
+		wavesText.setOrigin(0, 0.5);
+		wavesText.text = "Catchin Waves";
+		wavesText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		wavesText.setWordWrapWidth(140);
+		page10.add(wavesText);
+
+		// wavesIcon
+		const wavesIcon = this.add.image(712, 306, "stampbook", "categories/15");
+		wavesIcon.scaleX = 0.7;
+		wavesIcon.scaleY = 0.7;
+		page10.add(wavesIcon);
+
+		// wavesButton
+		const wavesButton = this.add.rectangle(794, 306, 240, 70);
+		wavesButton.fillColor = 3729407;
+		wavesButton.fillAlpha = 0.5;
+		page10.add(wavesButton);
+
+		// fishingText
+		const fishingText = this.add.text(994, 306, "", {});
+		fishingText.setOrigin(0, 0.5);
+		fishingText.text = "Ice Fishing";
+		fishingText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		fishingText.setWordWrapWidth(140);
+		page10.add(fishingText);
+
+		// fishingIcon
+		const fishingIcon = this.add.image(953, 306, "stampbook", "categories/52");
+		fishingIcon.scaleX = 0.7;
+		fishingIcon.scaleY = 0.7;
+		page10.add(fishingIcon);
+
+		// fishingButton
+		const fishingButton = this.add.rectangle(1034, 306, 240, 70);
+		fishingButton.fillColor = 3729407;
+		fishingButton.fillAlpha = 0.5;
+		page10.add(fishingButton);
+
+		// JPAText
+		const jPAText = this.add.text(1230, 306, "", {});
+		jPAText.setOrigin(0, 0.5);
+		jPAText.text = "Jet Pack Adventure";
+		jPAText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		jPAText.setWordWrapWidth(160);
+		page10.add(jPAText);
+
+		// JPAIcon
+		const jPAIcon = this.add.image(1191, 306, "stampbook", "categories/11");
+		jPAIcon.scaleX = 0.7;
+		jPAIcon.scaleY = 0.7;
+		page10.add(jPAIcon);
+
+		// JPAButton
+		const jPAButton = this.add.rectangle(1274, 306, 240, 70);
+		jPAButton.fillColor = 3729407;
+		jPAButton.fillAlpha = 0.5;
+		page10.add(jPAButton);
+
+		// missionsText
+		const missionsText = this.add.text(275, 382, "", {});
+		missionsText.setOrigin(0, 0.5);
+		missionsText.text = "Missions";
+		missionsText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		missionsText.setWordWrapWidth(140);
+		page10.add(missionsText);
+
+		// missionsIcon
+		const missionsIcon = this.add.image(231, 382, "stampbook", "categories/22");
+		missionsIcon.scaleX = 0.7;
+		missionsIcon.scaleY = 0.7;
+		page10.add(missionsIcon);
+
+		// missionsButton
+		const missionsButton = this.add.rectangle(314, 382, 240, 70);
+		missionsButton.fillColor = 3729407;
+		missionsButton.fillAlpha = 0.5;
+		page10.add(missionsButton);
+
+		// pizzatronText
+		const pizzatronText = this.add.text(514, 382, "", {});
+		pizzatronText.setOrigin(0, 0.5);
+		pizzatronText.text = "Pizzatron 3000";
+		pizzatronText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		pizzatronText.setWordWrapWidth(140);
+		page10.add(pizzatronText);
+
+		// pizzatronIcon
+		const pizzatronIcon = this.add.image(471, 382, "stampbook", "categories/54");
+		pizzatronIcon.scaleX = 0.7;
+		pizzatronIcon.scaleY = 0.7;
+		page10.add(pizzatronIcon);
+
+		// pizzatronButton
+		const pizzatronButton = this.add.rectangle(554, 382, 240, 70);
+		pizzatronButton.fillColor = 3729407;
+		pizzatronButton.fillAlpha = 0.5;
+		page10.add(pizzatronButton);
+
+		// launchText
+		const launchText = this.add.text(754, 382, "", {});
+		launchText.setOrigin(0, 0.5);
+		launchText.text = "Puffle Launch";
+		launchText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		launchText.setWordWrapWidth(140);
+		page10.add(launchText);
+
+		// launchIcon
+		const launchIcon = this.add.image(712, 382, "stampbook", "categories/48");
+		launchIcon.scaleX = 0.7;
+		launchIcon.scaleY = 0.7;
+		page10.add(launchIcon);
+
+		// launchButton
+		const launchButton = this.add.rectangle(794, 382, 240, 70);
+		launchButton.fillColor = 3729407;
+		launchButton.fillAlpha = 0.5;
+		page10.add(launchButton);
+
+		// rescueText
+		const rescueText = this.add.text(994, 382, "", {});
+		rescueText.setOrigin(0, 0.5);
+		rescueText.text = "Puffle Rescue";
+		rescueText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		rescueText.setWordWrapWidth(140);
+		page10.add(rescueText);
+
+		// rescueIcon
+		const rescueIcon = this.add.image(953, 382, "stampbook", "categories/19");
+		rescueIcon.scaleX = 0.7;
+		rescueIcon.scaleY = 0.7;
+		page10.add(rescueIcon);
+
+		// rescueButton
+		const rescueButton = this.add.rectangle(1034, 382, 240, 70);
+		rescueButton.fillColor = 3729407;
+		rescueButton.fillAlpha = 0.5;
+		page10.add(rescueButton);
+
+		// pufflescapeText
+		const pufflescapeText = this.add.text(1230, 382, "", {});
+		pufflescapeText.setOrigin(0, 0.5);
+		pufflescapeText.text = "Pufflescape";
+		pufflescapeText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		pufflescapeText.setWordWrapWidth(160);
+		page10.add(pufflescapeText);
+
+		// pufflescapeIcon
+		const pufflescapeIcon = this.add.image(1191, 382, "stampbook", "categories/57");
+		pufflescapeIcon.scaleX = 0.7;
+		pufflescapeIcon.scaleY = 0.7;
+		page10.add(pufflescapeIcon);
+
+		// pufflescapeButton
+		const pufflescapeButton = this.add.rectangle(1274, 382, 240, 70);
+		pufflescapeButton.fillColor = 3729407;
+		pufflescapeButton.fillAlpha = 0.5;
+		page10.add(pufflescapeButton);
+
+		// smoothieText
+		const smoothieText = this.add.text(275, 457, "", {});
+		smoothieText.setOrigin(0, 0.5);
+		smoothieText.text = "Smoothie Smash";
+		smoothieText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		smoothieText.setWordWrapWidth(140);
+		page10.add(smoothieText);
+
+		// smoothieIcon
+		const smoothieIcon = this.add.image(231, 457, "stampbook", "categories/58");
+		smoothieIcon.scaleX = 0.7;
+		smoothieIcon.scaleY = 0.7;
+		page10.add(smoothieIcon);
+
+		// smoothieButton
+		const smoothieButton = this.add.rectangle(314, 457, 240, 70);
+		smoothieButton.fillColor = 3729407;
+		smoothieButton.fillAlpha = 0.5;
+		page10.add(smoothieButton);
+
+		// sysDefText
+		const sysDefText = this.add.text(514, 457, "", {});
+		sysDefText.setOrigin(0, 0.5);
+		sysDefText.text = "System Defender";
+		sysDefText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		sysDefText.setWordWrapWidth(140);
+		page10.add(sysDefText);
+
+		// sysDefIcon
+		const sysDefIcon = this.add.image(471, 457, "stampbook", "categories/46");
+		sysDefIcon.scaleX = 0.7;
+		sysDefIcon.scaleY = 0.7;
+		page10.add(sysDefIcon);
+
+		// sysDefButton
+		const sysDefButton = this.add.rectangle(554, 457, 240, 70);
+		sysDefButton.fillColor = 3729407;
+		sysDefButton.fillAlpha = 0.5;
+		page10.add(sysDefButton);
+
+		// thinIceText
+		const thinIceText = this.add.text(754, 457, "", {});
+		thinIceText.setOrigin(0, 0.5);
+		thinIceText.text = "Thin Ice";
+		thinIceText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		thinIceText.setWordWrapWidth(140);
+		page10.add(thinIceText);
+
+		// thinIceIcon
+		const thinIceIcon = this.add.image(712, 457, "stampbook", "categories/16");
+		thinIceIcon.scaleX = 0.7;
+		thinIceIcon.scaleY = 0.7;
+		page10.add(thinIceIcon);
+
+		// thinIceButton
+		const thinIceButton = this.add.rectangle(794, 457, 240, 70);
+		thinIceButton.fillColor = 3729407;
+		thinIceButton.fillAlpha = 0.5;
+		page10.add(thinIceButton);
+
+		// huntText
+		const huntText = this.add.text(994, 457, "", {});
+		huntText.setOrigin(0, 0.5);
+		huntText.text = "Treasure Hunt";
+		huntText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "bold" });
+		huntText.setWordWrapWidth(140);
+		page10.add(huntText);
+
+		// huntIcon
+		const huntIcon = this.add.image(953, 457, "stampbook", "categories/56");
+		huntIcon.scaleX = 0.7;
+		huntIcon.scaleY = 0.7;
+		page10.add(huntIcon);
+
+		// huntButton
+		const huntButton = this.add.rectangle(1034, 457, 240, 70);
+		huntButton.fillColor = 3729407;
+		huntButton.fillAlpha = 0.5;
+		page10.add(huntButton);
 
 		// page9
 		const page9 = this.add.container(0, 0);
@@ -1039,6 +1528,10 @@ export default class Stampbook extends Book {
 		pagename9.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page9.add(pagename9);
 
+		// pageicon9
+		const pageicon9 = this.add.image(255, 120, "stampbook", "categories/7");
+		page9.add(pageicon9);
+
 		// page8
 		const page8 = this.add.container(0, 0);
 		page8.visible = false;
@@ -1071,6 +1564,10 @@ export default class Stampbook extends Book {
 		pagename8.text = "Activities";
 		pagename8.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page8.add(pagename8);
+
+		// pageicon8
+		const pageicon8 = this.add.image(255, 120, "stampbook", "categories/7");
+		page8.add(pageicon8);
 
 		// page7
 		const page7 = this.add.container(0, 0);
@@ -1105,6 +1602,10 @@ export default class Stampbook extends Book {
 		pagename7.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page7.add(pagename7);
 
+		// pageicon7
+		const pageicon7 = this.add.image(255, 120, "stampbook", "categories/7");
+		page7.add(pageicon7);
+
 		// page6
 		const page6 = this.add.container(0, 0);
 		page6.visible = false;
@@ -1138,6 +1639,10 @@ export default class Stampbook extends Book {
 		pagename6.text = "Party";
 		pagename6.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page6.add(pagename6);
+
+		// pageicon6
+		const pageicon6 = this.add.image(255, 120, "stampbook", "categories/23");
+		page6.add(pageicon6);
 
 		// page5
 		const page5 = this.add.container(0, 0);
@@ -1174,6 +1679,10 @@ export default class Stampbook extends Book {
 		pagename5.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page5.add(pagename5);
 
+		// pageicon5
+		const pageicon5 = this.add.image(255, 120, "stampbook", "categories/23");
+		page5.add(pageicon5);
+
 		// page4
 		const page4 = this.add.container(0, 0);
 		page4.visible = false;
@@ -1206,6 +1715,10 @@ export default class Stampbook extends Book {
 		pagename4.text = "Characters";
 		pagename4.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page4.add(pagename4);
+
+		// pageicon4
+		const pageicon4 = this.add.image(255, 120, "stampbook", "categories/6");
+		page4.add(pageicon4);
 
 		// page3
 		const page3 = this.add.container(0, 0);
@@ -1240,6 +1753,46 @@ export default class Stampbook extends Book {
 		pagename3.setStyle({ "color": "#585858ff", "fixedWidth":400,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page3.add(pagename3);
 
+		// pageicon3
+		const pageicon3 = this.add.image(255, 120, "stampbook", "categories/5");
+		page3.add(pageicon3);
+
+		// partyText
+		const partyText = this.add.text(698, 224, "", {});
+		partyText.text = "Party";
+		partyText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "28px", "fontStyle": "bold" });
+		page3.add(partyText);
+
+		// partyIcon
+		const partyIcon = this.add.image(650, 240, "stampbook", "categories/23");
+		partyIcon.scaleX = 0.7;
+		partyIcon.scaleY = 0.7;
+		page3.add(partyIcon);
+
+		// partyBtn
+		const partyBtn = this.add.rectangle(750, 240, 300, 100);
+		partyBtn.fillColor = 3729407;
+		partyBtn.fillAlpha = 0.5;
+		page3.add(partyBtn);
+
+		// mascotText
+		const mascotText = this.add.text(293, 224, "", {});
+		mascotText.text = "Characters";
+		mascotText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "28px", "fontStyle": "bold" });
+		page3.add(mascotText);
+
+		// mascotIcon
+		const mascotIcon = this.add.image(245, 240, "stampbook", "categories/6");
+		mascotIcon.scaleX = 0.7;
+		mascotIcon.scaleY = 0.7;
+		page3.add(mascotIcon);
+
+		// mascotBtn
+		const mascotBtn = this.add.rectangle(351, 240, 300, 100);
+		mascotBtn.fillColor = 3729407;
+		mascotBtn.fillAlpha = 0.5;
+		page3.add(mascotBtn);
+
 		// page2
 		const page2 = this.add.container(0, 0);
 		page2.visible = false;
@@ -1271,6 +1824,78 @@ export default class Stampbook extends Book {
 		pagename.text = "Contents";
 		pagename.setStyle({ "color": "#585858ff", "fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page2.add(pagename);
+
+		// eventsText
+		const eventsText = this.add.text(293, 224, "", {});
+		eventsText.text = "Events";
+		eventsText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "28px", "fontStyle": "bold" });
+		page2.add(eventsText);
+
+		// eventsIcon
+		const eventsIcon = this.add.image(245, 240, "stampbook", "categories/5");
+		eventsIcon.scaleX = 0.7;
+		eventsIcon.scaleY = 0.7;
+		page2.add(eventsIcon);
+
+		// eventsBtn
+		const eventsBtn = this.add.rectangle(351, 240, 300, 100);
+		eventsBtn.fillColor = 3729407;
+		eventsBtn.fillAlpha = 0.5;
+		page2.add(eventsBtn);
+
+		// gamesText
+		const gamesText = this.add.text(293, 329, "", {});
+		gamesText.text = "Games";
+		gamesText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "28px", "fontStyle": "bold" });
+		page2.add(gamesText);
+
+		// gamesIcon
+		const gamesIcon = this.add.image(245, 345, "stampbook", "categories/8");
+		gamesIcon.scaleX = 0.7;
+		gamesIcon.scaleY = 0.7;
+		page2.add(gamesIcon);
+
+		// gamesBtn
+		const gamesBtn = this.add.rectangle(351, 340, 300, 100);
+		gamesBtn.fillColor = 3729407;
+		gamesBtn.fillAlpha = 0.5;
+		page2.add(gamesBtn);
+
+		// activitiesText
+		const activitiesText = this.add.text(698, 224, "", {});
+		activitiesText.text = "Activities";
+		activitiesText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "28px", "fontStyle": "bold" });
+		page2.add(activitiesText);
+
+		// activitiesIcon
+		const activitiesIcon = this.add.image(650, 240, "stampbook", "categories/7");
+		activitiesIcon.scaleX = 0.7;
+		activitiesIcon.scaleY = 0.7;
+		page2.add(activitiesIcon);
+
+		// activitiesBtn
+		const activitiesBtn = this.add.rectangle(750, 240, 300, 100);
+		activitiesBtn.fillColor = 3729407;
+		activitiesBtn.fillAlpha = 0.5;
+		page2.add(activitiesBtn);
+
+		// pinsText
+		const pinsText = this.add.text(698, 329, "", {});
+		pinsText.text = "Pins";
+		pinsText.setStyle({ "color": "#5b5b5bff", "fontFamily": "Burbank Small", "fontSize": "28px", "fontStyle": "bold" });
+		page2.add(pinsText);
+
+		// pinsIcon
+		const pinsIcon = this.add.image(650, 345, "stampbook", "categories/9001");
+		pinsIcon.scaleX = 0.7;
+		pinsIcon.scaleY = 0.7;
+		page2.add(pinsIcon);
+
+		// pinsBtn
+		const pinsBtn = this.add.rectangle(750, 340, 300, 100);
+		pinsBtn.fillColor = 3729407;
+		pinsBtn.fillAlpha = 0.5;
+		page2.add(pinsBtn);
 
 		// page1
 		const page1 = this.add.container(0, 0);
@@ -1489,6 +2114,7 @@ export default class Stampbook extends Book {
 
 		// stampInfo
 		const stampInfo = this.add.container(0, 0);
+		stampInfo.visible = false;
 
 		// rectangle
 		const rectangle = this.add.rectangle(550, 562, 300, 300);
@@ -1528,6 +2154,156 @@ export default class Stampbook extends Book {
 		// page_forward (components)
 		const page_forwardSimpleButton = new SimpleButton(page_forward);
 		page_forwardSimpleButton.callback = () => super.nextPage();
+
+		// aquaButton (components)
+		const aquaButtonSimpleButton = new SimpleButton(aquaButton);
+		aquaButtonSimpleButton.hoverCallback = () => this.btnOver(this.aquaText);
+		aquaButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.aquaText);
+		aquaButtonSimpleButton.callback = () => this.showPage(10);
+
+		// astroButton (components)
+		const astroButtonSimpleButton = new SimpleButton(astroButton);
+		astroButtonSimpleButton.hoverCallback = () => this.btnOver(this.astroText);
+		astroButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.astroText);
+		astroButtonSimpleButton.callback = () => this.showPage(12);
+
+		// jitsuButton (components)
+		const jitsuButtonSimpleButton = new SimpleButton(jitsuButton);
+		jitsuButtonSimpleButton.hoverCallback = () => this.btnOver(this.jitsuText);
+		jitsuButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.jitsuText);
+		jitsuButtonSimpleButton.callback = () => this.showPage(13);
+
+		// fireJitsuButton (components)
+		const fireJitsuButtonSimpleButton = new SimpleButton(fireJitsuButton);
+		fireJitsuButtonSimpleButton.hoverCallback = () => this.btnOver(this.fireJitsuText);
+		fireJitsuButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.fireJitsuText);
+		fireJitsuButtonSimpleButton.callback = () => this.showPage(14);
+
+		// snowJitsuButton (components)
+		const snowJitsuButtonSimpleButton = new SimpleButton(snowJitsuButton);
+		snowJitsuButtonSimpleButton.hoverCallback = () => this.btnOver(this.snowJitsuText);
+		snowJitsuButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.snowJitsuText);
+		snowJitsuButtonSimpleButton.callback = () => this.showPage(15);
+
+		// waterJitsuButton (components)
+		const waterJitsuButtonSimpleButton = new SimpleButton(waterJitsuButton);
+		waterJitsuButtonSimpleButton.hoverCallback = () => this.btnOver(this.waterJitsuText);
+		waterJitsuButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.waterJitsuText);
+		waterJitsuButtonSimpleButton.callback = () => this.showPage(17);
+
+		// cartSurferButton (components)
+		const cartSurferButtonSimpleButton = new SimpleButton(cartSurferButton);
+		cartSurferButtonSimpleButton.hoverCallback = () => this.btnOver(this.cartSurferText);
+		cartSurferButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.cartSurferText);
+		cartSurferButtonSimpleButton.callback = () => this.showPage(18);
+
+		// wavesButton (components)
+		const wavesButtonSimpleButton = new SimpleButton(wavesButton);
+		wavesButtonSimpleButton.hoverCallback = () => this.btnOver(this.wavesText);
+		wavesButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.wavesText);
+		wavesButtonSimpleButton.callback = () => this.showPage(19);
+
+		// fishingButton (components)
+		const fishingButtonSimpleButton = new SimpleButton(fishingButton);
+		fishingButtonSimpleButton.hoverCallback = () => this.btnOver(this.fishingText);
+		fishingButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.fishingText);
+		fishingButtonSimpleButton.callback = () => this.showPage(21);
+
+		// jPAButton (components)
+		const jPAButtonSimpleButton = new SimpleButton(jPAButton);
+		jPAButtonSimpleButton.hoverCallback = () => this.btnOver(this.JPAText);
+		jPAButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.JPAText);
+		jPAButtonSimpleButton.callback = () => this.showPage(22);
+
+		// missionsButton (components)
+		const missionsButtonSimpleButton = new SimpleButton(missionsButton);
+		missionsButtonSimpleButton.hoverCallback = () => this.btnOver(this.missionsText);
+		missionsButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.missionsText);
+		missionsButtonSimpleButton.callback = () => this.showPage(24);
+
+		// pizzatronButton (components)
+		const pizzatronButtonSimpleButton = new SimpleButton(pizzatronButton);
+		pizzatronButtonSimpleButton.hoverCallback = () => this.btnOver(this.pizzatronText);
+		pizzatronButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.pizzatronText);
+		pizzatronButtonSimpleButton.callback = () => this.showPage(26);
+
+		// launchButton (components)
+		const launchButtonSimpleButton = new SimpleButton(launchButton);
+		launchButtonSimpleButton.hoverCallback = () => this.btnOver(this.launchText);
+		launchButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.launchText);
+		launchButtonSimpleButton.callback = () => this.showPage(27);
+
+		// rescueButton (components)
+		const rescueButtonSimpleButton = new SimpleButton(rescueButton);
+		rescueButtonSimpleButton.hoverCallback = () => this.btnOver(this.rescueText);
+		rescueButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.rescueText);
+		rescueButtonSimpleButton.callback = () => this.showPage(28);
+
+		// pufflescapeButton (components)
+		const pufflescapeButtonSimpleButton = new SimpleButton(pufflescapeButton);
+		pufflescapeButtonSimpleButton.hoverCallback = () => this.btnOver(this.pufflescapeText);
+		pufflescapeButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.pufflescapeText);
+		pufflescapeButtonSimpleButton.callback = () => this.showPage(30);
+
+		// smoothieButton (components)
+		const smoothieButtonSimpleButton = new SimpleButton(smoothieButton);
+		smoothieButtonSimpleButton.hoverCallback = () => this.btnOver(this.smoothieText);
+		smoothieButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.smoothieText);
+		smoothieButtonSimpleButton.callback = () => this.showPage(31);
+
+		// sysDefButton (components)
+		const sysDefButtonSimpleButton = new SimpleButton(sysDefButton);
+		sysDefButtonSimpleButton.hoverCallback = () => this.btnOver(this.sysDefText);
+		sysDefButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.sysDefText);
+		sysDefButtonSimpleButton.callback = () => this.showPage(32);
+
+		// thinIceButton (components)
+		const thinIceButtonSimpleButton = new SimpleButton(thinIceButton);
+		thinIceButtonSimpleButton.hoverCallback = () => this.btnOver(this.thinIceText);
+		thinIceButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.thinIceText);
+		thinIceButtonSimpleButton.callback = () => this.showPage(33);
+
+		// huntButton (components)
+		const huntButtonSimpleButton = new SimpleButton(huntButton);
+		huntButtonSimpleButton.hoverCallback = () => this.btnOver(this.huntText);
+		huntButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.huntText);
+		huntButtonSimpleButton.callback = () => this.showPage(34);
+
+		// partyBtn (components)
+		const partyBtnSimpleButton = new SimpleButton(partyBtn);
+		partyBtnSimpleButton.hoverCallback = () => this.btnOver(this.partyText);
+		partyBtnSimpleButton.hoverOutCallback = () => this.btnOut(this.partyText);
+		partyBtnSimpleButton.callback = () => this.showPage(4);
+
+		// mascotBtn (components)
+		const mascotBtnSimpleButton = new SimpleButton(mascotBtn);
+		mascotBtnSimpleButton.hoverCallback = () => this.btnOver(this.mascotText);
+		mascotBtnSimpleButton.hoverOutCallback = () => this.btnOut(this.mascotText);
+		mascotBtnSimpleButton.callback = () => this.showPage(3);
+
+		// eventsBtn (components)
+		const eventsBtnSimpleButton = new SimpleButton(eventsBtn);
+		eventsBtnSimpleButton.hoverCallback = () => this.btnOver(this.eventsText);
+		eventsBtnSimpleButton.hoverOutCallback = () => this.btnOut(this.eventsText);
+		eventsBtnSimpleButton.callback = () => this.showPage(2);
+
+		// gamesBtn (components)
+		const gamesBtnSimpleButton = new SimpleButton(gamesBtn);
+		gamesBtnSimpleButton.hoverCallback = () => this.btnOver(this.gamesText);
+		gamesBtnSimpleButton.hoverOutCallback = () => this.btnOut(this.gamesText);
+		gamesBtnSimpleButton.callback = () => this.showPage(9);
+
+		// activitiesBtn (components)
+		const activitiesBtnSimpleButton = new SimpleButton(activitiesBtn);
+		activitiesBtnSimpleButton.hoverCallback = () => this.btnOver(this.activitiesText);
+		activitiesBtnSimpleButton.hoverOutCallback = () => this.btnOut(this.activitiesText);
+		activitiesBtnSimpleButton.callback = () => this.showPage(6);
+
+		// pinsBtn (components)
+		const pinsBtnSimpleButton = new SimpleButton(pinsBtn);
+		pinsBtnSimpleButton.hoverCallback = () => this.btnOver(this.pinsText);
+		pinsBtnSimpleButton.hoverOutCallback = () => this.btnOut(this.pinsText);
+		pinsBtnSimpleButton.callback = () => this.showPage(35);
 
 		// clasp_bg (components)
 		const clasp_bgSimpleButton = new SimpleButton(clasp_bg);
@@ -1659,177 +2435,261 @@ export default class Stampbook extends Book {
 		this.stampnum36 = stampnum36;
 		this.stampcategory36 = stampcategory36;
 		this.pagename36 = pagename36;
+		this.pageicon36 = pageicon36;
 		this.page35 = page35;
 		this.pagenum35 = pagenum35;
 		this.stampnum35 = stampnum35;
 		this.stampcategory35 = stampcategory35;
 		this.pagename35 = pagename35;
+		this.pageicon35 = pageicon35;
 		this.page34 = page34;
 		this.pagenum34 = pagenum34;
 		this.stampnum34 = stampnum34;
 		this.stampcategory34 = stampcategory34;
 		this.pagename34 = pagename34;
+		this.pageicon34 = pageicon34;
 		this.page33 = page33;
 		this.pagenum33 = pagenum33;
 		this.stampnum33 = stampnum33;
 		this.stampcategory33 = stampcategory33;
 		this.pagename33 = pagename33;
+		this.pageicon33 = pageicon33;
 		this.page32 = page32;
 		this.pagenum32 = pagenum32;
 		this.stampnum32 = stampnum32;
 		this.stampcategory32 = stampcategory32;
 		this.pagename32 = pagename32;
+		this.pageicon32 = pageicon32;
 		this.page31 = page31;
 		this.pagenum31 = pagenum31;
 		this.stampnum31 = stampnum31;
 		this.stampcategory31 = stampcategory31;
 		this.pagename31 = pagename31;
+		this.pageicon31 = pageicon31;
 		this.page30 = page30;
 		this.pagenum30 = pagenum30;
 		this.stampnum30 = stampnum30;
 		this.stampcategory30 = stampcategory30;
 		this.pagename30 = pagename30;
+		this.pageicon30 = pageicon30;
 		this.page29 = page29;
 		this.pagenum29 = pagenum29;
 		this.stampnum29 = stampnum29;
 		this.stampcategory29 = stampcategory29;
 		this.pagename29 = pagename29;
+		this.pageicon29 = pageicon29;
 		this.page28 = page28;
 		this.pagenum28 = pagenum28;
 		this.stampnum28 = stampnum28;
 		this.stampcategory28 = stampcategory28;
 		this.pagename28 = pagename28;
+		this.pageicon28 = pageicon28;
 		this.page27 = page27;
 		this.pagenum27 = pagenum27;
 		this.stampnum27 = stampnum27;
 		this.stampcategory27 = stampcategory27;
 		this.pagename27 = pagename27;
+		this.pageicon27 = pageicon27;
 		this.page26 = page26;
 		this.pagenum26 = pagenum26;
 		this.stampnum26 = stampnum26;
 		this.stampcategory26 = stampcategory26;
 		this.pagename26 = pagename26;
+		this.pageicon26 = pageicon26;
 		this.page25 = page25;
 		this.pagenum25 = pagenum25;
 		this.stampnum25 = stampnum25;
 		this.stampcategory25 = stampcategory25;
 		this.pagename25 = pagename25;
+		this.pageicon25 = pageicon25;
 		this.page24 = page24;
 		this.pagenum24 = pagenum24;
 		this.stampnum24 = stampnum24;
 		this.stampcategory24 = stampcategory24;
 		this.pagename24 = pagename24;
+		this.pageicon24 = pageicon24;
 		this.page23 = page23;
 		this.pagenum23 = pagenum23;
 		this.stampnum23 = stampnum23;
 		this.stampcategory23 = stampcategory23;
 		this.pagename23 = pagename23;
+		this.pageicon23 = pageicon23;
 		this.page22 = page22;
 		this.pagenum22 = pagenum22;
 		this.stampnum22 = stampnum22;
 		this.stampcategory22 = stampcategory22;
 		this.pagename22 = pagename22;
+		this.pageicon22 = pageicon22;
 		this.page21 = page21;
 		this.pagenum21 = pagenum21;
 		this.stampnum21 = stampnum21;
 		this.stampcategory21 = stampcategory21;
 		this.pagename21 = pagename21;
+		this.pageicon21 = pageicon21;
 		this.page20 = page20;
 		this.pagenum20 = pagenum20;
 		this.stampnum20 = stampnum20;
 		this.stampcategory20 = stampcategory20;
 		this.pagename20 = pagename20;
+		this.pageicon20 = pageicon20;
 		this.page19 = page19;
 		this.pagenum19 = pagenum19;
 		this.stampnum19 = stampnum19;
 		this.stampcategory19 = stampcategory19;
 		this.pagename19 = pagename19;
+		this.pageicon19 = pageicon19;
 		this.page18 = page18;
 		this.pagenum18 = pagenum18;
 		this.stampnum18 = stampnum18;
 		this.stampcategory18 = stampcategory18;
 		this.pagename18 = pagename18;
+		this.pageicon18 = pageicon18;
 		this.page17 = page17;
 		this.pagenum17 = pagenum17;
 		this.stampnum17 = stampnum17;
 		this.stampcategory17 = stampcategory17;
 		this.pagename17 = pagename17;
+		this.pageicon17 = pageicon17;
 		this.page16 = page16;
 		this.pagenum16 = pagenum16;
 		this.stampnum16 = stampnum16;
 		this.stampcategory16 = stampcategory16;
 		this.pagename16 = pagename16;
+		this.pageicon16 = pageicon16;
 		this.page15 = page15;
 		this.pagenum15 = pagenum15;
 		this.stampnum15 = stampnum15;
 		this.stampcategory15 = stampcategory15;
 		this.pagename15 = pagename15;
+		this.pageicon15 = pageicon15;
 		this.page14 = page14;
 		this.pagenum14 = pagenum14;
 		this.stampnum14 = stampnum14;
 		this.stampcategory14 = stampcategory14;
 		this.pagename14 = pagename14;
+		this.pageicon14 = pageicon14;
 		this.page13 = page13;
 		this.pagenum13 = pagenum13;
 		this.stampnum13 = stampnum13;
 		this.stampcategory13 = stampcategory13;
 		this.pagename13 = pagename13;
+		this.pageicon13 = pageicon13;
 		this.page12 = page12;
 		this.pagenum12 = pagenum12;
 		this.stampnum12 = stampnum12;
 		this.stampcategory12 = stampcategory12;
 		this.pagename12 = pagename12;
+		this.pageicon12 = pageicon12;
 		this.page11 = page11;
 		this.pagenum11 = pagenum11;
 		this.stampnum11 = stampnum11;
 		this.stampcategory11 = stampcategory11;
 		this.pagename11 = pagename11;
+		this.pageicon11 = pageicon11;
 		this.page10 = page10;
 		this.pagenum10 = pagenum10;
 		this.stampnum10 = stampnum10;
 		this.stampcategory10 = stampcategory10;
 		this.pagename10 = pagename10;
+		this.pageicon10 = pageicon10;
+		this.aquaText = aquaText;
+		this.aquaIcon = aquaIcon;
+		this.astroText = astroText;
+		this.astroIcon = astroIcon;
+		this.jitsuText = jitsuText;
+		this.jitsuIcon = jitsuIcon;
+		this.fireJitsuText = fireJitsuText;
+		this.fireJitsuIcon = fireJitsuIcon;
+		this.snowJitsuText = snowJitsuText;
+		this.snowJitsuIcon = snowJitsuIcon;
+		this.waterJitsuText = waterJitsuText;
+		this.waterJistuIcon = waterJistuIcon;
+		this.cartSurferText = cartSurferText;
+		this.cartSurferIcon = cartSurferIcon;
+		this.wavesText = wavesText;
+		this.wavesIcon = wavesIcon;
+		this.fishingText = fishingText;
+		this.fishingIcon = fishingIcon;
+		this.jPAText = jPAText;
+		this.jPAIcon = jPAIcon;
+		this.missionsText = missionsText;
+		this.missionsIcon = missionsIcon;
+		this.pizzatronText = pizzatronText;
+		this.pizzatronIcon = pizzatronIcon;
+		this.launchText = launchText;
+		this.launchIcon = launchIcon;
+		this.rescueText = rescueText;
+		this.rescueIcon = rescueIcon;
+		this.pufflescapeText = pufflescapeText;
+		this.pufflescapeIcon = pufflescapeIcon;
+		this.smoothieText = smoothieText;
+		this.smoothieIcon = smoothieIcon;
+		this.sysDefText = sysDefText;
+		this.sysDefIcon = sysDefIcon;
+		this.thinIceText = thinIceText;
+		this.thinIceIcon = thinIceIcon;
+		this.huntText = huntText;
+		this.huntIcon = huntIcon;
 		this.page9 = page9;
 		this.pagenum9 = pagenum9;
 		this.stampnum9 = stampnum9;
 		this.stampcategory9 = stampcategory9;
 		this.pagename9 = pagename9;
+		this.pageicon9 = pageicon9;
 		this.page8 = page8;
 		this.pagenum8 = pagenum8;
 		this.stampnum8 = stampnum8;
 		this.stampcategory8 = stampcategory8;
 		this.pagename8 = pagename8;
+		this.pageicon8 = pageicon8;
 		this.page7 = page7;
 		this.pagenum7 = pagenum7;
 		this.stampnum7 = stampnum7;
 		this.stampcategory7 = stampcategory7;
 		this.pagename7 = pagename7;
+		this.pageicon7 = pageicon7;
 		this.page6 = page6;
 		this.pagenum6 = pagenum6;
 		this.stampnum6 = stampnum6;
 		this.stampcategory6 = stampcategory6;
 		this.pagename6 = pagename6;
+		this.pageicon6 = pageicon6;
 		this.page5 = page5;
 		this.pagenum5 = pagenum5;
 		this.stampnum5 = stampnum5;
 		this.stampcategory5 = stampcategory5;
 		this.pagename5 = pagename5;
+		this.pageicon5 = pageicon5;
 		this.page4 = page4;
 		this.pagenum4 = pagenum4;
 		this.stampnum4 = stampnum4;
 		this.stampcategory4 = stampcategory4;
 		this.pagename4 = pagename4;
+		this.pageicon4 = pageicon4;
 		this.page3 = page3;
 		this.pagenum3 = pagenum3;
 		this.stampnum3 = stampnum3;
 		this.stampcategory3 = stampcategory3;
 		this.pagename3 = pagename3;
+		this.pageicon3 = pageicon3;
+		this.partyText = partyText;
+		this.partyIcon = partyIcon;
+		this.mascotText = mascotText;
+		this.mascotIcon = mascotIcon;
 		this.page2 = page2;
 		this.pagebgs_contents = pagebgs_contents;
 		this.pagenum = pagenum;
 		this.stampnum = stampnum;
 		this.stampcategory = stampcategory;
 		this.pagename = pagename;
+		this.eventsText = eventsText;
+		this.eventsIcon = eventsIcon;
+		this.gamesText = gamesText;
+		this.gamesIcon = gamesIcon;
+		this.activitiesText = activitiesText;
+		this.activitiesIcon = activitiesIcon;
+		this.pinsText = pinsText;
+		this.pinsIcon = pinsIcon;
 		this.page1 = page1;
 		this.cover = cover;
 		this.pattern = pattern;
@@ -1921,6 +2781,8 @@ export default class Stampbook extends Book {
 	stampcategory36;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename36;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon36;
 	/** @type {Phaser.GameObjects.Container} */
 	page35;
 	/** @type {Phaser.GameObjects.Text} */
@@ -1931,6 +2793,8 @@ export default class Stampbook extends Book {
 	stampcategory35;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename35;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon35;
 	/** @type {Phaser.GameObjects.Container} */
 	page34;
 	/** @type {Phaser.GameObjects.Text} */
@@ -1941,6 +2805,8 @@ export default class Stampbook extends Book {
 	stampcategory34;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename34;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon34;
 	/** @type {Phaser.GameObjects.Container} */
 	page33;
 	/** @type {Phaser.GameObjects.Text} */
@@ -1951,6 +2817,8 @@ export default class Stampbook extends Book {
 	stampcategory33;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename33;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon33;
 	/** @type {Phaser.GameObjects.Container} */
 	page32;
 	/** @type {Phaser.GameObjects.Text} */
@@ -1961,6 +2829,8 @@ export default class Stampbook extends Book {
 	stampcategory32;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename32;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon32;
 	/** @type {Phaser.GameObjects.Container} */
 	page31;
 	/** @type {Phaser.GameObjects.Text} */
@@ -1971,6 +2841,8 @@ export default class Stampbook extends Book {
 	stampcategory31;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename31;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon31;
 	/** @type {Phaser.GameObjects.Container} */
 	page30;
 	/** @type {Phaser.GameObjects.Text} */
@@ -1981,6 +2853,8 @@ export default class Stampbook extends Book {
 	stampcategory30;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename30;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon30;
 	/** @type {Phaser.GameObjects.Container} */
 	page29;
 	/** @type {Phaser.GameObjects.Text} */
@@ -1991,6 +2865,8 @@ export default class Stampbook extends Book {
 	stampcategory29;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename29;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon29;
 	/** @type {Phaser.GameObjects.Container} */
 	page28;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2001,6 +2877,8 @@ export default class Stampbook extends Book {
 	stampcategory28;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename28;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon28;
 	/** @type {Phaser.GameObjects.Container} */
 	page27;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2011,6 +2889,8 @@ export default class Stampbook extends Book {
 	stampcategory27;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename27;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon27;
 	/** @type {Phaser.GameObjects.Container} */
 	page26;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2021,6 +2901,8 @@ export default class Stampbook extends Book {
 	stampcategory26;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename26;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon26;
 	/** @type {Phaser.GameObjects.Container} */
 	page25;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2031,6 +2913,8 @@ export default class Stampbook extends Book {
 	stampcategory25;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename25;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon25;
 	/** @type {Phaser.GameObjects.Container} */
 	page24;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2041,6 +2925,8 @@ export default class Stampbook extends Book {
 	stampcategory24;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename24;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon24;
 	/** @type {Phaser.GameObjects.Container} */
 	page23;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2051,6 +2937,8 @@ export default class Stampbook extends Book {
 	stampcategory23;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename23;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon23;
 	/** @type {Phaser.GameObjects.Container} */
 	page22;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2061,6 +2949,8 @@ export default class Stampbook extends Book {
 	stampcategory22;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename22;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon22;
 	/** @type {Phaser.GameObjects.Container} */
 	page21;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2071,6 +2961,8 @@ export default class Stampbook extends Book {
 	stampcategory21;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename21;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon21;
 	/** @type {Phaser.GameObjects.Container} */
 	page20;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2081,6 +2973,8 @@ export default class Stampbook extends Book {
 	stampcategory20;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename20;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon20;
 	/** @type {Phaser.GameObjects.Container} */
 	page19;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2091,6 +2985,8 @@ export default class Stampbook extends Book {
 	stampcategory19;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename19;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon19;
 	/** @type {Phaser.GameObjects.Container} */
 	page18;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2101,6 +2997,8 @@ export default class Stampbook extends Book {
 	stampcategory18;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename18;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon18;
 	/** @type {Phaser.GameObjects.Container} */
 	page17;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2111,6 +3009,8 @@ export default class Stampbook extends Book {
 	stampcategory17;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename17;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon17;
 	/** @type {Phaser.GameObjects.Container} */
 	page16;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2121,6 +3021,8 @@ export default class Stampbook extends Book {
 	stampcategory16;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename16;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon16;
 	/** @type {Phaser.GameObjects.Container} */
 	page15;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2131,6 +3033,8 @@ export default class Stampbook extends Book {
 	stampcategory15;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename15;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon15;
 	/** @type {Phaser.GameObjects.Container} */
 	page14;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2141,6 +3045,8 @@ export default class Stampbook extends Book {
 	stampcategory14;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename14;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon14;
 	/** @type {Phaser.GameObjects.Container} */
 	page13;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2151,6 +3057,8 @@ export default class Stampbook extends Book {
 	stampcategory13;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename13;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon13;
 	/** @type {Phaser.GameObjects.Container} */
 	page12;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2161,6 +3069,8 @@ export default class Stampbook extends Book {
 	stampcategory12;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename12;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon12;
 	/** @type {Phaser.GameObjects.Container} */
 	page11;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2171,6 +3081,8 @@ export default class Stampbook extends Book {
 	stampcategory11;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename11;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon11;
 	/** @type {Phaser.GameObjects.Container} */
 	page10;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2181,6 +3093,84 @@ export default class Stampbook extends Book {
 	stampcategory10;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename10;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon10;
+	/** @type {Phaser.GameObjects.Text} */
+	aquaText;
+	/** @type {Phaser.GameObjects.Image} */
+	aquaIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	astroText;
+	/** @type {Phaser.GameObjects.Image} */
+	astroIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	jitsuText;
+	/** @type {Phaser.GameObjects.Image} */
+	jitsuIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	fireJitsuText;
+	/** @type {Phaser.GameObjects.Image} */
+	fireJitsuIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	snowJitsuText;
+	/** @type {Phaser.GameObjects.Image} */
+	snowJitsuIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	waterJitsuText;
+	/** @type {Phaser.GameObjects.Image} */
+	waterJistuIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	cartSurferText;
+	/** @type {Phaser.GameObjects.Image} */
+	cartSurferIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	wavesText;
+	/** @type {Phaser.GameObjects.Image} */
+	wavesIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	fishingText;
+	/** @type {Phaser.GameObjects.Image} */
+	fishingIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	jPAText;
+	/** @type {Phaser.GameObjects.Image} */
+	jPAIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	missionsText;
+	/** @type {Phaser.GameObjects.Image} */
+	missionsIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	pizzatronText;
+	/** @type {Phaser.GameObjects.Image} */
+	pizzatronIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	launchText;
+	/** @type {Phaser.GameObjects.Image} */
+	launchIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	rescueText;
+	/** @type {Phaser.GameObjects.Image} */
+	rescueIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	pufflescapeText;
+	/** @type {Phaser.GameObjects.Image} */
+	pufflescapeIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	smoothieText;
+	/** @type {Phaser.GameObjects.Image} */
+	smoothieIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	sysDefText;
+	/** @type {Phaser.GameObjects.Image} */
+	sysDefIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	thinIceText;
+	/** @type {Phaser.GameObjects.Image} */
+	thinIceIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	huntText;
+	/** @type {Phaser.GameObjects.Image} */
+	huntIcon;
 	/** @type {Phaser.GameObjects.Container} */
 	page9;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2191,6 +3181,8 @@ export default class Stampbook extends Book {
 	stampcategory9;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename9;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon9;
 	/** @type {Phaser.GameObjects.Container} */
 	page8;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2201,6 +3193,8 @@ export default class Stampbook extends Book {
 	stampcategory8;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename8;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon8;
 	/** @type {Phaser.GameObjects.Container} */
 	page7;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2211,6 +3205,8 @@ export default class Stampbook extends Book {
 	stampcategory7;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename7;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon7;
 	/** @type {Phaser.GameObjects.Container} */
 	page6;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2221,6 +3217,8 @@ export default class Stampbook extends Book {
 	stampcategory6;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename6;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon6;
 	/** @type {Phaser.GameObjects.Container} */
 	page5;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2231,6 +3229,8 @@ export default class Stampbook extends Book {
 	stampcategory5;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename5;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon5;
 	/** @type {Phaser.GameObjects.Container} */
 	page4;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2241,6 +3241,8 @@ export default class Stampbook extends Book {
 	stampcategory4;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename4;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon4;
 	/** @type {Phaser.GameObjects.Container} */
 	page3;
 	/** @type {Phaser.GameObjects.Text} */
@@ -2251,6 +3253,16 @@ export default class Stampbook extends Book {
 	stampcategory3;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename3;
+	/** @type {Phaser.GameObjects.Image} */
+	pageicon3;
+	/** @type {Phaser.GameObjects.Text} */
+	partyText;
+	/** @type {Phaser.GameObjects.Image} */
+	partyIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	mascotText;
+	/** @type {Phaser.GameObjects.Image} */
+	mascotIcon;
 	/** @type {Phaser.GameObjects.Container} */
 	page2;
 	/** @type {Phaser.GameObjects.Image} */
@@ -2263,6 +3275,22 @@ export default class Stampbook extends Book {
 	stampcategory;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename;
+	/** @type {Phaser.GameObjects.Text} */
+	eventsText;
+	/** @type {Phaser.GameObjects.Image} */
+	eventsIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	gamesText;
+	/** @type {Phaser.GameObjects.Image} */
+	gamesIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	activitiesText;
+	/** @type {Phaser.GameObjects.Image} */
+	activitiesIcon;
+	/** @type {Phaser.GameObjects.Text} */
+	pinsText;
+	/** @type {Phaser.GameObjects.Image} */
+	pinsIcon;
 	/** @type {Phaser.GameObjects.Container} */
 	page1;
 	/** @type {Phaser.GameObjects.Sprite} */
@@ -2357,47 +3385,138 @@ export default class Stampbook extends Book {
 
         window.stampbook = this
 
+		this.username.text = this.world.client.penguin.username
+		this.total.text = `Total Stamps ${this.world.client.stamps.length}/${Object.keys(this.crumbs.stamps).length}`
+		this.stampnum.text = `${this.world.client.stamps.length}/${Object.keys(this.crumbs.stamps).length}`
+
+		let mascotStamps = this.getCategoryStamps(6)
+		this.stampnum4.text = `${mascotStamps[1]}/${mascotStamps[0]}`
+
+		let partyStamps = this.getCategoryStamps(23)
+		this.stampnum5.text = `${partyStamps[1]}/${partyStamps[0]}`
+		this.stampnum6.text = `${partyStamps[1]}/${partyStamps[0]}`
+
+		let activityStamps = this.getCategoryStamps(7)
+		this.stampnum7.text = `${activityStamps[1]}/${activityStamps[0]}`
+		this.stampnum8.text = `${activityStamps[1]}/${activityStamps[0]}`
+		this.stampnum9.text = `${activityStamps[1]}/${activityStamps[0]}`
+
+		// event stamps
+		this.stampnum3.text = `${(mascotStamps[1] + partyStamps[1])}/${(mascotStamps[0] + partyStamps[0])}`
+
+		let aquaGrabberStamps = this.getCategoryStamps(13)
+		this.stampnum11.text = `${aquaGrabberStamps[1]}/${aquaGrabberStamps[0]}`
+		this.stampnum12.text = `${aquaGrabberStamps[1]}/${aquaGrabberStamps[0]}`
+
+		let astroBarrierStamps = this.getCategoryStamps(14)
+		this.stampnum13.text = `${astroBarrierStamps[1]}/${astroBarrierStamps[0]}`
+
+		let cardJitsuStamps = this.getCategoryStamps(38)
+		this.stampnum14.text = `${cardJitsuStamps[1]}/${cardJitsuStamps[0]}`
+
+		let cardJitsuFStamps = this.getCategoryStamps(32)
+		this.stampnum15.text = `${cardJitsuFStamps[1]}/${cardJitsuFStamps[0]}`
+
+		let cardJitsuSStamps = this.getCategoryStamps(60)
+		this.stampnum16.text = `${cardJitsuSStamps[1]}/${cardJitsuSStamps[0]}`
+		this.stampnum17.text = `${cardJitsuSStamps[1]}/${cardJitsuSStamps[0]}`
+
+		let cardJitsuWStamps = this.getCategoryStamps(34)
+		this.stampnum18.text = `${cardJitsuWStamps[1]}/${cardJitsuWStamps[0]}`
+
+		let cartSurferStamps = this.getCategoryStamps(28)
+		this.stampnum19.text = `${cartSurferStamps[1]}/${cartSurferStamps[0]}`
+
+		let wavesStamps = this.getCategoryStamps(15)
+		this.stampnum20.text = `${wavesStamps[1]}/${wavesStamps[0]}`
+		this.stampnum21.text = `${wavesStamps[1]}/${wavesStamps[0]}`
+
+		let iceFishingStamps = this.getCategoryStamps(52)
+		this.stampnum22.text = `${iceFishingStamps[1]}/${iceFishingStamps[0]}`
+
+		let JPAStamps = this.getCategoryStamps(11)
+		this.stampnum23.text = `${JPAStamps[1]}/${JPAStamps[0]}`
+		this.stampnum24.text = `${JPAStamps[1]}/${JPAStamps[0]}`
+
+		let missions = this.getCategoryStamps(22)
+		this.stampnum25.text = `${missions[1]}/${missions[0]}`
+		this.stampnum26.text = `${missions[1]}/${missions[0]}`
+
+		let pizzatronStamps = this.getCategoryStamps(54)
+		this.stampnum27.text = `${pizzatronStamps[1]}/${pizzatronStamps[0]}`
+
+		let launchStamps = this.getCategoryStamps(48)
+		this.stampnum28.text = `${launchStamps[1]}/${launchStamps[0]}`
+
+		let rescueStamps = this.getCategoryStamps(19)
+		this.stampnum29.text = `${rescueStamps[1]}/${rescueStamps[0]}`
+		this.stampnum30.text = `${rescueStamps[1]}/${rescueStamps[0]}`
+
+		let pufflescapeStamps = this.getCategoryStamps(57)
+		this.stampnum31.text = `${pufflescapeStamps[1]}/${pufflescapeStamps[0]}`
+
+		let smoothieStamps = this.getCategoryStamps(58)
+		this.stampnum32.text = `${smoothieStamps[1]}/${smoothieStamps[0]}`
+
+		let sysDefStamps = this.getCategoryStamps(46)
+		this.stampnum33.text = `${sysDefStamps[1]}/${sysDefStamps[0]}`
+
+		let thinIceStamps = this.getCategoryStamps(16)
+		this.stampnum34.text = `${thinIceStamps[1]}/${thinIceStamps[0]}`
+
+		let treasureHuntStamps = this.getCategoryStamps(56)
+		this.stampnum35.text = `${treasureHuntStamps[1]}/${treasureHuntStamps[0]}`
+
+		this.stampnum10.text = `${(aquaGrabberStamps[1] + astroBarrierStamps[1] + cardJitsuStamps[1] + cardJitsuFStamps[1] + cardJitsuSStamps[1] + cardJitsuWStamps[1] + cartSurferStamps[1] + wavesStamps[1] + iceFishingStamps[1] + JPAStamps[1] + missions[1] + pizzatronStamps[1] + launchStamps[1] + rescueStamps[1] + pufflescapeStamps[1] + smoothieStamps[1] + sysDefStamps[1] + thinIceStamps[1] + treasureHuntStamps[1])}/${(aquaGrabberStamps[0] + astroBarrierStamps[0] + cardJitsuStamps[0] + cardJitsuFStamps[0] + cardJitsuSStamps[0] + cardJitsuWStamps[0] + cartSurferStamps[0] + wavesStamps[0] + iceFishingStamps[0] + JPAStamps[0] + missions[0] + pizzatronStamps[0] + launchStamps[0] + rescueStamps[0] + pufflescapeStamps[0] + smoothieStamps[0] + sysDefStamps[0] + thinIceStamps[0] + treasureHuntStamps[0])}`
+
+
         this.stamps = []
 
         this.pageStamps = [
             [], // Front
             [], // Index
             [], // Events
-            [33, 31, 32, 34, 8, 446, 448, 35, 7, 358, 290, 36], // Characters
-            [186, 189, 296, 190, 332, 362, 182, 187, 439, 426, 360, 292, 330, 183, 193, 188], // Party
-            [184, 440, 438, 185, 294, 364, 444, 191], // Party
-            [14, 488, 20, 26, 493, 13, 18, 16, 492, 200, 491, 192, 490, 22, 27, 23], // Activities
-            [12, 15, 29, 17, 201, 30, 28, 19, 24, 489, 21, 11, 25, 198, 199, 9], // Activities
-            [495, 494, 10], // Activities
+            [7, 8, 31, 32, 33, 34, 35, 36, 290, 358, 448, 466], // Characters
+            [182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 193, 292, 294, 296, 330, 332], // Party
+            [360, 362, 364, 426, 438, 439, 440, 444], // Party
+            [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], // Activities
+            [25, 26, 27, 28, 29, 30, 197, 198, 199, 200, 201, 488, 489, 490, 491, 492], // Activities
+            [493, 494, 495], // Activities
             [], // Games
-            [73, 80, 84, 77, 86, 75, 88, 82, 91, 78, 79, 92, 81, 85, 76, 87], // Aqua Grabber
-            [74, 89, 83, 72], // Aqua Grabber
-            [55, 61, 59, 62, 56, 57, 58, 60, 53, 51, 52, 54], // Astro Barrier
-            [242, 232, 238, 248, 230, 240, 236, 244, 246, 234], // Card-Jitsu
-            [268, 256, 264, 262, 266, 254, 260, 252], // Card-Jitsu Fire
-            [485, 467, 468, 473, 486, 482, 483, 470, 472, 477, 478, 484, 474, 469, 487, 479], // Card-Jistu Snow
-            [476, 480, 475, 471, 481], // Card-Jitsu Snow
-            [270, 288, 286, 276, 278, 284, 282, 274], // Card-Jitsu Water
-            [208, 210, 106, 224, 212, 220, 214, 216, 228, 222, 218, 226], // Cart Surfer
-            [95, 97, 102, 104, 96, 108, 93, 101, 98, 110, 109, 107, 112, 111, 100, 94], // Catchin' Waves
-            [113, 106, 105, 103, 114, 99], // Catchin' Waves
-            [390, 382, 382, 380, 376, 388, 384, 386, 374, 372, 378], // Ice Fishing
-            [49, 45, 50, 40, 47, 38, 41, 42, 43, 44, 48, 39, 46, 37], // Jet Pack Adventure
-            [203, 205, 202, 204], // Jet Pack Adventure
-            [160, 170, 176, 174, 178, 162, 166, 159, 177, 179, 161, 163, 165, 167, 169, 171], // Missions
-            [173, 175, 172, 168, 180, 164], // Missions
-            [404, 396, 400, 410, 402, 392, 394, 406, 408, 398], // Pizzatron 3000
-            [334, 340, 344, 342, 338, 336, 350, 346, 350, 346, 348, 354, 356, 352], // Puffle Launch
-            [132, 155, 152, 133, 156, 153, 134, 157, 154, 138, 140, 139, 148, 145, 144, 150], // Puffle Rescue
-            [147, 151, 141, 149, 130, 131, 137, 136, 135, 146, 142], // Puffle Rescue
-            [429, 427, 436, 434, 431, 437, 435, 432, 428, 433, 430], // Pufflescape
-            [453, 452, 457, 458, 456, 463, 455, 450, 459, 451, 465, 464, 461, 460, 462, 454], // Smoothie Smash
-            [320, 300, 322, 324, 308, 304, 328, 298, 310, 302, 312, 306, 326, 443], // System Defender
-            [63, 67, 64, 65, 70, 68, 71, 69, 66], // Thin Ice
-            [416, 420, 422, 414, 418] // Treasure Hunt
+            [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87], // Aqua Grabber
+            [88, 89, 91, 92], // Aqua Grabber
+            [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62], // Astro Barrier
+            [230, 232, 234, 236, 238, 240, 242, 244, 246, 248], // Card-Jitsu
+            [252, 254, 256, 260, 262, 264, 266, 268], // Card-Jitsu Fire
+            [467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482], // Card-Jistu Snow
+            [483, 484, 485, 486, 487], // Card-Jitsu Snow
+            [270, 274, 276, 278, 282, 284, 286, 288], // Card-Jitsu Water
+            [206, 208, 210, 212, 214, 216, 218, 220, 222, 224, 226, 228], // Cart Surfer
+            [93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108], // Catchin' Waves
+            [109, 110, 111, 112, 113, 114], // Catchin' Waves
+            [372, 374, 376, 378, 380, 382, 384, 386, 388, 390], // Ice Fishing
+            [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 202, 203,], // Jet Pack Adventure
+            [204, 205], // Jet Pack Adventure
+            [159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174], // Missions
+            [175, 176, 177, 178, 179, 180], // Missions
+            [392, 394, 396, 398, 400, 402, 404, 406, 408, 410], // Pizzatron 3000
+            [334, 336, 338, 340, 342, 344, 346, 348, 350, 352, 354, 356], // Puffle Launch
+            [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 144, 145, 146], // Puffle Rescue
+            [147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157], // Puffle Rescue
+            [427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437], // Pufflescape
+            [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465], // Smoothie Smash
+            [298, 300, 302, 304, 306, 308, 310, 312, 320, 322, 324, 326, 328, 443], // System Defender
+            [63, 64, 65, 66, 67, 68, 69, 70, 71], // Thin Ice
+            [414, 416, 418, 420, 428] // Treasure Hunt
         ]
 
 		this.network.send('get_statistics')
+		this.pinLoader = new PinLoader(this)
+
+		this.stampnum36.text = this.world.client.inventory["flag"].length
+
+		this.pins = []
+		this.pinsOnPage = []
     }
 
     changeClasp(id) {
@@ -2459,10 +3578,14 @@ export default class Stampbook extends Book {
     addPageStamps() {
 
         var posArray = [[260, 270], [430, 270], [600, 270], [770, 270], [260, 420], [430, 420], [600, 420], [770, 420], [260, 570], [430, 570], [600, 570], [770, 570], [260, 720], [430, 720], [600, 720], [770, 720]]
-
+		var pinsPosArray = [[260, 270], [380, 270], [500, 270], [620, 270], [740, 270], [860, 270], [980, 270], [1100, 270], [1220, 270], [1340, 270], [260, 390], [380, 390], [500, 390], [620, 390], [740, 390], [860, 390], [980, 390], [1100, 390], [1220, 390], [1340, 390], [260, 520], [380, 520], [500, 520], [620, 520], [740, 520], [860, 520], [980, 520], [1100, 520], [1220, 520], [1340, 520], [260, 650], [380, 650], [500, 650], [620, 650], [740, 650], [860, 650], [980, 650], [1100, 650], [1220, 650], [1340, 650], [260, 780], [380, 780], [500, 780], [620, 780], [740, 780], [860, 780], [980, 780], [1100, 780], [1220, 780], [1340, 780]]
         for (var x in this.stamps) {
             this.stamps[x].visible = false
         }
+
+		for (var x in this.pins) {
+			this.pins[x].visible = false
+		}
 
 		this.stampsOnPage = []
 
@@ -2479,7 +3602,27 @@ export default class Stampbook extends Book {
 			this.stampsOnPage.push(this.pageStamps[page][x])
             this.stamps.push(this.pageStamps[page][x])
         }
+
+		if (page === 35){
+			for (var pin in this.world.client.inventory["flag"]) {
+				if (this.pins[this.world.client.inventory["flag"][pin]] !== undefined) { this.pins[this.world.client.inventory["flag"][pin]].visible = true; continue }
+
+				if (!this.textures.exists(`clothing/icon/${this.world.client.inventory["flag"][pin]}`)) {
+					this.pinLoader.loadPin(this.world.client.inventory["flag"][pin], pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1])
+									}
+				else {
+					this.pins[this.world.client.inventory["flag"][pin]] = this.add.image(pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][0], "clothing/icon/" + this.world.client.inventory["flag"][pin])
+					this.stampLayer.add(this.pins[this.world.client.inventory["flag"][pin]])
+				}
+				this.pinsOnPage.push(this.pins[this.world.client.inventory["flag"][pin]])
+			}
+		}
     }
+
+	addPin(pin, xpos, ypos) {
+		this.pins[pin] = this.add.image(xpos, ypos, "clothing/icon/" + pin)
+		this.stampLayer.add(this.pins[pin])
+	}
 
 	setStatistics(args) {
 		let joinTimestamp = new Date(args.joinTime)
@@ -2502,6 +3645,26 @@ export default class Stampbook extends Book {
 		let potwString = (args.hasBeenPOTW) ? "been Penguin of the Week! Nice Job!" : "never been Penguin of the Week"
 
 		this.statistics.text = `You joined on ${dateString}\n\nSince then:\nYou have sent ${args.messagesSent} chat messages.\nYou have played for ${Math.round(args.timePlayed / 60)} minutes! Wow, that's over ${Math.round((args.timePlayed / 86400) * 100) /100} days!\nYou have won ${args.sledRacesWon} sled races, and ${args.findFourWon} games of find four.\nYou have earned ${args.coinsEarned} coins, and spent ${Math.abs(args.coinsSpent)} coins.\nYou have thrown ${args.snowballsThrown} snowballs.\nYou have been banned ${banString}\n${args.itemsReleased} items have been released, and you have bought ${args.itemsOwned} of them.\n${args.pinsReleased} pins have been released, and you have found ${args.pinsOwned} of them.\nYou have earned 0 stamps\nYou have completed ${args.partyTasksCompleted} tasks at 0 parties.\nYou have ${potwString}`
+	}
+
+	getCategoryStamps(category){
+		let categoryStamps = []
+		let ownedCategoryStamps = []
+		for (var stamp in this.crumbs.stamps){
+			if (this.crumbs.stamps[stamp].groupid == category) {
+				categoryStamps.push(stamp)
+				if (this.world.client.stamps.includes(parseInt(stamp))) ownedCategoryStamps.push(stamp)
+			}
+		}
+		return [categoryStamps.length, ownedCategoryStamps.length]
+	}
+
+	btnOver(btntext) {
+		btntext.setStyle({ "color": "#3c3c3cff"})
+	}
+
+	btnOut(btntext) {
+		btntext.setStyle({ "color": "#5b5b5bff"})
 	}
 
     /* END-USER-CODE */

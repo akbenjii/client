@@ -34,8 +34,6 @@ export default class PlayerCard extends BaseContainer {
         /** @type {Inventory} */
         this.inventory;
         /** @type {Phaser.GameObjects.Image} */
-        this.stripes;
-        /** @type {Phaser.GameObjects.Image} */
         this.edit_player_button;
 
 
@@ -66,15 +64,14 @@ export default class PlayerCard extends BaseContainer {
 
         // stamps_btn
         const stamps_btn = scene.add.image(-132, 23, "main", "blue-button");
-        stamps_btn.visible = false;
         stats.add(stamps_btn);
 
         // card_coin
-        const card_coin = scene.add.image(-133, -5, "main", "card-coin");
+        const card_coin = scene.add.image(-133, -29, "main", "card-coin");
         stats.add(card_coin);
 
         // coins
-        const coins = scene.add.text(50, -3, "", {});
+        const coins = scene.add.text(50, -27, "", {});
         coins.setOrigin(0.5, 0.5);
         coins.text = "Your Coins: 000000";
         coins.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
@@ -83,10 +80,13 @@ export default class PlayerCard extends BaseContainer {
         // stamps
         const stamps = scene.add.text(50, 23, "", {});
         stamps.setOrigin(0.5, 0.5);
-        stamps.visible = false;
         stamps.text = "Your Stamps: 69/420";
         stamps.setStyle({ "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "24px" });
         stats.add(stamps);
+
+        // card_stamp
+        const card_stamp = scene.add.image(-132, 21, "main", "stamps-icon");
+        stats.add(card_stamp);
 
         // username
         const username = scene.add.text(0, -238, "", {});
@@ -115,16 +115,6 @@ export default class PlayerCard extends BaseContainer {
         // inventory
         const inventory = new Inventory(scene, -135, 33);
         this.add(inventory);
-
-        // stripes
-        const stripes = scene.add.image(-149, -185, "main", "stripes/4");
-        stripes.setOrigin(0.5, 0.5051546391752577);
-        this.add(stripes);
-
-        // card_badge_member_ribbon
-        const card_badge_member_ribbon = scene.add.image(-149, -208, "main", "card-badge-member-ribbon");
-        card_badge_member_ribbon.setOrigin(0.5061728395061729, 0.5185185185185185);
-        this.add(card_badge_member_ribbon);
 
         // edit_player_button
         const edit_player_button = scene.add.image(162, -174, "main", "edit_player_button");
@@ -162,7 +152,6 @@ export default class PlayerCard extends BaseContainer {
         this.username = username;
         this.inventorySort = inventorySort;
         this.inventory = inventory;
-        this.stripes = stripes;
         this.edit_player_button = edit_player_button;
 
         /* START-USER-CTR-CODE */
@@ -226,6 +215,7 @@ export default class PlayerCard extends BaseContainer {
             this.buttons.visible = false
             this.inventory.visible = true
             this.inventory.showPage()
+            this.stamps.text = `Your Stamps: ${this.world.client.stamps.length}/${Object.keys(this.crumbs.stamps).length}`
 
         } else {
             this.stats.visible = false
@@ -240,7 +230,6 @@ export default class PlayerCard extends BaseContainer {
         this.id = penguin.id
 
         this.updateButtons()
-        this.updateStripes(penguin.joinTime)
 
         this.interface.main.showWidget(this)
     }
@@ -250,33 +239,6 @@ export default class PlayerCard extends BaseContainer {
             let relationship = this.world.getRelationship(this.id)
             this.buttons.updateButtons(relationship)
         }
-    }
-
-    updateStripes(joinTime) {
-        if (!joinTime) {
-            return this.stripes.setFrame('stripes/0')
-        }
-
-        let oneDay = 1000 * 60 * 60 * 24
-        let timeDiff = Date.now() - Date.parse(joinTime)
-        let daysDiff = Math.round(timeDiff / oneDay)
-
-        let months = Math.floor(daysDiff / 30)
-        let frame
-
-        if (months <= 6) {
-            frame = 0
-        } else if (months <= 12) {
-            frame = 1
-        } else if (months <= 18) {
-            frame = 2
-        } else if (months <= 24) {
-            frame = 3
-        } else {
-            frame = 4
-        }
-
-        this.stripes.setFrame(`stripes/${frame}`)
     }
 
     editPlayer(){

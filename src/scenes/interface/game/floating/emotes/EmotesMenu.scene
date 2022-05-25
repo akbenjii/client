@@ -102,7 +102,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "small-box",
-                    "Button.callback": "() => { this.onEmoteClick(32) }",
+                    "Button.callback": "() => { this.onEmoteClick(28) }",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "main",
@@ -387,11 +387,11 @@
                 {
                     "type": "Image",
                     "id": "c8c9b2c9-55a5-41e8-9cd0-725452ba9055",
-                    "label": "emotes_32_small",
+                    "label": "emotes_28_small",
                     "components": [],
                     "texture": {
                         "key": "main",
-                        "frame": "emotes/32-small"
+                        "frame": "emotes/28-small"
                     },
                     "x": -64,
                     "y": -63

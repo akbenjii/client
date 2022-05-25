@@ -202,7 +202,7 @@ export default class Login extends BaseScene {
         this.scene.stop()
 
         this.network.connectLogin(this.checks.username.checked, this.checks.password.checked, () => {
-            this.network.send('login', { username: username, password: password })
+            this.network.send('login', { username: username, password: password, version: VERSION })
         })
     }
 

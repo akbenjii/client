@@ -34,6 +34,12 @@ let config = {
                 ws: true
             },
 
+            '/world/snowball': {
+                target: 'http://localhost:6113',
+                pathRewrite: { '^/world/snowball': '' },
+                ws: true
+            },
+
             '/create/scripts/php': 'http://localhost:80'
         },
         host: 'localhost',

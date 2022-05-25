@@ -6,7 +6,8 @@ export default class Error extends Plugin {
     constructor(network) {
         super(network)
         this.events = {
-            'error': this.error
+            'error': this.error,
+			'close_with_error': this.closeWithError
         }
 
         // Todo: use error ids instead
@@ -40,6 +41,10 @@ export default class Error extends Plugin {
 	
 	stealthDisabled() {
 		this.interface.prompt.showError('Stealth mode disabled\nPlease relogin.', 'Reload', () => window.location.reload())
+	}
+	
+	closeWithError(args, user) {
+		this.interface.prompt.showError(args.error, 'Reload', () => window.location.reload(), true)
 	}
 
 }

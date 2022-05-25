@@ -115,9 +115,9 @@ export default class EmotesMenu extends FloatingMenu {
         const emotes_30_small = scene.add.image(0, -63, "main", "emotes/30-small");
         this.add(emotes_30_small);
 
-        // emotes_32_small
-        const emotes_32_small = scene.add.image(-64, -63, "main", "emotes/32-small");
-        this.add(emotes_32_small);
+        // emotes_28_small
+        const emotes_28_small = scene.add.image(-64, -63, "main", "emotes/28-small");
+        this.add(emotes_28_small);
 
         // emotes_17_small
         const emotes_17_small = scene.add.image(64, -127, "main", "emotes/17-small");
@@ -196,7 +196,7 @@ export default class EmotesMenu extends FloatingMenu {
         // emote_16 (components)
         const emote_16Button = new Button(emote_16);
         emote_16Button.spriteName = "small-box";
-        emote_16Button.callback = () => { this.onEmoteClick(32) };
+        emote_16Button.callback = () => { this.onEmoteClick(28) };
         emote_16Button.activeFrame = false;
 
         // emote_15 (components)

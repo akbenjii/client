@@ -281,6 +281,7 @@
             "label": "page36",
             "scope": "CLASS",
             "components": [],
+            "y": -2,
             "visible": false,
             "list": [
                 {
@@ -343,6 +344,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "ba950f37-68c5-4c32-9d48-e7b2c70df3b4",
+                    "label": "pageicon36",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/9001"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -352,6 +366,7 @@
             "label": "page35",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -427,6 +442,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "0afa811e-44c2-40f9-8ade-ca7f96d3ed4e",
+                    "label": "pageicon35",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/56"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -436,6 +464,7 @@
             "label": "page34",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -511,6 +540,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "2d84a4cf-283d-4919-94bf-a8d567da8def",
+                    "label": "pageicon34",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/16"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -520,6 +562,7 @@
             "label": "page33",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -595,6 +638,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "f89b22a3-c70f-4bf9-9a1b-a1ac4930eeae",
+                    "label": "pageicon33",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/46"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -604,6 +660,7 @@
             "label": "page32",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -679,6 +736,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "f877e3e9-9cb0-4100-968e-db6a05ff009b",
+                    "label": "pageicon32",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/58"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -688,6 +758,7 @@
             "label": "page31",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -763,6 +834,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "103d9d19-4e7a-45d4-b09e-2f989028e360",
+                    "label": "pageicon31",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/57"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -772,6 +856,7 @@
             "label": "page30",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -847,6 +932,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "8bb0b66b-0dd3-4415-9ea0-1b0221863c71",
+                    "label": "pageicon30",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/19"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -856,6 +954,7 @@
             "label": "page29",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -931,6 +1030,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "4953e374-3a14-4557-a4b4-94ac523b29c2",
+                    "label": "pageicon29",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/19"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -940,6 +1052,7 @@
             "label": "page28",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1015,6 +1128,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "789a607a-4fc8-4626-9026-bfe5bdbecf16",
+                    "label": "pageicon28",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/48"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1024,6 +1150,7 @@
             "label": "page27",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1099,6 +1226,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c5b376c0-af73-485f-ab16-79a23ab851d2",
+                    "label": "pageicon27",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/54"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1108,6 +1248,7 @@
             "label": "page26",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1183,6 +1324,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "4dcafa9e-16d1-4954-9716-339811cbe84a",
+                    "label": "pageicon26",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/22"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1192,6 +1346,7 @@
             "label": "page25",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1267,6 +1422,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "8622fce7-7098-4b31-9a80-52fabb880966",
+                    "label": "pageicon25",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/22"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1276,6 +1444,7 @@
             "label": "page24",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1351,6 +1520,19 @@
                     "fontSize": "50px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c36889e9-c4e2-4646-9918-a937e5b8c508",
+                    "label": "pageicon24",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/11"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1360,6 +1542,7 @@
             "label": "page23",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1435,6 +1618,19 @@
                     "fontSize": "50px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "512f2be8-45c4-4343-bfc1-22d7ba0e22d2",
+                    "label": "pageicon23",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/11"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1444,6 +1640,7 @@
             "label": "page22",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1519,6 +1716,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "17964223-97d0-4a4b-bcc8-4879775d1bcf",
+                    "label": "pageicon22",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/52"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1603,6 +1813,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "1334f12a-82bd-41d1-97f3-158fda97ade7",
+                    "label": "pageicon21",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/15"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1612,6 +1835,7 @@
             "label": "page20",
             "scope": "CLASS",
             "components": [],
+            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -1687,6 +1911,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "80c67a04-3e4f-4e5a-8372-a836aebadcd9",
+                    "label": "pageicon20",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/15"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1771,6 +2008,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "8d993dc6-79e5-49b0-83c8-1cc2fed84c6f",
+                    "label": "pageicon19",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/28"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1855,6 +2105,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "de41c274-7df5-49da-9b28-50ca88464b01",
+                    "label": "pageicon18",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/34"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -1939,6 +2202,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "7c9a57b6-01ae-4db5-894b-0c2021853835",
+                    "label": "pageicon17",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/60"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2023,6 +2299,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "899371cf-5793-4286-a1bf-7b82edf2cee2",
+                    "label": "pageicon16",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/60"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2107,6 +2396,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "bf9465dc-ddfd-471f-993b-a2361ccb396c",
+                    "label": "pageicon15",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/32"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2191,6 +2493,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "a351bda5-ce26-4c75-8e25-7341cf74cd15",
+                    "label": "pageicon14",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/38"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2275,6 +2590,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "8688d442-43c0-48c8-9c1d-54c8ad929091",
+                    "label": "pageicon13",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/14"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2359,6 +2687,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "6c27c118-cb2f-407a-9110-f617cf363c74",
+                    "label": "pageicon12",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/13"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2443,6 +2784,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "1393c35a-f568-4f7d-9824-47cc36c5854b",
+                    "label": "pageicon11",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/13"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2527,6 +2881,931 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "fcfdec94-cc97-4eb3-bc5b-f7dde4be3608",
+                    "label": "pageicon10",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/8"
+                    },
+                    "x": 255,
+                    "y": 120
+                },
+                {
+                    "type": "Text",
+                    "id": "fd148cc5-090b-4faf-a6eb-4bfe7f2f88de",
+                    "label": "aquaText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 231,
+                    "originY": 0.5,
+                    "text": "Aqua Grabber",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "24defd74-d395-4b04-bdb0-bd2b88c64107",
+                    "label": "aquaIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/13"
+                    },
+                    "x": 231,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "cc3bd707-d338-4e99-a85e-77a88347ebaf",
+                    "label": "aquaButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.aquaText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.aquaText)",
+                    "SimpleButton.callback": "() => this.showPage(10)",
+                    "x": 314,
+                    "y": 231,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "87a9a949-913d-440c-94c2-bbc50a3ce614",
+                    "label": "astroText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 231,
+                    "originY": 0.5,
+                    "text": "Astro Barrier",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "8c73ab39-efa4-406e-9e01-88a13c9caaed",
+                    "label": "astroIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/14"
+                    },
+                    "x": 471,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "baba9164-fbfb-4807-aa93-6edbd6d5df23",
+                    "label": "astroButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.astroText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.astroText)",
+                    "SimpleButton.callback": "() => this.showPage(12)",
+                    "x": 554,
+                    "y": 231,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "92508b45-b9ba-4916-acda-9cdcaf6ab1d9",
+                    "label": "jitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 231,
+                    "originY": 0.5,
+                    "text": "Card-Jitsu",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "6534b95f-bef0-4981-9b6a-b834d6364d10",
+                    "label": "jitsuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/38"
+                    },
+                    "x": 712,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "96549528-6db3-445e-b4a9-00172f1ebdb0",
+                    "label": "jitsuButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.jitsuText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.jitsuText)",
+                    "SimpleButton.callback": "() => this.showPage(13)",
+                    "x": 794,
+                    "y": 231,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "0cc81dd7-7239-4157-b363-694038f76cc3",
+                    "label": "fireJitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 231,
+                    "originY": 0.5,
+                    "text": "Card-Jitsu Fire",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "2512d64b-55bc-4164-b027-4488c66b3be5",
+                    "label": "fireJitsuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/32"
+                    },
+                    "x": 953,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "fbdc33b3-1d7c-481c-83b4-7f902935cd4f",
+                    "label": "fireJitsuButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.fireJitsuText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.fireJitsuText)",
+                    "SimpleButton.callback": "() => this.showPage(14)",
+                    "x": 1034,
+                    "y": 231,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "d017a5f9-ac36-43f1-9fab-21a821198ec0",
+                    "label": "snowJitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1230,
+                    "y": 231,
+                    "originY": 0.5,
+                    "text": "Card-Jitsu Snow",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 160
+                },
+                {
+                    "type": "Image",
+                    "id": "58fdc08b-daae-43f6-9da7-8d2db09760db",
+                    "label": "snowJitsuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/60"
+                    },
+                    "x": 1191,
+                    "y": 231,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "9ba99e04-2a28-4816-aebc-012ca53f0220",
+                    "label": "snowJitsuButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.snowJitsuText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.snowJitsuText)",
+                    "SimpleButton.callback": "() => this.showPage(15)",
+                    "x": 1274,
+                    "y": 231,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "84038d20-d4fe-44ee-a7f1-86b26b5e9e96",
+                    "label": "waterJitsuText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 306,
+                    "originY": 0.5,
+                    "text": "Card-Jitsu Water",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "3ea0d83a-62a4-4065-8fcb-10f411df1543",
+                    "label": "waterJistuIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/34"
+                    },
+                    "x": 231,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d02a0a85-7624-4084-b420-1eb53bb0e20d",
+                    "label": "waterJitsuButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.waterJitsuText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.waterJitsuText)",
+                    "SimpleButton.callback": "() => this.showPage(17)",
+                    "x": 314,
+                    "y": 306,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "e0c747fb-bc4a-4b71-867a-03a5ab5b7510",
+                    "label": "cartSurferText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 306,
+                    "originY": 0.5,
+                    "text": "Cart Surfer",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "3a02fbba-e4bd-42a9-bf5e-b645caec6263",
+                    "label": "cartSurferIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/28"
+                    },
+                    "x": 471,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d3b01726-9c8c-43fb-8d6b-2e6a8b872d09",
+                    "label": "cartSurferButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.cartSurferText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.cartSurferText)",
+                    "SimpleButton.callback": "() => this.showPage(18)",
+                    "x": 554,
+                    "y": 306,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "822c71f9-f65a-4dd2-8af4-2e8509b2ebba",
+                    "label": "wavesText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 306,
+                    "originY": 0.5,
+                    "text": "Catchin Waves",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "9e2638d4-bf51-46c5-ad63-736a8c8d3051",
+                    "label": "wavesIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/15"
+                    },
+                    "x": 712,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "7ad11ac3-c7c5-403c-9665-d84853e07b00",
+                    "label": "wavesButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.wavesText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.wavesText)",
+                    "SimpleButton.callback": "() => this.showPage(19)",
+                    "x": 794,
+                    "y": 306,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "eb409ad4-bcf1-470c-8802-ee745faf49d1",
+                    "label": "fishingText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 306,
+                    "originY": 0.5,
+                    "text": "Ice Fishing",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "50d695ee-3a1b-4215-b037-b3bf2602e4b5",
+                    "label": "fishingIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/52"
+                    },
+                    "x": 953,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "2742601c-a1da-47fa-b1ed-71f4049b311a",
+                    "label": "fishingButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.fishingText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.fishingText)",
+                    "SimpleButton.callback": "() => this.showPage(21)",
+                    "x": 1034,
+                    "y": 306,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "f4f9e0ec-293c-483c-9db8-4ebef97321a0",
+                    "label": "JPAText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1230,
+                    "y": 306,
+                    "originY": 0.5,
+                    "text": "Jet Pack Adventure",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 160
+                },
+                {
+                    "type": "Image",
+                    "id": "2da2052c-885b-4180-8695-d1dc0b750c9e",
+                    "label": "JPAIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/11"
+                    },
+                    "x": 1191,
+                    "y": 306,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "f1be6da8-0a34-4c74-9995-f0c6cefeb414",
+                    "label": "JPAButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.JPAText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.JPAText)",
+                    "SimpleButton.callback": "() => this.showPage(22)",
+                    "x": 1274,
+                    "y": 306,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "741afd78-53d7-4e2d-b1f4-8ad9a005ab98",
+                    "label": "missionsText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 382,
+                    "originY": 0.5,
+                    "text": "Missions",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "263e758f-6f77-4ff3-a72a-00c8ebf27e32",
+                    "label": "missionsIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/22"
+                    },
+                    "x": 231,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "6902fbe1-1322-4cff-99b2-1cf90938f3ef",
+                    "label": "missionsButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.missionsText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.missionsText)",
+                    "SimpleButton.callback": "() => this.showPage(24)",
+                    "x": 314,
+                    "y": 382,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "b05fc877-05c8-4a7d-90cd-38357e947b83",
+                    "label": "pizzatronText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 382,
+                    "originY": 0.5,
+                    "text": "Pizzatron 3000",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "0cd000f8-18e2-482c-b74a-ff6772526a67",
+                    "label": "pizzatronIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/54"
+                    },
+                    "x": 471,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "57a3df71-6ab3-43cb-9edc-1c2ba00244fd",
+                    "label": "pizzatronButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.pizzatronText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.pizzatronText)",
+                    "SimpleButton.callback": "() => this.showPage(26)",
+                    "x": 554,
+                    "y": 382,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "f643f440-7f87-4f12-b804-365ab57af30a",
+                    "label": "launchText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 382,
+                    "originY": 0.5,
+                    "text": "Puffle Launch",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "b07b2986-d0ec-44d6-81d7-9baebd2fd4e0",
+                    "label": "launchIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/48"
+                    },
+                    "x": 712,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ffa90515-2df6-45eb-afa8-5f78cf9ec2fe",
+                    "label": "launchButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.launchText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.launchText)",
+                    "SimpleButton.callback": "() => this.showPage(27)",
+                    "x": 794,
+                    "y": 382,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "d1e5a5ca-befe-4296-aaab-561ad9721bcd",
+                    "label": "rescueText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 382,
+                    "originY": 0.5,
+                    "text": "Puffle Rescue",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "82f8cee7-5cbb-4305-a1b4-cc34a467aedd",
+                    "label": "rescueIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/19"
+                    },
+                    "x": 953,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "62bf7ea1-c4e4-4f73-b24b-6c6a33fab05e",
+                    "label": "rescueButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.rescueText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.rescueText)",
+                    "SimpleButton.callback": "() => this.showPage(28)",
+                    "x": 1034,
+                    "y": 382,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "6f7da7c5-7661-44f7-8055-1fa6105a8bd6",
+                    "label": "pufflescapeText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1230,
+                    "y": 382,
+                    "originY": 0.5,
+                    "text": "Pufflescape",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 160
+                },
+                {
+                    "type": "Image",
+                    "id": "13ae4bd9-be74-4314-9dfd-d64478735292",
+                    "label": "pufflescapeIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/57"
+                    },
+                    "x": 1191,
+                    "y": 382,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "027096e1-7c81-4d4f-8a0c-a529b24fd9d6",
+                    "label": "pufflescapeButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.pufflescapeText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.pufflescapeText)",
+                    "SimpleButton.callback": "() => this.showPage(30)",
+                    "x": 1274,
+                    "y": 382,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "5ab2595e-a558-4531-a5dd-feefc8f8c631",
+                    "label": "smoothieText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 275,
+                    "y": 457,
+                    "originY": 0.5,
+                    "text": "Smoothie Smash",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "9d4d2e56-efc1-4a95-afdf-9e26e42e0087",
+                    "label": "smoothieIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/58"
+                    },
+                    "x": 231,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "aad01117-fcd0-4f21-92f2-9c6ea82cad23",
+                    "label": "smoothieButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.smoothieText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.smoothieText)",
+                    "SimpleButton.callback": "() => this.showPage(31)",
+                    "x": 314,
+                    "y": 457,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "a12ec10c-cc62-4a76-957c-017e53d24019",
+                    "label": "sysDefText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 514,
+                    "y": 457,
+                    "originY": 0.5,
+                    "text": "System Defender",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "4da3dcf1-56d0-4bbb-957d-778f7cb43700",
+                    "label": "sysDefIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/46"
+                    },
+                    "x": 471,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "695e5cf3-e824-4376-97f6-b4652ada6d52",
+                    "label": "sysDefButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.sysDefText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.sysDefText)",
+                    "SimpleButton.callback": "() => this.showPage(32)",
+                    "x": 554,
+                    "y": 457,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "279b4d36-aba5-4fb3-95a4-f7ad8f723473",
+                    "label": "thinIceText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 754,
+                    "y": 457,
+                    "originY": 0.5,
+                    "text": "Thin Ice",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "a7de7815-b6a3-4744-ae64-b79c50f66235",
+                    "label": "thinIceIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/16"
+                    },
+                    "x": 712,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b5ffac05-e3f4-4997-925c-841faae47f26",
+                    "label": "thinIceButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.thinIceText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.thinIceText)",
+                    "SimpleButton.callback": "() => this.showPage(33)",
+                    "x": 794,
+                    "y": 457,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "d1bf6af6-7d61-4c36-8cd4-d37052bbe7d0",
+                    "label": "huntText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 994,
+                    "y": 457,
+                    "originY": 0.5,
+                    "text": "Treasure Hunt",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff",
+                    "wordWrapWidth": 140
+                },
+                {
+                    "type": "Image",
+                    "id": "034fe730-8194-4c94-a9b5-24d468939750",
+                    "label": "huntIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/56"
+                    },
+                    "x": 953,
+                    "y": 457,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "2cb64d1a-1a33-469b-aa76-865943d9825c",
+                    "label": "huntButton",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.huntText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.huntText)",
+                    "SimpleButton.callback": "() => this.showPage(34)",
+                    "x": 1034,
+                    "y": 457,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 240,
+                    "height": 70
                 }
             ]
         },
@@ -2611,6 +3890,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "54371246-d4e8-4026-b493-4148ca87cea0",
+                    "label": "pageicon9",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/7"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2695,6 +3987,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "85ed1ef8-cfe9-49b7-8087-e2db57b1cfbd",
+                    "label": "pageicon8",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/7"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2779,6 +4084,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "ff9e2996-552a-4d69-8d7a-7113d19ac3de",
+                    "label": "pageicon7",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/7"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2864,6 +4182,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "c77badcb-dd43-42a7-97a6-b019875091bd",
+                    "label": "pageicon6",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/23"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -2950,6 +4281,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "1bb5fd7d-90a5-4bf5-8897-fb4efe9e99bc",
+                    "label": "pageicon5",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/23"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -3034,6 +4378,19 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "ad5143ad-4391-4cad-b19f-6f6c0c8beaf8",
+                    "label": "pageicon4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/6"
+                    },
+                    "x": 255,
+                    "y": 120
                 }
             ]
         },
@@ -3118,6 +4475,111 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "543e7e7d-5fc9-4868-94d2-8df25a0bf303",
+                    "label": "pageicon3",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/5"
+                    },
+                    "x": 255,
+                    "y": 120
+                },
+                {
+                    "type": "Text",
+                    "id": "fc72069e-d7c1-4a9a-b8b1-a1392e829b35",
+                    "label": "partyText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 698,
+                    "y": 224,
+                    "text": "Party",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff"
+                },
+                {
+                    "type": "Image",
+                    "id": "d1a47733-7758-44a5-bae3-768052f177b6",
+                    "label": "partyIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/23"
+                    },
+                    "x": 650,
+                    "y": 240,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "770be2f7-59aa-479f-8776-60a984ed15a4",
+                    "label": "partyBtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.partyText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.partyText)",
+                    "SimpleButton.callback": "() => this.showPage(4)",
+                    "x": 750,
+                    "y": 240,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 300,
+                    "height": 100
+                },
+                {
+                    "type": "Text",
+                    "id": "a6d140c8-e2c5-49c3-9b6d-32a748ff0b6d",
+                    "label": "mascotText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 293,
+                    "y": 224,
+                    "text": "Characters",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff"
+                },
+                {
+                    "type": "Image",
+                    "id": "5b8f88ac-f714-4ce8-9911-beb26d9d91ac",
+                    "label": "mascotIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/6"
+                    },
+                    "x": 245,
+                    "y": 240,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "cfe087ad-a2d0-4c52-a23a-ea1de76c41a9",
+                    "label": "mascotBtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.mascotText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.mascotText)",
+                    "SimpleButton.callback": "() => this.showPage(3)",
+                    "x": 351,
+                    "y": 240,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 300,
+                    "height": 100
                 }
             ]
         },
@@ -3198,6 +4660,190 @@
                     "fontSize": "70px",
                     "fontStyle": "bold",
                     "color": "#585858ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "f5df6a0f-f9ba-413c-8061-be07ae12d66a",
+                    "label": "eventsText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 293,
+                    "y": 224,
+                    "text": "Events",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff"
+                },
+                {
+                    "type": "Image",
+                    "id": "b2fb0c6b-8c62-424c-bcdc-a5c023ba3af4",
+                    "label": "eventsIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/5"
+                    },
+                    "x": 245,
+                    "y": 240,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "0898cb69-0ca2-4468-96a3-cf9433cc1864",
+                    "label": "eventsBtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.eventsText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.eventsText)",
+                    "SimpleButton.callback": "() => this.showPage(2)",
+                    "x": 351,
+                    "y": 240,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 300,
+                    "height": 100
+                },
+                {
+                    "type": "Text",
+                    "id": "5cc2c0d1-f80d-4499-9674-22f95d5c4e74",
+                    "label": "gamesText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 293,
+                    "y": 329,
+                    "text": "Games",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff"
+                },
+                {
+                    "type": "Image",
+                    "id": "b557b9cb-6fad-4443-a7b3-eeba1ef2022a",
+                    "label": "gamesIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/8"
+                    },
+                    "x": 245,
+                    "y": 345,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c84b77ea-8e80-44f1-a78b-e61bca405f1d",
+                    "label": "gamesBtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.gamesText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.gamesText)",
+                    "SimpleButton.callback": "() => this.showPage(9)",
+                    "x": 351,
+                    "y": 340,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 300,
+                    "height": 100
+                },
+                {
+                    "type": "Text",
+                    "id": "d708f860-5cbc-4503-8557-d2495f742c7a",
+                    "label": "activitiesText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 698,
+                    "y": 224,
+                    "text": "Activities",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff"
+                },
+                {
+                    "type": "Image",
+                    "id": "2d99eacc-01db-408c-ac99-f024f98a00b9",
+                    "label": "activitiesIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/7"
+                    },
+                    "x": 650,
+                    "y": 240,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "40890fb5-0a25-4503-b5c9-54bcbea56489",
+                    "label": "activitiesBtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.activitiesText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.activitiesText)",
+                    "SimpleButton.callback": "() => this.showPage(6)",
+                    "x": 750,
+                    "y": 240,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 300,
+                    "height": 100
+                },
+                {
+                    "type": "Text",
+                    "id": "3cded853-5c54-4072-88ff-7ab728533ece",
+                    "label": "pinsText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 698,
+                    "y": 329,
+                    "text": "Pins",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "28px",
+                    "fontStyle": "bold",
+                    "color": "#5b5b5bff"
+                },
+                {
+                    "type": "Image",
+                    "id": "b4d54862-fd63-43e0-aeb3-9d18cbd48868",
+                    "label": "pinsIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "stampbook",
+                        "frame": "categories/9001"
+                    },
+                    "x": 650,
+                    "y": 345,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c518f45d-1d6d-4328-9934-7a9663ef0b61",
+                    "label": "pinsBtn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.pinsText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.pinsText)",
+                    "SimpleButton.callback": "() => this.showPage(35)",
+                    "x": 750,
+                    "y": 340,
+                    "fillColor": "#38e7ff",
+                    "fillAlpha": 0.5,
+                    "width": 300,
+                    "height": 100
                 }
             ]
         },
@@ -3848,6 +5494,7 @@
             "id": "f131a004-7964-4155-b27e-b28e2441add3",
             "label": "stampInfo",
             "components": [],
+            "visible": false,
             "list": [
                 {
                     "type": "Rectangle",

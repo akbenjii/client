@@ -23,7 +23,8 @@ export default class PromptController {
 		_interface.add.existing(this.coins)
     }
 
-    showError(text, buttonText = 'Okay', callback = () => this.error.visible = false) {
+    showError(text, buttonText = 'Okay', callback = () =>{ this.error.visible = false; this.error.disconnectOverwrite = false}, disconnectOverwrite) {
+		this.error.disconnectOverwrite = (disconnectOverwrite) ? true : false
         this.error.show(text, buttonText, callback)
         this.setCursor()
     }
