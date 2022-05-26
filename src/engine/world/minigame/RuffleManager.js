@@ -32,6 +32,12 @@ export default class RuffleManager {
 		
 		window.onSSEInit = this.onSSEInit
 		window.onSSEInit = onSSEInit.bind(this)
+
+		window.setCannonData = this.setCannonData
+		window.setCannonData = setCannonData.bind(this)
+
+		window.getCannonData = this.getCannonData
+		window.getCannonData = getCannonData.bind(this)
 		
 		this.swfInstance = this.rufflePlayer.load({
 			url: "assets/media/games/swf/sse.swf",
@@ -71,6 +77,16 @@ export default class RuffleManager {
         this.world.client.sendJoinRoom(roomid, room.key)
 		
 		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game })
+	}
+
+	setCannonData(data){
+		console.log("set cannon data", data)
+		this.cannonData = data
+	}
+
+	getCannonData(){
+		console.log("get cannon data", this.cannonData)
+		return this.cannonData
 	}
 	
 }

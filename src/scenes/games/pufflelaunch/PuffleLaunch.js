@@ -5,13 +5,13 @@ import { Interactive } from '@components/components'
 
 /* START OF COMPILED CODE */
 
-export default class PuffleRoundup extends RoomScene {
+export default class PuffleLaunch extends RoomScene {
 
     constructor() {
-        super("PuffleRoundup");
+        super("PuffleLaunch");
 
         /* START-USER-CTR-CODE */
-        this.music = "roundup"
+        this.music = "124"
         /* END-USER-CTR-CODE */
     }
 

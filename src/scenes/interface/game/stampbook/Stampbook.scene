@@ -5493,13 +5493,15 @@
             "type": "Container",
             "id": "f131a004-7964-4155-b27e-b28e2441add3",
             "label": "stampInfo",
+            "scope": "CLASS",
             "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Rectangle",
                     "id": "bf8c8808-5d07-477f-a35f-ed8c8e0dd8e8",
-                    "label": "rectangle",
+                    "label": "stampInfoBg",
+                    "scope": "CLASS",
                     "components": [
                         "NineSlice"
                     ],
@@ -5513,7 +5515,8 @@
                 {
                     "type": "Text",
                     "id": "6e765939-af14-43fd-94f6-46772311fd38",
-                    "label": "text",
+                    "label": "stampInfoTitle",
+                    "scope": "CLASS",
                     "components": [],
                     "x": 550,
                     "y": 441,
@@ -5530,7 +5533,8 @@
                 {
                     "type": "Text",
                     "id": "1d72cc0d-a7b6-4855-b5aa-beb24f3c4265",
-                    "label": "text_1",
+                    "label": "stampInfoBody",
+                    "scope": "CLASS",
                     "components": [],
                     "x": 550,
                     "y": 510,
@@ -5543,6 +5547,282 @@
                     "fontSize": "26px",
                     "color": "#000000ff",
                     "wordWrapWidth": 300
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "0524b342-9899-4e09-adfa-6a8f29ca84db",
+            "label": "stampHovers",
+            "scope": "CLASS",
+            "components": [],
+            "x": 260,
+            "y": 270,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "cedca445-c725-4720-85c4-efcbf3bf9bdb",
+                    "label": "stampHover1",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(0)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(0)",
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "94ed0650-1786-4664-a492-6dd9c3548ac2",
+                    "label": "stampHover2",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(1)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(1)",
+                    "x": 170,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "8b7f1388-b305-4bd4-9459-c205a7917c14",
+                    "label": "stampHover3",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(2)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(2)",
+                    "x": 340,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "282d28bf-b29e-426d-96cc-380b815d9d5b",
+                    "label": "stampHover4",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(3)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(3)",
+                    "x": 510,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "b80d948a-a688-4da2-965f-75871421d5a5",
+                    "label": "stampHover5",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(4)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(4)",
+                    "y": 150,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "e54d18f0-5b43-4917-b065-52700c4a2e46",
+                    "label": "stampHover6",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(5)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(5)",
+                    "x": 170,
+                    "y": 150,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "0e9164f1-fdf2-4cbb-8050-9c5abca6865f",
+                    "label": "stampHover7",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(6)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(6)",
+                    "x": 340,
+                    "y": 150,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "0eb852f8-e533-4acc-9edd-d4b3cf717358",
+                    "label": "stampHover8",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(7)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(7)",
+                    "x": 510,
+                    "y": 150,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "c14e7c81-6b4b-45c3-9fbf-ee469a67e11b",
+                    "label": "stampHover9",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(8)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(8)",
+                    "y": 300,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "88e511e2-392c-4882-bec9-0cf559c8cd5d",
+                    "label": "stampHover10",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(9)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(9)",
+                    "x": 170,
+                    "y": 300,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "749646ae-0174-4d20-afaf-6ad70b09ac3f",
+                    "label": "stampHover11",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(10)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(10)",
+                    "x": 340,
+                    "y": 300,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d006064e-7a60-47d9-9101-939341d28b0f",
+                    "label": "stampHover12",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(11)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(11)",
+                    "x": 510,
+                    "y": 300,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "49205130-40b5-44ff-bd06-598ed7adcd4e",
+                    "label": "stampHover13",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(12)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(12)",
+                    "y": 450,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "fb6215f1-6e27-49a8-83d9-275076953424",
+                    "label": "stampHover14",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(13)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(13)",
+                    "x": 170,
+                    "y": 450,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "ad6ddf67-12da-47cf-85ac-ec780786b5ce",
+                    "label": "stampHover15",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(14)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(14)",
+                    "x": 340,
+                    "y": 450,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "9e6a906c-b5e9-440c-9af4-a2fea8b03a82",
+                    "label": "stampHover16",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.hoverCallback": "() => this.onStampOver(15)",
+                    "SimpleButton.hoverOutCallback": "() => this.onStampOut(15)",
+                    "x": 510,
+                    "y": 450,
+                    "isFilled": true,
+                    "fillColor": "#00b9ca",
+                    "fillAlpha": 0.5,
+                    "width": 170,
+                    "height": 150
                 }
             ]
         }

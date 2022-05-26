@@ -231,6 +231,10 @@ if (localStorage.clientMode == "legacy") {
             key: 'YumYuck',
             scene: require('@games/yumYuck/YumYuck').default
         },
+		928: {
+			key: 'PuffleLaunch',
+			scene: require('@games/pufflelaunch/PuffleLaunch').default
+		},
 		998: {
             key: 'Card',
             scene: require('@games/card/Card').default
@@ -480,6 +484,10 @@ if (localStorage.clientMode == "vanilla") {
             key: 'YumYuck',
             scene: require('@games/yumYuck/YumYuck').default
         },
+		928: {
+			key: 'PuffleLaunch',
+			scene: require('@games/pufflelaunch/PuffleLaunch').default
+		},
 		998: {
             key: 'Card',
             scene: require('@games/card/Card').default

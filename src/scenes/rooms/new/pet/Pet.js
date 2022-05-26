@@ -236,8 +236,8 @@ export default class Pet extends RoomScene {
         cannon_btnSimpleButton.hoverCallback = () => this.onCannonOver();
         cannon_btnSimpleButton.hoverOutCallback = () => this.onCannonOut();
         const cannon_btnMoveTo = new MoveTo(cannon_btn);
-        cannon_btnMoveTo.x = 1250;
-        cannon_btnMoveTo.y = 450;
+        cannon_btnMoveTo.x = 1150;
+        cannon_btnMoveTo.y = 420;
 
         // park_btn (components)
         const park_btnSimpleButton = new SimpleButton(park_btn);
