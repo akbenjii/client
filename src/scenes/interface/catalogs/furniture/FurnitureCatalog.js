@@ -39,324 +39,175 @@ export default class FurnitureCatalog extends Book {
         block.fillColor = 0;
         block.fillAlpha = 0.2;
 
-        // page8
-        const page8 = this.add.container(0, 0);
-        page8.visible = false;
-
-        // lastpage_png
-        const lastpage_png = this.add.image(521, 395, "furniture", "lastpage.png");
-        page8.add(lastpage_png);
-
-        // exit0001_png_1_1_1_1_2_1
-        const exit0001_png_1_1_1_1_2_1 = this.add.image(982, 109, "Sep2005", "exit0001.png");
-        page8.add(exit0001_png_1_1_1_1_2_1);
-
-        // last_page0001_png_1_1_1_2_1
-        const last_page0001_png_1_1_1_2_1 = this.add.image(538, 691, "Sep2005", "last-page0001.png");
-        page8.add(last_page0001_png_1_1_1_2_1);
-
-        // buyButton_30_1
-        const buyButton_30_1 = new BuyButton(this, 782, 100);
-        page8.add(buyButton_30_1);
-
-        // buyButton_30_1_1
-        const buyButton_30_1_1 = new BuyButton(this, 560, 560);
-        page8.add(buyButton_30_1_1);
-
-        // page7
-        const page7 = this.add.container(0, 0);
-        page7.visible = false;
-
-        // page5_png
-        const page5_png = this.add.image(615, 394, "furniture", "page5.png");
-        page7.add(page5_png);
-
-        // buyButton_30
-        const buyButton_30 = new BuyButton(this, 437, 379);
-        page7.add(buyButton_30);
-
-        // buyButton_31
-        const buyButton_31 = new BuyButton(this, 309, 608);
-        page7.add(buyButton_31);
-
-        // buyButton_34
-        const buyButton_34 = new BuyButton(this, 1162, 624);
-        buyButton_34.scaleX = 0.8168502009576887;
-        buyButton_34.scaleY = 0.8168502009576887;
-        page7.add(buyButton_34);
-
-        // buyButton_34_1
-        const buyButton_34_1 = new BuyButton(this, 1003, 458);
-        buyButton_34_1.scaleX = 0.8168502009576887;
-        buyButton_34_1.scaleY = 0.8168502009576887;
-        page7.add(buyButton_34_1);
-
-        // buyButton_34_1_1
-        const buyButton_34_1_1 = new BuyButton(this, 1143, 290);
-        buyButton_34_1_1.scaleX = 0.8168502009576887;
-        buyButton_34_1_1.scaleY = 0.8168502009576887;
-        page7.add(buyButton_34_1_1);
-
-        // next_page0001_png_1_1_1_1_2
-        const next_page0001_png_1_1_1_1_2 = this.add.image(1286, 696, "Sep2005", "next-page0001.png");
-        page7.add(next_page0001_png_1_1_1_1_2);
-
-        // exit0001_png_1_1_1_1_2
-        const exit0001_png_1_1_1_1_2 = this.add.image(1298, 99, "Sep2005", "exit0001.png");
-        page7.add(exit0001_png_1_1_1_1_2);
-
-        // last_page0001_png_1_1_1_2
-        const last_page0001_png_1_1_1_2 = this.add.image(271, 697, "Sep2005", "last-page0001.png");
-        page7.add(last_page0001_png_1_1_1_2);
-
-        // page6
-        const page6 = this.add.container(0, -2);
-        page6.visible = false;
-
-        // page4_png
-        const page4_png = this.add.image(780, 447, "furniture", "page4.png");
-        page6.add(page4_png);
-
-        // buyButton_23
-        const buyButton_23 = new BuyButton(this, 547, 268);
-        page6.add(buyButton_23);
-
-        // buyButton_24
-        const buyButton_24 = new BuyButton(this, 324, 607);
-        page6.add(buyButton_24);
-
-        // buyButton_27
-        const buyButton_27 = new BuyButton(this, 1128, 349);
-        page6.add(buyButton_27);
-
-        // buyButton_28
-        const buyButton_28 = new BuyButton(this, 1154, 638);
-        buyButton_28.scaleX = 0.8163092426869883;
-        buyButton_28.scaleY = 0.8163092426869883;
-        page6.add(buyButton_28);
-
-        // buyButton_28_1
-        const buyButton_28_1 = new BuyButton(this, 1087, 183);
-        buyButton_28_1.scaleX = 0.8163092426869883;
-        buyButton_28_1.scaleY = 0.8163092426869883;
-        page6.add(buyButton_28_1);
-
-        // last_page0001_png_1_1_1
-        const last_page0001_png_1_1_1 = this.add.image(271, 700, "Sep2005", "last-page0001.png");
-        page6.add(last_page0001_png_1_1_1);
-
-        // exit0001_png_1_1_1_1
-        const exit0001_png_1_1_1_1 = this.add.image(1303, 94, "Sep2005", "exit0001.png");
-        page6.add(exit0001_png_1_1_1_1);
-
-        // next_page0001_png_1_1_1_1
-        const next_page0001_png_1_1_1_1 = this.add.image(1288, 700, "Sep2005", "next-page0001.png");
-        page6.add(next_page0001_png_1_1_1_1);
-
-        // page5
-        const page5 = this.add.container(0, 0);
-        page5.visible = false;
-
-        // page3_png
-        const page3_png = this.add.image(615, 394, "furniture", "page3.png");
-        page5.add(page3_png);
-
-        // buyButton_15
-        const buyButton_15 = new BuyButton(this, 264, 579);
-        page5.add(buyButton_15);
-
-        // buyButton_16
-        const buyButton_16 = new BuyButton(this, 551, 676);
-        buyButton_16.scaleX = 0.8492537964378466;
-        buyButton_16.scaleY = 0.8492537964378466;
-        page5.add(buyButton_16);
-
-        // buyButton_18
-        const buyButton_18 = new BuyButton(this, 874, 432);
-        page5.add(buyButton_18);
-
-        // buyButton_16_1
-        const buyButton_16_1 = new BuyButton(this, 553, 377);
-        buyButton_16_1.scaleX = 0.8492537964378466;
-        buyButton_16_1.scaleY = 0.8492537964378466;
-        page5.add(buyButton_16_1);
-
-        // buyButton_16_1_1
-        const buyButton_16_1_1 = new BuyButton(this, 1056, 675);
-        buyButton_16_1_1.scaleX = 0.8492537964378466;
-        buyButton_16_1_1.scaleY = 0.8492537964378466;
-        page5.add(buyButton_16_1_1);
-
-        // buyButton_16_1_2
-        const buyButton_16_1_2 = new BuyButton(this, 1155, 448);
-        buyButton_16_1_2.scaleX = 0.8492537964378466;
-        buyButton_16_1_2.scaleY = 0.8492537964378466;
-        page5.add(buyButton_16_1_2);
-
-        // next_page0001_png_1_1_1_1_1
-        const next_page0001_png_1_1_1_1_1 = this.add.image(1286, 694, "Sep2005", "next-page0001.png");
-        page5.add(next_page0001_png_1_1_1_1_1);
-
-        // exit0001_png_1_1_1_1_1
-        const exit0001_png_1_1_1_1_1 = this.add.image(1303, 94, "Sep2005", "exit0001.png");
-        page5.add(exit0001_png_1_1_1_1_1);
-
-        // last_page0001_png_1_1_1_1
-        const last_page0001_png_1_1_1_1 = this.add.image(271, 695, "Sep2005", "last-page0001.png");
-        page5.add(last_page0001_png_1_1_1_1);
-
         // page4
         const page4 = this.add.container(0, 0);
         page4.visible = false;
 
-        // page2_png
-        const page2_png = this.add.image(615, 394, "furniture", "page2.png");
-        page4.add(page2_png);
+        // p4
+        const p4 = this.add.image(755, 416, "furnjun22", "p4");
+        p4.scaleX = 0.95;
+        p4.scaleY = 0.95;
+        page4.add(p4);
 
-        // buyButton_10
-        const buyButton_10 = new BuyButton(this, 280, 264);
-        page4.add(buyButton_10);
+        // buyButton_6
+        const buyButton_6 = new BuyButton(this, 791, 174);
+        buyButton_6.scaleX = 0.8485573892810738;
+        buyButton_6.scaleY = 0.8485573892810738;
+        page4.add(buyButton_6);
 
-        // buyButton_11
-        const buyButton_11 = new BuyButton(this, 541, 488);
-        page4.add(buyButton_11);
+        // buyButton_6_2
+        const buyButton_6_2 = new BuyButton(this, 562, 632);
+        buyButton_6_2.scaleX = 0.8485573892810738;
+        buyButton_6_2.scaleY = 0.8485573892810738;
+        page4.add(buyButton_6_2);
 
-        // buyButton_12
-        const buyButton_12 = new BuyButton(this, 1065, 179);
-        buyButton_12.scaleX = 0.864365405564014;
-        buyButton_12.scaleY = 0.864365405564014;
-        page4.add(buyButton_12);
+        // page_left_2
+        const page_left_2 = this.add.image(492, 548, "furniturecatalog", "page_left");
+        page_left_2.setOrigin(0, 0);
+        page4.add(page_left_2);
 
-        // buyButton_14
-        const buyButton_14 = new BuyButton(this, 1129, 588);
-        page4.add(buyButton_14);
-
-        // buyButton_12_1
-        const buyButton_12_1 = new BuyButton(this, 857, 454);
-        buyButton_12_1.scaleX = 0.864365405564014;
-        buyButton_12_1.scaleY = 0.864365405564014;
-        page4.add(buyButton_12_1);
-
-        // next_page0001_png_1_1_1
-        const next_page0001_png_1_1_1 = this.add.image(1285, 694, "Sep2005", "next-page0001.png");
-        page4.add(next_page0001_png_1_1_1);
-
-        // exit0001_png_1_1_1
-        const exit0001_png_1_1_1 = this.add.image(1303, 94, "Sep2005", "exit0001.png");
-        page4.add(exit0001_png_1_1_1);
-
-        // last_page0001_png_1_1
-        const last_page0001_png_1_1 = this.add.image(269, 695, "Sep2005", "last-page0001.png");
-        page4.add(last_page0001_png_1_1);
+        // close_left_1_2
+        const close_left_1_2 = this.add.image(495, 33, "furniturecatalog", "close_left");
+        close_left_1_2.setOrigin(0, 0);
+        page4.add(close_left_1_2);
 
         // page3
         const page3 = this.add.container(0, 0);
         page3.visible = false;
 
-        // hgf_png
-        const hgf_png = this.add.image(615, 394, "pink", "hgf.png");
-        page3.add(hgf_png);
+        // p3
+        const p3 = this.add.image(769, 416, "furnjun22", "p3");
+        p3.scaleX = 0.92;
+        p3.scaleY = 0.92;
+        page3.add(p3);
 
         // buyButton_5
-        const buyButton_5 = new BuyButton(this, 519, 259);
+        const buyButton_5 = new BuyButton(this, 472, 180);
         buyButton_5.scaleX = 0.8485573892810738;
         buyButton_5.scaleY = 0.8485573892810738;
         page3.add(buyButton_5);
 
-        // buyButton_6
-        const buyButton_6 = new BuyButton(this, 886, 605);
-        page3.add(buyButton_6);
-
         // buyButton_8
-        const buyButton_8 = new BuyButton(this, 1098, 332);
+        const buyButton_8 = new BuyButton(this, 1058, 389);
         page3.add(buyButton_8);
 
         // buyButton_5_1
-        const buyButton_5_1 = new BuyButton(this, 549, 461);
+        const buyButton_5_1 = new BuyButton(this, 541, 617);
         buyButton_5_1.scaleX = 0.8485573892810738;
         buyButton_5_1.scaleY = 0.8485573892810738;
         page3.add(buyButton_5_1);
 
         // buyButton_5_1_1
-        const buyButton_5_1_1 = new BuyButton(this, 413, 624);
+        const buyButton_5_1_1 = new BuyButton(this, 304, 616);
         buyButton_5_1_1.scaleX = 0.8485573892810738;
         buyButton_5_1_1.scaleY = 0.8485573892810738;
         page3.add(buyButton_5_1_1);
 
         // buyButton_5_2
-        const buyButton_5_2 = new BuyButton(this, 838, 131);
+        const buyButton_5_2 = new BuyButton(this, 1029, 169);
         buyButton_5_2.scaleX = 0.8485573892810738;
         buyButton_5_2.scaleY = 0.8485573892810738;
         page3.add(buyButton_5_2);
 
-        // last_page0001_png_1
-        const last_page0001_png_1 = this.add.image(271, 699, "Sep2005", "last-page0001.png");
-        page3.add(last_page0001_png_1);
+        // page_left_1
+        const page_left_1 = this.add.image(241, 535, "furniturecatalog", "page_left");
+        page_left_1.setOrigin(0, 0);
+        page3.add(page_left_1);
 
-        // exit0001_png_1_1
-        const exit0001_png_1_1 = this.add.image(1304, 93, "Sep2005", "exit0001.png");
-        page3.add(exit0001_png_1_1);
+        // close_left_1_1
+        const close_left_1_1 = this.add.image(241, 50, "furniturecatalog", "close_left");
+        close_left_1_1.setOrigin(0, 0);
+        page3.add(close_left_1_1);
 
-        // next_page0001_png_1_1
-        const next_page0001_png_1_1 = this.add.image(1287, 698, "Sep2005", "next-page0001.png");
-        page3.add(next_page0001_png_1_1);
+        // page_right_1_1
+        const page_right_1_1 = this.add.image(1159, 539, "furniturecatalog", "page_right");
+        page_right_1_1.setOrigin(0, 0);
+        page3.add(page_right_1_1);
+
+        // close_right_1_1
+        const close_right_1_1 = this.add.image(1161, 49, "furniturecatalog", "close_right");
+        close_right_1_1.setOrigin(0, 0);
+        page3.add(close_right_1_1);
+
+        // buyButton_5_2_1
+        const buyButton_5_2_1 = new BuyButton(this, 1029, 640);
+        buyButton_5_2_1.scaleX = 0.8485573892810738;
+        buyButton_5_2_1.scaleY = 0.8485573892810738;
+        page3.add(buyButton_5_2_1);
 
         // page2
         const page2 = this.add.container(0, 0);
         page2.visible = false;
 
-        // page1_png
-        const page1_png = this.add.image(772, 442, "furniture", "page1.png");
-        page2.add(page1_png);
+        // p2
+        const p2 = this.add.image(769, 416, "furnjun22", "p2");
+        p2.scaleX = 0.92;
+        p2.scaleY = 0.92;
+        page2.add(p2);
 
         // buyButton
-        const buyButton = new BuyButton(this, 559, 353);
+        const buyButton = new BuyButton(this, 360, 171);
         page2.add(buyButton);
 
         // buyButton_1
-        const buyButton_1 = new BuyButton(this, 271, 608);
+        const buyButton_1 = new BuyButton(this, 352, 385);
         page2.add(buyButton_1);
 
         // buyButton_2
-        const buyButton_2 = new BuyButton(this, 1040, 148);
+        const buyButton_2 = new BuyButton(this, 371, 638);
         page2.add(buyButton_2);
 
         // buyButton_3
-        const buyButton_3 = new BuyButton(this, 881, 407);
+        const buyButton_3 = new BuyButton(this, 900, 180);
         page2.add(buyButton_3);
 
         // buyButton_4
-        const buyButton_4 = new BuyButton(this, 1083, 590);
+        const buyButton_4 = new BuyButton(this, 827, 588);
         page2.add(buyButton_4);
 
-        // next_page0001_png_1
-        const next_page0001_png_1 = this.add.image(1280, 694, "Sep2005", "next-page0001.png");
-        page2.add(next_page0001_png_1);
+        // close_right_1
+        const close_right_1 = this.add.image(1159, 51, "furniturecatalog", "close_right");
+        close_right_1.setOrigin(0, 0);
+        page2.add(close_right_1);
 
-        // exit0001_png_1
-        const exit0001_png_1 = this.add.image(1303, 94, "Sep2005", "exit0001.png");
-        page2.add(exit0001_png_1);
+        // page_right_1
+        const page_right_1 = this.add.image(1157, 541, "furniturecatalog", "page_right");
+        page_right_1.setOrigin(0, 0);
+        page2.add(page_right_1);
 
-        // last_page0001_png
-        const last_page0001_png = this.add.image(263, 695, "Sep2005", "last-page0001.png");
-        page2.add(last_page0001_png);
+        // close_left_1
+        const close_left_1 = this.add.image(239, 52, "furniturecatalog", "close_left");
+        close_left_1.setOrigin(0, 0);
+        page2.add(close_left_1);
+
+        // page_left
+        const page_left = this.add.image(239, 537, "furniturecatalog", "page_left");
+        page_left.setOrigin(0, 0);
+        page2.add(page_left);
+
+        // buyButton_4_1
+        const buyButton_4_1 = new BuyButton(this, 1069, 588);
+        page2.add(buyButton_4_1);
 
         // page1
         const page1 = this.add.container(0, 0);
         page1.visible = false;
 
-        // frontpage_png
-        const frontpage_png = this.add.image(469, 44, "furniture", "frontpage.png");
-        frontpage_png.setOrigin(0, 0);
-        page1.add(frontpage_png);
+        // p1
+        const p1 = this.add.image(755, 416, "furnjun22", "p1");
+        p1.scaleX = 1.1;
+        p1.scaleY = 1.1;
+        page1.add(p1);
 
-        // next_page0001_png
-        const next_page0001_png = this.add.image(978, 691, "Sep2005", "next-page0001.png");
-        page1.add(next_page0001_png);
+        // close_right
+        const close_right = this.add.image(884, 73, "furniturecatalog", "close_right");
+        close_right.setOrigin(0, 0);
+        page1.add(close_right);
 
-        // exit0001_png
-        const exit0001_png = this.add.image(996, 86, "Sep2005", "exit0001.png");
-        page1.add(exit0001_png);
+        // page_right
+        const page_right = this.add.image(881, 523, "furniturecatalog", "page_right");
+        page_right.setOrigin(0, 0);
+        page1.add(page_right);
 
         // buttons
         const buttons = this.add.container(190, 41);
@@ -366,248 +217,122 @@ export default class FurnitureCatalog extends Book {
         const coins = this.add.text(1130, 790, "", {});
         coins.setOrigin(1, 0);
         coins.text = "YOUR COINS:";
-        coins.setStyle({ "align": "right", "fixedWidth":600,fontFamily: 'Burbank Small', "fontSize": "32px", "stroke": "#000", "strokeThickness":9});
+        coins.setStyle({ "align": "right", "fixedWidth":600,"fontFamily": "CCComiccrazy", "fontSize": "32px", "stroke": "#000", "strokeThickness":9});
         buttons.add(coins);
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page7, page8];
+        const pages = [page1, page2, page3, page4];
 
         // block (components)
         new Interactive(block);
 
-        // exit0001_png_1_1_1_1_2_1 (components)
-        const exit0001_png_1_1_1_1_2_1Button = new Button(exit0001_png_1_1_1_1_2_1);
-        exit0001_png_1_1_1_1_2_1Button.spriteName = "exit0001.png";
-        exit0001_png_1_1_1_1_2_1Button.callback = () => this.close();
-        exit0001_png_1_1_1_1_2_1Button.pixelPerfect = true;
+        // buyButton_6 (prefab fields)
+        buyButton_6.item = 107;
 
-        // last_page0001_png_1_1_1_2_1 (components)
-        const last_page0001_png_1_1_1_2_1Button = new Button(last_page0001_png_1_1_1_2_1);
-        last_page0001_png_1_1_1_2_1Button.spriteName = "last-page0001.png";
-        last_page0001_png_1_1_1_2_1Button.callback = () => this.prevPage();
-        last_page0001_png_1_1_1_2_1Button.pixelPerfect = true;
+        // buyButton_6_2 (prefab fields)
+        buyButton_6_2.item = 108;
 
-        // buyButton_30_1 (prefab fields)
-        buyButton_30_1.item = 107;
+        // page_left_2 (components)
+        const page_left_2Button = new Button(page_left_2);
+        page_left_2Button.spriteName = "page_left";
+        page_left_2Button.callback = () => this.prevPage();
+        page_left_2Button.activeFrame = false;
 
-        // buyButton_30_1_1 (prefab fields)
-        buyButton_30_1_1.item = 108;
-
-        // buyButton_30 (prefab fields)
-        buyButton_30.item = 110;
-
-        // buyButton_31 (prefab fields)
-        buyButton_31.item = 114;
-
-        // buyButton_34 (prefab fields)
-        buyButton_34.item = 113;
-
-        // buyButton_34_1 (prefab fields)
-        buyButton_34_1.item = 112;
-
-        // buyButton_34_1_1 (prefab fields)
-        buyButton_34_1_1.item = 111;
-
-        // next_page0001_png_1_1_1_1_2 (components)
-        const next_page0001_png_1_1_1_1_2Button = new Button(next_page0001_png_1_1_1_1_2);
-        next_page0001_png_1_1_1_1_2Button.spriteName = "next-page0001.png";
-        next_page0001_png_1_1_1_1_2Button.callback = () => this.nextPage();
-        next_page0001_png_1_1_1_1_2Button.pixelPerfect = true;
-
-        // exit0001_png_1_1_1_1_2 (components)
-        const exit0001_png_1_1_1_1_2Button = new Button(exit0001_png_1_1_1_1_2);
-        exit0001_png_1_1_1_1_2Button.spriteName = "exit0001.png";
-        exit0001_png_1_1_1_1_2Button.callback = () => this.close();
-        exit0001_png_1_1_1_1_2Button.pixelPerfect = true;
-
-        // last_page0001_png_1_1_1_2 (components)
-        const last_page0001_png_1_1_1_2Button = new Button(last_page0001_png_1_1_1_2);
-        last_page0001_png_1_1_1_2Button.spriteName = "last-page0001.png";
-        last_page0001_png_1_1_1_2Button.callback = () => this.prevPage();
-        last_page0001_png_1_1_1_2Button.pixelPerfect = true;
-
-        // buyButton_23 (prefab fields)
-        buyButton_23.item = 100;
-
-        // buyButton_24 (prefab fields)
-        buyButton_24.item = 106;
-
-        // buyButton_27 (prefab fields)
-        buyButton_27.item = 103;
-
-        // buyButton_28 (prefab fields)
-        buyButton_28.item = 104;
-
-        // buyButton_28_1 (prefab fields)
-        buyButton_28_1.item = 101;
-
-        // last_page0001_png_1_1_1 (components)
-        const last_page0001_png_1_1_1Button = new Button(last_page0001_png_1_1_1);
-        last_page0001_png_1_1_1Button.spriteName = "last-page0001.png";
-        last_page0001_png_1_1_1Button.callback = () => this.prevPage();
-        last_page0001_png_1_1_1Button.pixelPerfect = true;
-
-        // exit0001_png_1_1_1_1 (components)
-        const exit0001_png_1_1_1_1Button = new Button(exit0001_png_1_1_1_1);
-        exit0001_png_1_1_1_1Button.spriteName = "exit0001.png";
-        exit0001_png_1_1_1_1Button.callback = () => this.close();
-        exit0001_png_1_1_1_1Button.pixelPerfect = true;
-
-        // next_page0001_png_1_1_1_1 (components)
-        const next_page0001_png_1_1_1_1Button = new Button(next_page0001_png_1_1_1_1);
-        next_page0001_png_1_1_1_1Button.spriteName = "next-page0001.png";
-        next_page0001_png_1_1_1_1Button.callback = () => this.nextPage();
-        next_page0001_png_1_1_1_1Button.pixelPerfect = true;
-
-        // buyButton_15 (prefab fields)
-        buyButton_15.item = 31;
-
-        // buyButton_16 (prefab fields)
-        buyButton_16.item = 33;
-
-        // buyButton_18 (prefab fields)
-        buyButton_18.item = 109;
-
-        // buyButton_16_1 (prefab fields)
-        buyButton_16_1.item = 32;
-
-        // buyButton_16_1_1 (prefab fields)
-        buyButton_16_1_1.item = 105;
-
-        // buyButton_16_1_2 (prefab fields)
-        buyButton_16_1_2.item = 102;
-
-        // next_page0001_png_1_1_1_1_1 (components)
-        const next_page0001_png_1_1_1_1_1Button = new Button(next_page0001_png_1_1_1_1_1);
-        next_page0001_png_1_1_1_1_1Button.spriteName = "next-page0001.png";
-        next_page0001_png_1_1_1_1_1Button.callback = () => this.nextPage();
-        next_page0001_png_1_1_1_1_1Button.pixelPerfect = true;
-
-        // exit0001_png_1_1_1_1_1 (components)
-        const exit0001_png_1_1_1_1_1Button = new Button(exit0001_png_1_1_1_1_1);
-        exit0001_png_1_1_1_1_1Button.spriteName = "exit0001.png";
-        exit0001_png_1_1_1_1_1Button.callback = () => this.close();
-        exit0001_png_1_1_1_1_1Button.pixelPerfect = true;
-
-        // last_page0001_png_1_1_1_1 (components)
-        const last_page0001_png_1_1_1_1Button = new Button(last_page0001_png_1_1_1_1);
-        last_page0001_png_1_1_1_1Button.spriteName = "last-page0001.png";
-        last_page0001_png_1_1_1_1Button.callback = () => this.prevPage();
-        last_page0001_png_1_1_1_1Button.pixelPerfect = true;
-
-        // buyButton_10 (prefab fields)
-        buyButton_10.item = 22;
-
-        // buyButton_11 (prefab fields)
-        buyButton_11.item = 25;
-
-        // buyButton_12 (prefab fields)
-        buyButton_12.item = 23;
-
-        // buyButton_14 (prefab fields)
-        buyButton_14.item = 24;
-
-        // buyButton_12_1 (prefab fields)
-        buyButton_12_1.item = 21;
-
-        // next_page0001_png_1_1_1 (components)
-        const next_page0001_png_1_1_1Button = new Button(next_page0001_png_1_1_1);
-        next_page0001_png_1_1_1Button.spriteName = "next-page0001.png";
-        next_page0001_png_1_1_1Button.callback = () => this.nextPage();
-        next_page0001_png_1_1_1Button.pixelPerfect = true;
-
-        // exit0001_png_1_1_1 (components)
-        const exit0001_png_1_1_1Button = new Button(exit0001_png_1_1_1);
-        exit0001_png_1_1_1Button.spriteName = "exit0001.png";
-        exit0001_png_1_1_1Button.callback = () => this.close();
-        exit0001_png_1_1_1Button.pixelPerfect = true;
-
-        // last_page0001_png_1_1 (components)
-        const last_page0001_png_1_1Button = new Button(last_page0001_png_1_1);
-        last_page0001_png_1_1Button.spriteName = "last-page0001.png";
-        last_page0001_png_1_1Button.callback = () => this.prevPage();
-        last_page0001_png_1_1Button.pixelPerfect = true;
+        // close_left_1_2 (components)
+        const close_left_1_2Button = new Button(close_left_1_2);
+        close_left_1_2Button.spriteName = "close_left";
+        close_left_1_2Button.callback = () => this.close();
 
         // buyButton_5 (prefab fields)
-        buyButton_5.item = 1;
-
-        // buyButton_6 (prefab fields)
-        buyButton_6.item = 5;
+        buyButton_5.item = 71;
 
         // buyButton_8 (prefab fields)
-        buyButton_8.item = 4;
+        buyButton_8.item = 41;
 
         // buyButton_5_1 (prefab fields)
-        buyButton_5_1.item = 6;
+        buyButton_5_1.item = 109;
 
         // buyButton_5_1_1 (prefab fields)
-        buyButton_5_1_1.item = 2;
+        buyButton_5_1_1.item = 213;
 
         // buyButton_5_2 (prefab fields)
-        buyButton_5_2.item = 3;
+        buyButton_5_2.item = 43;
 
-        // last_page0001_png_1 (components)
-        const last_page0001_png_1Button = new Button(last_page0001_png_1);
-        last_page0001_png_1Button.spriteName = "last-page0001.png";
-        last_page0001_png_1Button.callback = () => this.prevPage();
-        last_page0001_png_1Button.pixelPerfect = true;
+        // page_left_1 (components)
+        const page_left_1Button = new Button(page_left_1);
+        page_left_1Button.spriteName = "page_left";
+        page_left_1Button.callback = () => this.prevPage();
+        page_left_1Button.activeFrame = false;
 
-        // exit0001_png_1_1 (components)
-        const exit0001_png_1_1Button = new Button(exit0001_png_1_1);
-        exit0001_png_1_1Button.spriteName = "exit0001.png";
-        exit0001_png_1_1Button.callback = () => this.close();
-        exit0001_png_1_1Button.pixelPerfect = true;
+        // close_left_1_1 (components)
+        const close_left_1_1Button = new Button(close_left_1_1);
+        close_left_1_1Button.spriteName = "close_left";
+        close_left_1_1Button.callback = () => this.close();
 
-        // next_page0001_png_1_1 (components)
-        const next_page0001_png_1_1Button = new Button(next_page0001_png_1_1);
-        next_page0001_png_1_1Button.spriteName = "next-page0001.png";
-        next_page0001_png_1_1Button.callback = () => this.nextPage();
-        next_page0001_png_1_1Button.pixelPerfect = true;
+        // page_right_1_1 (components)
+        const page_right_1_1Button = new Button(page_right_1_1);
+        page_right_1_1Button.spriteName = "page_right";
+        page_right_1_1Button.callback = () => this.nextPage();
+        page_right_1_1Button.activeFrame = false;
+
+        // close_right_1_1 (components)
+        const close_right_1_1Button = new Button(close_right_1_1);
+        close_right_1_1Button.spriteName = "close_right";
+        close_right_1_1Button.callback = () => this.close();
+
+        // buyButton_5_2_1 (prefab fields)
+        buyButton_5_2_1.item = 33;
 
         // buyButton (prefab fields)
-        buyButton.item = 11;
+        buyButton.item = 166;
 
         // buyButton_1 (prefab fields)
-        buyButton_1.item = 10;
+        buyButton_1.item = 99;
 
         // buyButton_2 (prefab fields)
-        buyButton_2.item = 12;
+        buyButton_2.item = 251;
 
         // buyButton_3 (prefab fields)
-        buyButton_3.item = 14;
+        buyButton_3.item = 435;
 
         // buyButton_4 (prefab fields)
-        buyButton_4.item = 13;
+        buyButton_4.item = 169;
 
-        // next_page0001_png_1 (components)
-        const next_page0001_png_1Button = new Button(next_page0001_png_1);
-        next_page0001_png_1Button.spriteName = "next-page0001.png";
-        next_page0001_png_1Button.callback = () => this.nextPage();
-        next_page0001_png_1Button.pixelPerfect = true;
+        // close_right_1 (components)
+        const close_right_1Button = new Button(close_right_1);
+        close_right_1Button.spriteName = "close_right";
+        close_right_1Button.callback = () => this.close();
 
-        // exit0001_png_1 (components)
-        const exit0001_png_1Button = new Button(exit0001_png_1);
-        exit0001_png_1Button.spriteName = "exit0001.png";
-        exit0001_png_1Button.callback = () => this.close();
-        exit0001_png_1Button.pixelPerfect = true;
+        // page_right_1 (components)
+        const page_right_1Button = new Button(page_right_1);
+        page_right_1Button.spriteName = "page_right";
+        page_right_1Button.callback = () => this.nextPage();
+        page_right_1Button.activeFrame = false;
 
-        // last_page0001_png (components)
-        const last_page0001_pngButton = new Button(last_page0001_png);
-        last_page0001_pngButton.spriteName = "last-page0001.png";
-        last_page0001_pngButton.callback = () => this.prevPage();
-        last_page0001_pngButton.pixelPerfect = true;
+        // close_left_1 (components)
+        const close_left_1Button = new Button(close_left_1);
+        close_left_1Button.spriteName = "close_left";
+        close_left_1Button.callback = () => this.close();
 
-        // next_page0001_png (components)
-        const next_page0001_pngButton = new Button(next_page0001_png);
-        next_page0001_pngButton.spriteName = "next-page0001.png";
-        next_page0001_pngButton.callback = () => this.nextPage();
-        next_page0001_pngButton.pixelPerfect = true;
+        // page_left (components)
+        const page_leftButton = new Button(page_left);
+        page_leftButton.spriteName = "page_left";
+        page_leftButton.callback = () => this.prevPage();
+        page_leftButton.activeFrame = false;
 
-        // exit0001_png (components)
-        const exit0001_pngButton = new Button(exit0001_png);
-        exit0001_pngButton.spriteName = "exit0001.png";
-        exit0001_pngButton.callback = () => this.close();
-        exit0001_pngButton.pixelPerfect = true;
+        // buyButton_4_1 (prefab fields)
+        buyButton_4_1.item = 176;
+
+        // close_right (components)
+        const close_rightButton = new Button(close_right);
+        close_rightButton.spriteName = "close_right";
+        close_rightButton.callback = () => this.close();
+
+        // page_right (components)
+        const page_rightButton = new Button(page_right);
+        page_rightButton.spriteName = "page_right";
+        page_rightButton.callback = () => this.nextPage();
+        page_rightButton.activeFrame = false;
 
         this.buttons = buttons;
         this.coins = coins;
