@@ -11,6 +11,8 @@ export default class RuffleManager {
 			"publicPath": "assets/scripts/lib/ruffle"
 		}
 
+		if (localStorage.noRuffle === 'true') return
+
 		this.ruffle = window.RufflePlayer.newest();
         this.rufflePlayer = this.ruffle.createPlayer();
         this.rufflePlayer.style.width = '1520px';
