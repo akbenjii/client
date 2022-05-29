@@ -34,21 +34,21 @@ export default class NineSlice extends EventComponent {
     start() {
         if (this.gameObject.visible == false) return
 
-        let sliced = this.scene.add.nineslice(
+        this.gameObject.nineSliceObject = this.scene.add.nineslice(
             this.gameObject.x, this.gameObject.y,
             this.gameObject.width, this.gameObject.height,
             this.texture,
             this.corner
         )
 
-        sliced.setOrigin(this.gameObject.originX, this.gameObject.originY)
+        this.gameObject.nineSliceObject.setOrigin(this.gameObject.originX, this.gameObject.originY)
 
         // Set correct position inside container
         if (this.gameObject.parentContainer) {
             let parent = this.gameObject.parentContainer
             let index = parent.getIndex(this.gameObject)
 
-            parent.addAt(sliced, index)
+            parent.addAt(this.gameObject.nineSliceObject, index)
         }
 
         this.gameObject.visible = false

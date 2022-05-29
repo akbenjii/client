@@ -40,6 +40,12 @@ export default class RuffleManager {
 
 		window.getCannonData = this.getCannonData
 		window.getCannonData = getCannonData.bind(this)
+
+		window.getStampInfo = this.getStampInfo
+		window.getStampInfo = getStampInfo.bind(this)
+
+		window.checkIfPlayerHasStamp = this.checkIfPlayerHasStamp
+		window.checkIfPlayerHasStamp = checkIfPlayerHasStamp.bind(this)
 		
 		this.swfInstance = this.rufflePlayer.load({
 			url: "assets/media/games/swf/sse.swf",
@@ -90,5 +96,16 @@ export default class RuffleManager {
 		console.log("get cannon data", this.cannonData)
 		return this.cannonData
 	}
+
+	getStampInfo(stamp){
+		let stampInfo = this.crumbs.stamps[stamp]
+		return [stampInfo.name, stampInfo.groupid, stampInfo.difficulty, stampInfo.description]
+	}
+
+	checkIfPlayerHasStamp(stamp){
+		return this.world.client.stamps.includes(parseInt(stamp))
+	}
+
+
 	
 }

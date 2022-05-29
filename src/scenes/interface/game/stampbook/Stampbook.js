@@ -2113,27 +2113,27 @@ export default class Stampbook extends Book {
 		const stampLayer = this.add.container(0, 0);
 
 		// stampInfo
-		const stampInfo = this.add.container(0, 0);
+		const stampInfo = this.add.container(-190, 259);
 		stampInfo.visible = false;
 
 		// stampInfoBg
-		const stampInfoBg = this.add.rectangle(550, 562, 300, 300);
+		const stampInfoBg = this.add.rectangle(6.518512446268176, -118.87806837021839, 300, 300);
 		stampInfoBg.isFilled = true;
 		stampInfo.add(stampInfoBg);
 
 		// stampInfoTitle
-		const stampInfoTitle = this.add.text(550, 441, "", {});
+		const stampInfoTitle = this.add.text(7, -175, "", {});
 		stampInfoTitle.setOrigin(0.5, 0.5);
 		stampInfoTitle.text = "Full House";
 		stampInfoTitle.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "26px", "fontStyle": "bold" });
 		stampInfo.add(stampInfoTitle);
 
 		// stampInfoBody
-		const stampInfoBody = this.add.text(550, 510, "", {});
+		const stampInfoBody = this.add.text(6.518512446268176, -93.87806837021839, "", {});
 		stampInfoBody.setOrigin(0.5, 0.5);
 		stampInfoBody.text = "Get all ya mates together and play in a band innit";
 		stampInfoBody.setStyle({ "align": "center", "color": "#000000ff", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "26px" });
-		stampInfoBody.setWordWrapWidth(300);
+		stampInfoBody.setWordWrapWidth(275);
 		stampInfo.add(stampInfoBody);
 
 		// stampHovers
@@ -2142,112 +2142,96 @@ export default class Stampbook extends Book {
 
 		// stampHover1
 		const stampHover1 = this.add.rectangle(0, 0, 170, 150);
-		stampHover1.isFilled = true;
 		stampHover1.fillColor = 47562;
 		stampHover1.fillAlpha = 0.5;
 		stampHovers.add(stampHover1);
 
 		// stampHover2
 		const stampHover2 = this.add.rectangle(170, 0, 170, 150);
-		stampHover2.isFilled = true;
 		stampHover2.fillColor = 47562;
 		stampHover2.fillAlpha = 0.5;
 		stampHovers.add(stampHover2);
 
 		// stampHover3
 		const stampHover3 = this.add.rectangle(340, 0, 170, 150);
-		stampHover3.isFilled = true;
 		stampHover3.fillColor = 47562;
 		stampHover3.fillAlpha = 0.5;
 		stampHovers.add(stampHover3);
 
 		// stampHover4
 		const stampHover4 = this.add.rectangle(510, 0, 170, 150);
-		stampHover4.isFilled = true;
 		stampHover4.fillColor = 47562;
 		stampHover4.fillAlpha = 0.5;
 		stampHovers.add(stampHover4);
 
 		// stampHover5
 		const stampHover5 = this.add.rectangle(0, 150, 170, 150);
-		stampHover5.isFilled = true;
 		stampHover5.fillColor = 47562;
 		stampHover5.fillAlpha = 0.5;
 		stampHovers.add(stampHover5);
 
 		// stampHover6
 		const stampHover6 = this.add.rectangle(170, 150, 170, 150);
-		stampHover6.isFilled = true;
 		stampHover6.fillColor = 47562;
 		stampHover6.fillAlpha = 0.5;
 		stampHovers.add(stampHover6);
 
 		// stampHover7
 		const stampHover7 = this.add.rectangle(340, 150, 170, 150);
-		stampHover7.isFilled = true;
 		stampHover7.fillColor = 47562;
 		stampHover7.fillAlpha = 0.5;
 		stampHovers.add(stampHover7);
 
 		// stampHover8
 		const stampHover8 = this.add.rectangle(510, 150, 170, 150);
-		stampHover8.isFilled = true;
 		stampHover8.fillColor = 47562;
 		stampHover8.fillAlpha = 0.5;
 		stampHovers.add(stampHover8);
 
 		// stampHover9
 		const stampHover9 = this.add.rectangle(0, 300, 170, 150);
-		stampHover9.isFilled = true;
 		stampHover9.fillColor = 47562;
 		stampHover9.fillAlpha = 0.5;
 		stampHovers.add(stampHover9);
 
 		// stampHover10
 		const stampHover10 = this.add.rectangle(170, 300, 170, 150);
-		stampHover10.isFilled = true;
 		stampHover10.fillColor = 47562;
 		stampHover10.fillAlpha = 0.5;
 		stampHovers.add(stampHover10);
 
 		// stampHover11
 		const stampHover11 = this.add.rectangle(340, 300, 170, 150);
-		stampHover11.isFilled = true;
 		stampHover11.fillColor = 47562;
 		stampHover11.fillAlpha = 0.5;
 		stampHovers.add(stampHover11);
 
 		// stampHover12
 		const stampHover12 = this.add.rectangle(510, 300, 170, 150);
-		stampHover12.isFilled = true;
 		stampHover12.fillColor = 47562;
 		stampHover12.fillAlpha = 0.5;
 		stampHovers.add(stampHover12);
 
 		// stampHover13
 		const stampHover13 = this.add.rectangle(0, 450, 170, 150);
-		stampHover13.isFilled = true;
 		stampHover13.fillColor = 47562;
 		stampHover13.fillAlpha = 0.5;
 		stampHovers.add(stampHover13);
 
 		// stampHover14
 		const stampHover14 = this.add.rectangle(170, 450, 170, 150);
-		stampHover14.isFilled = true;
 		stampHover14.fillColor = 47562;
 		stampHover14.fillAlpha = 0.5;
 		stampHovers.add(stampHover14);
 
 		// stampHover15
 		const stampHover15 = this.add.rectangle(340, 450, 170, 150);
-		stampHover15.isFilled = true;
 		stampHover15.fillColor = 47562;
 		stampHover15.fillAlpha = 0.5;
 		stampHovers.add(stampHover15);
 
 		// stampHover16
 		const stampHover16 = this.add.rectangle(510, 450, 170, 150);
-		stampHover16.isFilled = true;
 		stampHover16.fillColor = 47562;
 		stampHover16.fillAlpha = 0.5;
 		stampHovers.add(stampHover16);
@@ -3811,7 +3795,15 @@ export default class Stampbook extends Book {
 
         for (var x in this.pageStamps[page]) {
 
-			if (!Number.isInteger(this.pageStamps[page][x])) { this.pageStamps[page][x].visible = true; continue }
+			if (!Number.isInteger(this.pageStamps[page][x])) {
+				this.pageStamps[page][x].visible = true;
+				this.stampsOnPage.push(this.pageStamps[page][x]);
+				if (this.pageStamps[page][x].locked && this.world.client.stamps.includes(parseInt(this.pageStamps[page][x].id))) {
+					this.pageStamps[page][x].locked.visible = false
+					this.pageStamps[page][x].unlocked = true
+				}
+				continue
+			}
 
             let id = this.pageStamps[page][x]
             this.pageStamps[page][x] = new BookStamp(this, this.posArray[this.stampsOnPage.length][0], this.posArray[this.stampsOnPage.length][1], id);
@@ -3886,11 +3878,20 @@ export default class Stampbook extends Book {
 	}
 
     onStampOver(pos) {
-        this.stampInfo.visible = true
-        this.stampInfo.x = this.posArray[pos][0] - 400
-        this.stampInfo.y = this.posArray[pos][1] - 600
+		if (!this.stampsOnPage[pos]) return
 
-        this.stampInfoBg.height = this.stampInfoBody.height + 100
+        this.stampInfo.visible = true
+        this.stampInfo.x = this.posArray[pos][0]
+        this.stampInfo.y = this.posArray[pos][1]
+
+		this.stampInfoTitle.text = this.crumbs.stamps[this.stampsOnPage[pos].id].name
+		this.stampInfoBody.text = this.crumbs.stamps[this.stampsOnPage[pos].id].description
+
+		if (this.stampInfoBody.height === 93) this.stampInfoTitle.y = -175
+		if (this.stampInfoBody.height === 62) this.stampInfoTitle.y = -162
+		if (this.stampInfoBody.height === 31) this.stampInfoTitle.y = -149
+
+        this.stampInfoBg.nineSliceObject.resize(300, this.stampInfoBody.height + 65)
     }
 
     onStampOut(pos) {
