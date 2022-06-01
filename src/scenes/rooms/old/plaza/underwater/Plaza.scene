@@ -1,0 +1,251 @@
+{
+    "id": "88dc2f1b-8588-4bba-91b6-b62bc50f569a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/plaza/plaza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Plaza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "fb3a02e1-470c-4b33-a3f0-ea6bbe0ed425",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "plaza"
+            },
+            "x": -18,
+            "y": -2,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "924c61e4-abb7-4066-8ec9-f7a98abdba1a",
+            "label": "pet_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "pet_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 340,
+            "MoveTo.y": 540,
+            "texture": {
+                "key": "plaza",
+                "frame": "pet_door"
+            },
+            "x": 322,
+            "y": 488,
+            "originX": 0.473118,
+            "originY": 0.678218
+        },
+        {
+            "type": "Image",
+            "id": "b523771a-425c-42a3-8512-8209c7bc2d7a",
+            "label": "pizza_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "pizza_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 1152,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "plaza",
+                "frame": "pizza_door"
+            },
+            "x": 1185,
+            "y": 411,
+            "originX": 0.5311,
+            "originY": 0.442211
+        },
+        {
+            "type": "Sprite",
+            "id": "63346f1e-3613-4456-8521-42240e335352",
+            "label": "fishmask",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "fish_mask0001"
+            },
+            "x": 1387,
+            "y": 191
+        },
+        {
+            "type": "Sprite",
+            "id": "01697b6a-f00f-4450-9b06-979087c8ed09",
+            "label": "jellyfish",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "jellyfish0001"
+            },
+            "x": -25,
+            "y": 245,
+            "angle": 70
+        },
+        {
+            "type": "Sprite",
+            "id": "917a1537-b6c7-4175-9462-827ab1d5f8ed",
+            "label": "fish1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "fish0001"
+            },
+            "x": 746,
+            "y": 223
+        },
+        {
+            "type": "Sprite",
+            "id": "ee4d7c72-6216-4ea3-8807-aba68367c18d",
+            "label": "fish2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "fish0001"
+            },
+            "x": 725,
+            "y": 219
+        },
+        {
+            "type": "Sprite",
+            "id": "a525be76-72be-477f-aff8-95a55f1dc9ad",
+            "label": "fish3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "fish0001"
+            },
+            "x": 751,
+            "y": 208
+        },
+        {
+            "type": "Sprite",
+            "id": "3f940cef-671c-4655-878a-9da2ad7e5069",
+            "label": "fish4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "fish0001"
+            },
+            "x": 729,
+            "y": 202
+        },
+        {
+            "type": "Sprite",
+            "id": "f36c871e-e1d5-4954-b514-49418094167f",
+            "label": "snorkbubbles",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "bubbles0084"
+            },
+            "x": 288,
+            "y": 60
+        },
+        {
+            "type": "Sprite",
+            "id": "b49f2055-4c3b-4c64-8c65-d33c9f9fb2fc",
+            "label": "cavebubbles",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "snork_bubbles0084"
+            },
+            "x": 558,
+            "y": 448
+        },
+        {
+            "type": "Image",
+            "id": "42b72fbc-918c-48de-9094-aae6be82a74c",
+            "label": "oct_eye",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "oct_eye"
+            },
+            "x": 988,
+            "y": 499
+        },
+        {
+            "type": "Image",
+            "id": "aef3db0a-c009-41ea-82cc-6771932ff3ab",
+            "label": "water_base",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "water_base"
+            },
+            "x": 715.2447296925702,
+            "y": 991.9037571357842,
+            "originX": 0.47762917205877675,
+            "originY": 0.9495248886520194
+        },
+        {
+            "type": "Image",
+            "id": "9a541fbb-9836-439f-9bfa-747260df520a",
+            "label": "water",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "water"
+            },
+            "x": 748,
+            "y": 221
+        },
+        {
+            "type": "Image",
+            "id": "f497bbf6-ddbb-43d1-8a2e-3b95165675be",
+            "label": "water_top",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "water_top"
+            },
+            "x": 749,
+            "y": 178
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "9c185332-22f1-4d89-8194-2666eda5e6ad",
+            "label": "sort",
+            "objectIds": [
+                "aef3db0a-c009-41ea-82cc-6771932ff3ab",
+                "f497bbf6-ddbb-43d1-8a2e-3b95165675be",
+                "9a541fbb-9836-439f-9bfa-747260df520a"
+            ]
+        }
+    ]
+}
