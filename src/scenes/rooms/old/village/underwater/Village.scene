@@ -213,20 +213,6 @@
         },
         {
             "type": "Image",
-            "id": "a10e0214-842a-4c21-a021-3da32aa03df9",
-            "label": "tour",
-            "components": [],
-            "texture": {
-                "key": "village-underwater",
-                "frame": "tour"
-            },
-            "x": 805,
-            "y": 225,
-            "scaleX": 0.8,
-            "scaleY": 0.8
-        },
-        {
-            "type": "Image",
             "id": "112e00bf-fd61-4843-973e-d6864a162b15",
             "label": "corral_stuff",
             "components": [],
@@ -286,56 +272,17 @@
             "y": 370
         },
         {
-            "type": "Image",
-            "id": "a4a10eda-7f8b-4bc2-a71d-ea17921ad8af",
-            "label": "tour_hat",
+            "type": "Sprite",
+            "id": "4300927f-77a4-48ae-9335-2793ae5f5a6e",
+            "label": "poop",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "village-underwater",
-                "frame": "tour_hat"
+                "frame": "poop0001"
             },
-            "x": 979,
-            "y": 242,
-            "scaleX": 0.8,
-            "scaleY": 0.8
-        },
-        {
-            "type": "Image",
-            "id": "73b3cd1d-2e3a-4b49-90dd-6a3412b5daf1",
-            "label": "bell",
-            "components": [],
-            "texture": {
-                "key": "village-underwater",
-                "frame": "bell"
-            },
-            "x": 935,
-            "y": 238,
-            "scaleX": 0.8,
-            "scaleY": 0.8
-        },
-        {
-            "type": "Image",
-            "id": "1eefebff-f1f0-433e-8872-be4559a29836",
-            "label": "pencil_right",
-            "components": [],
-            "texture": {
-                "key": "village-underwater",
-                "frame": "pencil_right"
-            },
-            "x": 663,
-            "y": 226
-        },
-        {
-            "type": "Image",
-            "id": "31e097a2-de3d-4176-a311-e8a510d8efac",
-            "label": "pencil_left",
-            "components": [],
-            "texture": {
-                "key": "village-underwater",
-                "frame": "pencil_left"
-            },
-            "x": 644,
-            "y": 232
+            "x": 976,
+            "y": 241
         },
         {
             "type": "Image",
@@ -353,20 +300,6 @@
         },
         {
             "type": "Image",
-            "id": "d4a82cae-e8d2-4349-ab31-372878064b6d",
-            "label": "book",
-            "components": [],
-            "texture": {
-                "key": "village-underwater",
-                "frame": "book"
-            },
-            "x": 1055,
-            "y": 225,
-            "scaleX": 0.8,
-            "scaleY": 0.8
-        },
-        {
-            "type": "Image",
             "id": "b5bc000c-8a7d-4b74-a8c9-de29510aae1b",
             "label": "water",
             "components": [],
@@ -375,7 +308,7 @@
                 "frame": "water"
             },
             "x": 760.8552377619857,
-            "y": 1089.8457622740705,
+            "y": 1109.8457622740705,
             "originX": 0.49815013985999157,
             "originY": 1.0247343711171153
         },
@@ -389,7 +322,7 @@
                 "frame": "top_water_2"
             },
             "x": 742,
-            "y": 243
+            "y": 263
         },
         {
             "type": "Image",
@@ -401,7 +334,7 @@
                 "frame": "top_water"
             },
             "x": 735,
-            "y": 208
+            "y": 228
         },
         {
             "type": "Container",

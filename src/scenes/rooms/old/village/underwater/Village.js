@@ -10,6 +10,8 @@ export default class Village extends RoomScene {
     constructor() {
         super("Village");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.poop;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Text>} */
         this.sort;
 
@@ -83,11 +85,6 @@ export default class Village extends RoomScene {
         // chair
         const chair = this.add.sprite(292, 150, "village", "chair0001");
 
-        // tour
-        const tour = this.add.image(805, 225, "village-underwater", "tour");
-        tour.scaleX = 0.8;
-        tour.scaleY = 0.8;
-
         // corral_stuff
         const corral_stuff = this.add.image(1243, 840, "village-underwater", "corral_stuff");
 
@@ -103,41 +100,23 @@ export default class Village extends RoomScene {
         // green_ground_thing
         this.add.image(1122, 370, "village-underwater", "green_ground_thing");
 
-        // tour_hat
-        const tour_hat = this.add.image(979, 242, "village-underwater", "tour_hat");
-        tour_hat.scaleX = 0.8;
-        tour_hat.scaleY = 0.8;
-
-        // bell
-        const bell = this.add.image(935, 238, "village-underwater", "bell");
-        bell.scaleX = 0.8;
-        bell.scaleY = 0.8;
-
-        // pencil_right
-        this.add.image(663, 226, "village-underwater", "pencil_right");
-
-        // pencil_left
-        this.add.image(644, 232, "village-underwater", "pencil_left");
+        // poop
+        const poop = this.add.sprite(976, 241, "village-underwater", "poop0001");
 
         // pink_rocks
         const pink_rocks = this.add.image(358, 733, "village-underwater", "pink_rocks");
         pink_rocks.scaleX = 0.8;
         pink_rocks.scaleY = 0.8;
 
-        // book
-        const book = this.add.image(1055, 225, "village-underwater", "book");
-        book.scaleX = 0.8;
-        book.scaleY = 0.8;
-
         // water
-        const water = this.add.image(760.8552377619857, 1089.8457622740705, "village-underwater", "water");
+        const water = this.add.image(760.8552377619857, 1109.8457622740705, "village-underwater", "water");
         water.setOrigin(0.49815013985999157, 1.0247343711171153);
 
         // top_water_2
-        this.add.image(742, 243, "village-underwater", "top_water_2");
+        this.add.image(742, 263, "village-underwater", "top_water_2");
 
         // top_water
-        this.add.image(735, 208, "village-underwater", "top_water");
+        this.add.image(735, 228, "village-underwater", "top_water");
 
         // container_1
         const container_1 = this.add.container(317.2416173750365, 641.6861895899656);
@@ -186,6 +165,7 @@ export default class Village extends RoomScene {
         chairAnimation.end = 179;
         chairAnimation.repeatDelay = 1500;
 
+        this.poop = poop;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -193,6 +173,10 @@ export default class Village extends RoomScene {
 
 
     /* START-USER-CODE */
+    create() {
+        super.create()
+        this.poop.play('underwater_poop')
+    }
     /* END-USER-CODE */
 }
 
