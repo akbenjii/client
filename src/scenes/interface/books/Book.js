@@ -25,6 +25,8 @@ export default class Book extends BaseScene {
 
     create() {
         this._create()
+		
+		this.interface.book = this
 
         // Reset page
         this.page = 0

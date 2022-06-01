@@ -191,27 +191,13 @@ export default class InterfaceController extends BaseScene {
     }
 
     updateCatalogCoins(coins) {
-        let books = this.scene.manager.getScenes().filter(
-            scene => Object.getPrototypeOf(scene.constructor).name == 'Book'
-        )
-
-        books.map(book => {
-            if (book.coins) {
-                book.setCoins(coins)
-            }
-        })
+        if (!this.book) return
+        this.book.setCoins(coins)
     }
 	
 	setStatistics(args) {
-        let books = this.scene.manager.getScenes().filter(
-            scene => Object.getPrototypeOf(scene.constructor).name == 'Book'
-        )
-
-        books.map(book => {
-            if (book.statistics) {
-                book.setStatistics(args)
-            }
-        })
-    }
+		if (!this.book) return
+        this.book.setStatistics(args)
+	}
 
 }

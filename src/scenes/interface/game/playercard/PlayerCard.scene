@@ -105,7 +105,7 @@
                                 "Button"
                             ],
                             "Button.spriteName": "blue-button",
-                            "Button.callback": "() => { this.interface.loadExternal('Stampbook') }",
+                            "Button.callback": "() => { this.interface.loadExternal('Stampbook'); this.interface.stampbookId = this.id }",
                             "texture": {
                                 "key": "main",
                                 "frame": "blue-button"

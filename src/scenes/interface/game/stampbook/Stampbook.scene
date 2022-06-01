@@ -3316,7 +3316,7 @@
                 {
                     "type": "Text",
                     "id": "f4f9e0ec-293c-483c-9db8-4ebef97321a0",
-                    "label": "JPAText",
+                    "label": "jPAText",
                     "scope": "CLASS",
                     "components": [],
                     "x": 1230,
@@ -3332,7 +3332,7 @@
                 {
                     "type": "Image",
                     "id": "2da2052c-885b-4180-8695-d1dc0b750c9e",
-                    "label": "JPAIcon",
+                    "label": "jPAIcon",
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
@@ -3347,12 +3347,12 @@
                 {
                     "type": "Rectangle",
                     "id": "f1be6da8-0a34-4c74-9995-f0c6cefeb414",
-                    "label": "JPAButton",
+                    "label": "jPAButton",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.hoverCallback": "() => this.btnOver(this.JPAText)",
-                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.JPAText)",
+                    "SimpleButton.hoverCallback": "() => this.btnOver(this.jPAText)",
+                    "SimpleButton.hoverOutCallback": "() => this.btnOut(this.jPAText)",
                     "SimpleButton.callback": "() => this.showPage(22)",
                     "x": 1274,
                     "y": 306,

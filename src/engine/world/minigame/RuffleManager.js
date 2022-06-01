@@ -62,8 +62,8 @@ export default class RuffleManager {
 		ruffleplayer.volume = 0.05;
 		
 		ruffleplayer.loadMinigame(`${minigame}/bootstrap.swf`)
-		
-		this.inMinigame = true
+
+		this.world.client.inMinigame = true
             
 	}
 	
@@ -83,6 +83,8 @@ export default class RuffleManager {
 		document.getElementsByTagName("ruffle-player")[0].style.visibility = "hidden";
 		let room = this.crumbs.scenes.rooms[roomid]
         this.world.client.sendJoinRoom(roomid, room.key)
+
+		this.world.client.inMinigame = false
 		
 		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game })
 	}

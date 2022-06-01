@@ -1288,7 +1288,7 @@ export default class Stampbook extends Book {
 		fishingButton.fillAlpha = 0.5;
 		page10.add(fishingButton);
 
-		// JPAText
+		// jPAText
 		const jPAText = this.add.text(1230, 306, "", {});
 		jPAText.setOrigin(0, 0.5);
 		jPAText.text = "Jet Pack Adventure";
@@ -1296,13 +1296,13 @@ export default class Stampbook extends Book {
 		jPAText.setWordWrapWidth(160);
 		page10.add(jPAText);
 
-		// JPAIcon
+		// jPAIcon
 		const jPAIcon = this.add.image(1191, 306, "stampbook", "categories/11");
 		jPAIcon.scaleX = 0.7;
 		jPAIcon.scaleY = 0.7;
 		page10.add(jPAIcon);
 
-		// JPAButton
+		// jPAButton
 		const jPAButton = this.add.rectangle(1274, 306, 240, 70);
 		jPAButton.fillColor = 3729407;
 		jPAButton.fillAlpha = 0.5;
@@ -2304,8 +2304,8 @@ export default class Stampbook extends Book {
 
 		// jPAButton (components)
 		const jPAButtonSimpleButton = new SimpleButton(jPAButton);
-		jPAButtonSimpleButton.hoverCallback = () => this.btnOver(this.JPAText);
-		jPAButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.JPAText);
+		jPAButtonSimpleButton.hoverCallback = () => this.btnOver(this.jPAText);
+		jPAButtonSimpleButton.hoverOutCallback = () => this.btnOut(this.jPAText);
 		jPAButtonSimpleButton.callback = () => this.showPage(22);
 
 		// missionsButton (components)
@@ -3566,13 +3566,78 @@ export default class Stampbook extends Book {
 
     create() {
         this.key = 'Stampbook'
+		this.id = this.interface.stampbookId
         super.create();
 
-        window.stampbook = this
+		if (this.id === this.world.client.id) {
+			this.initStampbook({}, true)
+		}
+		else{
+			this.network.send('get_stampbook', { userId: this.id })
+		}
 
-		this.username.text = this.world.client.penguin.username
-		this.total.text = `Total Stamps ${this.world.client.stamps.length}/${Object.keys(this.crumbs.stamps).length}`
-		this.stampnum.text = `${this.world.client.stamps.length}/${Object.keys(this.crumbs.stamps).length}`
+        this.stamps = []
+
+        this.pageStamps = [
+            [], // Front
+            [], // Index
+            [], // Events
+            [7, 8, 31, 32, 33, 34, 35, 36, 290, 358, 448, 466], // Characters
+            [182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 193, 292, 294, 296, 330, 332], // Party
+            [360, 426, 438, 439, 440, 444], // Party
+            [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], // Activities
+            [25, 26, 27, 28, 29, 30, 197, 198, 199, 200, 201, 362, 364, 488, 489, 490], // Activities
+            [491, 492, 493, 494, 495], // Activities
+            [], // Games
+            [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87], // Aqua Grabber
+            [88, 89, 91, 92], // Aqua Grabber
+            [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62], // Astro Barrier
+            [230, 232, 234, 236, 238, 240, 242, 244, 246, 248], // Card-Jitsu
+            [252, 254, 256, 260, 262, 264, 266, 268], // Card-Jitsu Fire
+            [467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482], // Card-Jistu Snow
+            [483, 484, 485, 486, 487], // Card-Jitsu Snow
+            [270, 274, 276, 278, 282, 284, 286, 288], // Card-Jitsu Water
+            [206, 208, 210, 212, 214, 216, 218, 220, 222, 224, 226, 228], // Cart Surfer
+            [93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108], // Catchin' Waves
+            [109, 110, 111, 112, 113, 114], // Catchin' Waves
+            [372, 374, 376, 378, 380, 382, 384, 386, 388, 390], // Ice Fishing
+            [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 202, 203,], // Jet Pack Adventure
+            [204, 205], // Jet Pack Adventure
+            [159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174], // Missions
+            [175, 176, 177, 178, 179, 180], // Missions
+            [392, 394, 396, 398, 400, 402, 404, 406, 408, 410], // Pizzatron 3000
+            [334, 336, 338, 340, 342, 344, 346, 348, 350, 352, 354, 356], // Puffle Launch
+            [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 144, 145, 146], // Puffle Rescue
+            [147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157], // Puffle Rescue
+            [427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437], // Pufflescape
+            [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465], // Smoothie Smash
+            [298, 300, 302, 304, 306, 308, 310, 312, 320, 322, 324, 326, 328, 443], // System Defender
+            [63, 64, 65, 66, 67, 68, 69, 70, 71], // Thin Ice
+            [414, 416, 418, 420, 428] // Treasure Hunt
+        ]
+
+		this.network.send('get_statistics')
+		this.pinLoader = new PinLoader(this)
+
+		this.pins = []
+		this.pinsOnPage = []
+    }
+
+	initStampbook(args, isPlayer) {
+
+		this.color = (isPlayer) ? this.world.client.stampbookColor : args.color
+		this.clasp = (isPlayer) ? this.world.client.stampbookClasp : args.clasp
+		this.pattern = (isPlayer) ? this.world.client.stampbookPattern : args.pattern
+
+		this.changeClasp(this.clasp)
+		this.changePattern(this.pattern)
+		this.changeColor(this.color)
+		
+		this.stampsEarned = (isPlayer) ? this.world.client.stamps : args.stamps
+		this.username.text = (isPlayer) ? this.world.client.penguin.username : args.username
+
+		this.total.text = `Total Stamps ${this.stampsEarned.length}/${Object.keys(this.crumbs.stamps).length}`
+		this.stampnum.text = `${this.stampsEarned.length}/${Object.keys(this.crumbs.stamps).length}`
 
 		let mascotStamps = this.getCategoryStamps(6)
 		this.stampnum4.text = `${mascotStamps[1]}/${mascotStamps[0]}`
@@ -3654,57 +3719,11 @@ export default class Stampbook extends Book {
 
 		this.stampnum10.text = `${(aquaGrabberStamps[1] + astroBarrierStamps[1] + cardJitsuStamps[1] + cardJitsuFStamps[1] + cardJitsuSStamps[1] + cardJitsuWStamps[1] + cartSurferStamps[1] + wavesStamps[1] + iceFishingStamps[1] + JPAStamps[1] + missions[1] + pizzatronStamps[1] + launchStamps[1] + rescueStamps[1] + pufflescapeStamps[1] + smoothieStamps[1] + sysDefStamps[1] + thinIceStamps[1] + treasureHuntStamps[1])}/${(aquaGrabberStamps[0] + astroBarrierStamps[0] + cardJitsuStamps[0] + cardJitsuFStamps[0] + cardJitsuSStamps[0] + cardJitsuWStamps[0] + cartSurferStamps[0] + wavesStamps[0] + iceFishingStamps[0] + JPAStamps[0] + missions[0] + pizzatronStamps[0] + launchStamps[0] + rescueStamps[0] + pufflescapeStamps[0] + smoothieStamps[0] + sysDefStamps[0] + thinIceStamps[0] + treasureHuntStamps[0])}`
 
-
-        this.stamps = []
-
-        this.pageStamps = [
-            [], // Front
-            [], // Index
-            [], // Events
-            [7, 8, 31, 32, 33, 34, 35, 36, 290, 358, 448, 466], // Characters
-            [182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 193, 292, 294, 296, 330, 332], // Party
-            [360, 426, 438, 439, 440, 444], // Party
-            [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], // Activities
-            [25, 26, 27, 28, 29, 30, 197, 198, 199, 200, 201, 362, 364, 488, 489, 490], // Activities
-            [491, 492, 493, 494, 495], // Activities
-            [], // Games
-            [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87], // Aqua Grabber
-            [88, 89, 91, 92], // Aqua Grabber
-            [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62], // Astro Barrier
-            [230, 232, 234, 236, 238, 240, 242, 244, 246, 248], // Card-Jitsu
-            [252, 254, 256, 260, 262, 264, 266, 268], // Card-Jitsu Fire
-            [467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482], // Card-Jistu Snow
-            [483, 484, 485, 486, 487], // Card-Jitsu Snow
-            [270, 274, 276, 278, 282, 284, 286, 288], // Card-Jitsu Water
-            [206, 208, 210, 212, 214, 216, 218, 220, 222, 224, 226, 228], // Cart Surfer
-            [93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108], // Catchin' Waves
-            [109, 110, 111, 112, 113, 114], // Catchin' Waves
-            [372, 374, 376, 378, 380, 382, 384, 386, 388, 390], // Ice Fishing
-            [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 202, 203,], // Jet Pack Adventure
-            [204, 205], // Jet Pack Adventure
-            [159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174], // Missions
-            [175, 176, 177, 178, 179, 180], // Missions
-            [392, 394, 396, 398, 400, 402, 404, 406, 408, 410], // Pizzatron 3000
-            [334, 336, 338, 340, 342, 344, 346, 348, 350, 352, 354, 356], // Puffle Launch
-            [130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 144, 145, 146], // Puffle Rescue
-            [147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157], // Puffle Rescue
-            [427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437], // Pufflescape
-            [450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465], // Smoothie Smash
-            [298, 300, 302, 304, 306, 308, 310, 312, 320, 322, 324, 326, 328, 443], // System Defender
-            [63, 64, 65, 66, 67, 68, 69, 70, 71], // Thin Ice
-            [414, 416, 418, 420, 428] // Treasure Hunt
-        ]
-
-		this.network.send('get_statistics')
-		this.pinLoader = new PinLoader(this)
-
-		this.stampnum36.text = this.world.client.inventory["flag"].length
-
-		this.pins = []
-		this.pinsOnPage = []
-    }
+		this.stampnum36.text = (isPlayer) ? this.world.client.inventory["flag"].length : args.pins.length
+	}
 
     changeClasp(id) {
+		this.clasp = id
         this.clasp.setFrame("clasp/" + id)
         this.claspthumb.setFrame("thumbs/clasp/" + id)
         this.claspselect.visible = false
@@ -3712,9 +3731,11 @@ export default class Stampbook extends Book {
 
     changePattern(id) {
         if (id == 0) {
+			this.pattern = 1
             this.pattern.visible = false
             this.patternthumb.setFrame("thumbs/color/1")
         } else {
+			this.pattern = id
             this.pattern.setFrame("pattern/" + id)
             this.patternthumb.setFrame("thumbs/pattern/" + id)
             this.patternselect.visible = false
@@ -3722,6 +3743,7 @@ export default class Stampbook extends Book {
     }
 
     changeColor(id) {
+		this.color = id
         this.cover.setFrame("colour/" + id)
         this.colorthumb.setFrame("thumbs/color/" + id)
         this.colorselect.visible = false
@@ -3755,6 +3777,7 @@ export default class Stampbook extends Book {
     }
 
     saveStampbook() {
+		this.network.send('save_stampbook', { color: this.color, pattern: this.pattern, clasp: this.clasp })
         this.editor_background.visible = false
         this.editor.visible = false
         this.edit.visible = true
@@ -3788,7 +3811,7 @@ export default class Stampbook extends Book {
 			if (!Number.isInteger(this.pageStamps[page][x])) {
 				this.pageStamps[page][x].visible = true;
 				this.stampsOnPage.push(this.pageStamps[page][x]);
-				if (this.pageStamps[page][x].locked && this.world.client.stamps.includes(parseInt(this.pageStamps[page][x].id))) {
+				if (this.pageStamps[page][x].locked && this.stampsEarned.includes(parseInt(this.pageStamps[page][x].id))) {
 					this.pageStamps[page][x].locked.visible = false
 					this.pageStamps[page][x].unlocked = true
 				}
@@ -3844,7 +3867,7 @@ export default class Stampbook extends Book {
 
 		let potwString = (args.hasBeenPOTW) ? "been Penguin of the Week! Nice Job!" : "never been Penguin of the Week"
 
-		this.statistics.text = `You joined on ${dateString}\n\nSince then:\nYou have sent ${args.messagesSent} chat messages.\nYou have played for ${Math.round(args.timePlayed / 60)} minutes! Wow, that's over ${Math.round((args.timePlayed / 86400) * 100) /100} days!\nYou have won ${args.sledRacesWon} sled races, and ${args.findFourWon} games of find four.\nYou have earned ${args.coinsEarned} coins, and spent ${Math.abs(args.coinsSpent)} coins.\nYou have thrown ${args.snowballsThrown} snowballs.\nYou have been banned ${banString}\n${args.itemsReleased} items have been released, and you have bought ${args.itemsOwned} of them.\n${args.pinsReleased} pins have been released, and you have found ${args.pinsOwned} of them.\nYou have earned ${this.world.client.stamps.length} stamps\nYou have completed ${args.partyTasksCompleted} tasks at 0 parties.\nYou have ${potwString}`
+		this.statistics.text = `You joined on ${dateString}\n\nSince then:\nYou have sent ${args.messagesSent} chat messages.\nYou have played for ${Math.round(args.timePlayed / 60)} minutes! Wow, that's over ${Math.round((args.timePlayed / 86400) * 100) /100} days!\nYou have won ${args.sledRacesWon} sled races, and ${args.findFourWon} games of find four.\nYou have earned ${args.coinsEarned} coins, and spent ${Math.abs(args.coinsSpent)} coins.\nYou have thrown ${args.snowballsThrown} snowballs.\nYou have been banned ${banString}\n${args.itemsReleased} items have been released, and you have bought ${args.itemsOwned} of them.\n${args.pinsReleased} pins have been released, and you have found ${args.pinsOwned} of them.\nYou have earned ${this.stampsEarned.length} stamps\nYou have completed ${args.partyTasksCompleted} tasks at 0 parties.\nYou have ${potwString}`
 	}
 
 	getCategoryStamps(category){
@@ -3853,7 +3876,7 @@ export default class Stampbook extends Book {
 		for (var stamp in this.crumbs.stamps){
 			if (this.crumbs.stamps[stamp].groupid == category) {
 				categoryStamps.push(stamp)
-				if (this.world.client.stamps.includes(parseInt(stamp))) ownedCategoryStamps.push(stamp)
+				if (this.stampsEarned.includes(parseInt(stamp))) ownedCategoryStamps.push(stamp)
 			}
 		}
 		return [categoryStamps.length, ownedCategoryStamps.length]

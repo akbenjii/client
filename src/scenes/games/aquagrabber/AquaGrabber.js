@@ -11,7 +11,7 @@ export default class AquaGrabber extends RoomScene {
         super("AquaGrabber");
 
         /* START-USER-CTR-CODE */
-        this.music = "Aqua_Grabber_Theme"
+        this.music = "115"
         /* END-USER-CTR-CODE */
     }
 
@@ -46,18 +46,6 @@ export default class AquaGrabber extends RoomScene {
 
     create() {
         super.create()
-
-        var sprite = Phaser.Math.RND.between(0, 15)
-        if (sprite < 6) {
-            this.loading.setPosition(760, 410)
-            this.loading.play("shovelling")
-        } else if (sprite < 11) {
-            this.loading.setPosition(760, 300)
-            this.loading.play("pizzatron")
-        } else {
-            this.loading.setPosition(760, 370)
-            this.loading.play("cartSurfer")
-        }
     }
 
 

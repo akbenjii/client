@@ -145,6 +145,8 @@ export default class ClientController {
     }
 
     onKeyDown(event) {
+        if (this.inMinigame) return
+
         let key = event.key.toLowerCase()
 
         if (this.emoteKeyPressed) {

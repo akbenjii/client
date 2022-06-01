@@ -34,8 +34,7 @@ export default class BookStamp extends BaseContainer {
         const stamp = this.scene.add.image(0, 0, `stamps/${this.id}`);
         this.add(stamp);
 
-		if (!this.world.client.stamps.includes(parseInt(this.id))) {
-			
+		if (!this.scene.stampsEarned.includes(this.id)) {
         	// locked
         	const locked = this.scene.add.image(0, 0, `stamps/${this.id}`);
         	locked.alpha = 0.5;

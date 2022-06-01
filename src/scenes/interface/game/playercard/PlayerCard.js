@@ -131,7 +131,7 @@ export default class PlayerCard extends BaseContainer {
         // stamps_btn (components)
         const stamps_btnButton = new Button(stamps_btn);
         stamps_btnButton.spriteName = "blue-button";
-        stamps_btnButton.callback = () => { this.interface.loadExternal('Stampbook') };
+        stamps_btnButton.callback = () => { this.interface.loadExternal('Stampbook'); this.interface.stampbookId = this.id };
 
         // x_button (components)
         const x_buttonButton = new Button(x_button);
