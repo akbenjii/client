@@ -180,6 +180,58 @@
             "y": 448
         },
         {
+            "type": "Sprite",
+            "id": "b4eabd5a-0198-4a10-beaf-f11bb3576474",
+            "label": "far_back_seaweed",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "far_back_seaweed0001"
+            },
+            "x": 23,
+            "y": 278
+        },
+        {
+            "type": "Sprite",
+            "id": "4d10baad-2eba-46b5-bfbd-a4e48b244d0e",
+            "label": "left_pet_seaweed",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "left_pet_seaweed0001"
+            },
+            "x": 126,
+            "y": 391
+        },
+        {
+            "type": "Sprite",
+            "id": "6c70b7c5-47fb-42a6-ac66-9b4f28a3e842",
+            "label": "middle_seaweed",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "middle_seaweed0001"
+            },
+            "x": 952,
+            "y": 431
+        },
+        {
+            "type": "Sprite",
+            "id": "8fdeb2f0-405f-4ced-98a5-85e36aaf5982",
+            "label": "leftist_puffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "leftist_puffle0001"
+            },
+            "x": 433,
+            "y": 388
+        },
+        {
             "type": "Image",
             "id": "42b72fbc-918c-48de-9094-aae6be82a74c",
             "label": "oct_eye",
@@ -190,6 +242,45 @@
             },
             "x": 988,
             "y": 499
+        },
+        {
+            "type": "Sprite",
+            "id": "c81ab759-a88d-41bf-86a9-7f161d0317b8",
+            "label": "lefter_puffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "lefter_puffle0001"
+            },
+            "x": 466,
+            "y": 384
+        },
+        {
+            "type": "Sprite",
+            "id": "5c34b7ef-a9bb-4add-a297-df49be07bbed",
+            "label": "righter_puffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "righter_puffle0001"
+            },
+            "x": 507,
+            "y": 368
+        },
+        {
+            "type": "Sprite",
+            "id": "9326a4fb-088b-49d8-8e98-5299887c1e50",
+            "label": "rightist_puffle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "plaza_underwater",
+                "frame": "rightist_puffle0001"
+            },
+            "x": 538,
+            "y": 354
         },
         {
             "type": "Image",
@@ -244,7 +335,10 @@
             "objectIds": [
                 "aef3db0a-c009-41ea-82cc-6771932ff3ab",
                 "f497bbf6-ddbb-43d1-8a2e-3b95165675be",
-                "9a541fbb-9836-439f-9bfa-747260df520a"
+                "9a541fbb-9836-439f-9bfa-747260df520a",
+                "6c70b7c5-47fb-42a6-ac66-9b4f28a3e842",
+                "4d10baad-2eba-46b5-bfbd-a4e48b244d0e",
+                "b4eabd5a-0198-4a10-beaf-f11bb3576474"
             ]
         }
     ]

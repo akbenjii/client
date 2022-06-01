@@ -26,7 +26,21 @@ export default class Plaza extends RoomScene {
         this.snorkbubbles;
         /** @type {Phaser.GameObjects.Sprite} */
         this.cavebubbles;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.far_back_seaweed;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.left_pet_seaweed;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.middle_seaweed;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.leftist_puffle;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.lefter_puffle;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.righter_puffle;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.rightist_puffle;
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
@@ -92,8 +106,29 @@ export default class Plaza extends RoomScene {
         // cavebubbles
         const cavebubbles = this.add.sprite(558, 448, "plaza_underwater", "snork_bubbles0084");
 
+        // far_back_seaweed
+        const far_back_seaweed = this.add.sprite(23, 278, "plaza_underwater", "far_back_seaweed0001");
+
+        // left_pet_seaweed
+        const left_pet_seaweed = this.add.sprite(126, 391, "plaza_underwater", "left_pet_seaweed0001");
+
+        // middle_seaweed
+        const middle_seaweed = this.add.sprite(952, 431, "plaza_underwater", "middle_seaweed0001");
+
+        // leftist_puffle
+        const leftist_puffle = this.add.sprite(433, 388, "plaza_underwater", "leftist_puffle0001");
+
         // oct_eye
         this.add.image(988, 499, "plaza_underwater", "oct_eye");
+
+        // lefter_puffle
+        const lefter_puffle = this.add.sprite(466, 384, "plaza_underwater", "lefter_puffle0001");
+
+        // righter_puffle
+        const righter_puffle = this.add.sprite(507, 368, "plaza_underwater", "righter_puffle0001");
+
+        // rightist_puffle
+        const rightist_puffle = this.add.sprite(538, 354, "plaza_underwater", "rightist_puffle0001");
 
         // water_base
         const water_base = this.add.image(715.2447296925702, 991.9037571357842, "plaza_underwater", "water_base");
@@ -106,7 +141,7 @@ export default class Plaza extends RoomScene {
         const water_top = this.add.image(749, 178, "plaza_underwater", "water_top");
 
         // lists
-        const sort = [water_base, water_top, water];
+        const sort = [water_base, water_top, water, middle_seaweed, left_pet_seaweed, far_back_seaweed];
 
         // pet_door (components)
         const pet_doorButton = new Button(pet_door);
@@ -134,6 +169,13 @@ export default class Plaza extends RoomScene {
         this.fish4 = fish4;
         this.snorkbubbles = snorkbubbles;
         this.cavebubbles = cavebubbles;
+        this.far_back_seaweed = far_back_seaweed;
+        this.left_pet_seaweed = left_pet_seaweed;
+        this.middle_seaweed = middle_seaweed;
+        this.leftist_puffle = leftist_puffle;
+        this.lefter_puffle = lefter_puffle;
+        this.righter_puffle = righter_puffle;
+        this.rightist_puffle = rightist_puffle;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -152,6 +194,13 @@ export default class Plaza extends RoomScene {
         this.snorkbubbles.play('snorkbubbles')
         this.cavebubbles.play('cavebubbles')
         this.jfTween()
+        this.far_back_seaweed.play('far_back_seaweed')
+        this.left_pet_seaweed.play('left_pet_seaweed')
+        this.middle_seaweed.play('middle_seaweed')
+        this.leftist_puffle.play('lefist_puffle')
+        this.lefter_puffle.play('lefter_puffle')
+        this.righter_puffle.play('righter_puffle')
+		this.rightist_puffle.play('rightist_puffle')
     }
 
     jfTween() {
