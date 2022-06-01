@@ -1,0 +1,466 @@
+{
+    "id": "b8277d04-921c-4a9e-a5ba-dbee8f2467a7",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/village/village-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Village",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "0547e328-4d9e-4ae5-a5bd-fb355f7d5b31",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "bg"
+            },
+            "x": -58,
+            "y": -3,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "8f355d69-ebb4-4d3a-88da-8435a41f5dee",
+            "label": "lodge_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "lodge_door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1000,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "village",
+                "frame": "lodge_door"
+            },
+            "x": 1075,
+            "y": 318,
+            "originX": 0.27807486631016043,
+            "originY": 0.5560538116591929
+        },
+        {
+            "type": "Image",
+            "id": "3b82c03d-5f38-4e67-b46e-8805be857584",
+            "label": "lodge_stairs",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "lodge_stairs"
+            },
+            "x": 972,
+            "y": 444
+        },
+        {
+            "type": "Image",
+            "id": "1de1a3a5-5ec0-4245-837b-abfc34de7285",
+            "label": "lodge_front",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "lodge_front"
+            },
+            "x": 1087,
+            "y": 389,
+            "originX": 0.4807692307692308,
+            "originY": 0.5352112676056338
+        },
+        {
+            "type": "Image",
+            "id": "f8c4cf76-a72b-462f-be61-522c13bbc662",
+            "label": "lodge_snow",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "lodge_snow"
+            },
+            "x": 1104,
+            "y": 429,
+            "originX": 0.5368217054263565,
+            "originY": 0.4838709677419355
+        },
+        {
+            "type": "Image",
+            "id": "f0381b07-f18b-4510-9dc6-506b9b011521",
+            "label": "phone",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "phone"
+            },
+            "x": 1373,
+            "y": 316
+        },
+        {
+            "type": "Image",
+            "id": "482889f5-4705-4747-ada5-8711b4fe9935",
+            "label": "phone_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "phone_door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1340,
+            "MoveTo.y": 480,
+            "texture": {
+                "key": "village",
+                "frame": "phone_door"
+            },
+            "x": 1350,
+            "y": 387,
+            "originX": 0.22797927461139897,
+            "originY": 0.6206896551724138
+        },
+        {
+            "type": "Image",
+            "id": "70f6f844-57c4-44d2-8fb2-48a153053776",
+            "label": "phone_snow",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "phone_snow"
+            },
+            "x": 1361,
+            "y": 595,
+            "originX": 0.509090909090909,
+            "originY": 0.5272727272727272
+        },
+        {
+            "type": "Image",
+            "id": "846691f5-1c86-454a-8c41-b6f10da5def6",
+            "label": "lift",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "lift"
+            },
+            "x": 348,
+            "y": 200
+        },
+        {
+            "type": "Sprite",
+            "id": "fdecd243-800b-4abf-b11f-d1bd9eddb82b",
+            "label": "smoke",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "smoke",
+            "Animation.end": 5,
+            "texture": {
+                "key": "village",
+                "frame": "smoke0001"
+            },
+            "x": 1110,
+            "y": 32
+        },
+        {
+            "type": "Image",
+            "id": "90385a83-2876-4b63-acb7-cc4d4f0e540f",
+            "label": "left_sign",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "left_sign"
+            },
+            "x": 133,
+            "y": 677,
+            "originX": 0.4444444444444444,
+            "originY": 0.5217391304347826
+        },
+        {
+            "type": "Image",
+            "id": "00dfc36c-a436-4c05-af2e-c3a1a3cefd30",
+            "label": "right_sign",
+            "components": [],
+            "texture": {
+                "key": "village",
+                "frame": "right_sign"
+            },
+            "x": 1471,
+            "y": 668,
+            "originX": 0.4861111111111111,
+            "originY": 0.7831325301204819
+        },
+        {
+            "type": "Sprite",
+            "id": "afa23f89-e095-4594-9ade-31a3e78ae5ae",
+            "label": "chair",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "chair",
+            "Animation.end": 179,
+            "Animation.repeatDelay": 1500,
+            "texture": {
+                "key": "village",
+                "frame": "chair0001"
+            },
+            "x": 292,
+            "y": 150
+        },
+        {
+            "type": "Image",
+            "id": "a10e0214-842a-4c21-a021-3da32aa03df9",
+            "label": "tour",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "tour"
+            },
+            "x": 805,
+            "y": 225,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "112e00bf-fd61-4843-973e-d6864a162b15",
+            "label": "corral_stuff",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "corral_stuff"
+            },
+            "x": 1243,
+            "y": 840
+        },
+        {
+            "type": "Image",
+            "id": "1b3741a3-58af-4056-b18b-77f0f0588eba",
+            "label": "other_seaweed",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "other_seaweed"
+            },
+            "x": 75,
+            "y": 861
+        },
+        {
+            "type": "Image",
+            "id": "3277e8c9-a172-40df-a419-9a1238580544",
+            "label": "epf_seaweed",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "epf_seaweed"
+            },
+            "x": 1416,
+            "y": 236
+        },
+        {
+            "type": "Image",
+            "id": "a12bff76-a80a-4b06-9dd8-9cd52c641105",
+            "label": "pink_hanging_thing",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "pink_hanging_thing"
+            },
+            "x": 1111,
+            "y": 268
+        },
+        {
+            "type": "Image",
+            "id": "f817569e-6a5b-46e8-b33a-e32fa8ff93a6",
+            "label": "green_ground_thing",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "green_ground_thing"
+            },
+            "x": 1122,
+            "y": 370
+        },
+        {
+            "type": "Image",
+            "id": "a4a10eda-7f8b-4bc2-a71d-ea17921ad8af",
+            "label": "tour_hat",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "tour_hat"
+            },
+            "x": 979,
+            "y": 242,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "73b3cd1d-2e3a-4b49-90dd-6a3412b5daf1",
+            "label": "bell",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "bell"
+            },
+            "x": 935,
+            "y": 238,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "1eefebff-f1f0-433e-8872-be4559a29836",
+            "label": "pencil_right",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "pencil_right"
+            },
+            "x": 663,
+            "y": 226
+        },
+        {
+            "type": "Image",
+            "id": "31e097a2-de3d-4176-a311-e8a510d8efac",
+            "label": "pencil_left",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "pencil_left"
+            },
+            "x": 644,
+            "y": 232
+        },
+        {
+            "type": "Image",
+            "id": "7cf38e1c-817d-400e-9382-56306f163084",
+            "label": "pink_rocks",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "pink_rocks"
+            },
+            "x": 358,
+            "y": 733,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "d4a82cae-e8d2-4349-ab31-372878064b6d",
+            "label": "book",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "book"
+            },
+            "x": 1055,
+            "y": 225,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "b5bc000c-8a7d-4b74-a8c9-de29510aae1b",
+            "label": "water",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "water"
+            },
+            "x": 760.8552377619857,
+            "y": 1089.8457622740705,
+            "originX": 0.49815013985999157,
+            "originY": 1.0247343711171153
+        },
+        {
+            "type": "Image",
+            "id": "01c175f1-633d-4539-b19e-a5ff8c2fb47e",
+            "label": "top_water_2",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "top_water_2"
+            },
+            "x": 742,
+            "y": 243
+        },
+        {
+            "type": "Image",
+            "id": "6f551036-5f9b-4fc9-b76c-600b20e6700a",
+            "label": "top_water",
+            "components": [],
+            "texture": {
+                "key": "village-underwater",
+                "frame": "top_water"
+            },
+            "x": 735,
+            "y": 208
+        },
+        {
+            "type": "Container",
+            "id": "23ef11ba-df40-485e-a27e-90258b16f07f",
+            "label": "container_1",
+            "components": [],
+            "x": 317.2416173750365,
+            "y": 641.6861895899656,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "042f5945-83f0-4cff-842f-e8cb304d8443",
+                    "label": "sign",
+                    "components": [],
+                    "texture": {
+                        "key": "village-underwater",
+                        "frame": "sign"
+                    },
+                    "x": 38.758382624963474,
+                    "y": 17.31381041003442,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                },
+                {
+                    "type": "Text",
+                    "id": "b5f5baea-2361-4d63-8a40-4d0c3a6b0c8a",
+                    "label": "text",
+                    "components": [],
+                    "x": 5.194143123010349,
+                    "y": 56.66573912097192,
+                    "angle": -5,
+                    "originX": 0.10682196235794411,
+                    "originY": 1.0621405897369747,
+                    "text": "CPF Island\nflooded\nbe careful!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "24px",
+                    "color": "#a4ecfdff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "528d71e2-a474-4325-aa76-2ccaa2e1016f",
+            "label": "sort",
+            "objectIds": [
+                "b5bc000c-8a7d-4b74-a8c9-de29510aae1b",
+                "042f5945-83f0-4cff-842f-e8cb304d8443",
+                "112e00bf-fd61-4843-973e-d6864a162b15",
+                "1b3741a3-58af-4056-b18b-77f0f0588eba",
+                "b5f5baea-2361-4d63-8a40-4d0c3a6b0c8a"
+            ]
+        }
+    ]
+}
