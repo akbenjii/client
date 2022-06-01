@@ -8,7 +8,7 @@ import { Interactive } from '@components/components'
 export default class Pizzatron extends RoomScene {
 
     constructor() {
-        super("pizzatron");
+        super("Pizzatron");
 
         /* START-USER-CTR-CODE */
         this.music = "pizzatron"
@@ -46,7 +46,7 @@ export default class Pizzatron extends RoomScene {
 
     create() {
         super.create()
-	}
+    }
 
     /* END-USER-CODE */
 }

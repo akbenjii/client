@@ -742,6 +742,73 @@
             },
             "x": 490,
             "y": 929
+        },
+        {
+            "type": "Container",
+            "id": "4ebfebfd-2b69-47e0-8c23-bd9afe26ced4",
+            "label": "stampEarned",
+            "scope": "CLASS",
+            "components": [],
+            "x": 933,
+            "y": -150,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "86f4e8dd-431a-4a8e-8955-af32bc98fde7",
+                    "label": "stampEarnedBg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "stamps/bg"
+                    },
+                    "x": 196,
+                    "alpha": 0.7,
+                    "alphaTopLeft": 0.7,
+                    "alphaTopRight": 0.7,
+                    "alphaBottomLeft": 0.7,
+                    "alphaBottomRight": 0.7
+                },
+                {
+                    "type": "Image",
+                    "id": "0c12af78-4df0-4f97-93eb-e54628e3292f",
+                    "label": "stampEarnedImage",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "stamps/activities0001"
+                    },
+                    "y": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "4731c1b6-725e-4ae0-a29e-293a414fcf30",
+                    "label": "stampEarnedHeader",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 88,
+                    "y": 25,
+                    "text": "STAMP EARNED!",
+                    "fixedWidth": 380,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold italic"
+                },
+                {
+                    "type": "Text",
+                    "id": "3f5865ae-8907-41fc-96d5-dc2a982c711a",
+                    "label": "stampEarnedBody",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 90,
+                    "y": 80,
+                    "text": "Stamp Name",
+                    "fixedWidth": 380,
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "35px"
+                }
+            ]
         }
     ],
     "plainObjects": [],

@@ -124,6 +124,16 @@ export default class Main extends BaseScene {
         this.chat_button;
         /** @type {Phaser.GameObjects.Image} */
         this.chat_icon;
+        /** @type {Phaser.GameObjects.Container} */
+        this.stampEarned;
+        /** @type {Phaser.GameObjects.Image} */
+        this.stampEarnedBg;
+        /** @type {Phaser.GameObjects.Image} */
+        this.stampEarnedImage;
+        /** @type {Phaser.GameObjects.Text} */
+        this.stampEarnedHeader;
+        /** @type {Phaser.GameObjects.Text} */
+        this.stampEarnedBody;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -316,6 +326,34 @@ export default class Main extends BaseScene {
         // chat_icon
         const chat_icon = this.add.image(490, 929, "main", "chat-icon");
 
+        // stampEarned
+        const stampEarned = this.add.container(933, -150);
+
+        // stampEarnedBg
+        const stampEarnedBg = this.add.image(196, 0, "main", "stamps/bg");
+        stampEarnedBg.alpha = 0.7;
+        stampEarnedBg.alphaTopLeft = 0.7;
+        stampEarnedBg.alphaTopRight = 0.7;
+        stampEarnedBg.alphaBottomLeft = 0.7;
+        stampEarnedBg.alphaBottomRight = 0.7;
+        stampEarned.add(stampEarnedBg);
+
+        // stampEarnedImage
+        const stampEarnedImage = this.add.image(0, 70, "main", "stamps/activities0001");
+        stampEarned.add(stampEarnedImage);
+
+        // stampEarnedHeader
+        const stampEarnedHeader = this.add.text(88, 25, "", {});
+        stampEarnedHeader.text = "STAMP EARNED!";
+        stampEarnedHeader.setStyle({ "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold italic" });
+        stampEarned.add(stampEarnedHeader);
+
+        // stampEarnedBody
+        const stampEarnedBody = this.add.text(90, 80, "", {});
+        stampEarnedBody.text = "Stamp Name";
+        stampEarnedBody.setStyle({ "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "35px" });
+        stampEarned.add(stampEarnedBody);
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -463,6 +501,11 @@ export default class Main extends BaseScene {
         this.findFour = findFour;
         this.chat_button = chat_button;
         this.chat_icon = chat_icon;
+        this.stampEarned = stampEarned;
+        this.stampEarnedBg = stampEarnedBg;
+        this.stampEarnedImage = stampEarnedImage;
+        this.stampEarnedHeader = stampEarnedHeader;
+        this.stampEarnedBody = stampEarnedBody;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -835,6 +878,27 @@ export default class Main extends BaseScene {
               console.error(err)
         }
     }
+
+    stampTween() {
+        let tween = this.tweens.add({
+            targets: this.stampEarned,
+            y: 0,
+            delay: 1000,
+            duration: 300,
+            onComplete: () => this.onStampTweenComplete()
+        });
+    }
+
+    onStampTweenComplete() {
+        let tween = this.tweens.add({
+            targets: this.stampEarned,
+            y: -150,
+            delay: 1500,
+            duration: 300,
+        });
+    }
+
+
 
     /* END-USER-CODE */
 }

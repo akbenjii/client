@@ -118,8 +118,8 @@ export default class Lounge extends RoomScene {
 
         this.roomTriggers = {
             'dance': () => this.triggerRoom(120, 1200, 792),
-            'ice': () => this.triggerGame("thinIce", 909),
-            'astro': () => this.triggerGame("astroBarrier", 900),
+            'ice': () => this.triggerGame("ThinIce", 909),
+            'astro': () => this.triggerGame("AstroBarrier", 900),
             'bolts': () => this.unimplementedPrompt(),
         }
 

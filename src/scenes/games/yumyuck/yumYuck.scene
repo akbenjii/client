@@ -10,7 +10,7 @@
             "yukon/assets/media/interface/menus/load/load-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "yumYuck",
+        "sceneKey": "YumYuck",
         "borderWidth": 1520,
         "borderHeight": 960
     },
@@ -28,20 +28,6 @@
             },
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Sprite",
-            "id": "5072c773-630a-4865-a396-9b2b19df62b2",
-            "label": "loading",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "cpv_logo"
-            },
-            "x": 769,
-            "y": 413,
-            "scaleX": 0.2,
-            "scaleY": 0.2
         }
     ],
     "plainObjects": [],

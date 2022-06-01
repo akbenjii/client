@@ -7,7 +7,7 @@ import { Interactive } from '@components/components'
 export default class beanCounters extends RoomScene {
 
     constructor() {
-        super("beanCounters");
+        super("BeanCounters");
 
         /* START-USER-CTR-CODE */
         this.music = "beancounters"
@@ -27,19 +27,11 @@ export default class beanCounters extends RoomScene {
         const bg = this.add.image(0, 0, "load", "bg");
         bg.setOrigin(0, 0);
 
-        // loading
-        const loading = this.add.sprite(769, 413, "loading_assets", "shovelling0001.png");
-
         // bg (components)
         new Interactive(bg);
 
-        this.loading = loading;
-
         this.events.emit("scene-awake");
     }
-
-    /** @type {Phaser.GameObjects.Sprite} */
-    loading;
 
     /* START-USER-CODE */
 

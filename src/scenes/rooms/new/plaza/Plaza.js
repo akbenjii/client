@@ -13,7 +13,7 @@ export default class Plaza extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'cave': () => this.triggerRoom(806, 1200, 400),
+            'cave': () => { this.triggerRoom(806, 1180, 614); this.world.client.stampEarned(10); },
             'forts': () => this.triggerRoom(801, 1200, 400),
             'hotel': () => this.unimplementedPrompt(),
             'mall': () => this.unimplementedPrompt(),

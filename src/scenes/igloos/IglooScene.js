@@ -91,6 +91,16 @@ export default class IglooScene extends RoomScene {
         this.world.network.send('get_puffles', {
             userId: this.id
         })
+
+        if (!this.penguins) return
+
+        if (this.id === this.world.client.id && Object.keys(this.penguins).length >= 10) {
+            this.world.client.stampEarned(17)
+        }
+
+        if (this.id === this.world.client.id && Object.keys(this.penguins).length >= 30) {
+            this.world.client.stampEarned(28)
+        }
     }
 
     addEditBg() {
@@ -321,6 +331,18 @@ export default class IglooScene extends RoomScene {
         this.puffleArray = puffleArray
         for (var x in this.puffleArray) {
             new Puffle(this.puffleArray[x], this)
+        }
+    }
+
+    addPenguin(id, penguin) {
+        super.addPenguin(id, penguin)
+
+        if (this.id === this.world.client.id && Object.keys(this.penguins).length >= 10) {
+            this.world.client.stampEarned(17)
+        }
+
+        if (this.id === this.world.client.id && Object.keys(this.penguins).length >= 30) {
+            this.world.client.stampEarned(28)
         }
     }
 

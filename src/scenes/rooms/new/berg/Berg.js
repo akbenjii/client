@@ -17,7 +17,7 @@ export default class Berg extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'aqua': () => this.triggerGame("aquaGrabber", 916)
+            'aqua': () => this.triggerGame("AquaGrabber", 916)
         }
 
         this.roomAnims = true

@@ -130,7 +130,7 @@ export default class Dojo extends RoomScene {
     }
 
     onJitsu() {
-        this.triggerGame("card", 998)
+        this.triggerGame("Card", 998)
     }
     /* END-USER-CODE */
 }

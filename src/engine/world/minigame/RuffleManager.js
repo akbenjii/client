@@ -99,11 +99,14 @@ export default class RuffleManager {
 
 	getStampInfo(stamp){
 		let stampInfo = this.crumbs.stamps[stamp]
+		console.log(`get stamp info ${stamp}`, stampInfo)
 		return [stampInfo.name, stampInfo.groupid, stampInfo.difficulty, stampInfo.description]
 	}
 
 	checkIfPlayerHasStamp(stamp){
-		return this.world.client.stamps.includes(parseInt(stamp))
+		let hasStamp = this.world.client.stamps.includes(parseInt(stamp))
+		console.log(`check if player has stamp ${stamp}`, hasStamp)
+		return hasStamp
 	}
 
 

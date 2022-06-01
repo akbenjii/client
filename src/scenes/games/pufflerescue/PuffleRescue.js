@@ -8,7 +8,7 @@ import { Interactive } from '@components/components'
 export default class PuffleRescue extends RoomScene {
 
     constructor() {
-        super("puffleRescue");
+        super("PuffleRescue");
 
         /* START-USER-CTR-CODE */
         this.music = "Puffle_Rescue_Ice"
@@ -24,8 +24,15 @@ export default class PuffleRescue extends RoomScene {
     /** @returns {void} */
     _create() {
 
+        // bg
+        const bg = this.add.image(0, 0, "load", "bg");
+        bg.setOrigin(0, 0);
+
         // lists
         const sort = [];
+
+        // bg (components)
+        new Interactive(bg);
 
         this.sort = sort;
 

@@ -13,7 +13,7 @@ export default class Coffee extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'beans': () => this.triggerGame('beancounters', 908),
+            'beans': () => this.triggerGame('BeanCounters', 908),
             'book': () => this.unimplementedPrompt(), //this.triggerRoom(111, 1200, 400),
             'smoothie': () => this.unimplementedPrompt(),
             'town': () => this.triggerRoom(100, 1200, 400)

@@ -22,9 +22,9 @@ export default class Mine extends RoomScene {
         /* START-USER-CTR-CODE */
         this.roomTriggers = {
             'cave': () => this.triggerRoom(806, 1280, 520),
-            'cart': () => this.triggerGame('cartsurfer', 905),
+            'cart': () => this.triggerGame('Cartsurfer', 905),
             'underground': () => this.unimplementedPrompt(),
-            'rescue': () => this.triggerGame('puffleRescue', 927),
+            'rescue': () => this.triggerGame('PuffleRescue', 927),
         }
 
         this.roomAnims = true

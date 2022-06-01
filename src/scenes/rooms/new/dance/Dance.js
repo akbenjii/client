@@ -15,7 +15,7 @@ export default class Dance extends RoomScene {
         this.roomTriggers = {
             'arcade': () => this.triggerRoom(121, 1200, 400),
             'boiler': () => this.triggerRoom(804, 1040, 580),
-            'contest': () => this.triggerGame("danceContest", 952),
+            'contest': () => this.triggerGame("DanceContest", 952),
             'soundstudio': () => this.unimplementedPrompt(),
             'town': () => this.triggerRoom(100, 1200, 400),
         }
@@ -260,6 +260,15 @@ export default class Dance extends RoomScene {
         this.danceFloor.play("danceFloor")
         this.floorSpeaker.play("floorSpeaker")
         this.neonSign.play("neonSign")
+
+        if (!this.penguins) return
+
+        if (Object.keys(this.penguins).length >= 10) {
+            this.world.client.stampEarned(16)
+        }
+        if (Object.keys(this.penguins).length >= 25) {
+            this.world.client.stampEarned(22)
+        }
     }
 
     onSoundStudioOver() {
@@ -311,6 +320,16 @@ export default class Dance extends RoomScene {
     onStairsOut() {
         this.upstairs.setFrame("upstairs0001.png")
         this.sound.add("danceClub-LightOff").play();
+    }
+
+    addPenguin(id, penguin) {
+        super.addPenguin(id, penguin)
+        if (Object.keys(this.penguins).length >= 10) {
+            this.world.client.stampEarned(16)
+        }
+        if (Object.keys(this.penguins).length >= 25) {
+            this.world.client.stampEarned(22)
+        }
     }
     /* END-USER-CODE */
 }

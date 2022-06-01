@@ -11,6 +11,8 @@ export default class ClientController {
         this.crumbs = world.crumbs
         this.getString = world.getString
 
+        this.roomsWaddled = []
+
         // Assign user attributes
         let { user, ...attributes } = args
         Object.assign(this, attributes)
@@ -55,6 +57,17 @@ export default class ClientController {
         this.input.on('pointermove', (pointer) => this.onPointerMove(pointer))
 
         this.input.keyboard.on('keydown', (event) => this.onKeyDown(event))
+
+        let oneDay = 1000 * 60 * 60 * 24
+        let timeDiff = Date.now() - Date.parse(this.joinTime)
+        let daysDiff = Math.round(timeDiff / oneDay)
+
+        if (daysDiff >= 365) {
+            setTimeout(() => this.stampEarned(20),30000)
+        }
+        if (daysDiff >= 183) {
+            setTimeout(() => this.stampEarned(14),30000)
+        }
     }
 
     get isTweening() {
@@ -251,6 +264,21 @@ export default class ClientController {
         this.lockRotation = false
 
         this.network.send('join_igloo', { igloo: id, x: 0, y: 0 })
+    }
+
+    stampEarned(stamp) {
+        if (!this.stamps.includes(stamp)) {
+            this.stamps.push(stamp)
+            this.network.send("stamp_earned", { stamp: stamp })
+            this.interface.main.stampEarnedBody.text = this.crumbs.stamps[stamp].name
+            if (this.crumbs.stamps[stamp].groupid === 7) {
+                this.interface.main.stampEarnedImage.setFrame(`stamps/activities000${this.crumbs.stamps[stamp].difficulty.toString()}`)
+            }
+            else {
+                this.interface.main.stampEarnedImage.setFrame(`stamps/events000${this.crumbs.stamps[stamp].difficulty.toString()}`)
+            }
+            this.interface.main.stampTween()
+        }
     }
 
 }

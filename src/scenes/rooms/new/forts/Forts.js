@@ -174,6 +174,8 @@ export default class Forts extends RoomScene {
 
     create() {
 
+        this.stampCompletion = 0
+
         super.create();
         this.leftFlag.play("fortsFlagLeft");
         this.rightFlag.play("fortsFlagRight");
@@ -215,6 +217,10 @@ export default class Forts extends RoomScene {
 
     onSnowballComplete(x, y) {
         if (this.bounds.contains(x, y)) {
+            this.stampCompletion += 1
+            if (this.stampCompletion >= 10) {
+                this.world.client.stampEarned(13)
+            }
             this.target.play("target")
         }
     }

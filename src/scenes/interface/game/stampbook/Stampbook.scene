@@ -145,7 +145,7 @@
                     "x": 471,
                     "y": 228,
                     "originX": 0.5,
-                    "text": "A massive thank you to:\n\namman#8104 - Owner\nSaber#5026 - Owner\nCairo#0001 - Administrator\nLEGOMAN#1112 - Administrator & Designer\nVespertilio#7232 - Developer & Designer\ndirk#2732 - Developer\nCringe#8547 - Designer\nChigster#6026 - Designer\nhershey#0001 - Designer\nJukeFairy#5942 - Designer & Moderator\nKeyomine#9439 - Designer\nTeilz#6930 - Designer\nTu8x#3764 - Designer\nbird#6574 - Designer",
+                    "text": "A massive thank you to:\n\namman#8104 - Owner\nSaber#5026 - Owner\nCairo#0001 - Administrator\nLEGOMAN#1112 - Administrator & Designer\nSahmyool#2935 - Administrator & Developer\ndirk#2732 - Developer\nCringe#8547 - Designer\nChigster#6026 - Designer\nhershey#0001 - Designer\nPunkQween#7281 - Designer\n𝒀𝒂𝒛#6140 - Designer\nTeilz#6930 - Designer\nTu8x#3764 - Designer\nbird#6574 - Designer",
                     "fontFamily": "Burbank Small",
                     "fontSize": "25px",
                     "color": "#585858ff"
@@ -177,20 +177,6 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "70px",
                     "fontStyle": "bold",
-                    "color": "#585858ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "254e5e1d-fdd4-4ae5-9e4d-0241485413e6",
-                    "label": "creditsbody2",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 1025,
-                    "y": 289,
-                    "originX": 0.5,
-                    "text": "bluey#9709 - Community Manager\nDinoNuggest#9999 - Community Manager\nLilyxm#3883 - Community Manager\naddi#6969 - Community Manager\nStitchh#2635 - Community Manager\ncloudx#3741 - Moderator\nDux#7961 - Moderator\njessica#1959 - Moderator\nSnowlily#0700 - Moderator\nsaturn#4670 - Moderator\nJulian#4977 - Moderator\nvoid#8437 - Moderator\nAnd a special mention to comfy#0806\nfor making the base client that CPF uses",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "25px",
                     "color": "#585858ff"
                 },
                 {

@@ -10,7 +10,7 @@
             "cpadvanced-client/assets/media/interface/menus/load/load-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "pizzatron",
+        "sceneKey": "Pizzatron",
         "borderWidth": 1520,
         "borderHeight": 960
     },

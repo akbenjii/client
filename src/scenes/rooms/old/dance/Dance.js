@@ -408,6 +408,15 @@ export default class Dance extends RoomScene {
         this.dj_mixer_wave.on('animationcomplete', () => this.onWaveAnimComplete())
 
         this.puffle.play('dj_puffle_idle')
+
+        if (!this.penguins) return
+
+        if (Object.keys(this.penguins).length >= 10) {
+            this.world.client.stampEarned(16)
+        }
+        if (Object.keys(this.penguins).length >= 25) {
+            this.world.client.stampEarned(22)
+        }
     }
 
     onPuffleAnimComplete() {
@@ -445,6 +454,16 @@ export default class Dance extends RoomScene {
 
         this.dj_box_sliders.setFrame('dj/box/sliders/sliders0001')
         this.dj_mixer_wave.setFrame('dj/mixer/wave/wave0001')
+    }
+
+    addPenguin(id, penguin) {
+        super.addPenguin(id, penguin)
+        if (Object.keys(this.penguins).length >= 16) {
+            this.world.client.stampEarned(22)
+        }
+        if (Object.keys(this.penguins).length >= 25) {
+            this.world.client.stampEarned(22)
+        }
     }
 
     /* END-USER-CODE */

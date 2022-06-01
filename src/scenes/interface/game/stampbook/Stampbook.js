@@ -64,7 +64,7 @@ export default class Stampbook extends Book {
 		// creditsbody
 		const creditsbody = this.add.text(471, 228, "", {});
 		creditsbody.setOrigin(0.5, 0);
-		creditsbody.text = "A massive thank you to:\n\namman#8104 - Owner\nSaber#5026 - Owner\nCairo#0001 - Administrator\nLEGOMAN#1112 - Administrator & Designer\nVespertilio#7232 - Developer & Designer\ndirk#2732 - Developer\nCringe#8547 - Designer\nChigster#6026 - Designer\nhershey#0001 - Designer\nJukeFairy#5942 - Designer & Moderator\nKeyomine#9439 - Designer\nTeilz#6930 - Designer\nTu8x#3764 - Designer\nbird#6574 - Designer";
+		creditsbody.text = "A massive thank you to:\n\namman#8104 - Owner\nSaber#5026 - Owner\nCairo#0001 - Administrator\nLEGOMAN#1112 - Administrator & Designer\nSahmyool#2935 - Administrator & Developer\ndirk#2732 - Developer\nCringe#8547 - Designer\nChigster#6026 - Designer\nhershey#0001 - Designer\nPunkQween#7281 - Designer\n𝒀𝒂𝒛#6140 - Designer\nTeilz#6930 - Designer\nTu8x#3764 - Designer\nbird#6574 - Designer";
 		creditsbody.setStyle({ "color": "#585858ff", "fontFamily": "Burbank Small", "fontSize": "25px" });
 		page38.add(creditsbody);
 
@@ -79,13 +79,6 @@ export default class Stampbook extends Book {
 		pagename38.text = "Credits";
 		pagename38.setStyle({ "color": "#585858ff", "fixedWidth":600,"fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold" });
 		page38.add(pagename38);
-
-		// creditsbody2
-		const creditsbody2 = this.add.text(1025, 289, "", {});
-		creditsbody2.setOrigin(0.5, 0);
-		creditsbody2.text = "bluey#9709 - Community Manager\nDinoNuggest#9999 - Community Manager\nLilyxm#3883 - Community Manager\naddi#6969 - Community Manager\nStitchh#2635 - Community Manager\ncloudx#3741 - Moderator\nDux#7961 - Moderator\njessica#1959 - Moderator\nSnowlily#0700 - Moderator\nsaturn#4670 - Moderator\nJulian#4977 - Moderator\nvoid#8437 - Moderator\nAnd a special mention to comfy#0806\nfor making the base client that CPF uses";
-		creditsbody2.setStyle({ "color": "#585858ff", "fontFamily": "Burbank Small", "fontSize": "25px" });
-		page38.add(creditsbody2);
 
 		// communitythanks
 		const communitythanks = this.add.text(769, 734, "", {});
@@ -2604,7 +2597,6 @@ export default class Stampbook extends Book {
 		this.creditsbody = creditsbody;
 		this.pagenum38 = pagenum38;
 		this.pagename38 = pagename38;
-		this.creditsbody2 = creditsbody2;
 		this.communitythanks = communitythanks;
 		this.page37 = page37;
 		this.pagenum37 = pagenum37;
@@ -2944,8 +2936,6 @@ export default class Stampbook extends Book {
 	pagenum38;
 	/** @type {Phaser.GameObjects.Text} */
 	pagename38;
-	/** @type {Phaser.GameObjects.Text} */
-	creditsbody2;
 	/** @type {Phaser.GameObjects.Text} */
 	communitythanks;
 	/** @type {Phaser.GameObjects.Container} */
@@ -3673,10 +3663,10 @@ export default class Stampbook extends Book {
             [], // Events
             [7, 8, 31, 32, 33, 34, 35, 36, 290, 358, 448, 466], // Characters
             [182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 193, 292, 294, 296, 330, 332], // Party
-            [360, 362, 364, 426, 438, 439, 440, 444], // Party
+            [360, 426, 438, 439, 440, 444], // Party
             [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], // Activities
-            [25, 26, 27, 28, 29, 30, 197, 198, 199, 200, 201, 488, 489, 490, 491, 492], // Activities
-            [493, 494, 495], // Activities
+            [25, 26, 27, 28, 29, 30, 197, 198, 199, 200, 201, 362, 364, 488, 489, 490], // Activities
+            [491, 492, 493, 494, 495], // Activities
             [], // Games
             [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87], // Aqua Grabber
             [88, 89, 91, 92], // Aqua Grabber
@@ -3786,7 +3776,7 @@ export default class Stampbook extends Book {
 
         let page = this.page
 
-        if (this.pageStamps[page].length === 0) {
+        if (!this.pageStamps[page] || this.pageStamps[page].length === 0) {
             this.stampHovers.visible = false
         }
         else {
@@ -3821,7 +3811,7 @@ export default class Stampbook extends Book {
 					this.pinLoader.loadPin(this.world.client.inventory["flag"][pin], pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1])
 									}
 				else {
-					this.pins[this.world.client.inventory["flag"][pin]] = this.add.image(pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][0], "clothing/icon/" + this.world.client.inventory["flag"][pin])
+					this.pins[this.world.client.inventory["flag"][pin]] = this.add.image(pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1], "clothing/icon/" + this.world.client.inventory["flag"][pin])
 					this.stampLayer.add(this.pins[this.world.client.inventory["flag"][pin]])
 				}
 				this.pinsOnPage.push(this.pins[this.world.client.inventory["flag"][pin]])
@@ -3842,8 +3832,8 @@ export default class Stampbook extends Book {
 		let joinMonth = month[joinTimestamp.getMonth()]
 		let joinYear = joinTimestamp.getFullYear()
 		if (joinDay === 1 || joinDay === 21 || joinDay === 31) { dayString = `${joinDay}st` }
-		if (joinDay === 2 || joinDay === 22) { dayString = `${joinDay}nd` }
-		if (joinDay === 3 || joinDay === 23) { dayString = `${joinDay}rd` }
+		else if (joinDay === 2 || joinDay === 22) { dayString = `${joinDay}nd` }
+		else if (joinDay === 3 || joinDay === 23) { dayString = `${joinDay}rd` }
 		else { dayString = `${joinDay}th` }
 		let dateString = `${dayString} of ${joinMonth}, ${joinYear}`
 
@@ -3854,7 +3844,7 @@ export default class Stampbook extends Book {
 
 		let potwString = (args.hasBeenPOTW) ? "been Penguin of the Week! Nice Job!" : "never been Penguin of the Week"
 
-		this.statistics.text = `You joined on ${dateString}\n\nSince then:\nYou have sent ${args.messagesSent} chat messages.\nYou have played for ${Math.round(args.timePlayed / 60)} minutes! Wow, that's over ${Math.round((args.timePlayed / 86400) * 100) /100} days!\nYou have won ${args.sledRacesWon} sled races, and ${args.findFourWon} games of find four.\nYou have earned ${args.coinsEarned} coins, and spent ${Math.abs(args.coinsSpent)} coins.\nYou have thrown ${args.snowballsThrown} snowballs.\nYou have been banned ${banString}\n${args.itemsReleased} items have been released, and you have bought ${args.itemsOwned} of them.\n${args.pinsReleased} pins have been released, and you have found ${args.pinsOwned} of them.\nYou have earned 0 stamps\nYou have completed ${args.partyTasksCompleted} tasks at 0 parties.\nYou have ${potwString}`
+		this.statistics.text = `You joined on ${dateString}\n\nSince then:\nYou have sent ${args.messagesSent} chat messages.\nYou have played for ${Math.round(args.timePlayed / 60)} minutes! Wow, that's over ${Math.round((args.timePlayed / 86400) * 100) /100} days!\nYou have won ${args.sledRacesWon} sled races, and ${args.findFourWon} games of find four.\nYou have earned ${args.coinsEarned} coins, and spent ${Math.abs(args.coinsSpent)} coins.\nYou have thrown ${args.snowballsThrown} snowballs.\nYou have been banned ${banString}\n${args.itemsReleased} items have been released, and you have bought ${args.itemsOwned} of them.\n${args.pinsReleased} pins have been released, and you have found ${args.pinsOwned} of them.\nYou have earned ${this.world.client.stamps.length} stamps\nYou have completed ${args.partyTasksCompleted} tasks at 0 parties.\nYou have ${potwString}`
 	}
 
 	getCategoryStamps(category){

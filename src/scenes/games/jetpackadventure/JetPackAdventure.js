@@ -8,10 +8,10 @@ import { Interactive } from '@components/components'
 export default class JetPackAdventure extends RoomScene {
 
     constructor() {
-        super("jetPackAdventure");
+        super("JetPackAdventure");
 
         /* START-USER-CTR-CODE */
-		this.music = 110
+        this.music = 110
         /* END-USER-CTR-CODE */
     }
 
