@@ -19,17 +19,18 @@ export default class WorldController extends BaseScene {
     }
 
     create() {
-		
+
 		var RuffleHolder = this.scene.get("RuffleHolder")
-		
+
 		if (window.location.hostname == "localhost") window.world = this
-		
+
         this.penguinFactory = new PenguinFactory(this)
         this.roomFactory = new RoomFactory(this)
         this.iglooFactory = new IglooFactory(this)
 		this.RuffleManager = new RuffleManager(this, RuffleHolder, this.crumbs)
 
         this.network.send('get_pin')
+        this.network.send('get_mascots')
     }
 
     setClient(args) {
@@ -82,6 +83,8 @@ export default class WorldController extends BaseScene {
     }
 
     addPenguin(user) {
+        // If no room, try again in 0.1 seconds
+        if (!this.room.getWaiting) setTimeout( ()=> {this.addPenguin(user)}, 100)
         // If room isn't ready then user gets added into waiting array
         if (!this.room.isReady && !this.room.getWaiting(user.id)) {
             return this.room.waiting.push(user)
@@ -94,6 +97,9 @@ export default class WorldController extends BaseScene {
     }
 
     removePenguin(id) {
+        // If no room, try again in 0.1 seconds
+        if (!this.room.removeWaiting) setTimeout( ()=> {this.removePenguin(id)}, 100)
+
         if (!this.room.isReady) {
             return this.room.removeWaiting(id)
         }
@@ -103,6 +109,10 @@ export default class WorldController extends BaseScene {
 
     getRelationship(id) {
         if (id == this.client.id) return 'player'
+
+        for (var x in this.mascots) {
+            if (this.mascots[x].id == id) return 'mascot'
+        }
 
         if (this.isBuddy(id)) {
             return this.isOnline(id) ? 'online' : 'offline'
@@ -131,7 +141,7 @@ export default class WorldController extends BaseScene {
     getColor(id) {
         return this.crumbs.colors[id - 1] || this.crumbs.colors[0]
     }
-	
+
 	loadMinigame(minigame) {
 		this.RuffleManager.handleLoadMinigame(minigame)
 	}

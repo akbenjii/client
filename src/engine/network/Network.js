@@ -94,6 +94,9 @@ export default class Network {
 
         let prompt = this.game.scene.getScene('InterfaceController').prompt
         if (!prompt.error.disconnectOverwrite) prompt.showError('Connection was lost.\nPlease click to reload', 'Reload', () => window.location.reload())
+
+        if (!document.getElementsByTagName("ruffle-player")[0]) return
+        document.getElementsByTagName("ruffle-player")[0].onDisconnect()
     }
 
     // Saved penguins

@@ -60,14 +60,15 @@
                 {
                     "type": "Image",
                     "id": "8df3aa1e-b498-4020-9be9-90c47a525198",
-                    "label": "mail_button",
+                    "label": "stamps_button",
                     "scope": "CLASS",
                     "components": [
                         "Button",
                         "ShowHint"
                     ],
                     "Button.spriteName": "blue-button",
-                    "ShowHint.text": "Send Postcard",
+                    "Button.callback": "() => this.onStampClick()",
+                    "ShowHint.text": "View Stampbook",
                     "texture": {
                         "key": "main",
                         "frame": "blue-button-disabled"
@@ -157,12 +158,12 @@
                 {
                     "type": "Image",
                     "id": "2b0aee28-83bc-4f3e-bc89-4c338f5558d0",
-                    "label": "mail_icon",
+                    "label": "stamps_icon",
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "main",
-                        "frame": "mail-icon-disabled"
+                        "frame": "stamps-icon-disabled"
                     },
                     "x": 30,
                     "y": -2

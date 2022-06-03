@@ -3571,9 +3571,12 @@ export default class Stampbook extends Book {
 
 		if (this.id === this.world.client.id) {
 			this.initStampbook({}, true)
+			this.network.send('get_statistics')
 		}
 		else{
-			this.network.send('get_stampbook', { userId: this.id })
+			this.network.send('get_stampbook', { user: this.id })
+			this.statistics.text = 'Please go to your own stampbook to see your statistics!'
+			this.edit.visible = false
 		}
 
         this.stamps = []
@@ -3616,7 +3619,6 @@ export default class Stampbook extends Book {
             [414, 416, 418, 420, 428] // Treasure Hunt
         ]
 
-		this.network.send('get_statistics')
 		this.pinLoader = new PinLoader(this)
 
 		this.pins = []
@@ -3625,13 +3627,13 @@ export default class Stampbook extends Book {
 
 	initStampbook(args, isPlayer) {
 
-		this.color = (isPlayer) ? this.world.client.stampbookColor : args.color
-		this.clasp = (isPlayer) ? this.world.client.stampbookClasp : args.clasp
-		this.pattern = (isPlayer) ? this.world.client.stampbookPattern : args.pattern
+		this.colorId = (isPlayer) ? this.world.client.stampbookColor : args.color
+		this.claspId = (isPlayer) ? this.world.client.stampbookClasp : args.clasp
+		this.patternId = (isPlayer) ? this.world.client.stampbookPattern : args.pattern
 
-		this.changeClasp(this.clasp)
-		this.changePattern(this.pattern)
-		this.changeColor(this.color)
+		this.changeClasp(this.claspId)
+		this.changePattern(this.patternId)
+		this.changeColor(this.colorId)
 		
 		this.stampsEarned = (isPlayer) ? this.world.client.stamps : args.stamps
 		this.username.text = (isPlayer) ? this.world.client.penguin.username : args.username
@@ -3719,11 +3721,12 @@ export default class Stampbook extends Book {
 
 		this.stampnum10.text = `${(aquaGrabberStamps[1] + astroBarrierStamps[1] + cardJitsuStamps[1] + cardJitsuFStamps[1] + cardJitsuSStamps[1] + cardJitsuWStamps[1] + cartSurferStamps[1] + wavesStamps[1] + iceFishingStamps[1] + JPAStamps[1] + missions[1] + pizzatronStamps[1] + launchStamps[1] + rescueStamps[1] + pufflescapeStamps[1] + smoothieStamps[1] + sysDefStamps[1] + thinIceStamps[1] + treasureHuntStamps[1])}/${(aquaGrabberStamps[0] + astroBarrierStamps[0] + cardJitsuStamps[0] + cardJitsuFStamps[0] + cardJitsuSStamps[0] + cardJitsuWStamps[0] + cartSurferStamps[0] + wavesStamps[0] + iceFishingStamps[0] + JPAStamps[0] + missions[0] + pizzatronStamps[0] + launchStamps[0] + rescueStamps[0] + pufflescapeStamps[0] + smoothieStamps[0] + sysDefStamps[0] + thinIceStamps[0] + treasureHuntStamps[0])}`
 
-		this.stampnum36.text = (isPlayer) ? this.world.client.inventory["flag"].length : args.pins.length
+		this.inventory = (isPlayer) ? this.world.client.inventory : args.inventory
+		this.stampnum36.text = this.inventory["flag"].length
 	}
 
     changeClasp(id) {
-		this.clasp = id
+		this.claspId = id
         this.clasp.setFrame("clasp/" + id)
         this.claspthumb.setFrame("thumbs/clasp/" + id)
         this.claspselect.visible = false
@@ -3731,11 +3734,11 @@ export default class Stampbook extends Book {
 
     changePattern(id) {
         if (id == 0) {
-			this.pattern = 1
+			this.patternId = 1
             this.pattern.visible = false
             this.patternthumb.setFrame("thumbs/color/1")
         } else {
-			this.pattern = id
+			this.patternId = id
             this.pattern.setFrame("pattern/" + id)
             this.patternthumb.setFrame("thumbs/pattern/" + id)
             this.patternselect.visible = false
@@ -3743,7 +3746,7 @@ export default class Stampbook extends Book {
     }
 
     changeColor(id) {
-		this.color = id
+		this.colorId = id
         this.cover.setFrame("colour/" + id)
         this.colorthumb.setFrame("thumbs/color/" + id)
         this.colorselect.visible = false
@@ -3777,7 +3780,10 @@ export default class Stampbook extends Book {
     }
 
     saveStampbook() {
-		this.network.send('save_stampbook', { color: this.color, pattern: this.pattern, clasp: this.clasp })
+		this.network.send('save_stampbook', { color: this.colorId, pattern: this.patternId, clasp: this.claspId })
+		this.world.client.stampbookColor = this.colorId
+		this.world.client.stampbookPattern = this.patternId
+		this.world.client.stampbookClasp = this.claspId
         this.editor_background.visible = false
         this.editor.visible = false
         this.edit.visible = true
@@ -3827,17 +3833,17 @@ export default class Stampbook extends Book {
         }
 
 		if (page === 35){
-			for (var pin in this.world.client.inventory["flag"]) {
-				if (this.pins[this.world.client.inventory["flag"][pin]] !== undefined) { this.pins[this.world.client.inventory["flag"][pin]].visible = true; continue }
+			for (var pin in this.inventory["flag"]) {
+				if (this.pins[this.inventory["flag"][pin]] !== undefined) { this.pins[this.inventory["flag"][pin]].visible = true; continue }
 
-				if (!this.textures.exists(`clothing/icon/${this.world.client.inventory["flag"][pin]}`)) {
-					this.pinLoader.loadPin(this.world.client.inventory["flag"][pin], pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1])
+				if (!this.textures.exists(`clothing/icon/${this.inventory["flag"][pin]}`)) {
+					this.pinLoader.loadPin(this.inventory["flag"][pin], pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1])
 									}
 				else {
-					this.pins[this.world.client.inventory["flag"][pin]] = this.add.image(pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1], "clothing/icon/" + this.world.client.inventory["flag"][pin])
-					this.stampLayer.add(this.pins[this.world.client.inventory["flag"][pin]])
+					this.pins[this.inventory["flag"][pin]] = this.add.image(pinsPosArray[this.pinsOnPage.length][0], pinsPosArray[this.pinsOnPage.length][1], "clothing/icon/" + this.inventory["flag"][pin])
+					this.stampLayer.add(this.pins[this.inventory["flag"][pin]])
 				}
-				this.pinsOnPage.push(this.pins[this.world.client.inventory["flag"][pin]])
+				this.pinsOnPage.push(this.pins[this.inventory["flag"][pin]])
 			}
 		}
     }

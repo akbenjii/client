@@ -87,22 +87,15 @@ export default class RoomScene extends BaseScene {
     }
 
     checkMascot(id){
-        if (id === 10000000) this.world.client.stampEarned(7)
-        if (id === 10000001) this.world.client.stampEarned(8)
-        if (id === 10000002) this.world.client.stampEarned(31)
-        if (id === 10000003) this.world.client.stampEarned(32)
-        if (id === 10000004) this.world.client.stampEarned(33)
-        if (id === 10000005) this.world.client.stampEarned(34)
-        if (id === 10000006) this.world.client.stampEarned(35)
-        if (id === 10000007) this.world.client.stampEarned(36)
-        if (id === 10000008) this.world.client.stampEarned(290)
-        if (id === 10000009) this.world.client.stampEarned(358)
-        if (id === 10000010) this.world.client.stampEarned(448)
-        if (id === 10000011) this.world.client.stampEarned(466)
+        for (var x in this.world.mascots) {
+            if (this.world.mascots[x].id == id) this.world.client.stampEarned(this.world.mascots[x].stamp)
+        }
     }
 
     removePenguin(id) {
         let penguin = this.penguins[id]
+
+        if (!penguin) return
 
         if (penguin.isTweening) penguin.removeTween()
 

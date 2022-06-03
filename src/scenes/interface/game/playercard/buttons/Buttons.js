@@ -15,7 +15,7 @@ export default class Buttons extends BaseContainer {
         /** @type {Phaser.GameObjects.Image} */
         this.ignore_button;
         /** @type {Phaser.GameObjects.Image} */
-        this.mail_button;
+        this.stamps_button;
         /** @type {Phaser.GameObjects.Image} */
         this.igloo_button;
         /** @type {Phaser.GameObjects.Image} */
@@ -27,7 +27,7 @@ export default class Buttons extends BaseContainer {
         /** @type {Phaser.GameObjects.Image} */
         this.ignore_icon;
         /** @type {Phaser.GameObjects.Image} */
-        this.mail_icon;
+        this.stamps_icon;
         /** @type {Phaser.GameObjects.Image} */
         this.igloo_icon;
         /** @type {Phaser.GameObjects.Image} */
@@ -44,9 +44,9 @@ export default class Buttons extends BaseContainer {
         const ignore_button = scene.add.image(90, 0, "main", "blue-button-disabled");
         this.add(ignore_button);
 
-        // mail_button
-        const mail_button = scene.add.image(30, 0, "main", "blue-button-disabled");
-        this.add(mail_button);
+        // stamps_button
+        const stamps_button = scene.add.image(30, 0, "main", "blue-button-disabled");
+        this.add(stamps_button);
 
         // igloo_button
         const igloo_button = scene.add.image(-30, 0, "main", "blue-button-disabled");
@@ -68,9 +68,9 @@ export default class Buttons extends BaseContainer {
         const ignore_icon = scene.add.image(90, -2, "main", "ignore-icon-disabled");
         this.add(ignore_icon);
 
-        // mail_icon
-        const mail_icon = scene.add.image(30, -2, "main", "mail-icon-disabled");
-        this.add(mail_icon);
+        // stamps_icon
+        const stamps_icon = scene.add.image(30, -2, "main", "stamps-icon-disabled");
+        this.add(stamps_icon);
 
         // igloo_icon
         const igloo_icon = scene.add.image(-30, -2, "main", "igloo-icon-disabled");
@@ -98,11 +98,12 @@ export default class Buttons extends BaseContainer {
         const ignore_buttonShowHint = new ShowHint(ignore_button);
         ignore_buttonShowHint.text = "Ignore Player";
 
-        // mail_button (components)
-        const mail_buttonButton = new Button(mail_button);
-        mail_buttonButton.spriteName = "blue-button";
-        const mail_buttonShowHint = new ShowHint(mail_button);
-        mail_buttonShowHint.text = "Send Postcard";
+        // stamps_button (components)
+        const stamps_buttonButton = new Button(stamps_button);
+        stamps_buttonButton.spriteName = "blue-button";
+        stamps_buttonButton.callback = () => this.onStampClick();
+        const stamps_buttonShowHint = new ShowHint(stamps_button);
+        stamps_buttonShowHint.text = "View Stampbook";
 
         // igloo_button (components)
         const igloo_buttonButton = new Button(igloo_button);
@@ -127,20 +128,20 @@ export default class Buttons extends BaseContainer {
 
         this.report_button = report_button;
         this.ignore_button = ignore_button;
-        this.mail_button = mail_button;
+        this.stamps_button = stamps_button;
         this.igloo_button = igloo_button;
         this.profile_button = profile_button;
         this.buddy_button = buddy_button;
         this.report_icon = report_icon;
         this.ignore_icon = ignore_icon;
-        this.mail_icon = mail_icon;
+        this.stamps_icon = stamps_icon;
         this.igloo_icon = igloo_icon;
         this.profile_icon = profile_icon;
         this.buddy_icon = buddy_icon;
 
         /* START-USER-CTR-CODE */
 
-        this.buttonNames = ['buddy', 'profile', 'igloo', 'mail', 'ignore', 'report']
+        this.buttonNames = ['buddy', 'profile', 'igloo', 'stamps', 'ignore', 'report']
         this.buttons = this.initButtons()
 
         /* END-USER-CTR-CODE */
@@ -174,12 +175,12 @@ export default class Buttons extends BaseContainer {
         switch (relationship) {
             case 'online':
                 this.enableButton('buddy', 'buddies-remove-icon', 'Remove Buddy')
-                this.enableButtons(['profile', 'igloo', 'mail', 'report'])
+                this.enableButtons(['profile', 'igloo', 'stamps', 'report'])
                 break
 
             case 'offline':
                 this.enableButton('buddy', 'buddies-remove-icon', 'Remove Buddy')
-                this.enableButtons(['igloo', 'mail', 'report'])
+                this.enableButtons(['igloo', 'stamps', 'report'])
                 break
 
             case 'ignore':
@@ -187,15 +188,19 @@ export default class Buttons extends BaseContainer {
                 this.enableButton('report')
                 break
 
+            case 'mascot':
+                this.enableButton('buddy', 'gift-icon', 'Claim Giveaway')
+                break
+
             default:
-                this.enableButtons(['buddy', 'mail', 'ignore', 'report'])
+                this.enableButtons(['buddy', 'stamps', 'ignore', 'report'])
                 break
         }
 
         if (this.world.client.isModerator) {
             this.enableButton('report', 'mute-icon', 'Warn Player')
             this.enableButton('ignore', 'ignore-icon', 'Kick Player')
-			this.enableButton('profile', 'help-icon', 'Find Player')
+            this.enableButton('profile', 'help-icon', 'Find Player')
         }
 
         if (!['online', 'offline'].includes(relationship)) {
@@ -233,12 +238,18 @@ export default class Buttons extends BaseContainer {
     }
 
     onBuddyClick() {
-        if (this.buddy_icon.frame.name == 'buddies-remove-icon') {
+        if (this.buddy_icon.frame.name == 'gift-icon') {
+            for (var x in this.world.mascots) {
+                if (this.world.mascots[x].id === this.parentContainer.id) this.interface.prompt.showItem(this.world.mascots[x].giveaway)
+            }
+        } else if (this.buddy_icon.frame.name == 'buddies-remove-icon') {
             this.showRemoveBuddy()
         } else {
             this.showRequestBuddy()
         }
     }
+
+
 
     onFindClick() {
         this.network.send('buddy_find', { id: this.parentContainer.id })
@@ -256,6 +267,11 @@ export default class Buttons extends BaseContainer {
         } else {
             this.showAddIgnore()
         }
+    }
+
+    onStampClick() {
+        this.interface.loadExternal('Stampbook') 
+        this.interface.stampbookId = this.parentContainer.id
     }
 
     onReportClick() {
@@ -313,8 +329,8 @@ export default class Buttons extends BaseContainer {
             this.interface.prompt.window.visible = false
         })
     }
-	
-	showWarn() {
+
+    showWarn() {
         let text = `Warn Player: ${this.username}`
 
         this.interface.prompt.showWindow(text, 'dual', () => {

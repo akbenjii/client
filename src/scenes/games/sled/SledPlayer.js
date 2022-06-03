@@ -83,6 +83,8 @@ class SledPlayer extends BaseContainer {
 
         this.map
 
+        setTimeout(() => { this.fixDesync() }, 100)
+
         /* END-USER-CTR-CODE */
     }
 
@@ -150,7 +152,7 @@ class SledPlayer extends BaseContainer {
         this.setFrame(1)
 
         this.username.text = username
-        this.body.tint = this.world.getColor(this.world.client.penguin.color)
+        this.body.tint = this.world.getColor(color)
     }
 
     update() {
@@ -371,6 +373,13 @@ class SledPlayer extends BaseContainer {
         }
 
         this.scene.finishPos++
+    }
+
+    fixDesync() {
+        if (this.isClient && this.scene.finishPos === 0) {
+            this.network.send('send_move', { id: this.id, x: this.fixedX, y: this.fixedY, time: this.scene.gameTime })
+            setTimeout(() => { this.fixDesync() }, 250)
+        }
     }
 
     /* END-USER-CODE */

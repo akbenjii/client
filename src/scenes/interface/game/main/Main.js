@@ -157,61 +157,61 @@ export default class Main extends BaseScene {
         this.add.image(760, 924, "chatbar", "chatbar.png");
 
         // chat_box
-        const chat_box = this.add.image(748, 931, "main", "chat-box");
+        const chat_box = this.add.image(748, 929, "main", "chat-box");
 
         // puffle_button
-        const puffle_button = this.add.image(246, 931, "main", "blue-button-disabled");
+        const puffle_button = this.add.image(246, 930, "main", "blue-button-disabled");
 
         // puffle_icon
-        const puffle_icon = this.add.image(245, 930, "main", "puffle-icon-disabled");
+        const puffle_icon = this.add.image(245, 929, "main", "puffle-icon-disabled");
 
         // emote_button
-        const emote_button = this.add.image(306, 931, "main", "blue-button");
+        const emote_button = this.add.image(306, 930, "main", "blue-button");
 
         // emote_icon
-        const emote_icon = this.add.image(306, 929, "chatbar", "emotes.png");
+        const emote_icon = this.add.image(306, 928, "chatbar", "emotes.png");
 
         // action_button
-        const action_button = this.add.image(366, 931, "main", "blue-button");
+        const action_button = this.add.image(366, 930, "main", "blue-button");
 
         // action_icon
-        const action_icon = this.add.image(366, 927, "main", "action-icon");
+        const action_icon = this.add.image(366, 926, "main", "action-icon");
 
         // snowball_button
-        const snowball_button = this.add.image(426, 931, "main", "blue-button");
+        const snowball_button = this.add.image(426, 930, "main", "blue-button");
 
         // snowball_icon
         const snowball_icon = this.add.image(426, 930, "main", "snowball-icon");
 
         // chat_send_button
-        const chat_send_button = this.add.image(1026, 931, "main", "blue-button");
+        const chat_send_button = this.add.image(1026, 930, "main", "blue-button");
 
         // chat_send_icon
-        const chat_send_icon = this.add.image(1027, 929, "main", "chat-send0001");
+        const chat_send_icon = this.add.image(1027, 928, "main", "chat-send0001");
 
         // player_button
-        const player_button = this.add.image(1086, 931, "main", "blue-button");
+        const player_button = this.add.image(1086, 930, "main", "blue-button");
 
         // badge_member
-        const badge_member = this.add.image(1086, 929, "chatbar", "playercard0001.png");
+        const badge_member = this.add.image(1086, 927, "chatbar", "playercard0001.png");
 
         // buddies_button
-        const buddies_button = this.add.image(1146, 931, "main", "blue-button");
+        const buddies_button = this.add.image(1146, 930, "main", "blue-button");
 
         // buddies_icon
-        const buddies_icon = this.add.image(1146, 929, "main", "buddies-icon");
+        const buddies_icon = this.add.image(1146, 928, "main", "buddies-icon");
 
         // igloo_button
-        const igloo_button = this.add.image(1206, 931, "main", "blue-button");
+        const igloo_button = this.add.image(1206, 930, "main", "blue-button");
 
         // igloo_icon
-        const igloo_icon = this.add.image(1206, 929, "main", "igloo-icon");
+        const igloo_icon = this.add.image(1206, 928, "main", "igloo-icon");
 
         // help_button
-        const help_button = this.add.image(1266, 931, "main", "blue-button");
+        const help_button = this.add.image(1266, 930, "main", "blue-button");
 
         // help_icon
-        const help_icon = this.add.image(1266, 929, "main", "help-icon");
+        const help_icon = this.add.image(1266, 928, "main", "help-icon");
 
         // onlinePopup
         const onlinePopup = this.add.container(1155, 857);
@@ -306,7 +306,7 @@ export default class Main extends BaseScene {
         emotesMenu.visible = false;
 
         // safe
-        const safe = new Safe(this, 246, 933);
+        const safe = new Safe(this, 244, 933);
         this.add.existing(safe);
         safe.visible = false;
 
@@ -321,10 +321,10 @@ export default class Main extends BaseScene {
         findFour.visible = false;
 
         // chat_button
-        const chat_button = this.add.image(490, 931, "main", "blue-button");
+        const chat_button = this.add.image(486, 930, "main", "blue-button");
 
         // chat_icon
-        const chat_icon = this.add.image(490, 929, "main", "chat-icon");
+        const chat_icon = this.add.image(486, 929, "main", "chat-icon");
 
         // stampEarned
         const stampEarned = this.add.container(933, -150);

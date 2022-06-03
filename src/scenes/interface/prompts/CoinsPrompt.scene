@@ -25,7 +25,8 @@
                 {
                     "type": "Rectangle",
                     "id": "94774812-2284-4f54-9145-e85577687e68",
-                    "label": "block_1",
+                    "label": "block",
+                    "scope": "CLASS",
                     "components": [
                         "Interactive"
                     ],
@@ -36,51 +37,349 @@
                     "height": 960
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "0ad093fe-a619-459d-84de-4d9d3f84059d",
+                    "type": "Image",
+                    "id": "b8ea7578-133a-41f6-885a-8fdee40ea010",
                     "label": "bg",
                     "scope": "CLASS",
-                    "components": [
-                        "NineSlice"
-                    ],
-                    "NineSlice.corner": 50,
-                    "isFilled": true,
-                    "fillColor": "#0280CD",
-                    "width": 708,
-                    "height": 324
+                    "components": [],
+                    "texture": {
+                        "key": "endscreens",
+                        "frame": "bg"
+                    },
+                    "y": -40
                 },
                 {
-                    "prefabId": "48dfbf63-271b-4c3d-9fcc-6406eb7a0754",
-                    "id": "10c05f07-ffb7-42bb-a639-4465e441e1f2",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "single",
+                    "type": "Image",
+                    "id": "e876c474-d5ad-42a6-b1fa-fddf2428d811",
+                    "label": "icon",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 0,
-                    "y": 50,
-                    "nestedPrefabs": []
+                    "texture": {
+                        "key": "endscreens",
+                        "frame": "icons/aquagrabber"
+                    },
+                    "y": -336
+                },
+                {
+                    "type": "Image",
+                    "id": "60782ae7-3ac8-4336-bd71-7004b3aff681",
+                    "label": "doneBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_btn",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "endscreens",
+                        "frame": "close_btn"
+                    },
+                    "y": 283
                 },
                 {
                     "type": "Text",
-                    "id": "3f6117bb-1651-4791-9c16-f6d81f06af7d",
-                    "label": "coins",
+                    "id": "1c699115-86df-45b2-bb50-da2f9e60fbc5",
+                    "label": "totalCoins",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -75,
+                    "y": -160,
                     "originX": 0.5,
                     "originY": 0.5,
-                    "text": "You have earned 69 coins.\nYou now have 420 coins.",
-                    "fixedWidth": 628,
-                    "align": "center",
+                    "text": "Your total coins: 8888888",
                     "fontFamily": "Burbank Small",
-                    "fontSize": "26px",
-                    "color": "#000000ff",
-                    "shadow.offsetX": 3,
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "color": "#005cc6ff",
+                    "stroke": "#ffffffff"
+                },
+                {
+                    "type": "Text",
+                    "id": "98c814e8-cb59-4b96-a356-a8cde0ff3ed4",
+                    "label": "coinsEarned",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -195,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Coins Earned: 88888",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "45px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#003d7cff",
+                    "strokeThickness": 8
+                },
+                {
+                    "type": "Image",
+                    "id": "d77d5587-fff7-449c-9743-424a748c096b",
+                    "label": "coins_right",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "endscreens",
+                        "frame": "coins"
+                    },
+                    "x": 320,
+                    "y": -185
+                },
+                {
+                    "type": "Image",
+                    "id": "76078d26-9042-41ec-aec4-50b75fddc7c1",
+                    "label": "coins_left",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "endscreens",
+                        "frame": "coins"
+                    },
+                    "x": -320,
+                    "y": -185,
+                    "scaleX": -1
+                },
+                {
+                    "type": "Text",
+                    "id": "6e0cee01-ef23-4b60-a851-1deb13edf990",
+                    "label": "gameName",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -290,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Aqua Grabber",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "50px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#003d7cff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Text",
+                    "id": "4515ebc2-9419-4255-8d61-9c46e9af1489",
+                    "label": "useCoins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 76,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Use your coins to:",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#ffffffff"
+                },
+                {
+                    "type": "Text",
+                    "id": "c7e8b155-495e-4352-9178-decc6ff79126",
+                    "label": "buyClothes",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -270,
+                    "y": 216,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Buy new clothing",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#ffffffff",
+                    "shadow.offsetX": 1,
                     "shadow.offsetY": 2,
-                    "shadow.color": "#012855ff"
+                    "shadow.fill": true
+                },
+                {
+                    "type": "Text",
+                    "id": "600cfbd5-d562-484d-bc97-c05c30468901",
+                    "label": "adoptPet",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 216,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Adopt a pet",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#ffffffff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 2,
+                    "shadow.fill": true
+                },
+                {
+                    "type": "Text",
+                    "id": "33b43521-fd66-4e7f-9137-8a682bcc8bc7",
+                    "label": "decorateIgloo",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 270,
+                    "y": 216,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Decorate your igloo",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#ffffffff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 2,
+                    "shadow.fill": true
+                },
+                {
+                    "type": "Text",
+                    "id": "03a2dcf2-5753-4812-8c88-c7aa1d53fefe",
+                    "label": "done",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 283,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Done",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "45px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#003d7cff",
+                    "strokeThickness": 8
+                },
+                {
+                    "type": "Image",
+                    "id": "739f63d5-438f-4831-a96f-f81463bcfd81",
+                    "label": "divider",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "endscreens",
+                        "frame": "divider"
+                    },
+                    "y": -95
+                },
+                {
+                    "type": "Image",
+                    "id": "0592dfa5-527e-4c8a-8c70-4e844287a2b7",
+                    "label": "stampIcon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "endscreens",
+                        "frame": "stamps"
+                    },
+                    "x": -33,
+                    "y": -95
+                },
+                {
+                    "type": "Text",
+                    "id": "5224aeb7-3de7-415f-a72b-be0dca4e0cf7",
+                    "label": "stampNumber",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 12,
+                    "y": -95,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "22/22",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "stroke": "#ffffffff"
+                },
+                {
+                    "type": "Container",
+                    "id": "5b97816d-6804-48cc-a605-94a5fb438ace",
+                    "label": "bonus",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -320,
+                    "y": -180,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "4715ace7-60c5-496a-bb9b-20cf6e269a2d",
+                            "label": "bonusLeft",
+                            "scope": "CLASS",
+                            "components": [],
+                            "angle": -30,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "BONUS!",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "45px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#7c5900ff",
+                            "strokeThickness": 8
+                        },
+                        {
+                            "type": "Text",
+                            "id": "65a199cf-86a2-4288-90e6-85cf928292f6",
+                            "label": "bonusRight",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 640,
+                            "angle": 30,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "BONUS!",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "45px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff",
+                            "stroke": "#7c5900ff",
+                            "strokeThickness": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "8ea677ef-28ca-458e-98af-6b4fc63acbc6",
+                    "label": "stampLayer",
+                    "scope": "CLASS",
+                    "components": [],
+                    "list": []
+                },
+                {
+                    "type": "Triangle",
+                    "id": "d372eea5-0a13-43e0-84c9-53d1b53e8314",
+                    "label": "nextPageBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.nextPage()",
+                    "x": 360,
+                    "y": -25,
+                    "scaleX": 0.3683477972678916,
+                    "scaleY": -0.2091128471890994,
+                    "angle": 90,
+                    "visible": false,
+                    "isFilled": true,
+                    "y1": 0,
+                    "y2": 100,
+                    "y3": 0
+                },
+                {
+                    "type": "Triangle",
+                    "id": "b074a38b-01b4-4f67-ac76-e1f78700e6b3",
+                    "label": "prevPageBtn",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.prevPage()",
+                    "x": -360,
+                    "y": -25,
+                    "scaleX": 0.3683477972678916,
+                    "scaleY": -0.2091128471890994,
+                    "angle": -90,
+                    "visible": false,
+                    "isFilled": true,
+                    "y1": 0,
+                    "y2": 100,
+                    "y3": 0
                 }
             ]
         }

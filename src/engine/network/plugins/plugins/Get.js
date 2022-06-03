@@ -12,7 +12,9 @@ export default class Get extends Plugin {
 			'get_user_info': this.getUserInfo,
 			'edit_player': this.editPlayer,
             'get_pin': this.getPin,
-			'get_statistics': this.getStatistics
+			'get_statistics': this.getStatistics,
+            'get_stampbook': this.getStampbook,
+            'get_mascots': this.getMascots
         }
     }
 
@@ -46,5 +48,32 @@ export default class Get extends Plugin {
 	getStatistics(args) {
 		this.interface.setStatistics(args)
 	}
+
+    getStampbook(args) {
+        if (!this.interface.book) return
+
+        args.inventory = this.initInventory(args)
+
+        this.interface.book.initStampbook(args, false)
+    }
+
+    initInventory(args) {
+        let slots = ['color', 'head', 'face', 'neck', 'body', 'hand', 'feet', 'flag', 'photo', 'award']
+        let inventory = Object.fromEntries(slots.map(slot => [slot, []]))
+
+        for (let item of args.inventory) {
+            if (!this.crumbs.items[item]) continue
+
+            let type = this.crumbs.items[item].type
+            let slot = slots[type - 1]
+
+            inventory[slot].push(item)
+        }
+        return inventory
+    }
+
+    getMascots(args) {
+        this.world.mascots = args.mascots
+    }
 
 }

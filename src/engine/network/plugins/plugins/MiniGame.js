@@ -42,12 +42,13 @@ export default class MiniGame extends Plugin {
 		if (args.coinsEarned == null){
 			args.coinsEarned = 0
 		}
-        prompt.showCoins(this.world.getString(args.game), args.coinsEarned)
+        prompt.showCoins(args.game, args.coinsEarned)
 	}
 	
 	checkLegit(args) {
 		let ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
 		this.network.send('check_legit', { coins: ruffleplayer.checkCoins(), stamps: ruffleplayer.checkStamps(), game: args.game })
+		ruffleplayer.pause()
 	}
 
     initFour(args) {

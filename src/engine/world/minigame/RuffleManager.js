@@ -56,8 +56,8 @@ export default class RuffleManager {
 	
 
     handleLoadMinigame(minigame) {
-		
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
+		ruffleplayer.play()
 		ruffleplayer.style.visibility = "visible";
 		ruffleplayer.volume = 0.05;
 		
@@ -73,6 +73,8 @@ export default class RuffleManager {
 		ruffleplayer.setMediaPath("/assets/media/games/swf/")
 		
 		console.log("sse + ruffle init")
+
+		ruffleplayer.pause()
 	}
 	
 	getMyPlayerHex(){
