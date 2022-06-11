@@ -168,7 +168,7 @@ export default class Coffee extends RoomScene {
 
     create() {
         super.create()
-        this.balluw0002("underwatercoffee_balluw")
+        this.balluw0002.play("underwatercoffee_balluw")
     }
 
     /* END-USER-CODE */
