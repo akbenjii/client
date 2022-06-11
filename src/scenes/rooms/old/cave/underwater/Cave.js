@@ -22,7 +22,7 @@ export default class Cave extends RoomScene {
         this.boarduw0001;
         /** @type {Phaser.GameObjects.Sprite} */
         this.floatieuw0001;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
@@ -42,7 +42,6 @@ export default class Cave extends RoomScene {
 
         this.load.pack("cave-pack", "assets/media/rooms/old/cave/cave-pack.json");
     }
-
 
     /** @returns {void} */
     _create() {
@@ -66,10 +65,6 @@ export default class Cave extends RoomScene {
         // fg_3
         const fg_3 = this.add.image(0, 960, "cave", "fg_3");
         fg_3.setOrigin(0, 1);
-
-        // chair_front
-        const chair_front = this.add.image(391, 490, "cave", "chair_front");
-        chair_front.setOrigin(0.5909090909090909, 0.7115384615384616);
 
         // door
         const door = this.add.image(104, 291, "cave", "door");
@@ -226,7 +221,7 @@ export default class Cave extends RoomScene {
         this.add.image(813, 852, "caveuw", "wateruw");
 
         // lists
-        const sort = [line, water_water_11, water_water_10, water_water_9, water_water_8, water_water_7, water_water_6, water_water_5, water_water_4, water_water_3, water_water_2, water_water_1, ladder_front, ladder_back, chair_front, fg_2, ceiling, fg_3, fg_1];
+        const sort = [line, water_water_11, water_water_10, water_water_9, water_water_8, water_water_7, water_water_6, water_water_5, water_water_4, water_water_3, water_water_2, water_water_1, ladder_front, ladder_back, fg_2, ceiling, fg_3, fg_1, floatieuw0001];
 
         // door (components)
         const doorButton = new Button(door);

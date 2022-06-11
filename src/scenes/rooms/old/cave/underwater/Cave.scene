@@ -86,20 +86,6 @@
         },
         {
             "type": "Image",
-            "id": "995ccf4e-8213-468d-8848-73eec0c97a61",
-            "label": "chair_front",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "chair_front"
-            },
-            "x": 391,
-            "y": 490,
-            "originX": 0.5909090909090909,
-            "originY": 0.7115384615384616
-        },
-        {
-            "type": "Image",
             "id": "cf7e6d2f-911b-4db4-83f2-c87b36901721",
             "label": "door",
             "components": [
@@ -631,11 +617,11 @@
                 "9523692e-5de3-4993-a63e-0297db8e3442",
                 "0b399561-3d4c-4e20-b531-9f65bacd684d",
                 "d4f581e9-923d-4c75-84ca-ae1c781dfdf2",
-                "995ccf4e-8213-468d-8848-73eec0c97a61",
                 "1e6d8587-7ad0-4a0f-9e5e-4e89a967e609",
                 "fdefcf39-9eb7-4760-9f83-fec3e2efa502",
                 "212e8496-11a4-430b-8277-c1b9280cc8a9",
-                "f2c508bd-8ced-400f-97d9-b45f944a94ff"
+                "f2c508bd-8ced-400f-97d9-b45f944a94ff",
+                "cc1acd84-e947-4217-9f4a-e1240553eadd"
             ]
         }
     ]
