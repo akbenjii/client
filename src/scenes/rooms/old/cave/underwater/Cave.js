@@ -10,6 +10,18 @@ export default class Cave extends RoomScene {
     constructor() {
         super("Cave");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.waterfall10001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.waterfall20001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.cone10001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.cone20001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.boarduw0001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.floatieuw0001;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -31,16 +43,13 @@ export default class Cave extends RoomScene {
         this.load.pack("cave-pack", "assets/media/rooms/old/cave/cave-pack.json");
     }
 
+
     /** @returns {void} */
     _create() {
 
-        // window
-        const window = this.add.image(515, 265, "cave", "window");
-        window.setOrigin(0, 0);
-
-        // bg
-        const bg = this.add.image(0, -14, "cave", "bg");
-        bg.setOrigin(0, 0);
+        // caveuw
+        const caveuw = this.add.image(0, -14, "caveuw", "caveuw");
+        caveuw.setOrigin(0, 0);
 
         // ceiling
         const ceiling = this.add.image(1360, 743, "cave", "ceiling");
@@ -58,10 +67,6 @@ export default class Cave extends RoomScene {
         const fg_3 = this.add.image(0, 960, "cave", "fg_3");
         fg_3.setOrigin(0, 1);
 
-        // chair_back
-        const chair_back = this.add.image(357, 399, "cave", "chair_back");
-        chair_back.setOrigin(0, 0);
-
         // chair_front
         const chair_front = this.add.image(391, 490, "cave", "chair_front");
         chair_front.setOrigin(0.5909090909090909, 0.7115384615384616);
@@ -69,23 +74,6 @@ export default class Cave extends RoomScene {
         // door
         const door = this.add.image(104, 291, "cave", "door");
         door.setOrigin(0, 0);
-
-        // ring
-        const ring = this.add.image(376, 288, "cave", "ring");
-        ring.setOrigin(0, 0);
-
-        // board_1
-        const board_1 = this.add.image(669, 455, "cave", "board_1");
-        board_1.setOrigin(0, 0);
-
-        // board_1_1
-        const board_1_1 = this.add.image(930, 440, "cave", "board_1");
-        board_1_1.angle = 10;
-        board_1_1.setOrigin(0, 0);
-
-        // board_2
-        const board_2 = this.add.image(693, 457, "cave", "board_2");
-        board_2.setOrigin(0, 0);
 
         // ladder_back
         const ladder_back = this.add.image(349, 756, "cave", "ladder_back");
@@ -153,7 +141,7 @@ export default class Cave extends RoomScene {
         pool_main_body_.scaleY = 1.8035498414924918;
 
         // zone
-        const zone = this.add.rectangle(1319, 295, 115, 400);
+        const zone = this.add.rectangle(1315, 363, 115, 400);
         zone.alpha = 0.5;
         zone.isFilled = true;
         zone.fillColor = 65280;
@@ -204,9 +192,38 @@ export default class Cave extends RoomScene {
         light_and_left_pillar_.scaleY = 1.8141337558654265;
 
         // flood_layer
-        const flood_layer = this.add.image(746, 673, "underwaterpoolcave", "flood layer");
+        const flood_layer = this.add.image(746, 674, "underwaterpoolcave", "flood layer");
         flood_layer.scaleX = 1.4158373171144927;
         flood_layer.scaleY = 1.08530653074996;
+
+        // waterfall10001
+        const waterfall10001 = this.add.sprite(581, 454, "caveuw", "waterfall10001");
+
+        // waterfall20001
+        const waterfall20001 = this.add.sprite(1065, 446, "caveuw", "waterfall20001");
+
+        // glass2
+        this.add.image(449, 478, "caveuw", "glass2");
+
+        // glass1
+        const glass1 = this.add.image(451, 488, "caveuw", "glass1");
+        glass1.scaleX = 0.8;
+        glass1.scaleY = 0.8;
+
+        // cone10001
+        const cone10001 = this.add.sprite(506, 380, "caveuw", "cone10001");
+
+        // cone20001
+        const cone20001 = this.add.sprite(673, 380, "caveuw", "cone20001");
+
+        // boarduw0001
+        const boarduw0001 = this.add.sprite(1181, 409, "caveuw", "boarduw0001");
+
+        // floatieuw0001
+        const floatieuw0001 = this.add.sprite(1147, 754, "caveuw", "floatieuw0001");
+
+        // wateruw
+        this.add.image(813, 852, "caveuw", "wateruw");
 
         // lists
         const sort = [line, water_water_11, water_water_10, water_water_9, water_water_8, water_water_7, water_water_6, water_water_5, water_water_4, water_water_3, water_water_2, water_water_1, ladder_front, ladder_back, chair_front, fg_2, ceiling, fg_3, fg_1];
@@ -223,6 +240,12 @@ export default class Cave extends RoomScene {
         const zoneZone = new Zone(zone);
         zoneZone.callback = () => this.onZoneClick();
 
+        this.waterfall10001 = waterfall10001;
+        this.waterfall20001 = waterfall20001;
+        this.cone10001 = cone10001;
+        this.cone20001 = cone20001;
+        this.boarduw0001 = boarduw0001;
+        this.floatieuw0001 = floatieuw0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -233,6 +256,16 @@ export default class Cave extends RoomScene {
 
     onZoneClick() {
         this.world.client.penguin.move(1266, 572)
+    }
+
+    create() {
+        super.create()
+        this.waterfall10001.play('underwatercavewaterfall1')
+        this.waterfall20001.play('{underwatercavewaterfall2')
+        this.cone10001.play('underwatercavecone')
+        this.cone20001.play('underwatercavecone1')
+        this.boarduw0001.play('underwatercaveboarduw')
+        this.floatieuw0001.play('underwatercavefloatieuw')
     }
 
     /* END-USER-CODE */
