@@ -467,6 +467,25 @@
             "visible": false,
             "width": 50,
             "height": 50
+        },
+        {
+            "type": "Image",
+            "id": "db4aae8a-6a9b-4316-8fbd-b1acb54dbe21",
+            "label": "catalog",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "catalog",
+            "Button.callback": "() => {this.interface.loadExternal('Fishing')}",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "lodge-new",
+                "frame": "catalog"
+            },
+            "x": 1441.4057969299358,
+            "y": 1132.217378955382,
+            "originX": 0.5272463754394866,
+            "originY": 2.7917512051904856
         }
     ],
     "plainObjects": [],
@@ -499,7 +518,8 @@
                 "d8cf624b-bfde-4615-82fc-62fbd311a7ee",
                 "9435734b-9f7c-48ee-894f-aa94732cc89a",
                 "3712298d-2559-4def-bc9e-3ff89fbacd5a",
-                "1197db64-3dcd-4746-9efb-780a41874941"
+                "1197db64-3dcd-4746-9efb-780a41874941",
+                "db4aae8a-6a9b-4316-8fbd-b1acb54dbe21"
             ]
         },
         {

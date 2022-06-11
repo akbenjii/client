@@ -7,7 +7,8 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/new/skiHill/skiHill-pack-new.json"
+            "client/assets/media/rooms/new/skiHill/skiHill-pack-new.json",
+            "client/assets/media/rooms/old/mtn/mtn-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Mtn",
@@ -132,19 +133,6 @@
         },
         {
             "type": "Sprite",
-            "id": "ee609bfb-2b57-486a-a328-976bdfc4a7f4",
-            "label": "middleSign",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "skiHill-new",
-                "frame": "middleSign.png"
-            },
-            "x": 994,
-            "y": 666
-        },
-        {
-            "type": "Sprite",
             "id": "7cb70fa6-b62e-4b2e-ba51-793aeb91dd65",
             "label": "rightSign",
             "scope": "CLASS",
@@ -170,6 +158,31 @@
             "y": 860
         },
         {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "e2af18b3-9c39-43e7-9788-2fd383b54326",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat9",
+            "sitFrame": 17,
+            "offsetX": -10,
+            "offsetY": -90,
+            "components": [],
+            "x": 914,
+            "y": 639,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
             "type": "Sprite",
             "id": "6e93481b-b52f-4ed2-8dcb-5381390f05ac",
             "label": "note",
@@ -179,12 +192,76 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onShopOver()",
             "SimpleButton.hoverOutCallback": "() => this.onShopOut()",
+            "SimpleButton.callback": "() => {this.interface.loadExternal('Sled')}",
             "texture": {
                 "key": "skiHill-new",
                 "frame": "note0001.png"
             },
             "x": 463,
-            "y": 174
+            "y": 175
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "5d503d12-ff5a-4811-8f68-5f9dd0286389",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat7",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -70,
+            "components": [],
+            "x": 709,
+            "y": 657,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "e0d74516-aeb2-4df2-8ae0-aa11b9d1a1ce",
+            "label": "leftSign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill-new",
+                "frame": "leftSign.png"
+            },
+            "x": 459,
+            "y": 595
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "ed5b56a9-630f-4308-b165-7e84d21388ab",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat6",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -70,
+            "components": [],
+            "x": 527,
+            "y": 637,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
         },
         {
             "type": "Sprite",
@@ -200,17 +277,79 @@
             "y": 652
         },
         {
-            "type": "Sprite",
-            "id": "331e83a1-12b0-4de9-a008-96e19cd3f16d",
-            "label": "leftTracks",
-            "scope": "CLASS",
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "c3ee3b7a-a72f-4375-8eb5-b9c4a8be1a11",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat5",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -110,
             "components": [],
-            "texture": {
-                "key": "skiHill-new",
-                "frame": "leftTracks.png"
-            },
-            "x": 252,
-            "y": 575
+            "x": 616,
+            "y": 653,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "0d948d1d-a296-4fa5-b044-65240c30d3fc",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat11",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "x": 1109,
+            "y": 596,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "2232b616-239f-4c45-9439-1cfb25e064bf",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat4",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 180,
+            "y": 499,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
         },
         {
             "type": "Sprite",
@@ -226,17 +365,230 @@
             "y": 624
         },
         {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "4f6c6441-f469-469b-bb01-2b4b6315cc3e",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat10",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "x": 1029,
+            "y": 625,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
             "type": "Sprite",
-            "id": "e0d74516-aeb2-4df2-8ae0-aa11b9d1a1ce",
-            "label": "leftSign",
+            "id": "ee609bfb-2b57-486a-a328-976bdfc4a7f4",
+            "label": "middleSign",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "skiHill-new",
-                "frame": "leftSign.png"
+                "frame": "middleSign.png"
             },
-            "x": 459,
-            "y": 595
+            "x": 994,
+            "y": 666
+        },
+        {
+            "type": "Image",
+            "id": "18c99c33-6ef6-4d37-a9a2-e2793bd482e6",
+            "label": "catalog",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "catalog",
+            "Button.callback": "() => {this.interface.loadExternal('Sled')}",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "mtn",
+                "frame": "catalog"
+            },
+            "x": 1435.2681413085138,
+            "y": 883.2681413085137,
+            "originX": 0.4781451304681104,
+            "originY": 0.4747050121158675
+        },
+        {
+            "type": "Sprite",
+            "id": "331e83a1-12b0-4de9-a008-96e19cd3f16d",
+            "label": "leftTracks",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "skiHill-new",
+                "frame": "leftTracks.png"
+            },
+            "x": 252,
+            "y": 575
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "2633d04a-d463-4c39-a167-25652545db61",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat1",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 375,
+            "y": 615,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "1610455a-7c4f-4a4b-82d5-77e0a35a4972",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat2",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 301,
+            "y": 573,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "b5391cac-cf93-4d07-ab51-e398316816d2",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat3",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 240,
+            "y": 530,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "593cd5a4-639e-4b22-81a7-53e0ff41d562",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible",
+                "scaleX",
+                "scaleY"
+            ],
+            "label": "mtnSeat8",
+            "sitFrame": 17,
+            "offsetX": -10,
+            "offsetY": -90,
+            "components": [],
+            "x": 819,
+            "y": 646,
+            "scaleX": 0.8,
+            "scaleY": 0.8,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "e530b9bb-d02f-4ef1-b88d-4d9a4dba02a5",
+            "label": "rectangle_2",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.triggerWaddle(103)",
+            "x": 1069,
+            "y": 612,
+            "angle": -20,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Rectangle",
+            "id": "ac76a242-28c0-4770-b235-4bce9cb183be",
+            "label": "rectangle_2_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.triggerWaddle(102)",
+            "x": 862,
+            "y": 655,
+            "angle": -5,
+            "width": 200,
+            "height": 100
+        },
+        {
+            "type": "Rectangle",
+            "id": "b412b8d9-04f2-4e74-885c-97c3c8228792",
+            "label": "rectangle_2_1_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.triggerWaddle(101)",
+            "x": 616,
+            "y": 653,
+            "angle": 5,
+            "width": 250,
+            "height": 100
+        },
+        {
+            "type": "Rectangle",
+            "id": "be138370-1b2f-4e60-b131-ffdc744db6ee",
+            "label": "rectangle_2_1_1_1",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.triggerWaddle(100)",
+            "x": 279,
+            "y": 546,
+            "angle": 35,
+            "width": 350,
+            "height": 100
         }
     ],
     "plainObjects": [],
@@ -253,6 +605,41 @@
             "objectIds": [
                 "6da17ff8-fd16-4faf-b521-3754a9e72004",
                 "66d5b142-29e7-4247-9374-61081aa5f9ed"
+            ]
+        },
+        {
+            "id": "339dbc0b-b5d5-4411-932b-10896c146908",
+            "label": "seats103",
+            "objectIds": [
+                "0d948d1d-a296-4fa5-b044-65240c30d3fc",
+                "4f6c6441-f469-469b-bb01-2b4b6315cc3e"
+            ]
+        },
+        {
+            "id": "25df66d9-6d28-4133-bfe7-779331605c98",
+            "label": "seats102",
+            "objectIds": [
+                "e2af18b3-9c39-43e7-9788-2fd383b54326",
+                "593cd5a4-639e-4b22-81a7-53e0ff41d562"
+            ]
+        },
+        {
+            "id": "9e9c94f6-7ff6-4f0a-a363-4d9bf5028deb",
+            "label": "seats101",
+            "objectIds": [
+                "5d503d12-ff5a-4811-8f68-5f9dd0286389",
+                "c3ee3b7a-a72f-4375-8eb5-b9c4a8be1a11",
+                "ed5b56a9-630f-4308-b165-7e84d21388ab"
+            ]
+        },
+        {
+            "id": "4d8e7ae6-5956-4367-98fe-fa1467fe4a78",
+            "label": "seats100",
+            "objectIds": [
+                "2633d04a-d463-4c39-a167-25652545db61",
+                "1610455a-7c4f-4a4b-82d5-77e0a35a4972",
+                "b5391cac-cf93-4d07-ab51-e398316816d2",
+                "2232b616-239f-4c45-9439-1cfb25e064bf"
             ]
         }
     ]

@@ -42,6 +42,8 @@ export default class Dock extends RoomScene {
         this.shop;
         /** @type {Phaser.GameObjects.Sprite} */
         this.tape;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.catalog;
         /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
         this.sort;
 
@@ -128,6 +130,9 @@ export default class Dock extends RoomScene {
         tape.scaleY = 1.5;
         board_container.add(tape);
 
+        // catalog
+        const catalog = this.add.sprite(1438, 887, "dock-new", "catalog0001");
+
         // lists
         const sort = [barrier2, tubes, barrier, bencharm, bench, lantern, table, board_container];
 
@@ -147,6 +152,13 @@ export default class Dock extends RoomScene {
         const shopSimpleButton = new SimpleButton(shop);
         shopSimpleButton.hoverCallback = () => this.onShopOver();
         shopSimpleButton.hoverOutCallback = () => this.onShopOut();
+        shopSimpleButton.callback = () => {this.interface.loadExternal('Hydro')};
+
+        // catalog (components)
+        const catalogSimpleButton = new SimpleButton(catalog);
+        catalogSimpleButton.hoverCallback = () => this.onCatOver();
+        catalogSimpleButton.hoverOutCallback = () => this.onCatOut();
+        catalogSimpleButton.callback = () => {this.interface.loadExternal('Hydro')};
 
         this.bg = bg;
         this.bench = bench;
@@ -164,6 +176,7 @@ export default class Dock extends RoomScene {
         this.board = board;
         this.shop = shop;
         this.tape = tape;
+        this.catalog = catalog;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -190,6 +203,14 @@ export default class Dock extends RoomScene {
         this.shop.stop("uncurl")
         this.shop.setFrame("uncurl0001")
     }
+	
+	onCatOver() {
+		this.catalog.setFrame("catalog0002")
+	}
+	
+	onCatOut() {
+		this.catalog.setFrame("catalog0001")
+	}
 
     /* END-USER-CODE */
 }

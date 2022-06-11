@@ -1,0 +1,297 @@
+{
+    "id": "195bfc64-4314-4a76-b550-f0ecb3e6aa9a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "News",
+        "preloadPackFiles": [
+            "client/assets/media/interface/catalogs/catalogs-master-pack.json",
+            "client/assets/media/interface/catalogs/sled-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Sled",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "41b9af2c-1775-4714-9527-c74cca74f92b",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.1,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "2147c74d-be30-4de0-bb64-56c10d927575",
+            "label": "page1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
+                    "label": "musiccatalog",
+                    "components": [],
+                    "texture": {
+                        "key": "sledcat"
+                    },
+                    "x": 760,
+                    "y": 481
+                },
+                {
+                    "type": "Image",
+                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
+                    "label": "close_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.close() }",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "closebtn"
+                    },
+                    "x": 1070,
+                    "y": 45
+                },
+                {
+                    "type": "Image",
+                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
+                    "label": "buy_wake1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(5047)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 623,
+                    "y": 650
+                },
+                {
+                    "type": "Text",
+                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
+                    "label": "txt_wake1",
+                    "components": [],
+                    "x": 582,
+                    "y": 631,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "acb58baf-2ee6-4229-9362-c7a7949deeac",
+                    "label": "buy_wake2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(5021)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 941,
+                    "y": 582
+                },
+                {
+                    "type": "Text",
+                    "id": "805247bb-de88-4d35-91f8-34d84aa67d40",
+                    "label": "txt_wake2",
+                    "components": [],
+                    "x": 899,
+                    "y": 563,
+                    "text": "200",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "65a05e28-9a3a-440a-a36d-7caaeb80556b",
+                    "label": "title",
+                    "components": [],
+                    "x": 532,
+                    "y": 65,
+                    "text": "Sled Racing",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "60px",
+                    "fontStyle": "bold italic",
+                    "color": "#ffffffff",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Text",
+                    "id": "9000fa8c-5951-4af2-a9b0-df870597bb57",
+                    "label": "upgrades",
+                    "components": [],
+                    "x": 889,
+                    "y": 73,
+                    "text": "GAME\nUPGRADES",
+                    "lineSpacing": -10,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold italic",
+                    "color": "6f4100",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 1
+                },
+                {
+                    "type": "Text",
+                    "id": "0e49032d-c869-4d82-a639-a3fb3eccb07d",
+                    "label": "bodyheader",
+                    "components": [],
+                    "x": 486,
+                    "y": 247,
+                    "text": "How the sleds work:",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#042635ff",
+                    "shadow.blur": 3
+                },
+                {
+                    "type": "Text",
+                    "id": "cf0ffe04-b15b-4e02-9101-9b174579fb1c",
+                    "label": "bodytext",
+                    "components": [],
+                    "x": 488,
+                    "y": 290,
+                    "text": "Enter sled racing whilst holding the toboggan or one of the sleds. You'll get to use it in the game!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "22px",
+                    "color": "#ffffffff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#042635ff",
+                    "shadow.blur": 3,
+                    "wordWrapWidth": 350
+                },
+                {
+                    "type": "Image",
+                    "id": "9fca229e-0d29-46ae-81c7-95b118f2b7f7",
+                    "label": "buy_wake1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(5046)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 804,
+                    "y": 820
+                },
+                {
+                    "type": "Text",
+                    "id": "a70d7b13-0a2c-4db1-8ae0-203bd0d80ef0",
+                    "label": "txt_wake1_1",
+                    "components": [],
+                    "x": 763,
+                    "y": 801,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "ef008f56-fc05-4c5e-8f78-bd35e2707ce4",
+                    "label": "txt_rodheader",
+                    "components": [],
+                    "x": 886,
+                    "y": 528,
+                    "text": "Toboggan",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff",
+                    "wordWrapWidth": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "b5d68190-250b-44a7-8074-5d7be76f0049",
+                    "label": "txt_rodheader_1",
+                    "components": [],
+                    "x": 539,
+                    "y": 597,
+                    "text": "Pink Racing Sled",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff",
+                    "wordWrapWidth": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "607ea16f-5f31-4d47-bfc7-8e0d598d93eb",
+                    "label": "txt_rodheader_1_1",
+                    "components": [],
+                    "x": 708,
+                    "y": 768,
+                    "text": "Green Racing Sled",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff",
+                    "wordWrapWidth": 200
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "110e14c4-8fa3-44cd-b053-2902c2236aa2",
+            "label": "pages",
+            "objectIds": [
+                "2147c74d-be30-4de0-bb64-56c10d927575"
+            ]
+        }
+    ]
+}

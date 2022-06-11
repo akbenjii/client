@@ -1,0 +1,254 @@
+{
+    "id": "a6759e65-fed2-4a86-a156-d339b0ac03d2",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "News",
+        "preloadPackFiles": [
+            "client/assets/media/interface/catalogs/catalogs-master-pack.json",
+            "client/assets/media/interface/catalogs/waves-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Hydro",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "41b9af2c-1775-4714-9527-c74cca74f92b",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.1,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "2147c74d-be30-4de0-bb64-56c10d927575",
+            "label": "page1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
+                    "label": "musiccatalog",
+                    "components": [],
+                    "texture": {
+                        "key": "waves"
+                    },
+                    "x": 760,
+                    "y": 481
+                },
+                {
+                    "type": "Image",
+                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
+                    "label": "close_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.close() }",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "closebtn"
+                    },
+                    "x": 1070,
+                    "y": 45
+                },
+                {
+                    "type": "Image",
+                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
+                    "label": "buy_wake1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(702)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 784,
+                    "y": 532
+                },
+                {
+                    "type": "Text",
+                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
+                    "label": "txt_wake1",
+                    "components": [],
+                    "x": 743,
+                    "y": 513,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "acb58baf-2ee6-4229-9362-c7a7949deeac",
+                    "label": "buy_wake2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(701)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 946,
+                    "y": 532
+                },
+                {
+                    "type": "Text",
+                    "id": "805247bb-de88-4d35-91f8-34d84aa67d40",
+                    "label": "txt_wake2",
+                    "components": [],
+                    "x": 904,
+                    "y": 513,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "65a05e28-9a3a-440a-a36d-7caaeb80556b",
+                    "label": "title",
+                    "components": [],
+                    "x": 449,
+                    "y": 72,
+                    "text": "CATCHIN' WAVES",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "55px",
+                    "fontStyle": "bold italic",
+                    "color": "#bb9b54ff",
+                    "stroke": "#2f2204ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Text",
+                    "id": "9000fa8c-5951-4af2-a9b0-df870597bb57",
+                    "label": "upgrades",
+                    "components": [],
+                    "x": 889,
+                    "y": 73,
+                    "text": "GAME\nUPGRADES",
+                    "lineSpacing": -10,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold italic",
+                    "color": "6f4100",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 1
+                },
+                {
+                    "type": "Text",
+                    "id": "0e49032d-c869-4d82-a639-a3fb3eccb07d",
+                    "label": "bodyheader",
+                    "components": [],
+                    "x": 494,
+                    "y": 218,
+                    "text": "How these surfboards work:",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#000000ff",
+                    "wordWrapWidth": 240
+                },
+                {
+                    "type": "Text",
+                    "id": "cf0ffe04-b15b-4e02-9101-9b174579fb1c",
+                    "label": "bodytext",
+                    "components": [],
+                    "x": 494,
+                    "y": 285,
+                    "text": "Enter Catchin' Waves whilst holding a surfboard. You'll get to surf with it in the game!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "shadow.color": "#000000ff",
+                    "wordWrapWidth": 250
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "231c308e-f785-492b-a362-3659c3a75e4a",
+                    "label": "hidden_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(703)",
+                    "x": 791,
+                    "y": 107,
+                    "width": 180,
+                    "height": 70
+                },
+                {
+                    "type": "Text",
+                    "id": "4f6bfe23-9259-4290-9e59-01a5fc3ad92d",
+                    "label": "txt_rodheader",
+                    "components": [],
+                    "x": 709,
+                    "y": 482,
+                    "text": "Daisy Surfboard",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "c7f04064-7ecf-467e-af2e-fac4d1ebdd3b",
+                    "label": "txt_rodheader_1",
+                    "components": [],
+                    "x": 867,
+                    "y": 482,
+                    "text": "Flame Surfboard",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "110e14c4-8fa3-44cd-b053-2902c2236aa2",
+            "label": "pages",
+            "objectIds": [
+                "2147c74d-be30-4de0-bb64-56c10d927575"
+            ]
+        }
+    ]
+}

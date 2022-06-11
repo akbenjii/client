@@ -174,7 +174,7 @@ class Sled extends GameScene {
         let currentTime = Date.now()
 
         this.gameTime = currentTime - this.startTime
-        //this.delta = currentTime - this.lastTime
+        this.delta = currentTime - this.lastTime
 
         // Prevents changes if game has been in the background
         this.delta = delta

@@ -1,0 +1,342 @@
+{
+    "id": "6531caf0-cabe-4a03-b18c-27572ff9153a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/lighthouse/lighthouse-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Lighthouse",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "184707f4-be51-4876-9d3a-7f0f58a072ec",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "bg"
+            },
+            "x": -31,
+            "y": -15,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "e7049f17-50f2-454c-b36a-ffecbef2977a",
+            "label": "front_rail",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "front_rail"
+            },
+            "x": 661.7113914490475,
+            "y": 677.1565561350517,
+            "originX": 0.4858666240154337,
+            "originY": 1.0510685807616964
+        },
+        {
+            "type": "Image",
+            "id": "5eccffda-c8f5-465c-af1f-203b76637a55",
+            "label": "front_steps",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "front_steps"
+            },
+            "x": 247,
+            "y": 850
+        },
+        {
+            "type": "Image",
+            "id": "1686b399-55b7-4af8-a807-7b9ac39966d9",
+            "label": "back_steps",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "back_steps"
+            },
+            "x": 494,
+            "y": 563
+        },
+        {
+            "type": "Image",
+            "id": "415ba6d2-305a-4b59-a03f-5147febfe679",
+            "label": "piano",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "piano"
+            },
+            "x": 419,
+            "y": 687
+        },
+        {
+            "type": "Image",
+            "id": "e7c9929a-55cd-472e-b177-61d14c6fa4b2",
+            "label": "stool",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "stool"
+            },
+            "x": 381,
+            "y": 790
+        },
+        {
+            "type": "Image",
+            "id": "3dfab575-5fa8-4509-9978-edb94b3f582c",
+            "label": "net_wheel",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "net_wheel"
+            },
+            "x": 882,
+            "y": 439
+        },
+        {
+            "type": "Image",
+            "id": "3706a4ce-cc1c-44fd-89e6-6b0f3586d53d",
+            "label": "buoy",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "buoy"
+            },
+            "x": 1099,
+            "y": 498
+        },
+        {
+            "type": "Image",
+            "id": "0d457cb5-3212-433d-8f81-c43cc97e9a53",
+            "label": "instruments",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.loadExternal('Music')",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "lighthouse",
+                "frame": "instruments"
+            },
+            "x": 1182,
+            "y": 559
+        },
+        {
+            "type": "Image",
+            "id": "c779ccde-c4be-487c-be4d-738578d01991",
+            "label": "lighthouse_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "lighthouse_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "lighthouse",
+                "frame": "lighthouse_door"
+            },
+            "x": 482,
+            "y": 402
+        },
+        {
+            "type": "Image",
+            "id": "14e940d7-36e2-4734-89fa-585733f8dbbe",
+            "label": "drums",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "drums"
+            },
+            "x": 185,
+            "y": 493
+        },
+        {
+            "type": "Image",
+            "id": "6aad618e-b3f8-4117-b537-749def925033",
+            "label": "chair_top_right",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair_top_right"
+            },
+            "x": 956,
+            "y": 673
+        },
+        {
+            "type": "Image",
+            "id": "3edccee7-b21e-4a8c-988b-f206140d4fc4",
+            "label": "chair_top_left",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair_top_left"
+            },
+            "x": 763,
+            "y": 659
+        },
+        {
+            "type": "Image",
+            "id": "1b660f2f-717e-4b54-bf28-fd7c04f8f4c1",
+            "label": "chair_mid_right",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair_mid_right"
+            },
+            "x": 982,
+            "y": 756
+        },
+        {
+            "type": "Image",
+            "id": "b2cc9609-3de1-4d2c-ad30-201521f086b3",
+            "label": "chair_mid_left",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair_mid_left"
+            },
+            "x": 743,
+            "y": 762
+        },
+        {
+            "type": "Image",
+            "id": "2ba60969-acad-44c6-851e-d558e4031954",
+            "label": "chair_bottom_right",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair_bottom_right"
+            },
+            "x": 936,
+            "y": 856
+        },
+        {
+            "type": "Image",
+            "id": "c2438cbf-b769-44f6-bfdc-87306729e1a4",
+            "label": "chair_bottom_left",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "chair_bottom_left"
+            },
+            "x": 640,
+            "y": 844
+        },
+        {
+            "type": "Sprite",
+            "id": "63dfd19f-1474-4b9c-a18f-5aee6cb3b2d4",
+            "label": "to_top0001",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onTopOver()",
+            "SimpleButton.callback": "() => this.triggerRoom(411, 272, 680)",
+            "texture": {
+                "key": "lighthouse",
+                "frame": "to_top0001"
+            },
+            "x": 327,
+            "y": 63
+        },
+        {
+            "type": "Sprite",
+            "id": "ab89ca20-47a9-4809-82b8-f984bc94d835",
+            "label": "speaker_bottom_stage",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "speaker_bottom_stage0001"
+            },
+            "x": 28,
+            "y": 862
+        },
+        {
+            "type": "Image",
+            "id": "9bd56794-162d-4749-b064-c9e2d62dd2aa",
+            "label": "lighthouse_cat",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "lighthouse_cat",
+            "Button.callback": "() => this.interface.loadExternal('Music')",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "texture": {
+                "key": "lighthouse",
+                "frame": "lighthouse_cat"
+            },
+            "x": 1436,
+            "y": 861
+        },
+        {
+            "type": "Image",
+            "id": "c595d598-f3f9-4e9c-ab2f-da964a841e6e",
+            "label": "mic",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "mic"
+            },
+            "x": 331,
+            "y": 636
+        },
+        {
+            "type": "Sprite",
+            "id": "ac605a44-12e1-4aba-84c3-ee0fe7f6a3d9",
+            "label": "top_left_speaker0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "top_left_speaker0001"
+            },
+            "x": 134,
+            "y": 301
+        },
+        {
+            "type": "Sprite",
+            "id": "600b0197-ed9f-4e1b-b2e0-482ae6acb86b",
+            "label": "top_right_speaker0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lighthouse",
+                "frame": "top_right_speaker0001"
+            },
+            "x": 359,
+            "y": 337
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "14e940d7-36e2-4734-89fa-585733f8dbbe",
+                "6aad618e-b3f8-4117-b537-749def925033",
+                "e7049f17-50f2-454c-b36a-ffecbef2977a"
+            ]
+        }
+    ]
+}

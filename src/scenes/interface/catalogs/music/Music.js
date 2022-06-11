@@ -21,7 +21,7 @@ export default class Music extends News {
     preload() {
 
         this.load.pack("music-pack", "assets/media/interface/catalogs/music/music-pack.json");
-        this.load.pack("may22-clothing", "assets/media/interface/catalogs/clothing/may22-clothing.json");
+        this.load.pack("catalogs-master-pack", "assets/media/interface/catalogs/catalogs-master-pack.json");
     }
 
     /** @returns {void} */
@@ -35,42 +35,37 @@ export default class Music extends News {
 
         // page1
         const page1 = this.add.container(0, 0);
-        page1.visible = false;
 
         // musiccatalog
         const musiccatalog = this.add.image(760, 460, "musiccatalog");
         page1.add(musiccatalog);
 
-        // blue_button
-        const blue_button = this.add.image(1167, 144, "main", "blue-button");
-        page1.add(blue_button);
-
-        // blue_x
-        const blue_x = this.add.image(1167, 142, "main", "blue-x");
-        page1.add(blue_x);
+        // close_btn
+        const close_btn = this.add.image(1167, 142, "catalogs-master", "closebtn");
+        page1.add(close_btn);
 
         // buy_bass
-        const buy_bass = this.add.image(583, 351, "may22cat", "buy");
+        const buy_bass = this.add.image(583, 351, "catalogs-master", "buybtn");
         page1.add(buy_bass);
 
         // buy_acoustic
-        const buy_acoustic = this.add.image(1070, 351, "may22cat", "buy");
+        const buy_acoustic = this.add.image(1070, 351, "catalogs-master", "buybtn");
         page1.add(buy_acoustic);
 
         // buy_tuba
-        const buy_tuba = this.add.image(422, 534, "may22cat", "buy");
+        const buy_tuba = this.add.image(422, 534, "catalogs-master", "buybtn");
         page1.add(buy_tuba);
 
         // buy_drumsticks
-        const buy_drumsticks = this.add.image(1085, 534, "may22cat", "buy");
+        const buy_drumsticks = this.add.image(1085, 534, "catalogs-master", "buybtn");
         page1.add(buy_drumsticks);
 
         // buy_red_elec
-        const buy_red_elec = this.add.image(394, 702, "may22cat", "buy");
+        const buy_red_elec = this.add.image(394, 702, "catalogs-master", "buybtn");
         page1.add(buy_red_elec);
 
         // buy_snare
-        const buy_snare = this.add.image(878, 702, "may22cat", "buy");
+        const buy_snare = this.add.image(878, 702, "catalogs-master", "buybtn");
         page1.add(buy_snare);
 
         // text_2_3
@@ -115,45 +110,43 @@ export default class Music extends News {
         // block (components)
         new Interactive(block);
 
-        // blue_button (components)
-        const blue_buttonButton = new Button(blue_button);
-        blue_buttonButton.spriteName = "blue-button";
-        blue_buttonButton.callback = () => this.close();
-        blue_buttonButton.pixelPerfect = true;
+        // close_btn (components)
+        const close_btnSimpleButton = new SimpleButton(close_btn);
+        close_btnSimpleButton.callback = () => { this.close() };
 
         // buy_bass (components)
         const buy_bassButton = new Button(buy_bass);
-        buy_bassButton.spriteName = "buy";
+        buy_bassButton.spriteName = "buybtn";
         buy_bassButton.callback = () => this.interface.prompt.showItem(729);
         buy_bassButton.activeFrame = false;
 
         // buy_acoustic (components)
         const buy_acousticButton = new Button(buy_acoustic);
-        buy_acousticButton.spriteName = "buy";
+        buy_acousticButton.spriteName = "buybtn";
         buy_acousticButton.callback = () => this.interface.prompt.showItem(234);
         buy_acousticButton.activeFrame = false;
 
         // buy_tuba (components)
         const buy_tubaButton = new Button(buy_tuba);
-        buy_tubaButton.spriteName = "buy";
+        buy_tubaButton.spriteName = "buybtn";
         buy_tubaButton.callback = () => this.interface.prompt.showItem(293);
         buy_tubaButton.activeFrame = false;
 
         // buy_drumsticks (components)
         const buy_drumsticksButton = new Button(buy_drumsticks);
-        buy_drumsticksButton.spriteName = "buy";
+        buy_drumsticksButton.spriteName = "buybtn";
         buy_drumsticksButton.callback = () => this.interface.prompt.showItem(340);
         buy_drumsticksButton.activeFrame = false;
 
         // buy_red_elec (components)
         const buy_red_elecButton = new Button(buy_red_elec);
-        buy_red_elecButton.spriteName = "buy";
+        buy_red_elecButton.spriteName = "buybtn";
         buy_red_elecButton.callback = () => this.interface.prompt.showItem(233);
         buy_red_elecButton.activeFrame = false;
 
         // buy_snare (components)
         const buy_snareButton = new Button(buy_snare);
-        buy_snareButton.spriteName = "buy";
+        buy_snareButton.spriteName = "buybtn";
         buy_snareButton.callback = () => this.interface.prompt.showItem(180);
         buy_snareButton.activeFrame = false;
 

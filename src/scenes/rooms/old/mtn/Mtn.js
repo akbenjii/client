@@ -28,7 +28,7 @@ export default class Mtn extends RoomScene {
 
         this.roomTriggers = {
             'village': () => this.triggerRoom(200, 480, 560),
-                        'waddle100': () => this.triggerWaddle(100),
+            'waddle100': () => this.triggerWaddle(100),
             'waddle101': () => this.triggerWaddle(101),
             'waddle102': () => this.triggerWaddle(102),
             'waddle103': () => this.triggerWaddle(103),
@@ -290,7 +290,7 @@ export default class Mtn extends RoomScene {
             return
         }
 
-        let text = 'Would you like to join this\nSled race?'
+        let text = 'Would you like to join this\nSled Race?'
 
         this.interface.prompt.showWindow(text, 'dual', () => {
             this.network.send('join_waddle', { id: id })

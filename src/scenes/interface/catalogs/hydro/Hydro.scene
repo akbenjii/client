@@ -1,0 +1,253 @@
+{
+    "id": "37feff28-ac4b-4ec8-a680-9a0562149af6",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "News",
+        "preloadPackFiles": [
+            "client/assets/media/interface/catalogs/catalogs-master-pack.json",
+            "client/assets/media/interface/catalogs/hydro-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Hydro",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "41b9af2c-1775-4714-9527-c74cca74f92b",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.1,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "2147c74d-be30-4de0-bb64-56c10d927575",
+            "label": "page1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
+                    "label": "musiccatalog",
+                    "components": [],
+                    "texture": {
+                        "key": "hydro"
+                    },
+                    "x": 760,
+                    "y": 481
+                },
+                {
+                    "type": "Image",
+                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
+                    "label": "close_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.close() }",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "closebtn"
+                    },
+                    "x": 1070,
+                    "y": 45
+                },
+                {
+                    "type": "Image",
+                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
+                    "label": "buy_wake1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(711)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 784,
+                    "y": 509
+                },
+                {
+                    "type": "Text",
+                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
+                    "label": "txt_wake1",
+                    "components": [],
+                    "x": 743,
+                    "y": 490,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "acb58baf-2ee6-4229-9362-c7a7949deeac",
+                    "label": "buy_wake2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(712)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 946,
+                    "y": 509
+                },
+                {
+                    "type": "Text",
+                    "id": "805247bb-de88-4d35-91f8-34d84aa67d40",
+                    "label": "txt_wake2",
+                    "components": [],
+                    "x": 904,
+                    "y": 490,
+                    "text": "300",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "65a05e28-9a3a-440a-a36d-7caaeb80556b",
+                    "label": "title",
+                    "components": [],
+                    "x": 437,
+                    "y": 65,
+                    "text": "HYDRO-HOPPER",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "60px",
+                    "fontStyle": "bold italic",
+                    "color": "#ffffffff",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Text",
+                    "id": "9000fa8c-5951-4af2-a9b0-df870597bb57",
+                    "label": "upgrades",
+                    "components": [],
+                    "x": 889,
+                    "y": 73,
+                    "text": "GAME\nUPGRADES",
+                    "lineSpacing": -10,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold italic",
+                    "color": "6f4100",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 1
+                },
+                {
+                    "type": "Text",
+                    "id": "0e49032d-c869-4d82-a639-a3fb3eccb07d",
+                    "label": "bodyheader",
+                    "components": [],
+                    "x": 486,
+                    "y": 218,
+                    "text": "How these wakeboards work:",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#042635ff",
+                    "shadow.blur": 3,
+                    "wordWrapWidth": 250
+                },
+                {
+                    "type": "Text",
+                    "id": "cf0ffe04-b15b-4e02-9101-9b174579fb1c",
+                    "label": "bodytext",
+                    "components": [],
+                    "x": 488,
+                    "y": 287,
+                    "text": "Enter Hydro-Hopper whilst holding a wakeboard.\nYou'll get to use it in the game!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#ffffffff",
+                    "shadow.offsetX": 1,
+                    "shadow.offsetY": 1,
+                    "shadow.fill": true,
+                    "shadow.color": "#042635ff",
+                    "shadow.blur": 3,
+                    "wordWrapWidth": 280
+                },
+                {
+                    "type": "Text",
+                    "id": "0dbeaffe-8e21-4843-920b-afbc4eac8c0b",
+                    "label": "txt_rodheader_1",
+                    "components": [],
+                    "x": 718,
+                    "y": 441,
+                    "text": "Yellow Arrow Wakeboard",
+                    "lineSpacing": -8,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "21px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff",
+                    "wordWrapWidth": 200
+                },
+                {
+                    "type": "Text",
+                    "id": "9c01d7bd-fdaf-4f62-8fbe-e638f76b033e",
+                    "label": "txt_rodheader_1_1",
+                    "components": [],
+                    "x": 881,
+                    "y": 441,
+                    "text": "Pink Striped Wakeboard",
+                    "lineSpacing": -8,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "21px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff",
+                    "wordWrapWidth": 200
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "110e14c4-8fa3-44cd-b053-2902c2236aa2",
+            "label": "pages",
+            "objectIds": [
+                "2147c74d-be30-4de0-bb64-56c10d927575"
+            ]
+        }
+    ]
+}

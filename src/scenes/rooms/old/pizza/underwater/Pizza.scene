@@ -1,0 +1,760 @@
+{
+    "id": "9270c693-694b-4b44-8cdb-fd377098a8ac",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/pizza/pizza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pizza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d0cfa4ba-ab30-4119-873c-a8d53a9b3649",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "bg.png"
+            },
+            "x": 760,
+            "y": 483,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ef9415db-d5f4-4f8f-8c9a-efbdc88c2928",
+            "label": "bead_door_hover0001_png",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "bead-door.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Pizzatron 3000",
+            "MoveTo.x": 384,
+            "MoveTo.y": 405,
+            "texture": {
+                "key": "pizza",
+                "frame": "bead-door.png"
+            },
+            "x": 385,
+            "y": 241,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ad4b0ec4-6dba-41d9-a8ff-158d371f25bd",
+            "label": "piano_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "piano.png"
+            },
+            "x": 1265.6137794715412,
+            "y": 446.7720125239132,
+            "originX": 0.1497106693675879,
+            "originY": 0.6223623642170768
+        },
+        {
+            "type": "Image",
+            "id": "9adaefc9-6c53-46f5-8055-7d1770cb32b2",
+            "label": "door_png",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 837,
+            "MoveTo.y": 260,
+            "texture": {
+                "key": "pizza",
+                "frame": "door.png"
+            },
+            "x": 837,
+            "y": 265,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "388a1503-f19e-4571-8a4b-986fc10e0d9f",
+            "label": "pizza_pan_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pizza-pan.png"
+            },
+            "x": 187,
+            "y": 515,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ad3f711b-129a-48e8-9f6d-140a1b274e9a",
+            "label": "oven_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "oven.png"
+            },
+            "x": 110,
+            "y": 457,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ff3f49b7-cf8c-46cc-b659-d7f08cbbce2c",
+            "label": "foreground_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "foreground.png"
+            },
+            "x": 112,
+            "y": 874,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "3b151ac8-987e-450a-b475-2341eed910f9",
+            "label": "chair1_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair1.png"
+            },
+            "x": 414,
+            "y": 609,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "7ce131d9-d215-42e6-9be8-eec417c8d274",
+            "label": "chair2_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair2.png"
+            },
+            "x": 577,
+            "y": 609,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "6a89f1c7-8080-4aff-abdf-bd379ab63cec",
+            "label": "chair3_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair3.png"
+            },
+            "x": 677,
+            "y": 719,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "42a60545-eaf0-46cf-9e37-86a9e9d5f061",
+            "label": "chair4_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair4.png"
+            },
+            "x": 840,
+            "y": 719
+        },
+        {
+            "type": "Image",
+            "id": "10052db6-24f2-4671-8a2e-6fa20de0c8f2",
+            "label": "chair5_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair5.png"
+            },
+            "x": 987,
+            "y": 687,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "63b3a44c-7c80-4b00-9190-71e68ce2991e",
+            "label": "chair6_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair6.png"
+            },
+            "x": 1159,
+            "y": 687,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "665558e4-4b4a-44e1-89b8-956170cd15cb",
+            "label": "table1_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "table1.png"
+            },
+            "x": 494,
+            "y": 664,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "907aa007-7e7d-4885-a14a-4d909d297533",
+            "label": "table2_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "table2.png"
+            },
+            "x": 763,
+            "y": 775,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "048c5276-2f77-4a67-8aad-a2f4c99da239",
+            "label": "table3_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "table3.png"
+            },
+            "x": 1071,
+            "y": 735,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "ae9541d7-60c0-4547-857a-54c70dedbf8c",
+            "label": "candle_fire10001_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "candle-fire10001.png"
+            },
+            "x": 497.5719885381547,
+            "y": 720.801146184529,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "originX": 0.3095984717539598,
+            "originY": 6.846717608201288
+        },
+        {
+            "type": "Image",
+            "id": "294e365a-6a35-4087-b7b4-dfa24bc9c77a",
+            "label": "big_table_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "big-table.png"
+            },
+            "x": 528,
+            "y": 433,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "e064cf44-4cdd-4ad3-b14d-5ad54bd22dd3",
+            "label": "candle_fire2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "candle-fire10001.png"
+            },
+            "x": 760.4280114618452,
+            "y": 782.8207450199438,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "originX": 0.6904015282460326,
+            "originY": 4.625366445330838
+        },
+        {
+            "type": "Sprite",
+            "id": "ae35bdc6-af14-4d45-807f-fa3f4d09c53b",
+            "label": "register0001_png",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onRegOver()",
+            "SimpleButton.hoverOutCallback": "",
+            "texture": {
+                "key": "pizza",
+                "frame": "register0001.png"
+            },
+            "x": 463,
+            "y": 458.6180623621998,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originY": 1.526408462818685
+        },
+        {
+            "type": "Sprite",
+            "id": "1b50965b-ae9a-4c0a-967a-354011cbbc38",
+            "label": "candle_fire3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "candle-fire10001.png"
+            },
+            "x": 1069.4280114618452,
+            "y": 749.9608023291703,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "originX": 0.6904015282460326,
+            "originY": 4.9427023257409015
+        },
+        {
+            "type": "Sprite",
+            "id": "0bad3f81-8722-48dd-8a55-7fb1fca8a05a",
+            "label": "book_hover0001_png",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBookOver()",
+            "texture": {
+                "key": "pizza",
+                "frame": "book-hover0001.png"
+            },
+            "x": 587.5714581291339,
+            "y": 461.1420886425158,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originX": 0.46759919553938006,
+            "originY": 2.263818792824983
+        },
+        {
+            "type": "Sprite",
+            "id": "c4da58e9-3488-4c70-802f-853d43c5b5e1",
+            "label": "steam",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "smoke0001.png"
+            },
+            "x": 43,
+            "y": 165
+        },
+        {
+            "type": "Image",
+            "id": "eb252a2b-b320-400e-95b1-1ec35e05d1cb",
+            "label": "backdrop_kitchen_sign_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "backdrop kitchen sign "
+            },
+            "x": 760,
+            "y": 576,
+            "scaleX": 22.71711898666748,
+            "scaleY": 35.556484727609686
+        },
+        {
+            "type": "Sprite",
+            "id": "abb691cb-dc75-432c-b4f0-140d4d532da9",
+            "label": "fire",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "fire0001.png"
+            },
+            "x": 110,
+            "y": 770,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "fb5c5ca9-7ad2-4380-aa3b-49b306c52edd",
+            "label": "pizza_main_body_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "pizza main body "
+            },
+            "x": 748,
+            "y": 494,
+            "scaleX": 1.796505474979063,
+            "scaleY": 1.8886548009513673
+        },
+        {
+            "type": "Image",
+            "id": "ea9e4ad0-200f-4c33-be74-3fd874d1edef",
+            "label": "thing_next_to_pizza",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "thing next to pizza"
+            },
+            "x": 91,
+            "y": 555,
+            "scaleX": 1.8657198006207159,
+            "scaleY": 1.5266911241299899
+        },
+        {
+            "type": "Image",
+            "id": "d449cce5-188b-4a31-b107-59645f08baf3",
+            "label": "paddocks_on_left_wall_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "paddocks on left wall "
+            },
+            "x": 116,
+            "y": 204,
+            "scaleX": 1.558113491117481,
+            "scaleY": 1.6443767126506375
+        },
+        {
+            "type": "Image",
+            "id": "4741fc56-9bbe-4b73-a1a4-f9f74489ca36",
+            "label": "umm_a_fishing_pole_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "umm a fishing pole "
+            },
+            "x": 562,
+            "y": 160,
+            "scaleX": 1.4155277479793775,
+            "scaleY": 1.4404021568711496
+        },
+        {
+            "type": "Image",
+            "id": "897569a0-d2cc-419d-a28d-b1b38e4b99d1",
+            "label": "pizza_left_drapes_0002",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "pizza left drapes 0002"
+            },
+            "x": 386,
+            "y": 244,
+            "scaleX": 4.334616065094522,
+            "scaleY": 2.2239337633555043
+        },
+        {
+            "type": "Image",
+            "id": "efdfff9e-9697-4f69-b55a-ca1faa7e9f22",
+            "label": "pizza_door_0001",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "pizza door 0001"
+            },
+            "x": 801,
+            "y": 260,
+            "scaleX": 1.8035093724592606,
+            "scaleY": 1.8349590462294025
+        },
+        {
+            "type": "Image",
+            "id": "5dd55cca-be14-4f24-9406-2bb499e04bd5",
+            "label": "piano_top_right_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "piano top right "
+            },
+            "x": 1393,
+            "y": 412,
+            "scaleX": 1.7791049266942758,
+            "scaleY": 1.7167877688491053
+        },
+        {
+            "type": "Image",
+            "id": "87f76b2f-5ca6-423f-8742-53326b627360",
+            "label": "pirate_picture_on_right_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "pirate picture on right "
+            },
+            "x": 1242,
+            "y": 172,
+            "scaleX": 1.6987259166828446,
+            "scaleY": 1.8043432597598223
+        },
+        {
+            "type": "Image",
+            "id": "c36390b8-debe-4fdf-aa7b-58ba87dfbbcf",
+            "label": "bottom_right_table_right_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right table right "
+            },
+            "x": 600,
+            "y": 599,
+            "scaleX": 2.2362550658530855,
+            "scaleY": 1.90273946420956
+        },
+        {
+            "type": "Image",
+            "id": "003ae1f8-eaf3-4b66-9f45-dd76986f430d",
+            "label": "bottom_left_pizza_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom left pizza "
+            },
+            "x": 137,
+            "y": 635,
+            "scaleX": 1.3964534001333302,
+            "scaleY": 1.2718565877244006
+        },
+        {
+            "type": "Image",
+            "id": "0bda21ed-3145-4fec-969d-818207122864",
+            "label": "bottom_right_right_chair_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right right chair "
+            },
+            "x": 344,
+            "y": 603,
+            "scaleX": 2.4756951756522976,
+            "scaleY": 1.6206839303569662
+        },
+        {
+            "type": "Image",
+            "id": "d1070ce1-4730-47ad-b3fd-d873cb4a6976",
+            "label": "bottom_right_table_bro_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right table bro "
+            },
+            "x": 469,
+            "y": 644,
+            "scaleX": 2.5316217231689224,
+            "scaleY": 2.3965010275120475
+        },
+        {
+            "type": "Image",
+            "id": "f9d8d2ed-7cc4-4e7e-a96f-bd9bc26e6820",
+            "label": "bottom_right_right_chair__1",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right right chair "
+            },
+            "x": 634,
+            "y": 749,
+            "scaleX": 2.3474149174237997,
+            "scaleY": 1.9112831864892352
+        },
+        {
+            "type": "Image",
+            "id": "acf4071e-e4ba-44a3-a3b0-f3c717bfeb1b",
+            "label": "bottom_right_table_right__2",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right table right "
+            },
+            "x": 1219,
+            "y": 705,
+            "scaleX": 2.6375716712981356,
+            "scaleY": 2.0485193822286125
+        },
+        {
+            "type": "Image",
+            "id": "2619b010-d8db-45b2-8d83-3528cfbf7f90",
+            "label": "bottom_right_right_chair__2",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right right chair "
+            },
+            "x": 932,
+            "y": 666,
+            "scaleX": 2.5699248347577113,
+            "scaleY": 1.7237661607726262
+        },
+        {
+            "type": "Image",
+            "id": "b005f8dc-3222-4232-8266-e0122a25155a",
+            "label": "bottom_right_table_right__1",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right table right "
+            },
+            "x": 890,
+            "y": 759,
+            "scaleX": 2.55083887787556,
+            "scaleY": 1.7806758467169552
+        },
+        {
+            "type": "Image",
+            "id": "973b8652-fdde-41b8-ae59-4a1de93f4f8c",
+            "label": "bottom_right_table_bro__1",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right table bro "
+            },
+            "x": 763,
+            "y": 789,
+            "scaleX": 2.696088853723264,
+            "scaleY": 2.5411294330351883
+        },
+        {
+            "type": "Image",
+            "id": "3f6fff19-a2a4-4edc-abd6-63526e1f4f9e",
+            "label": "bottom_right_table_bro__2",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "bottom right table bro "
+            },
+            "x": 1076,
+            "y": 718,
+            "scaleX": 2.6772306252007603,
+            "scaleY": 2.3328409235349
+        },
+        {
+            "type": "Image",
+            "id": "dfd4dc4b-f1cc-4a8e-a05f-90f38f8417fd",
+            "label": "main_counter_pizza_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "main counter pizza "
+            },
+            "x": 561,
+            "y": 382,
+            "scaleX": 1.6114699369089558,
+            "scaleY": 2.025492911069078
+        },
+        {
+            "type": "Image",
+            "id": "c12faf35-3ff2-420e-bd3a-f69d4baf9c4b",
+            "label": "top_right_light_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "top right light "
+            },
+            "x": 1374,
+            "y": 96,
+            "scaleX": 1.885970318623694,
+            "scaleY": 1.5847190709835934
+        },
+        {
+            "type": "Image",
+            "id": "58adeb6f-a40b-482d-a684-49f31292b022",
+            "label": "ropes_bottom_right_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "ropes bottom right "
+            },
+            "x": 1219,
+            "y": 566,
+            "scaleX": 1.8275988648205295,
+            "scaleY": 2.323781856138505
+        },
+        {
+            "type": "Image",
+            "id": "ae62df9b-90a0-4890-bceb-aad88d41c482",
+            "label": "fish_menu_on_wall_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "fish menu on wall "
+            },
+            "x": 1024,
+            "y": 143,
+            "scaleX": 1.5304131741969895,
+            "scaleY": 1.5664719043254882
+        },
+        {
+            "type": "Image",
+            "id": "fc807fce-cbc3-4118-a8b5-1451ab1832e4",
+            "label": "anotha_one_fishing_pole_",
+            "components": [],
+            "texture": {
+                "key": "underwater pizza bro ",
+                "frame": "anotha one fishing pole "
+            },
+            "x": 601,
+            "y": 200,
+            "scaleX": 1.4414993257707496,
+            "scaleY": 1.6614041541685667
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fbd9b42a-8e35-4ff1-897b-b203942a3729",
+            "label": "sort",
+            "objectIds": [
+                "ad4b0ec4-6dba-41d9-a8ff-158d371f25bd",
+                "3b151ac8-987e-450a-b475-2341eed910f9",
+                "7ce131d9-d215-42e6-9be8-eec417c8d274",
+                "6a89f1c7-8080-4aff-abdf-bd379ab63cec",
+                "42a60545-eaf0-46cf-9e37-86a9e9d5f061",
+                "10052db6-24f2-4671-8a2e-6fa20de0c8f2",
+                "63b3a44c-7c80-4b00-9190-71e68ce2991e",
+                "ae9541d7-60c0-4547-857a-54c70dedbf8c",
+                "665558e4-4b4a-44e1-89b8-956170cd15cb",
+                "e064cf44-4cdd-4ad3-b14d-5ad54bd22dd3",
+                "907aa007-7e7d-4885-a14a-4d909d297533",
+                "1b50965b-ae9a-4c0a-967a-354011cbbc38",
+                "048c5276-2f77-4a67-8aad-a2f4c99da239",
+                "294e365a-6a35-4087-b7b4-dfa24bc9c77a",
+                "ae35bdc6-af14-4d45-807f-fa3f4d09c53b",
+                "0bad3f81-8722-48dd-8a55-7fb1fca8a05a"
+            ]
+        }
+    ]
+}

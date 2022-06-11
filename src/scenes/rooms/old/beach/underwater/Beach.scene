@@ -1,0 +1,348 @@
+{
+    "id": "69a592f6-5038-47a0-970e-da76d5eccb40",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/beach/beach-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beach",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "9a259df7-1373-4bf3-a753-d668e57e0d31",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "bg"
+            },
+            "x": -25,
+            "y": -20,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "4012baa0-518e-4853-9e83-d20c84ba503d",
+            "label": "lighthouse_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "lighthouse_door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 480,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "beach",
+                "frame": "lighthouse_door"
+            },
+            "x": 383,
+            "y": 214,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "a8d842d4-6bc1-4716-85f4-0f36cc59f6d3",
+            "label": "cage",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "cage"
+            },
+            "x": 232,
+            "y": 352,
+            "originX": 0.4935064935064935
+        },
+        {
+            "type": "Image",
+            "id": "b2b4b1cb-12e9-4604-9913-ed9514d3f98c",
+            "label": "buoy",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "buoy"
+            },
+            "x": 194,
+            "y": 428,
+            "originX": 0.5185185185185185,
+            "originY": 0.4965034965034965
+        },
+        {
+            "type": "Image",
+            "id": "60d6901e-4fdf-4814-bf8f-7f012aaa7678",
+            "label": "fish",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "fish"
+            },
+            "x": 297,
+            "y": 392,
+            "originX": 0.4782608695652174,
+            "originY": 0.4956521739130435
+        },
+        {
+            "type": "Image",
+            "id": "e6eeb0bc-357d-45f6-944b-5b556e34731d",
+            "label": "net",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "net"
+            },
+            "x": 290,
+            "y": 465,
+            "originX": 0.49767441860465117
+        },
+        {
+            "type": "Image",
+            "id": "ecf3d23d-1704-4df6-9e8d-59c0d57d7f21",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "fg"
+            },
+            "x": 1217,
+            "y": 293,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "6962a5eb-c8c8-4689-b4bb-23126518fcc1",
+            "label": "sign",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "sign"
+            },
+            "x": 1146,
+            "y": 323,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "d61413a7-c14f-4606-a0b5-9f2e391242f8",
+            "label": "chair_ground",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_ground"
+            },
+            "x": 906,
+            "y": 524,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "415dd9a9-d5e8-447e-8cb4-a51fdfd7a503",
+            "label": "chair_2",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_2"
+            },
+            "x": 1060,
+            "y": 501,
+            "originX": 0.5185185185185185,
+            "originY": 0.6060606060606061
+        },
+        {
+            "type": "Image",
+            "id": "7c8f2975-d88a-4e02-8a8b-2c1f0ffdb26b",
+            "label": "chair_2_front",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_2_front"
+            },
+            "x": 1053,
+            "y": 522,
+            "originY": 0.6764705882352942
+        },
+        {
+            "type": "Image",
+            "id": "c372b672-3064-41e6-b681-70b5180c1b28",
+            "label": "chair_1",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_1"
+            },
+            "x": 961,
+            "y": 526,
+            "originY": 0.58778626
+        },
+        {
+            "type": "Image",
+            "id": "7dd9eb62-1537-4f6c-b67f-74fcd38f2154",
+            "label": "chair_1_front",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_1_front"
+            },
+            "x": 943,
+            "y": 542,
+            "originX": 0.4,
+            "originY": 0.67054264
+        },
+        {
+            "type": "Sprite",
+            "id": "88cb8488-1341-4273-9776-5481d3092d3b",
+            "label": "bucket",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBucketOver()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "beach",
+                "frame": "bucket/bucket0001"
+            },
+            "x": 1078,
+            "y": 612,
+            "originX": 0.8863109,
+            "originY": 0.94611727
+        },
+        {
+            "type": "Image",
+            "id": "d0a77390-119d-4bda-a7ac-6816548803aa",
+            "label": "beach_main_body_",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "beach main body "
+            },
+            "x": 789,
+            "y": 484,
+            "scaleX": 0.9451922147438334,
+            "scaleY": 0.9370738961966343
+        },
+        {
+            "type": "Image",
+            "id": "41de0df8-5b0c-4cb8-807d-0d3548f8afa3",
+            "label": "board_on_right",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "board on right"
+            },
+            "x": 1120,
+            "y": 313
+        },
+        {
+            "type": "Image",
+            "id": "74db2c93-18d1-4972-a0ea-86b35a84db9d",
+            "label": "fish_",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "fish "
+            },
+            "x": 212,
+            "y": 393
+        },
+        {
+            "type": "Image",
+            "id": "8db08526-ec88-4402-a8ba-e66a77793ea3",
+            "label": "green_thingy_xd",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "green thingy xd"
+            },
+            "x": 314,
+            "y": 422
+        },
+        {
+            "type": "Image",
+            "id": "290830f5-f12f-44fe-8290-d608377a9b1e",
+            "label": "idk_what_this_is_",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "idk what this is "
+            },
+            "x": 158,
+            "y": 447
+        },
+        {
+            "type": "Image",
+            "id": "8ccb0b14-2221-4573-8729-30bf18e612af",
+            "label": "left_net",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "left net"
+            },
+            "x": 227,
+            "y": 476
+        },
+        {
+            "type": "Image",
+            "id": "ee20d250-df36-4222-a99e-06a424376b08",
+            "label": "trigger_layers_",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "trigger layers "
+            },
+            "x": 832,
+            "y": 371,
+            "scaleX": 0.7855912250997565,
+            "scaleY": 0.7991620633564187
+        },
+        {
+            "type": "Image",
+            "id": "f29099cf-81d9-48dd-8895-4517c7d47ce3",
+            "label": "penguin_walkway_",
+            "components": [],
+            "texture": {
+                "key": "underwater beach ",
+                "frame": "penguin walkway "
+            },
+            "x": 800,
+            "y": 458
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "88cb8488-1341-4273-9776-5481d3092d3b",
+                "7dd9eb62-1537-4f6c-b67f-74fcd38f2154",
+                "c372b672-3064-41e6-b681-70b5180c1b28",
+                "7c8f2975-d88a-4e02-8a8b-2c1f0ffdb26b",
+                "415dd9a9-d5e8-447e-8cb4-a51fdfd7a503",
+                "e6eeb0bc-357d-45f6-944b-5b556e34731d",
+                "60d6901e-4fdf-4814-bf8f-7f012aaa7678",
+                "b2b4b1cb-12e9-4604-9913-ed9514d3f98c",
+                "a8d842d4-6bc1-4716-85f4-0f36cc59f6d3"
+            ]
+        }
+    ]
+}

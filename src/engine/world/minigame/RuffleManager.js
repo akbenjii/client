@@ -46,6 +46,9 @@ export default class RuffleManager {
 
 		window.checkIfPlayerHasStamp = this.checkIfPlayerHasStamp
 		window.checkIfPlayerHasStamp = checkIfPlayerHasStamp.bind(this)
+
+		window.playerWearingItem = this.playerWearingItem
+		window.playerWearingItem = playerWearingItem.bind(this)
 		
 		this.swfInstance = this.rufflePlayer.load({
 			url: "assets/media/games/swf/sse.swf",
@@ -113,6 +116,13 @@ export default class RuffleManager {
 		return hasStamp
 	}
 
-
+	playerWearingItem(item){
+		let items = this.world.client.penguin.items.equippedFlat
+		for (var x in items) {
+			if (items[x] === item) {
+				return true
+			}
+		}
+	}
 	
 }

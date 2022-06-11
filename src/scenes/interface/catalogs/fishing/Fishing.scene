@@ -1,0 +1,195 @@
+{
+    "id": "c0b0b306-2053-4f2f-9dcf-95fde39889e6",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "News",
+        "preloadPackFiles": [
+            "client/assets/media/interface/catalogs/catalogs-master-pack.json",
+            "client/assets/media/interface/catalogs/fishing-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Fishing",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "41b9af2c-1775-4714-9527-c74cca74f92b",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.1,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "2147c74d-be30-4de0-bb64-56c10d927575",
+            "label": "page1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b7a4348a-324a-4daa-b6a7-96c8223ba54d",
+                    "label": "musiccatalog",
+                    "components": [],
+                    "texture": {
+                        "key": "fishing"
+                    },
+                    "x": 760,
+                    "y": 481
+                },
+                {
+                    "type": "Image",
+                    "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
+                    "label": "close_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.close() }",
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "closebtn"
+                    },
+                    "x": 1070,
+                    "y": 45
+                },
+                {
+                    "type": "Image",
+                    "id": "95e0aee4-a7c9-4535-be54-9bb0f51b6d21",
+                    "label": "buy_rod",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buybtn",
+                    "Button.callback": "() => this.interface.prompt.showItem(321)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
+                    },
+                    "x": 669,
+                    "y": 525
+                },
+                {
+                    "type": "Text",
+                    "id": "ccf64267-9f37-4f7d-94df-567a3cab67ff",
+                    "label": "txt_rod",
+                    "components": [],
+                    "x": 628,
+                    "y": 506,
+                    "text": "200",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#6f4100ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "65a05e28-9a3a-440a-a36d-7caaeb80556b",
+                    "label": "title",
+                    "components": [],
+                    "x": 495,
+                    "y": 58,
+                    "text": "Ice Fishing",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "70px",
+                    "fontStyle": "bold italic",
+                    "color": "#ffffffff",
+                    "stroke": "#1b4787ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Text",
+                    "id": "9000fa8c-5951-4af2-a9b0-df870597bb57",
+                    "label": "upgrades",
+                    "components": [],
+                    "x": 889,
+                    "y": 73,
+                    "text": "GAME\nUPGRADES",
+                    "lineSpacing": -10,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "32px",
+                    "fontStyle": "bold italic",
+                    "color": "6f4100",
+                    "stroke": "#000000ff",
+                    "strokeThickness": 1
+                },
+                {
+                    "type": "Text",
+                    "id": "0e49032d-c869-4d82-a639-a3fb3eccb07d",
+                    "label": "bodyheader",
+                    "components": [],
+                    "x": 486,
+                    "y": 223,
+                    "text": "How the fishing rod works:",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "cf0ffe04-b15b-4e02-9101-9b174579fb1c",
+                    "label": "bodytext",
+                    "components": [],
+                    "x": 488,
+                    "y": 268,
+                    "text": "Enter Ice Fishing whilst holding the fishing rod.\nYou'll get to fish\nwith it in the game!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff",
+                    "wordWrapWidth": 220
+                },
+                {
+                    "type": "Text",
+                    "id": "3df858b2-02b2-4fe8-a6ef-0c319cf0e598",
+                    "label": "txt_rodheader",
+                    "components": [],
+                    "x": 594,
+                    "y": 446,
+                    "text": "Flashing Lure Fishing Rod",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "23px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff",
+                    "shadow.color": "#042635ff",
+                    "wordWrapWidth": 200
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "110e14c4-8fa3-44cd-b053-2902c2236aa2",
+            "label": "pages",
+            "objectIds": [
+                "2147c74d-be30-4de0-bb64-56c10d927575"
+            ]
+        }
+    ]
+}

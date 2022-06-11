@@ -58,7 +58,7 @@ export default class Lodge extends RoomScene {
         this.safe;
         /** @type {Phaser.GameObjects.Sprite} */
         this.fg;
-        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container>} */
+        /** @type {Array<Phaser.GameObjects.Sprite|Phaser.GameObjects.Container|Phaser.GameObjects.Image>} */
         this.sort;
         /** @type {Phaser.GameObjects.Ellipse[]} */
         this.seats106;
@@ -76,7 +76,7 @@ export default class Lodge extends RoomScene {
             'fishing': () => this.triggerGame("IceFishing", 904)
         }
         this.music = '589'
-		this.waddles = {}
+        this.waddles = {}
 
         /* END-USER-CTR-CODE */
     }
@@ -208,8 +208,12 @@ export default class Lodge extends RoomScene {
         const ellipse_5 = this.add.ellipse(1172, 724, 50, 50);
         ellipse_5.visible = false;
 
+        // catalog
+        const catalog = this.add.image(1441.4057969299358, 1132.217378955382, "lodge-new", "catalog");
+        catalog.setOrigin(0.5272463754394866, 2.7917512051904856);
+
         // lists
-        const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_3, findfour_2, stool_1, findfour_1, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace];
+        const sort = [bottomrailing, fg, safe, bait, deskchair, desk, findfour_3, findfour_2, stool_1, findfour_1, stool, redchair, greenchair, railing4, bluechairarm, bluechair, railing3, railing2, fireplace, catalog];
         const seats106 = [ellipse_4, ellipse_5];
         const seats105 = [ellipse_3, ellipse_2];
         const seats104 = [ellipse_1, ellipse];
@@ -252,6 +256,12 @@ export default class Lodge extends RoomScene {
         findfour_3Button.callback = () => this.triggerWaddle(106);
         findfour_3Button.activeFrame = false;
         findfour_3Button.pixelPerfect = true;
+
+        // catalog (components)
+        const catalogButton = new Button(catalog);
+        catalogButton.spriteName = "catalog";
+        catalogButton.callback = () => {this.interface.loadExternal('Fishing')};
+        catalogButton.activeFrame = false;
 
         this.bg = bg;
         this.maindoor = maindoor;

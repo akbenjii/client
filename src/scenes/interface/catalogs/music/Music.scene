@@ -1,5 +1,5 @@
 {
-    "id": "28d21205-c55d-422c-a0a5-5c7ad10ceedf",
+    "id": "a759d6f4-7f44-4f8f-a5fa-b2fa100682fd",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -10,7 +10,7 @@
         "superClassName": "News",
         "preloadPackFiles": [
             "client/assets/media/interface/catalogs/music/music-pack.json",
-            "client/assets/media/interface/catalogs/clothing/may22-clothing.json"
+            "client/assets/media/interface/catalogs/catalogs-master-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Music",
@@ -38,7 +38,6 @@
             "id": "2147c74d-be30-4de0-bb64-56c10d927575",
             "label": "page1",
             "components": [],
-            "visible": false,
             "list": [
                 {
                     "type": "Image",
@@ -53,29 +52,15 @@
                 },
                 {
                     "type": "Image",
-                    "id": "630b83ad-2d98-4813-bc90-0cde99ddddde",
-                    "label": "blue_button",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "blue-button",
-                    "Button.callback": "() => this.close()",
-                    "Button.pixelPerfect": true,
-                    "texture": {
-                        "key": "main",
-                        "frame": "blue-button"
-                    },
-                    "x": 1167,
-                    "y": 144
-                },
-                {
-                    "type": "Image",
                     "id": "3b42c124-b381-48d8-ab54-e7b2d58923ad",
-                    "label": "blue_x",
-                    "components": [],
+                    "label": "close_btn",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => { this.close() }",
                     "texture": {
-                        "key": "main",
-                        "frame": "blue-x"
+                        "key": "catalogs-master",
+                        "frame": "closebtn"
                     },
                     "x": 1167,
                     "y": 142
@@ -87,12 +72,12 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buy",
+                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(729)",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
                     },
                     "x": 583,
                     "y": 351
@@ -104,12 +89,12 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buy",
+                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(234)",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
                     },
                     "x": 1070,
                     "y": 351
@@ -121,12 +106,12 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buy",
+                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(293)",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
                     },
                     "x": 422,
                     "y": 534
@@ -138,12 +123,12 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buy",
+                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(340)",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
                     },
                     "x": 1085,
                     "y": 534
@@ -155,12 +140,12 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buy",
+                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(233)",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
                     },
                     "x": 394,
                     "y": 702
@@ -172,12 +157,12 @@
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "buy",
+                    "Button.spriteName": "buybtn",
                     "Button.callback": "() => this.interface.prompt.showItem(180)",
                     "Button.activeFrame": false,
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
+                        "key": "catalogs-master",
+                        "frame": "buybtn"
                     },
                     "x": 878,
                     "y": 702

@@ -226,6 +226,7 @@
                     ],
                     "SimpleButton.hoverCallback": "() => this.onShopOver()",
                     "SimpleButton.hoverOutCallback": "() => this.onShopOut()",
+                    "SimpleButton.callback": "() => {this.interface.loadExternal('Hydro')}",
                     "texture": {
                         "key": "dock-new",
                         "frame": "uncurl0001"
@@ -250,6 +251,24 @@
                     "scaleY": 1.5
                 }
             ]
+        },
+        {
+            "type": "Sprite",
+            "id": "1717665f-f70a-4605-a6de-38d0c2d52296",
+            "label": "catalog",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCatOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCatOut()",
+            "SimpleButton.callback": "() => {this.interface.loadExternal('Hydro')}",
+            "texture": {
+                "key": "dock-new",
+                "frame": "catalog0001"
+            },
+            "x": 1438,
+            "y": 887
         }
     ],
     "plainObjects": [],

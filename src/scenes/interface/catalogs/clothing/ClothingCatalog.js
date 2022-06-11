@@ -185,8 +185,9 @@ export default class ClothingCatalog extends Book {
     preload() {
 
         this.load.pack("sep05-pack", "assets/media/interface/catalogs/clothing/sep05-pack.json");
-        this.load.pack("may22-clothing", "assets/media/interface/catalogs/clothing/may22-clothing.json");
         this.load.pack("clothingcatalog-pack", "assets/media/interface/catalogs/clothing/clothingcatalog-pack.json");
+        this.load.pack("may22-clothing", "assets/media/interface/catalogs/clothing/may22-clothing.json");
+        this.load.pack("catalogs-master-pack", "assets/media/interface/catalogs/catalogs-master-pack.json");
     }
 
     /** @returns {void} */
@@ -207,15 +208,17 @@ export default class ClothingCatalog extends Book {
         page_page0016.setOrigin(0, 0);
         page10.add(page_page0016);
 
-        // close_left_page6_1_1
-        const close_left_page6_1_1 = this.add.image(487, 41, "clothingcatalog", "close_left");
-        close_left_page6_1_1.setOrigin(0, 0);
-        page10.add(close_left_page6_1_1);
+        // close_right_2
+        const close_right_2 = this.add.image(596, 42, "catalogs-master", "catclosebtn");
+        close_right_2.scaleX = -1;
+        close_right_2.setOrigin(0, 0);
+        page10.add(close_right_2);
 
-        // page_left_page6_1_1
-        const page_left_page6_1_1 = this.add.image(486, 592, "clothingcatalog", "page_left");
-        page_left_page6_1_1.setOrigin(0, 0);
-        page10.add(page_left_page6_1_1);
+        // page_right_2
+        const page_right_2 = this.add.image(595, 592, "catalogs-master", "nextpagebtn");
+        page_right_2.scaleX = -1;
+        page_right_2.setOrigin(0, 0);
+        page10.add(page_right_2);
 
         // page9
         const page9 = this.add.container(0, 0);
@@ -298,26 +301,6 @@ export default class ClothingCatalog extends Book {
         darkpink0001_png.scaleY = 0.544399396429802;
         page9.add(darkpink0001_png);
 
-        // close_left_page6_1
-        const close_left_page6_1 = this.add.image(193, 36, "clothingcatalog", "close_left");
-        close_left_page6_1.setOrigin(0, 0);
-        page9.add(close_left_page6_1);
-
-        // page_left_page6_1
-        const page_left_page6_1 = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left_page6_1.setOrigin(0, 0);
-        page9.add(page_left_page6_1);
-
-        // page_right_page6_1
-        const page_right_page6_1 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_page6_1.setOrigin(0, 0);
-        page9.add(page_right_page6_1);
-
-        // close_right_page6_1
-        const close_right_page6_1 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_page6_1.setOrigin(0, 0);
-        page9.add(close_right_page6_1);
-
         // page8
         const page8 = this.add.container(0, 0);
         page8.visible = false;
@@ -325,26 +308,6 @@ export default class ClothingCatalog extends Book {
         // page7_1
         const page7_1 = this.add.image(768, 431, "may22cat", "page7");
         page8.add(page7_1);
-
-        // close_left_page8
-        const close_left_page8 = this.add.image(193, 36, "clothingcatalog", "close_left");
-        close_left_page8.setOrigin(0, 0);
-        page8.add(close_left_page8);
-
-        // page_left_page8
-        const page_left_page8 = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left_page8.setOrigin(0, 0);
-        page8.add(page_left_page8);
-
-        // page_right_page8
-        const page_right_page8 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_page8.setOrigin(0, 0);
-        page8.add(page_right_page8);
-
-        // close_right_page8
-        const close_right_page8 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_page8.setOrigin(0, 0);
-        page8.add(close_right_page8);
 
         // noir-bg
         const noir_bg = this.add.rectangle(340, 357, 128, 128);
@@ -431,26 +394,6 @@ export default class ClothingCatalog extends Book {
         text_roman.text = "800";
         text_roman.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page7.add(text_roman);
-
-        // close_right_page6
-        const close_right_page6 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_page6.setOrigin(0, 0);
-        page7.add(close_right_page6);
-
-        // page_right_page6
-        const page_right_page6 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_page6.setOrigin(0, 0);
-        page7.add(page_right_page6);
-
-        // page_left_page6
-        const page_left_page6 = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left_page6.setOrigin(0, 0);
-        page7.add(page_left_page6);
-
-        // close_left_page6
-        const close_left_page6 = this.add.image(193, 36, "clothingcatalog", "close_left");
-        close_left_page6.setOrigin(0, 0);
-        page7.add(close_left_page6);
 
         // buy_beekeeper
         const buy_beekeeper = this.add.image(287, 381, "may22cat", "buy");
@@ -598,26 +541,6 @@ export default class ClothingCatalog extends Book {
         const page8_1 = this.add.image(768, 431, "may22cat", "page8");
         page6.add(page8_1);
 
-        // close_right_page100
-        const close_right_page100 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_page100.setOrigin(0, 0);
-        page6.add(close_right_page100);
-
-        // page_right_page100
-        const page_right_page100 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_page100.setOrigin(0, 0);
-        page6.add(page_right_page100);
-
-        // page_left_page100
-        const page_left_page100 = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left_page100.setOrigin(0, 0);
-        page6.add(page_left_page100);
-
-        // close_left_page100
-        const close_left_page100 = this.add.image(193, 35, "clothingcatalog", "close_left");
-        close_left_page100.setOrigin(0, 0);
-        page6.add(close_left_page100);
-
         // buy2_pinkrollers
         const buy2_pinkrollers = this.add.image(691, 511, "clothingcatalog", "buy2");
         buy2_pinkrollers.scaleX = 0.8414916020698116;
@@ -727,26 +650,6 @@ export default class ClothingCatalog extends Book {
         // buy_bletterman
         const buy_bletterman = this.add.image(1215, 755, "may22cat", "buy");
         page5.add(buy_bletterman);
-
-        // close_right_page5
-        const close_right_page5 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_page5.setOrigin(0, 0);
-        page5.add(close_right_page5);
-
-        // page_right_page5
-        const page_right_page5 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_page5.setOrigin(0, 0);
-        page5.add(page_right_page5);
-
-        // page_left_page5
-        const page_left_page5 = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left_page5.setOrigin(0, 0);
-        page5.add(page_left_page5);
-
-        // close_left_page5
-        const close_left_page5 = this.add.image(193, 35, "clothingcatalog", "close_left");
-        close_left_page5.setOrigin(0, 0);
-        page5.add(close_left_page5);
 
         // buy2_blackhoodie
         const buy2_blackhoodie = this.add.image(588, 548, "clothingcatalog", "buy2");
@@ -922,26 +825,6 @@ export default class ClothingCatalog extends Book {
         text_2_3_1_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page4.add(text_2_3_1_1_1);
 
-        // close_right_1_1_1
-        const close_right_1_1_1 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_1_1_1.setOrigin(0, 0);
-        page4.add(close_right_1_1_1);
-
-        // page_right_1_1_1
-        const page_right_1_1_1 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_1_1_1.setOrigin(0, 0);
-        page4.add(page_right_1_1_1);
-
-        // page_left_1_1
-        const page_left_1_1 = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left_1_1.setOrigin(0, 0);
-        page4.add(page_left_1_1);
-
-        // close_left_1_1
-        const close_left_1_1 = this.add.image(193, 35, "clothingcatalog", "close_left");
-        close_left_1_1.setOrigin(0, 0);
-        page4.add(close_left_1_1);
-
         // buy2_1_1
         const buy2_1_1 = this.add.image(622, 375, "clothingcatalog", "buy2");
         buy2_1_1.scaleX = 1.0216448780669118;
@@ -1062,26 +945,6 @@ export default class ClothingCatalog extends Book {
         sec_pbandana.fillAlpha = 0;
         page3.add(sec_pbandana);
 
-        // close_left_1
-        const close_left_1 = this.add.image(193, 35, "clothingcatalog", "close_left");
-        close_left_1.setOrigin(0, 0);
-        page3.add(close_left_1);
-
-        // page_left_1
-        const page_left_1 = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left_1.setOrigin(0, 0);
-        page3.add(page_left_1);
-
-        // page_right_1_1
-        const page_right_1_1 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_1_1.setOrigin(0, 0);
-        page3.add(page_right_1_1);
-
-        // close_right_1_1
-        const close_right_1_1 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_1_1.setOrigin(0, 0);
-        page3.add(close_right_1_1);
-
         // buy_2_3_1
         const buy_2_3_1 = this.add.image(1228, 537, "may22cat", "buy");
         page3.add(buy_2_3_1);
@@ -1152,7 +1015,6 @@ export default class ClothingCatalog extends Book {
 
         // page2
         const page2 = this.add.container(0, 0);
-        page2.visible = false;
 
         // page2_1
         const page2_1 = this.add.image(768, 431, "may22cat", "page2");
@@ -1242,26 +1104,6 @@ export default class ClothingCatalog extends Book {
         text_2_3.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page2.add(text_2_3);
 
-        // close_right_1
-        const close_right_1 = this.add.image(1202, 36, "clothingcatalog", "close_right");
-        close_right_1.setOrigin(0, 0);
-        page2.add(close_right_1);
-
-        // page_right_1
-        const page_right_1 = this.add.image(1201, 582, "clothingcatalog", "page_right");
-        page_right_1.setOrigin(0, 0);
-        page2.add(page_right_1);
-
-        // page_left
-        const page_left = this.add.image(190, 580, "clothingcatalog", "page_left");
-        page_left.setOrigin(0, 0);
-        page2.add(page_left);
-
-        // close_left
-        const close_left = this.add.image(193, 35, "clothingcatalog", "close_left");
-        close_left.setOrigin(0, 0);
-        page2.add(close_left);
-
         // sec-wtshirt
         const sec_wtshirt = this.add.rectangle(515, 92, 128, 128);
         sec_wtshirt.scaleX = 0.2984607664172768;
@@ -1279,18 +1121,17 @@ export default class ClothingCatalog extends Book {
         page1.add(page1_1);
 
         // page_right
-        const page_right = this.add.image(909, 582, "clothingcatalog", "page_right");
+        const page_right = this.add.image(909, 582, "catalogs-master", "nextpagebtn");
         page_right.setOrigin(0, 0);
         page1.add(page_right);
 
         // close_right
-        const close_right = this.add.image(910, 32, "clothingcatalog", "close_right");
+        const close_right = this.add.image(910, 32, "catalogs-master", "catclosebtn");
         close_right.setOrigin(0, 0);
         page1.add(close_right);
 
         // buttons
         const buttons = this.add.container(189, 41);
-        buttons.visible = false;
 
         // coins
         const coins = this.add.text(1130, 790, "", {});
@@ -1299,24 +1140,39 @@ export default class ClothingCatalog extends Book {
         coins.setStyle({ "align": "right", "fixedWidth":600,"fontFamily": "CCComiccrazy", "fontSize": "32px", "stroke": "#000", "strokeThickness":9});
         buttons.add(coins);
 
+        // page_left
+        const page_left = this.add.image(1, 539, "catalogs-master", "prevpagebtn");
+        page_left.setOrigin(0, 0);
+        buttons.add(page_left);
+
+        // page_right_1
+        const page_right_1 = this.add.image(1035, 541, "catalogs-master", "nextpagebtn");
+        page_right_1.setOrigin(0, 0);
+        buttons.add(page_right_1);
+
+        // close_right_1
+        const close_right_1 = this.add.image(1036, -7, "catalogs-master", "catclosebtn");
+        close_right_1.setOrigin(0, 0);
+        buttons.add(close_right_1);
+
         // lists
         const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10];
 
         // block (components)
         new Interactive(block);
 
-        // close_left_page6_1_1 (components)
-        const close_left_page6_1_1Button = new Button(close_left_page6_1_1);
-        close_left_page6_1_1Button.spriteName = "close_left";
-        close_left_page6_1_1Button.callback = () => this.close();
-        close_left_page6_1_1Button.pixelPerfect = true;
+        // close_right_2 (components)
+        const close_right_2Button = new Button(close_right_2);
+        close_right_2Button.spriteName = "catclosebtn";
+        close_right_2Button.callback = () => this.close();
+        close_right_2Button.pixelPerfect = true;
 
-        // page_left_page6_1_1 (components)
-        const page_left_page6_1_1Button = new Button(page_left_page6_1_1);
-        page_left_page6_1_1Button.spriteName = "page_left";
-        page_left_page6_1_1Button.callback = () => this.prevPage();
-        page_left_page6_1_1Button.activeFrame = false;
-        page_left_page6_1_1Button.pixelPerfect = true;
+        // page_right_2 (components)
+        const page_right_2Button = new Button(page_right_2);
+        page_right_2Button.spriteName = "nextpagebtn";
+        page_right_2Button.callback = () => this.prevPage();
+        page_right_2Button.activeFrame = false;
+        page_right_2Button.pixelPerfect = true;
 
         // blue0001_png (components)
         const blue0001_pngButton = new Button(blue0001_png);
@@ -1390,58 +1246,6 @@ export default class ClothingCatalog extends Book {
         darkpink0001_pngButton.callback = () => this.interface.prompt.showItem(10);
         darkpink0001_pngButton.activeFrame = false;
 
-        // close_left_page6_1 (components)
-        const close_left_page6_1Button = new Button(close_left_page6_1);
-        close_left_page6_1Button.spriteName = "close_left";
-        close_left_page6_1Button.callback = () => this.close();
-        close_left_page6_1Button.pixelPerfect = true;
-
-        // page_left_page6_1 (components)
-        const page_left_page6_1Button = new Button(page_left_page6_1);
-        page_left_page6_1Button.spriteName = "page_left";
-        page_left_page6_1Button.callback = () => this.prevPage();
-        page_left_page6_1Button.activeFrame = false;
-        page_left_page6_1Button.pixelPerfect = true;
-
-        // page_right_page6_1 (components)
-        const page_right_page6_1Button = new Button(page_right_page6_1);
-        page_right_page6_1Button.spriteName = "page_right";
-        page_right_page6_1Button.callback = () => this.nextPage();
-        page_right_page6_1Button.activeFrame = false;
-        page_right_page6_1Button.pixelPerfect = true;
-
-        // close_right_page6_1 (components)
-        const close_right_page6_1Button = new Button(close_right_page6_1);
-        close_right_page6_1Button.spriteName = "close_right";
-        close_right_page6_1Button.callback = () => this.close();
-        close_right_page6_1Button.pixelPerfect = true;
-
-        // close_left_page8 (components)
-        const close_left_page8Button = new Button(close_left_page8);
-        close_left_page8Button.spriteName = "close_left";
-        close_left_page8Button.callback = () => this.close();
-        close_left_page8Button.pixelPerfect = true;
-
-        // page_left_page8 (components)
-        const page_left_page8Button = new Button(page_left_page8);
-        page_left_page8Button.spriteName = "page_left";
-        page_left_page8Button.callback = () => this.prevPage();
-        page_left_page8Button.activeFrame = false;
-        page_left_page8Button.pixelPerfect = true;
-
-        // page_right_page8 (components)
-        const page_right_page8Button = new Button(page_right_page8);
-        page_right_page8Button.spriteName = "page_right";
-        page_right_page8Button.callback = () => this.nextPage();
-        page_right_page8Button.activeFrame = false;
-        page_right_page8Button.pixelPerfect = true;
-
-        // close_right_page8 (components)
-        const close_right_page8Button = new Button(close_right_page8);
-        close_right_page8Button.spriteName = "close_right";
-        close_right_page8Button.callback = () => this.close();
-        close_right_page8Button.pixelPerfect = true;
-
         // noir_bg (components)
         const noir_bgSimpleButton = new SimpleButton(noir_bg);
         noir_bgSimpleButton.callback = () => this.interface.prompt.showItem(9001);
@@ -1485,32 +1289,6 @@ export default class ClothingCatalog extends Book {
         buy_romanButton.spriteName = "buy";
         buy_romanButton.callback = () => this.interface.prompt.showItem(451);
         buy_romanButton.activeFrame = false;
-
-        // close_right_page6 (components)
-        const close_right_page6Button = new Button(close_right_page6);
-        close_right_page6Button.spriteName = "close_right";
-        close_right_page6Button.callback = () => this.close();
-        close_right_page6Button.pixelPerfect = true;
-
-        // page_right_page6 (components)
-        const page_right_page6Button = new Button(page_right_page6);
-        page_right_page6Button.spriteName = "page_right";
-        page_right_page6Button.callback = () => this.nextPage();
-        page_right_page6Button.activeFrame = false;
-        page_right_page6Button.pixelPerfect = true;
-
-        // page_left_page6 (components)
-        const page_left_page6Button = new Button(page_left_page6);
-        page_left_page6Button.spriteName = "page_left";
-        page_left_page6Button.callback = () => this.prevPage();
-        page_left_page6Button.activeFrame = false;
-        page_left_page6Button.pixelPerfect = true;
-
-        // close_left_page6 (components)
-        const close_left_page6Button = new Button(close_left_page6);
-        close_left_page6Button.spriteName = "close_left";
-        close_left_page6Button.callback = () => this.close();
-        close_left_page6Button.pixelPerfect = true;
 
         // buy_beekeeper (components)
         const buy_beekeeperButton = new Button(buy_beekeeper);
@@ -1590,32 +1368,6 @@ export default class ClothingCatalog extends Book {
         const sec_pinkdressSimpleButton = new SimpleButton(sec_pinkdress);
         sec_pinkdressSimpleButton.callback = () => this.interface.prompt.showItem(252);
 
-        // close_right_page100 (components)
-        const close_right_page100Button = new Button(close_right_page100);
-        close_right_page100Button.spriteName = "close_right";
-        close_right_page100Button.callback = () => this.close();
-        close_right_page100Button.pixelPerfect = true;
-
-        // page_right_page100 (components)
-        const page_right_page100Button = new Button(page_right_page100);
-        page_right_page100Button.spriteName = "page_right";
-        page_right_page100Button.callback = () => this.nextPage();
-        page_right_page100Button.activeFrame = false;
-        page_right_page100Button.pixelPerfect = true;
-
-        // page_left_page100 (components)
-        const page_left_page100Button = new Button(page_left_page100);
-        page_left_page100Button.spriteName = "page_left";
-        page_left_page100Button.callback = () => this.prevPage();
-        page_left_page100Button.activeFrame = false;
-        page_left_page100Button.pixelPerfect = true;
-
-        // close_left_page100 (components)
-        const close_left_page100Button = new Button(close_left_page100);
-        close_left_page100Button.spriteName = "close_left";
-        close_left_page100Button.callback = () => this.close();
-        close_left_page100Button.pixelPerfect = true;
-
         // buy2_pinkrollers (components)
         const buy2_pinkrollersButton = new Button(buy2_pinkrollers);
         buy2_pinkrollersButton.spriteName = "buy2";
@@ -1680,32 +1432,6 @@ export default class ClothingCatalog extends Book {
         buy_blettermanButton.spriteName = "buy";
         buy_blettermanButton.callback = () => this.interface.prompt.showItem(281);
         buy_blettermanButton.activeFrame = false;
-
-        // close_right_page5 (components)
-        const close_right_page5Button = new Button(close_right_page5);
-        close_right_page5Button.spriteName = "close_right";
-        close_right_page5Button.callback = () => this.close();
-        close_right_page5Button.pixelPerfect = true;
-
-        // page_right_page5 (components)
-        const page_right_page5Button = new Button(page_right_page5);
-        page_right_page5Button.spriteName = "page_right";
-        page_right_page5Button.callback = () => this.nextPage();
-        page_right_page5Button.activeFrame = false;
-        page_right_page5Button.pixelPerfect = true;
-
-        // page_left_page5 (components)
-        const page_left_page5Button = new Button(page_left_page5);
-        page_left_page5Button.spriteName = "page_left";
-        page_left_page5Button.callback = () => this.prevPage();
-        page_left_page5Button.activeFrame = false;
-        page_left_page5Button.pixelPerfect = true;
-
-        // close_left_page5 (components)
-        const close_left_page5Button = new Button(close_left_page5);
-        close_left_page5Button.spriteName = "close_left";
-        close_left_page5Button.callback = () => this.close();
-        close_left_page5Button.pixelPerfect = true;
 
         // buy2_blackhoodie (components)
         const buy2_blackhoodieButton = new Button(buy2_blackhoodie);
@@ -1802,32 +1528,6 @@ export default class ClothingCatalog extends Book {
         buy_2_3_1_1_1Button.callback = () => this.interface.prompt.showItem(179);
         buy_2_3_1_1_1Button.activeFrame = false;
 
-        // close_right_1_1_1 (components)
-        const close_right_1_1_1Button = new Button(close_right_1_1_1);
-        close_right_1_1_1Button.spriteName = "close_right";
-        close_right_1_1_1Button.callback = () => this.close();
-        close_right_1_1_1Button.pixelPerfect = true;
-
-        // page_right_1_1_1 (components)
-        const page_right_1_1_1Button = new Button(page_right_1_1_1);
-        page_right_1_1_1Button.spriteName = "page_right";
-        page_right_1_1_1Button.callback = () => this.nextPage();
-        page_right_1_1_1Button.activeFrame = false;
-        page_right_1_1_1Button.pixelPerfect = true;
-
-        // page_left_1_1 (components)
-        const page_left_1_1Button = new Button(page_left_1_1);
-        page_left_1_1Button.spriteName = "page_left";
-        page_left_1_1Button.callback = () => this.prevPage();
-        page_left_1_1Button.activeFrame = false;
-        page_left_1_1Button.pixelPerfect = true;
-
-        // close_left_1_1 (components)
-        const close_left_1_1Button = new Button(close_left_1_1);
-        close_left_1_1Button.spriteName = "close_left";
-        close_left_1_1Button.callback = () => this.close();
-        close_left_1_1Button.pixelPerfect = true;
-
         // buy2_1_1 (components)
         const buy2_1_1Button = new Button(buy2_1_1);
         buy2_1_1Button.spriteName = "buy2";
@@ -1892,32 +1592,6 @@ export default class ClothingCatalog extends Book {
         // sec_pbandana (components)
         const sec_pbandanaSimpleButton = new SimpleButton(sec_pbandana);
         sec_pbandanaSimpleButton.callback = () => this.interface.prompt.showItem(490);
-
-        // close_left_1 (components)
-        const close_left_1Button = new Button(close_left_1);
-        close_left_1Button.spriteName = "close_left";
-        close_left_1Button.callback = () => this.close();
-        close_left_1Button.pixelPerfect = true;
-
-        // page_left_1 (components)
-        const page_left_1Button = new Button(page_left_1);
-        page_left_1Button.spriteName = "page_left";
-        page_left_1Button.callback = () => this.prevPage();
-        page_left_1Button.activeFrame = false;
-        page_left_1Button.pixelPerfect = true;
-
-        // page_right_1_1 (components)
-        const page_right_1_1Button = new Button(page_right_1_1);
-        page_right_1_1Button.spriteName = "page_right";
-        page_right_1_1Button.callback = () => this.nextPage();
-        page_right_1_1Button.activeFrame = false;
-        page_right_1_1Button.pixelPerfect = true;
-
-        // close_right_1_1 (components)
-        const close_right_1_1Button = new Button(close_right_1_1);
-        close_right_1_1Button.spriteName = "close_right";
-        close_right_1_1Button.callback = () => this.close();
-        close_right_1_1Button.pixelPerfect = true;
 
         // buy_2_3_1 (components)
         const buy_2_3_1Button = new Button(buy_2_3_1);
@@ -2009,48 +1683,43 @@ export default class ClothingCatalog extends Book {
         buy_2_3Button.callback = () => this.interface.prompt.showItem(5117);
         buy_2_3Button.activeFrame = false;
 
-        // close_right_1 (components)
-        const close_right_1Button = new Button(close_right_1);
-        close_right_1Button.spriteName = "close_right";
-        close_right_1Button.callback = () => this.close();
-        close_right_1Button.pixelPerfect = true;
-
-        // page_right_1 (components)
-        const page_right_1Button = new Button(page_right_1);
-        page_right_1Button.spriteName = "page_right";
-        page_right_1Button.callback = () => this.nextPage();
-        page_right_1Button.activeFrame = false;
-        page_right_1Button.pixelPerfect = true;
-
-        // page_left (components)
-        const page_leftButton = new Button(page_left);
-        page_leftButton.spriteName = "page_left";
-        page_leftButton.callback = () => this.prevPage();
-        page_leftButton.activeFrame = false;
-        page_leftButton.pixelPerfect = true;
-
-        // close_left (components)
-        const close_leftButton = new Button(close_left);
-        close_leftButton.spriteName = "close_left";
-        close_leftButton.callback = () => this.close();
-        close_leftButton.pixelPerfect = true;
-
         // sec_wtshirt (components)
         const sec_wtshirtSimpleButton = new SimpleButton(sec_wtshirt);
         sec_wtshirtSimpleButton.callback = () => this.interface.prompt.showItem(850);
 
         // page_right (components)
         const page_rightButton = new Button(page_right);
-        page_rightButton.spriteName = "page_right";
+        page_rightButton.spriteName = "nextpagebtn";
         page_rightButton.callback = () => this.nextPage();
         page_rightButton.activeFrame = false;
         page_rightButton.pixelPerfect = true;
 
         // close_right (components)
         const close_rightButton = new Button(close_right);
-        close_rightButton.spriteName = "close_right";
+        close_rightButton.spriteName = "catclosebtn";
         close_rightButton.callback = () => this.close();
         close_rightButton.pixelPerfect = true;
+
+        // page_left (components)
+        const page_leftButton = new Button(page_left);
+        page_leftButton.spriteName = "prevpagebtn";
+        page_leftButton.callback = () => this.prevPage();
+        page_leftButton.activeFrame = false;
+        page_leftButton.pixelPerfect = true;
+
+        // page_right_1 (components)
+        const page_right_1Button = new Button(page_right_1);
+        page_right_1Button.spriteName = "nextpagebtn";
+        page_right_1Button.callback = () => this.nextPage();
+        page_right_1Button.activeFrame = false;
+        page_right_1Button.pixelPerfect = true;
+
+        // close_right_1 (components)
+        const close_right_1Button = new Button(close_right_1);
+        close_right_1Button.spriteName = "catclosebtn";
+        close_right_1Button.callback = () => this.close();
+        close_right_1Button.activeFrame = false;
+        close_right_1Button.pixelPerfect = true;
 
         this.blue0001_png = blue0001_png;
         this.green0001_png = green0001_png;
