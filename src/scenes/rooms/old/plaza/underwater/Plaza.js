@@ -55,7 +55,6 @@ export default class Plaza extends RoomScene {
             'pizza': () => this.triggerRoom(330, 1200, 400),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
-        this.roomAnims = true
 
         /* END-USER-CTR-CODE */
     }
@@ -131,7 +130,7 @@ export default class Plaza extends RoomScene {
         const rightist_puffle = this.add.sprite(538, 354, "plaza_underwater", "rightist_puffle0001");
 
         // water_base
-        const water_base = this.add.image(715.2447296925702, 991.9037571357842, "plaza_underwater", "water_base");
+        const water_base = this.add.image(715, 990, "plaza_underwater", "water_base");
         water_base.setOrigin(0.47762917205877675, 0.9495248886520194);
 
         // water
@@ -194,14 +193,14 @@ export default class Plaza extends RoomScene {
         this.snorkbubbles.play('snorkbubbles')
         this.cavebubbles.play('cavebubbles')
         this.jfTween()
-		this.jfTween2()
+        this.jfTween2()
         this.far_back_seaweed.play('far_back_seaweed')
         this.left_pet_seaweed.play('left_pet_seaweed')
         this.middle_seaweed.play('middle_seaweed')
         this.leftist_puffle.play('lefist_puffle')
         this.lefter_puffle.play('lefter_puffle')
         this.righter_puffle.play('righter_puffle')
-		this.rightist_puffle.play('rightist_puffle')
+        this.rightist_puffle.play('rightist_puffle')
     }
 
     jfTween() {
@@ -223,19 +222,20 @@ export default class Plaza extends RoomScene {
             onComplete: () => this.jfTween()
         });
     }
-	
-	jfTween2(){
+
+    jfTween2(){
         let tween2 = this.tweens.add({
             targets: this.jellyfish,
             x: 1600,
-            duration: 10000
+            duration: 20000,
+            onComplete: () => this.onjfTween2Complete()
         });
-	}
-	
-	onjfTween2Complete(){
-		this.jellyfish.x = -200
-		this.jfTween2()
-	}
+    }
+
+    onjfTween2Complete(){
+        this.jellyfish.x = -200
+        this.jfTween2()
+    }
     /* END-USER-CODE */
 }
 

@@ -6,6 +6,7 @@ import pin from './pin'
 
 
 if (!localStorage.getItem('webgl')) { localStorage.setItem('webgl', 'true')}
+if (!localStorage.getItem('debugMode')) { localStorage.setItem('debugMode', 'false')}
 if (!localStorage.getItem('clientMode')) { localStorage.setItem('clientMode', 'legacy')}
 
 const cpforever = {
@@ -26,8 +27,8 @@ const cpforever = {
         default: 'matter',
         matter: {
             debug: {
-                renderFill: (window.location.hostname == 'localhost') ? true : false,
-                renderLine: (window.location.hostname == 'localhost') ? true : false,
+                renderFill: (localStorage.getItem('debugMode') === 'true') ? true : false,
+                renderLine: (localStorage.getItem('debugMode') === 'true') ? true : false,
                 showInternalEdges: true
             },
             gravity: false

@@ -134,7 +134,7 @@ export default class Town extends RoomScene {
         school.add(fish);
 
         // water
-        const water = this.add.image(744.7308652929812, 1015.7412221893121, "town-underwater", "water");
+        const water = this.add.image(745, 1029, "town-underwater", "water");
         water.setOrigin(0.47662551505534595, 1.005400025272565);
 
         // lists
@@ -170,7 +170,7 @@ export default class Town extends RoomScene {
     create(){
         super.create()
         this.fishTween()
-		this.fishTween2()
+        this.fishTween2()
     }
 
     fishTween() {
@@ -192,20 +192,20 @@ export default class Town extends RoomScene {
             onComplete: () => this.fishTween()
         });
     }
-	
-	fishTween2() {
+
+    fishTween2() {
         let tween2 = this.tweens.add({
             targets: this.school,
             x: -200,
             duration: 25000,
-			onComplete: () => this.onFishTween2Complete()
+            onComplete: () => this.onFishTween2Complete()
         });
     }
-	
-	onFishTween2Complete(){
-		this.school.x = 1600
-		this.fishTween2()
-	}
+
+    onFishTween2Complete(){
+        this.school.x = 1600
+        this.fishTween2()
+    }
 
     /* END-USER-CODE */
 }
