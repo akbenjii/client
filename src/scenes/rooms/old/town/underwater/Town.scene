@@ -1,5 +1,5 @@
 {
-    "id": "344f1845-29ea-42db-a3a8-a19aa8716259",
+    "id": "9aa925e5-f17f-4b82-8ae8-641c3aac7998",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -18,30 +18,29 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "21bbb0a2-0327-46f9-8472-29a729848d75",
+            "id": "361faccf-402a-4a74-a3d2-cddf5b759849",
             "label": "bg",
             "components": [],
             "texture": {
-                "key": "town",
+                "key": "town-underwater",
                 "frame": "bg"
             },
-            "x": -10,
-            "originX": 0,
-            "originY": 0
+            "x": 760,
+            "y": 480
         },
         {
             "type": "Image",
-            "id": "79ce3240-4965-41fc-a51b-a2b6ec9c624d",
-            "label": "fg",
+            "id": "dd383593-00b4-466d-8e64-a19783b85d49",
+            "label": "outline",
             "components": [],
             "texture": {
-                "key": "town",
-                "frame": "fg"
+                "key": "town-underwater",
+                "frame": "outline"
             },
-            "x": -63,
-            "y": 976,
-            "originX": 0,
-            "originY": 1
+            "x": 1407,
+            "y": 700,
+            "scaleX": 0.5714877839302157,
+            "scaleY": 0.5714877839302157
         },
         {
             "type": "Image",
@@ -73,193 +72,6 @@
         },
         {
             "type": "Image",
-            "id": "b0692d84-8da0-4b15-bbb2-751704bee709",
-            "label": "coffee_door",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.spriteName": "coffee_door",
-            "Button.activeFrame": false,
-            "Button.pixelPerfect": true,
-            "MoveTo.x": 550,
-            "MoveTo.y": 450,
-            "texture": {
-                "key": "town",
-                "frame": "coffee_door"
-            },
-            "x": 449,
-            "y": 305,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "5c2f7dd4-607f-4d1d-afcd-cb7b37bdbe0f",
-            "label": "gift_door",
-            "components": [
-                "Button",
-                "MoveTo"
-            ],
-            "Button.spriteName": "gift_door",
-            "Button.activeFrame": false,
-            "Button.pixelPerfect": true,
-            "MoveTo.x": 1010,
-            "MoveTo.y": 466,
-            "texture": {
-                "key": "town",
-                "frame": "gift_door"
-            },
-            "x": 995,
-            "y": 294,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "bfabdf1f-c4c7-4ece-8599-ca93c8326447",
-            "label": "canopy",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onCanopyOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onCanopyOut()",
-            "MoveTo.x": 684,
-            "MoveTo.y": 410,
-            "texture": {
-                "key": "town",
-                "frame": "canopy"
-            },
-            "x": 692,
-            "y": 464,
-            "originX": 0.49606299212598426,
-            "originY": 0.9403669724770642
-        },
-        {
-            "type": "Sprite",
-            "id": "45fa492b-a213-4d30-acbe-ebe11fa805c1",
-            "label": "canopy_lights",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "canopy_lights",
-            "Animation.end": 57,
-            "Animation.autoPlay": false,
-            "Animation.showOnStart": true,
-            "Animation.hideOnComplete": true,
-            "texture": {
-                "key": "town",
-                "frame": "canopy_lights0001"
-            },
-            "x": 648,
-            "y": 548,
-            "originX": 0,
-            "originY": 7.142857142857143,
-            "visible": false
-        },
-        {
-            "type": "Image",
-            "id": "cae986f7-795f-4d18-9618-d35f387c2e18",
-            "label": "canopy_stars",
-            "components": [],
-            "texture": {
-                "key": "town",
-                "frame": "canopy_stars"
-            },
-            "x": 647,
-            "y": 548,
-            "originX": 0,
-            "originY": 7.142857142857143
-        },
-        {
-            "type": "Sprite",
-            "id": "b0d00512-60c5-428b-b7ad-5146af3ba382",
-            "label": "disco_lights",
-            "scope": "CLASS",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "disco_lights",
-            "Animation.end": 57,
-            "Animation.autoPlay": false,
-            "Animation.showOnStart": true,
-            "Animation.hideOnComplete": true,
-            "texture": {
-                "key": "town",
-                "frame": "disco_lights0007"
-            },
-            "x": 766,
-            "y": 332,
-            "originX": 0,
-            "originY": 0,
-            "visible": false
-        },
-        {
-            "type": "Image",
-            "id": "c71b8a27-c71e-4eab-81e9-86a8b3bf87c1",
-            "label": "disco",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "town",
-                "frame": "disco"
-            },
-            "x": 648,
-            "y": 229,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Sprite",
-            "id": "c7026824-f8f6-4305-8fe6-dc81d73f5d02",
-            "label": "lights",
-            "components": [
-                "Animation"
-            ],
-            "Animation.key": "lights",
-            "Animation.end": 69,
-            "Animation.repeatDelay": 1,
-            "texture": {
-                "key": "town",
-                "frame": "lights0001"
-            },
-            "x": 518,
-            "y": -75,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "d2f7523e-4ee3-4112-afea-1031b0bde58e",
-            "label": "box_1",
-            "components": [],
-            "texture": {
-                "key": "town",
-                "frame": "box_1"
-            },
-            "x": 973,
-            "y": 432,
-            "originX": 0.49382716049382713,
-            "originY": 0.6268656716417911
-        },
-        {
-            "type": "Image",
-            "id": "0c94c016-2a42-4413-bfc0-abe028143024",
-            "label": "box_2",
-            "components": [],
-            "texture": {
-                "key": "town",
-                "frame": "box_2"
-            },
-            "x": 954,
-            "y": 483,
-            "originX": 0.49504950495049505,
-            "originY": 0.6736842105263158
-        },
-        {
-            "type": "Image",
             "id": "40a013ea-83e9-4eff-8634-46134d60d75a",
             "label": "box_3",
             "components": [],
@@ -281,8 +93,8 @@
                 "key": "town",
                 "frame": "chair_2"
             },
-            "x": 436,
-            "y": 462,
+            "x": 372,
+            "y": 496,
             "originX": 0.49382716049382713,
             "originY": 0.27358490566037735
         },
@@ -295,8 +107,8 @@
                 "key": "town",
                 "frame": "table_2"
             },
-            "x": 485,
-            "y": 523,
+            "x": 440,
+            "y": 561,
             "originY": 0.7864077669902912
         },
         {
@@ -308,8 +120,8 @@
                 "key": "town",
                 "frame": "chair_1"
             },
-            "x": 402,
-            "y": 511,
+            "x": 338,
+            "y": 545,
             "originX": 0.49411764705882355,
             "originY": 0.2857142857142857
         },
@@ -322,10 +134,208 @@
                 "key": "town",
                 "frame": "table_1"
             },
-            "x": 455,
-            "y": 575,
+            "x": 410,
+            "y": 613,
             "originX": 0.49572649572649574,
             "originY": 0.7830188679245284
+        },
+        {
+            "type": "Image",
+            "id": "4aa592e7-9389-42e5-a4c7-0d5ab0dd54a1",
+            "label": "clothesdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "clothesdoor",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "town-underwater",
+                "frame": "clothesdoor"
+            },
+            "x": 1033,
+            "y": 438
+        },
+        {
+            "type": "Image",
+            "id": "58d0467f-830b-4fc7-87a8-7d4086e01113",
+            "label": "coffeedoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "coffeedoor",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "town-underwater",
+                "frame": "coffeedoor"
+            },
+            "x": 535,
+            "y": 432
+        },
+        {
+            "type": "Image",
+            "id": "e08ba838-777a-4fa1-8ff2-997febc71c16",
+            "label": "nightclubdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "nightclubdoor",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "town-underwater",
+                "frame": "nightclubdoor"
+            },
+            "x": 690,
+            "y": 447
+        },
+        {
+            "type": "Image",
+            "id": "e69dae42-64e4-4b9f-aa98-60337dc00c79",
+            "label": "reeds",
+            "components": [],
+            "texture": {
+                "key": "town-underwater",
+                "frame": "reeds"
+            },
+            "x": 131,
+            "y": 660,
+            "scaleX": 0.5714877839302157,
+            "scaleY": 0.5714877839302157
+        },
+        {
+            "type": "Image",
+            "id": "715e0fb4-1710-4e7d-98fe-ce271f7d0b23",
+            "label": "snail",
+            "components": [],
+            "texture": {
+                "key": "town-underwater",
+                "frame": "snail"
+            },
+            "x": 588,
+            "y": 792
+        },
+        {
+            "type": "Image",
+            "id": "92e13e3c-b3c2-4170-a981-e4dddbb3f31f",
+            "label": "stickoutplant",
+            "components": [],
+            "texture": {
+                "key": "town-underwater",
+                "frame": "stickoutplant"
+            },
+            "x": 1453,
+            "y": 735,
+            "scaleX": 0.5712834770332192,
+            "scaleY": 0.5712834770332192
+        },
+        {
+            "type": "Image",
+            "id": "06dea660-a345-4fce-971e-46a8c0098606",
+            "label": "minecoral",
+            "components": [],
+            "texture": {
+                "key": "town-underwater",
+                "frame": "minecoral"
+            },
+            "x": 1314,
+            "y": 802,
+            "scaleX": 0.5714877839302157,
+            "scaleY": 0.5714877839302157
+        },
+        {
+            "type": "Image",
+            "id": "886d9667-5c3d-4a78-9d07-42fa4d72957a",
+            "label": "coral",
+            "components": [],
+            "texture": {
+                "key": "town-underwater",
+                "frame": "coral"
+            },
+            "x": 1496,
+            "y": 625,
+            "scaleX": 0.5714877839302157,
+            "scaleY": 0.5714877839302157
+        },
+        {
+            "type": "Container",
+            "id": "13e46e01-a424-49df-b6ee-44353ac6f30f",
+            "label": "school",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1600,
+            "y": 282,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "d0169c8a-f952-484d-aa96-e0faaa2fbf74",
+                    "label": "fish_1",
+                    "components": [],
+                    "texture": {
+                        "key": "town-underwater",
+                        "frame": "fish"
+                    },
+                    "x": 20,
+                    "y": 50,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                },
+                {
+                    "type": "Image",
+                    "id": "c771679c-9f77-4050-8d47-b2ac1499daeb",
+                    "label": "fish_2",
+                    "components": [],
+                    "texture": {
+                        "key": "town-underwater",
+                        "frame": "fish"
+                    },
+                    "x": 83,
+                    "y": 10,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                },
+                {
+                    "type": "Image",
+                    "id": "69249f0c-b711-44b4-b490-992376f19d80",
+                    "label": "fish_3",
+                    "components": [],
+                    "texture": {
+                        "key": "town-underwater",
+                        "frame": "fish"
+                    },
+                    "x": 102,
+                    "y": 60,
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                },
+                {
+                    "type": "Image",
+                    "id": "7898f3f6-3da2-461c-86d4-d2fbc20a5f76",
+                    "label": "fish",
+                    "components": [],
+                    "texture": {
+                        "key": "town-underwater",
+                        "frame": "fish"
+                    },
+                    "scaleX": 0.4,
+                    "scaleY": 0.4
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "bbb09448-467d-4446-8c14-81b7b7db336e",
+            "label": "water",
+            "components": [],
+            "texture": {
+                "key": "town-underwater",
+                "frame": "water"
+            },
+            "x": 744.7308652929812,
+            "y": 1015.7412221893121,
+            "originX": 0.47662551505534595,
+            "originY": 1.005400025272565
         }
     ],
     "plainObjects": [],
@@ -340,17 +350,17 @@
             "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
             "label": "sort",
             "objectIds": [
-                "79ce3240-4965-41fc-a51b-a2b6ec9c624d",
-                "0c94c016-2a42-4413-bfc0-abe028143024",
-                "d2f7523e-4ee3-4112-afea-1031b0bde58e",
                 "40a013ea-83e9-4eff-8634-46134d60d75a",
                 "97ca136f-d936-4bb2-8db1-381245bfaa5b",
                 "da800ad3-3d6f-4c6b-be77-696bbf7e30b5",
                 "dafb207c-e4d9-4941-83f8-9351f393e0a0",
                 "52130162-4cfc-4f67-b4b2-fa16fd824ee2",
-                "bfabdf1f-c4c7-4ece-8599-ca93c8326447",
-                "cae986f7-795f-4d18-9618-d35f387c2e18",
-                "45fa492b-a213-4d30-acbe-ebe11fa805c1"
+                "bbb09448-467d-4446-8c14-81b7b7db336e",
+                "886d9667-5c3d-4a78-9d07-42fa4d72957a",
+                "06dea660-a345-4fce-971e-46a8c0098606",
+                "92e13e3c-b3c2-4170-a981-e4dddbb3f31f",
+                "715e0fb4-1710-4e7d-98fe-ce271f7d0b23",
+                "e69dae42-64e4-4b9f-aa98-60337dc00c79"
             ]
         }
     ]

@@ -161,130 +161,140 @@ export default class Pizza extends RoomScene {
         // steam
         const steam = this.add.sprite(43, 165, "pizza", "smoke0001.png");
 
-        // backdrop_kitchen_sign_
-        const backdrop_kitchen_sign_ = this.add.image(760, 576, "underwater pizza bro ", "backdrop kitchen sign ");
-        backdrop_kitchen_sign_.scaleX = 22.71711898666748;
-        backdrop_kitchen_sign_.scaleY = 35.556484727609686;
-
         // fire
         const fire = this.add.sprite(110, 770, "pizza", "fire0001.png");
         fire.scaleX = 1.02;
         fire.scaleY = 1.02;
 
-        // pizza_main_body_
-        const pizza_main_body_ = this.add.image(748, 494, "underwater pizza bro ", "pizza main body ");
-        pizza_main_body_.scaleX = 1.796505474979063;
-        pizza_main_body_.scaleY = 1.8886548009513673;
+        // backdrop
+        const backdrop = this.add.image(749, 487, "pizzauw", "backdrop");
+        backdrop.scaleX = 21.98878391955197;
+        backdrop.scaleY = 43.349570771910145;
 
-        // thing_next_to_pizza
-        const thing_next_to_pizza = this.add.image(91, 555, "underwater pizza bro ", "thing next to pizza");
-        thing_next_to_pizza.scaleX = 1.8657198006207159;
-        thing_next_to_pizza.scaleY = 1.5266911241299899;
+        // pmain
+        const pmain = this.add.image(764, 496, "pizzauw", "pmain");
+        pmain.scaleX = 1.8227368840109925;
+        pmain.scaleY = 1.8122661126190478;
 
-        // paddocks_on_left_wall_
-        const paddocks_on_left_wall_ = this.add.image(116, 204, "underwater pizza bro ", "paddocks on left wall ");
-        paddocks_on_left_wall_.scaleX = 1.558113491117481;
-        paddocks_on_left_wall_.scaleY = 1.6443767126506375;
+        // door
+        const door = this.add.image(842, 319, "pizzauw", "door");
+        door.scaleX = 1.478404627790882;
+        door.scaleY = 1.6157851011891888;
 
-        // umm_a_fishing_pole_
-        const umm_a_fishing_pole_ = this.add.image(562, 160, "underwater pizza bro ", "umm a fishing pole ");
-        umm_a_fishing_pole_.scaleX = 1.4155277479793775;
-        umm_a_fishing_pole_.scaleY = 1.4404021568711496;
+        // paddocks
+        const paddocks = this.add.image(133, 211, "pizzauw", "paddocks");
+        paddocks.scaleX = 1.6009818104365838;
+        paddocks.scaleY = 1.7356805634010546;
 
-        // pizza_left_drapes_0002
-        const pizza_left_drapes_0002 = this.add.image(386, 244, "underwater pizza bro ", "pizza left drapes 0002");
-        pizza_left_drapes_0002.scaleX = 4.334616065094522;
-        pizza_left_drapes_0002.scaleY = 2.2239337633555043;
+        // d1
+        const d1 = this.add.image(373, 252, "pizzauw", "d1");
+        d1.scaleX = 2.355500813353176;
+        d1.scaleY = 2.0583451870508047;
 
-        // pizza_door_0001
-        const pizza_door_0001 = this.add.image(801, 260, "underwater pizza bro ", "pizza door 0001");
-        pizza_door_0001.scaleX = 1.8035093724592606;
-        pizza_door_0001.scaleY = 1.8349590462294025;
+        // ropes
+        const ropes = this.add.image(1234, 564, "pizzauw", "ropes");
+        ropes.scaleX = 1.7926217082912745;
+        ropes.scaleY = 2.031241006793441;
 
-        // piano_top_right_
-        const piano_top_right_ = this.add.image(1393, 412, "underwater pizza bro ", "piano top right ");
-        piano_top_right_.scaleX = 1.7791049266942758;
-        piano_top_right_.scaleY = 1.7167877688491053;
+        // kitchen
+        const kitchen = this.add.image(372, 83, "pizzauw", "kitchen");
+        kitchen.scaleX = 2.240581153227635;
+        kitchen.scaleY = 3.078304423922189;
 
-        // pirate_picture_on_right_
-        const pirate_picture_on_right_ = this.add.image(1242, 172, "underwater pizza bro ", "pirate picture on right ");
-        pirate_picture_on_right_.scaleX = 1.6987259166828446;
-        pirate_picture_on_right_.scaleY = 1.8043432597598223;
+        // pole
+        const pole = this.add.image(568, 196, "pizzauw", "pole");
+        pole.scaleX = 1.5971149616356306;
+        pole.scaleY = 2.0553071066108166;
 
-        // bottom_right_table_right_
-        const bottom_right_table_right_ = this.add.image(600, 599, "underwater pizza bro ", "bottom right table right ");
-        bottom_right_table_right_.scaleX = 2.2362550658530855;
-        bottom_right_table_right_.scaleY = 1.90273946420956;
+        // stick
+        const stick = this.add.image(116, 483, "pizzauw", "stick");
+        stick.scaleX = 1.9190118749746492;
+        stick.scaleY = 1.4771927202468975;
 
-        // bottom_left_pizza_
-        const bottom_left_pizza_ = this.add.image(137, 635, "underwater pizza bro ", "bottom left pizza ");
-        bottom_left_pizza_.scaleX = 1.3964534001333302;
-        bottom_left_pizza_.scaleY = 1.2718565877244006;
+        // chair
+        const chair = this.add.image(352, 620, "pizzauw", "chair");
+        chair.scaleX = 2.303830201481547;
+        chair.scaleY = 2.027573331958285;
 
-        // bottom_right_right_chair_
-        const bottom_right_right_chair_ = this.add.image(344, 603, "underwater pizza bro ", "bottom right right chair ");
-        bottom_right_right_chair_.scaleX = 2.4756951756522976;
-        bottom_right_right_chair_.scaleY = 1.6206839303569662;
+        // burner
+        const burner = this.add.image(170, 590, "pizzauw", "burner");
+        burner.scaleX = 1.8471598599601966;
+        burner.scaleY = 1.5581707519376238;
 
-        // bottom_right_table_bro_
-        const bottom_right_table_bro_ = this.add.image(469, 644, "underwater pizza bro ", "bottom right table bro ");
-        bottom_right_table_bro_.scaleX = 2.5316217231689224;
-        bottom_right_table_bro_.scaleY = 2.3965010275120475;
+        // counter
+        const counter = this.add.image(530, 372, "pizzauw", "counter");
+        counter.scaleX = 1.9607857627969505;
+        counter.scaleY = 2.139943137468814;
 
-        // bottom_right_right_chair__1
-        const bottom_right_right_chair__1 = this.add.image(634, 749, "underwater pizza bro ", "bottom right right chair ");
-        bottom_right_right_chair__1.scaleX = 2.3474149174237997;
-        bottom_right_right_chair__1.scaleY = 1.9112831864892352;
+        // piano
+        const piano = this.add.image(1383, 411, "pizzauw", "piano");
+        piano.scaleX = 1.865591326282137;
+        piano.scaleY = 1.8302133359391617;
 
-        // bottom_right_table_right__2
-        const bottom_right_table_right__2 = this.add.image(1219, 705, "underwater pizza bro ", "bottom right table right ");
-        bottom_right_table_right__2.scaleX = 2.6375716712981356;
-        bottom_right_table_right__2.scaleY = 2.0485193822286125;
+        // tright
+        const tright = this.add.image(1436, 133, "pizzauw", "tright");
+        tright.scaleX = 2.3008586179500483;
+        tright.scaleY = 2.2433434825384237;
 
-        // bottom_right_right_chair__2
-        const bottom_right_right_chair__2 = this.add.image(932, 666, "underwater pizza bro ", "bottom right right chair ");
-        bottom_right_right_chair__2.scaleX = 2.5699248347577113;
-        bottom_right_right_chair__2.scaleY = 1.7237661607726262;
+        // picture
+        const picture = this.add.image(1209, 193, "pizzauw", "picture");
+        picture.scaleX = 1.5693787274944104;
+        picture.scaleY = 1.640340489214777;
 
-        // bottom_right_table_right__1
-        const bottom_right_table_right__1 = this.add.image(890, 759, "underwater pizza bro ", "bottom right table right ");
-        bottom_right_table_right__1.scaleX = 2.55083887787556;
-        bottom_right_table_right__1.scaleY = 1.7806758467169552;
+        // fpole
+        const fpole = this.add.image(594, 189, "pizzauw", "fpole");
+        fpole.scaleX = 2.0117596267568625;
+        fpole.scaleY = 1.9262108783426846;
 
-        // bottom_right_table_bro__1
-        const bottom_right_table_bro__1 = this.add.image(763, 789, "underwater pizza bro ", "bottom right table bro ");
-        bottom_right_table_bro__1.scaleX = 2.696088853723264;
-        bottom_right_table_bro__1.scaleY = 2.5411294330351883;
+        // fmenu
+        const fmenu = this.add.image(1022, 147, "pizzauw", "fmenu");
+        fmenu.scaleX = 1.996117500623934;
+        fmenu.scaleY = 1.671158508063399;
 
-        // bottom_right_table_bro__2
-        const bottom_right_table_bro__2 = this.add.image(1076, 718, "underwater pizza bro ", "bottom right table bro ");
-        bottom_right_table_bro__2.scaleX = 2.6772306252007603;
-        bottom_right_table_bro__2.scaleY = 2.3328409235349;
+        // s1
+        const s1 = this.add.image(133, 130, "pizzauw", "s1");
+        s1.scaleX = 2.986869430428275;
+        s1.scaleY = 2.696810049781589;
 
-        // main_counter_pizza_
-        const main_counter_pizza_ = this.add.image(561, 382, "underwater pizza bro ", "main counter pizza ");
-        main_counter_pizza_.scaleX = 1.6114699369089558;
-        main_counter_pizza_.scaleY = 2.025492911069078;
+        // chair2
+        const chair2 = this.add.image(622, 622, "pizzauw", "chair2");
+        chair2.scaleX = 2.0541713218881643;
+        chair2.scaleY = 2.14224625186069;
 
-        // top_right_light_
-        const top_right_light_ = this.add.image(1374, 96, "underwater pizza bro ", "top right light ");
-        top_right_light_.scaleX = 1.885970318623694;
-        top_right_light_.scaleY = 1.5847190709835934;
+        // chair_2
+        const chair_2 = this.add.image(933, 646, "pizzauw", "chair");
+        chair_2.scaleX = 2.0862954087316266;
+        chair_2.scaleY = 1.8249269415787195;
 
-        // ropes_bottom_right_
-        const ropes_bottom_right_ = this.add.image(1219, 566, "underwater pizza bro ", "ropes bottom right ");
-        ropes_bottom_right_.scaleX = 1.8275988648205295;
-        ropes_bottom_right_.scaleY = 2.323781856138505;
+        // chair2_1
+        const chair2_1 = this.add.image(878, 730, "pizzauw", "chair2");
+        chair2_1.scaleX = 2.262843721476803;
+        chair2_1.scaleY = 2.11391239515755;
 
-        // fish_menu_on_wall_
-        const fish_menu_on_wall_ = this.add.image(1024, 143, "underwater pizza bro ", "fish menu on wall ");
-        fish_menu_on_wall_.scaleX = 1.5304131741969895;
-        fish_menu_on_wall_.scaleY = 1.5664719043254882;
+        // table1
+        const table1 = this.add.image(507, 653, "pizzauw", "table1");
+        table1.scaleX = 2.430568796349566;
+        table1.scaleY = 2.0934499676275857;
 
-        // anotha_one_fishing_pole_
-        const anotha_one_fishing_pole_ = this.add.image(601, 200, "underwater pizza bro ", "anotha one fishing pole ");
-        anotha_one_fishing_pole_.scaleX = 1.4414993257707496;
-        anotha_one_fishing_pole_.scaleY = 1.6614041541685667;
+        // chair_1
+        const chair_1 = this.add.image(617, 709, "pizzauw", "chair");
+        chair_1.scaleX = 2.1671039372153653;
+        chair_1.scaleY = 2.131593570155252;
+
+        // table2
+        const table2 = this.add.image(768, 752, "pizzauw", "table2");
+        table2.scaleX = 2.5689493890348336;
+        table2.scaleY = 2.3679202839282407;
+
+        // chair3
+        const chair3 = this.add.image(1213, 664, "pizzauw", "chair3");
+        chair3.scaleX = 2.4312664956501386;
+        chair3.scaleY = 2.1884051933742255;
+
+        // table2_1
+        const table2_1 = this.add.image(1071, 709, "pizzauw", "table2");
+        table2_1.scaleX = 2.5703793307654097;
+        table2_1.scaleY = 2.2259766514258628;
 
         // lists
         const sort = [piano_png, chair1_png, chair2_png, chair3_png, chair4_png, chair5_png, chair6_png, candle_fire10001_png, table1_png, candle_fire2, table2_png, candle_fire3, table3_png, big_table_png, register0001_png, book_hover0001_png];

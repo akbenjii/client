@@ -10,13 +10,9 @@ export default class Town extends RoomScene {
     constructor() {
         super("Town");
 
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.canopy_lights;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.disco_lights;
-        /** @type {Phaser.GameObjects.Image} */
-        this.disco;
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        /** @type {Phaser.GameObjects.Container} */
+        this.school;
+        /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
 
@@ -43,12 +39,12 @@ export default class Town extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.image(-10, 0, "town", "bg");
-        bg.setOrigin(0, 0);
+        this.add.image(760, 480, "town-underwater", "bg");
 
-        // fg
-        const fg = this.add.image(-63, 976, "town", "fg");
-        fg.setOrigin(0, 1);
+        // outline
+        const outline = this.add.image(1407, 700, "town-underwater", "outline");
+        outline.scaleX = 0.5714877839302157;
+        outline.scaleY = 0.5714877839302157;
 
         // left_sign
         const left_sign = this.add.image(179, 450, "town", "left_sign");
@@ -58,122 +54,111 @@ export default class Town extends RoomScene {
         const right_sign = this.add.image(1286, 465, "town", "right_sign");
         right_sign.setOrigin(0, 0);
 
-        // coffee_door
-        const coffee_door = this.add.image(449, 305, "town", "coffee_door");
-        coffee_door.setOrigin(0, 0);
-
-        // gift_door
-        const gift_door = this.add.image(995, 294, "town", "gift_door");
-        gift_door.setOrigin(0, 0);
-
-        // canopy
-        const canopy = this.add.image(692, 464, "town", "canopy");
-        canopy.setOrigin(0.49606299212598426, 0.9403669724770642);
-
-        // canopy_lights
-        const canopy_lights = this.add.sprite(648, 548, "town", "canopy_lights0001");
-        canopy_lights.setOrigin(0, 7.142857142857143);
-        canopy_lights.visible = false;
-
-        // canopy_stars
-        const canopy_stars = this.add.image(647, 548, "town", "canopy_stars");
-        canopy_stars.setOrigin(0, 7.142857142857143);
-
-        // disco_lights
-        const disco_lights = this.add.sprite(766, 332, "town", "disco_lights0007");
-        disco_lights.setOrigin(0, 0);
-        disco_lights.visible = false;
-
-        // disco
-        const disco = this.add.image(648, 229, "town", "disco");
-        disco.setOrigin(0, 0);
-
-        // lights
-        const lights = this.add.sprite(518, -75, "town", "lights0001");
-        lights.setOrigin(0, 0);
-
-        // box_1
-        const box_1 = this.add.image(973, 432, "town", "box_1");
-        box_1.setOrigin(0.49382716049382713, 0.6268656716417911);
-
-        // box_2
-        const box_2 = this.add.image(954, 483, "town", "box_2");
-        box_2.setOrigin(0.49504950495049505, 0.6736842105263158);
-
         // box_3
         const box_3 = this.add.image(1148, 581, "town", "box_3");
         box_3.setOrigin(0.4943820224719101, 0.5569620253164557);
 
         // chair_2
-        const chair_2 = this.add.image(436, 462, "town", "chair_2");
+        const chair_2 = this.add.image(372, 496, "town", "chair_2");
         chair_2.setOrigin(0.49382716049382713, 0.27358490566037735);
 
         // table_2
-        const table_2 = this.add.image(485, 523, "town", "table_2");
+        const table_2 = this.add.image(440, 561, "town", "table_2");
         table_2.setOrigin(0.5, 0.7864077669902912);
 
         // chair_1
-        const chair_1 = this.add.image(402, 511, "town", "chair_1");
+        const chair_1 = this.add.image(338, 545, "town", "chair_1");
         chair_1.setOrigin(0.49411764705882355, 0.2857142857142857);
 
         // table_1
-        const table_1 = this.add.image(455, 575, "town", "table_1");
+        const table_1 = this.add.image(410, 613, "town", "table_1");
         table_1.setOrigin(0.49572649572649574, 0.7830188679245284);
 
+        // clothesdoor
+        const clothesdoor = this.add.image(1033, 438, "town-underwater", "clothesdoor");
+
+        // coffeedoor
+        const coffeedoor = this.add.image(535, 432, "town-underwater", "coffeedoor");
+
+        // nightclubdoor
+        const nightclubdoor = this.add.image(690, 447, "town-underwater", "nightclubdoor");
+
+        // reeds
+        const reeds = this.add.image(131, 660, "town-underwater", "reeds");
+        reeds.scaleX = 0.5714877839302157;
+        reeds.scaleY = 0.5714877839302157;
+
+        // snail
+        const snail = this.add.image(588, 792, "town-underwater", "snail");
+
+        // stickoutplant
+        const stickoutplant = this.add.image(1453, 735, "town-underwater", "stickoutplant");
+        stickoutplant.scaleX = 0.5712834770332192;
+        stickoutplant.scaleY = 0.5712834770332192;
+
+        // minecoral
+        const minecoral = this.add.image(1314, 802, "town-underwater", "minecoral");
+        minecoral.scaleX = 0.5714877839302157;
+        minecoral.scaleY = 0.5714877839302157;
+
+        // coral
+        const coral = this.add.image(1496, 625, "town-underwater", "coral");
+        coral.scaleX = 0.5714877839302157;
+        coral.scaleY = 0.5714877839302157;
+
+        // school
+        const school = this.add.container(1600, 282);
+
+        // fish_1
+        const fish_1 = this.add.image(20, 50, "town-underwater", "fish");
+        fish_1.scaleX = 0.4;
+        fish_1.scaleY = 0.4;
+        school.add(fish_1);
+
+        // fish_2
+        const fish_2 = this.add.image(83, 10, "town-underwater", "fish");
+        fish_2.scaleX = 0.4;
+        fish_2.scaleY = 0.4;
+        school.add(fish_2);
+
+        // fish_3
+        const fish_3 = this.add.image(102, 60, "town-underwater", "fish");
+        fish_3.scaleX = 0.4;
+        fish_3.scaleY = 0.4;
+        school.add(fish_3);
+
+        // fish
+        const fish = this.add.image(0, 0, "town-underwater", "fish");
+        fish.scaleX = 0.4;
+        fish.scaleY = 0.4;
+        school.add(fish);
+
+        // water
+        const water = this.add.image(744.7308652929812, 1015.7412221893121, "town-underwater", "water");
+        water.setOrigin(0.47662551505534595, 1.005400025272565);
+
         // lists
-        const sort = [fg, box_2, box_1, box_3, chair_2, chair_1, table_1, table_2, canopy, canopy_stars, canopy_lights];
+        const sort = [box_3, chair_2, chair_1, table_1, table_2, water, coral, minecoral, stickoutplant, snail, reeds];
 
-        // coffee_door (components)
-        const coffee_doorButton = new Button(coffee_door);
-        coffee_doorButton.spriteName = "coffee_door";
-        coffee_doorButton.activeFrame = false;
-        coffee_doorButton.pixelPerfect = true;
-        const coffee_doorMoveTo = new MoveTo(coffee_door);
-        coffee_doorMoveTo.x = 550;
-        coffee_doorMoveTo.y = 450;
+        // clothesdoor (components)
+        const clothesdoorButton = new Button(clothesdoor);
+        clothesdoorButton.spriteName = "clothesdoor";
+        clothesdoorButton.activeFrame = false;
+        new MoveTo(clothesdoor);
 
-        // gift_door (components)
-        const gift_doorButton = new Button(gift_door);
-        gift_doorButton.spriteName = "gift_door";
-        gift_doorButton.activeFrame = false;
-        gift_doorButton.pixelPerfect = true;
-        const gift_doorMoveTo = new MoveTo(gift_door);
-        gift_doorMoveTo.x = 1010;
-        gift_doorMoveTo.y = 466;
+        // coffeedoor (components)
+        const coffeedoorButton = new Button(coffeedoor);
+        coffeedoorButton.spriteName = "coffeedoor";
+        coffeedoorButton.activeFrame = false;
+        new MoveTo(coffeedoor);
 
-        // canopy (components)
-        const canopySimpleButton = new SimpleButton(canopy);
-        canopySimpleButton.hoverCallback = () => this.onCanopyOver();
-        canopySimpleButton.hoverOutCallback = () => this.onCanopyOut();
-        const canopyMoveTo = new MoveTo(canopy);
-        canopyMoveTo.x = 684;
-        canopyMoveTo.y = 410;
+        // nightclubdoor (components)
+        const nightclubdoorButton = new Button(nightclubdoor);
+        nightclubdoorButton.spriteName = "nightclubdoor";
+        nightclubdoorButton.activeFrame = false;
+        new MoveTo(nightclubdoor);
 
-        // canopy_lights (components)
-        const canopy_lightsAnimation = new Animation(canopy_lights);
-        canopy_lightsAnimation.key = "canopy_lights";
-        canopy_lightsAnimation.end = 57;
-        canopy_lightsAnimation.autoPlay = false;
-        canopy_lightsAnimation.showOnStart = true;
-        canopy_lightsAnimation.hideOnComplete = true;
-
-        // disco_lights (components)
-        const disco_lightsAnimation = new Animation(disco_lights);
-        disco_lightsAnimation.key = "disco_lights";
-        disco_lightsAnimation.end = 57;
-        disco_lightsAnimation.autoPlay = false;
-        disco_lightsAnimation.showOnStart = true;
-        disco_lightsAnimation.hideOnComplete = true;
-
-        // lights (components)
-        const lightsAnimation = new Animation(lights);
-        lightsAnimation.key = "lights";
-        lightsAnimation.end = 69;
-        lightsAnimation.repeatDelay = 1;
-
-        this.canopy_lights = canopy_lights;
-        this.disco_lights = disco_lights;
-        this.disco = disco;
+        this.school = school;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -182,17 +167,45 @@ export default class Town extends RoomScene {
 
     /* START-USER-CODE */
 
-    onCanopyOver() {
-        this.disco.setFrame('disco-hover')
-        this.canopy_lights.__Animation.play()
-        this.disco_lights.__Animation.play()
+    create(){
+        super.create()
+        this.fishTween()
+		this.fishTween2()
     }
 
-    onCanopyOut() {
-        this.disco.setFrame('disco')
-        this.canopy_lights.__Animation.stop()
-        this.disco_lights.__Animation.stop()
+    fishTween() {
+        let tween = this.tweens.add({
+            targets: this.school,
+            y: 280,
+            delay: 100,
+            duration: 300,
+            onComplete: () => this.onFishTweenComplete()
+        });
     }
+
+    onFishTweenComplete() {
+        let tween = this.tweens.add({
+            targets: this.school,
+            y: 285,
+            delay: 100,
+            duration: 300,
+            onComplete: () => this.fishTween()
+        });
+    }
+	
+	fishTween2() {
+        let tween2 = this.tweens.add({
+            targets: this.school,
+            x: -200,
+            duration: 25000,
+			onComplete: () => this.onFishTween2Complete()
+        });
+    }
+	
+	onFishTween2Complete(){
+		this.school.x = 1600
+		this.fishTween2()
+	}
 
     /* END-USER-CODE */
 }

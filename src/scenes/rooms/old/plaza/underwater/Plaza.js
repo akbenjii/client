@@ -194,6 +194,7 @@ export default class Plaza extends RoomScene {
         this.snorkbubbles.play('snorkbubbles')
         this.cavebubbles.play('cavebubbles')
         this.jfTween()
+		this.jfTween2()
         this.far_back_seaweed.play('far_back_seaweed')
         this.left_pet_seaweed.play('left_pet_seaweed')
         this.middle_seaweed.play('middle_seaweed')
@@ -211,12 +212,6 @@ export default class Plaza extends RoomScene {
             duration: 300,
             onComplete: () => this.onjfTweenComplete()
         });
-
-        let tween2 = this.tweens.add({
-            targets: this.jellyfish,
-            x: 1600,
-            duration: 10000
-        });
     }
 
     onjfTweenComplete() {
@@ -228,6 +223,19 @@ export default class Plaza extends RoomScene {
             onComplete: () => this.jfTween()
         });
     }
+	
+	jfTween2(){
+        let tween2 = this.tweens.add({
+            targets: this.jellyfish,
+            x: 1600,
+            duration: 10000
+        });
+	}
+	
+	onjfTween2Complete(){
+		this.jellyfish.x = -200
+		this.jfTween2()
+	}
     /* END-USER-CODE */
 }
 

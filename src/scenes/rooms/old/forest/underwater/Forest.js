@@ -8,7 +8,7 @@ export default class Forest extends RoomScene {
     constructor() {
         super("Forest");
 
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Array<any>} */
         this.sort;
 
 
@@ -33,40 +33,29 @@ export default class Forest extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg
-        const bg = this.add.image(-24, -13, "forest", "bg");
-        bg.setOrigin(0, 0);
+        // plant
+        this.add.image(755, 373, "forestuw", "plant");
 
-        // rock0001
-        const rock0001 = this.add.image(254, 681, "forest", "rock0001");
-        rock0001.setOrigin(0.6005747126436781, 0.7300884955752213);
+        // forestmain
+        this.add.image(457, 471, "forestuw", "forestmain");
 
-        // tree
-        const tree = this.add.image(-17, 272, "forest", "tree");
-        tree.setOrigin(0, 0);
-
-        // fg
-        const fg = this.add.image(-1, 969, "forest", "fg");
-        fg.setOrigin(0, 1);
-
-        // middle
-        const middle = this.add.image(781, 548, "forest", "middle");
-        middle.setOrigin(0.5, 0.608540925266904);
-
-        // stairs
-        const stairs = this.add.image(1129, 302, "forest", "stairs");
-        stairs.setOrigin(0, 0);
+        // bright
+        this.add.image(1358, 660, "forestuw", "bright");
 
         // rail
-        const rail = this.add.image(1441, 831, "forest", "rail");
-        rail.setOrigin(0.5, 0.5885714285714285);
+        this.add.image(1215, 923, "forestuw", "rail");
 
-        // sign
-        const sign = this.add.image(1317, 681, "forest", "sign");
-        sign.setOrigin(0.4794520547945205, 0.9397590361445783);
+        // tree
+        this.add.image(207, 720, "forestuw", "tree");
+
+        // board
+        this.add.image(1334, 639, "forestuw", "board");
+
+        // p2
+        this.add.image(488, 297, "forestuw", "p2");
 
         // lists
-        const sort = [sign, rail, middle, fg, tree, rock0001];
+        const sort = [];
 
         this.sort = sort;
 
