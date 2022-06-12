@@ -50,8 +50,8 @@ export default class Beacon extends RoomScene {
         front_rail.setOrigin(0.5044360693840665, 1.0296666844575377);
 
         // light
-        const light = this.add.image(702.1988459228754, 11.688948040327034, "beacon", "light");
-        light.setOrigin(0.485192994157257, 0.027770241243949233);
+        const light = this.add.image(685.0591748129182, 577.2994823523711, "beacon", "light");
+        light.setOrigin(0.4636877094550476, 0.8057764213716073);
 
         // crate
         this.add.image(331, 445, "beacon", "crate");

@@ -54,6 +54,7 @@ export default class RuffleManager {
 			url: "assets/media/games/swf/sse.swf",
 			allowScriptAccess: true,
 			quality: "low",
+			logLevel: "trace"
 		});
 	}
 	
@@ -96,12 +97,15 @@ export default class RuffleManager {
 
 	setCannonData(data){
 		console.log("set cannon data", data)
-		this.cannonData = data
+		let compressed = this.compressCannonData(data)
+		this.world.client.cannonData = compressed
+		this.world.network.send('set_cannon_data', { data: compressed })
 	}
 
 	getCannonData(){
-		console.log("get cannon data", this.cannonData)
-		return this.cannonData
+		console.log("get cannon data", this.world.client.cannonData)
+		let uncompressed = this.uncompressCannonData(this.world.client.cannonData)
+		return uncompressed
 	}
 
 	getStampInfo(stamp){
@@ -124,5 +128,55 @@ export default class RuffleManager {
 			}
 		}
 	}
+
+	compressCannonData(data){
+		let compressed = []
+		for(var x of data){
+			if (x[1] == true){
+				compressed.push(1)
+			}
+			else if (x[1] == false){
+				compressed.push(0)
+			}
+			else if (x[1] == 600){
+				compressed.push('A')
+			}
+			else{
+				compressed.push(x[1])
+			}
+		}
+		return compressed.join("#")
+	}
+
+	uncompressCannonData(data){
+		let uncompressed = []
+		let dataArray = data.split("#")
+		for(var x in dataArray){
+			if (x < 36) {
+				uncompressed.push(["level" + (parseInt(x) + 1) + "playerPuffleOs", dataArray[x]])
+			}
+			else if (x < 72) {
+				if (dataArray[x] == "A"){
+					uncompressed.push(["level" + (parseInt(x) - 35) + "bestTime", 600])
+				}
+				else{
+					uncompressed.push(["level" + (parseInt(x) -35) + "bestTime", dataArray[x]])
+				}
+			}
+			else if (x < 108) {
+				if (dataArray[x] == 0){
+					uncompressed.push(["level" + (parseInt(x) - 71) + "turboDone", false])
+				}
+				else if (dataArray[x] == 1){
+					uncompressed.push(["level" + (parseInt(x) - 71) + "turboDone", true])
+				}
+			}
+			else{
+				console.log("too much compressed cannon data, some has been ommitted!")
+			}
+		}
+		return uncompressed
+	}
+
 	
 }
