@@ -18,26 +18,12 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "2f1d38fc-4f8c-4b05-8c62-8b07cab9c125",
-            "label": "window",
+            "id": "f4373532-e96d-48ad-b11f-8cd9989ed705",
+            "label": "caveuw",
             "components": [],
             "texture": {
-                "key": "cave",
-                "frame": "window"
-            },
-            "x": 515,
-            "y": 265,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "4ee4b639-a483-4ac4-aacc-86ea78353d62",
-            "label": "bg",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "bg"
+                "key": "caveuw",
+                "frame": "caveuw"
             },
             "y": -14,
             "originX": 0,
@@ -100,34 +86,6 @@
         },
         {
             "type": "Image",
-            "id": "55662aab-8c39-4d23-90bc-5cf40da532ad",
-            "label": "chair_back",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "chair_back"
-            },
-            "x": 357,
-            "y": 399,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "995ccf4e-8213-468d-8848-73eec0c97a61",
-            "label": "chair_front",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "chair_front"
-            },
-            "x": 391,
-            "y": 490,
-            "originX": 0.5909090909090909,
-            "originY": 0.7115384615384616
-        },
-        {
-            "type": "Image",
             "id": "cf7e6d2f-911b-4db4-83f2-c87b36901721",
             "label": "door",
             "components": [
@@ -144,63 +102,6 @@
             },
             "x": 104,
             "y": 291,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "784439f5-e25a-4faf-96a2-e73025935b3b",
-            "label": "ring",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "ring"
-            },
-            "x": 376,
-            "y": 288,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "cc86f8ce-09af-45bd-a4ed-fc84ddd23b41",
-            "label": "board_1",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "board_1"
-            },
-            "x": 669,
-            "y": 455,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "67ded887-65de-4815-b18d-08fbcf274901",
-            "label": "board_1_1",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "board_1"
-            },
-            "x": 930,
-            "y": 440,
-            "angle": 10,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "5d51e4e8-155e-41c7-a435-947683e75091",
-            "label": "board_2",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "board_2"
-            },
-            "x": 693,
-            "y": 457,
             "originX": 0,
             "originY": 0
         },
@@ -425,8 +326,8 @@
                 "Zone"
             ],
             "Zone.callback": "() => this.onZoneClick()",
-            "x": 1319,
-            "y": 295,
+            "x": 1315,
+            "y": 363,
             "alpha": 0.5,
             "isFilled": true,
             "fillColor": "#00ff00",
@@ -569,9 +470,125 @@
                 "frame": "flood layer"
             },
             "x": 746,
-            "y": 673,
+            "y": 674,
             "scaleX": 1.4158373171144927,
             "scaleY": 1.08530653074996
+        },
+        {
+            "type": "Sprite",
+            "id": "12fe8b5f-3909-4f83-88ef-275f1ca3ac5e",
+            "label": "waterfall10001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "waterfall10001"
+            },
+            "x": 581,
+            "y": 454
+        },
+        {
+            "type": "Sprite",
+            "id": "fdb45954-8ad4-4070-bbfc-275859482ca9",
+            "label": "waterfall20001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "waterfall20001"
+            },
+            "x": 1065,
+            "y": 446
+        },
+        {
+            "type": "Image",
+            "id": "833c6ab5-45ed-49f3-b6dc-a469ca6d3ccd",
+            "label": "glass2",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "glass2"
+            },
+            "x": 449,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "51dae3ec-4e35-4357-9527-2566bd8309d2",
+            "label": "glass1",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "glass1"
+            },
+            "x": 451,
+            "y": 488,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Sprite",
+            "id": "62f9fec1-6806-4e75-b999-ed3ea2ef23d5",
+            "label": "cone10001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "cone10001"
+            },
+            "x": 506,
+            "y": 380
+        },
+        {
+            "type": "Sprite",
+            "id": "3135302a-582d-4b90-bcee-d2dbe40fe36d",
+            "label": "cone20001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "cone20001"
+            },
+            "x": 673,
+            "y": 380
+        },
+        {
+            "type": "Sprite",
+            "id": "96865b3e-13d1-41a6-95ad-e90443d5cc05",
+            "label": "boarduw0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "boarduw0001"
+            },
+            "x": 1181,
+            "y": 409
+        },
+        {
+            "type": "Sprite",
+            "id": "cc1acd84-e947-4217-9f4a-e1240553eadd",
+            "label": "floatieuw0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "floatieuw0001"
+            },
+            "x": 1147,
+            "y": 754
+        },
+        {
+            "type": "Image",
+            "id": "085e2d07-4cc1-4808-a600-9f63e9246c8d",
+            "label": "wateruw",
+            "components": [],
+            "texture": {
+                "key": "caveuw",
+                "frame": "wateruw"
+            },
+            "x": 813,
+            "y": 852
         }
     ],
     "plainObjects": [],
@@ -600,11 +617,11 @@
                 "9523692e-5de3-4993-a63e-0297db8e3442",
                 "0b399561-3d4c-4e20-b531-9f65bacd684d",
                 "d4f581e9-923d-4c75-84ca-ae1c781dfdf2",
-                "995ccf4e-8213-468d-8848-73eec0c97a61",
                 "1e6d8587-7ad0-4a0f-9e5e-4e89a967e609",
                 "fdefcf39-9eb7-4760-9f83-fec3e2efa502",
                 "212e8496-11a4-430b-8277-c1b9280cc8a9",
-                "f2c508bd-8ced-400f-97d9-b45f944a94ff"
+                "f2c508bd-8ced-400f-97d9-b45f944a94ff",
+                "cc1acd84-e947-4217-9f4a-e1240553eadd"
             ]
         }
     ]

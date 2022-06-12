@@ -8,6 +8,18 @@ export default class Rink extends RoomScene {
     constructor() {
         super("Rink");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.plant40001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.plant30001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.plant100001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.plant120001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.plant80001;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.plant90001;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -30,103 +42,93 @@ export default class Rink extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg
-        const bg = this.add.image(-33, -7, "rink", "bg");
-        bg.setOrigin(0, 0);
+        // rinkuw
+        this.add.image(827, 405, "rinkuw", "rinkuw");
 
-        // rink_border
-        const rink_border = this.add.image(444, 335, "rink", "rink_border");
-        rink_border.setOrigin(0.30707692, 0.42490372);
+        // plant15
+        this.add.image(829, 594, "rinkuw", "plant15");
 
-        // sports
-        const sports = this.add.image(1390, 250, "rink", "sports");
-        sports.setOrigin(0.52966102, 0.80970149);
+        // rock2
+        this.add.image(161, 622, "rinkuw", "rock2");
 
-        // sports_door0001
-        const sports_door0001 = this.add.image(1327, 280, "rink", "sports_door0001");
-        sports_door0001.setOrigin(0.5125, 0.62962963);
+        // rock3
+        this.add.image(1401, 634, "rinkuw", "rock3");
 
         // ball
         const ball = this.add.image(765, 537, "rink", "ball");
         ball.setOrigin(0.5, 0.7037037);
         ball.visible = false;
 
-        // fish_dogs
-        const fish_dogs = this.add.image(166, 242, "rink", "fish_dogs");
-        fish_dogs.setOrigin(0.51492537, 0.79347826);
+        // bottomuw
+        const bottomuw = this.add.image(-27, 965, "rinkuw", "bottomuw");
+        bottomuw.setOrigin(0, 0.9998385876423137);
 
-        // left_bleachers
-        const left_bleachers = this.add.image(105, 258, "rink", "left_bleachers");
-        left_bleachers.setOrigin(0.44444444, 0.16260163);
+        // planks
+        this.add.image(775, 329, "rinkuw", "planks");
 
-        // bleachers_rail
-        const bleachers_rail = this.add.image(38, 558, "rink", "bleachers_rail");
-        bleachers_rail.setOrigin(0.82231405, 0.78181818);
+        // door
+        this.add.image(773, 270, "rinkuw", "door");
 
-        // right_bleachers
-        const right_bleachers = this.add.image(1415, 258, "rink", "right_bleachers");
-        right_bleachers.setOrigin(0.5473251, 0.16531165);
+        // goal1
+        this.add.image(1352, 472, "rinkuw", "goal1");
 
-        // bleachers_rail_1
-        const bleachers_rail_1 = this.add.image(1482, 558, "rink", "bleachers_rail");
-        bleachers_rail_1.setOrigin(0.82231405, 0.78181818);
-        bleachers_rail_1.flipX = true;
+        // goal2
+        this.add.image(252, 475, "rinkuw", "goal2");
 
-        // drink
-        const drink = this.add.image(70, 485, "rink", "drink");
-        drink.setOrigin(0.5, 0.75510204);
+        // plant2_1
+        const plant2_1 = this.add.image(95, 809, "rinkuw", "plant2");
+        plant2_1.flipX = true;
 
-        // fg
-        const fg = this.add.image(-64, 1046.9173886139422, "rink", "fg");
-        fg.setOrigin(0, 0.9998385876423137);
+        // plant2
+        this.add.image(1392, 797, "rinkuw", "plant2");
 
-        // trash
-        const trash = this.add.image(858, 214, "rink", "trash");
-        trash.setOrigin(0.44117647, 0.69642857);
+        // plant16
+        this.add.image(222, 904, "rinkuw", "plant16");
 
-        // snacks
-        const snacks = this.add.image(1046, 230, "rink", "snacks");
-        snacks.setOrigin(0.44080605, 0.79461279);
+        // plant17
+        this.add.image(1412, 880, "rinkuw", "plant17");
 
-        // stand_base
-        const stand_base = this.add.image(731, 126, "rink", "stand_base");
-        stand_base.setOrigin(0.99404762, 0.36328125);
+        // plant40001
+        const plant40001 = this.add.sprite(1290, 816, "rinkuw", "plant40001");
 
-        // stand_middle
-        const stand_middle = this.add.image(528, 167, "rink", "stand_middle");
-        stand_middle.setOrigin(0.51265823, 0.42537313);
+        // plant30001
+        const plant30001 = this.add.sprite(176, 827, "rinkuw", "plant30001");
 
-        // stand_top
-        const stand_top = this.add.image(522, 236, "rink", "stand_top");
-        stand_top.setOrigin(0.50117647, 2.57831325);
+        // rock1
+        this.add.image(1022, 310, "rinkuw", "rock1");
 
-        // goal_back
-        const goal_back = this.add.image(1258, 441, "rink", "goal_back");
-        goal_back.setOrigin(0.97183099, 0.48863636);
+        // rock5
+        const rock5 = this.add.image(780, 548, "rinkuw", "rock5");
+        rock5.scaleX = 0.3;
+        rock5.scaleY = 0.3;
 
-        // goal
-        const goal = this.add.image(1273, 578, "rink", "goal");
-        goal.setOrigin(0.58571429, 0.91902834);
+        // jersey1
+        this.add.image(582, 503, "rinkuw", "jersey1");
 
-        // goal_back_1
-        const goal_back_1 = this.add.image(262, 441, "rink", "goal_back");
-        goal_back_1.setOrigin(0.97183099, 0.48863636);
-        goal_back_1.flipX = true;
+        // jersey2
+        this.add.image(1070, 593, "rinkuw", "jersey2");
 
-        // goal_1
-        const goal_1 = this.add.image(247, 578, "rink", "goal");
-        goal_1.setOrigin(0.58571429, 0.91902834);
-        goal_1.flipX = true;
+        // plant100001
+        const plant100001 = this.add.sprite(992, 645, "rinkuw", "plant100001");
 
-        // snacks_door0001
-        this.add.image(1214, 185, "rink", "snacks_door0001");
+        // plant120001
+        const plant120001 = this.add.sprite(508, 645, "rinkuw", "plant120001");
 
-        // snacks_ring
-        this.add.image(1250, 200, "rink", "snacks_ring");
+        // plant80001
+        const plant80001 = this.add.sprite(1070, 280, "rinkuw", "plant80001");
+
+        // plant90001
+        const plant90001 = this.add.sprite(664, 314, "rinkuw", "plant90001");
 
         // lists
-        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border];
+        const sort = [ball];
 
+        this.plant40001 = plant40001;
+        this.plant30001 = plant30001;
+        this.plant100001 = plant100001;
+        this.plant120001 = plant120001;
+        this.plant80001 = plant80001;
+        this.plant90001 = plant90001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -134,6 +136,16 @@ export default class Rink extends RoomScene {
 
 
     /* START-USER-CODE */
+    create() {
+        super.create();
+        this.plant40001.play('underwaterrink_plant3');
+        this.plant30001.play('underwaterrink_plant2')
+        this.plant100001.play('underwaterrink_plant')
+        this.plant120001.play('underwaterrink_plant1')
+        this.plant80001.play('underwaterrink_plant4')
+        this.plant90001.play('underwaterrink_plant5')
+    }
+
     /* END-USER-CODE */
 }
 

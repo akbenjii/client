@@ -12,6 +12,8 @@ export default class Coffee extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.board;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.balluw0002;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -40,17 +42,13 @@ export default class Coffee extends RoomScene {
     /** @returns {void} */
     _create() {
 
-        // bg
-        const bg = this.add.image(0, -7, "coffee", "bg");
-        bg.setOrigin(0, 0);
+        // coffeeuw
+        const coffeeuw = this.add.image(-10, -84, "coffeeuw", "coffeeuw");
+        coffeeuw.setOrigin(0, 0);
 
         // lamp
         const lamp = this.add.image(172, -11, "coffee", "lamp");
         lamp.setOrigin(0, 0);
-
-        // table
-        const table = this.add.image(414, 499, "coffee", "table");
-        table.setOrigin(0.5217391304347826, 0.5368421052631579);
 
         // counter_back
         const counter_back = this.add.image(850, 458, "coffee", "counter_back");
@@ -67,10 +65,6 @@ export default class Coffee extends RoomScene {
         // sign_back
         const sign_back = this.add.image(903, 632, "coffee", "sign_back");
         sign_back.setOrigin(0.5, 0.4789915966386555);
-
-        // sign_front
-        const sign_front = this.add.image(880, 695, "coffee", "sign_front");
-        sign_front.setOrigin(0.5190839694656488, 0.8827586206896552);
 
         // board
         const board = this.add.sprite(947, 146, "coffee", "board0001");
@@ -108,8 +102,16 @@ export default class Coffee extends RoomScene {
         const door = this.add.image(724, 135, "coffee", "door");
         door.setOrigin(0, 0);
 
+        // balluw0002
+        const balluw0002 = this.add.sprite(414, 499, "coffeeuw", "balluw0002");
+        balluw0002.setOrigin(0.5217391304347826, 0.5368421052631579);
+
+        // boarduw
+        const boarduw = this.add.image(880, 695, "coffeeuw", "boarduw");
+        boarduw.setOrigin(0.5190839694656488, 0.8827586206896552);
+
         // lists
-        const sort = [beans, bag, sign_front, sign_back, counter_front, counter_back, table];
+        const sort = [beans, bag, sign_back, counter_front, counter_back];
 
         // smoke (components)
         const smokeAnimation = new Animation(smoke);
@@ -148,6 +150,7 @@ export default class Coffee extends RoomScene {
         doorMoveTo.y = 392;
 
         this.board = board;
+        this.balluw0002 = balluw0002;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -161,6 +164,11 @@ export default class Coffee extends RoomScene {
 
         this.board.play(animation)
         this.boardToggle = !this.boardToggle
+    }
+
+    create() {
+        super.create()
+        this.balluw0002.play("underwatercoffee_balluw")
     }
 
     /* END-USER-CODE */

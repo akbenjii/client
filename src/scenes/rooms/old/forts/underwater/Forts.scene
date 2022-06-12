@@ -1,0 +1,543 @@
+{
+    "id": "9e4f46e6-ec9a-45a8-8826-ca5eda18de38",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/forts/forts-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forts",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d4609fa9-1b78-4b5c-9eb5-44dfd6d7c57e",
+            "label": "map",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "map"
+            },
+            "x": -214,
+            "y": -70,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "82671712-eb61-4cf9-a79d-a117f9e89798",
+            "label": "blue_pole",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "blue_pole"
+            },
+            "x": 1011,
+            "y": 424,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "3b2a720f-7bd6-4c37-831b-1f6b4ef36eed",
+            "label": "tower_shadow",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "tower_shadow"
+            },
+            "x": 1083,
+            "y": 304,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "b2ca6101-5086-4b8d-abd1-92dc5d0fb2b0",
+            "label": "clock",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "clock"
+            },
+            "x": 1100,
+            "y": 104,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "b402d711-30c1-460e-b798-b448eddf538e",
+            "label": "secret_message",
+            "components": [],
+            "texture": {
+                "key": "forts",
+                "frame": "secret_message"
+            },
+            "x": 1270,
+            "y": 327,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "561077bd-3695-4418-a10f-aa6fb315f3ae",
+            "label": "blue_flag",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "blue_flag",
+            "Animation.end": 16,
+            "texture": {
+                "key": "forts",
+                "frame": "blue_flag0001"
+            },
+            "x": 984,
+            "y": 334,
+            "originY": 1.85185185
+        },
+        {
+            "type": "Rectangle",
+            "id": "6f93abab-6009-4afb-b0ed-a744f686a16d",
+            "label": "hitbox",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1365,
+            "y": 156,
+            "visible": false,
+            "width": 70,
+            "height": 75
+        },
+        {
+            "type": "Text",
+            "id": "50cd240a-a08a-4404-ab46-167a8155efd1",
+            "label": "day",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1174,
+            "y": 221,
+            "angle": 2.5,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "WEDNESDAY",
+            "fontFamily": "Burbank Small",
+            "fontSize": "18px",
+            "fontStyle": "bold",
+            "color": "#0d0d0dff"
+        },
+        {
+            "type": "Text",
+            "id": "79e64adf-2fc1-4b28-8b6b-a712b652192e",
+            "label": "am_pm",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1236,
+            "y": 140,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "AM",
+            "fontFamily": "Burbank Small",
+            "fontSize": "20px"
+        },
+        {
+            "type": "Text",
+            "id": "2afd8a90-2c8d-49d1-b1de-b8e9296f04eb",
+            "label": "clockTime",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1161,
+            "y": 154,
+            "scaleY": 1.5,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "12:58",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "45px"
+        },
+        {
+            "type": "Image",
+            "id": "a8a64ec8-8e2e-4fe5-bb6c-8565c8659fc7",
+            "label": "layer45",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer45"
+            },
+            "x": 1064,
+            "y": 158
+        },
+        {
+            "type": "Image",
+            "id": "683c6e3a-d061-4517-b579-122bf72126f4",
+            "label": "layer25",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer25"
+            },
+            "x": 1456,
+            "y": 355
+        },
+        {
+            "type": "Image",
+            "id": "0b4516d5-7e71-4a28-90f7-821cb7f3bf3f",
+            "label": "sign",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "sign",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "forts",
+                "frame": "sign"
+            },
+            "x": 1408,
+            "y": 291,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "179e0c91-481f-4649-a73d-0e0590b183e1",
+            "label": "layer24",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer24"
+            },
+            "x": 1425,
+            "y": 387
+        },
+        {
+            "type": "Image",
+            "id": "ce35162a-edfa-4d4b-b87a-4b40613725b1",
+            "label": "layer23",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer23"
+            },
+            "x": 1308,
+            "y": 412
+        },
+        {
+            "type": "Image",
+            "id": "34729972-3e3f-4360-8336-66faaa746073",
+            "label": "layer23_1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer23"
+            },
+            "x": 746,
+            "y": 337,
+            "scaleX": 0.75,
+            "scaleY": 0.75,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "c70f77fe-7a94-470c-a694-9194e5f201c4",
+            "label": "layer23_1_1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer23"
+            },
+            "x": 1045,
+            "y": 336,
+            "scaleX": 0.75,
+            "scaleY": 0.75,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "d1c8e62c-c9f0-4522-91e5-c704663193ad",
+            "label": "layer19",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer19"
+            },
+            "x": 336,
+            "y": 880
+        },
+        {
+            "type": "Image",
+            "id": "33999ffe-789c-48b2-962a-933f4aa08baa",
+            "label": "layer21",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "layer21"
+            },
+            "x": 289,
+            "y": 780
+        },
+        {
+            "type": "Image",
+            "id": "68b675f6-35be-4c7c-b0c9-60e700bfa4b2",
+            "label": "bridge1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "bridge1"
+            },
+            "x": 1269,
+            "y": 699
+        },
+        {
+            "type": "Image",
+            "id": "9a69121d-6833-43c7-aa92-902cf2844205",
+            "label": "tree1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "tree1"
+            },
+            "x": 65,
+            "y": 564
+        },
+        {
+            "type": "Image",
+            "id": "993997f5-251e-4f31-a242-6e1fc0cf41e6",
+            "label": "plant1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "plant1"
+            },
+            "x": 118,
+            "y": 791
+        },
+        {
+            "type": "Image",
+            "id": "4a13376c-c469-446c-bb72-70cbffd4369f",
+            "label": "plant2",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "plant2"
+            },
+            "x": 5,
+            "y": 928
+        },
+        {
+            "type": "Image",
+            "id": "c335e765-cee2-4610-bfd5-2a2a90f17967",
+            "label": "seashell2",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "seashell2"
+            },
+            "x": 1198,
+            "y": 599
+        },
+        {
+            "type": "Image",
+            "id": "6aef653e-4e96-47bb-a554-bdb8d526f767",
+            "label": "seashell2_1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "seashell2"
+            },
+            "x": 844,
+            "y": 458
+        },
+        {
+            "type": "Image",
+            "id": "ddacac94-8f19-4457-a33e-1bec619d717d",
+            "label": "seashell1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "seashell1"
+            },
+            "x": 635,
+            "y": 928
+        },
+        {
+            "type": "Image",
+            "id": "335371ed-1dad-488d-b602-fd058b5f498f",
+            "label": "seashell1_1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "seashell1"
+            },
+            "x": 455,
+            "y": 539
+        },
+        {
+            "type": "Image",
+            "id": "af959ba3-9196-4ccf-8ad5-343c6f050183",
+            "label": "seashell1_2",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "seashell1"
+            },
+            "x": 748,
+            "y": 663
+        },
+        {
+            "type": "Sprite",
+            "id": "49012794-0e0c-42b0-8381-9c96493e315d",
+            "label": "floatingbarrel0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "floatingbarrel0001"
+            },
+            "x": 656,
+            "y": 479
+        },
+        {
+            "type": "Image",
+            "id": "a31ee524-a45e-4756-a594-ee437b885872",
+            "label": "boat1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "boat1"
+            },
+            "x": 929,
+            "y": 640
+        },
+        {
+            "type": "Image",
+            "id": "1783d0ba-bf50-4895-8c18-f13f6858b29e",
+            "label": "rock1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "rock1"
+            },
+            "x": 490,
+            "y": 780
+        },
+        {
+            "type": "Image",
+            "id": "03490c1f-0692-4618-bef1-4643d7340fe9",
+            "label": "rock2",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "rock2"
+            },
+            "x": 911,
+            "y": 822
+        },
+        {
+            "type": "Image",
+            "id": "490cfb57-76fa-4b40-bf27-c6bd4d59e333",
+            "label": "barrel1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "barrel1"
+            },
+            "x": 1149,
+            "y": 791
+        },
+        {
+            "type": "Image",
+            "id": "67e9bdc8-2965-4549-99d9-362f2443bc58",
+            "label": "pole1",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "pole1"
+            },
+            "x": 1067,
+            "y": 769
+        },
+        {
+            "type": "Image",
+            "id": "bf463739-c0a4-4ef6-bb7d-7f008016416e",
+            "label": "pole2",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "pole2"
+            },
+            "x": 1240,
+            "y": 805
+        },
+        {
+            "type": "Image",
+            "id": "3adfa2f9-8b9b-467a-bf0d-eab82efe266d",
+            "label": "weed10001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "weed10001"
+            },
+            "x": 1470,
+            "y": 369,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "1b4e77ae-be3a-414e-af38-0658d8c84e69",
+            "label": "weed10001_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "weed10001"
+            },
+            "x": 911,
+            "y": 251
+        },
+        {
+            "type": "Sprite",
+            "id": "9471cd53-9136-4ac6-b43a-e1a913e17c3e",
+            "label": "weed10001_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fortsuw",
+                "frame": "weed10001"
+            },
+            "x": 397,
+            "y": 376
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1e3d1d79-bbc9-4969-8105-70209fd3fab9",
+            "label": "sort",
+            "objectIds": [
+                "82671712-eb61-4cf9-a79d-a117f9e89798",
+                "561077bd-3695-4418-a10f-aa6fb315f3ae",
+                "d1c8e62c-c9f0-4522-91e5-c704663193ad",
+                "993997f5-251e-4f31-a242-6e1fc0cf41e6",
+                "4a13376c-c469-446c-bb72-70cbffd4369f",
+                "9a69121d-6833-43c7-aa92-902cf2844205"
+            ]
+        }
+    ]
+}

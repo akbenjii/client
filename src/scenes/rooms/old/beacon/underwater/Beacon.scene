@@ -66,34 +66,6 @@
         },
         {
             "type": "Image",
-            "id": "67ef6814-9dfa-45a0-95ae-a405c3cfd22e",
-            "label": "front_rail",
-            "components": [],
-            "texture": {
-                "key": "beacon",
-                "frame": "front_rail"
-            },
-            "x": 712.179443359375,
-            "y": 961.9216962032965,
-            "originX": 0.5044360693840665,
-            "originY": 1.0296666844575377
-        },
-        {
-            "type": "Image",
-            "id": "9154b2b9-6d36-4fe2-9e7b-b732321aedc8",
-            "label": "light",
-            "components": [],
-            "texture": {
-                "key": "beacon",
-                "frame": "light"
-            },
-            "x": 702.1988459228754,
-            "y": 11.688948040327034,
-            "originX": 0.485192994157257,
-            "originY": 0.027770241243949233
-        },
-        {
-            "type": "Image",
             "id": "49eccf24-79ec-49f1-8ca7-89d5efe7ef5d",
             "label": "crate",
             "components": [],
@@ -106,15 +78,43 @@
         },
         {
             "type": "Image",
-            "id": "2da7e4a6-de9c-41f4-a8f6-15297181c213",
-            "label": "telescope",
+            "id": "c92d72f9-8790-40e8-8bbf-667aaa7f1d42",
+            "label": "main_beacon",
             "components": [],
             "texture": {
-                "key": "beacon",
-                "frame": "telescope"
+                "key": "beaconuw",
+                "frame": "main beacon"
+            },
+            "x": 702,
+            "y": -87,
+            "originX": 0.485192994157257,
+            "originY": 0.027770241243949233
+        },
+        {
+            "type": "Image",
+            "id": "148e9458-7337-40d2-8bc4-f281f4f1890e",
+            "label": "binocular",
+            "components": [],
+            "texture": {
+                "key": "beaconuw",
+                "frame": "binocular"
             },
             "x": 248,
-            "y": 298
+            "y": 267
+        },
+        {
+            "type": "Image",
+            "id": "100af2a3-d6bd-400a-ab97-7c8dca11581f",
+            "label": "bottomrail",
+            "components": [],
+            "texture": {
+                "key": "beaconuw",
+                "frame": "bottomrail"
+            },
+            "x": 712.179443359375,
+            "y": 961.9216962032965,
+            "originX": 0.5044360693840665,
+            "originY": 1.0296666844575377
         }
     ],
     "plainObjects": [],
@@ -129,8 +129,8 @@
             "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
             "label": "sort",
             "objectIds": [
-                "67ef6814-9dfa-45a0-95ae-a405c3cfd22e",
-                "9154b2b9-6d36-4fe2-9e7b-b732321aedc8"
+                "c92d72f9-8790-40e8-8bbf-667aaa7f1d42",
+                "100af2a3-d6bd-400a-ab97-7c8dca11581f"
             ]
         }
     ]

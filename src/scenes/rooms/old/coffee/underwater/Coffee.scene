@@ -18,14 +18,15 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "e7ab62b8-6032-4b57-b05e-00934179e5c3",
-            "label": "bg",
+            "id": "a45f3ca9-010d-4c42-8be7-6f614aa4126e",
+            "label": "coffeeuw",
             "components": [],
             "texture": {
-                "key": "coffee",
-                "frame": "bg"
+                "key": "coffeeuw",
+                "frame": "coffeeuw"
             },
-            "y": -7,
+            "x": -10,
+            "y": -84,
             "originX": 0,
             "originY": 0
         },
@@ -42,20 +43,6 @@
             "y": -11,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "5beaef60-3e4f-40a3-9fb3-01dc145bfeda",
-            "label": "table",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "table"
-            },
-            "x": 414,
-            "y": 499,
-            "originX": 0.5217391304347826,
-            "originY": 0.5368421052631579
         },
         {
             "type": "Image",
@@ -115,20 +102,6 @@
             "x": 903,
             "y": 632,
             "originY": 0.4789915966386555
-        },
-        {
-            "type": "Image",
-            "id": "2af1eeae-7993-4b46-98c7-a63e57822b27",
-            "label": "sign_front",
-            "components": [],
-            "texture": {
-                "key": "coffee",
-                "frame": "sign_front"
-            },
-            "x": 880,
-            "y": 695,
-            "originX": 0.5190839694656488,
-            "originY": 0.8827586206896552
         },
         {
             "type": "Sprite",
@@ -283,6 +256,35 @@
             "y": 135,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "5d534bd4-7d13-4c9b-a1a4-f37e7b3f3965",
+            "label": "balluw0002",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coffeeuw",
+                "frame": "balluw0002"
+            },
+            "x": 414,
+            "y": 499,
+            "originX": 0.5217391304347826,
+            "originY": 0.5368421052631579
+        },
+        {
+            "type": "Image",
+            "id": "d3398cdb-00ef-40d5-997a-eebb9ad7951c",
+            "label": "boarduw",
+            "components": [],
+            "texture": {
+                "key": "coffeeuw",
+                "frame": "boarduw"
+            },
+            "x": 880,
+            "y": 695,
+            "originX": 0.5190839694656488,
+            "originY": 0.8827586206896552
         }
     ],
     "plainObjects": [],
@@ -299,11 +301,9 @@
             "objectIds": [
                 "86153e9a-e9e2-4608-b038-65a44c58761b",
                 "86a80e93-528d-45f0-baa2-6392cf65d675",
-                "2af1eeae-7993-4b46-98c7-a63e57822b27",
                 "9783525f-a865-4877-9de4-bf83985dcb6b",
                 "4025e1a5-f97d-4dba-87dd-4633cf3557bf",
-                "07c938ab-f75d-4718-bf8b-cf3a5b619d64",
-                "5beaef60-3e4f-40a3-9fb3-01dc145bfeda"
+                "07c938ab-f75d-4718-bf8b-cf3a5b619d64"
             ]
         }
     ]
