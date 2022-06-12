@@ -223,6 +223,54 @@
             "fillColor": "#00ff00",
             "width": 135,
             "height": 160
+        },
+        {
+            "type": "Image",
+            "id": "58e061f1-264b-4342-8e9a-ffe0685ac0ae",
+            "label": "items",
+            "components": [],
+            "texture": {
+                "key": "dockuw",
+                "frame": "items"
+            },
+            "x": 554,
+            "y": 411
+        },
+        {
+            "type": "Image",
+            "id": "5b72d466-80dc-4f22-931f-1c54574e057d",
+            "label": "items2",
+            "components": [],
+            "texture": {
+                "key": "dockuw",
+                "frame": "items2"
+            },
+            "x": 886,
+            "y": 385
+        },
+        {
+            "type": "Image",
+            "id": "3d44bbe6-8510-4a57-ba9a-5aa8aa39a13f",
+            "label": "anchor",
+            "components": [],
+            "texture": {
+                "key": "dockuw",
+                "frame": "anchor"
+            },
+            "x": 1104,
+            "y": 391
+        },
+        {
+            "type": "Image",
+            "id": "e1bd1041-2c2b-438b-9ecb-36d727bc5dad",
+            "label": "waterlayer",
+            "components": [],
+            "texture": {
+                "key": "dockuw",
+                "frame": "waterlayer"
+            },
+            "x": 882,
+            "y": 621
         }
     ],
     "plainObjects": [],

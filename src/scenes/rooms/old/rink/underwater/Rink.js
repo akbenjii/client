@@ -20,7 +20,7 @@ export default class Rink extends RoomScene {
         this.plant80001;
         /** @type {Phaser.GameObjects.Sprite} */
         this.plant90001;
-        /** @type {Phaser.GameObjects.Image[]} */
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
 
@@ -121,7 +121,7 @@ export default class Rink extends RoomScene {
         const plant90001 = this.add.sprite(664, 314, "rinkuw", "plant90001");
 
         // lists
-        const sort = [ball];
+        const sort = [ball, plant120001, plant100001];
 
         this.plant40001 = plant40001;
         this.plant30001 = plant30001;

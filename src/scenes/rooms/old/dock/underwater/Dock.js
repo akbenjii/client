@@ -95,6 +95,18 @@ export default class Dock extends RoomScene {
         zone.isFilled = true;
         zone.fillColor = 65280;
 
+        // items
+        this.add.image(554, 411, "dockuw", "items");
+
+        // items2
+        this.add.image(886, 385, "dockuw", "items2");
+
+        // anchor
+        this.add.image(1104, 391, "dockuw", "anchor");
+
+        // waterlayer
+        this.add.image(882, 621, "dockuw", "waterlayer");
+
         // lists
         const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box];
 
