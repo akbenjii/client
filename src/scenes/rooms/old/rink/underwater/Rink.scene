@@ -330,7 +330,9 @@
             "id": "9e830a7e-9e8a-466e-aec7-18c94d7d6d64",
             "label": "sort",
             "objectIds": [
-                "dd5aac14-4403-46f8-89e5-bf4c0af9d7e1"
+                "dd5aac14-4403-46f8-89e5-bf4c0af9d7e1",
+                "c1dc57f9-420b-4cb0-b83e-d01b9f40f9a6",
+                "ed4f067f-8159-4dd7-97a9-80e143e9ce75"
             ]
         }
     ]

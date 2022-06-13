@@ -222,103 +222,15 @@
         },
         {
             "type": "Image",
-            "id": "d0a77390-119d-4bda-a7ac-6816548803aa",
-            "label": "beach_main_body_",
+            "id": "4176bdd8-a8e5-4480-b4b8-6fa5865668b3",
+            "label": "water",
             "components": [],
             "texture": {
-                "key": "underwater beach ",
-                "frame": "beach main body "
+                "key": "beachuw",
+                "frame": "water"
             },
-            "x": 789,
-            "y": 484,
-            "scaleX": 0.9451922147438334,
-            "scaleY": 0.9370738961966343
-        },
-        {
-            "type": "Image",
-            "id": "41de0df8-5b0c-4cb8-807d-0d3548f8afa3",
-            "label": "board_on_right",
-            "components": [],
-            "texture": {
-                "key": "underwater beach ",
-                "frame": "board on right"
-            },
-            "x": 1120,
-            "y": 313
-        },
-        {
-            "type": "Image",
-            "id": "74db2c93-18d1-4972-a0ea-86b35a84db9d",
-            "label": "fish_",
-            "components": [],
-            "texture": {
-                "key": "underwater beach ",
-                "frame": "fish "
-            },
-            "x": 212,
-            "y": 393
-        },
-        {
-            "type": "Image",
-            "id": "8db08526-ec88-4402-a8ba-e66a77793ea3",
-            "label": "green_thingy_xd",
-            "components": [],
-            "texture": {
-                "key": "underwater beach ",
-                "frame": "green thingy xd"
-            },
-            "x": 314,
-            "y": 422
-        },
-        {
-            "type": "Image",
-            "id": "290830f5-f12f-44fe-8290-d608377a9b1e",
-            "label": "idk_what_this_is_",
-            "components": [],
-            "texture": {
-                "key": "underwater beach ",
-                "frame": "idk what this is "
-            },
-            "x": 158,
-            "y": 447
-        },
-        {
-            "type": "Image",
-            "id": "8ccb0b14-2221-4573-8729-30bf18e612af",
-            "label": "left_net",
-            "components": [],
-            "texture": {
-                "key": "underwater beach ",
-                "frame": "left net"
-            },
-            "x": 227,
-            "y": 476
-        },
-        {
-            "type": "Image",
-            "id": "ee20d250-df36-4222-a99e-06a424376b08",
-            "label": "trigger_layers_",
-            "components": [],
-            "texture": {
-                "key": "underwater beach ",
-                "frame": "trigger layers "
-            },
-            "x": 832,
-            "y": 371,
-            "scaleX": 0.7855912250997565,
-            "scaleY": 0.7991620633564187
-        },
-        {
-            "type": "Image",
-            "id": "f29099cf-81d9-48dd-8895-4517c7d47ce3",
-            "label": "penguin_walkway_",
-            "components": [],
-            "texture": {
-                "key": "underwater beach ",
-                "frame": "penguin walkway "
-            },
-            "x": 800,
-            "y": 458
+            "x": 798,
+            "y": 562
         }
     ],
     "plainObjects": [],

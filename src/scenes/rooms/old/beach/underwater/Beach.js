@@ -94,33 +94,8 @@ export default class Beach extends RoomScene {
         const bucket = this.add.sprite(1078, 612, "beach", "bucket/bucket0001");
         bucket.setOrigin(0.8863109, 0.94611727);
 
-        // beach_main_body_
-        const beach_main_body_ = this.add.image(789, 484, "underwaterbeach", "beach main body ");
-        beach_main_body_.scaleX = 0.9451922147438334;
-        beach_main_body_.scaleY = 0.9370738961966343;
-
-        // board_on_right
-        this.add.image(1120, 313, "underwaterbeach", "board on right");
-
-        // fish_
-        this.add.image(212, 393, "underwaterbeach", "fish ");
-
-        // green_thingy_xd
-        this.add.image(314, 422, "underwaterbeach", "green thingy xd");
-
-        // idk_what_this_is_
-        this.add.image(158, 447, "underwaterbeach", "idk what this is ");
-
-        // left_net
-        this.add.image(227, 476, "underwaterbeach", "left net");
-
-        // trigger_layers_
-        const trigger_layers_ = this.add.image(832, 371, "underwaterbeach", "trigger layers ");
-        trigger_layers_.scaleX = 0.7855912250997565;
-        trigger_layers_.scaleY = 0.7991620633564187;
-
-        // penguin_walkway_
-        this.add.image(800, 458, "underwaterbeach", "penguin walkway ");
+        // water
+        this.add.image(798, 562, "beachuw", "water");
 
         // lists
         const sort = [bucket, chair_1_front, chair_1, chair_2_front, chair_2, net, fish, buoy, cage];
