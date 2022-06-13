@@ -54,7 +54,7 @@ export default class RuffleManager {
 			url: "assets/media/games/swf/sse.swf",
 			allowScriptAccess: true,
 			quality: "low",
-			logLevel: "trace"
+			logLevel: (localStorage.getItem('debugMode') === 'true') ? "Trace" : "Error",
 		});
 	}
 	
