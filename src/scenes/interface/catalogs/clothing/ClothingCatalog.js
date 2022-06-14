@@ -16,159 +16,27 @@ export default class ClothingCatalog extends Book {
         super("ClothingCatalog");
 
         /** @type {Phaser.GameObjects.Image} */
-        this.blue0001_png;
+        this.buy_bluesnorkel;
         /** @type {Phaser.GameObjects.Image} */
-        this.green0001_png;
+        this.buy_blueracing;
         /** @type {Phaser.GameObjects.Image} */
-        this.pink0001_png;
+        this.buy_blueflippers;
         /** @type {Phaser.GameObjects.Image} */
-        this.black0001_png;
+        this.buy_blackscuba;
         /** @type {Phaser.GameObjects.Image} */
-        this.red0001_png;
+        this.buy_scubatank;
         /** @type {Phaser.GameObjects.Image} */
-        this.orange0001_png;
+        this.buy_greenwetsuit;
         /** @type {Phaser.GameObjects.Image} */
-        this.yellow0001_png;
+        this.buy_yellowflippers;
         /** @type {Phaser.GameObjects.Image} */
-        this.purple0001_png;
+        this.buy_sagefish;
         /** @type {Phaser.GameObjects.Image} */
-        this.brown0001_png;
-        /** @type {Phaser.GameObjects.Image} */
-        this.darkgreen0001_png;
-        /** @type {Phaser.GameObjects.Image} */
-        this.lightblue0001_png;
-        /** @type {Phaser.GameObjects.Image} */
-        this.darkpink0001_png;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_sombrero;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_roman;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_beekeeper;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_trend;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_disco;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_sstriker;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_sk;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_funster;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_pballcap;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_tuft;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_bflutt;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_flouncy;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2_flutterby;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2_pinkear;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2_pinkrollers;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_brownshoes;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_yrubber;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_iceskates;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_blackcheckshoes;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_bluecheckershoes;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_redtenniesshoes;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_bunnyslippers;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_cuckoo;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_dressshoes;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_bletterman;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2_blackhoodie;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_daisy;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_bparka;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_greenrug;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_pband;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_lighthouse;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_poncho;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_ballerina;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_ad;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_ljacket;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_qvest;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_rainjacket;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2_yellowhoodie;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2_pinkhoodie;
+        this.buy_squidzoi;
         /** @type {Phaser.GameObjects.Image} */
         this.buy_2_3_1_1_1;
         /** @type {Phaser.GameObjects.Image} */
-        this.buy2_1_1;
-        /** @type {Phaser.GameObjects.Image} */
         this.buy_3_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_1_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_4_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_1_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_2_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_3_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_2_1_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_1_1_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_3_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_2_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_4;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_1_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_3;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2_1;
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.vikinghelmet_rec;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy2;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_1;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_2;
-        /** @type {Phaser.GameObjects.Image} */
-        this.buy_2_3;
-        /** @type {Phaser.GameObjects.Rectangle} */
-        this.sec_wtshirt;
         /** @type {Phaser.GameObjects.Container} */
         this.buttons;
         /** @type {Phaser.GameObjects.Text} */
@@ -199,964 +67,1106 @@ export default class ClothingCatalog extends Book {
         block.fillColor = 0;
         block.fillAlpha = 0.2;
 
-        // page10
-        const page10 = this.add.container(0, 0);
-        page10.visible = false;
+        // page13
+        const page13 = this.add.container(0, 0);
+        page13.visible = false;
 
-        // page_page0016
-        const page_page0016 = this.add.image(-4, 2, "clothingcatalog", "page/page0016");
-        page_page0016.setOrigin(0, 0);
-        page10.add(page_page0016);
+        // page13_1
+        const page13_1 = this.add.image(772, 417, "june22clothing", "page13");
+        page13.add(page13_1);
 
         // close_right_2
         const close_right_2 = this.add.image(596, 42, "catalogs-master", "catclosebtn");
         close_right_2.scaleX = -1;
         close_right_2.setOrigin(0, 0);
-        page10.add(close_right_2);
+        page13.add(close_right_2);
 
         // page_right_2
         const page_right_2 = this.add.image(595, 592, "catalogs-master", "nextpagebtn");
         page_right_2.scaleX = -1;
         page_right_2.setOrigin(0, 0);
-        page10.add(page_right_2);
+        page13.add(page_right_2);
+
+        // page12
+        const page12 = this.add.container(761, 431);
+        page12.visible = false;
+
+        // page12
+        const page12 = this.add.image(0, 0, "june22clothing", "page12");
+        page12.add(page12);
+
+        // flag_button_7187
+        const flag_button_7187 = this.add.ellipse(-384, -229, 75, 75);
+        flag_button_7187.fillColor = 50917;
+        flag_button_7187.fillAlpha = 0.5;
+        page12.add(flag_button_7187);
+
+        // flag_button_7186
+        const flag_button_7186 = this.add.ellipse(-483, -230, 75, 75);
+        flag_button_7186.fillColor = 50917;
+        flag_button_7186.fillAlpha = 0.5;
+        page12.add(flag_button_7186);
+
+        // flag_button_7188
+        const flag_button_7188 = this.add.ellipse(-273, -227, 75, 75);
+        flag_button_7188.fillColor = 50917;
+        flag_button_7188.fillAlpha = 0.5;
+        page12.add(flag_button_7188);
+
+        // flag_button_7189
+        const flag_button_7189 = this.add.ellipse(-166, -229, 75, 75);
+        flag_button_7189.fillColor = 50917;
+        flag_button_7189.fillAlpha = 0.5;
+        page12.add(flag_button_7189);
+
+        // flag_button_7185
+        const flag_button_7185 = this.add.ellipse(-538, -144, 75, 75);
+        flag_button_7185.fillColor = 50917;
+        flag_button_7185.fillAlpha = 0.5;
+        page12.add(flag_button_7185);
+
+        // flag_button_7184
+        const flag_button_7184 = this.add.ellipse(-427, -135, 75, 75);
+        flag_button_7184.fillColor = 50917;
+        flag_button_7184.fillAlpha = 0.5;
+        page12.add(flag_button_7184);
+
+        // flag_button_7183
+        const flag_button_7183 = this.add.ellipse(-318, -139, 75, 75);
+        flag_button_7183.fillColor = 50917;
+        flag_button_7183.fillAlpha = 0.5;
+        page12.add(flag_button_7183);
+
+        // flag_button_7182
+        const flag_button_7182 = this.add.ellipse(-223, -140, 75, 75);
+        flag_button_7182.fillColor = 50917;
+        flag_button_7182.fillAlpha = 0.5;
+        page12.add(flag_button_7182);
+
+        // flag_button_7148
+        const flag_button_7148 = this.add.ellipse(-106, -139, 75, 75);
+        flag_button_7148.fillColor = 50917;
+        flag_button_7148.fillAlpha = 0.5;
+        page12.add(flag_button_7148);
+
+        // flag_button_514
+        const flag_button_514 = this.add.ellipse(-544, -43, 75, 75);
+        flag_button_514.fillColor = 50917;
+        flag_button_514.fillAlpha = 0.5;
+        page12.add(flag_button_514);
+
+        // flag_button_533
+        const flag_button_533 = this.add.ellipse(-427, -41, 75, 75);
+        flag_button_533.fillColor = 50917;
+        flag_button_533.fillAlpha = 0.5;
+        page12.add(flag_button_533);
+
+        // flag_button_502
+        const flag_button_502 = this.add.ellipse(-322, -47, 75, 75);
+        flag_button_502.fillColor = 50917;
+        flag_button_502.fillAlpha = 0.5;
+        page12.add(flag_button_502);
+
+        // flag_button_7096
+        const flag_button_7096 = this.add.ellipse(-219, -45, 75, 75);
+        flag_button_7096.fillColor = 50917;
+        flag_button_7096.fillAlpha = 0.5;
+        page12.add(flag_button_7096);
+
+        // flag_button_504
+        const flag_button_504 = this.add.ellipse(-110, -41, 75, 75);
+        flag_button_504.fillColor = 50917;
+        flag_button_504.fillAlpha = 0.5;
+        page12.add(flag_button_504);
+
+        // flag_button_538
+        const flag_button_538 = this.add.ellipse(-534, 51, 75, 75);
+        flag_button_538.fillColor = 50917;
+        flag_button_538.fillAlpha = 0.5;
+        page12.add(flag_button_538);
+
+        // flag_button_529
+        const flag_button_529 = this.add.ellipse(-427, 47, 75, 75);
+        flag_button_529.fillColor = 50917;
+        flag_button_529.fillAlpha = 0.5;
+        page12.add(flag_button_529);
+
+        // flag_button_505
+        const flag_button_505 = this.add.ellipse(-324, 49, 75, 75);
+        flag_button_505.fillColor = 50917;
+        flag_button_505.fillAlpha = 0.5;
+        page12.add(flag_button_505);
+
+        // flag_button_500
+        const flag_button_500 = this.add.ellipse(-221, 47, 75, 75);
+        flag_button_500.fillColor = 50917;
+        flag_button_500.fillAlpha = 0.5;
+        page12.add(flag_button_500);
+
+        // flag_button_535
+        const flag_button_535 = this.add.ellipse(-110, 49, 75, 75);
+        flag_button_535.fillColor = 50917;
+        flag_button_535.fillAlpha = 0.5;
+        page12.add(flag_button_535);
+
+        // flag_button_525
+        const flag_button_525 = this.add.ellipse(-538, 144, 75, 75);
+        flag_button_525.fillColor = 50917;
+        flag_button_525.fillAlpha = 0.5;
+        page12.add(flag_button_525);
+
+        // flag_button_506
+        const flag_button_506 = this.add.ellipse(-428, 142, 75, 75);
+        flag_button_506.fillColor = 50917;
+        flag_button_506.fillAlpha = 0.5;
+        page12.add(flag_button_506);
+
+        // flag_button_536
+        const flag_button_536 = this.add.ellipse(-325, 144, 75, 75);
+        flag_button_536.fillColor = 50917;
+        flag_button_536.fillAlpha = 0.5;
+        page12.add(flag_button_536);
+
+        // flag_button_540
+        const flag_button_540 = this.add.ellipse(-221, 144, 75, 75);
+        flag_button_540.fillColor = 50917;
+        flag_button_540.fillAlpha = 0.5;
+        page12.add(flag_button_540);
+
+        // flag_button_507
+        const flag_button_507 = this.add.ellipse(-109, 144, 75, 75);
+        flag_button_507.fillColor = 50917;
+        flag_button_507.fillAlpha = 0.5;
+        page12.add(flag_button_507);
+
+        // flag_button_542
+        const flag_button_542 = this.add.ellipse(-544, 240, 75, 75);
+        flag_button_542.fillColor = 50917;
+        flag_button_542.fillAlpha = 0.5;
+        page12.add(flag_button_542);
+
+        // flag_button_546
+        const flag_button_546 = this.add.ellipse(-431, 236, 75, 75);
+        flag_button_546.fillColor = 50917;
+        flag_button_546.fillAlpha = 0.5;
+        page12.add(flag_button_546);
+
+        // flag_button_548
+        const flag_button_548 = this.add.ellipse(-321, 236, 75, 75);
+        flag_button_548.fillColor = 50917;
+        flag_button_548.fillAlpha = 0.5;
+        page12.add(flag_button_548);
+
+        // flag_button_530
+        const flag_button_530 = this.add.ellipse(-219, 240, 75, 75);
+        flag_button_530.fillColor = 50917;
+        flag_button_530.fillAlpha = 0.5;
+        page12.add(flag_button_530);
+
+        // flag_button_508
+        const flag_button_508 = this.add.ellipse(-111, 239, 75, 75);
+        flag_button_508.fillColor = 50917;
+        flag_button_508.fillAlpha = 0.5;
+        page12.add(flag_button_508);
+
+        // flag_button_541
+        const flag_button_541 = this.add.ellipse(408.9185791015625, -230.4365997314453, 75, 75);
+        flag_button_541.fillColor = 50917;
+        flag_button_541.fillAlpha = 0.5;
+        page12.add(flag_button_541);
+
+        // flag_button_519
+        const flag_button_519 = this.add.ellipse(508.3985595703125, -227.6732635498047, 75, 75);
+        flag_button_519.fillColor = 50917;
+        flag_button_519.fillAlpha = 0.5;
+        page12.add(flag_button_519);
+
+        // flag_button_545
+        const flag_button_545 = this.add.ellipse(103, -109, 75, 75);
+        flag_button_545.fillColor = 50917;
+        flag_button_545.fillAlpha = 0.5;
+        page12.add(flag_button_545);
+
+        // flag_button_531
+        const flag_button_531 = this.add.ellipse(199, -112, 75, 75);
+        flag_button_531.fillColor = 50917;
+        flag_button_531.fillAlpha = 0.5;
+        page12.add(flag_button_531);
+
+        // flag_button_527
+        const flag_button_527 = this.add.ellipse(308, -112, 75, 75);
+        flag_button_527.fillColor = 50917;
+        flag_button_527.fillAlpha = 0.5;
+        page12.add(flag_button_527);
+
+        // flag_button_524
+        const flag_button_524 = this.add.ellipse(410, -114, 75, 75);
+        flag_button_524.fillColor = 50917;
+        flag_button_524.fillAlpha = 0.5;
+        page12.add(flag_button_524);
+
+        // flag_button_501
+        const flag_button_501 = this.add.ellipse(507, -112, 75, 75);
+        flag_button_501.fillColor = 50917;
+        flag_button_501.fillAlpha = 0.5;
+        page12.add(flag_button_501);
+
+        // flag_button_511
+        const flag_button_511 = this.add.ellipse(102, 9, 75, 75);
+        flag_button_511.fillColor = 50917;
+        flag_button_511.fillAlpha = 0.5;
+        page12.add(flag_button_511);
+
+        // flag_button_528
+        const flag_button_528 = this.add.ellipse(206, 7, 75, 75);
+        flag_button_528.fillColor = 50917;
+        flag_button_528.fillAlpha = 0.5;
+        page12.add(flag_button_528);
+
+        // flag_button_534
+        const flag_button_534 = this.add.ellipse(305, 9, 75, 75);
+        flag_button_534.fillColor = 50917;
+        flag_button_534.fillAlpha = 0.5;
+        page12.add(flag_button_534);
+
+        // flag_button_512
+        const flag_button_512 = this.add.ellipse(404, 8, 75, 75);
+        flag_button_512.fillColor = 50917;
+        flag_button_512.fillAlpha = 0.5;
+        page12.add(flag_button_512);
+
+        // flag_button_520
+        const flag_button_520 = this.add.ellipse(511, 9, 75, 75);
+        flag_button_520.fillColor = 50917;
+        flag_button_520.fillAlpha = 0.5;
+        page12.add(flag_button_520);
+
+        // flag_button_513
+        const flag_button_513 = this.add.ellipse(102, 130, 75, 75);
+        flag_button_513.fillColor = 50917;
+        flag_button_513.fillAlpha = 0.5;
+        page12.add(flag_button_513);
+
+        // flag_button_7095
+        const flag_button_7095 = this.add.ellipse(200, 130, 75, 75);
+        flag_button_7095.fillColor = 50917;
+        flag_button_7095.fillAlpha = 0.5;
+        page12.add(flag_button_7095);
+
+        // flag_button_543
+        const flag_button_543 = this.add.ellipse(307, 131, 75, 75);
+        flag_button_543.fillColor = 50917;
+        flag_button_543.fillAlpha = 0.5;
+        page12.add(flag_button_543);
+
+        // flag_button_522
+        const flag_button_522 = this.add.ellipse(405, 128, 75, 75);
+        flag_button_522.fillColor = 50917;
+        flag_button_522.fillAlpha = 0.5;
+        page12.add(flag_button_522);
+
+        // flag_button_547
+        const flag_button_547 = this.add.ellipse(508, 135, 75, 75);
+        flag_button_547.fillColor = 50917;
+        flag_button_547.fillAlpha = 0.5;
+        page12.add(flag_button_547);
+
+        // flag_button_537
+        const flag_button_537 = this.add.ellipse(98, 251, 75, 75);
+        flag_button_537.fillColor = 50917;
+        flag_button_537.fillAlpha = 0.5;
+        page12.add(flag_button_537);
+
+        // flag_button_517
+        const flag_button_517 = this.add.ellipse(203, 248, 75, 75);
+        flag_button_517.fillColor = 50917;
+        flag_button_517.fillAlpha = 0.5;
+        page12.add(flag_button_517);
+
+        // flag_button_526
+        const flag_button_526 = this.add.ellipse(303, 250, 75, 75);
+        flag_button_526.fillColor = 50917;
+        flag_button_526.fillAlpha = 0.5;
+        page12.add(flag_button_526);
+
+        // flag_button_518
+        const flag_button_518 = this.add.ellipse(407, 250, 75, 75);
+        flag_button_518.fillColor = 50917;
+        flag_button_518.fillAlpha = 0.5;
+        page12.add(flag_button_518);
+
+        // flag_button_539
+        const flag_button_539 = this.add.ellipse(506, 252, 75, 75);
+        flag_button_539.fillColor = 50917;
+        flag_button_539.fillAlpha = 0.5;
+        page12.add(flag_button_539);
+
+        // flag_button_523
+        const flag_button_523 = this.add.ellipse(103, -344, 75, 75);
+        flag_button_523.fillColor = 50917;
+        flag_button_523.fillAlpha = 0.5;
+        page12.add(flag_button_523);
+
+        // flag_button_503
+        const flag_button_503 = this.add.ellipse(306, -229, 75, 75);
+        flag_button_503.fillColor = 50917;
+        flag_button_503.fillAlpha = 0.5;
+        page12.add(flag_button_503);
+
+        // flag_button_510
+        const flag_button_510 = this.add.ellipse(202, -229, 75, 75);
+        flag_button_510.fillColor = 50917;
+        flag_button_510.fillAlpha = 0.5;
+        page12.add(flag_button_510);
+
+        // flag_button_509
+        const flag_button_509 = this.add.ellipse(100, -231, 75, 75);
+        flag_button_509.fillColor = 50917;
+        flag_button_509.fillAlpha = 0.5;
+        page12.add(flag_button_509);
+
+        // flag_button_521
+        const flag_button_521 = this.add.ellipse(513, -341, 75, 75);
+        flag_button_521.fillColor = 50917;
+        flag_button_521.fillAlpha = 0.5;
+        page12.add(flag_button_521);
+
+        // flag_button_516
+        const flag_button_516 = this.add.ellipse(405, -348, 75, 75);
+        flag_button_516.fillColor = 50917;
+        flag_button_516.fillAlpha = 0.5;
+        page12.add(flag_button_516);
+
+        // flag_button_544
+        const flag_button_544 = this.add.ellipse(304, -343, 75, 75);
+        flag_button_544.fillColor = 50917;
+        flag_button_544.fillAlpha = 0.5;
+        page12.add(flag_button_544);
+
+        // flag_button_515
+        const flag_button_515 = this.add.ellipse(201, -344, 75, 75);
+        flag_button_515.fillColor = 50917;
+        flag_button_515.fillAlpha = 0.5;
+        page12.add(flag_button_515);
+
+        // page11
+        const page11 = this.add.container(761, 431);
+
+        // page11
+        const page11 = this.add.image(0, 0, "june22clothing", "page11");
+        page11.add(page11);
+
+        // buy-seafarersgown
+        const buy_seafarersgown = this.add.sprite(509, -52, "clothingcatalog", "buy2");
+        buy_seafarersgown.scaleX = 1.3;
+        buy_seafarersgown.scaleY = 1.3;
+        buy_seafarersgown.angle = -23;
+        page11.add(buy_seafarersgown);
+
+        // buy-boonycurls
+        const buy_boonycurls = this.add.sprite(113, -288, "clothingcatalog", "buy1");
+        buy_boonycurls.scaleX = 1.3;
+        buy_boonycurls.scaleY = 1.3;
+        buy_boonycurls.angle = 21;
+        page11.add(buy_boonycurls);
+
+        // buy-nauticalboots
+        const buy_nauticalboots = this.add.sprite(-148, 290, "clothingcatalog", "buy2");
+        buy_nauticalboots.scaleX = 1.3;
+        buy_nauticalboots.scaleY = 1.3;
+        buy_nauticalboots.angle = 31;
+        page11.add(buy_nauticalboots);
+
+        // buy-shipshapesuit
+        const buy_shipshapesuit = this.add.sprite(-504, 174, "clothingcatalog", "buy1");
+        buy_shipshapesuit.scaleX = 1.2;
+        buy_shipshapesuit.scaleY = 1.2;
+        buy_shipshapesuit.angle = -45.00000000000006;
+        page11.add(buy_shipshapesuit);
+
+        // buy-shipshape
+        const buy_shipshape = this.add.sprite(-490, -192, "clothingcatalog", "buy1");
+        buy_shipshape.scaleX = 1.2;
+        buy_shipshape.scaleY = 1.2;
+        buy_shipshape.angle = -18;
+        page11.add(buy_shipshape);
+
+        // buy-treasuremaps
+        const buy_treasuremaps = this.add.sprite(-126, 53, "clothingcatalog", "buy2");
+        buy_treasuremaps.scaleX = 1.2;
+        buy_treasuremaps.scaleY = 1.2;
+        buy_treasuremaps.angle = 45;
+        page11.add(buy_treasuremaps);
+
+        // sec-fishingvest
+        const sec_fishingvest = this.add.ellipse(-34, -67, 128, 128);
+        sec_fishingvest.scaleX = 0.2175016673872514;
+        sec_fishingvest.scaleY = 0.21393876922214905;
+        sec_fishingvest.isFilled = true;
+        sec_fishingvest.fillAlpha = 0;
+        page11.add(sec_fishingvest);
+
+        // sec-grassskirt
+        const sec_grassskirt = this.add.ellipse(127, -393, 128, 128);
+        sec_grassskirt.scaleX = 0.2175016673872514;
+        sec_grassskirt.scaleY = 0.21393876922214905;
+        sec_grassskirt.isFilled = true;
+        sec_grassskirt.fillAlpha = 0;
+        page11.add(sec_grassskirt);
+
+        // page10
+        const page10 = this.add.container(761, 430);
+        page10.visible = false;
+
+        // page10
+        const page10 = this.add.image(0, 0, "june22clothing", "page10");
+        page10.add(page10);
+
+        // buy-telescope
+        const buy_telescope = this.add.image(-483, -181, "clothingcatalog", "buy2");
+        buy_telescope.scaleX = 1.2892080995527262;
+        buy_telescope.scaleY = 1.2892080995527262;
+        buy_telescope.angle = -15;
+        page10.add(buy_telescope);
+
+        // buy-thepirateer
+        const buy_thepirateer = this.add.image(-394, -316, "clothingcatalog", "buy1");
+        buy_thepirateer.scaleX = 1.2;
+        buy_thepirateer.scaleY = 1.2;
+        buy_thepirateer.angle = 15;
+        page10.add(buy_thepirateer);
+
+        // buy-crowsnestvest
+        const buy_crowsnestvest = this.add.image(-100, 68, "clothingcatalog", "buy2");
+        buy_crowsnestvest.scaleX = 1.2859928030062104;
+        buy_crowsnestvest.scaleY = 1.2859928030062104;
+        buy_crowsnestvest.angle = 33;
+        page10.add(buy_crowsnestvest);
+
+        // buy-raggedyrags
+        const buy_raggedyrags = this.add.image(126, -36, "clothingcatalog", "buy1");
+        buy_raggedyrags.scaleX = 1.2;
+        buy_raggedyrags.scaleY = 1.2;
+        buy_raggedyrags.angle = -17;
+        page10.add(buy_raggedyrags);
+
+        // buy-buccaneer
+        const buy_buccaneer = this.add.image(506, -292, "clothingcatalog", "buy2");
+        buy_buccaneer.scaleX = 1.2759678083080723;
+        buy_buccaneer.scaleY = 1.2759678083080723;
+        buy_buccaneer.angle = 10;
+        page10.add(buy_buccaneer);
+
+        // sec-lifegaurdshirt
+        const sec_lifegaurdshirt = this.add.ellipse(-219, -274, 128, 128);
+        sec_lifegaurdshirt.scaleX = 0.2175016673872514;
+        sec_lifegaurdshirt.scaleY = 0.21393876922214905;
+        sec_lifegaurdshirt.isFilled = true;
+        sec_lifegaurdshirt.fillAlpha = 0;
+        page10.add(sec_lifegaurdshirt);
 
         // page9
-        const page9 = this.add.container(0, 0);
+        const page9 = this.add.container(761, 431);
         page9.visible = false;
 
-        // page_page0002
-        const page_page0002 = this.add.image(0, -7, "clothingcatalog", "page/page0002");
-        page_page0002.setOrigin(0, 0);
-        page9.add(page_page0002);
+        // page9
+        const page9 = this.add.image(0, 0, "june22clothing", "page9");
+        page9.add(page9);
 
-        // blue0001_png
-        const blue0001_png = this.add.image(919, 322, "Sep2005", "blue0001.png");
-        blue0001_png.scaleX = 0.544399396429802;
-        blue0001_png.scaleY = 0.544399396429802;
-        page9.add(blue0001_png);
+        // buy-commanderhat
+        const buy_commanderhat = this.add.image(-471, -280, "clothingcatalog", "buy1");
+        buy_commanderhat.scaleX = 1.2;
+        buy_commanderhat.scaleY = 1.2;
+        buy_commanderhat.angle = -39.99999999999994;
+        page9.add(buy_commanderhat);
 
-        // green0001_png
-        const green0001_png = this.add.image(1034, 323, "Sep2005", "green0001.png");
-        green0001_png.scaleX = 0.544399396429802;
-        green0001_png.scaleY = 0.544399396429802;
-        page9.add(green0001_png);
+        // buy-commanderoutfit
+        const buy_commanderoutfit = this.add.image(-457, -86, "clothingcatalog", "buy1");
+        buy_commanderoutfit.scaleX = 1.2;
+        buy_commanderoutfit.scaleY = 1.2;
+        buy_commanderoutfit.angle = 15;
+        page9.add(buy_commanderoutfit);
 
-        // pink0001_png
-        const pink0001_png = this.add.image(1148, 323, "Sep2005", "pink0001.png");
-        pink0001_png.scaleX = 0.544399396429802;
-        pink0001_png.scaleY = 0.544399396429802;
-        page9.add(pink0001_png);
+        // buy-commanderboots
+        const buy_commanderboots = this.add.image(-441, 285, "clothingcatalog", "buy1");
+        buy_commanderboots.scaleX = 1.2;
+        buy_commanderboots.scaleY = 1.2;
+        buy_commanderboots.angle = -15;
+        page9.add(buy_commanderboots);
 
-        // black0001_png
-        const black0001_png = this.add.image(919, 412, "Sep2005", "black0001.png");
-        black0001_png.scaleX = 0.544399396429802;
-        black0001_png.scaleY = 0.544399396429802;
-        page9.add(black0001_png);
+        // buy-swashbuckleroutfit
+        const buy_swashbuckleroutfit = this.add.image(452, -59, "clothingcatalog", "buy2");
+        buy_swashbuckleroutfit.scaleX = 1.2;
+        buy_swashbuckleroutfit.scaleY = 1.2;
+        page9.add(buy_swashbuckleroutfit);
 
-        // red0001_png
-        const red0001_png = this.add.image(1034, 412, "Sep2005", "red0001.png");
-        red0001_png.scaleX = 0.544399396429802;
-        red0001_png.scaleY = 0.544399396429802;
-        page9.add(red0001_png);
+        // buy-swashbucklerhat
+        const buy_swashbucklerhat = this.add.image(433, -311, "clothingcatalog", "buy2");
+        buy_swashbucklerhat.scaleX = 1.2;
+        buy_swashbucklerhat.scaleY = 1.2;
+        buy_swashbucklerhat.angle = 18;
+        page9.add(buy_swashbucklerhat);
 
-        // orange0001_png
-        const orange0001_png = this.add.image(1148, 412, "Sep2005", "orange0001.png");
-        orange0001_png.scaleX = 0.544399396429802;
-        orange0001_png.scaleY = 0.544399396429802;
-        page9.add(orange0001_png);
-
-        // yellow0001_png
-        const yellow0001_png = this.add.image(919, 507, "Sep2005", "yellow0001.png");
-        yellow0001_png.scaleX = 0.544399396429802;
-        yellow0001_png.scaleY = 0.544399396429802;
-        page9.add(yellow0001_png);
-
-        // purple0001_png
-        const purple0001_png = this.add.image(1034, 507, "Sep2005", "purple0001.png");
-        purple0001_png.scaleX = 0.544399396429802;
-        purple0001_png.scaleY = 0.544399396429802;
-        page9.add(purple0001_png);
-
-        // brown0001_png
-        const brown0001_png = this.add.image(1148, 507, "Sep2005", "brown0001.png");
-        brown0001_png.scaleX = 0.544399396429802;
-        brown0001_png.scaleY = 0.544399396429802;
-        page9.add(brown0001_png);
-
-        // darkgreen0001_png
-        const darkgreen0001_png = this.add.image(1034, 598, "Sep2005", "darkgreen0001.png");
-        darkgreen0001_png.scaleX = 0.544399396429802;
-        darkgreen0001_png.scaleY = 0.544399396429802;
-        page9.add(darkgreen0001_png);
-
-        // lightblue0001_png
-        const lightblue0001_png = this.add.image(1148, 598, "Sep2005", "lightblue0001.png");
-        lightblue0001_png.scaleX = 0.544399396429802;
-        lightblue0001_png.scaleY = 0.544399396429802;
-        page9.add(lightblue0001_png);
-
-        // darkpink0001_png
-        const darkpink0001_png = this.add.image(919, 598, "Sep2005", "darkpink0001.png");
-        darkpink0001_png.scaleX = 0.544399396429802;
-        darkpink0001_png.scaleY = 0.544399396429802;
-        page9.add(darkpink0001_png);
+        // sec-hawaiinhat
+        const sec_hawaiinhat = this.add.ellipse(484, 293, 128, 128);
+        sec_hawaiinhat.scaleX = 0.2175016673872514;
+        sec_hawaiinhat.scaleY = 0.21393876922214905;
+        sec_hawaiinhat.isFilled = true;
+        sec_hawaiinhat.fillAlpha = 0;
+        page9.add(sec_hawaiinhat);
 
         // page8
         const page8 = this.add.container(0, 0);
         page8.visible = false;
 
-        // page7_1
-        const page7_1 = this.add.image(768, 431, "may22cat", "page7");
-        page8.add(page7_1);
+        // page8_1
+        const page8_1 = this.add.image(761, 431, "june22clothing", "page8");
+        page8.add(page8_1);
 
-        // noir-bg
-        const noir_bg = this.add.rectangle(340, 357, 128, 128);
-        noir_bg.scaleX = 1.6391672389424585;
-        noir_bg.scaleY = 1.6391672389424585;
-        noir_bg.isFilled = true;
-        noir_bg.fillAlpha = 0;
-        page8.add(noir_bg);
+        // buy-waterwings
+        const buy_waterwings = this.add.image(239, 385, "clothingcatalog", "buy2");
+        buy_waterwings.scaleX = 0.7;
+        buy_waterwings.scaleY = 0.7;
+        buy_waterwings.angle = 20;
+        page8.add(buy_waterwings);
 
-        // target-bg
-        const target_bg = this.add.rectangle(586, 358, 128, 128);
-        target_bg.scaleX = 1.6391672389424585;
-        target_bg.scaleY = 1.6391672389424585;
-        target_bg.isFilled = true;
-        target_bg.fillAlpha = 0;
-        page8.add(target_bg);
+        // buy-crabcostume
+        const buy_crabcostume = this.add.image(690, 367, "clothingcatalog", "buy2");
+        buy_crabcostume.scaleX = 1.2;
+        buy_crabcostume.scaleY = 1.2;
+        buy_crabcostume.angle = 20;
+        page8.add(buy_crabcostume);
 
-        // fish-bg
-        const fish_bg = this.add.rectangle(338, 604, 128, 128);
-        fish_bg.scaleX = 1.6391672389424585;
-        fish_bg.scaleY = 1.6391672389424585;
-        fish_bg.isFilled = true;
-        fish_bg.fillAlpha = 0;
-        page8.add(fish_bg);
+        // buy-squidlid
+        const buy_squidlid = this.add.image(622, 638, "clothingcatalog", "buy2");
+        buy_squidlid.scaleX = 1.2;
+        buy_squidlid.scaleY = 1.2;
+        buy_squidlid.angle = 20;
+        page8.add(buy_squidlid);
 
-        // picnic-bg
-        const picnic_bg = this.add.rectangle(586, 606, 128, 128);
-        picnic_bg.scaleX = 1.6391672389424585;
-        picnic_bg.scaleY = 1.6391672389424585;
-        picnic_bg.isFilled = true;
-        picnic_bg.fillAlpha = 0;
-        page8.add(picnic_bg);
+        // buy-mopbucket
+        const buy_mopbucket = this.add.image(902, 612, "clothingcatalog", "buy1");
+        buy_mopbucket.angle = -45.00000000000006;
+        page8.add(buy_mopbucket);
 
-        // pizza-bg
-        const pizza_bg = this.add.rectangle(944, 360, 128, 128);
-        pizza_bg.scaleX = 1.6391672389424585;
-        pizza_bg.scaleY = 1.6391672389424585;
-        pizza_bg.isFilled = true;
-        pizza_bg.fillAlpha = 0;
-        page8.add(pizza_bg);
+        // buy-yellowsnorkel
+        const buy_yellowsnorkel = this.add.image(1215, 607, "clothingcatalog", "buy1");
+        buy_yellowsnorkel.scaleX = 1.2;
+        buy_yellowsnorkel.scaleY = 1.2;
+        buy_yellowsnorkel.angle = -45.00000000000006;
+        page8.add(buy_yellowsnorkel);
 
-        // fireflies-bg
-        const fireflies_bg = this.add.rectangle(1186, 358, 128, 128);
-        fireflies_bg.scaleX = 1.6391672389424585;
-        fireflies_bg.scaleY = 1.6391672389424585;
-        fireflies_bg.isFilled = true;
-        fireflies_bg.fillAlpha = 0;
-        page8.add(fireflies_bg);
+        // sec-marcas
+        const sec_marcas = this.add.ellipse(1016, 562, 128, 128);
+        sec_marcas.scaleX = 0.2175016673872514;
+        sec_marcas.scaleY = 0.21393876922214905;
+        sec_marcas.isFilled = true;
+        sec_marcas.fillAlpha = 0;
+        page8.add(sec_marcas);
 
-        // western-bg
-        const western_bg = this.add.rectangle(942, 610, 128, 128);
-        western_bg.scaleX = 1.6391672389424585;
-        western_bg.scaleY = 1.6391672389424585;
-        western_bg.isFilled = true;
-        western_bg.fillAlpha = 0;
-        page8.add(western_bg);
-
-        // baseball-bg
-        const baseball_bg = this.add.rectangle(1184, 606, 128, 128);
-        baseball_bg.scaleX = 1.6391672389424585;
-        baseball_bg.scaleY = 1.6391672389424585;
-        baseball_bg.isFilled = true;
-        baseball_bg.fillAlpha = 0;
-        page8.add(baseball_bg);
+        // sec-fishinghat
+        const sec_fishinghat = this.add.ellipse(1301, 295, 128, 128);
+        sec_fishinghat.scaleX = 0.2175016673872514;
+        sec_fishinghat.scaleY = 0.21393876922214905;
+        sec_fishinghat.isFilled = true;
+        sec_fishinghat.fillAlpha = 0;
+        page8.add(sec_fishinghat);
 
         // page7
-        const page7 = this.add.container(0, 0);
+        const page7 = this.add.container(0, 1);
         page7.visible = false;
 
-        // page6_1
-        const page6_1 = this.add.image(768, 431, "may22cat", "page6");
-        page7.add(page6_1);
+        // page7_2
+        const page7_2 = this.add.image(761, 431, "june22clothing", "page7");
+        page7.add(page7_2);
 
-        // buy_sombrero
-        const buy_sombrero = this.add.image(645, 762, "may22cat", "buy");
-        page7.add(buy_sombrero);
+        // buy-razzmatazz
+        const buy_razzmatazz = this.add.image(320, 267, "clothingcatalog", "buy1");
+        buy_razzmatazz.scaleX = 1.2;
+        buy_razzmatazz.scaleY = 1.2;
+        buy_razzmatazz.angle = -45.00000000000006;
+        page7.add(buy_razzmatazz);
 
-        // buy_roman
-        const buy_roman = this.add.image(287, 762, "may22cat", "buy");
-        page7.add(buy_roman);
+        // buy-coralmermaid
+        const buy_coralmermaid = this.add.image(658, 418, "clothingcatalog", "buy2");
+        buy_coralmermaid.scaleX = 1.2;
+        buy_coralmermaid.scaleY = 1.2;
+        buy_coralmermaid.angle = 20;
+        page7.add(buy_coralmermaid);
 
-        // text_roman
-        const text_roman = this.add.text(241, 743, "", {});
-        text_roman.text = "800";
-        text_roman.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_roman);
+        // buy-tropicalmermaid
+        const buy_tropicalmermaid = this.add.image(1281, 248, "clothingcatalog", "buy2");
+        buy_tropicalmermaid.scaleX = 1.2;
+        buy_tropicalmermaid.scaleY = 1.2;
+        page7.add(buy_tropicalmermaid);
 
-        // buy_beekeeper
-        const buy_beekeeper = this.add.image(287, 381, "may22cat", "buy");
-        page7.add(buy_beekeeper);
+        // buy-aquamarine
+        const buy_aquamarine = this.add.image(1161, 78, "clothingcatalog", "buy2");
+        buy_aquamarine.scaleX = 1.2;
+        buy_aquamarine.scaleY = 1.2;
+        buy_aquamarine.angle = -39;
+        page7.add(buy_aquamarine);
 
-        // text_beekeeper
-        const text_beekeeper = this.add.text(246, 364, "", {});
-        text_beekeeper.text = "750";
-        text_beekeeper.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_beekeeper);
-
-        // buy_trend
-        const buy_trend = this.add.image(463, 381, "may22cat", "buy");
-        page7.add(buy_trend);
-
-        // text_trend
-        const text_trend = this.add.text(426, 364, "", {});
-        text_trend.text = "450";
-        text_trend.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_trend);
-
-        // buy_disco
-        const buy_disco = this.add.image(645, 381, "may22cat", "buy");
-        page7.add(buy_disco);
-
-        // text_disco
-        const text_disco = this.add.text(606, 364, "", {});
-        text_disco.text = "600";
-        text_disco.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_disco);
-
-        // buy_sstriker
-        const buy_sstriker = this.add.image(288, 576, "may22cat", "buy");
-        page7.add(buy_sstriker);
-
-        // text_sstriker
-        const text_sstriker = this.add.text(246, 559, "", {});
-        text_sstriker.text = "550";
-        text_sstriker.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_sstriker);
-
-        // buy_sk
-        const buy_sk = this.add.image(463, 576, "may22cat", "buy");
-        page7.add(buy_sk);
-
-        // text_sk
-        const text_sk = this.add.text(426, 559, "", {});
-        text_sk.text = "550";
-        text_sk.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_sk);
-
-        // buy_funster
-        const buy_funster = this.add.image(645, 576, "may22cat", "buy");
-        page7.add(buy_funster);
-
-        // text_funster
-        const text_funster = this.add.text(606, 559, "", {});
-        text_funster.text = "500";
-        text_funster.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_funster);
-
-        // text_sombrero
-        const text_sombrero = this.add.text(606, 743, "", {});
-        text_sombrero.text = "500";
-        text_sombrero.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_sombrero);
-
-        // buy_pballcap
-        const buy_pballcap = this.add.image(463, 762, "may22cat", "buy");
-        page7.add(buy_pballcap);
-
-        // text_pballcap
-        const text_pballcap = this.add.text(426, 743, "", {});
-        text_pballcap.text = "200";
-        text_pballcap.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_pballcap);
-
-        // buy_tuft
-        const buy_tuft = this.add.image(645, 186, "may22cat", "buy");
-        page7.add(buy_tuft);
-
-        // text_tuft
-        const text_tuft = this.add.text(606, 169, "", {});
-        text_tuft.text = "250";
-        text_tuft.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_tuft);
-
-        // buy_bflutt
-        const buy_bflutt = this.add.image(463, 186, "may22cat", "buy");
-        page7.add(buy_bflutt);
-
-        // text_bflutt
-        const text_bflutt = this.add.text(426, 169, "", {});
-        text_bflutt.text = "350";
-        text_bflutt.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_bflutt);
-
-        // buy_flouncy
-        const buy_flouncy = this.add.image(287, 186, "may22cat", "buy");
-        page7.add(buy_flouncy);
-
-        // text_flouncy
-        const text_flouncy = this.add.text(246, 169, "", {});
-        text_flouncy.text = "600";
-        text_flouncy.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page7.add(text_flouncy);
-
-        // buy2_flutterby
-        const buy2_flutterby = this.add.image(1110, 381, "clothingcatalog", "buy2");
-        buy2_flutterby.scaleX = 0.7060432626289486;
-        buy2_flutterby.scaleY = 0.7060432626289486;
-        buy2_flutterby.angle = -135;
-        buy2_flutterby.setOrigin(0, 0);
-        page7.add(buy2_flutterby);
-
-        // buy2_pinkear
-        const buy2_pinkear = this.add.image(887, 293, "clothingcatalog", "buy2");
-        buy2_pinkear.scaleX = 0.7060432626289486;
-        buy2_pinkear.scaleY = 0.7060432626289486;
-        buy2_pinkear.angle = -52.99999999999994;
-        buy2_pinkear.setOrigin(0, 0);
-        page7.add(buy2_pinkear);
-
-        // sec-blackcape
-        const sec_blackcape = this.add.ellipse(844, 422, 128, 128);
-        sec_blackcape.scaleX = 0.2175016673872514;
-        sec_blackcape.scaleY = 0.21393876922214905;
-        sec_blackcape.isFilled = true;
-        sec_blackcape.fillAlpha = 0;
-        page7.add(sec_blackcape);
-
-        // sec-pinkdress
-        const sec_pinkdress = this.add.ellipse(1205, 356, 128, 128);
-        sec_pinkdress.scaleX = 0.2175016673872514;
-        sec_pinkdress.scaleY = 0.21393876922214905;
-        sec_pinkdress.isFilled = true;
-        sec_pinkdress.fillAlpha = 0;
-        page7.add(sec_pinkdress);
+        // sec-purplespringdress
+        const sec_purplespringdress = this.add.ellipse(657, 188, 128, 128);
+        sec_purplespringdress.scaleX = 0.2175016673872514;
+        sec_purplespringdress.scaleY = 0.21393876922214905;
+        sec_purplespringdress.isFilled = true;
+        sec_purplespringdress.fillAlpha = 0;
+        page7.add(sec_purplespringdress);
 
         // page6
-        const page6 = this.add.container(0, 0);
+        const page6 = this.add.container(0, 2);
         page6.visible = false;
 
-        // page8_1
-        const page8_1 = this.add.image(768, 431, "may22cat", "page8");
-        page6.add(page8_1);
+        // page6_2
+        const page6_2 = this.add.image(768, 431, "june22clothing", "page6");
+        page6.add(page6_2);
 
-        // buy2_pinkrollers
-        const buy2_pinkrollers = this.add.image(691, 511, "clothingcatalog", "buy2");
-        buy2_pinkrollers.scaleX = 0.8414916020698116;
-        buy2_pinkrollers.scaleY = 0.8414916020698116;
-        buy2_pinkrollers.angle = 50;
-        buy2_pinkrollers.setOrigin(0, 0);
-        page6.add(buy2_pinkrollers);
+        // buy_bluesnorkel
+        const buy_bluesnorkel = this.add.image(296, 354, "may22cat", "buy");
+        page6.add(buy_bluesnorkel);
 
-        // buy_brownshoes
-        const buy_brownshoes = this.add.image(870, 463, "may22cat", "buy");
-        page6.add(buy_brownshoes);
+        // text_bluesnorkel
+        const text_bluesnorkel = this.add.text(259, 334, "", {});
+        text_bluesnorkel.text = "250";
+        text_bluesnorkel.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_bluesnorkel);
 
-        // text_brownshoes
-        const text_brownshoes = this.add.text(829, 446, "", {});
-        text_brownshoes.text = "400";
-        text_brownshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_brownshoes);
+        // buy_blueracing
+        const buy_blueracing = this.add.image(285, 579, "may22cat", "buy");
+        page6.add(buy_blueracing);
 
-        // buy_yrubber
-        const buy_yrubber = this.add.image(1046, 463, "may22cat", "buy");
-        page6.add(buy_yrubber);
+        // text_blueracing
+        const text_blueracing = this.add.text(248, 560, "", {});
+        text_blueracing.text = "500";
+        text_blueracing.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_blueracing);
 
-        // text_yrubber
-        const text_yrubber = this.add.text(1009, 446, "", {});
-        text_yrubber.text = "280";
-        text_yrubber.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_yrubber);
+        // buy_blueflippers
+        const buy_blueflippers = this.add.image(286, 753, "may22cat", "buy");
+        page6.add(buy_blueflippers);
 
-        // buy_iceskates
-        const buy_iceskates = this.add.image(1215, 463, "may22cat", "buy");
-        page6.add(buy_iceskates);
+        // text_blueflippers
+        const text_blueflippers = this.add.text(251, 733, "", {});
+        text_blueflippers.text = "225";
+        text_blueflippers.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_blueflippers);
 
-        // text_iceskates
-        const text_iceskates = this.add.text(1176, 446, "", {});
-        text_iceskates.text = "200";
-        text_iceskates.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_iceskates);
+        // buy_blackscuba
+        const buy_blackscuba = this.add.image(1037, 488, "may22cat", "buy");
+        page6.add(buy_blackscuba);
 
-        // buy_blackcheckshoes
-        const buy_blackcheckshoes = this.add.image(871, 655, "may22cat", "buy");
-        page6.add(buy_blackcheckshoes);
+        // text_blackscuba
+        const text_blackscuba = this.add.text(999, 468, "", {});
+        text_blackscuba.text = "200";
+        text_blackscuba.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_blackscuba);
 
-        // text_blackcheckshoes
-        const text_blackcheckshoes = this.add.text(829, 638, "", {});
-        text_blackcheckshoes.text = "300";
-        text_blackcheckshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_blackcheckshoes);
+        // buy_scubatank
+        const buy_scubatank = this.add.image(1257, 488, "may22cat", "buy");
+        page6.add(buy_scubatank);
 
-        // buy_bluecheckershoes
-        const buy_bluecheckershoes = this.add.image(1046, 655, "may22cat", "buy");
-        page6.add(buy_bluecheckershoes);
+        // text_scubatank
+        const text_scubatank = this.add.text(1218, 467, "", {});
+        text_scubatank.text = "480";
+        text_scubatank.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_scubatank);
 
-        // text_bluecheckershoes
-        const text_bluecheckershoes = this.add.text(1007, 638, "", {});
-        text_bluecheckershoes.text = "300";
-        text_bluecheckershoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_bluecheckershoes);
+        // buy_greenwetsuit
+        const buy_greenwetsuit = this.add.image(1035, 736, "may22cat", "buy");
+        page6.add(buy_greenwetsuit);
 
-        // buy_redtenniesshoes
-        const buy_redtenniesshoes = this.add.image(1215, 655, "may22cat", "buy");
-        page6.add(buy_redtenniesshoes);
+        // text_greenwetsuit
+        const text_greenwetsuit = this.add.text(996, 716, "", {});
+        text_greenwetsuit.text = "250";
+        text_greenwetsuit.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_greenwetsuit);
 
-        // text_redtenniesshoes
-        const text_redtenniesshoes = this.add.text(1176, 638, "", {});
-        text_redtenniesshoes.text = "250";
-        text_redtenniesshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_redtenniesshoes);
+        // buy_yellowflippers
+        const buy_yellowflippers = this.add.image(1264, 737, "may22cat", "buy");
+        page6.add(buy_yellowflippers);
 
-        // buy_bunnyslippers
-        const buy_bunnyslippers = this.add.image(1215, 282, "may22cat", "buy");
-        page6.add(buy_bunnyslippers);
+        // text_yellowflippers
+        const text_yellowflippers = this.add.text(1225, 716, "", {});
+        text_yellowflippers.text = "200";
+        text_yellowflippers.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
+        page6.add(text_yellowflippers);
 
-        // text_bunnyslippers
-        const text_bunnyslippers = this.add.text(1176, 265, "", {});
-        text_bunnyslippers.text = "200";
-        text_bunnyslippers.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_bunnyslippers);
-
-        // buy_cuckoo
-        const buy_cuckoo = this.add.image(1046, 282, "may22cat", "buy");
-        page6.add(buy_cuckoo);
-
-        // text_cuckoo
-        const text_cuckoo = this.add.text(1009, 265, "", {});
-        text_cuckoo.text = "200";
-        text_cuckoo.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_cuckoo);
-
-        // buy_dressshoes
-        const buy_dressshoes = this.add.image(870, 282, "may22cat", "buy");
-        page6.add(buy_dressshoes);
-
-        // text_dressshoes
-        const text_dressshoes = this.add.text(829, 265, "", {});
-        text_dressshoes.text = "250";
-        text_dressshoes.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page6.add(text_dressshoes);
+        // sec-greenbikini
+        const sec_greenbikini = this.add.ellipse(545, 656, 128, 128);
+        sec_greenbikini.scaleX = 0.2175016673872514;
+        sec_greenbikini.scaleY = 0.21393876922214905;
+        sec_greenbikini.isFilled = true;
+        sec_greenbikini.fillAlpha = 0;
+        page6.add(sec_greenbikini);
 
         // page5
         const page5 = this.add.container(0, 0);
         page5.visible = false;
 
-        // page5_1
-        const page5_1 = this.add.image(768, 431, "may22cat", "page5");
-        page5.add(page5_1);
+        // page5
+        const page5 = this.add.image(768, 431, "june22clothing", "page5");
+        page5.add(page5);
 
-        // buy_bletterman
-        const buy_bletterman = this.add.image(1215, 755, "may22cat", "buy");
-        page5.add(buy_bletterman);
-
-        // buy2_blackhoodie
-        const buy2_blackhoodie = this.add.image(588, 548, "clothingcatalog", "buy2");
-        buy2_blackhoodie.scaleX = 0.8414916020698116;
-        buy2_blackhoodie.scaleY = 0.8414916020698116;
-        buy2_blackhoodie.angle = 30;
-        buy2_blackhoodie.setOrigin(0, 0);
-        page5.add(buy2_blackhoodie);
-
-        // buy_daisy
-        const buy_daisy = this.add.image(870, 380, "may22cat", "buy");
-        page5.add(buy_daisy);
-
-        // text_daisy
-        const text_daisy = this.add.text(829, 363, "", {});
-        text_daisy.text = "200";
-        text_daisy.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_daisy);
-
-        // buy_bparka
-        const buy_bparka = this.add.image(1046, 380, "may22cat", "buy");
-        page5.add(buy_bparka);
+        // buy_sagefish
+        const buy_sagefish = this.add.image(627, 290, "may22cat", "buy");
+        page5.add(buy_sagefish);
 
         // text_bparka
-        const text_bparka = this.add.text(1009, 363, "", {});
-        text_bparka.text = "500";
+        const text_bparka = this.add.text(589, 270, "", {});
+        text_bparka.text = "400";
         text_bparka.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page5.add(text_bparka);
 
-        // buy_greenrug
-        const buy_greenrug = this.add.image(1215, 380, "may22cat", "buy");
-        page5.add(buy_greenrug);
+        // buy_squidzoi
+        const buy_squidzoi = this.add.image(880, 291, "may22cat", "buy");
+        page5.add(buy_squidzoi);
 
         // text_greenrug
-        const text_greenrug = this.add.text(1176, 363, "", {});
-        text_greenrug.text = "400";
+        const text_greenrug = this.add.text(841, 270, "", {});
+        text_greenrug.text = "600";
         text_greenrug.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page5.add(text_greenrug);
 
-        // buy_pband
-        const buy_pband = this.add.image(871, 566, "may22cat", "buy");
-        page5.add(buy_pband);
+        // sec-redshorts
+        const sec_redshorts = this.add.ellipse(707, 407, 128, 128);
+        sec_redshorts.scaleX = 0.2175016673872514;
+        sec_redshorts.scaleY = 0.21393876922214905;
+        sec_redshorts.isFilled = true;
+        sec_redshorts.fillAlpha = 0;
+        page5.add(sec_redshorts);
 
-        // text_pband
-        const text_pband = this.add.text(829, 549, "", {});
-        text_pband.text = "500";
-        text_pband.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_pband);
+        // sec-pinkswimsuit
+        const sec_pinkswimsuit = this.add.ellipse(1209, 387, 128, 128);
+        sec_pinkswimsuit.scaleX = 0.2175016673872514;
+        sec_pinkswimsuit.scaleY = 0.21393876922214905;
+        sec_pinkswimsuit.isFilled = true;
+        sec_pinkswimsuit.fillAlpha = 0;
+        page5.add(sec_pinkswimsuit);
 
-        // buy_lighthouse
-        const buy_lighthouse = this.add.image(1046, 566, "may22cat", "buy");
-        page5.add(buy_lighthouse);
-
-        // text_lighthouse
-        const text_lighthouse = this.add.text(1007, 549, "", {});
-        text_lighthouse.text = "750";
-        text_lighthouse.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_lighthouse);
-
-        // buy_poncho
-        const buy_poncho = this.add.image(1215, 566, "may22cat", "buy");
-        page5.add(buy_poncho);
-
-        // text_poncho
-        const text_poncho = this.add.text(1176, 549, "", {});
-        text_poncho.text = "350";
-        text_poncho.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_poncho);
-
-        // text_bletterman
-        const text_bletterman = this.add.text(1171, 736, "", {});
-        text_bletterman.text = "550";
-        text_bletterman.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_bletterman);
-
-        // buy_ballerina
-        const buy_ballerina = this.add.image(1046, 755, "may22cat", "buy");
-        page5.add(buy_ballerina);
-
-        // text_ballerina
-        const text_ballerina = this.add.text(1002, 736, "", {});
-        text_ballerina.text = "450";
-        text_ballerina.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_ballerina);
-
-        // buy_ad
-        const buy_ad = this.add.image(870, 755, "may22cat", "buy");
-        page5.add(buy_ad);
-
-        // text_ad
-        const text_ad = this.add.text(824, 736, "", {});
-        text_ad.text = "350";
-        text_ad.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_ad);
-
-        // buy_ljacket
-        const buy_ljacket = this.add.image(1215, 199, "may22cat", "buy");
-        page5.add(buy_ljacket);
-
-        // text_ljacket
-        const text_ljacket = this.add.text(1176, 182, "", {});
-        text_ljacket.text = "320";
-        text_ljacket.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_ljacket);
-
-        // buy_qvest
-        const buy_qvest = this.add.image(1046, 199, "may22cat", "buy");
-        page5.add(buy_qvest);
-
-        // text_qvest
-        const text_qvest = this.add.text(1009, 182, "", {});
-        text_qvest.text = "450";
-        text_qvest.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_qvest);
-
-        // buy_rainjacket
-        const buy_rainjacket = this.add.image(870, 199, "may22cat", "buy");
-        page5.add(buy_rainjacket);
-
-        // text_rainjacket
-        const text_rainjacket = this.add.text(829, 182, "", {});
-        text_rainjacket.text = "450";
-        text_rainjacket.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page5.add(text_rainjacket);
-
-        // buy2_yellowhoodie
-        const buy2_yellowhoodie = this.add.image(640, 118, "clothingcatalog", "buy2");
-        buy2_yellowhoodie.scaleX = 0.7060432626289486;
-        buy2_yellowhoodie.scaleY = 0.7060432626289486;
-        buy2_yellowhoodie.angle = -35.00000000000006;
-        buy2_yellowhoodie.setOrigin(0, 0);
-        page5.add(buy2_yellowhoodie);
-
-        // buy2_pinkhoodie
-        const buy2_pinkhoodie = this.add.image(393, 124, "clothingcatalog", "buy2");
-        buy2_pinkhoodie.scaleX = 0.7060432626289486;
-        buy2_pinkhoodie.scaleY = 0.7060432626289486;
-        buy2_pinkhoodie.angle = -35.00000000000006;
-        buy2_pinkhoodie.setOrigin(0, 0);
-        page5.add(buy2_pinkhoodie);
-
-        // sec-bluesneakers
-        const sec_bluesneakers = this.add.ellipse(640, 472, 128, 128);
-        sec_bluesneakers.scaleX = 0.2175016673872514;
-        sec_bluesneakers.scaleY = 0.21393876922214905;
-        sec_bluesneakers.isFilled = true;
-        sec_bluesneakers.fillAlpha = 0;
-        page5.add(sec_bluesneakers);
+        // sec-floralbikini
+        const sec_floralbikini = this.add.ellipse(948, 513, 128, 128);
+        sec_floralbikini.scaleX = 0.2175016673872514;
+        sec_floralbikini.scaleY = 0.21393876922214905;
+        sec_floralbikini.isFilled = true;
+        sec_floralbikini.fillAlpha = 0;
+        page5.add(sec_floralbikini);
 
         // page4
-        const page4 = this.add.container(0, 0);
+        const page4 = this.add.container(0, 2);
         page4.visible = false;
 
-        // page4_1
-        const page4_1 = this.add.image(768, 431, "may22cat", "page4");
-        page4.add(page4_1);
+        // page4
+        const page4 = this.add.image(768, 431, "june22clothing", "page4");
+        page4.add(page4);
 
-        // sec-blueballcap
-        const sec_blueballcap = this.add.ellipse(430, 282, 128, 128);
-        sec_blueballcap.scaleX = 0.2175016673872514;
-        sec_blueballcap.scaleY = 0.21393876922214905;
-        sec_blueballcap.isFilled = true;
-        sec_blueballcap.fillAlpha = 0;
-        page4.add(sec_blueballcap);
+        // sec-bluewaterwings
+        const sec_bluewaterwings = this.add.ellipse(313, 643, 128, 128);
+        sec_bluewaterwings.scaleX = 0.2175016673872514;
+        sec_bluewaterwings.scaleY = 0.21393876922214905;
+        sec_bluewaterwings.isFilled = true;
+        sec_bluewaterwings.fillAlpha = 0;
+        page4.add(sec_bluewaterwings);
 
         // buy_2_3_1_1_1
-        const buy_2_3_1_1_1 = this.add.image(1228, 717, "may22cat", "buy");
+        const buy_2_3_1_1_1 = this.add.image(607, 466, "may22cat", "buy");
         page4.add(buy_2_3_1_1_1);
 
         // text_2_3_1_1_1
-        const text_2_3_1_1_1 = this.add.text(1184, 698, "", {});
-        text_2_3_1_1_1.text = "150";
+        const text_2_3_1_1_1 = this.add.text(567, 446, "", {});
+        text_2_3_1_1_1.text = "600";
         text_2_3_1_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page4.add(text_2_3_1_1_1);
 
-        // buy2_1_1
-        const buy2_1_1 = this.add.image(622, 375, "clothingcatalog", "buy2");
-        buy2_1_1.scaleX = 1.0216448780669118;
-        buy2_1_1.scaleY = 1.0216448780669118;
-        buy2_1_1.angle = -25;
-        buy2_1_1.setOrigin(0, 0);
-        page4.add(buy2_1_1);
-
         // buy_3_1
-        const buy_3_1 = this.add.image(874, 342, "may22cat", "buy");
+        const buy_3_1 = this.add.image(318, 466, "may22cat", "buy");
         page4.add(buy_3_1);
 
         // text_3_1
-        const text_3_1 = this.add.text(833, 325, "", {});
-        text_3_1.text = "110";
+        const text_3_1 = this.add.text(280, 446, "", {});
+        text_3_1.text = "500";
         text_3_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page4.add(text_3_1);
 
-        // buy_1_1_1
-        const buy_1_1_1 = this.add.image(1059, 342, "may22cat", "buy");
-        page4.add(buy_1_1_1);
+        // sec-blackhawaiishorts
+        const sec_blackhawaiishorts = this.add.ellipse(1057, 283, 128, 128);
+        sec_blackhawaiishorts.scaleX = 0.2175016673872514;
+        sec_blackhawaiishorts.scaleY = 0.21393876922214905;
+        sec_blackhawaiishorts.isFilled = true;
+        sec_blackhawaiishorts.fillAlpha = 0;
+        page4.add(sec_blackhawaiishorts);
 
-        // text_1_1_1
-        const text_1_1_1 = this.add.text(1022, 325, "", {});
-        text_1_1_1.text = "200";
-        text_1_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page4.add(text_1_1_1);
-
-        // buy_2_4_1
-        const buy_2_4_1 = this.add.image(1228, 342, "may22cat", "buy");
-        page4.add(buy_2_4_1);
-
-        // text_2_4_1
-        const text_2_4_1 = this.add.text(1189, 325, "", {});
-        text_2_4_1.text = "50";
-        text_2_4_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page4.add(text_2_4_1);
-
-        // buy_2_1_1_1
-        const buy_2_1_1_1 = this.add.image(874, 528, "may22cat", "buy");
-        page4.add(buy_2_1_1_1);
-
-        // text_2_1_1_1
-        const text_2_1_1_1 = this.add.text(833, 511, "", {});
-        text_2_1_1_1.text = "150";
-        text_2_1_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page4.add(text_2_1_1_1);
-
-        // buy_2_2_1_1
-        const buy_2_2_1_1 = this.add.image(1059, 528, "may22cat", "buy");
-        page4.add(buy_2_2_1_1);
-
-        // text_2_2_1_1
-        const text_2_2_1_1 = this.add.text(1020, 511, "", {});
-        text_2_2_1_1.text = "250";
-        text_2_2_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page4.add(text_2_2_1_1);
-
-        // buy_2_3_1_1
-        const buy_2_3_1_1 = this.add.image(1228, 528, "may22cat", "buy");
-        page4.add(buy_2_3_1_1);
-
-        // text_2_3_1_1
-        const text_2_3_1_1 = this.add.text(1189, 511, "", {});
-        text_2_3_1_1.text = "200";
-        text_2_3_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page4.add(text_2_3_1_1);
-
-        // buy_2_2_1_1_1
-        const buy_2_2_1_1_1 = this.add.image(1059, 717, "may22cat", "buy");
-        page4.add(buy_2_2_1_1_1);
-
-        // text_2_2_1_1_1
-        const text_2_2_1_1_1 = this.add.text(1015, 698, "", {});
-        text_2_2_1_1_1.text = "100";
-        text_2_2_1_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page4.add(text_2_2_1_1_1);
-
-        // buy_2_1_1_1_1
-        const buy_2_1_1_1_1 = this.add.image(874, 717, "may22cat", "buy");
-        page4.add(buy_2_1_1_1_1);
-
-        // text_2_1_1_1_1
-        const text_2_1_1_1_1 = this.add.text(828, 698, "", {});
-        text_2_1_1_1_1.text = "200";
-        text_2_1_1_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page4.add(text_2_1_1_1_1);
+        // sec-blueboarshorts
+        const sec_blueboarshorts = this.add.ellipse(1252, 323, 128, 128);
+        sec_blueboarshorts.scaleX = 0.2175016673872514;
+        sec_blueboarshorts.scaleY = 0.21393876922214905;
+        sec_blueboarshorts.isFilled = true;
+        sec_blueboarshorts.fillAlpha = 0;
+        page4.add(sec_blueboarshorts);
 
         // page3
         const page3 = this.add.container(0, 0);
         page3.visible = false;
 
-        // page3_1
-        const page3_1 = this.add.image(768, 431, "may22cat", "page3");
-        page3.add(page3_1);
+        // page3
+        const page3 = this.add.image(768, 431, "june22clothing", "page3");
+        page3.add(page3);
 
-        // sec-500carat
-        const sec_500carat = this.add.ellipse(1230, 128, 128, 128);
-        sec_500carat.scaleX = 0.21527549275843366;
-        sec_500carat.scaleY = 0.3510992995774665;
-        sec_500carat.isFilled = true;
-        sec_500carat.fillAlpha = 0;
-        page3.add(sec_500carat);
+        // emerald-bg
+        const emerald_bg = this.add.rectangle(338, 348, 128, 128);
+        emerald_bg.scaleX = 1.6391672389424585;
+        emerald_bg.scaleY = 1.6391672389424585;
+        emerald_bg.isFilled = true;
+        emerald_bg.fillAlpha = 0;
+        page3.add(emerald_bg);
 
-        // sec-snork
-        const sec_snork = this.add.ellipse(382, 634, 128, 128);
-        sec_snork.scaleX = 0.3205912312918101;
-        sec_snork.scaleY = 0.3004642695097448;
-        sec_snork.isFilled = true;
-        sec_snork.fillAlpha = 0;
-        page3.add(sec_snork);
+        // camp-bg
+        const camp_bg = this.add.rectangle(578, 348, 128, 128);
+        camp_bg.scaleX = 1.6391672389424585;
+        camp_bg.scaleY = 1.6391672389424585;
+        camp_bg.isFilled = true;
+        camp_bg.fillAlpha = 0;
+        page3.add(camp_bg);
 
-        // sec-pbandana
-        const sec_pbandana = this.add.ellipse(467, 445, 128, 128);
-        sec_pbandana.scaleX = 0.32974944403940937;
-        sec_pbandana.scaleY = 0.22396362289127164;
-        sec_pbandana.isFilled = true;
-        sec_pbandana.fillAlpha = 0;
-        page3.add(sec_pbandana);
+        // tropical-bg
+        const tropical_bg = this.add.rectangle(944, 348, 128, 128);
+        tropical_bg.scaleX = 1.6391672389424585;
+        tropical_bg.scaleY = 1.6391672389424585;
+        tropical_bg.isFilled = true;
+        tropical_bg.fillAlpha = 0;
+        page3.add(tropical_bg);
 
-        // buy_2_3_1
-        const buy_2_3_1 = this.add.image(1228, 537, "may22cat", "buy");
-        page3.add(buy_2_3_1);
+        // treasure-bg
+        const treasure_bg = this.add.rectangle(1184, 348, 128, 128);
+        treasure_bg.scaleX = 1.6391672389424585;
+        treasure_bg.scaleY = 1.6391672389424585;
+        treasure_bg.isFilled = true;
+        treasure_bg.fillAlpha = 0;
+        page3.add(treasure_bg);
 
-        // text_2_3_1
-        const text_2_3_1 = this.add.text(1189, 520, "", {});
-        text_2_3_1.text = "200";
-        text_2_3_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page3.add(text_2_3_1);
+        // ice-fishing-bg
+        const ice_fishing_bg = this.add.rectangle(338, 572, 128, 128);
+        ice_fishing_bg.scaleX = 1.6391672389424585;
+        ice_fishing_bg.scaleY = 1.6391672389424585;
+        ice_fishing_bg.isFilled = true;
+        ice_fishing_bg.fillAlpha = 0;
+        page3.add(ice_fishing_bg);
 
-        // buy_2_2_1
-        const buy_2_2_1 = this.add.image(1059, 537, "may22cat", "buy");
-        page3.add(buy_2_2_1);
+        // day-beach-bg
+        const day_beach_bg = this.add.rectangle(578, 572, 128, 128);
+        day_beach_bg.scaleX = 1.6391672389424585;
+        day_beach_bg.scaleY = 1.6391672389424585;
+        day_beach_bg.isFilled = true;
+        day_beach_bg.fillAlpha = 0;
+        page3.add(day_beach_bg);
 
-        // text_2_2_1
-        const text_2_2_1 = this.add.text(1020, 520, "", {});
-        text_2_2_1.text = "500";
-        text_2_2_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page3.add(text_2_2_1);
+        // beach-bg
+        const beach_bg = this.add.rectangle(944, 572, 128, 128);
+        beach_bg.scaleX = 1.6391672389424585;
+        beach_bg.scaleY = 1.6391672389424585;
+        beach_bg.isFilled = true;
+        beach_bg.fillAlpha = 0;
+        page3.add(beach_bg);
 
-        // buy_2_1_1
-        const buy_2_1_1 = this.add.image(874, 537, "may22cat", "buy");
-        page3.add(buy_2_1_1);
-
-        // text_2_1_1
-        const text_2_1_1 = this.add.text(833, 520, "", {});
-        text_2_1_1.text = "500";
-        text_2_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page3.add(text_2_1_1);
-
-        // buy_2_4
-        const buy_2_4 = this.add.image(1228, 351, "may22cat", "buy");
-        page3.add(buy_2_4);
-
-        // text_2_4
-        const text_2_4 = this.add.text(1189, 334, "", {});
-        text_2_4.text = "225";
-        text_2_4.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page3.add(text_2_4);
-
-        // buy_1_1
-        const buy_1_1 = this.add.image(1059, 351, "may22cat", "buy");
-        page3.add(buy_1_1);
-
-        // text_1_1
-        const text_1_1 = this.add.text(1022, 334, "", {});
-        text_1_1.text = "200";
-        text_1_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page3.add(text_1_1);
-
-        // buy_3
-        const buy_3 = this.add.image(874, 351, "may22cat", "buy");
-        page3.add(buy_3);
-
-        // text_3
-        const text_3 = this.add.text(833, 334, "", {});
-        text_3.text = "100";
-        text_3.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page3.add(text_3);
-
-        // buy2_1
-        const buy2_1 = this.add.image(561, 390, "clothingcatalog", "buy2");
-        buy2_1.scaleX = 0.7346337597386997;
-        buy2_1.scaleY = 0.7346337597386997;
-        buy2_1.angle = 80;
-        buy2_1.setOrigin(0, 0);
-        page3.add(buy2_1);
+        // deep-bg
+        const deep_bg = this.add.rectangle(1184, 572, 128, 128);
+        deep_bg.scaleX = 1.6391672389424585;
+        deep_bg.scaleY = 1.6391672389424585;
+        deep_bg.isFilled = true;
+        deep_bg.fillAlpha = 0;
+        page3.add(deep_bg);
 
         // page2
-        const page2 = this.add.container(0, 0);
+        const page2 = this.add.container(-1, 1);
+        page2.visible = false;
 
-        // page2_1
-        const page2_1 = this.add.image(768, 431, "may22cat", "page2");
-        page2.add(page2_1);
+        // page2
+        const page2 = this.add.image(769, 431, "june22clothing", "page2");
+        page2.add(page2);
 
-        // vikinghelmet-rec
-        const vikinghelmet_rec = this.add.rectangle(996, 626, 128, 128);
-        vikinghelmet_rec.scaleX = 0.4416027868089266;
-        vikinghelmet_rec.scaleY = 0.4243594644875376;
-        vikinghelmet_rec.isFilled = true;
-        vikinghelmet_rec.fillAlpha = 0;
-        page2.add(vikinghelmet_rec);
+        // black-color
+        const black_color = this.add.ellipse(855, 313, 500, 500);
+        black_color.scaleX = 0.19270091046363402;
+        black_color.scaleY = 0.18425493561131656;
+        black_color.isFilled = true;
+        black_color.fillAlpha = 0;
+        page2.add(black_color);
 
-        // sec-magicianwand
-        const sec_magicianwand = this.add.ellipse(600, 228, 128, 128);
-        sec_magicianwand.scaleX = 0.19270091046363402;
-        sec_magicianwand.scaleY = 0.18425493561131656;
-        sec_magicianwand.isFilled = true;
-        sec_magicianwand.fillAlpha = 0;
-        page2.add(sec_magicianwand);
+        // dark-blue-color
+        const dark_blue_color = this.add.ellipse(963, 312, 500, 500);
+        dark_blue_color.scaleX = 0.19270091046363402;
+        dark_blue_color.scaleY = 0.18425493561131656;
+        dark_blue_color.isFilled = true;
+        dark_blue_color.fillAlpha = 0;
+        page2.add(dark_blue_color);
 
-        // buy2
-        const buy2 = this.add.image(538, 521, "clothingcatalog", "buy2");
-        buy2.scaleX = 0.7346337597386997;
-        buy2.scaleY = 0.7346337597386997;
-        buy2.angle = -20;
-        buy2.setOrigin(0, 0);
-        page2.add(buy2);
+        // red-color
+        const red_color = this.add.ellipse(1072, 312, 500, 500);
+        red_color.scaleX = 0.19270091046363402;
+        red_color.scaleY = 0.18425493561131656;
+        red_color.isFilled = true;
+        red_color.fillAlpha = 0;
+        page2.add(red_color);
 
-        // buy
-        const buy = this.add.image(878, 316, "may22cat", "buy");
-        page2.add(buy);
+        // green-color
+        const green_color = this.add.ellipse(1180, 312, 500, 500);
+        green_color.scaleX = 0.19270091046363402;
+        green_color.scaleY = 0.18425493561131656;
+        green_color.isFilled = true;
+        green_color.fillAlpha = 0;
+        page2.add(green_color);
 
-        // text
-        const text = this.add.text(837, 299, "", {});
-        text.text = "400";
-        text.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page2.add(text);
+        // orange-color
+        const orange_color = this.add.ellipse(1288, 312, 500, 500);
+        orange_color.scaleX = 0.19270091046363402;
+        orange_color.scaleY = 0.18425493561131656;
+        orange_color.isFilled = true;
+        orange_color.fillAlpha = 0;
+        page2.add(orange_color);
 
-        // buy_1
-        const buy_1 = this.add.image(1055, 316, "may22cat", "buy");
-        page2.add(buy_1);
+        // brown-color
+        const brown_color = this.add.ellipse(904, 417, 500, 500);
+        brown_color.scaleX = 0.19270091046363402;
+        brown_color.scaleY = 0.18425493561131656;
+        brown_color.isFilled = true;
+        brown_color.fillAlpha = 0;
+        page2.add(brown_color);
 
-        // text_1
-        const text_1 = this.add.text(1018, 299, "", {});
-        text_1.text = "100";
-        text_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page2.add(text_1);
+        // peach-color
+        const peach_color = this.add.ellipse(1013, 417, 500, 500);
+        peach_color.scaleX = 0.19270091046363402;
+        peach_color.scaleY = 0.18425493561131656;
+        peach_color.isFilled = true;
+        peach_color.fillAlpha = 0;
+        page2.add(peach_color);
 
-        // buy_2
-        const buy_2 = this.add.image(1216, 316, "may22cat", "buy");
-        page2.add(buy_2);
+        // yellow-color
+        const yellow_color = this.add.ellipse(1121, 417, 500, 500);
+        yellow_color.scaleX = 0.19270091046363402;
+        yellow_color.scaleY = 0.18425493561131656;
+        yellow_color.isFilled = true;
+        yellow_color.fillAlpha = 0;
+        page2.add(yellow_color);
 
-        // text_2
-        const text_2 = this.add.text(1177, 299, "", {});
-        text_2.text = "150";
-        text_2.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page2.add(text_2);
+        // light-blue-color
+        const light_blue_color = this.add.ellipse(1228, 417, 500, 500);
+        light_blue_color.scaleX = 0.19270091046363402;
+        light_blue_color.scaleY = 0.18425493561131656;
+        light_blue_color.isFilled = true;
+        light_blue_color.fillAlpha = 0;
+        page2.add(light_blue_color);
 
-        // buy_2_1
-        const buy_2_1 = this.add.image(878, 502, "may22cat", "buy");
-        page2.add(buy_2_1);
+        // pink-color
+        const pink_color = this.add.ellipse(855, 523, 500, 500);
+        pink_color.scaleX = 0.19270091046363402;
+        pink_color.scaleY = 0.18425493561131656;
+        pink_color.isFilled = true;
+        pink_color.fillAlpha = 0;
+        page2.add(pink_color);
 
-        // text_2_1
-        const text_2_1 = this.add.text(837, 485, "", {});
-        text_2_1.text = "500";
-        text_2_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page2.add(text_2_1);
+        // dark-green-color
+        const dark_green_color = this.add.ellipse(965, 523, 500, 500);
+        dark_green_color.scaleX = 0.19270091046363402;
+        dark_green_color.scaleY = 0.18425493561131656;
+        dark_green_color.isFilled = true;
+        dark_green_color.fillAlpha = 0;
+        page2.add(dark_green_color);
 
-        // buy_2_2
-        const buy_2_2 = this.add.image(1055, 502, "may22cat", "buy");
-        page2.add(buy_2_2);
+        // dark-purple-color
+        const dark_purple_color = this.add.ellipse(1073, 523, 500, 500);
+        dark_purple_color.scaleX = 0.19270091046363402;
+        dark_purple_color.scaleY = 0.18425493561131656;
+        dark_purple_color.isFilled = true;
+        dark_purple_color.fillAlpha = 0;
+        page2.add(dark_purple_color);
 
-        // text_2_2
-        const text_2_2 = this.add.text(1016, 485, "", {});
-        text_2_2.text = "400";
-        text_2_2.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page2.add(text_2_2);
+        // lime-green-color
+        const lime_green_color = this.add.ellipse(1180, 523, 500, 500);
+        lime_green_color.scaleX = 0.19270091046363402;
+        lime_green_color.scaleY = 0.18425493561131656;
+        lime_green_color.isFilled = true;
+        lime_green_color.fillAlpha = 0;
+        page2.add(lime_green_color);
 
-        // buy_2_3
-        const buy_2_3 = this.add.image(1216, 502, "may22cat", "buy");
-        page2.add(buy_2_3);
+        // aqua-color
+        const aqua_color = this.add.ellipse(1288, 523, 500, 500);
+        aqua_color.scaleX = 0.19270091046363402;
+        aqua_color.scaleY = 0.18425493561131656;
+        aqua_color.isFilled = true;
+        aqua_color.fillAlpha = 0;
+        page2.add(aqua_color);
 
-        // text_2_3
-        const text_2_3 = this.add.text(1177, 485, "", {});
-        text_2_3.text = "200";
-        text_2_3.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
-        page2.add(text_2_3);
-
-        // sec-wtshirt
-        const sec_wtshirt = this.add.rectangle(515, 92, 128, 128);
-        sec_wtshirt.scaleX = 0.2984607664172768;
-        sec_wtshirt.scaleY = 0.38961293968586874;
-        sec_wtshirt.isFilled = true;
-        sec_wtshirt.fillAlpha = 0;
-        page2.add(sec_wtshirt);
+        // sec-ballonvender
+        const sec_ballonvender = this.add.ellipse(473, 187, 128, 128);
+        sec_ballonvender.scaleX = 0.2175016673872514;
+        sec_ballonvender.scaleY = 0.21393876922214905;
+        sec_ballonvender.isFilled = true;
+        sec_ballonvender.fillAlpha = 0;
+        page2.add(sec_ballonvender);
 
         // page1
-        const page1 = this.add.container(-1, 1);
+        const page1 = this.add.container(-2, 1);
         page1.visible = false;
 
-        // page1_1
-        const page1_1 = this.add.image(765, 432, "may22cat", "page1");
-        page1.add(page1_1);
+        // page1_2
+        const page1_2 = this.add.image(765, 432, "june22clothing", "page1");
+        page1.add(page1_2);
 
         // page_right
-        const page_right = this.add.image(909, 582, "catalogs-master", "nextpagebtn");
+        const page_right = this.add.image(937, 605, "catalogs-master", "nextpagebtn");
         page_right.setOrigin(0, 0);
         page1.add(page_right);
 
         // close_right
-        const close_right = this.add.image(910, 32, "catalogs-master", "catclosebtn");
+        const close_right = this.add.image(935, 52, "catalogs-master", "catclosebtn");
         close_right.setOrigin(0, 0);
         page1.add(close_right);
 
+        // sec-beachdress
+        const sec_beachdress = this.add.ellipse(776, 423, 128, 128);
+        sec_beachdress.scaleX = 0.2175016673872514;
+        sec_beachdress.scaleY = 0.21393876922214905;
+        sec_beachdress.isFilled = true;
+        sec_beachdress.fillAlpha = 0;
+        page1.add(sec_beachdress);
+
+        // sec-creamsandals
+        const sec_creamsandals = this.add.ellipse(918, 765, 128, 128);
+        sec_creamsandals.scaleX = 0.2175016673872514;
+        sec_creamsandals.scaleY = 0.21393876922214905;
+        sec_creamsandals.isFilled = true;
+        sec_creamsandals.fillAlpha = 0;
+        page1.add(sec_creamsandals);
+
         // buttons
         const buttons = this.add.container(189, 41);
+        buttons.visible = false;
 
         // coins
-        const coins = this.add.text(1130, 790, "", {});
+        const coins = this.add.text(1134, 766, "", {});
         coins.setOrigin(1, 0);
         coins.text = "YOUR COINS:";
         coins.setStyle({ "align": "right", "fixedWidth":600,"fontFamily": "CCComiccrazy", "fontSize": "32px", "stroke": "#000", "strokeThickness":9});
         buttons.add(coins);
 
         // page_left
-        const page_left = this.add.image(1, 539, "catalogs-master", "prevpagebtn");
+        const page_left = this.add.image(-43, 519, "catalogs-master", "prevpagebtn");
         page_left.setOrigin(0, 0);
         buttons.add(page_left);
 
         // page_right_1
-        const page_right_1 = this.add.image(1035, 541, "catalogs-master", "nextpagebtn");
+        const page_right_1 = this.add.image(1095, 517, "catalogs-master", "nextpagebtn");
         page_right_1.setOrigin(0, 0);
         buttons.add(page_right_1);
 
         // close_right_1
-        const close_right_1 = this.add.image(1036, -7, "catalogs-master", "catclosebtn");
+        const close_right_1 = this.add.image(1092, -31, "catalogs-master", "catclosebtn");
         close_right_1.setOrigin(0, 0);
         buttons.add(close_right_1);
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10];
+        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page13];
 
         // block (components)
         new Interactive(block);
@@ -1174,518 +1184,580 @@ export default class ClothingCatalog extends Book {
         page_right_2Button.activeFrame = false;
         page_right_2Button.pixelPerfect = true;
 
-        // blue0001_png (components)
-        const blue0001_pngButton = new Button(blue0001_png);
-        blue0001_pngButton.spriteName = "blue0001.png";
-        blue0001_pngButton.callback = () => this.interface.prompt.showItem(1);
-        blue0001_pngButton.activeFrame = false;
+        // flag_button_7187 (components)
+        const flag_button_7187SimpleButton = new SimpleButton(flag_button_7187);
+        flag_button_7187SimpleButton.callback = () => this.buy(7187);
 
-        // green0001_png (components)
-        const green0001_pngButton = new Button(green0001_png);
-        green0001_pngButton.spriteName = "green0001.png";
-        green0001_pngButton.callback = () => this.interface.prompt.showItem(2);
-        green0001_pngButton.activeFrame = false;
+        // flag_button_7186 (components)
+        const flag_button_7186SimpleButton = new SimpleButton(flag_button_7186);
+        flag_button_7186SimpleButton.callback = () => this.buy(7186);
 
-        // pink0001_png (components)
-        const pink0001_pngButton = new Button(pink0001_png);
-        pink0001_pngButton.spriteName = "pink0001.png";
-        pink0001_pngButton.callback = () => this.interface.prompt.showItem(3);
-        pink0001_pngButton.activeFrame = false;
+        // flag_button_7188 (components)
+        const flag_button_7188SimpleButton = new SimpleButton(flag_button_7188);
+        flag_button_7188SimpleButton.callback = () => this.buy(7188);
 
-        // black0001_png (components)
-        const black0001_pngButton = new Button(black0001_png);
-        black0001_pngButton.spriteName = "black0001.png";
-        black0001_pngButton.callback = () => this.interface.prompt.showItem(4);
-        black0001_pngButton.activeFrame = false;
+        // flag_button_7189 (components)
+        const flag_button_7189SimpleButton = new SimpleButton(flag_button_7189);
+        flag_button_7189SimpleButton.callback = () => this.buy(7189);
 
-        // red0001_png (components)
-        const red0001_pngButton = new Button(red0001_png);
-        red0001_pngButton.spriteName = "red0001.png";
-        red0001_pngButton.callback = () => this.interface.prompt.showItem(5);
-        red0001_pngButton.activeFrame = false;
+        // flag_button_7185 (components)
+        const flag_button_7185SimpleButton = new SimpleButton(flag_button_7185);
+        flag_button_7185SimpleButton.callback = () => this.buy(7185);
 
-        // orange0001_png (components)
-        const orange0001_pngButton = new Button(orange0001_png);
-        orange0001_pngButton.spriteName = "orange0001.png";
-        orange0001_pngButton.callback = () => this.interface.prompt.showItem(6);
-        orange0001_pngButton.activeFrame = false;
+        // flag_button_7184 (components)
+        const flag_button_7184SimpleButton = new SimpleButton(flag_button_7184);
+        flag_button_7184SimpleButton.callback = () => this.buy(7184);
 
-        // yellow0001_png (components)
-        const yellow0001_pngButton = new Button(yellow0001_png);
-        yellow0001_pngButton.spriteName = "yellow0001.png";
-        yellow0001_pngButton.callback = () => this.interface.prompt.showItem(7);
-        yellow0001_pngButton.activeFrame = false;
+        // flag_button_7183 (components)
+        const flag_button_7183SimpleButton = new SimpleButton(flag_button_7183);
+        flag_button_7183SimpleButton.callback = () => this.buy(7183);
 
-        // purple0001_png (components)
-        const purple0001_pngButton = new Button(purple0001_png);
-        purple0001_pngButton.spriteName = "purple0001.png";
-        purple0001_pngButton.callback = () => this.interface.prompt.showItem(8);
-        purple0001_pngButton.activeFrame = false;
+        // flag_button_7182 (components)
+        const flag_button_7182SimpleButton = new SimpleButton(flag_button_7182);
+        flag_button_7182SimpleButton.callback = () => this.buy(7182);
 
-        // brown0001_png (components)
-        const brown0001_pngButton = new Button(brown0001_png);
-        brown0001_pngButton.spriteName = "brown0001.png";
-        brown0001_pngButton.callback = () => this.interface.prompt.showItem(9);
-        brown0001_pngButton.activeFrame = false;
+        // flag_button_7148 (components)
+        const flag_button_7148SimpleButton = new SimpleButton(flag_button_7148);
+        flag_button_7148SimpleButton.callback = () => this.buy(7148);
 
-        // darkgreen0001_png (components)
-        const darkgreen0001_pngButton = new Button(darkgreen0001_png);
-        darkgreen0001_pngButton.spriteName = "darkgreen0001.png";
-        darkgreen0001_pngButton.callback = () => this.interface.prompt.showItem(11);
-        darkgreen0001_pngButton.activeFrame = false;
+        // flag_button_514 (components)
+        const flag_button_514SimpleButton = new SimpleButton(flag_button_514);
+        flag_button_514SimpleButton.callback = () => this.buy(514);
 
-        // lightblue0001_png (components)
-        const lightblue0001_pngButton = new Button(lightblue0001_png);
-        lightblue0001_pngButton.spriteName = "lightblue0001.png";
-        lightblue0001_pngButton.callback = () => this.interface.prompt.showItem(12);
-        lightblue0001_pngButton.activeFrame = false;
+        // flag_button_533 (components)
+        const flag_button_533SimpleButton = new SimpleButton(flag_button_533);
+        flag_button_533SimpleButton.callback = () => this.buy(533);
 
-        // darkpink0001_png (components)
-        const darkpink0001_pngButton = new Button(darkpink0001_png);
-        darkpink0001_pngButton.spriteName = "darkpink0001.png";
-        darkpink0001_pngButton.callback = () => this.interface.prompt.showItem(10);
-        darkpink0001_pngButton.activeFrame = false;
+        // flag_button_502 (components)
+        const flag_button_502SimpleButton = new SimpleButton(flag_button_502);
+        flag_button_502SimpleButton.callback = () => this.buy(502);
 
-        // noir_bg (components)
-        const noir_bgSimpleButton = new SimpleButton(noir_bg);
-        noir_bgSimpleButton.callback = () => this.interface.prompt.showItem(9001);
+        // flag_button_7096 (components)
+        const flag_button_7096SimpleButton = new SimpleButton(flag_button_7096);
+        flag_button_7096SimpleButton.callback = () => this.buy(7096);
 
-        // target_bg (components)
-        const target_bgSimpleButton = new SimpleButton(target_bg);
-        target_bgSimpleButton.callback = () => this.interface.prompt.showItem(906);
+        // flag_button_504 (components)
+        const flag_button_504SimpleButton = new SimpleButton(flag_button_504);
+        flag_button_504SimpleButton.callback = () => this.buy(504);
 
-        // fish_bg (components)
-        const fish_bgSimpleButton = new SimpleButton(fish_bg);
-        fish_bgSimpleButton.callback = () => this.interface.prompt.showItem(954);
+        // flag_button_538 (components)
+        const flag_button_538SimpleButton = new SimpleButton(flag_button_538);
+        flag_button_538SimpleButton.callback = () => this.buy(538);
 
-        // picnic_bg (components)
-        const picnic_bgSimpleButton = new SimpleButton(picnic_bg);
-        picnic_bgSimpleButton.callback = () => this.interface.prompt.showItem(952);
+        // flag_button_529 (components)
+        const flag_button_529SimpleButton = new SimpleButton(flag_button_529);
+        flag_button_529SimpleButton.callback = () => this.buy(529);
 
-        // pizza_bg (components)
-        const pizza_bgSimpleButton = new SimpleButton(pizza_bg);
-        pizza_bgSimpleButton.callback = () => this.interface.prompt.showItem(944);
+        // flag_button_505 (components)
+        const flag_button_505SimpleButton = new SimpleButton(flag_button_505);
+        flag_button_505SimpleButton.callback = () => this.buy(505);
 
-        // fireflies_bg (components)
-        const fireflies_bgSimpleButton = new SimpleButton(fireflies_bg);
-        fireflies_bgSimpleButton.callback = () => this.interface.prompt.showItem(963);
+        // flag_button_500 (components)
+        const flag_button_500SimpleButton = new SimpleButton(flag_button_500);
+        flag_button_500SimpleButton.callback = () => this.buy(500);
 
-        // western_bg (components)
-        const western_bgSimpleButton = new SimpleButton(western_bg);
-        western_bgSimpleButton.callback = () => this.interface.prompt.showItem(913);
+        // flag_button_535 (components)
+        const flag_button_535SimpleButton = new SimpleButton(flag_button_535);
+        flag_button_535SimpleButton.callback = () => this.buy(535);
 
-        // baseball_bg (components)
-        const baseball_bgSimpleButton = new SimpleButton(baseball_bg);
-        baseball_bgSimpleButton.callback = () => this.interface.prompt.showItem(965);
+        // flag_button_525 (components)
+        const flag_button_525SimpleButton = new SimpleButton(flag_button_525);
+        flag_button_525SimpleButton.callback = () => this.buy(525);
 
-        // buy_sombrero (components)
-        const buy_sombreroButton = new Button(buy_sombrero);
-        buy_sombreroButton.spriteName = "buy";
-        buy_sombreroButton.callback = () => this.interface.prompt.showItem(401);
-        buy_sombreroButton.activeFrame = false;
+        // flag_button_506 (components)
+        const flag_button_506SimpleButton = new SimpleButton(flag_button_506);
+        flag_button_506SimpleButton.callback = () => this.buy(506);
 
-        // buy_roman (components)
-        const buy_romanButton = new Button(buy_roman);
-        buy_romanButton.spriteName = "buy";
-        buy_romanButton.callback = () => this.interface.prompt.showItem(451);
-        buy_romanButton.activeFrame = false;
+        // flag_button_536 (components)
+        const flag_button_536SimpleButton = new SimpleButton(flag_button_536);
+        flag_button_536SimpleButton.callback = () => this.buy(536);
 
-        // buy_beekeeper (components)
-        const buy_beekeeperButton = new Button(buy_beekeeper);
-        buy_beekeeperButton.spriteName = "buy";
-        buy_beekeeperButton.callback = () => this.interface.prompt.showItem(654);
-        buy_beekeeperButton.activeFrame = false;
+        // flag_button_540 (components)
+        const flag_button_540SimpleButton = new SimpleButton(flag_button_540);
+        flag_button_540SimpleButton.callback = () => this.buy(540);
 
-        // buy_trend (components)
-        const buy_trendButton = new Button(buy_trend);
-        buy_trendButton.spriteName = "buy";
-        buy_trendButton.callback = () => this.interface.prompt.showItem(1139);
-        buy_trendButton.activeFrame = false;
+        // flag_button_507 (components)
+        const flag_button_507SimpleButton = new SimpleButton(flag_button_507);
+        flag_button_507SimpleButton.callback = () => this.buy(507);
 
-        // buy_disco (components)
-        const buy_discoButton = new Button(buy_disco);
-        buy_discoButton.spriteName = "buy";
-        buy_discoButton.callback = () => this.interface.prompt.showItem(652);
-        buy_discoButton.activeFrame = false;
+        // flag_button_542 (components)
+        const flag_button_542SimpleButton = new SimpleButton(flag_button_542);
+        flag_button_542SimpleButton.callback = () => this.buy(542);
 
-        // buy_sstriker (components)
-        const buy_sstrikerButton = new Button(buy_sstriker);
-        buy_sstrikerButton.spriteName = "buy";
-        buy_sstrikerButton.callback = () => this.interface.prompt.showItem(656);
-        buy_sstrikerButton.activeFrame = false;
+        // flag_button_546 (components)
+        const flag_button_546SimpleButton = new SimpleButton(flag_button_546);
+        flag_button_546SimpleButton.callback = () => this.buy(546);
 
-        // buy_sk (components)
-        const buy_skButton = new Button(buy_sk);
-        buy_skButton.spriteName = "buy";
-        buy_skButton.callback = () => this.interface.prompt.showItem(662);
-        buy_skButton.activeFrame = false;
+        // flag_button_548 (components)
+        const flag_button_548SimpleButton = new SimpleButton(flag_button_548);
+        flag_button_548SimpleButton.callback = () => this.buy(548);
 
-        // buy_funster (components)
-        const buy_funsterButton = new Button(buy_funster);
-        buy_funsterButton.spriteName = "buy";
-        buy_funsterButton.callback = () => this.interface.prompt.showItem(653);
-        buy_funsterButton.activeFrame = false;
+        // flag_button_530 (components)
+        const flag_button_530SimpleButton = new SimpleButton(flag_button_530);
+        flag_button_530SimpleButton.callback = () => this.buy(530);
 
-        // buy_pballcap (components)
-        const buy_pballcapButton = new Button(buy_pballcap);
-        buy_pballcapButton.spriteName = "buy";
-        buy_pballcapButton.callback = () => this.interface.prompt.showItem(406);
-        buy_pballcapButton.activeFrame = false;
+        // flag_button_508 (components)
+        const flag_button_508SimpleButton = new SimpleButton(flag_button_508);
+        flag_button_508SimpleButton.callback = () => this.buy(508);
 
-        // buy_tuft (components)
-        const buy_tuftButton = new Button(buy_tuft);
-        buy_tuftButton.spriteName = "buy";
-        buy_tuftButton.callback = () => this.interface.prompt.showItem(1007);
-        buy_tuftButton.activeFrame = false;
+        // flag_button_541 (components)
+        const flag_button_541SimpleButton = new SimpleButton(flag_button_541);
+        flag_button_541SimpleButton.callback = () => this.buy(541);
 
-        // buy_bflutt (components)
-        const buy_bfluttButton = new Button(buy_bflutt);
-        buy_bfluttButton.spriteName = "buy";
-        buy_bfluttButton.callback = () => this.interface.prompt.showItem(1039);
-        buy_bfluttButton.activeFrame = false;
+        // flag_button_519 (components)
+        const flag_button_519SimpleButton = new SimpleButton(flag_button_519);
+        flag_button_519SimpleButton.callback = () => this.buy(519);
 
-        // buy_flouncy (components)
-        const buy_flouncyButton = new Button(buy_flouncy);
-        buy_flouncyButton.spriteName = "buy";
-        buy_flouncyButton.callback = () => this.interface.prompt.showItem(1022);
-        buy_flouncyButton.activeFrame = false;
+        // flag_button_545 (components)
+        const flag_button_545SimpleButton = new SimpleButton(flag_button_545);
+        flag_button_545SimpleButton.callback = () => this.buy(545);
 
-        // buy2_flutterby (components)
-        const buy2_flutterbyButton = new Button(buy2_flutterby);
-        buy2_flutterbyButton.spriteName = "buy2";
-        buy2_flutterbyButton.callback = () => this.interface.prompt.showItem(657);
+        // flag_button_531 (components)
+        const flag_button_531SimpleButton = new SimpleButton(flag_button_531);
+        flag_button_531SimpleButton.callback = () => this.buy(531);
 
-        // buy2_pinkear (components)
-        const buy2_pinkearButton = new Button(buy2_pinkear);
-        buy2_pinkearButton.spriteName = "buy2";
-        buy2_pinkearButton.callback = () => this.interface.prompt.showItem(484);
+        // flag_button_527 (components)
+        const flag_button_527SimpleButton = new SimpleButton(flag_button_527);
+        flag_button_527SimpleButton.callback = () => this.buy(527);
 
-        // sec_blackcape (components)
-        const sec_blackcapeSimpleButton = new SimpleButton(sec_blackcape);
-        sec_blackcapeSimpleButton.callback = () => this.interface.prompt.showItem(303);
+        // flag_button_524 (components)
+        const flag_button_524SimpleButton = new SimpleButton(flag_button_524);
+        flag_button_524SimpleButton.callback = () => this.buy(524);
 
-        // sec_pinkdress (components)
-        const sec_pinkdressSimpleButton = new SimpleButton(sec_pinkdress);
-        sec_pinkdressSimpleButton.callback = () => this.interface.prompt.showItem(252);
+        // flag_button_501 (components)
+        const flag_button_501SimpleButton = new SimpleButton(flag_button_501);
+        flag_button_501SimpleButton.callback = () => this.buy(501);
 
-        // buy2_pinkrollers (components)
-        const buy2_pinkrollersButton = new Button(buy2_pinkrollers);
-        buy2_pinkrollersButton.spriteName = "buy2";
-        buy2_pinkrollersButton.callback = () => this.interface.prompt.showItem(378);
+        // flag_button_511 (components)
+        const flag_button_511SimpleButton = new SimpleButton(flag_button_511);
+        flag_button_511SimpleButton.callback = () => this.buy(511);
 
-        // buy_brownshoes (components)
-        const buy_brownshoesButton = new Button(buy_brownshoes);
-        buy_brownshoesButton.spriteName = "buy";
-        buy_brownshoesButton.callback = () => this.interface.prompt.showItem(351);
-        buy_brownshoesButton.activeFrame = false;
+        // flag_button_528 (components)
+        const flag_button_528SimpleButton = new SimpleButton(flag_button_528);
+        flag_button_528SimpleButton.callback = () => this.buy(528);
 
-        // buy_yrubber (components)
-        const buy_yrubberButton = new Button(buy_yrubber);
-        buy_yrubberButton.spriteName = "buy";
-        buy_yrubberButton.callback = () => this.interface.prompt.showItem(373);
-        buy_yrubberButton.activeFrame = false;
+        // flag_button_534 (components)
+        const flag_button_534SimpleButton = new SimpleButton(flag_button_534);
+        flag_button_534SimpleButton.callback = () => this.buy(534);
 
-        // buy_iceskates (components)
-        const buy_iceskatesButton = new Button(buy_iceskates);
-        buy_iceskatesButton.spriteName = "buy";
-        buy_iceskatesButton.callback = () => this.interface.prompt.showItem(369);
-        buy_iceskatesButton.activeFrame = false;
+        // flag_button_512 (components)
+        const flag_button_512SimpleButton = new SimpleButton(flag_button_512);
+        flag_button_512SimpleButton.callback = () => this.buy(512);
 
-        // buy_blackcheckshoes (components)
-        const buy_blackcheckshoesButton = new Button(buy_blackcheckshoes);
-        buy_blackcheckshoesButton.spriteName = "buy";
-        buy_blackcheckshoesButton.callback = () => this.interface.prompt.showItem(6004);
-        buy_blackcheckshoesButton.activeFrame = false;
+        // flag_button_520 (components)
+        const flag_button_520SimpleButton = new SimpleButton(flag_button_520);
+        flag_button_520SimpleButton.callback = () => this.buy(520);
 
-        // buy_bluecheckershoes (components)
-        const buy_bluecheckershoesButton = new Button(buy_bluecheckershoes);
-        buy_bluecheckershoesButton.spriteName = "buy";
-        buy_bluecheckershoesButton.callback = () => this.interface.prompt.showItem(6104);
-        buy_bluecheckershoesButton.activeFrame = false;
+        // flag_button_513 (components)
+        const flag_button_513SimpleButton = new SimpleButton(flag_button_513);
+        flag_button_513SimpleButton.callback = () => this.buy(513);
 
-        // buy_redtenniesshoes (components)
-        const buy_redtenniesshoesButton = new Button(buy_redtenniesshoes);
-        buy_redtenniesshoesButton.spriteName = "buy";
-        buy_redtenniesshoesButton.callback = () => this.interface.prompt.showItem(6036);
-        buy_redtenniesshoesButton.activeFrame = false;
+        // flag_button_7095 (components)
+        const flag_button_7095SimpleButton = new SimpleButton(flag_button_7095);
+        flag_button_7095SimpleButton.callback = () => this.buy(7095);
 
-        // buy_bunnyslippers (components)
-        const buy_bunnyslippersButton = new Button(buy_bunnyslippers);
-        buy_bunnyslippersButton.spriteName = "buy";
-        buy_bunnyslippersButton.callback = () => this.interface.prompt.showItem(366);
-        buy_bunnyslippersButton.activeFrame = false;
+        // flag_button_543 (components)
+        const flag_button_543SimpleButton = new SimpleButton(flag_button_543);
+        flag_button_543SimpleButton.callback = () => this.buy(543);
 
-        // buy_cuckoo (components)
-        const buy_cuckooButton = new Button(buy_cuckoo);
-        buy_cuckooButton.spriteName = "buy";
-        buy_cuckooButton.callback = () => this.interface.prompt.showItem(6005);
-        buy_cuckooButton.activeFrame = false;
+        // flag_button_522 (components)
+        const flag_button_522SimpleButton = new SimpleButton(flag_button_522);
+        flag_button_522SimpleButton.callback = () => this.buy(522);
 
-        // buy_dressshoes (components)
-        const buy_dressshoesButton = new Button(buy_dressshoes);
-        buy_dressshoesButton.spriteName = "buy";
-        buy_dressshoesButton.callback = () => this.interface.prompt.showItem(358);
-        buy_dressshoesButton.activeFrame = false;
+        // flag_button_547 (components)
+        const flag_button_547SimpleButton = new SimpleButton(flag_button_547);
+        flag_button_547SimpleButton.callback = () => this.buy(547);
 
-        // buy_bletterman (components)
-        const buy_blettermanButton = new Button(buy_bletterman);
-        buy_blettermanButton.spriteName = "buy";
-        buy_blettermanButton.callback = () => this.interface.prompt.showItem(281);
-        buy_blettermanButton.activeFrame = false;
+        // flag_button_537 (components)
+        const flag_button_537SimpleButton = new SimpleButton(flag_button_537);
+        flag_button_537SimpleButton.callback = () => this.buy(537);
 
-        // buy2_blackhoodie (components)
-        const buy2_blackhoodieButton = new Button(buy2_blackhoodie);
-        buy2_blackhoodieButton.spriteName = "buy2";
-        buy2_blackhoodieButton.callback = () => this.interface.prompt.showItem(221);
+        // flag_button_517 (components)
+        const flag_button_517SimpleButton = new SimpleButton(flag_button_517);
+        flag_button_517SimpleButton.callback = () => this.buy(517);
 
-        // buy_daisy (components)
-        const buy_daisyButton = new Button(buy_daisy);
-        buy_daisyButton.spriteName = "buy";
-        buy_daisyButton.callback = () => this.interface.prompt.showItem(14051);
-        buy_daisyButton.activeFrame = false;
+        // flag_button_526 (components)
+        const flag_button_526SimpleButton = new SimpleButton(flag_button_526);
+        flag_button_526SimpleButton.callback = () => this.buy(526);
 
-        // buy_bparka (components)
-        const buy_bparkaButton = new Button(buy_bparka);
-        buy_bparkaButton.spriteName = "buy";
-        buy_bparkaButton.callback = () => this.interface.prompt.showItem(243);
-        buy_bparkaButton.activeFrame = false;
+        // flag_button_518 (components)
+        const flag_button_518SimpleButton = new SimpleButton(flag_button_518);
+        flag_button_518SimpleButton.callback = () => this.buy(518);
 
-        // buy_greenrug (components)
-        const buy_greenrugButton = new Button(buy_greenrug);
-        buy_greenrugButton.spriteName = "buy";
-        buy_greenrugButton.callback = () => this.interface.prompt.showItem(4061);
-        buy_greenrugButton.activeFrame = false;
+        // flag_button_539 (components)
+        const flag_button_539SimpleButton = new SimpleButton(flag_button_539);
+        flag_button_539SimpleButton.callback = () => this.buy(539);
 
-        // buy_pband (components)
-        const buy_pbandButton = new Button(buy_pband);
-        buy_pbandButton.spriteName = "buy";
-        buy_pbandButton.callback = () => this.interface.prompt.showItem(773);
-        buy_pbandButton.activeFrame = false;
+        // flag_button_523 (components)
+        const flag_button_523SimpleButton = new SimpleButton(flag_button_523);
+        flag_button_523SimpleButton.callback = () => this.buy(523);
 
-        // buy_lighthouse (components)
-        const buy_lighthouseButton = new Button(buy_lighthouse);
-        buy_lighthouseButton.spriteName = "buy";
-        buy_lighthouseButton.callback = () => this.interface.prompt.showItem(282);
-        buy_lighthouseButton.activeFrame = false;
+        // flag_button_503 (components)
+        const flag_button_503SimpleButton = new SimpleButton(flag_button_503);
+        flag_button_503SimpleButton.callback = () => this.buy(503);
 
-        // buy_poncho (components)
-        const buy_ponchoButton = new Button(buy_poncho);
-        buy_ponchoButton.spriteName = "buy";
-        buy_ponchoButton.callback = () => this.interface.prompt.showItem(236);
-        buy_ponchoButton.activeFrame = false;
+        // flag_button_510 (components)
+        const flag_button_510SimpleButton = new SimpleButton(flag_button_510);
+        flag_button_510SimpleButton.callback = () => this.buy(510);
 
-        // buy_ballerina (components)
-        const buy_ballerinaButton = new Button(buy_ballerina);
-        buy_ballerinaButton.spriteName = "buy";
-        buy_ballerinaButton.callback = () => this.interface.prompt.showItem(256);
-        buy_ballerinaButton.activeFrame = false;
+        // flag_button_509 (components)
+        const flag_button_509SimpleButton = new SimpleButton(flag_button_509);
+        flag_button_509SimpleButton.callback = () => this.buy(509);
 
-        // buy_ad (components)
-        const buy_adButton = new Button(buy_ad);
-        buy_adButton.spriteName = "buy";
-        buy_adButton.callback = () => this.interface.prompt.showItem(285);
-        buy_adButton.activeFrame = false;
+        // flag_button_521 (components)
+        const flag_button_521SimpleButton = new SimpleButton(flag_button_521);
+        flag_button_521SimpleButton.callback = () => this.buy(521);
 
-        // buy_ljacket (components)
-        const buy_ljacketButton = new Button(buy_ljacket);
-        buy_ljacketButton.spriteName = "buy";
-        buy_ljacketButton.callback = () => this.interface.prompt.showItem(215);
-        buy_ljacketButton.activeFrame = false;
+        // flag_button_516 (components)
+        const flag_button_516SimpleButton = new SimpleButton(flag_button_516);
+        flag_button_516SimpleButton.callback = () => this.buy(516);
 
-        // buy_qvest (components)
-        const buy_qvestButton = new Button(buy_qvest);
-        buy_qvestButton.spriteName = "buy";
-        buy_qvestButton.callback = () => this.interface.prompt.showItem(218);
-        buy_qvestButton.activeFrame = false;
+        // flag_button_544 (components)
+        const flag_button_544SimpleButton = new SimpleButton(flag_button_544);
+        flag_button_544SimpleButton.callback = () => this.buy(544);
 
-        // buy_rainjacket (components)
-        const buy_rainjacketButton = new Button(buy_rainjacket);
-        buy_rainjacketButton.spriteName = "buy";
-        buy_rainjacketButton.callback = () => this.interface.prompt.showItem(235);
-        buy_rainjacketButton.activeFrame = false;
+        // flag_button_515 (components)
+        const flag_button_515SimpleButton = new SimpleButton(flag_button_515);
+        flag_button_515SimpleButton.callback = () => this.buy(515);
 
-        // buy2_yellowhoodie (components)
-        const buy2_yellowhoodieButton = new Button(buy2_yellowhoodie);
-        buy2_yellowhoodieButton.spriteName = "buy2";
-        buy2_yellowhoodieButton.callback = () => this.interface.prompt.showItem(4259);
+        // buy_seafarersgown (components)
+        const buy_seafarersgownButton = new Button(buy_seafarersgown);
+        buy_seafarersgownButton.spriteName = "buy2";
+        buy_seafarersgownButton.callback = () => this.interface.prompt.showItem(4225);
 
-        // buy2_pinkhoodie (components)
-        const buy2_pinkhoodieButton = new Button(buy2_pinkhoodie);
-        buy2_pinkhoodieButton.spriteName = "buy2";
-        buy2_pinkhoodieButton.callback = () => this.interface.prompt.showItem(222);
+        // buy_boonycurls (components)
+        const buy_boonycurlsButton = new Button(buy_boonycurls);
+        buy_boonycurlsButton.spriteName = "buy1";
+        buy_boonycurlsButton.callback = () => this.interface.prompt.showItem(1151);
 
-        // sec_bluesneakers (components)
-        const sec_bluesneakersSimpleButton = new SimpleButton(sec_bluesneakers);
-        sec_bluesneakersSimpleButton.callback = () => this.interface.prompt.showItem(357);
+        // buy_nauticalboots (components)
+        const buy_nauticalbootsButton = new Button(buy_nauticalboots);
+        buy_nauticalbootsButton.spriteName = "buy2";
+        buy_nauticalbootsButton.callback = () => this.interface.prompt.showItem(6044);
 
-        // sec_blueballcap (components)
-        const sec_blueballcapSimpleButton = new SimpleButton(sec_blueballcap);
-        sec_blueballcapSimpleButton.callback = () => this.interface.prompt.showItem(436);
+        // buy_shipshapesuit (components)
+        const buy_shipshapesuitButton = new Button(buy_shipshapesuit);
+        buy_shipshapesuitButton.spriteName = "buy1";
+        buy_shipshapesuitButton.callback = () => this.interface.prompt.showItem(4386);
+
+        // buy_shipshape (components)
+        const buy_shipshapeButton = new Button(buy_shipshape);
+        buy_shipshapeButton.spriteName = "buy1";
+        buy_shipshapeButton.callback = () => this.interface.prompt.showItem(1276);
+
+        // buy_treasuremaps (components)
+        const buy_treasuremapsButton = new Button(buy_treasuremaps);
+        buy_treasuremapsButton.spriteName = "buy2";
+        buy_treasuremapsButton.callback = () => this.interface.prompt.showItem(5109);
+
+        // sec_fishingvest (components)
+        const sec_fishingvestSimpleButton = new SimpleButton(sec_fishingvest);
+        sec_fishingvestSimpleButton.callback = () => this.interface.prompt.showItem(265);
+
+        // sec_grassskirt (components)
+        const sec_grassskirtSimpleButton = new SimpleButton(sec_grassskirt);
+        sec_grassskirtSimpleButton.callback = () => this.interface.prompt.showItem(212);
+
+        // buy_telescope (components)
+        const buy_telescopeButton = new Button(buy_telescope);
+        buy_telescopeButton.spriteName = "buy2";
+        buy_telescopeButton.callback = () => this.interface.prompt.showItem(5108);
+
+        // buy_thepirateer (components)
+        const buy_thepirateerButton = new Button(buy_thepirateer);
+        buy_thepirateerButton.spriteName = "buy1";
+        buy_thepirateerButton.callback = () => this.interface.prompt.showItem(1277);
+
+        // buy_crowsnestvest (components)
+        const buy_crowsnestvestButton = new Button(buy_crowsnestvest);
+        buy_crowsnestvestButton.spriteName = "buy2";
+        buy_crowsnestvestButton.callback = () => this.interface.prompt.showItem(4385);
+
+        // buy_raggedyrags (components)
+        const buy_raggedyragsButton = new Button(buy_raggedyrags);
+        buy_raggedyragsButton.spriteName = "buy1";
+        buy_raggedyragsButton.callback = () => this.interface.prompt.showItem(4388);
+
+        // buy_buccaneer (components)
+        const buy_buccaneerButton = new Button(buy_buccaneer);
+        buy_buccaneerButton.spriteName = "buy2";
+        buy_buccaneerButton.callback = () => this.interface.prompt.showItem(1280);
+
+        // sec_lifegaurdshirt (components)
+        const sec_lifegaurdshirtSimpleButton = new SimpleButton(sec_lifegaurdshirt);
+        sec_lifegaurdshirtSimpleButton.callback = () => this.interface.prompt.showItem(297);
+
+        // buy_commanderhat (components)
+        const buy_commanderhatButton = new Button(buy_commanderhat);
+        buy_commanderhatButton.spriteName = "buy1";
+        buy_commanderhatButton.callback = () => this.interface.prompt.showItem(1155);
+
+        // buy_commanderoutfit (components)
+        const buy_commanderoutfitButton = new Button(buy_commanderoutfit);
+        buy_commanderoutfitButton.spriteName = "buy1";
+        buy_commanderoutfitButton.callback = () => this.interface.prompt.showItem(4229);
+
+        // buy_commanderboots (components)
+        const buy_commanderbootsButton = new Button(buy_commanderboots);
+        buy_commanderbootsButton.spriteName = "buy1";
+        buy_commanderbootsButton.callback = () => this.interface.prompt.showItem(6045);
+
+        // buy_swashbuckleroutfit (components)
+        const buy_swashbuckleroutfitButton = new Button(buy_swashbuckleroutfit);
+        buy_swashbuckleroutfitButton.spriteName = "buy2";
+        buy_swashbuckleroutfitButton.callback = () => this.interface.prompt.showItem(1154);
+
+        // buy_swashbucklerhat (components)
+        const buy_swashbucklerhatButton = new Button(buy_swashbucklerhat);
+        buy_swashbucklerhatButton.spriteName = "buy2";
+        buy_swashbucklerhatButton.callback = () => this.interface.prompt.showItem(1154);
+
+        // sec_hawaiinhat (components)
+        const sec_hawaiinhatSimpleButton = new SimpleButton(sec_hawaiinhat);
+        sec_hawaiinhatSimpleButton.callback = () => this.interface.prompt.showItem(211);
+
+        // buy_waterwings (components)
+        const buy_waterwingsButton = new Button(buy_waterwings);
+        buy_waterwingsButton.spriteName = "buy2";
+        buy_waterwingsButton.callback = () => this.interface.prompt.showItem(325);
+
+        // buy_crabcostume (components)
+        const buy_crabcostumeButton = new Button(buy_crabcostume);
+        buy_crabcostumeButton.spriteName = "buy2";
+        buy_crabcostumeButton.callback = () => this.interface.prompt.showItem(14212);
+
+        // buy_squidlid (components)
+        const buy_squidlidButton = new Button(buy_squidlid);
+        buy_squidlidButton.spriteName = "buy2";
+        buy_squidlidButton.callback = () => this.interface.prompt.showItem(1160);
+
+        // buy_mopbucket (components)
+        const buy_mopbucketButton = new Button(buy_mopbucket);
+        buy_mopbucketButton.spriteName = "buy1";
+        buy_mopbucketButton.callback = () => this.interface.prompt.showItem(14212);
+
+        // buy_yellowsnorkel (components)
+        const buy_yellowsnorkelButton = new Button(buy_yellowsnorkel);
+        buy_yellowsnorkelButton.spriteName = "buy1";
+        buy_yellowsnorkelButton.callback = () => this.interface.prompt.showItem(135);
+
+        // sec_marcas (components)
+        const sec_marcasSimpleButton = new SimpleButton(sec_marcas);
+        sec_marcasSimpleButton.callback = () => this.interface.prompt.showItem(33Beach dress: 4660 $350 Cream sandals: 6126 $150 Balloon Vendor: 4418 $150 Blue water wings: 345 $$free Black Hawaiian shorts 4096 $250 Blue board shorts: 4095 $200 Red shorts: 10267 $250 Pink swim suit: 269 $300 Floral bikini: 4236 $350 Green flower bikini: 4097 $250 Purple spring dress: 4189 $400 Maracas: 335 $free Fishing hat: 446 $220 Hawaiian shirt: 211 $250 Lifeguard shirt: 297 $180 Fishing vest: 265 $480 Grass skirt: 212 $200 5);
+
+        // sec_fishinghat (components)
+        const sec_fishinghatSimpleButton = new SimpleButton(sec_fishinghat);
+        sec_fishinghatSimpleButton.callback = () => this.interface.prompt.showItem(446);
+
+        // buy_razzmatazz (components)
+        const buy_razzmatazzButton = new Button(buy_razzmatazz);
+        buy_razzmatazzButton.spriteName = "buy1";
+        buy_razzmatazzButton.callback = () => this.interface.prompt.showItem(1156);
+
+        // buy_coralmermaid (components)
+        const buy_coralmermaidButton = new Button(buy_coralmermaid);
+        buy_coralmermaidButton.spriteName = "buy2";
+        buy_coralmermaidButton.callback = () => this.interface.prompt.showItem(4230);
+
+        // buy_tropicalmermaid (components)
+        const buy_tropicalmermaidButton = new Button(buy_tropicalmermaid);
+        buy_tropicalmermaidButton.spriteName = "buy2";
+        buy_tropicalmermaidButton.callback = () => this.interface.prompt.showItem(4231);
+
+        // buy_aquamarine (components)
+        const buy_aquamarineButton = new Button(buy_aquamarine);
+        buy_aquamarineButton.spriteName = "buy2";
+        buy_aquamarineButton.callback = () => this.interface.prompt.showItem(1157);
+
+        // sec_purplespringdress (components)
+        const sec_purplespringdressSimpleButton = new SimpleButton(sec_purplespringdress);
+        sec_purplespringdressSimpleButton.callback = () => this.interface.prompt.showItem(4189);
+
+        // buy_bluesnorkel (components)
+        const buy_bluesnorkelButton = new Button(buy_bluesnorkel);
+        buy_bluesnorkelButton.spriteName = "buy";
+        buy_bluesnorkelButton.callback = () => this.interface.prompt.showItem(132);
+        buy_bluesnorkelButton.activeFrame = false;
+
+        // buy_blueracing (components)
+        const buy_blueracingButton = new Button(buy_blueracing);
+        buy_blueracingButton.spriteName = "buy";
+        buy_blueracingButton.callback = () => this.interface.prompt.showItem(4113);
+        buy_blueracingButton.activeFrame = false;
+
+        // buy_blueflippers (components)
+        const buy_blueflippersButton = new Button(buy_blueflippers);
+        buy_blueflippersButton.spriteName = "buy";
+        buy_blueflippersButton.callback = () => this.interface.prompt.showItem(364);
+        buy_blueflippersButton.activeFrame = false;
+
+        // buy_blackscuba (components)
+        const buy_blackscubaButton = new Button(buy_blackscuba);
+        buy_blackscubaButton.spriteName = "buy";
+        buy_blackscubaButton.callback = () => this.interface.prompt.showItem(2003);
+        buy_blackscubaButton.activeFrame = false;
+
+        // buy_scubatank (components)
+        const buy_scubatankButton = new Button(buy_scubatank);
+        buy_scubatankButton.spriteName = "buy";
+        buy_scubatankButton.callback = () => this.interface.prompt.showItem(308);
+        buy_scubatankButton.activeFrame = false;
+
+        // buy_greenwetsuit (components)
+        const buy_greenwetsuitButton = new Button(buy_greenwetsuit);
+        buy_greenwetsuitButton.spriteName = "buy";
+        buy_greenwetsuitButton.callback = () => this.interface.prompt.showItem(4114);
+        buy_greenwetsuitButton.activeFrame = false;
+
+        // buy_yellowflippers (components)
+        const buy_yellowflippersButton = new Button(buy_yellowflippers);
+        buy_yellowflippersButton.spriteName = "buy";
+        buy_yellowflippersButton.callback = () => this.interface.prompt.showItem(367);
+        buy_yellowflippersButton.activeFrame = false;
+
+        // sec_greenbikini (components)
+        const sec_greenbikiniSimpleButton = new SimpleButton(sec_greenbikini);
+        sec_greenbikiniSimpleButton.callback = () => this.interface.prompt.showItem(4097);
+
+        // buy_sagefish (components)
+        const buy_sagefishButton = new Button(buy_sagefish);
+        buy_sagefishButton.spriteName = "buy";
+        buy_sagefishButton.callback = () => this.interface.prompt.showItem(4455);
+        buy_sagefishButton.activeFrame = false;
+
+        // buy_squidzoi (components)
+        const buy_squidzoiButton = new Button(buy_squidzoi);
+        buy_squidzoiButton.spriteName = "buy";
+        buy_squidzoiButton.callback = () => this.interface.prompt.showItem(767);
+        buy_squidzoiButton.activeFrame = false;
+
+        // sec_redshorts (components)
+        const sec_redshortsSimpleButton = new SimpleButton(sec_redshorts);
+        sec_redshortsSimpleButton.callback = () => this.interface.prompt.showItem(10267);
+
+        // sec_pinkswimsuit (components)
+        const sec_pinkswimsuitSimpleButton = new SimpleButton(sec_pinkswimsuit);
+        sec_pinkswimsuitSimpleButton.callback = () => this.interface.prompt.showItem(269);
+
+        // sec_floralbikini (components)
+        const sec_floralbikiniSimpleButton = new SimpleButton(sec_floralbikini);
+        sec_floralbikiniSimpleButton.callback = () => this.interface.prompt.showItem(4236);
+
+        // sec_bluewaterwings (components)
+        const sec_bluewaterwingsSimpleButton = new SimpleButton(sec_bluewaterwings);
+        sec_bluewaterwingsSimpleButton.callback = () => this.interface.prompt.showItem(345);
 
         // buy_2_3_1_1_1 (components)
         const buy_2_3_1_1_1Button = new Button(buy_2_3_1_1_1);
         buy_2_3_1_1_1Button.spriteName = "buy";
-        buy_2_3_1_1_1Button.callback = () => this.interface.prompt.showItem(179);
+        buy_2_3_1_1_1Button.callback = () => this.interface.prompt.showItem(4111);
         buy_2_3_1_1_1Button.activeFrame = false;
-
-        // buy2_1_1 (components)
-        const buy2_1_1Button = new Button(buy2_1_1);
-        buy2_1_1Button.spriteName = "buy2";
-        buy2_1_1Button.callback = () => this.interface.prompt.showItem(13017);
 
         // buy_3_1 (components)
         const buy_3_1Button = new Button(buy_3_1);
         buy_3_1Button.spriteName = "buy";
-        buy_3_1Button.callback = () => this.interface.prompt.showItem(182);
+        buy_3_1Button.callback = () => this.interface.prompt.showItem(4112);
         buy_3_1Button.activeFrame = false;
 
-        // buy_1_1_1 (components)
-        const buy_1_1_1Button = new Button(buy_1_1_1);
-        buy_1_1_1Button.spriteName = "buy";
-        buy_1_1_1Button.callback = () => this.interface.prompt.showItem(192);
-        buy_1_1_1Button.activeFrame = false;
+        // sec_blackhawaiishorts (components)
+        const sec_blackhawaiishortsSimpleButton = new SimpleButton(sec_blackhawaiishorts);
+        sec_blackhawaiishortsSimpleButton.callback = () => this.interface.prompt.showItem(4096);
 
-        // buy_2_4_1 (components)
-        const buy_2_4_1Button = new Button(buy_2_4_1);
-        buy_2_4_1Button.spriteName = "buy";
-        buy_2_4_1Button.callback = () => this.interface.prompt.showItem(214);
-        buy_2_4_1Button.activeFrame = false;
+        // sec_blueboarshorts (components)
+        const sec_blueboarshortsSimpleButton = new SimpleButton(sec_blueboarshorts);
+        sec_blueboarshortsSimpleButton.callback = () => this.interface.prompt.showItem(4095);
 
-        // buy_2_1_1_1 (components)
-        const buy_2_1_1_1Button = new Button(buy_2_1_1_1);
-        buy_2_1_1_1Button.spriteName = "buy";
-        buy_2_1_1_1Button.callback = () => this.interface.prompt.showItem(3049);
-        buy_2_1_1_1Button.activeFrame = false;
+        // emerald_bg (components)
+        const emerald_bgSimpleButton = new SimpleButton(emerald_bg);
+        emerald_bgSimpleButton.callback = () => this.interface.prompt.showItem(9102);
 
-        // buy_2_2_1_1 (components)
-        const buy_2_2_1_1Button = new Button(buy_2_2_1_1);
-        buy_2_2_1_1Button.spriteName = "buy";
-        buy_2_2_1_1Button.callback = () => this.interface.prompt.showItem(3101);
-        buy_2_2_1_1Button.activeFrame = false;
+        // camp_bg (components)
+        const camp_bgSimpleButton = new SimpleButton(camp_bg);
+        camp_bgSimpleButton.callback = () => this.interface.prompt.showItem(9103);
 
-        // buy_2_3_1_1 (components)
-        const buy_2_3_1_1Button = new Button(buy_2_3_1_1);
-        buy_2_3_1_1Button.spriteName = "buy";
-        buy_2_3_1_1Button.callback = () => this.interface.prompt.showItem(3100);
-        buy_2_3_1_1Button.activeFrame = false;
+        // tropical_bg (components)
+        const tropical_bgSimpleButton = new SimpleButton(tropical_bg);
+        tropical_bgSimpleButton.callback = () => this.interface.prompt.showItem(9038);
 
-        // buy_2_2_1_1_1 (components)
-        const buy_2_2_1_1_1Button = new Button(buy_2_2_1_1_1);
-        buy_2_2_1_1_1Button.spriteName = "buy";
-        buy_2_2_1_1_1Button.callback = () => this.interface.prompt.showItem(191);
-        buy_2_2_1_1_1Button.activeFrame = false;
+        // treasure_bg (components)
+        const treasure_bgSimpleButton = new SimpleButton(treasure_bg);
+        treasure_bgSimpleButton.callback = () => this.interface.prompt.showItem(960);
 
-        // buy_2_1_1_1_1 (components)
-        const buy_2_1_1_1_1Button = new Button(buy_2_1_1_1_1);
-        buy_2_1_1_1_1Button.spriteName = "buy";
-        buy_2_1_1_1_1Button.callback = () => this.interface.prompt.showItem(171);
-        buy_2_1_1_1_1Button.activeFrame = false;
+        // ice_fishing_bg (components)
+        const ice_fishing_bgSimpleButton = new SimpleButton(ice_fishing_bg);
+        ice_fishing_bgSimpleButton.callback = () => this.interface.prompt.showItem(936);
 
-        // sec_500carat (components)
-        const sec_500caratSimpleButton = new SimpleButton(sec_500carat);
-        sec_500caratSimpleButton.callback = () => this.interface.prompt.showItem(5210);
+        // day_beach_bg (components)
+        const day_beach_bgSimpleButton = new SimpleButton(day_beach_bg);
+        day_beach_bgSimpleButton.callback = () => this.interface.prompt.showItem(9063);
 
-        // sec_snork (components)
-        const sec_snorkSimpleButton = new SimpleButton(sec_snork);
-        sec_snorkSimpleButton.callback = () => this.interface.prompt.showItem(132);
+        // beach_bg (components)
+        const beach_bgSimpleButton = new SimpleButton(beach_bg);
+        beach_bgSimpleButton.callback = () => this.interface.prompt.showItem(912);
 
-        // sec_pbandana (components)
-        const sec_pbandanaSimpleButton = new SimpleButton(sec_pbandana);
-        sec_pbandanaSimpleButton.callback = () => this.interface.prompt.showItem(490);
+        // deep_bg (components)
+        const deep_bgSimpleButton = new SimpleButton(deep_bg);
+        deep_bgSimpleButton.callback = () => this.interface.prompt.showItem(9128);
 
-        // buy_2_3_1 (components)
-        const buy_2_3_1Button = new Button(buy_2_3_1);
-        buy_2_3_1Button.spriteName = "buy";
-        buy_2_3_1Button.callback = () => this.interface.prompt.showItem(103);
-        buy_2_3_1Button.activeFrame = false;
+        // black_color (components)
+        const black_colorSimpleButton = new SimpleButton(black_color);
+        black_colorSimpleButton.callback = () => this.interface.prompt.showItem(4);
 
-        // buy_2_2_1 (components)
-        const buy_2_2_1Button = new Button(buy_2_2_1);
-        buy_2_2_1Button.spriteName = "buy";
-        buy_2_2_1Button.callback = () => this.interface.prompt.showItem(101);
-        buy_2_2_1Button.activeFrame = false;
+        // dark_blue_color (components)
+        const dark_blue_colorSimpleButton = new SimpleButton(dark_blue_color);
+        dark_blue_colorSimpleButton.callback = () => this.interface.prompt.showItem(1);
 
-        // buy_2_1_1 (components)
-        const buy_2_1_1Button = new Button(buy_2_1_1);
-        buy_2_1_1Button.spriteName = "buy";
-        buy_2_1_1Button.callback = () => this.interface.prompt.showItem(112);
-        buy_2_1_1Button.activeFrame = false;
+        // red_color (components)
+        const red_colorSimpleButton = new SimpleButton(red_color);
+        red_colorSimpleButton.callback = () => this.interface.prompt.showItem(5);
 
-        // buy_2_4 (components)
-        const buy_2_4Button = new Button(buy_2_4);
-        buy_2_4Button.spriteName = "buy";
-        buy_2_4Button.callback = () => this.interface.prompt.showItem(118);
-        buy_2_4Button.activeFrame = false;
+        // green_color (components)
+        const green_colorSimpleButton = new SimpleButton(green_color);
+        green_colorSimpleButton.callback = () => this.interface.prompt.showItem(2);
 
-        // buy_1_1 (components)
-        const buy_1_1Button = new Button(buy_1_1);
-        buy_1_1Button.spriteName = "buy";
-        buy_1_1Button.callback = () => this.interface.prompt.showItem(111);
-        buy_1_1Button.activeFrame = false;
+        // orange_color (components)
+        const orange_colorSimpleButton = new SimpleButton(orange_color);
+        orange_colorSimpleButton.callback = () => this.interface.prompt.showItem(6);
 
-        // buy_3 (components)
-        const buy_3Button = new Button(buy_3);
-        buy_3Button.spriteName = "buy";
-        buy_3Button.callback = () => this.interface.prompt.showItem(106);
-        buy_3Button.activeFrame = false;
+        // brown_color (components)
+        const brown_colorSimpleButton = new SimpleButton(brown_color);
+        brown_colorSimpleButton.callback = () => this.interface.prompt.showItem(9);
 
-        // buy2_1 (components)
-        const buy2_1Button = new Button(buy2_1);
-        buy2_1Button.spriteName = "buy2";
-        buy2_1Button.callback = () => this.interface.prompt.showItem(138);
+        // peach_color (components)
+        const peach_colorSimpleButton = new SimpleButton(peach_color);
+        peach_colorSimpleButton.callback = () => this.interface.prompt.showItem(10);
 
-        // vikinghelmet_rec (components)
-        const vikinghelmet_recSimpleButton = new SimpleButton(vikinghelmet_rec);
-        vikinghelmet_recSimpleButton.callback = () => this.interface.prompt.showItem(452);
+        // yellow_color (components)
+        const yellow_colorSimpleButton = new SimpleButton(yellow_color);
+        yellow_colorSimpleButton.callback = () => this.interface.prompt.showItem(7);
 
-        // sec_magicianwand (components)
-        const sec_magicianwandSimpleButton = new SimpleButton(sec_magicianwand);
-        sec_magicianwandSimpleButton.callback = () => this.interface.prompt.showItem(5080);
+        // light_blue_color (components)
+        const light_blue_colorSimpleButton = new SimpleButton(light_blue_color);
+        light_blue_colorSimpleButton.callback = () => this.interface.prompt.showItem(12);
 
-        // buy2 (components)
-        const buy2Button = new Button(buy2);
-        buy2Button.spriteName = "buy2";
-        buy2Button.callback = () => this.interface.prompt.showItem(341);
+        // pink_color (components)
+        const pink_colorSimpleButton = new SimpleButton(pink_color);
+        pink_colorSimpleButton.callback = () => this.interface.prompt.showItem(3);
 
-        // buy (components)
-        const buyButton = new Button(buy);
-        buyButton.spriteName = "buy";
-        buyButton.callback = () => this.interface.prompt.showItem(5053);
-        buyButton.activeFrame = false;
+        // dark_green_color (components)
+        const dark_green_colorSimpleButton = new SimpleButton(dark_green_color);
+        dark_green_colorSimpleButton.callback = () => this.interface.prompt.showItem(11);
 
-        // buy_1 (components)
-        const buy_1Button = new Button(buy_1);
-        buy_1Button.spriteName = "buy";
-        buy_1Button.callback = () => this.interface.prompt.showItem(5010);
-        buy_1Button.activeFrame = false;
+        // dark_purple_color (components)
+        const dark_purple_colorSimpleButton = new SimpleButton(dark_purple_color);
+        dark_purple_colorSimpleButton.callback = () => this.interface.prompt.showItem(8);
 
-        // buy_2 (components)
-        const buy_2Button = new Button(buy_2);
-        buy_2Button.spriteName = "buy";
-        buy_2Button.callback = () => this.interface.prompt.showItem(5013);
-        buy_2Button.activeFrame = false;
+        // lime_green_color (components)
+        const lime_green_colorSimpleButton = new SimpleButton(lime_green_color);
+        lime_green_colorSimpleButton.callback = () => this.interface.prompt.showItem(13);
 
-        // buy_2_1 (components)
-        const buy_2_1Button = new Button(buy_2_1);
-        buy_2_1Button.spriteName = "buy";
-        buy_2_1Button.callback = () => this.interface.prompt.showItem(5560);
-        buy_2_1Button.activeFrame = false;
+        // aqua_color (components)
+        const aqua_colorSimpleButton = new SimpleButton(aqua_color);
+        aqua_colorSimpleButton.callback = () => this.interface.prompt.showItem(15);
 
-        // buy_2_2 (components)
-        const buy_2_2Button = new Button(buy_2_2);
-        buy_2_2Button.spriteName = "buy";
-        buy_2_2Button.callback = () => this.interface.prompt.showItem(15026);
-        buy_2_2Button.activeFrame = false;
-
-        // buy_2_3 (components)
-        const buy_2_3Button = new Button(buy_2_3);
-        buy_2_3Button.spriteName = "buy";
-        buy_2_3Button.callback = () => this.interface.prompt.showItem(5117);
-        buy_2_3Button.activeFrame = false;
-
-        // sec_wtshirt (components)
-        const sec_wtshirtSimpleButton = new SimpleButton(sec_wtshirt);
-        sec_wtshirtSimpleButton.callback = () => this.interface.prompt.showItem(850);
+        // sec_ballonvender (components)
+        const sec_ballonvenderSimpleButton = new SimpleButton(sec_ballonvender);
+        sec_ballonvenderSimpleButton.callback = () => this.interface.prompt.showItem(4418);
 
         // page_right (components)
         const page_rightButton = new Button(page_right);
@@ -1699,6 +1771,14 @@ export default class ClothingCatalog extends Book {
         close_rightButton.spriteName = "catclosebtn";
         close_rightButton.callback = () => this.close();
         close_rightButton.pixelPerfect = true;
+
+        // sec_beachdress (components)
+        const sec_beachdressSimpleButton = new SimpleButton(sec_beachdress);
+        sec_beachdressSimpleButton.callback = () => this.interface.prompt.showItem(4660);
+
+        // sec_creamsandals (components)
+        const sec_creamsandalsSimpleButton = new SimpleButton(sec_creamsandals);
+        sec_creamsandalsSimpleButton.callback = () => this.interface.prompt.showItem(6126);
 
         // page_left (components)
         const page_leftButton = new Button(page_left);
@@ -1721,83 +1801,17 @@ export default class ClothingCatalog extends Book {
         close_right_1Button.activeFrame = false;
         close_right_1Button.pixelPerfect = true;
 
-        this.blue0001_png = blue0001_png;
-        this.green0001_png = green0001_png;
-        this.pink0001_png = pink0001_png;
-        this.black0001_png = black0001_png;
-        this.red0001_png = red0001_png;
-        this.orange0001_png = orange0001_png;
-        this.yellow0001_png = yellow0001_png;
-        this.purple0001_png = purple0001_png;
-        this.brown0001_png = brown0001_png;
-        this.darkgreen0001_png = darkgreen0001_png;
-        this.lightblue0001_png = lightblue0001_png;
-        this.darkpink0001_png = darkpink0001_png;
-        this.buy_sombrero = buy_sombrero;
-        this.buy_roman = buy_roman;
-        this.buy_beekeeper = buy_beekeeper;
-        this.buy_trend = buy_trend;
-        this.buy_disco = buy_disco;
-        this.buy_sstriker = buy_sstriker;
-        this.buy_sk = buy_sk;
-        this.buy_funster = buy_funster;
-        this.buy_pballcap = buy_pballcap;
-        this.buy_tuft = buy_tuft;
-        this.buy_bflutt = buy_bflutt;
-        this.buy_flouncy = buy_flouncy;
-        this.buy2_flutterby = buy2_flutterby;
-        this.buy2_pinkear = buy2_pinkear;
-        this.buy2_pinkrollers = buy2_pinkrollers;
-        this.buy_brownshoes = buy_brownshoes;
-        this.buy_yrubber = buy_yrubber;
-        this.buy_iceskates = buy_iceskates;
-        this.buy_blackcheckshoes = buy_blackcheckshoes;
-        this.buy_bluecheckershoes = buy_bluecheckershoes;
-        this.buy_redtenniesshoes = buy_redtenniesshoes;
-        this.buy_bunnyslippers = buy_bunnyslippers;
-        this.buy_cuckoo = buy_cuckoo;
-        this.buy_dressshoes = buy_dressshoes;
-        this.buy_bletterman = buy_bletterman;
-        this.buy2_blackhoodie = buy2_blackhoodie;
-        this.buy_daisy = buy_daisy;
-        this.buy_bparka = buy_bparka;
-        this.buy_greenrug = buy_greenrug;
-        this.buy_pband = buy_pband;
-        this.buy_lighthouse = buy_lighthouse;
-        this.buy_poncho = buy_poncho;
-        this.buy_ballerina = buy_ballerina;
-        this.buy_ad = buy_ad;
-        this.buy_ljacket = buy_ljacket;
-        this.buy_qvest = buy_qvest;
-        this.buy_rainjacket = buy_rainjacket;
-        this.buy2_yellowhoodie = buy2_yellowhoodie;
-        this.buy2_pinkhoodie = buy2_pinkhoodie;
+        this.buy_bluesnorkel = buy_bluesnorkel;
+        this.buy_blueracing = buy_blueracing;
+        this.buy_blueflippers = buy_blueflippers;
+        this.buy_blackscuba = buy_blackscuba;
+        this.buy_scubatank = buy_scubatank;
+        this.buy_greenwetsuit = buy_greenwetsuit;
+        this.buy_yellowflippers = buy_yellowflippers;
+        this.buy_sagefish = buy_sagefish;
+        this.buy_squidzoi = buy_squidzoi;
         this.buy_2_3_1_1_1 = buy_2_3_1_1_1;
-        this.buy2_1_1 = buy2_1_1;
         this.buy_3_1 = buy_3_1;
-        this.buy_1_1_1 = buy_1_1_1;
-        this.buy_2_4_1 = buy_2_4_1;
-        this.buy_2_1_1_1 = buy_2_1_1_1;
-        this.buy_2_2_1_1 = buy_2_2_1_1;
-        this.buy_2_3_1_1 = buy_2_3_1_1;
-        this.buy_2_2_1_1_1 = buy_2_2_1_1_1;
-        this.buy_2_1_1_1_1 = buy_2_1_1_1_1;
-        this.buy_2_3_1 = buy_2_3_1;
-        this.buy_2_2_1 = buy_2_2_1;
-        this.buy_2_1_1 = buy_2_1_1;
-        this.buy_2_4 = buy_2_4;
-        this.buy_1_1 = buy_1_1;
-        this.buy_3 = buy_3;
-        this.buy2_1 = buy2_1;
-        this.vikinghelmet_rec = vikinghelmet_rec;
-        this.buy2 = buy2;
-        this.buy = buy;
-        this.buy_1 = buy_1;
-        this.buy_2 = buy_2;
-        this.buy_2_1 = buy_2_1;
-        this.buy_2_2 = buy_2_2;
-        this.buy_2_3 = buy_2_3;
-        this.sec_wtshirt = sec_wtshirt;
         this.buttons = buttons;
         this.coins = coins;
         this.pages = pages;
