@@ -1,0 +1,398 @@
+{
+    "id": "339f8c5b-fb4a-48a0-8bfc-6efe7e524517",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "8bb89fb5-8fd3-4d6d-a8b9-f11a53a7735f",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "9d274e25-df95-406f-883b-f4102166d431",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5a418bf1-c113-4a17-9f4e-53757fea4314",
+                    "label": "uwbg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "uwbg"
+                    },
+                    "y": -16
+                },
+                {
+                    "type": "Sprite",
+                    "id": "e656c20c-78a6-4d94-917f-6cf411b1f4d4",
+                    "label": "x_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "uwclose",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "uwclose"
+                    },
+                    "x": 515,
+                    "y": -396
+                },
+                {
+                    "type": "Text",
+                    "id": "64148bab-26fe-47f0-a996-dc549ce5f0b0",
+                    "label": "claim_35012",
+                    "components": [],
+                    "x": -295,
+                    "y": -31,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "CLAIM!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "cd92174f-3b83-4eb2-9caf-c793eb804afa",
+                    "label": "item_35012",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(35012)",
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "35012"
+                    },
+                    "x": -295,
+                    "y": -176,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                },
+                {
+                    "type": "Text",
+                    "id": "f82e506c-fdb5-4748-b1f5-dd4c555538e0",
+                    "label": "claim_35013",
+                    "components": [],
+                    "y": -31,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "CLAIM!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "fb778af8-8dea-421f-b24d-c6ff0e033c67",
+                    "label": "item_35013",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(35013)",
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "35013"
+                    },
+                    "y": -176,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                },
+                {
+                    "type": "Text",
+                    "id": "06b10d96-4ee2-41ed-9c4f-729cc2bdaba1",
+                    "label": "claim_4518",
+                    "components": [],
+                    "y": 299,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "CLAIM!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "8913d5bb-daa0-401f-ba5a-67ce81911a08",
+                    "label": "item_4518",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(4518)",
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "4518"
+                    },
+                    "y": 154,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                },
+                {
+                    "type": "Text",
+                    "id": "855a1821-2c7e-4d26-b4be-dbb4be853ff8",
+                    "label": "claim_35017",
+                    "components": [],
+                    "x": -281,
+                    "y": 299,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "CLAIM!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b55940d3-2158-4349-9fa7-701f0c13e362",
+                    "label": "item_35016",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(35016)",
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "35016"
+                    },
+                    "x": 257,
+                    "y": -2
+                },
+                {
+                    "type": "Sprite",
+                    "id": "262f7f24-bb65-43fd-a99b-2204419763f6",
+                    "label": "item_35017",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(35017)",
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "35017"
+                    },
+                    "x": -295,
+                    "y": 170,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                },
+                {
+                    "type": "Sprite",
+                    "id": "676c7b08-7120-4927-972f-6ac7478908b8",
+                    "label": "blocker_35013",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "35013"
+                    },
+                    "y": -176,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8,
+                    "alpha": 0.9,
+                    "alphaTopLeft": 0.9,
+                    "alphaTopRight": 0.9,
+                    "alphaBottomLeft": 0.9,
+                    "alphaBottomRight": 0.9,
+                    "tintTopLeft": "#000000",
+                    "tintTopRight": "#000000",
+                    "tintBottomLeft": "#000000",
+                    "tintBottomRight": "#000000",
+                    "tintFill": true
+                },
+                {
+                    "type": "Sprite",
+                    "id": "b9900d0b-bef2-4708-959a-05c3d54b1694",
+                    "label": "blocker_35017",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "35017"
+                    },
+                    "x": -295,
+                    "y": 170,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8,
+                    "alpha": 0.9,
+                    "alphaTopLeft": 0.9,
+                    "alphaTopRight": 0.9,
+                    "alphaBottomLeft": 0.9,
+                    "alphaBottomRight": 0.9,
+                    "tintTopLeft": "#000000",
+                    "tintTopRight": "#000000",
+                    "tintBottomLeft": "#000000",
+                    "tintBottomRight": "#000000",
+                    "tintFill": true
+                },
+                {
+                    "type": "Sprite",
+                    "id": "7659e2ed-d8c1-4633-a415-73142bde365f",
+                    "label": "blocker_35016",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "35016"
+                    },
+                    "x": 256,
+                    "y": -2,
+                    "alpha": 0.9,
+                    "alphaTopLeft": 0.9,
+                    "alphaTopRight": 0.9,
+                    "alphaBottomLeft": 0.9,
+                    "alphaBottomRight": 0.9,
+                    "tintTopLeft": "#000000",
+                    "tintTopRight": "#000000",
+                    "tintBottomLeft": "#000000",
+                    "tintBottomRight": "#000000",
+                    "tintFill": true
+                },
+                {
+                    "type": "Sprite",
+                    "id": "f4869ed9-53fa-4833-9726-4cc73cdd0fe7",
+                    "label": "blocker_4518",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "texture": {
+                        "key": "partyinterface_uw",
+                        "frame": "4518"
+                    },
+                    "y": 154,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8,
+                    "alpha": 0.9,
+                    "alphaTopLeft": 0.9,
+                    "alphaTopRight": 0.9,
+                    "alphaBottomLeft": 0.9,
+                    "alphaBottomRight": 0.9,
+                    "tintTopLeft": "#000000",
+                    "tintTopRight": "#000000",
+                    "tintBottomLeft": "#000000",
+                    "tintBottomRight": "#000000",
+                    "tintFill": true
+                },
+                {
+                    "type": "Text",
+                    "id": "bd9eae28-aed8-4a57-a2f9-b1dd8a7895fe",
+                    "label": "claim_35016",
+                    "components": [],
+                    "x": 256,
+                    "y": 122,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "visible": false,
+                    "text": "CLAIM PET!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold"
+                },
+                {
+                    "type": "Text",
+                    "id": "d8438a14-1ba1-4a3d-ae48-09af96f20ddc",
+                    "label": "later_35016",
+                    "components": [],
+                    "x": 257,
+                    "y": 122,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Come back on the 22nd\n to unlock this awesome pet!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "31f6f40b-c710-4153-bd49-79e64fa13f46",
+                    "label": "later_35013",
+                    "components": [],
+                    "x": 1,
+                    "y": -31,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Come back on the 16th\n to unlock this reward!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "5527309d-46e4-472e-8eed-4b52bbd749cc",
+                    "label": "later_4518",
+                    "components": [],
+                    "x": 1,
+                    "y": 299,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Come back on the 20th\n to unlock this reward!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "wordWrapWidth": 300
+                },
+                {
+                    "type": "Text",
+                    "id": "7291aa1e-7e14-4bc4-9634-db4af161313b",
+                    "label": "later_35017",
+                    "components": [],
+                    "x": -280,
+                    "y": 299,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Come back on the 18th\n to unlock this reward!",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "20px",
+                    "wordWrapWidth": 300
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

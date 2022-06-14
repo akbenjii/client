@@ -472,6 +472,26 @@
             "y": 61
         },
         {
+            "type": "Image",
+            "id": "aa4c7523-66ae-4907-bdbe-07bb6b80b482",
+            "label": "party_interface",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPIntOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPIntOut()",
+            "SimpleButton.callback": "() => {this.underwater.visible = true}",
+            "texture": {
+                "key": "partyinterface_uw",
+                "frame": "4518"
+            },
+            "x": 1432,
+            "y": 82,
+            "scaleX": 0.4,
+            "scaleY": 0.4
+        },
+        {
             "type": "Container",
             "id": "ce0ace0d-84c5-4c35-86f9-390fd7926a06",
             "label": "mod_btn",
@@ -809,6 +829,22 @@
                     "fontSize": "35px"
                 }
             ]
+        },
+        {
+            "prefabId": "339f8c5b-fb4a-48a0-8bfc-6efe7e524517",
+            "id": "a69bfcef-ab23-4c72-9a49-832ab092d43e",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "underwater",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "visible": false,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],

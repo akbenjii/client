@@ -45,12 +45,12 @@ export default class Button extends SimpleButton {
     }
 
     onOver() {
-        this.gameObject.setFrame(`${this.spriteName}-hover`)
+        this.gameObject.setFrame(`${this.spriteName}-hover`, false, false)
         super.onOver()
     }
 
     onOut() {
-        this.gameObject.setFrame(this.spriteName)
+        this.gameObject.setFrame(this.spriteName, false, false)
         super.onOut()
     }
 
@@ -60,9 +60,9 @@ export default class Button extends SimpleButton {
         }
 
         if (this.activeFrame) {
-            this.gameObject.setFrame(`${this.spriteName}-active`)
+            this.gameObject.setFrame(`${this.spriteName}-active`, false)
         } else {
-            this.gameObject.setFrame(`${this.spriteName}-hover`)
+            this.gameObject.setFrame(`${this.spriteName}-hover`, false, false)
         }
     }
 
@@ -72,9 +72,9 @@ export default class Button extends SimpleButton {
         }
 
         if (this.activeFrame) {
-            this.gameObject.setFrame(this.spriteName)
+            this.gameObject.setFrame(this.spriteName, false, false)
         } else {
-            this.gameObject.setFrame(`${this.spriteName}-hover`)
+            this.gameObject.setFrame(`${this.spriteName}-hover`, false, false)
         }
 
         super.onUp(pointer)

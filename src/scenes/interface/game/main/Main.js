@@ -23,6 +23,7 @@ import PuffleCare from '../puffle/PuffleCare'
 import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
 import Manage from '../manage/Manage'
+import Underwater from '../underwater/Underwater'
 
 
 /* START OF COMPILED CODE */
@@ -88,6 +89,8 @@ export default class Main extends BaseScene {
         this.request_button;
         /** @type {Phaser.GameObjects.Image} */
         this.news_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.party_interface;
         /** @type {Phaser.GameObjects.Container} */
         this.mod_btn;
         /** @type {Phaser.GameObjects.Image} */
@@ -134,6 +137,8 @@ export default class Main extends BaseScene {
         this.stampEarnedHeader;
         /** @type {Phaser.GameObjects.Text} */
         this.stampEarnedBody;
+        /** @type {Underwater} */
+        this.underwater;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -245,6 +250,11 @@ export default class Main extends BaseScene {
         // news_button
         const news_button = this.add.image(70, 61, "main", "news-button");
 
+        // party_interface
+        const party_interface = this.add.image(1432, 82, "partyinterface_uw", "4518");
+        party_interface.scaleX = 0.4;
+        party_interface.scaleY = 0.4;
+
         // mod_btn
         const mod_btn = this.add.container(70, 161);
         mod_btn.visible = false;
@@ -354,6 +364,11 @@ export default class Main extends BaseScene {
         stampEarnedBody.setStyle({ "fixedWidth":380,"fontFamily": "Burbank Small", "fontSize": "35px" });
         stampEarned.add(stampEarnedBody);
 
+        // underwater
+        const underwater = new Underwater(this, 760, 480);
+        this.add.existing(underwater);
+        underwater.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -442,6 +457,12 @@ export default class Main extends BaseScene {
         news_buttonButton.callback = () => window.open('https://discord.gg/cpf', '_blank').focus();;
         news_buttonButton.activeFrame = false;
 
+        // party_interface (components)
+        const party_interfaceSimpleButton = new SimpleButton(party_interface);
+        party_interfaceSimpleButton.hoverCallback = () => this.onPIntOver();
+        party_interfaceSimpleButton.hoverOutCallback = () => this.onPIntOut();
+        party_interfaceSimpleButton.callback = () => {this.underwater.visible = true};
+
         // mod_button (components)
         const mod_buttonSimpleButton = new SimpleButton(mod_button);
         mod_buttonSimpleButton.hoverCallback = () => this.onModOver();
@@ -483,6 +504,7 @@ export default class Main extends BaseScene {
         this.map_button = map_button;
         this.request_button = request_button;
         this.news_button = news_button;
+        this.party_interface = party_interface;
         this.mod_btn = mod_btn;
         this.mod_button = mod_button;
         this.mod_m = mod_m;
@@ -506,6 +528,7 @@ export default class Main extends BaseScene {
         this.stampEarnedImage = stampEarnedImage;
         this.stampEarnedHeader = stampEarnedHeader;
         this.stampEarnedBody = stampEarnedBody;
+        this.underwater = underwater;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -898,7 +921,15 @@ export default class Main extends BaseScene {
         });
     }
 
+    onPIntOver(){
+        this.party_interface.scaleX = 0.5
+        this.party_interface.scaleY= 0.5
+    }
 
+    onPIntOut(){
+        this.party_interface.scaleX = 0.4
+        this.party_interface.scaleY= 0.4
+    }
 
     /* END-USER-CODE */
 }
