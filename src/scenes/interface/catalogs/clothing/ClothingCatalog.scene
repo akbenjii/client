@@ -38,23 +38,21 @@
         {
             "type": "Container",
             "id": "7776572e-39a3-4406-a915-c957a8f958e1",
-            "label": "page10",
+            "label": "page13",
             "components": [],
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "9ecabb55-2244-4083-b5db-4b79caa83fb9",
-                    "label": "page_page0016",
+                    "id": "2f5eed81-7993-4020-b076-9806cfe004b0",
+                    "label": "page13_1",
                     "components": [],
                     "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "page/page0016"
+                        "key": "june22clothing",
+                        "frame": "page13"
                     },
-                    "x": -4,
-                    "y": 2,
-                    "originX": 0,
-                    "originY": 0
+                    "x": 772,
+                    "y": 417
                 },
                 {
                     "type": "Image",
@@ -101,263 +99,1273 @@
         },
         {
             "type": "Container",
-            "id": "ed7d98e2-2102-4467-a0ea-fb8f18a5ecf2",
-            "label": "page9",
+            "id": "57323182-a8fd-465a-b44f-517e0c4d1bb3",
+            "label": "page12",
             "components": [],
+            "x": 761,
+            "y": 431,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "9315a046-531b-4e62-97c7-56870216156a",
-                    "label": "page_page0002",
+                    "id": "c39fe089-5408-4454-aa66-fbe608a9ebce",
+                    "label": "page12",
                     "components": [],
                     "texture": {
+                        "key": "june22clothing",
+                        "frame": "page12"
+                    }
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "34346a18-4023-43d8-9e04-fb121326ad48",
+                    "label": "flag_button_7187",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7187)",
+                    "x": -384,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "e4bc1a22-a8bd-484c-b921-6fb49f46d84e",
+                    "label": "flag_button_7186",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7186)",
+                    "x": -483,
+                    "y": -230,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "129f4d75-15c9-4fed-ab01-cb5887b08125",
+                    "label": "flag_button_7188",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7188)",
+                    "x": -273,
+                    "y": -227,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "dcb3eb28-9895-40e8-bc03-4992a24e6e7a",
+                    "label": "flag_button_7189",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7189)",
+                    "x": -166,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "94be2649-6dd3-4ad1-b816-88def424c7be",
+                    "label": "flag_button_7185",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7185)",
+                    "x": -538,
+                    "y": -144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ea639a76-d241-403f-85e7-e93dcb0032ce",
+                    "label": "flag_button_7184",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7184)",
+                    "x": -427,
+                    "y": -135,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "fd66b523-1710-4a92-a906-da2854234582",
+                    "label": "flag_button_7183",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7183)",
+                    "x": -318,
+                    "y": -139,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5255ca37-975f-412d-a94d-e13cd49cc0f7",
+                    "label": "flag_button_7182",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7182)",
+                    "x": -223,
+                    "y": -140,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5cbaea93-76f4-4f29-8c52-a4a95cc4c929",
+                    "label": "flag_button_7148",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7148)",
+                    "x": -106,
+                    "y": -139,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "fb33e804-35d9-4034-a867-830631247e84",
+                    "label": "flag_button_514",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(514)",
+                    "x": -544,
+                    "y": -43,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2d52e1c9-23c0-433c-ae0f-d6804d2f5abc",
+                    "label": "flag_button_533",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(533)",
+                    "x": -427,
+                    "y": -41,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "1f6b322e-8aeb-48d0-be63-37adbe844dd2",
+                    "label": "flag_button_502",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(502)",
+                    "x": -322,
+                    "y": -47,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "41cbfff6-7991-4417-9e67-8f067a5a1dde",
+                    "label": "flag_button_7096",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7096)",
+                    "x": -219,
+                    "y": -45,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "daca9ca4-ccb7-4619-b318-7a6b7f952815",
+                    "label": "flag_button_504",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(504)",
+                    "x": -110,
+                    "y": -41,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "4c20044c-b11b-4560-8dab-43f1e1376445",
+                    "label": "flag_button_538",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(538)",
+                    "x": -534,
+                    "y": 51,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "d094d4e4-dd4f-4346-ba28-a73af60085a8",
+                    "label": "flag_button_529",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(529)",
+                    "x": -427,
+                    "y": 47,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "869c7637-94e0-4e83-b7f8-d09567f12b6e",
+                    "label": "flag_button_505",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(505)",
+                    "x": -324,
+                    "y": 49,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0c59a27b-cfd4-4d85-8a78-3aad116688a8",
+                    "label": "flag_button_500",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(500)",
+                    "x": -221,
+                    "y": 47,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5572c335-d073-4a66-a3c2-5edaeb4cd3ae",
+                    "label": "flag_button_535",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(535)",
+                    "x": -110,
+                    "y": 49,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ad1a3e0f-2c4e-4cfb-b70e-967bd7e00007",
+                    "label": "flag_button_525",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(525)",
+                    "x": -538,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "559f1b7b-1962-4eb1-96c1-e1171c9109c7",
+                    "label": "flag_button_506",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(506)",
+                    "x": -428,
+                    "y": 142,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "191464a2-8785-46a4-8c7c-8d905b4d3dbc",
+                    "label": "flag_button_536",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(536)",
+                    "x": -325,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "1d72c1c6-f1ab-4586-96d1-378abe60d57a",
+                    "label": "flag_button_540",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(540)",
+                    "x": -221,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "046ffec8-26de-46da-ad02-bdcd617dfa4a",
+                    "label": "flag_button_507",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(507)",
+                    "x": -109,
+                    "y": 144,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a812995f-f296-427d-8c61-a66354c5f4aa",
+                    "label": "flag_button_542",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(542)",
+                    "x": -544,
+                    "y": 240,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5855e2c0-fbef-477a-a5dd-f240180a5720",
+                    "label": "flag_button_546",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(546)",
+                    "x": -431,
+                    "y": 236,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "4a7da8c3-e344-49e6-9a5a-173107d9bd28",
+                    "label": "flag_button_548",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(548)",
+                    "x": -321,
+                    "y": 236,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5342ac05-781d-4af4-81bc-1c4289e449cb",
+                    "label": "flag_button_530",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(530)",
+                    "x": -219,
+                    "y": 240,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "919afa0e-096b-49ad-8566-703b1cc095e7",
+                    "label": "flag_button_508",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(508)",
+                    "x": -111,
+                    "y": 239,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "327a7511-32d1-4937-a12f-e0e4cde1e211",
+                    "label": "flag_button_541",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(541)",
+                    "x": 408.9185791015625,
+                    "y": -230.4365997314453,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a25550e1-0857-4a56-993f-a906badd58e0",
+                    "label": "flag_button_519",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(519)",
+                    "x": 508.3985595703125,
+                    "y": -227.6732635498047,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "9510451f-9b63-4877-a365-daac8c5a1ce2",
+                    "label": "flag_button_545",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(545)",
+                    "x": 103,
+                    "y": -109,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "ac56033d-3633-4624-a953-69de318ed3c3",
+                    "label": "flag_button_531",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(531)",
+                    "x": 199,
+                    "y": -112,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "7b427ae7-6368-44ae-b67b-37f2e23596e7",
+                    "label": "flag_button_527",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(527)",
+                    "x": 308,
+                    "y": -112,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "8c90378f-5068-4eb8-a689-29c0a67d1d6e",
+                    "label": "flag_button_524",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(524)",
+                    "x": 410,
+                    "y": -114,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "225d1f80-1438-458c-9aa0-ae758a13677c",
+                    "label": "flag_button_501",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(501)",
+                    "x": 507,
+                    "y": -112,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0f663eeb-f4d9-4925-b037-a986d7c146f9",
+                    "label": "flag_button_511",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(511)",
+                    "x": 102,
+                    "y": 9,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "b6dbbc6a-1747-47d1-8a0d-ba6abebe3e0e",
+                    "label": "flag_button_528",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(528)",
+                    "x": 206,
+                    "y": 7,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a15a5d88-434c-439b-a9e1-30577fac8aaa",
+                    "label": "flag_button_534",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(534)",
+                    "x": 305,
+                    "y": 9,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "dcc0b64f-7089-4f48-b8df-d2b40e8bde2e",
+                    "label": "flag_button_512",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(512)",
+                    "x": 404,
+                    "y": 8,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "d86edec4-6899-45f0-8e92-d71de00545d0",
+                    "label": "flag_button_520",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(520)",
+                    "x": 511,
+                    "y": 9,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "47a60a9a-4859-467b-b748-763942ad0c95",
+                    "label": "flag_button_513",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(513)",
+                    "x": 102,
+                    "y": 130,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "9c3adc9a-2ca6-4059-b8ad-bbd0d8e67b1e",
+                    "label": "flag_button_7095",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(7095)",
+                    "x": 200,
+                    "y": 130,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "cedd2445-4dda-4d90-bf3a-37dc33d02e70",
+                    "label": "flag_button_543",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(543)",
+                    "x": 307,
+                    "y": 131,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2aaa69b5-5f66-494b-bf94-b22575ea8016",
+                    "label": "flag_button_522",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(522)",
+                    "x": 405,
+                    "y": 128,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "3d6785fd-ca38-446a-aaf7-8c0cb383e52b",
+                    "label": "flag_button_547",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(547)",
+                    "x": 508,
+                    "y": 135,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "7a2dd74c-1487-4c44-b678-6ac48c43b1c2",
+                    "label": "flag_button_537",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(537)",
+                    "x": 98,
+                    "y": 251,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "c7c42558-4d5d-463a-baf1-3e64060f83d4",
+                    "label": "flag_button_517",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(517)",
+                    "x": 203,
+                    "y": 248,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "6c2ec54b-163d-4a4f-9dac-c2cce0a762ef",
+                    "label": "flag_button_526",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(526)",
+                    "x": 303,
+                    "y": 250,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "bf2f9c57-1bdc-4d0f-abe3-7f7526ced4e5",
+                    "label": "flag_button_518",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(518)",
+                    "x": 407,
+                    "y": 250,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "76926897-84dd-4807-9c64-c3dd4f184447",
+                    "label": "flag_button_539",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(539)",
+                    "x": 506,
+                    "y": 252,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "baa2456d-3f4a-418d-a28a-5e50b0ac6a49",
+                    "label": "flag_button_523",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(523)",
+                    "x": 103,
+                    "y": -344,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "6b81651e-d64e-4cf9-a36d-2e94e16c84a3",
+                    "label": "flag_button_503",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(503)",
+                    "x": 306,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "65558169-3b03-420f-a020-927c5bdb02ae",
+                    "label": "flag_button_510",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(510)",
+                    "x": 202,
+                    "y": -229,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "24234f65-7008-44ba-a954-8939759090af",
+                    "label": "flag_button_509",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(509)",
+                    "x": 100,
+                    "y": -231,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "9d5780c1-d6e9-441f-b294-45f8a3336bdb",
+                    "label": "flag_button_521",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(521)",
+                    "x": 513,
+                    "y": -341,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2c8416e2-fda9-4456-98f5-da404c259972",
+                    "label": "flag_button_516",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(516)",
+                    "x": 405,
+                    "y": -348,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "502ac77e-ce64-478a-983b-8f72f6da66d4",
+                    "label": "flag_button_544",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(544)",
+                    "x": 304,
+                    "y": -343,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "22e46a44-d604-4bf8-9383-421cc49c225f",
+                    "label": "flag_button_515",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.buy(515)",
+                    "x": 201,
+                    "y": -344,
+                    "fillColor": "#00c6e5",
+                    "fillAlpha": 0.5,
+                    "width": 75,
+                    "height": 75
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "638814fb-01dd-4728-b37a-41db378cb0fc",
+            "label": "page11",
+            "components": [],
+            "x": 761,
+            "y": 431,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "56fdc05b-3137-44a5-abd5-470922f99bfb",
+                    "label": "page11",
+                    "components": [],
+                    "texture": {
+                        "key": "june22clothing",
+                        "frame": "page11"
+                    }
+                },
+                {
+                    "type": "Sprite",
+                    "id": "d1061872-edf5-4fc1-841c-b361fd26bf12",
+                    "label": "buy-seafarersgown",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4225)",
+                    "texture": {
                         "key": "clothingcatalog",
-                        "frame": "page/page0002"
+                        "frame": "buy2"
                     },
-                    "y": -7,
-                    "originX": 0,
-                    "originY": 0
+                    "x": 509,
+                    "y": -52,
+                    "scaleX": 1.3,
+                    "scaleY": 1.3,
+                    "angle": -23
                 },
                 {
-                    "type": "Image",
-                    "id": "099e83b5-aea2-4a96-8c3b-50543c1262d5",
-                    "label": "blue0001_png",
-                    "scope": "CLASS",
+                    "type": "Sprite",
+                    "id": "07de4618-48c5-4651-9afa-f1771af84bc7",
+                    "label": "buy-boonycurls",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "blue0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(1)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1151)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "blue0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
                     },
-                    "x": 919,
-                    "y": 322,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": 113,
+                    "y": -288,
+                    "scaleX": 1.3,
+                    "scaleY": 1.3,
+                    "angle": 21
                 },
                 {
-                    "type": "Image",
-                    "id": "8ed92d53-9f21-4df3-9cb7-0793bf4dfe68",
-                    "label": "green0001_png",
-                    "scope": "CLASS",
+                    "type": "Sprite",
+                    "id": "c2104d96-959d-496e-b5c9-e5446aba9fed",
+                    "label": "buy-nauticalboots",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "green0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(2)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(6044)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "green0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
                     },
-                    "x": 1034,
-                    "y": 323,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -148,
+                    "y": 290,
+                    "scaleX": 1.3,
+                    "scaleY": 1.3,
+                    "angle": 31
                 },
                 {
-                    "type": "Image",
-                    "id": "0130aa01-d025-45e0-9f60-cfef46d163a3",
-                    "label": "pink0001_png",
-                    "scope": "CLASS",
+                    "type": "Sprite",
+                    "id": "49bcd8d8-d705-46d2-baee-9e16613d81fc",
+                    "label": "buy-shipshapesuit",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "pink0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(3)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(4386)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "pink0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
                     },
-                    "x": 1148,
-                    "y": 323,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -504,
+                    "y": 174,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -45.00000000000006
                 },
                 {
-                    "type": "Image",
-                    "id": "d84095be-b01b-436b-94b7-cb9ff2704c9f",
-                    "label": "black0001_png",
-                    "scope": "CLASS",
+                    "type": "Sprite",
+                    "id": "6ba0fb05-d61b-46d6-bb40-f04ab904c50b",
+                    "label": "buy-shipshape",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "black0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(4)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1276)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "black0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
                     },
-                    "x": 919,
-                    "y": 412,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -490,
+                    "y": -192,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -18
                 },
                 {
-                    "type": "Image",
-                    "id": "bafd518b-cec9-4e95-a4bd-6e5cdc6f17d7",
-                    "label": "red0001_png",
-                    "scope": "CLASS",
+                    "type": "Sprite",
+                    "id": "89aee89d-af67-43d1-8816-592ffa9a3608",
+                    "label": "buy-treasuremaps",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "red0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(5)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(5109)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "red0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
                     },
-                    "x": 1034,
-                    "y": 412,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -126,
+                    "y": 53,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 45
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "45a0b127-7ba2-4ada-90ee-0b20050cea9d",
+            "label": "page10",
+            "components": [],
+            "x": 761,
+            "y": 430,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9b3e0104-e57e-4cdd-8b94-d276ada8ebf1",
+                    "label": "page10",
+                    "components": [],
+                    "texture": {
+                        "key": "june22clothing",
+                        "frame": "page10"
+                    }
                 },
                 {
                     "type": "Image",
-                    "id": "a2f57595-10b2-4073-8c03-237c68c5b3a6",
-                    "label": "orange0001_png",
-                    "scope": "CLASS",
+                    "id": "c231be5a-48e7-4f24-ba3e-70a9c790636d",
+                    "label": "buy-telescope",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "orange0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(6)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(5108)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "orange0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
                     },
-                    "x": 1148,
-                    "y": 412,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -483,
+                    "y": -181,
+                    "scaleX": 1.2892080995527262,
+                    "scaleY": 1.2892080995527262,
+                    "angle": -15
                 },
                 {
                     "type": "Image",
-                    "id": "a082a176-f974-41cd-9d21-bb9c9800f0bb",
-                    "label": "yellow0001_png",
-                    "scope": "CLASS",
+                    "id": "d1cbdf82-071d-40bb-adae-b5e752665d80",
+                    "label": "buy-thepirateer",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "yellow0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(7)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1277)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "yellow0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
                     },
-                    "x": 919,
-                    "y": 507,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -394,
+                    "y": -316,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 15
                 },
                 {
                     "type": "Image",
-                    "id": "b3f6a776-4a5c-41ce-a9ae-55b9354162d2",
-                    "label": "purple0001_png",
-                    "scope": "CLASS",
+                    "id": "3486524a-6da1-4c15-860f-718f1b2ca258",
+                    "label": "buy-crowsnestvest",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "purple0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(8)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4385)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "purple0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
                     },
-                    "x": 1034,
-                    "y": 507,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -100,
+                    "y": 68,
+                    "scaleX": 1.2859928030062104,
+                    "scaleY": 1.2859928030062104,
+                    "angle": 33
                 },
                 {
                     "type": "Image",
-                    "id": "51dd0cc1-7b2f-4465-8276-6af9447f6436",
-                    "label": "brown0001_png",
-                    "scope": "CLASS",
+                    "id": "de8fd1f1-dcb8-4fe1-9988-0f554eae7f9a",
+                    "label": "buy-raggedyrags",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "brown0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(9)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(4388)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "brown0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
                     },
-                    "x": 1148,
-                    "y": 507,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": 126,
+                    "y": -36,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -17
                 },
                 {
                     "type": "Image",
-                    "id": "f282a79a-cccc-4f16-b8dc-9f0360ca591a",
-                    "label": "darkgreen0001_png",
-                    "scope": "CLASS",
+                    "id": "6c63f2cb-3a13-4f4a-997b-e7f7d21400fe",
+                    "label": "buy-buccaneer",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "darkgreen0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(11)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1280)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "darkgreen0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
                     },
-                    "x": 1034,
-                    "y": 598,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": 506,
+                    "y": -292,
+                    "scaleX": 1.2759678083080723,
+                    "scaleY": 1.2759678083080723,
+                    "angle": 10
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "e6464571-d1d6-4d00-bfc8-be75209b128d",
+            "label": "page9",
+            "components": [],
+            "x": 761,
+            "y": 431,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "40763028-7fb3-49da-830f-f17f17a775fe",
+                    "label": "page9",
+                    "components": [],
+                    "texture": {
+                        "key": "june22clothing",
+                        "frame": "page9"
+                    }
                 },
                 {
                     "type": "Image",
-                    "id": "b5cab010-65b6-4fe0-a98c-5214a18a0b17",
-                    "label": "lightblue0001_png",
-                    "scope": "CLASS",
+                    "id": "4200defa-a7f5-49b8-ad5b-4f3e301754a8",
+                    "label": "buy-commanderhat",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "lightblue0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(12)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1155)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "lightblue0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
                     },
-                    "x": 1148,
-                    "y": 598,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -471,
+                    "y": -280,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -39.99999999999994
                 },
                 {
                     "type": "Image",
-                    "id": "cb8740c7-5b24-45d6-9643-430425f398d0",
-                    "label": "darkpink0001_png",
-                    "scope": "CLASS",
+                    "id": "63dce21b-1d82-44df-9722-3cd50c6032fb",
+                    "label": "buy-commanderoutfit",
                     "components": [
                         "Button"
                     ],
-                    "Button.spriteName": "darkpink0001.png",
-                    "Button.callback": "() => this.interface.prompt.showItem(10)",
-                    "Button.activeFrame": false,
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(4229)",
                     "texture": {
-                        "key": "Sep2005",
-                        "frame": "darkpink0001.png"
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
                     },
-                    "x": 919,
-                    "y": 598,
-                    "scaleX": 0.544399396429802,
-                    "scaleY": 0.544399396429802
+                    "x": -457,
+                    "y": -86,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 15
+                },
+                {
+                    "type": "Image",
+                    "id": "5de8c127-6c4d-432b-8183-a8cf7311b459",
+                    "label": "buy-commanderboots",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(6045)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": -441,
+                    "y": 285,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -15
+                },
+                {
+                    "type": "Image",
+                    "id": "59ac47d4-5449-445c-b594-7c37ebc32e8a",
+                    "label": "buy-swashbuckleroutfit",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1154)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 452,
+                    "y": -59,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Image",
+                    "id": "8c6d4ead-3373-46b3-948e-c9739ddf4e29",
+                    "label": "buy-swashbucklerhat",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1154)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 433,
+                    "y": -311,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 18
                 }
             ]
         },
@@ -370,151 +1378,108 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "477a86c7-31ee-4f72-aab0-e6d1792424b6",
-                    "label": "page7_1",
+                    "id": "dfd9c428-1501-4f7b-8329-efba806524bd",
+                    "label": "page8_1",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "page7"
+                        "key": "june22clothing",
+                        "frame": "page8"
                     },
-                    "x": 768,
+                    "x": 761,
                     "y": 431
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "ae4f4001-edd6-4799-9e27-648087b58b29",
-                    "label": "noir-bg",
+                    "type": "Image",
+                    "id": "7be3f8db-7bc4-4159-a7ef-96aaf659a060",
+                    "label": "buy-waterwings",
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9001)",
-                    "x": 340,
-                    "y": 357,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(325)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 239,
+                    "y": 385,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "angle": 20
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "f4fbb46d-0bcc-48dc-a9fd-bb4e8708cae7",
-                    "label": "target-bg",
+                    "type": "Image",
+                    "id": "603aecad-e66a-4dd1-94b3-ea511b8bb7e4",
+                    "label": "buy-crabcostume",
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(906)",
-                    "x": 586,
-                    "y": 358,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(14212)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 690,
+                    "y": 367,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 20
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "35751a90-210b-4ac8-8550-07e9d3e3f108",
-                    "label": "fish-bg",
+                    "type": "Image",
+                    "id": "8533d648-bc8f-4d7f-b83c-2338cbbbbe3f",
+                    "label": "buy-squidlid",
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(954)",
-                    "x": 338,
-                    "y": 604,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1160)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 622,
+                    "y": 638,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 20
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "6aa59488-e647-45e1-913c-3e080b695af9",
-                    "label": "picnic-bg",
+                    "type": "Image",
+                    "id": "561c382d-e40f-471d-8ed9-c3d0b699a43d",
+                    "label": "buy-mopbucket",
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(952)",
-                    "x": 586,
-                    "y": 606,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(14212)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 902,
+                    "y": 612,
+                    "angle": -45.00000000000006
                 },
                 {
-                    "type": "Rectangle",
-                    "id": "fa8305fd-b4fe-4c46-9694-4a40e9678fe7",
-                    "label": "pizza-bg",
+                    "type": "Image",
+                    "id": "2e170f40-1a8a-4e08-921e-fedf36944bcb",
+                    "label": "buy-yellowsnorkel",
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(944)",
-                    "x": 944,
-                    "y": 360,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "fcc24b4b-098e-4703-adfe-761551acca85",
-                    "label": "fireflies-bg",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(963)",
-                    "x": 1186,
-                    "y": 358,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "d0237a37-e8e2-4944-9b50-10022da49a51",
-                    "label": "western-bg",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(913)",
-                    "x": 942,
-                    "y": 610,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "e186e882-a7a0-435f-8804-dcd4e7b791d4",
-                    "label": "baseball-bg",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(965)",
-                    "x": 1184,
-                    "y": 606,
-                    "scaleX": 1.6391672389424585,
-                    "scaleY": 1.6391672389424585,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(135)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 1215,
+                    "y": 607,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -45.00000000000006
                 }
             ]
         },
@@ -523,469 +1488,95 @@
             "id": "308134c3-e2e2-4a79-9da8-61e3a2f91835",
             "label": "page7",
             "components": [],
+            "y": 1,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "020c8804-94a8-404b-844a-efa8ee1a4ebe",
-                    "label": "page6_1",
+                    "id": "e08d2df9-a997-41bf-8534-b1955bb9db23",
+                    "label": "page7_2",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "page6"
+                        "key": "june22clothing",
+                        "frame": "page7"
                     },
-                    "x": 768,
+                    "x": 761,
                     "y": 431
                 },
                 {
                     "type": "Image",
-                    "id": "138f0cb3-7988-469d-a272-0e25afdad222",
-                    "label": "buy_sombrero",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(401)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 645,
-                    "y": 762
-                },
-                {
-                    "type": "Image",
-                    "id": "1c0bc59f-6f68-4ccd-b220-eced52cc15c7",
-                    "label": "buy_roman",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(451)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 287,
-                    "y": 762
-                },
-                {
-                    "type": "Text",
-                    "id": "2910b56a-7170-4eee-92c3-11891a5b8f1e",
-                    "label": "text_roman",
-                    "components": [],
-                    "x": 241,
-                    "y": 743,
-                    "text": "800",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "d3f3b1e0-ecbe-46c6-a7e1-bd271b087e0e",
-                    "label": "buy_beekeeper",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(654)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 287,
-                    "y": 381
-                },
-                {
-                    "type": "Text",
-                    "id": "6cd6793c-ef61-4c6d-b2d8-12cca14774fc",
-                    "label": "text_beekeeper",
-                    "components": [],
-                    "x": 246,
-                    "y": 364,
-                    "text": "750",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "14639b85-e415-420f-9408-6c70e62a7f2a",
-                    "label": "buy_trend",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(1139)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 463,
-                    "y": 381
-                },
-                {
-                    "type": "Text",
-                    "id": "262936fb-2794-4441-a135-0268f6bf1981",
-                    "label": "text_trend",
-                    "components": [],
-                    "x": 426,
-                    "y": 364,
-                    "text": "450",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "485c0b1e-b955-4ad4-bfe5-dd433c8d4a4c",
-                    "label": "buy_disco",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(652)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 645,
-                    "y": 381
-                },
-                {
-                    "type": "Text",
-                    "id": "42152865-7fb4-4856-a0bb-d0cb680122ac",
-                    "label": "text_disco",
-                    "components": [],
-                    "x": 606,
-                    "y": 364,
-                    "text": "600",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "1438789b-3d22-43e8-8023-7a917f09b1bf",
-                    "label": "buy_sstriker",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(656)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 288,
-                    "y": 576
-                },
-                {
-                    "type": "Text",
-                    "id": "393136c2-e185-4b9d-b4d3-544441bd5dbd",
-                    "label": "text_sstriker",
-                    "components": [],
-                    "x": 246,
-                    "y": 559,
-                    "text": "550",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "40e75d92-950d-429e-bed0-d6ff2e561958",
-                    "label": "buy_sk",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(662)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 463,
-                    "y": 576
-                },
-                {
-                    "type": "Text",
-                    "id": "8c02df1b-c79f-454d-bf52-79dfea260e0b",
-                    "label": "text_sk",
-                    "components": [],
-                    "x": 426,
-                    "y": 559,
-                    "text": "550",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "f5f86394-2c3f-415f-9ec5-500946c621af",
-                    "label": "buy_funster",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(653)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 645,
-                    "y": 576
-                },
-                {
-                    "type": "Text",
-                    "id": "530f18c1-354e-471b-908a-34e8d0aa4e66",
-                    "label": "text_funster",
-                    "components": [],
-                    "x": 606,
-                    "y": 559,
-                    "text": "500",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Text",
-                    "id": "7743ea06-bfca-4031-9311-ff1e71be8ce4",
-                    "label": "text_sombrero",
-                    "components": [],
-                    "x": 606,
-                    "y": 743,
-                    "text": "500",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "0c4b9f50-836e-4327-b057-4276eed3057a",
-                    "label": "buy_pballcap",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(406)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 463,
-                    "y": 762
-                },
-                {
-                    "type": "Text",
-                    "id": "1409e883-1441-40d6-89f9-32b4249b5a96",
-                    "label": "text_pballcap",
-                    "components": [],
-                    "x": 426,
-                    "y": 743,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "34ad6bdc-ba00-4349-9586-0a71e23e538c",
-                    "label": "buy_tuft",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(1007)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 645,
-                    "y": 186
-                },
-                {
-                    "type": "Text",
-                    "id": "856b066f-74ea-407b-bb21-b467d3fd9be5",
-                    "label": "text_tuft",
-                    "components": [],
-                    "x": 606,
-                    "y": 169,
-                    "text": "250",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "88196989-2fad-4b09-af72-acb8e6b7984a",
-                    "label": "buy_bflutt",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(1039)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 463,
-                    "y": 186
-                },
-                {
-                    "type": "Text",
-                    "id": "fab7f818-9f7d-47c7-8166-cd5c7ed21152",
-                    "label": "text_bflutt",
-                    "components": [],
-                    "x": 426,
-                    "y": 169,
-                    "text": "350",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "ed873ef6-684e-4255-b9c5-6e39c23fab74",
-                    "label": "buy_flouncy",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(1022)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 287,
-                    "y": 186
-                },
-                {
-                    "type": "Text",
-                    "id": "a51aaacb-2cfb-4edb-8f1f-cfc7b02878dc",
-                    "label": "text_flouncy",
-                    "components": [],
-                    "x": 246,
-                    "y": 169,
-                    "text": "600",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "9933ad51-12ed-4108-a01f-9d6d10c95653",
-                    "label": "buy2_flutterby",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(657)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 1110,
-                    "y": 381,
-                    "scaleX": 0.7060432626289486,
-                    "scaleY": 0.7060432626289486,
-                    "angle": -135,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Image",
-                    "id": "bdec500d-0002-4201-9ad0-0834cd618afb",
-                    "label": "buy2_pinkear",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(484)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 887,
-                    "y": 293,
-                    "scaleX": 0.7060432626289486,
-                    "scaleY": 0.7060432626289486,
-                    "angle": -52.99999999999994,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Ellipse",
-                    "id": "a49b7391-3058-4c61-974a-452fde143e60",
-                    "label": "sec-blackcape",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(303)",
-                    "x": 844,
-                    "y": 422,
-                    "scaleX": 0.2175016673872514,
-                    "scaleY": 0.21393876922214905,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
-                },
-                {
-                    "type": "Ellipse",
                     "id": "99050c0c-9e7e-4c09-a948-8d26e2af8044",
-                    "label": "sec-pinkdress",
+                    "label": "buy-razzmatazz",
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(252)",
-                    "x": 1205,
-                    "y": 356,
-                    "scaleX": 0.2175016673872514,
-                    "scaleY": 0.21393876922214905,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1156)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 320,
+                    "y": 267,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -45.00000000000006
+                },
+                {
+                    "type": "Image",
+                    "id": "67e99629-06b7-4e67-8813-54edcbf5eaf6",
+                    "label": "buy-coralmermaid",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4230)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 658,
+                    "y": 418,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 20
+                },
+                {
+                    "type": "Image",
+                    "id": "15433f33-9029-408f-a9c3-ee23c19cbc3f",
+                    "label": "buy-tropicalmermaid",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4231)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1281,
+                    "y": 248,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Image",
+                    "id": "0ce58b73-b7cc-4e3e-b65a-e5506f1c67d5",
+                    "label": "buy-aquamarine",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1157)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1161,
+                    "y": 78,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -39
                 }
             ]
         },
@@ -994,68 +1585,47 @@
             "id": "b1f50e90-cf0a-47f8-a325-a9affdc3cd6f",
             "label": "page6",
             "components": [],
+            "y": 2,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "6fa9841e-e632-413d-834c-45ae7e50c4bb",
-                    "label": "page8_1",
+                    "id": "5c9d226d-3ec4-4ef0-b7b1-bbf3478c9497",
+                    "label": "page6_2",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
-                        "frame": "page8"
+                        "key": "june22clothing",
+                        "frame": "page6"
                     },
                     "x": 768,
                     "y": 431
                 },
                 {
                     "type": "Image",
-                    "id": "0c3c1c05-e452-49a5-bb37-3fb9ee8567c4",
-                    "label": "buy2_pinkrollers",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(378)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 691,
-                    "y": 511,
-                    "scaleX": 0.8414916020698116,
-                    "scaleY": 0.8414916020698116,
-                    "angle": 50,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Image",
                     "id": "22ab75fe-6944-4cb1-b920-644a57c3b226",
-                    "label": "buy_brownshoes",
+                    "label": "buy_bluesnorkel",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(351)",
+                    "Button.callback": "() => this.interface.prompt.showItem(132)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 870,
-                    "y": 463
+                    "x": 296,
+                    "y": 354
                 },
                 {
                     "type": "Text",
                     "id": "82506dff-acf4-4769-afe5-a9f4add0cfea",
-                    "label": "text_brownshoes",
+                    "label": "text_bluesnorkel",
                     "components": [],
-                    "x": 829,
-                    "y": 446,
-                    "text": "400",
+                    "x": 259,
+                    "y": 334,
+                    "text": "250",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -1064,29 +1634,29 @@
                 {
                     "type": "Image",
                     "id": "d248aca1-73bb-4fdd-8033-b68d3589e621",
-                    "label": "buy_yrubber",
+                    "label": "buy_blueracing",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(373)",
+                    "Button.callback": "() => this.interface.prompt.showItem(4113)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 1046,
-                    "y": 463
+                    "x": 285,
+                    "y": 579
                 },
                 {
                     "type": "Text",
                     "id": "da8869c1-23a1-4e51-814a-736d8db36d22",
-                    "label": "text_yrubber",
+                    "label": "text_blueracing",
                     "components": [],
-                    "x": 1009,
-                    "y": 446,
-                    "text": "280",
+                    "x": 248,
+                    "y": 560,
+                    "text": "500",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -1095,29 +1665,29 @@
                 {
                     "type": "Image",
                     "id": "dcf44805-d1fd-424d-b025-e56bab3ff4e1",
-                    "label": "buy_iceskates",
+                    "label": "buy_blueflippers",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(369)",
+                    "Button.callback": "() => this.interface.prompt.showItem(364)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 1215,
-                    "y": 463
+                    "x": 286,
+                    "y": 753
                 },
                 {
                     "type": "Text",
                     "id": "3c1f483e-a164-4158-a802-1041ca56d791",
-                    "label": "text_iceskates",
+                    "label": "text_blueflippers",
                     "components": [],
-                    "x": 1176,
-                    "y": 446,
-                    "text": "200",
+                    "x": 251,
+                    "y": 733,
+                    "text": "225",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -1126,29 +1696,29 @@
                 {
                     "type": "Image",
                     "id": "ebd2f47c-8b8a-4d8d-8a89-fe9a47c1bba2",
-                    "label": "buy_blackcheckshoes",
+                    "label": "buy_blackscuba",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(6004)",
+                    "Button.callback": "() => this.interface.prompt.showItem(2003)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 871,
-                    "y": 655
+                    "x": 1037,
+                    "y": 488
                 },
                 {
                     "type": "Text",
                     "id": "e034a2fa-d2cc-42cd-b7c3-380a405e54f1",
-                    "label": "text_blackcheckshoes",
+                    "label": "text_blackscuba",
                     "components": [],
-                    "x": 829,
-                    "y": 638,
-                    "text": "300",
+                    "x": 999,
+                    "y": 468,
+                    "text": "200",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -1157,29 +1727,29 @@
                 {
                     "type": "Image",
                     "id": "19be677d-1928-4258-9e8d-ed989d505d98",
-                    "label": "buy_bluecheckershoes",
+                    "label": "buy_scubatank",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(6104)",
+                    "Button.callback": "() => this.interface.prompt.showItem(308)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 1046,
-                    "y": 655
+                    "x": 1257,
+                    "y": 488
                 },
                 {
                     "type": "Text",
                     "id": "deb2cccd-a8bd-4e43-a9be-6c54ed661b99",
-                    "label": "text_bluecheckershoes",
+                    "label": "text_scubatank",
                     "components": [],
-                    "x": 1007,
-                    "y": 638,
-                    "text": "300",
+                    "x": 1218,
+                    "y": 467,
+                    "text": "480",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -1188,28 +1758,28 @@
                 {
                     "type": "Image",
                     "id": "2fc38129-9968-40ef-b74a-3694db32d4ec",
-                    "label": "buy_redtenniesshoes",
+                    "label": "buy_greenwetsuit",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(6036)",
+                    "Button.callback": "() => this.interface.prompt.showItem(4114)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 1215,
-                    "y": 655
+                    "x": 1035,
+                    "y": 736
                 },
                 {
                     "type": "Text",
                     "id": "06dc7ed3-684d-4748-8900-e12228adbe1c",
-                    "label": "text_redtenniesshoes",
+                    "label": "text_greenwetsuit",
                     "components": [],
-                    "x": 1176,
-                    "y": 638,
+                    "x": 996,
+                    "y": 716,
                     "text": "250",
                     "align": "center",
                     "fontFamily": "Burbank Small",
@@ -1219,91 +1789,29 @@
                 {
                     "type": "Image",
                     "id": "1b272c2e-d635-4977-ac32-0431881ecda3",
-                    "label": "buy_bunnyslippers",
+                    "label": "buy_yellowflippers",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(366)",
+                    "Button.callback": "() => this.interface.prompt.showItem(367)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 1215,
-                    "y": 282
+                    "x": 1264,
+                    "y": 737
                 },
                 {
                     "type": "Text",
                     "id": "e6ba2f5c-c926-49a1-a62a-0a9b2a7c06c6",
-                    "label": "text_bunnyslippers",
+                    "label": "text_yellowflippers",
                     "components": [],
-                    "x": 1176,
-                    "y": 265,
+                    "x": 1225,
+                    "y": 716,
                     "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "53647d60-32cc-4ee4-add3-0f3fbadb2102",
-                    "label": "buy_cuckoo",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(6005)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1046,
-                    "y": 282
-                },
-                {
-                    "type": "Text",
-                    "id": "a1695ec1-697d-4b5d-800e-42d98e119d1f",
-                    "label": "text_cuckoo",
-                    "components": [],
-                    "x": 1009,
-                    "y": 265,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "db875d78-3d86-456f-ab16-30c54fcabb0d",
-                    "label": "buy_dressshoes",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(358)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 870,
-                    "y": 282
-                },
-                {
-                    "type": "Text",
-                    "id": "68d60fe8-1569-4114-bf73-86cc79748e2c",
-                    "label": "text_dressshoes",
-                    "components": [],
-                    "x": 829,
-                    "y": 265,
-                    "text": "250",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -1320,11 +1828,11 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "b9ed4c75-f647-4a75-83f5-cb9df6600c85",
-                    "label": "page5_1",
+                    "id": "c8c56e8f-651f-4586-897f-ed61b91ef1f8",
+                    "label": "page5",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
+                        "key": "june22clothing",
                         "frame": "page5"
                     },
                     "x": 768,
@@ -1332,131 +1840,29 @@
                 },
                 {
                     "type": "Image",
-                    "id": "32798f0f-6bab-4fb9-a787-3c2d605257c9",
-                    "label": "buy_bletterman",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(281)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1215,
-                    "y": 755
-                },
-                {
-                    "type": "Image",
-                    "id": "6b5c91f9-0740-4f41-923a-8105b8d8ea4d",
-                    "label": "buy2_blackhoodie",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(221)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 588,
-                    "y": 548,
-                    "scaleX": 0.8414916020698116,
-                    "scaleY": 0.8414916020698116,
-                    "angle": 30,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Image",
-                    "id": "af32d6ca-fb4b-4c90-a9b7-c5f6653ed7de",
-                    "label": "buy_daisy",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(14051)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 870,
-                    "y": 380
-                },
-                {
-                    "type": "Text",
-                    "id": "cdd4f255-3b60-462c-bafe-ad45929e98fb",
-                    "label": "text_daisy",
-                    "components": [],
-                    "x": 829,
-                    "y": 363,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
                     "id": "5e758e0b-a653-4bd6-bd7e-0423d9d7b372",
-                    "label": "buy_bparka",
+                    "label": "buy_sagefish",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(243)",
+                    "Button.callback": "() => this.interface.prompt.showItem(4455)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 1046,
-                    "y": 380
+                    "x": 627,
+                    "y": 290
                 },
                 {
                     "type": "Text",
                     "id": "0eb36844-1d5c-447a-a19d-fef221e5c2c3",
                     "label": "text_bparka",
                     "components": [],
-                    "x": 1009,
-                    "y": 363,
-                    "text": "500",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "f3c5e0cd-8d40-433a-87c4-41e6eedbc9b5",
-                    "label": "buy_greenrug",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(4061)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1215,
-                    "y": 380
-                },
-                {
-                    "type": "Text",
-                    "id": "9548cc45-7a9a-45e4-8078-1daf316c1841",
-                    "label": "text_greenrug",
-                    "components": [],
-                    "x": 1176,
-                    "y": 363,
+                    "x": 589,
+                    "y": 270,
                     "text": "400",
                     "align": "center",
                     "fontFamily": "Burbank Small",
@@ -1465,325 +1871,34 @@
                 },
                 {
                     "type": "Image",
-                    "id": "612d97b1-ce02-4145-88f4-7843b1cb8093",
-                    "label": "buy_pband",
+                    "id": "f3c5e0cd-8d40-433a-87c4-41e6eedbc9b5",
+                    "label": "buy_squidzoi",
                     "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(773)",
+                    "Button.callback": "() => this.interface.prompt.showItem(767)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 871,
-                    "y": 566
+                    "x": 880,
+                    "y": 291
                 },
                 {
                     "type": "Text",
-                    "id": "adec21c7-6b6b-4f10-aec1-19a67f2f7bc6",
-                    "label": "text_pband",
+                    "id": "9548cc45-7a9a-45e4-8078-1daf316c1841",
+                    "label": "text_greenrug",
                     "components": [],
-                    "x": 829,
-                    "y": 549,
-                    "text": "500",
+                    "x": 841,
+                    "y": 270,
+                    "text": "600",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "a4f91bc6-a4d7-4f42-973f-2abf8cbe9e3d",
-                    "label": "buy_lighthouse",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(282)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1046,
-                    "y": 566
-                },
-                {
-                    "type": "Text",
-                    "id": "ddccb88d-731e-4387-8946-a32ca04cd478",
-                    "label": "text_lighthouse",
-                    "components": [],
-                    "x": 1007,
-                    "y": 549,
-                    "text": "750",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "fb5ee23f-70be-49e0-93b9-fc1732bc5941",
-                    "label": "buy_poncho",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(236)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1215,
-                    "y": 566
-                },
-                {
-                    "type": "Text",
-                    "id": "912e6971-8127-42af-8c5b-724e15c66695",
-                    "label": "text_poncho",
-                    "components": [],
-                    "x": 1176,
-                    "y": 549,
-                    "text": "350",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Text",
-                    "id": "d4f84592-606c-4505-bc14-a0006b31d95b",
-                    "label": "text_bletterman",
-                    "components": [],
-                    "x": 1171,
-                    "y": 736,
-                    "text": "550",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "1cbbf294-f332-41d4-a062-2002bae1fdf5",
-                    "label": "buy_ballerina",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(256)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1046,
-                    "y": 755
-                },
-                {
-                    "type": "Text",
-                    "id": "d42f6151-5ca4-46d1-8f1d-a62839d24a31",
-                    "label": "text_ballerina",
-                    "components": [],
-                    "x": 1002,
-                    "y": 736,
-                    "text": "450",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "a4a39e88-d0cf-4b61-9648-099afe845820",
-                    "label": "buy_ad",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(285)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 870,
-                    "y": 755
-                },
-                {
-                    "type": "Text",
-                    "id": "29851611-b7e0-449a-a854-b809f9440dca",
-                    "label": "text_ad",
-                    "components": [],
-                    "x": 824,
-                    "y": 736,
-                    "text": "350",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "c7447d49-286d-43e4-8a89-7dde3ea98f24",
-                    "label": "buy_ljacket",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(215)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1215,
-                    "y": 199
-                },
-                {
-                    "type": "Text",
-                    "id": "0463f9d9-20db-4699-9b3e-0fd64b9f2ff1",
-                    "label": "text_ljacket",
-                    "components": [],
-                    "x": 1176,
-                    "y": 182,
-                    "text": "320",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "6f69d199-ef81-41cf-89c4-f0ff9b2cbb0b",
-                    "label": "buy_qvest",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(218)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1046,
-                    "y": 199
-                },
-                {
-                    "type": "Text",
-                    "id": "0777f37a-23d5-4043-8273-50f3d24ddefd",
-                    "label": "text_qvest",
-                    "components": [],
-                    "x": 1009,
-                    "y": 182,
-                    "text": "450",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "02cf34ae-9918-45e1-94c8-1e066241809e",
-                    "label": "buy_rainjacket",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(235)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 870,
-                    "y": 199
-                },
-                {
-                    "type": "Text",
-                    "id": "c51cc63a-9d28-4a24-b648-ba190a496979",
-                    "label": "text_rainjacket",
-                    "components": [],
-                    "x": 829,
-                    "y": 182,
-                    "text": "450",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "4e86273e-9f32-4be1-a44d-08c7e8c2527b",
-                    "label": "buy2_yellowhoodie",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(4259)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 640,
-                    "y": 118,
-                    "scaleX": 0.7060432626289486,
-                    "scaleY": 0.7060432626289486,
-                    "angle": -35.00000000000006,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Image",
-                    "id": "7aa0f0b9-8c21-4a91-8ac3-b455b785f97e",
-                    "label": "buy2_pinkhoodie",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(222)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 393,
-                    "y": 124,
-                    "scaleX": 0.7060432626289486,
-                    "scaleY": 0.7060432626289486,
-                    "angle": -35.00000000000006,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Ellipse",
-                    "id": "4dc15f4d-0132-43d7-ab4f-6d5f2315b618",
-                    "label": "sec-bluesneakers",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(357)",
-                    "x": 640,
-                    "y": 472,
-                    "scaleX": 0.2175016673872514,
-                    "scaleY": 0.21393876922214905,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
                 }
             ]
         },
@@ -1792,15 +1907,16 @@
             "id": "949b9cb9-749a-4dd8-af3d-c6bf8238d4ac",
             "label": "page4",
             "components": [],
+            "y": 2,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "98ed6b6d-aaba-4ec1-85da-9c9ea27a3bc9",
-                    "label": "page4_1",
+                    "id": "4be85b55-913e-4672-8a76-d0d3118a856f",
+                    "label": "page4",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
+                        "key": "june22clothing",
                         "frame": "page4"
                     },
                     "x": 768,
@@ -1813,9 +1929,9 @@
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(436)",
-                    "x": 430,
-                    "y": 282,
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(345)",
+                    "x": 313,
+                    "y": 643,
                     "scaleX": 0.2175016673872514,
                     "scaleY": 0.21393876922214905,
                     "isFilled": true,
@@ -1832,49 +1948,27 @@
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(179)",
+                    "Button.callback": "() => this.interface.prompt.showItem(4111)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 1228,
-                    "y": 717
+                    "x": 607,
+                    "y": 466
                 },
                 {
                     "type": "Text",
                     "id": "efae60db-e9c9-4f74-a2c7-9333c379c242",
                     "label": "text_2_3_1_1_1",
                     "components": [],
-                    "x": 1184,
-                    "y": 698,
-                    "text": "150",
+                    "x": 567,
+                    "y": 446,
+                    "text": "600",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "3cfef978-1be5-476b-b1b1-06cb9803ba59",
-                    "label": "buy2_1_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(13017)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 622,
-                    "y": 375,
-                    "scaleX": 1.0216448780669118,
-                    "scaleY": 1.0216448780669118,
-                    "angle": -25,
-                    "originX": 0,
-                    "originY": 0
                 },
                 {
                     "type": "Image",
@@ -1885,240 +1979,23 @@
                         "Button"
                     ],
                     "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(182)",
+                    "Button.callback": "() => this.interface.prompt.showItem(4112)",
                     "Button.activeFrame": false,
                     "texture": {
                         "key": "may22cat",
                         "frame": "buy"
                     },
-                    "x": 874,
-                    "y": 342
+                    "x": 318,
+                    "y": 466
                 },
                 {
                     "type": "Text",
                     "id": "e42ad21b-5889-46a6-93a1-9d8758434dee",
                     "label": "text_3_1",
                     "components": [],
-                    "x": 833,
-                    "y": 325,
-                    "text": "110",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "c8517b6d-04c4-4b58-a10d-ccaf3aeeb7ff",
-                    "label": "buy_1_1_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(192)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1059,
-                    "y": 342
-                },
-                {
-                    "type": "Text",
-                    "id": "23856a0d-331e-4bd2-918e-037cf5bbcf6b",
-                    "label": "text_1_1_1",
-                    "components": [],
-                    "x": 1022,
-                    "y": 325,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "bf794b41-945f-4d78-9087-5b3f8b16a2b3",
-                    "label": "buy_2_4_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(214)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1228,
-                    "y": 342
-                },
-                {
-                    "type": "Text",
-                    "id": "96565b6d-7644-4385-bda9-16f491ee480a",
-                    "label": "text_2_4_1",
-                    "components": [],
-                    "x": 1189,
-                    "y": 325,
-                    "text": "50",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "3c0f51f5-c5fb-4452-af90-4a293fe9ea30",
-                    "label": "buy_2_1_1_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(3049)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 874,
-                    "y": 528
-                },
-                {
-                    "type": "Text",
-                    "id": "4d3031cf-6132-4341-ad71-759235973341",
-                    "label": "text_2_1_1_1",
-                    "components": [],
-                    "x": 833,
-                    "y": 511,
-                    "text": "150",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "ec658cdc-8e01-45f9-8c0c-c4a69ab49cc2",
-                    "label": "buy_2_2_1_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(3101)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1059,
-                    "y": 528
-                },
-                {
-                    "type": "Text",
-                    "id": "900aaa3c-dfaf-44a3-911f-6b2af089ccf8",
-                    "label": "text_2_2_1_1",
-                    "components": [],
-                    "x": 1020,
-                    "y": 511,
-                    "text": "250",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "2724fc5c-90f2-4e01-9dad-2932f652c099",
-                    "label": "buy_2_3_1_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(3100)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1228,
-                    "y": 528
-                },
-                {
-                    "type": "Text",
-                    "id": "b8ae2071-7343-4e2f-876b-5c4459ddebc6",
-                    "label": "text_2_3_1_1",
-                    "components": [],
-                    "x": 1189,
-                    "y": 511,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "9a2b72da-c680-4d53-ab71-6783c0570676",
-                    "label": "buy_2_2_1_1_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(191)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1059,
-                    "y": 717
-                },
-                {
-                    "type": "Text",
-                    "id": "61daa33e-3c78-47f6-b449-3ab694e6f025",
-                    "label": "text_2_2_1_1_1",
-                    "components": [],
-                    "x": 1015,
-                    "y": 698,
-                    "text": "100",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "d8f86a51-8d87-4637-a609-37389eab5522",
-                    "label": "buy_2_1_1_1_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(171)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 874,
-                    "y": 717
-                },
-                {
-                    "type": "Text",
-                    "id": "5da5efd1-2642-4569-ab23-09f43e6e6fe5",
-                    "label": "text_2_1_1_1_1",
-                    "components": [],
-                    "x": 828,
-                    "y": 698,
-                    "text": "200",
+                    "x": 280,
+                    "y": 446,
+                    "text": "500",
                     "align": "center",
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
@@ -2135,274 +2012,151 @@
             "list": [
                 {
                     "type": "Image",
-                    "id": "f20130f0-bcfd-4f41-bb69-9091da07cf8f",
-                    "label": "page3_1",
+                    "id": "c28d0532-9d08-4bbf-8b37-e8b547452c9b",
+                    "label": "page3",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
+                        "key": "june22clothing",
                         "frame": "page3"
                     },
                     "x": 768,
                     "y": 431
                 },
                 {
-                    "type": "Ellipse",
-                    "id": "60925db5-9cdd-4ff0-aca3-676c466e4d5a",
-                    "label": "sec-500carat",
+                    "type": "Rectangle",
+                    "id": "facb18c8-6c18-48da-bad8-265740966d78",
+                    "label": "emerald-bg",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5210)",
-                    "x": 1230,
-                    "y": 128,
-                    "scaleX": 0.21527549275843366,
-                    "scaleY": 0.3510992995774665,
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9102)",
+                    "x": 338,
+                    "y": 348,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
                     "isFilled": true,
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
                 },
                 {
-                    "type": "Ellipse",
-                    "id": "fcc04132-f320-4596-900e-40f11fb2f4d7",
-                    "label": "sec-snork",
+                    "type": "Rectangle",
+                    "id": "c1fab9ce-f7e9-4b19-a0b2-8281149bdbb7",
+                    "label": "camp-bg",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(132)",
-                    "x": 382,
-                    "y": 634,
-                    "scaleX": 0.3205912312918101,
-                    "scaleY": 0.3004642695097448,
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9103)",
+                    "x": 578,
+                    "y": 348,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
                     "isFilled": true,
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
                 },
                 {
-                    "type": "Ellipse",
-                    "id": "5298570c-6e44-4b29-bc08-47d30f906bae",
-                    "label": "sec-pbandana",
+                    "type": "Rectangle",
+                    "id": "14456701-9b07-4e29-8ca7-fedf948c53a8",
+                    "label": "tropical-bg",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(490)",
-                    "x": 467,
-                    "y": 445,
-                    "scaleX": 0.32974944403940937,
-                    "scaleY": 0.22396362289127164,
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9038)",
+                    "x": 944,
+                    "y": 348,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
                     "isFilled": true,
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
                 },
                 {
-                    "type": "Image",
-                    "id": "00720092-2e41-43e7-b4fe-6769bc70b447",
-                    "label": "buy_2_3_1",
-                    "scope": "CLASS",
+                    "type": "Rectangle",
+                    "id": "bd28f9e1-a64f-4125-9b4c-db876d0f36d6",
+                    "label": "treasure-bg",
                     "components": [
-                        "Button"
+                        "SimpleButton"
                     ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(103)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1228,
-                    "y": 537
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(960)",
+                    "x": 1184,
+                    "y": 348,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 },
                 {
-                    "type": "Text",
-                    "id": "d5f6c7c6-6d9e-402c-a3fc-235fdfa8187a",
-                    "label": "text_2_3_1",
-                    "components": [],
-                    "x": 1189,
-                    "y": 520,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "b8a9af54-7ebc-4558-83a1-cbc130ed22b1",
-                    "label": "buy_2_2_1",
-                    "scope": "CLASS",
+                    "type": "Rectangle",
+                    "id": "9e830de3-4f14-43c9-acfa-a5920ec0eb56",
+                    "label": "ice-fishing-bg",
                     "components": [
-                        "Button"
+                        "SimpleButton"
                     ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(101)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1059,
-                    "y": 537
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(936)",
+                    "x": 338,
+                    "y": 572,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 },
                 {
-                    "type": "Text",
-                    "id": "bb6bc3b0-f41e-4ac3-b30a-bf24b3c1e639",
-                    "label": "text_2_2_1",
-                    "components": [],
-                    "x": 1020,
-                    "y": 520,
-                    "text": "500",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "59afcb6e-e6fa-4b48-9de4-da6029ad7b8d",
-                    "label": "buy_2_1_1",
-                    "scope": "CLASS",
+                    "type": "Rectangle",
+                    "id": "31e9ea08-8e11-427a-9b3d-a96bdd09e6c7",
+                    "label": "day-beach-bg",
                     "components": [
-                        "Button"
+                        "SimpleButton"
                     ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(112)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 874,
-                    "y": 537
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9063)",
+                    "x": 578,
+                    "y": 572,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 },
                 {
-                    "type": "Text",
-                    "id": "ca1267db-caa3-45e3-8ff4-650736049d3e",
-                    "label": "text_2_1_1",
-                    "components": [],
-                    "x": 833,
-                    "y": 520,
-                    "text": "500",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "f35df980-4e95-4a98-9e68-acaa6713fc00",
-                    "label": "buy_2_4",
-                    "scope": "CLASS",
+                    "type": "Rectangle",
+                    "id": "55d8639a-1dd3-4840-ad2c-f037be2e81dd",
+                    "label": "beach-bg",
                     "components": [
-                        "Button"
+                        "SimpleButton"
                     ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(118)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1228,
-                    "y": 351
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(912)",
+                    "x": 944,
+                    "y": 572,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 },
                 {
-                    "type": "Text",
-                    "id": "aab6638f-203c-478c-bea2-8bd8583e43aa",
-                    "label": "text_2_4",
-                    "components": [],
-                    "x": 1189,
-                    "y": 334,
-                    "text": "225",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "eb689335-34e8-4af0-b1c3-355ef0cd04c8",
-                    "label": "buy_1_1",
-                    "scope": "CLASS",
+                    "type": "Rectangle",
+                    "id": "8e012772-89cf-4ad4-beec-cd01b6e24300",
+                    "label": "deep-bg",
                     "components": [
-                        "Button"
+                        "SimpleButton"
                     ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(111)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1059,
-                    "y": 351
-                },
-                {
-                    "type": "Text",
-                    "id": "5b21cf98-bf61-4c7b-8799-790a3e7ea298",
-                    "label": "text_1_1",
-                    "components": [],
-                    "x": 1022,
-                    "y": 334,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "e2bc44b2-bafd-458e-bc59-92fe01e57acd",
-                    "label": "buy_3",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(106)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 874,
-                    "y": 351
-                },
-                {
-                    "type": "Text",
-                    "id": "f49ce4b7-7a25-4032-aa35-31f2eb433de1",
-                    "label": "text_3",
-                    "components": [],
-                    "x": 833,
-                    "y": 334,
-                    "text": "100",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "ddf71e17-3202-4519-b36f-e731111af1e1",
-                    "label": "buy2_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(138)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 561,
-                    "y": 390,
-                    "scaleX": 0.7346337597386997,
-                    "scaleY": 0.7346337597386997,
-                    "angle": 80,
-                    "originX": 0,
-                    "originY": 0
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9128)",
+                    "x": 1184,
+                    "y": 572,
+                    "scaleX": 1.6391672389424585,
+                    "scaleY": 1.6391672389424585,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
@@ -2411,279 +2165,259 @@
             "id": "647a8a3a-4d1e-4ac9-9d36-e2abeba085d9",
             "label": "page2",
             "components": [],
+            "x": -1,
+            "y": 1,
+            "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "4b2b1997-fbf2-4378-9ce3-89cb04c0097d",
-                    "label": "page2_1",
+                    "id": "18d45158-bcff-4d3e-a2c1-b96b3ef8f0ca",
+                    "label": "page2",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
+                        "key": "june22clothing",
                         "frame": "page2"
                     },
-                    "x": 768,
+                    "x": 769,
                     "y": 431
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "3cf89cf2-4dc3-4f83-8507-1901f575a0e2",
-                    "label": "vikinghelmet-rec",
-                    "scope": "CLASS",
-                    "components": [
-                        "SimpleButton"
-                    ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(452)",
-                    "x": 996,
-                    "y": 626,
-                    "scaleX": 0.4416027868089266,
-                    "scaleY": 0.4243594644875376,
-                    "isFilled": true,
-                    "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
                 },
                 {
                     "type": "Ellipse",
                     "id": "66ed3a7d-25a0-414d-ac5b-1d4cc580477f",
-                    "label": "sec-magicianwand",
+                    "label": "black-color",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5080)",
-                    "x": 600,
-                    "y": 228,
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(4)",
+                    "x": 855,
+                    "y": 313,
                     "scaleX": 0.19270091046363402,
                     "scaleY": 0.18425493561131656,
                     "isFilled": true,
                     "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "width": 500,
+                    "height": 500
                 },
                 {
-                    "type": "Image",
-                    "id": "3c7053fc-448d-4d9c-898f-6cb04f9f7b7c",
-                    "label": "buy2",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(341)",
-                    "texture": {
-                        "key": "clothingcatalog",
-                        "frame": "buy2"
-                    },
-                    "x": 538,
-                    "y": 521,
-                    "scaleX": 0.7346337597386997,
-                    "scaleY": 0.7346337597386997,
-                    "angle": -20,
-                    "originX": 0,
-                    "originY": 0
-                },
-                {
-                    "type": "Image",
-                    "id": "a1f08256-c481-4228-8186-9e03cc6e4782",
-                    "label": "buy",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(5053)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 878,
-                    "y": 316
-                },
-                {
-                    "type": "Text",
-                    "id": "23cc3660-13fd-400d-9fa4-08a52211075a",
-                    "label": "text",
-                    "components": [],
-                    "x": 837,
-                    "y": 299,
-                    "text": "400",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "e29053a2-7a17-4f0e-ad27-806e058ad379",
-                    "label": "buy_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(5010)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1055,
-                    "y": 316
-                },
-                {
-                    "type": "Text",
-                    "id": "0624c1f5-e2e5-4b49-bbc0-b4fe2da56936",
-                    "label": "text_1",
-                    "components": [],
-                    "x": 1018,
-                    "y": 299,
-                    "text": "100",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "d9c38d0b-fb95-42b2-b3ef-1cbce46e683c",
-                    "label": "buy_2",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(5013)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1216,
-                    "y": 316
-                },
-                {
-                    "type": "Text",
-                    "id": "482a92e2-a204-4087-87a2-d93f13063d4a",
-                    "label": "text_2",
-                    "components": [],
-                    "x": 1177,
-                    "y": 299,
-                    "text": "150",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "1c526188-a613-4255-893d-4eb6a23dccc6",
-                    "label": "buy_2_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(5560)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 878,
-                    "y": 502
-                },
-                {
-                    "type": "Text",
-                    "id": "a32f2341-5380-4080-b5ef-ff046e704693",
-                    "label": "text_2_1",
-                    "components": [],
-                    "x": 837,
-                    "y": 485,
-                    "text": "500",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "8d7c2033-e3d2-49d7-b6a2-5f21e2306369",
-                    "label": "buy_2_2",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(15026)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1055,
-                    "y": 502
-                },
-                {
-                    "type": "Text",
-                    "id": "e6afb598-9910-4d8d-aaef-fbd7d03e650b",
-                    "label": "text_2_2",
-                    "components": [],
-                    "x": 1016,
-                    "y": 485,
-                    "text": "400",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Image",
-                    "id": "338b3a39-a442-40ff-9add-f7b27f969ce5",
-                    "label": "buy_2_3",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "buy",
-                    "Button.callback": "() => this.interface.prompt.showItem(5117)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "may22cat",
-                        "frame": "buy"
-                    },
-                    "x": 1216,
-                    "y": 502
-                },
-                {
-                    "type": "Text",
-                    "id": "c49cc297-f2c7-41ca-b392-f2e7d0f30e89",
-                    "label": "text_2_3",
-                    "components": [],
-                    "x": 1177,
-                    "y": 485,
-                    "text": "200",
-                    "align": "center",
-                    "fontFamily": "Burbank Small",
-                    "fontSize": "32px",
-                    "color": "6f4100"
-                },
-                {
-                    "type": "Rectangle",
-                    "id": "61dc2f17-2503-4212-83e4-639d5c21db6e",
-                    "label": "sec-wtshirt",
-                    "scope": "CLASS",
+                    "type": "Ellipse",
+                    "id": "1dc55530-75e9-4d40-91b2-3e6dcd5f6e1a",
+                    "label": "dark-blue-color",
                     "components": [
                         "SimpleButton"
                     ],
-                    "SimpleButton.callback": "() => this.interface.prompt.showItem(850)",
-                    "x": 515,
-                    "y": 92,
-                    "scaleX": 0.2984607664172768,
-                    "scaleY": 0.38961293968586874,
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(1)",
+                    "x": 963,
+                    "y": 312,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
                     "isFilled": true,
                     "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "afa62806-80f6-4873-a246-d0f08eb992f6",
+                    "label": "red-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5)",
+                    "x": 1072,
+                    "y": 312,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5ed63549-5aa0-48eb-b08b-f0b1a7cc0ca4",
+                    "label": "green-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(2)",
+                    "x": 1180,
+                    "y": 312,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "3861b1b7-c2a3-4890-b087-b8a9a927be7b",
+                    "label": "orange-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(6)",
+                    "x": 1288,
+                    "y": 312,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "852c9bce-cba2-4914-96fc-45a04180285a",
+                    "label": "brown-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9)",
+                    "x": 904,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2eba901e-598d-44e7-bc39-2ac86b4cd4d2",
+                    "label": "peach-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(10)",
+                    "x": 1013,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "62c1eb95-ab92-4bfa-a976-996da07a9522",
+                    "label": "yellow-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(7)",
+                    "x": 1121,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5a724f77-f385-4896-acd9-6dcee230837b",
+                    "label": "light-blue-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(12)",
+                    "x": 1228,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "c1281938-09f4-42c1-8cbf-c900b172b6cf",
+                    "label": "pink-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(3)",
+                    "x": 855,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "48c32ce3-23d4-41ae-92ad-2a4f3d12eb7d",
+                    "label": "dark-green-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(11)",
+                    "x": 965,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a8466ed2-ee6d-4627-b517-ab5a1145d4a5",
+                    "label": "dark-purple-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(8)",
+                    "x": 1073,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "00e46abb-81bf-40ce-afbb-ecbf4f3e51bd",
+                    "label": "lime-green-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(13)",
+                    "x": 1180,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0e1c996a-994b-4550-af5d-c7ba8bf84294",
+                    "label": "aqua-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(15)",
+                    "x": 1288,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
                 }
             ]
         },
@@ -2692,17 +2426,17 @@
             "id": "4d6b5a52-5818-4ee0-977e-d5ac0b712b2a",
             "label": "page1",
             "components": [],
-            "x": -1,
+            "x": -2,
             "y": 1,
             "visible": false,
             "list": [
                 {
                     "type": "Image",
-                    "id": "9468d4b3-1b33-4d87-8b3d-5b7574b2d201",
-                    "label": "page1_1",
+                    "id": "790af855-db80-4415-a388-e6c7c1ef3149",
+                    "label": "page1_2",
                     "components": [],
                     "texture": {
-                        "key": "may22cat",
+                        "key": "june22clothing",
                         "frame": "page1"
                     },
                     "x": 765,
@@ -2723,8 +2457,8 @@
                         "key": "catalogs-master",
                         "frame": "nextpagebtn"
                     },
-                    "x": 909,
-                    "y": 582,
+                    "x": 937,
+                    "y": 605,
                     "originX": 0,
                     "originY": 0
                 },
@@ -2742,8 +2476,8 @@
                         "key": "catalogs-master",
                         "frame": "catclosebtn"
                     },
-                    "x": 910,
-                    "y": 32,
+                    "x": 935,
+                    "y": 52,
                     "originX": 0,
                     "originY": 0
                 }
@@ -2757,6 +2491,7 @@
             "components": [],
             "x": 189,
             "y": 41,
+            "visible": false,
             "list": [
                 {
                     "type": "Text",
@@ -2764,8 +2499,8 @@
                     "label": "coins",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 1130,
-                    "y": 790,
+                    "x": 1134,
+                    "y": 766,
                     "originX": 1,
                     "text": "YOUR COINS:",
                     "fixedWidth": 600,
@@ -2790,8 +2525,8 @@
                         "key": "catalogs-master",
                         "frame": "prevpagebtn"
                     },
-                    "x": 1,
-                    "y": 539,
+                    "x": -43,
+                    "y": 519,
                     "originX": 0,
                     "originY": 0
                 },
@@ -2810,8 +2545,8 @@
                         "key": "catalogs-master",
                         "frame": "nextpagebtn"
                     },
-                    "x": 1035,
-                    "y": 541,
+                    "x": 1095,
+                    "y": 517,
                     "originX": 0,
                     "originY": 0
                 },
@@ -2830,8 +2565,8 @@
                         "key": "catalogs-master",
                         "frame": "catclosebtn"
                     },
-                    "x": 1036,
-                    "y": -7,
+                    "x": 1092,
+                    "y": -31,
                     "originX": 0,
                     "originY": 0
                 }
@@ -2858,7 +2593,6 @@
                 "b1f50e90-cf0a-47f8-a325-a9affdc3cd6f",
                 "308134c3-e2e2-4a79-9da8-61e3a2f91835",
                 "730bc71e-5a7a-4a7e-8efa-74f0f2124f86",
-                "ed7d98e2-2102-4467-a0ea-fb8f18a5ecf2",
                 "7776572e-39a3-4406-a915-c957a8f958e1"
             ]
         }

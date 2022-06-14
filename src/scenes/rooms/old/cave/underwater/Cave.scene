@@ -291,34 +291,6 @@
             "originY": 2.0555555555555554
         },
         {
-            "type": "Image",
-            "id": "dc8f2825-b0fa-4b07-b652-bf2705dc0f1d",
-            "label": "black_layout_for_floor_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "black layout for floor "
-            },
-            "x": 745,
-            "y": 488,
-            "scaleX": 1.9538420432414052,
-            "scaleY": 1.8257194207933256
-        },
-        {
-            "type": "Image",
-            "id": "b9220e4a-1098-4757-ae7b-d601cd146281",
-            "label": "pool_main_body_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "pool main body "
-            },
-            "x": 752,
-            "y": 470,
-            "scaleX": 1.8013325122941026,
-            "scaleY": 1.8035498414924918
-        },
-        {
             "type": "Rectangle",
             "id": "666698c4-a34e-4564-9b75-b06ab464fc0d",
             "label": "zone",
@@ -333,146 +305,6 @@
             "fillColor": "#00ff00",
             "width": 115,
             "height": 400
-        },
-        {
-            "type": "Image",
-            "id": "f2e074a7-ced2-49a6-9c67-a5801abf8a82",
-            "label": "weird_things_with_pool_bottom_mid_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "weird things with pool bottom mid "
-            },
-            "x": 801,
-            "y": 828,
-            "scaleX": 2.182407853611281,
-            "scaleY": 5.177691102820992
-        },
-        {
-            "type": "Image",
-            "id": "da706c6d-ff60-4db6-aebe-e9dfd500e158",
-            "label": "waterfall_animations_bro",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "waterfall animations bro"
-            },
-            "x": 820,
-            "y": 459,
-            "scaleX": 1.9140798411732685,
-            "scaleY": 2.196290056110742
-        },
-        {
-            "type": "Image",
-            "id": "9bc84a90-1387-4cca-b54d-ffd2414af5a2",
-            "label": "another_glass_thing_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "another glass thing "
-            },
-            "x": 388,
-            "y": 504,
-            "scaleX": 1.216977949788577,
-            "scaleY": 1.3294753844906357
-        },
-        {
-            "type": "Image",
-            "id": "6013fb81-27ec-447a-a661-004d5433d3e9",
-            "label": "animations__for_floaty_things_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "animations  for floaty things "
-            },
-            "x": 836,
-            "y": 600,
-            "scaleX": 1.832285820797198,
-            "scaleY": 1.7091558907527222
-        },
-        {
-            "type": "Image",
-            "id": "35d0efdd-1b99-44be-9cd6-830c19d05619",
-            "label": "boiler_room_door_0001",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "boiler room door 0001"
-            },
-            "x": 163,
-            "y": 486,
-            "scaleX": 1.8960472887057391,
-            "scaleY": 1.9519918075269178
-        },
-        {
-            "type": "Image",
-            "id": "d99afd31-a2e5-492f-86cd-9ca4b94d0776",
-            "label": "green_thingies_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "green thingies "
-            },
-            "x": 785,
-            "y": 770,
-            "scaleX": 1.8078235507460483,
-            "scaleY": 4.054306973401748
-        },
-        {
-            "type": "Image",
-            "id": "141b4bb4-83a5-4605-add8-e43550a9b62b",
-            "label": "pool_rails_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "pool rails "
-            },
-            "x": 327,
-            "y": 776,
-            "scaleX": 2.1717366408054577,
-            "scaleY": 1.668034271348114
-        },
-        {
-            "type": "Image",
-            "id": "8921d460-10d7-4d20-ab5b-f97c9ce838aa",
-            "label": "main_body_of_pool_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "main body of pool "
-            },
-            "x": 741,
-            "y": 486,
-            "scaleX": 1.8509497030171218,
-            "scaleY": 2.252259027242101
-        },
-        {
-            "type": "Image",
-            "id": "a71915e1-2887-4f2e-ac3f-8cf81784a92e",
-            "label": "light_and_left_pillar_",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "light and left pillar "
-            },
-            "x": 863,
-            "y": 441,
-            "scaleX": 2.0123223667558965,
-            "scaleY": 1.8141337558654265
-        },
-        {
-            "type": "Image",
-            "id": "c13fa458-f8fc-4cc8-a030-18ef2dda0c10",
-            "label": "flood_layer",
-            "components": [],
-            "texture": {
-                "key": "underwaterpoolcave",
-                "frame": "flood layer"
-            },
-            "x": 746,
-            "y": 674,
-            "scaleX": 1.4158373171144927,
-            "scaleY": 1.08530653074996
         },
         {
             "type": "Sprite",
@@ -587,8 +419,10 @@
                 "key": "caveuw",
                 "frame": "wateruw"
             },
-            "x": 813,
-            "y": 852
+            "x": 801,
+            "y": 1128,
+            "originX": 0.49402007508175055,
+            "originY": 0.9802823908025617
         }
     ],
     "plainObjects": [],
@@ -621,7 +455,8 @@
                 "fdefcf39-9eb7-4760-9f83-fec3e2efa502",
                 "212e8496-11a4-430b-8277-c1b9280cc8a9",
                 "f2c508bd-8ced-400f-97d9-b45f944a94ff",
-                "cc1acd84-e947-4217-9f4a-e1240553eadd"
+                "cc1acd84-e947-4217-9f4a-e1240553eadd",
+                "085e2d07-4cc1-4808-a600-9f63e9246c8d"
             ]
         }
     ]

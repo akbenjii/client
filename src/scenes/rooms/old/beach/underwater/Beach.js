@@ -95,10 +95,11 @@ export default class Beach extends RoomScene {
         bucket.setOrigin(0.8863109, 0.94611727);
 
         // water
-        this.add.image(798, 562, "beachuw", "water");
+        const water = this.add.image(800.0907295597038, 982.2410649057183, "beachuw", "water");
+        water.setOrigin(0.5010656226204321, 0.9786344736205302);
 
         // lists
-        const sort = [bucket, chair_1_front, chair_1, chair_2_front, chair_2, net, fish, buoy, cage];
+        const sort = [bucket, chair_1_front, chair_1, chair_2_front, chair_2, net, fish, buoy, cage, water];
 
         // lighthouse_door (components)
         const lighthouse_doorButton = new Button(lighthouse_door);
