@@ -1010,6 +1010,10 @@
             "components": [],
             "x": 761,
             "y": 431,
+<<<<<<< HEAD
+=======
+            "visible": false,
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
             "list": [
                 {
                     "type": "Image",
@@ -1134,6 +1138,7 @@
                     "scaleX": 1.2,
                     "scaleY": 1.2,
                     "angle": 45
+<<<<<<< HEAD
                 },
                 {
                     "type": "Ellipse",
@@ -1168,6 +1173,8 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -1284,6 +1291,7 @@
                     "scaleX": 1.2759678083080723,
                     "scaleY": 1.2759678083080723,
                     "angle": 10
+<<<<<<< HEAD
                 },
                 {
                     "type": "Ellipse",
@@ -1301,6 +1309,8 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -1416,6 +1426,7 @@
                     "scaleX": 1.2,
                     "scaleY": 1.2,
                     "angle": 18
+<<<<<<< HEAD
                 },
                 {
                     "type": "Ellipse",
@@ -1433,6 +1444,8 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -1459,6 +1472,7 @@
                     "type": "Image",
                     "id": "7be3f8db-7bc4-4159-a7ef-96aaf659a060",
                     "label": "buy-waterwings",
+<<<<<<< HEAD
                     "components": [
                         "Button"
                     ],
@@ -1552,9 +1566,12 @@
                     "type": "Ellipse",
                     "id": "12dd1741-483d-4da6-b19f-9c117b067116",
                     "label": "sec-marcas",
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
+<<<<<<< HEAD
                     "SimpleButton.callback": "() => this.interface.prompt.showItem(33Beach dress: 4660 $350 Cream sandals: 6126 $150 Balloon Vendor: 4418 $150 Blue water wings: 345 $$free Black Hawaiian shorts 4096 $250 Blue board shorts: 4095 $200 Red shorts: 10267 $250 Pink swim suit: 269 $300 Floral bikini: 4236 $350 Green flower bikini: 4097 $250 Purple spring dress: 4189 $400 Maracas: 335 $free Fishing hat: 446 $220 Hawaiian shirt: 211 $250 Lifeguard shirt: 297 $180 Fishing vest: 265 $480 Grass skirt: 212 $200 5)",
                     "x": 1016,
                     "y": 562,
@@ -1569,9 +1586,28 @@
                     "type": "Ellipse",
                     "id": "2aecfd40-a84c-4b37-b2b4-bea88a51434a",
                     "label": "sec-fishinghat",
+=======
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(325)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 239,
+                    "y": 385,
+                    "scaleX": 0.7,
+                    "scaleY": 0.7,
+                    "angle": 20
+                },
+                {
+                    "type": "Image",
+                    "id": "603aecad-e66a-4dd1-94b3-ea511b8bb7e4",
+                    "label": "buy-crabcostume",
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
+<<<<<<< HEAD
                     "SimpleButton.callback": "() => this.interface.prompt.showItem(446)",
                     "x": 1301,
                     "y": 295,
@@ -1581,6 +1617,74 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(14212)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 690,
+                    "y": 367,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 20
+                },
+                {
+                    "type": "Image",
+                    "id": "8533d648-bc8f-4d7f-b83c-2338cbbbbe3f",
+                    "label": "buy-squidlid",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1160)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 622,
+                    "y": 638,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 20
+                },
+                {
+                    "type": "Image",
+                    "id": "561c382d-e40f-471d-8ed9-c3d0b699a43d",
+                    "label": "buy-mopbucket",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(14212)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 902,
+                    "y": 612,
+                    "angle": -45.00000000000006
+                },
+                {
+                    "type": "Image",
+                    "id": "2e170f40-1a8a-4e08-921e-fedf36944bcb",
+                    "label": "buy-yellowsnorkel",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(135)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 1215,
+                    "y": 607,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -45.00000000000006
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -1608,6 +1712,7 @@
                     "type": "Image",
                     "id": "99050c0c-9e7e-4c09-a948-8d26e2af8044",
                     "label": "buy-razzmatazz",
+<<<<<<< HEAD
                     "components": [
                         "Button"
                     ],
@@ -1683,9 +1788,12 @@
                     "type": "Ellipse",
                     "id": "f0cdff77-a674-4a55-b95b-1886bdfe4745",
                     "label": "sec-purplespringdress",
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                     "components": [
-                        "SimpleButton"
+                        "Button"
                     ],
+<<<<<<< HEAD
                     "SimpleButton.callback": "() => this.interface.prompt.showItem(4189)",
                     "x": 657,
                     "y": 188,
@@ -1695,6 +1803,75 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(1156)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 320,
+                    "y": 267,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -45.00000000000006
+                },
+                {
+                    "type": "Image",
+                    "id": "67e99629-06b7-4e67-8813-54edcbf5eaf6",
+                    "label": "buy-coralmermaid",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4230)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 658,
+                    "y": 418,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": 20
+                },
+                {
+                    "type": "Image",
+                    "id": "15433f33-9029-408f-a9c3-ee23c19cbc3f",
+                    "label": "buy-tropicalmermaid",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4231)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1281,
+                    "y": 248,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Image",
+                    "id": "0ce58b73-b7cc-4e3e-b65a-e5506f1c67d5",
+                    "label": "buy-aquamarine",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(1157)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1161,
+                    "y": 78,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2,
+                    "angle": -39
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -1934,6 +2111,7 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "6f4100"
+<<<<<<< HEAD
                 },
                 {
                     "type": "Ellipse",
@@ -1951,6 +2129,8 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -2034,6 +2214,7 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "6f4100"
+<<<<<<< HEAD
                 },
                 {
                     "type": "Ellipse",
@@ -2085,6 +2266,8 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -2186,6 +2369,7 @@
                     "fontFamily": "Burbank Small",
                     "fontSize": "32px",
                     "color": "6f4100"
+<<<<<<< HEAD
                 },
                 {
                     "type": "Ellipse",
@@ -2220,6 +2404,8 @@
                     "fillAlpha": 0,
                     "width": 128,
                     "height": 128
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                 }
             ]
         },
@@ -2430,6 +2616,7 @@
                     "y": 312,
                     "scaleX": 0.19270091046363402,
                     "scaleY": 0.18425493561131656,
+<<<<<<< HEAD
                     "isFilled": true,
                     "fillAlpha": 0,
                     "width": 500,
@@ -2651,10 +2838,216 @@
                     "y": 187,
                     "scaleX": 0.2175016673872514,
                     "scaleY": 0.21393876922214905,
+=======
+>>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
                     "isFilled": true,
                     "fillAlpha": 0,
-                    "width": 128,
-                    "height": 128
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "afa62806-80f6-4873-a246-d0f08eb992f6",
+                    "label": "red-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5)",
+                    "x": 1072,
+                    "y": 312,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5ed63549-5aa0-48eb-b08b-f0b1a7cc0ca4",
+                    "label": "green-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(2)",
+                    "x": 1180,
+                    "y": 312,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "3861b1b7-c2a3-4890-b087-b8a9a927be7b",
+                    "label": "orange-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(6)",
+                    "x": 1288,
+                    "y": 312,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "852c9bce-cba2-4914-96fc-45a04180285a",
+                    "label": "brown-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(9)",
+                    "x": 904,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2eba901e-598d-44e7-bc39-2ac86b4cd4d2",
+                    "label": "peach-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(10)",
+                    "x": 1013,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "62c1eb95-ab92-4bfa-a976-996da07a9522",
+                    "label": "yellow-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(7)",
+                    "x": 1121,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5a724f77-f385-4896-acd9-6dcee230837b",
+                    "label": "light-blue-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(12)",
+                    "x": 1228,
+                    "y": 417,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "c1281938-09f4-42c1-8cbf-c900b172b6cf",
+                    "label": "pink-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(3)",
+                    "x": 855,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "48c32ce3-23d4-41ae-92ad-2a4f3d12eb7d",
+                    "label": "dark-green-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(11)",
+                    "x": 965,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a8466ed2-ee6d-4627-b517-ab5a1145d4a5",
+                    "label": "dark-purple-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(8)",
+                    "x": 1073,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "00e46abb-81bf-40ce-afbb-ecbf4f3e51bd",
+                    "label": "lime-green-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(13)",
+                    "x": 1180,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "0e1c996a-994b-4550-af5d-c7ba8bf84294",
+                    "label": "aqua-color",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(15)",
+                    "x": 1288,
+                    "y": 523,
+                    "scaleX": 0.19270091046363402,
+                    "scaleY": 0.18425493561131656,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 500,
+                    "height": 500
                 }
             ]
         },

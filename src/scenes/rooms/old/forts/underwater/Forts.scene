@@ -17,9 +17,10 @@
     },
     "displayList": [
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "d4609fa9-1b78-4b5c-9eb5-44dfd6d7c57e",
             "label": "map",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -31,9 +32,10 @@
             "originY": 0
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "82671712-eb61-4cf9-a79d-a117f9e89798",
             "label": "blue_pole",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "forts",
@@ -44,9 +46,10 @@
             "originY": 1
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "3b2a720f-7bd6-4c37-831b-1f6b4ef36eed",
             "label": "tower_shadow",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "forts",
@@ -58,9 +61,10 @@
             "originY": 0
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "b2ca6101-5086-4b8d-abd1-92dc5d0fb2b0",
             "label": "clock",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "forts",
@@ -72,9 +76,10 @@
             "originY": 0
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "b402d711-30c1-460e-b798-b448eddf538e",
             "label": "secret_message",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "forts",
@@ -116,58 +121,10 @@
             "height": 75
         },
         {
-            "type": "Text",
-            "id": "50cd240a-a08a-4404-ab46-167a8155efd1",
-            "label": "day",
-            "scope": "CLASS",
-            "components": [],
-            "x": 1174,
-            "y": 221,
-            "angle": 2.5,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "WEDNESDAY",
-            "fontFamily": "Burbank Small",
-            "fontSize": "18px",
-            "fontStyle": "bold",
-            "color": "#0d0d0dff"
-        },
-        {
-            "type": "Text",
-            "id": "79e64adf-2fc1-4b28-8b6b-a712b652192e",
-            "label": "am_pm",
-            "scope": "CLASS",
-            "components": [],
-            "x": 1236,
-            "y": 140,
-            "angle": 1,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "AM",
-            "fontFamily": "Burbank Small",
-            "fontSize": "20px"
-        },
-        {
-            "type": "Text",
-            "id": "2afd8a90-2c8d-49d1-b1de-b8e9296f04eb",
-            "label": "clockTime",
-            "scope": "CLASS",
-            "components": [],
-            "x": 1161,
-            "y": 154,
-            "scaleY": 1.5,
-            "angle": 1,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "12:58",
-            "align": "center",
-            "fontFamily": "Burbank Small",
-            "fontSize": "45px"
-        },
-        {
-            "type": "Image",
+            "type": "Sprite",
             "id": "a8a64ec8-8e2e-4fe5-bb6c-8565c8659fc7",
             "label": "layer45",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -177,9 +134,10 @@
             "y": 158
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "683c6e3a-d061-4517-b579-122bf72126f4",
             "label": "layer25",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -189,9 +147,10 @@
             "y": 355
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "0b4516d5-7e71-4a28-90f7-821cb7f3bf3f",
             "label": "sign",
+            "scope": "CLASS",
             "components": [
                 "Button"
             ],
@@ -220,9 +179,10 @@
             "y": 387
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "ce35162a-edfa-4d4b-b87a-4b40613725b1",
             "label": "layer23",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -232,9 +192,10 @@
             "y": 412
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "34729972-3e3f-4360-8336-66faaa746073",
             "label": "layer23_1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -247,9 +208,10 @@
             "flipX": true
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "c70f77fe-7a94-470c-a694-9194e5f201c4",
             "label": "layer23_1_1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -262,9 +224,10 @@
             "flipX": true
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "d1c8e62c-c9f0-4522-91e5-c704663193ad",
             "label": "layer19",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -274,9 +237,10 @@
             "y": 880
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "33999ffe-789c-48b2-962a-933f4aa08baa",
             "label": "layer21",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -286,9 +250,10 @@
             "y": 780
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "68b675f6-35be-4c7c-b0c9-60e700bfa4b2",
             "label": "bridge1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -298,9 +263,10 @@
             "y": 699
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "9a69121d-6833-43c7-aa92-902cf2844205",
             "label": "tree1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -310,9 +276,10 @@
             "y": 564
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "993997f5-251e-4f31-a242-6e1fc0cf41e6",
             "label": "plant1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -322,9 +289,10 @@
             "y": 791
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "4a13376c-c469-446c-bb72-70cbffd4369f",
             "label": "plant2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -334,9 +302,10 @@
             "y": 928
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "c335e765-cee2-4610-bfd5-2a2a90f17967",
             "label": "seashell2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -346,9 +315,10 @@
             "y": 599
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "6aef653e-4e96-47bb-a554-bdb8d526f767",
             "label": "seashell2_1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -358,9 +328,10 @@
             "y": 458
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "ddacac94-8f19-4457-a33e-1bec619d717d",
             "label": "seashell1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -370,9 +341,10 @@
             "y": 928
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "335371ed-1dad-488d-b602-fd058b5f498f",
             "label": "seashell1_1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -382,9 +354,10 @@
             "y": 539
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "af959ba3-9196-4ccf-8ad5-343c6f050183",
             "label": "seashell1_2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -407,9 +380,10 @@
             "y": 479
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "a31ee524-a45e-4756-a594-ee437b885872",
             "label": "boat1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -419,9 +393,10 @@
             "y": 640
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "1783d0ba-bf50-4895-8c18-f13f6858b29e",
             "label": "rock1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -431,9 +406,10 @@
             "y": 780
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "03490c1f-0692-4618-bef1-4643d7340fe9",
             "label": "rock2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -443,9 +419,10 @@
             "y": 822
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "490cfb57-76fa-4b40-bf27-c6bd4d59e333",
             "label": "barrel1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -455,9 +432,10 @@
             "y": 791
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "67e9bdc8-2965-4549-99d9-362f2443bc58",
             "label": "pole1",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -467,9 +445,10 @@
             "y": 769
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "bf463739-c0a4-4ef6-bb7d-7f008016416e",
             "label": "pole2",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "fortsuw",
@@ -479,7 +458,7 @@
             "y": 805
         },
         {
-            "type": "Image",
+            "type": "Sprite",
             "id": "3adfa2f9-8b9b-467a-bf0d-eab82efe266d",
             "label": "weed10001",
             "scope": "CLASS",
@@ -517,6 +496,68 @@
             },
             "x": 397,
             "y": 376
+        },
+        {
+            "type": "Rectangle",
+            "id": "b6e3de02-94a2-4c59-b3b5-2b956864be16",
+            "label": "rectangle",
+            "components": [],
+            "x": 1155,
+            "y": 217,
+            "angle": 3,
+            "isFilled": true,
+            "fillColor": "#c9c1a1",
+            "width": 120,
+            "height": 15
+        },
+        {
+            "type": "Text",
+            "id": "2afd8a90-2c8d-49d1-b1de-b8e9296f04eb",
+            "label": "clockTime",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1143,
+            "y": 153,
+            "scaleY": 1.5,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "12:58",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "45px"
+        },
+        {
+            "type": "Text",
+            "id": "50cd240a-a08a-4404-ab46-167a8155efd1",
+            "label": "day",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1159,
+            "y": 218,
+            "angle": 2.5,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "WEDNESDAY",
+            "fontFamily": "Burbank Small",
+            "fontSize": "18px",
+            "fontStyle": "bold",
+            "color": "#0d0d0dff"
+        },
+        {
+            "type": "Text",
+            "id": "79e64adf-2fc1-4b28-8b6b-a712b652192e",
+            "label": "am_pm",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1225,
+            "y": 136,
+            "angle": 1,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "AM",
+            "fontFamily": "Burbank Small",
+            "fontSize": "20px"
         }
     ],
     "plainObjects": [],

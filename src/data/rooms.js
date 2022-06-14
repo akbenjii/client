@@ -17,7 +17,7 @@ if (localStorage.clientMode == "legacy") {
         },
         111: {
             key: 'Book',
-            scene: require('@rooms/old/book/underwater/Book').default,
+            scene: require('@rooms/old/book/Book').default,
             x: 1260,
             y: 560
         },
@@ -41,7 +41,7 @@ if (localStorage.clientMode == "legacy") {
         },
         200: {
             key: 'Village',
-            scene: require('@rooms/old/village/Village').default,
+            scene: require('@rooms/old/village/underwater/Village').default,
             x: 800,
             y: 640
         },
@@ -95,7 +95,7 @@ if (localStorage.clientMode == "legacy") {
         },
         330: {
             key: 'Pizza',
-            scene: require('@rooms/old/pizza/underwater/Pizza').default,
+            scene: require('@rooms/old/pizza/Pizza').default,
             x: 780,
             y: 790
         },
@@ -125,7 +125,7 @@ if (localStorage.clientMode == "legacy") {
         },
         801: {
             key: 'Forts',
-            scene: require('@rooms/old/forts/Forts').default,
+            scene: require('@rooms/old/forts/underwater/Forts').default,
             x: 960,
             y: 610
         },
@@ -252,13 +252,13 @@ if (localStorage.clientMode == "vanilla") {
     rooms = {
         100: {
             key: 'Town',
-            scene: require('@rooms/new/town/Town').default,
+            scene: require('@rooms/old/town/underwater/Town').default,
             x: 760,
             y: 660
         },
         110: {
             key: 'Coffee',
-            scene: require('@rooms/new/coffee/Coffee').default,
+            scene: require('@rooms/old/coffee/underwater/Coffee').default,
             x: 640,
             y: 480
         },
@@ -294,7 +294,7 @@ if (localStorage.clientMode == "vanilla") {
         },
         200: {
             key: 'Village',
-            scene: require('@rooms/new/village/Village').default,
+            scene: require('@rooms/old/village/underwater/Village').default,
             x: 800,
             y: 640
         },
@@ -324,7 +324,7 @@ if (localStorage.clientMode == "vanilla") {
         },
         300: {
             key: 'Plaza',
-            scene: require('@rooms/new/plaza/Plaza').default,
+            scene: require('@rooms/old/plaza/underwater/Plaza').default,
             x: 760,
             y: 680
         },
@@ -354,13 +354,13 @@ if (localStorage.clientMode == "vanilla") {
         },
         400: {
             key: 'Beach',
-            scene: require('@rooms/new/beach/Beach').default,
+            scene: require('@rooms/old/beach/underwater/Beach').default,
             x: 840,
             y: 680
         },
         410: {
             key: 'Lighthouse',
-            scene: require('@rooms/old/lighthouse/underwater/Lighthouse').default,
+            scene: require('@rooms/old/lighthouse/Lighthouse').default,
             x: 840,
             y: 680
         },
@@ -372,19 +372,19 @@ if (localStorage.clientMode == "vanilla") {
         },
         800: {
             key: 'Dock',
-            scene: require('@rooms/new/dock/Dock').default,
+            scene: require('@rooms/old/dock/underwater/Dock').default,
             x: 800,
             y: 400
         },
         801: {
             key: 'Forts',
-            scene: require('@rooms/new/forts/Forts').default,
+            scene: require('@rooms/old/forts/underwater/Forts').default,
             x: 960,
             y: 610
         },
         802: {
             key: 'Rink',
-            scene: require('@rooms/new/rink/Rink').default,
+            scene: require('@rooms/old/rink/underwater/Rink').default,
             x: 770,
             y: 400
         },
@@ -414,25 +414,25 @@ if (localStorage.clientMode == "vanilla") {
         },
         807: {
             key: 'Shack',
-            scene: require('@rooms/new/shack/Shack').default,
+            scene: require('@rooms/old/shack/underwater/Shack').default,
             x: 760,
             y: 680
         },
         808: {
             key: 'Mine',
-            scene: require('@rooms/old/mine/underwater/Mine').default,
+            scene: require('@rooms/old/mine/Mine').default,
             x: 760,
             y: 680
         },
         809: {
             key: 'Forest',
-            scene: require('@rooms/new/forest/Forest').default,
+            scene: require('@rooms/old/forest/underwater/Forest').default,
             x: 760,
             y: 430
         },
         810: {
             key: 'Cove',
-            scene: require('@rooms/new/cove/Cove').default,
+            scene: require('@rooms/old/cove/underwater/Cove').default,
             x: 840,
             y: 480
         },

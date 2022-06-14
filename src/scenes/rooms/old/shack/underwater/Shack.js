@@ -115,7 +115,8 @@ export default class Shack extends RoomScene {
         trees_2.setOrigin(0, 1);
 
         // water
-        const water = this.add.image(825, 535, "water");
+        const water = this.add.image(800, 1101, "water");
+        water.setOrigin(0.487373555973014, 1.0040902075658211);
 
         // lists
         const sort = [house, pipe_1, pipe_2, trees_2, barrel, flowers_1, bear, bag, barrel_2, shovel, fence, cart_1, cart_2, tree, flowers, trees_1, water];

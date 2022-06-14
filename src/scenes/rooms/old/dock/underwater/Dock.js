@@ -105,10 +105,11 @@ export default class Dock extends RoomScene {
         this.add.image(1104, 391, "dockuw", "anchor");
 
         // waterlayer
-        this.add.image(882, 621, "dockuw", "waterlayer");
+        const waterlayer = this.add.image(861.6778946298837, 1017.2810547172686, "dockuw", "waterlayer");
+        waterlayer.setOrigin(0.48964214812940043, 0.8862388447536731);
 
         // lists
-        const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box];
+        const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box, waterlayer];
 
         // boat (components)
         const boatButton = new Button(boat);
