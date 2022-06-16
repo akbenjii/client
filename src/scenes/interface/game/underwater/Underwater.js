@@ -16,10 +16,16 @@ export default class Underwater extends BaseContainer {
         this.uwbg;
         /** @type {Phaser.GameObjects.Sprite} */
         this.x_button;
+        /** @type {Phaser.GameObjects.Text} */
+        this.claim_35012;
         /** @type {Phaser.GameObjects.Sprite} */
         this.item_35012;
+        /** @type {Phaser.GameObjects.Text} */
+        this.claim_35013;
         /** @type {Phaser.GameObjects.Sprite} */
         this.item_35013;
+        /** @type {Phaser.GameObjects.Text} */
+        this.claim_4518;
         /** @type {Phaser.GameObjects.Sprite} */
         this.item_4518;
         /** @type {Phaser.GameObjects.Text} */
@@ -267,8 +273,11 @@ export default class Underwater extends BaseContainer {
         this.block = block;
         this.uwbg = uwbg;
         this.x_button = x_button;
+        this.claim_35012 = claim_35012;
         this.item_35012 = item_35012;
+        this.claim_35013 = claim_35013;
         this.item_35013 = item_35013;
+        this.claim_4518 = claim_4518;
         this.item_4518 = item_4518;
         this.claim_35017 = claim_35017;
         this.item_35016 = item_35016;
