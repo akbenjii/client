@@ -49,7 +49,7 @@ export default class Beacon extends RoomScene {
         this.add.image(331, 445, "beacon", "crate");
 
         // main_beacon
-        const main_beacon = this.add.image(702, -87, "beaconuw", "main beacon");
+        const main_beacon = this.add.image(702, -87, "beaconuw", "main_beacon");
         main_beacon.setOrigin(0.485192994157257, 0.027770241243949233);
 
         // binocular
