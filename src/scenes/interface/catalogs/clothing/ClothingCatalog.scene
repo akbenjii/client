@@ -1443,7 +1443,6 @@
             "label": "page8",
             "components": [],
             "y": -1,
-            "visible": false,
             "list": [
                 {
                     "type": "Image",
@@ -1522,7 +1521,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "buy1",
-                    "Button.callback": "() => this.interface.prompt.showItem(14212)",
+                    "Button.callback": "() => this.interface.prompt.showItem(5084)",
                     "texture": {
                         "key": "clothingcatalog",
                         "frame": "buy1"

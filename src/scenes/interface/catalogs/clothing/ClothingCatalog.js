@@ -618,7 +618,6 @@ export default class ClothingCatalog extends Book {
 
         // page8
         const page8 = this.add.container(0, -1);
-        page8.visible = false;
 
         // page8_bg
         const page8_bg = this.add.image(761, 431, "june22clothing", "page8");
@@ -1535,7 +1534,7 @@ export default class ClothingCatalog extends Book {
         // buy_mopbucket (components)
         const buy_mopbucketButton = new Button(buy_mopbucket);
         buy_mopbucketButton.spriteName = "buy1";
-        buy_mopbucketButton.callback = () => this.interface.prompt.showItem(14212);
+        buy_mopbucketButton.callback = () => this.interface.prompt.showItem(5084);
 
         // buy_yellowsnorkel (components)
         const buy_yellowsnorkelButton = new Button(buy_yellowsnorkel);
