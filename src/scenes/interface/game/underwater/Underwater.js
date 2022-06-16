@@ -10,6 +10,8 @@ export default class Underwater extends BaseContainer {
     constructor(scene, x, y) {
         super(scene, x ?? 760, y ?? 480);
 
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.block;
         /** @type {Phaser.GameObjects.Sprite} */
         this.uwbg;
         /** @type {Phaser.GameObjects.Sprite} */
@@ -20,6 +22,8 @@ export default class Underwater extends BaseContainer {
         this.item_35013;
         /** @type {Phaser.GameObjects.Sprite} */
         this.item_4518;
+        /** @type {Phaser.GameObjects.Text} */
+        this.claim_35017;
         /** @type {Phaser.GameObjects.Sprite} */
         this.item_35016;
         /** @type {Phaser.GameObjects.Sprite} */
@@ -32,6 +36,16 @@ export default class Underwater extends BaseContainer {
         this.blocker_35016;
         /** @type {Phaser.GameObjects.Sprite} */
         this.blocker_4518;
+        /** @type {Phaser.GameObjects.Text} */
+        this.claim_35016;
+        /** @type {Phaser.GameObjects.Text} */
+        this.later_35016;
+        /** @type {Phaser.GameObjects.Text} */
+        this.later_35013;
+        /** @type {Phaser.GameObjects.Text} */
+        this.later_4518;
+        /** @type {Phaser.GameObjects.Text} */
+        this.later_35017;
 
 
         // block
@@ -250,17 +264,24 @@ export default class Underwater extends BaseContainer {
         // blocker_4518 (components)
         new Interactive(blocker_4518);
 
+        this.block = block;
         this.uwbg = uwbg;
         this.x_button = x_button;
         this.item_35012 = item_35012;
         this.item_35013 = item_35013;
         this.item_4518 = item_4518;
+        this.claim_35017 = claim_35017;
         this.item_35016 = item_35016;
         this.item_35017 = item_35017;
         this.blocker_35013 = blocker_35013;
         this.blocker_35017 = blocker_35017;
         this.blocker_35016 = blocker_35016;
         this.blocker_4518 = blocker_4518;
+        this.claim_35016 = claim_35016;
+        this.later_35016 = later_35016;
+        this.later_35013 = later_35013;
+        this.later_4518 = later_4518;
+        this.later_35017 = later_35017;
 
         /* START-USER-CTR-CODE */
 
@@ -278,13 +299,13 @@ export default class Underwater extends BaseContainer {
             this.blocker_4518.visible = false;
         }
 
-        if (currentdate.getDate() >= 18) {
+        if (currentdate.getDate() >= 16) {
             this.claim_35013.visible = true;
             this.later_35013.visible = false;
             this.blocker_35013.visible = false;
         }
 
-        if (currentdate.getDate() >= 16) {
+        if (currentdate.getDate() >= 18) {
             this.claim_35017.visible = true;
             this.later_35017.visible = false;
             this.blocker_35017.visible = false;

@@ -71,9 +71,9 @@ export default class ClothingCatalog extends Book {
         const page13 = this.add.container(0, 0);
         page13.visible = false;
 
-        // page13_1
-        const page13_1 = this.add.image(772, 417, "june22clothing", "page13");
-        page13.add(page13_1);
+        // page13_bg
+        const page13_bg = this.add.image(772, 417, "june22clothing", "page13");
+        page13.add(page13_bg);
 
         // close_right_2
         const close_right_2 = this.add.image(596, 42, "catalogs-master", "catclosebtn");
@@ -88,12 +88,12 @@ export default class ClothingCatalog extends Book {
         page13.add(page_right_2);
 
         // page12
-        const page12 = this.add.container(761, 431);
+        const page12 = this.add.container(761, 430);
         page12.visible = false;
 
-        // page12
-        const page12 = this.add.image(0, 0, "june22clothing", "page12");
-        page12.add(page12);
+        // page12_bg
+        const page12_bg = this.add.image(0, 0, "june22clothing", "page12");
+        page12.add(page12_bg);
 
         // flag_button_7187
         const flag_button_7187 = this.add.ellipse(-384, -229, 75, 75);
@@ -450,11 +450,12 @@ export default class ClothingCatalog extends Book {
         page12.add(flag_button_515);
 
         // page11
-        const page11 = this.add.container(761, 431);
+        const page11 = this.add.container(761, 430);
+        page11.visible = false;
 
-        // page11
-        const page11 = this.add.image(0, 0, "june22clothing", "page11");
-        page11.add(page11);
+        // page11_bg
+        const page11_bg = this.add.image(0, 0, "june22clothing", "page11");
+        page11.add(page11_bg);
 
         // buy-seafarersgown
         const buy_seafarersgown = this.add.sprite(509, -52, "clothingcatalog", "buy2");
@@ -515,12 +516,12 @@ export default class ClothingCatalog extends Book {
         page11.add(sec_grassskirt);
 
         // page10
-        const page10 = this.add.container(761, 430);
+        const page10 = this.add.container(761, 429);
         page10.visible = false;
 
-        // page10
-        const page10 = this.add.image(0, 0, "june22clothing", "page10");
-        page10.add(page10);
+        // page10_bg
+        const page10_bg = this.add.image(0, 0, "june22clothing", "page10");
+        page10.add(page10_bg);
 
         // buy-telescope
         const buy_telescope = this.add.image(-483, -181, "clothingcatalog", "buy2");
@@ -566,12 +567,12 @@ export default class ClothingCatalog extends Book {
         page10.add(sec_lifegaurdshirt);
 
         // page9
-        const page9 = this.add.container(761, 431);
+        const page9 = this.add.container(761, 430);
         page9.visible = false;
 
-        // page9
-        const page9 = this.add.image(0, 0, "june22clothing", "page9");
-        page9.add(page9);
+        // page9_bg
+        const page9_bg = this.add.image(0, 0, "june22clothing", "page9");
+        page9.add(page9_bg);
 
         // buy-commanderhat
         const buy_commanderhat = this.add.image(-471, -280, "clothingcatalog", "buy1");
@@ -616,12 +617,12 @@ export default class ClothingCatalog extends Book {
         page9.add(sec_hawaiinhat);
 
         // page8
-        const page8 = this.add.container(0, 0);
+        const page8 = this.add.container(0, -1);
         page8.visible = false;
 
-        // page8_1
-        const page8_1 = this.add.image(761, 431, "june22clothing", "page8");
-        page8.add(page8_1);
+        // page8_bg
+        const page8_bg = this.add.image(761, 431, "june22clothing", "page8");
+        page8.add(page8_bg);
 
         // buy-waterwings
         const buy_waterwings = this.add.image(239, 385, "clothingcatalog", "buy2");
@@ -673,12 +674,12 @@ export default class ClothingCatalog extends Book {
         page8.add(sec_fishinghat);
 
         // page7
-        const page7 = this.add.container(0, 1);
+        const page7 = this.add.container(0, 0);
         page7.visible = false;
 
-        // page7_2
-        const page7_2 = this.add.image(761, 431, "june22clothing", "page7");
-        page7.add(page7_2);
+        // page7_bg
+        const page7_bg = this.add.image(761, 431, "june22clothing", "page7");
+        page7.add(page7_bg);
 
         // buy-razzmatazz
         const buy_razzmatazz = this.add.image(320, 267, "clothingcatalog", "buy1");
@@ -716,12 +717,12 @@ export default class ClothingCatalog extends Book {
         page7.add(sec_purplespringdress);
 
         // page6
-        const page6 = this.add.container(0, 2);
+        const page6 = this.add.container(0, 1);
         page6.visible = false;
 
-        // page6_2
-        const page6_2 = this.add.image(768, 431, "june22clothing", "page6");
-        page6.add(page6_2);
+        // page6_bg
+        const page6_bg = this.add.image(768, 431, "june22clothing", "page6");
+        page6.add(page6_bg);
 
         // buy_bluesnorkel
         const buy_bluesnorkel = this.add.image(296, 354, "may22cat", "buy");
@@ -802,12 +803,12 @@ export default class ClothingCatalog extends Book {
         page6.add(sec_greenbikini);
 
         // page5
-        const page5 = this.add.container(0, 0);
+        const page5 = this.add.container(0, -1);
         page5.visible = false;
 
-        // page5
-        const page5 = this.add.image(768, 431, "june22clothing", "page5");
-        page5.add(page5);
+        // page5_bg
+        const page5_bg = this.add.image(768, 431, "june22clothing", "page5");
+        page5.add(page5_bg);
 
         // buy_sagefish
         const buy_sagefish = this.add.image(627, 290, "may22cat", "buy");
@@ -854,12 +855,12 @@ export default class ClothingCatalog extends Book {
         page5.add(sec_floralbikini);
 
         // page4
-        const page4 = this.add.container(0, 2);
+        const page4 = this.add.container(0, 1);
         page4.visible = false;
 
-        // page4
-        const page4 = this.add.image(768, 431, "june22clothing", "page4");
-        page4.add(page4);
+        // page4_bg
+        const page4_bg = this.add.image(768, 431, "june22clothing", "page4");
+        page4.add(page4_bg);
 
         // sec-bluewaterwings
         const sec_bluewaterwings = this.add.ellipse(313, 643, 128, 128);
@@ -906,12 +907,12 @@ export default class ClothingCatalog extends Book {
         page4.add(sec_blueboarshorts);
 
         // page3
-        const page3 = this.add.container(0, 0);
+        const page3 = this.add.container(0, -1);
         page3.visible = false;
 
-        // page3
-        const page3 = this.add.image(768, 431, "june22clothing", "page3");
-        page3.add(page3);
+        // page3_bg
+        const page3_bg = this.add.image(768, 431, "june22clothing", "page3");
+        page3.add(page3_bg);
 
         // emerald-bg
         const emerald_bg = this.add.rectangle(338, 348, 128, 128);
@@ -978,12 +979,12 @@ export default class ClothingCatalog extends Book {
         page3.add(deep_bg);
 
         // page2
-        const page2 = this.add.container(-1, 1);
+        const page2 = this.add.container(-1, 0);
         page2.visible = false;
 
-        // page2
-        const page2 = this.add.image(769, 431, "june22clothing", "page2");
-        page2.add(page2);
+        // page2_bg
+        const page2_bg = this.add.image(769, 431, "june22clothing", "page2");
+        page2.add(page2_bg);
 
         // black-color
         const black_color = this.add.ellipse(855, 313, 500, 500);
@@ -1106,12 +1107,12 @@ export default class ClothingCatalog extends Book {
         page2.add(sec_ballonvender);
 
         // page1
-        const page1 = this.add.container(-2, 1);
+        const page1 = this.add.container(-2, 0);
         page1.visible = false;
 
-        // page1_2
-        const page1_2 = this.add.image(765, 432, "june22clothing", "page1");
-        page1.add(page1_2);
+        // page1_bg
+        const page1_bg = this.add.image(765, 432, "june22clothing", "page1");
+        page1.add(page1_bg);
 
         // page_right
         const page_right = this.add.image(937, 605, "catalogs-master", "nextpagebtn");
@@ -1543,7 +1544,7 @@ export default class ClothingCatalog extends Book {
 
         // sec_marcas (components)
         const sec_marcasSimpleButton = new SimpleButton(sec_marcas);
-        sec_marcasSimpleButton.callback = () => this.interface.prompt.showItem(33Beach dress: 4660 $350 Cream sandals: 6126 $150 Balloon Vendor: 4418 $150 Blue water wings: 345 $$free Black Hawaiian shorts 4096 $250 Blue board shorts: 4095 $200 Red shorts: 10267 $250 Pink swim suit: 269 $300 Floral bikini: 4236 $350 Green flower bikini: 4097 $250 Purple spring dress: 4189 $400 Maracas: 335 $free Fishing hat: 446 $220 Hawaiian shirt: 211 $250 Lifeguard shirt: 297 $180 Fishing vest: 265 $480 Grass skirt: 212 $200 5);
+        sec_marcasSimpleButton.callback = () => this.interface.prompt.showItem(335);
 
         // sec_fishinghat (components)
         const sec_fishinghatSimpleButton = new SimpleButton(sec_fishinghat);

@@ -12,7 +12,10 @@ export default class Interactive {
 
         /* START-USER-CTR-CODE */
 
-        this.gameObject.setInteractive()
+        this.gameObject.setInteractive({
+            cursor: 'default',
+            pixelPerfect: false
+        })
 
         /* END-USER-CTR-CODE */
     }

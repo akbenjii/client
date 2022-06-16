@@ -60,7 +60,7 @@ export default class Button extends SimpleButton {
         }
 
         if (this.activeFrame) {
-            this.gameObject.setFrame(`${this.spriteName}-active`, false)
+            this.gameObject.setFrame(`${this.spriteName}-active`, false, false)
         } else {
             this.gameObject.setFrame(`${this.spriteName}-hover`, false, false)
         }
