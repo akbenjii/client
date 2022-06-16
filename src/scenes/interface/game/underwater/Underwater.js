@@ -161,7 +161,7 @@ export default class Underwater extends BaseContainer {
         this.add(blocker_35017);
 
         // blocker_35016
-        const blocker_35016 = scene.add.sprite(256, -2, "partyinterface_uw", "35016");
+        const blocker_35016 = scene.add.sprite(257, -2, "partyinterface_uw", "35016");
         blocker_35016.alpha = 0.9;
         blocker_35016.alphaTopLeft = 0.9;
         blocker_35016.alphaTopRight = 0.9;
