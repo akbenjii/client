@@ -68,12 +68,12 @@ export default class ClothingCatalog extends Book {
         block.fillAlpha = 0.2;
 
         // page13
-        const page13 = this.add.container(0, 2);
+        const page13 = this.add.container(0, 0);
         page13.visible = false;
 
-        // page13_bg
-        const page13_bg = this.add.image(772, 417, "june22clothing", "page13");
-        page13.add(page13_bg);
+        // page13_1
+        const page13_1 = this.add.image(772, 417, "june22clothing", "page13");
+        page13.add(page13_1);
 
         // close_right_2
         const close_right_2 = this.add.image(596, 42, "catalogs-master", "catclosebtn");
@@ -88,12 +88,12 @@ export default class ClothingCatalog extends Book {
         page13.add(page_right_2);
 
         // page12
-        const page12 = this.add.container(761, 430);
+        const page12 = this.add.container(761, 431);
         page12.visible = false;
 
-        // page12_bg
-        const page12_bg = this.add.image(0, 0, "june22clothing", "page12");
-        page12.add(page12_bg);
+        // page12
+        const page12 = this.add.image(0, 0, "june22clothing", "page12");
+        page12.add(page12);
 
         // flag_button_7187
         const flag_button_7187 = this.add.ellipse(-384, -229, 75, 75);
@@ -451,67 +451,53 @@ export default class ClothingCatalog extends Book {
 
         // page11
         const page11 = this.add.container(761, 431);
-<<<<<<< HEAD
-=======
-        page11.visible = false;
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
-        // page11_bg
-        const page11_bg = this.add.image(0, 0, "june22clothing", "page11");
-        page11.add(page11_bg);
+        // page11
+        const page11 = this.add.image(0, 0, "june22clothing", "page11");
+        page11.add(page11);
 
         // buy-seafarersgown
-        const buy_seafarersgown = this.add.sprite(499.4756598894823, -48.19026395579304, "clothingcatalog", "buy2");
+        const buy_seafarersgown = this.add.sprite(509, -52, "clothingcatalog", "buy2");
         buy_seafarersgown.scaleX = 1.3;
         buy_seafarersgown.scaleY = 1.3;
         buy_seafarersgown.angle = -23;
-        buy_seafarersgown.setOrigin(0.42828123469191, 0.4963320401912294);
         page11.add(buy_seafarersgown);
 
         // buy-boonycurls
-        const buy_boonycurls = this.add.sprite(118.71460406631046, -282.2853959336894, "clothingcatalog", "buy1");
+        const buy_boonycurls = this.add.sprite(113, -288, "clothingcatalog", "buy1");
         buy_boonycurls.scaleX = 1.3;
         buy_boonycurls.scaleY = 1.3;
         buy_boonycurls.angle = 21;
-        buy_boonycurls.setOrigin(0.5516291865014988, 0.5561899410538969);
         page11.add(buy_boonycurls);
 
         // buy-nauticalboots
-        const buy_nauticalboots = this.add.sprite(-153.7146040663106, 288.0951319778965, "clothingcatalog", "buy2");
+        const buy_nauticalboots = this.add.sprite(-148, 290, "clothingcatalog", "buy2");
         buy_nauticalboots.scaleX = 1.3;
         buy_nauticalboots.scaleY = 1.3;
         buy_nauticalboots.angle = 31;
-        buy_nauticalboots.setOrigin(0.45888495761474507, 0.5224008212542249);
         page11.add(buy_nauticalboots);
 
         // buy-shipshapesuit
-        const buy_shipshapesuit = this.add.sprite(-505.9048680221035, 177.80973604420706, "clothingcatalog", "buy1");
+        const buy_shipshapesuit = this.add.sprite(-504, 174, "clothingcatalog", "buy1");
         buy_shipshapesuit.scaleX = 1.2;
         buy_shipshapesuit.scaleY = 1.2;
         buy_shipshapesuit.angle = -45.00000000000006;
-        buy_shipshapesuit.setOrigin(0.46938761179771665, 0.5249434274240823);
         page11.add(buy_shipshapesuit);
 
         // buy-shipshape
-        const buy_shipshape = this.add.sprite(-499.52434011051764, -186.2853959336894, "clothingcatalog", "buy1");
+        const buy_shipshape = this.add.sprite(-490, -192, "clothingcatalog", "buy1");
         buy_shipshape.scaleX = 1.2;
         buy_shipshape.scaleY = 1.2;
         buy_shipshape.angle = -18;
-        buy_shipshape.setOrigin(0.4179992735818163, 0.5461431176879791);
         page11.add(buy_shipshape);
 
         // buy-treasuremaps
-        const buy_treasuremaps = this.add.sprite(-122.19026395579291, 54.90486802210351, "clothingcatalog", "buy2");
+        const buy_treasuremaps = this.add.sprite(-126, 53, "clothingcatalog", "buy2");
         buy_treasuremaps.scaleX = 1.2;
         buy_treasuremaps.scaleY = 1.2;
         buy_treasuremaps.angle = 45;
-        buy_treasuremaps.setOrigin(0.5306123882022834, 0.4750565725759167);
         page11.add(buy_treasuremaps);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // sec-fishingvest
         const sec_fishingvest = this.add.ellipse(-34, -67, 128, 128);
         sec_fishingvest.scaleX = 0.2175016673872514;
@@ -528,69 +514,48 @@ export default class ClothingCatalog extends Book {
         sec_grassskirt.fillAlpha = 0;
         page11.add(sec_grassskirt);
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // page10
         const page10 = this.add.container(761, 430);
         page10.visible = false;
 
-        // page10_bg
-        const page10_bg = this.add.image(0, 0, "june22clothing", "page10");
-        page10.add(page10_bg);
+        // page10
+        const page10 = this.add.image(0, 0, "june22clothing", "page10");
+        page10.add(page10);
 
         // buy-telescope
-        const buy_telescope = this.add.image(-479.1902554959025, -182.9048614501953, "clothingcatalog", "buy2");
+        const buy_telescope = this.add.image(-483, -181, "clothingcatalog", "buy2");
         buy_telescope.scaleX = 1.2892080995527262;
         buy_telescope.scaleY = 1.2892080995527262;
         buy_telescope.angle = -15;
-        buy_telescope.setOrigin(0.5294256638140431, 0.4852807314352567);
         page10.add(buy_telescope);
 
         // buy-thepirateer
-        const buy_thepirateer = this.add.image(-401.61948054830464, -311.28540462057026, "clothingcatalog", "buy1");
+        const buy_thepirateer = this.add.image(-394, -316, "clothingcatalog", "buy1");
         buy_thepirateer.scaleX = 1.2;
         buy_thepirateer.scaleY = 1.2;
         buy_thepirateer.angle = 15;
-        buy_thepirateer.setOrigin(0.4554485116382771, 0.6387397757685503);
         page10.add(buy_thepirateer);
 
         // buy-crowsnestvest
-        const buy_crowsnestvest = this.add.image(-79.04645092636517, 78.42920813262114, "clothingcatalog", "buy2");
+        const buy_crowsnestvest = this.add.image(-100, 68, "clothingcatalog", "buy2");
         buy_crowsnestvest.scaleX = 1.2859928030062104;
         buy_crowsnestvest.scaleY = 1.2859928030062104;
         buy_crowsnestvest.angle = 33;
-        buy_crowsnestvest.setOrigin(0.6682316519073848, 0.46843286732066647);
         page10.add(buy_crowsnestvest);
 
         // buy-raggedyrags
-        const buy_raggedyrags = this.add.image(120.28539298822092, -33.19026565551753, "clothingcatalog", "buy1");
+        const buy_raggedyrags = this.add.image(126, -36, "clothingcatalog", "buy1");
         buy_raggedyrags.scaleX = 1.2;
         buy_raggedyrags.scaleY = 1.2;
         buy_raggedyrags.angle = -17;
-        buy_raggedyrags.setOrigin(0.4501608940831664, 0.5365274097891541);
         page10.add(buy_raggedyrags);
 
         // buy-buccaneer
-        const buy_buccaneer = this.add.image(521.2389441768281, -291.09513197789653, "clothingcatalog", "buy2");
+        const buy_buccaneer = this.add.image(506, -292, "clothingcatalog", "buy2");
         buy_buccaneer.scaleX = 1.2759678083080723;
         buy_buccaneer.scaleY = 1.2759678083080723;
         buy_buccaneer.angle = 10;
-        buy_buccaneer.setOrigin(0.6092803818434731, 0.4865847180350026);
         page10.add(buy_buccaneer);
-<<<<<<< HEAD
-
-        // sec-lifegaurdshirt
-        const sec_lifegaurdshirt = this.add.ellipse(-219, -274, 128, 128);
-        sec_lifegaurdshirt.scaleX = 0.2175016673872514;
-        sec_lifegaurdshirt.scaleY = 0.21393876922214905;
-        sec_lifegaurdshirt.isFilled = true;
-        sec_lifegaurdshirt.fillAlpha = 0;
-        page10.add(sec_lifegaurdshirt);
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
         // sec-lifegaurdshirt
         const sec_lifegaurdshirt = this.add.ellipse(-219, -274, 128, 128);
@@ -604,59 +569,43 @@ export default class ClothingCatalog extends Book {
         const page9 = this.add.container(761, 431);
         page9.visible = false;
 
-        // page9_bg
-        const page9_bg = this.add.image(0, 0, "june22clothing", "page9");
-        page9.add(page9_bg);
+        // page9
+        const page9 = this.add.image(0, 0, "june22clothing", "page9");
+        page9.add(page9);
 
         // buy-commanderhat
-        const buy_commanderhat = this.add.image(-474.8097360442071, -262.8561878010683, "clothingcatalog", "buy1");
+        const buy_commanderhat = this.add.image(-471, -280, "clothingcatalog", "buy1");
         buy_commanderhat.scaleX = 1.2;
         buy_commanderhat.scaleY = 1.2;
         buy_commanderhat.angle = -39.99999999999994;
-        buy_commanderhat.setOrigin(0.3944071444738823, 0.6978531639546569);
         page9.add(buy_commanderhat);
 
         // buy-commanderoutfit
-        const buy_commanderoutfit = this.add.image(-457.9048680221036, -85.09513197789649, "clothingcatalog", "buy1");
+        const buy_commanderoutfit = this.add.image(-457, -86, "clothingcatalog", "buy1");
         buy_commanderoutfit.scaleX = 1.2;
         buy_commanderoutfit.scaleY = 1.2;
         buy_commanderoutfit.angle = 15;
-        buy_commanderoutfit.setOrigin(0.48979587049856627, 0.5432032827438958);
         page9.add(buy_commanderoutfit);
 
         // buy-commanderboots
-        const buy_commanderboots = this.add.image(-456.2389441768282, 285.9048680221035, "clothingcatalog", "buy1");
+        const buy_commanderboots = this.add.image(-441, 285, "clothingcatalog", "buy1");
         buy_commanderboots.scaleX = 1.2;
         buy_commanderboots.scaleY = 1.2;
         buy_commanderboots.angle = -15;
-        buy_commanderboots.setOrigin(0.38475223078462906, 0.46103393491213307);
         page9.add(buy_commanderboots);
 
         // buy-swashbuckleroutfit
-        const buy_swashbuckleroutfit = this.add.image(432.9513197789646, -47.57079186737883, "clothingcatalog", "buy2");
+        const buy_swashbuckleroutfit = this.add.image(452, -59, "clothingcatalog", "buy2");
         buy_swashbuckleroutfit.scaleX = 1.2;
         buy_swashbuckleroutfit.scaleY = 1.2;
-        buy_swashbuckleroutfit.setOrigin(0.3556918222415995, 0.711651994045653);
         page9.add(buy_swashbuckleroutfit);
 
         // buy-swashbucklerhat
-        const buy_swashbucklerhat = this.add.image(417.76105582317183, -312.9048680221034, "clothingcatalog", "buy2");
+        const buy_swashbucklerhat = this.add.image(433, -311, "clothingcatalog", "buy2");
         buy_swashbucklerhat.scaleX = 1.2;
         buy_swashbucklerhat.scaleY = 1.2;
         buy_swashbucklerhat.angle = 18;
-        buy_swashbucklerhat.setOrigin(0.38574443807988557, 0.5536565918220706);
         page9.add(buy_swashbucklerhat);
-<<<<<<< HEAD
-
-        // sec-hawaiinhat
-        const sec_hawaiinhat = this.add.ellipse(484, 293, 128, 128);
-        sec_hawaiinhat.scaleX = 0.2175016673872514;
-        sec_hawaiinhat.scaleY = 0.21393876922214905;
-        sec_hawaiinhat.isFilled = true;
-        sec_hawaiinhat.fillAlpha = 0;
-        page9.add(sec_hawaiinhat);
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
         // sec-hawaiinhat
         const sec_hawaiinhat = this.add.ellipse(484, 293, 128, 128);
@@ -670,66 +619,42 @@ export default class ClothingCatalog extends Book {
         const page8 = this.add.container(0, 0);
         page8.visible = false;
 
-        // page8_bg
-        const page8_bg = this.add.image(761, 431, "june22clothing", "page8");
-        page8.add(page8_bg);
+        // page8_1
+        const page8_1 = this.add.image(761, 431, "june22clothing", "page8");
+        page8.add(page8_1);
 
         // buy-waterwings
-        const buy_waterwings = this.add.image(242.80973604420709, 385.00000000000006, "clothingcatalog", "buy2");
+        const buy_waterwings = this.add.image(239, 385, "clothingcatalog", "buy2");
         buy_waterwings.scaleX = 0.7;
         buy_waterwings.scaleY = 0.7;
         buy_waterwings.angle = 20;
-        buy_waterwings.setOrigin(0.5464932587761878, 0.45863471423450874);
         page8.add(buy_waterwings);
 
         // buy-crabcostume
-        const buy_crabcostume = this.add.image(674.7610558231718, 370.8097360442071, "clothingcatalog", "buy2");
+        const buy_crabcostume = this.add.image(690, 367, "clothingcatalog", "buy2");
         buy_crabcostume.scaleX = 1.2;
         buy_crabcostume.scaleY = 1.2;
         buy_crabcostume.angle = 20;
-        buy_crabcostume.setOrigin(0.40138699554866186, 0.6628149310362703);
         page8.add(buy_crabcostume);
 
         // buy-squidlid
-        const buy_squidlid = this.add.image(608.6659238452754, 638, "clothingcatalog", "buy2");
+        const buy_squidlid = this.add.image(622, 638, "clothingcatalog", "buy2");
         buy_squidlid.scaleX = 1.2;
         buy_squidlid.scaleY = 1.2;
         buy_squidlid.angle = 20;
-        buy_squidlid.setOrigin(0.40507626818541564, 0.5844541174367123);
         page8.add(buy_squidlid);
 
         // buy-mopbucket
-        const buy_mopbucket = this.add.image(894.3805279115861, 619.6194720884142, "clothingcatalog", "buy1");
+        const buy_mopbucket = this.add.image(902, 612, "clothingcatalog", "buy1");
         buy_mopbucket.angle = -45.00000000000006;
-        buy_mopbucket.setOrigin(0.40204035500023333, 0.5000000000000051);
         page8.add(buy_mopbucket);
 
         // buy-yellowsnorkel
-        const buy_yellowsnorkel = this.add.image(1215, 616.5243401105175, "clothingcatalog", "buy1");
+        const buy_yellowsnorkel = this.add.image(1215, 607, "clothingcatalog", "buy1");
         buy_yellowsnorkel.scaleX = 1.2;
         buy_yellowsnorkel.scaleY = 1.2;
         buy_yellowsnorkel.angle = -45.00000000000006;
-        buy_yellowsnorkel.setOrigin(0.44897935299619474, 0.6247171371204129);
         page8.add(buy_yellowsnorkel);
-<<<<<<< HEAD
-
-        // sec-marcas
-        const sec_marcas = this.add.ellipse(1016, 562, 128, 128);
-        sec_marcas.scaleX = 0.2175016673872514;
-        sec_marcas.scaleY = 0.21393876922214905;
-        sec_marcas.isFilled = true;
-        sec_marcas.fillAlpha = 0;
-        page8.add(sec_marcas);
-
-        // sec-fishinghat
-        const sec_fishinghat = this.add.ellipse(1301, 295, 128, 128);
-        sec_fishinghat.scaleX = 0.2175016673872514;
-        sec_fishinghat.scaleY = 0.21393876922214905;
-        sec_fishinghat.isFilled = true;
-        sec_fishinghat.fillAlpha = 0;
-        page8.add(sec_fishinghat);
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
         // sec-marcas
         const sec_marcas = this.add.ellipse(1016, 562, 128, 128);
@@ -751,51 +676,36 @@ export default class ClothingCatalog extends Book {
         const page7 = this.add.container(0, 1);
         page7.visible = false;
 
-        // page7_bg
-        const page7_bg = this.add.image(761, 431, "june22clothing", "page7");
-        page7.add(page7_bg);
+        // page7_2
+        const page7_2 = this.add.image(761, 431, "june22clothing", "page7");
+        page7.add(page7_2);
 
         // buy-razzmatazz
-        const buy_razzmatazz = this.add.image(314.2853959336895, 282.2389441768282, "clothingcatalog", "buy1");
+        const buy_razzmatazz = this.add.image(320, 267, "clothingcatalog", "buy1");
         buy_razzmatazz.scaleX = 1.2;
         buy_razzmatazz.scaleY = 1.2;
         buy_razzmatazz.angle = -45.00000000000006;
-        buy_razzmatazz.setOrigin(0.387754576591628, 0.6247171371204142);
         page7.add(buy_razzmatazz);
 
         // buy-coralmermaid
-        const buy_coralmermaid = this.add.image(652.2853959336894, 418, "clothingcatalog", "buy2");
+        const buy_coralmermaid = this.add.image(658, 418, "clothingcatalog", "buy2");
         buy_coralmermaid.scaleX = 1.2;
         buy_coralmermaid.scaleY = 1.2;
         buy_coralmermaid.angle = 20;
-        buy_coralmermaid.setOrigin(0.4593184006508926, 0.536194621758591);
         page7.add(buy_coralmermaid);
 
         // buy-tropicalmermaid
-        const buy_tropicalmermaid = this.add.image(1267.6659238452753, 248, "clothingcatalog", "buy2");
+        const buy_tropicalmermaid = this.add.image(1281, 248, "clothingcatalog", "buy2");
         buy_tropicalmermaid.scaleX = 1.2;
         buy_tropicalmermaid.scaleY = 1.2;
-        buy_tropicalmermaid.setOrigin(0.3989842755691205, 0.5);
         page7.add(buy_tropicalmermaid);
 
         // buy-aquamarine
-        const buy_aquamarine = this.add.image(1151.4756598894824, 89.42920813262124, "clothingcatalog", "buy2");
+        const buy_aquamarine = this.add.image(1161, 78, "clothingcatalog", "buy2");
         buy_aquamarine.scaleX = 1.2;
         buy_aquamarine.scaleY = 1.2;
         buy_aquamarine.angle = -39;
-        buy_aquamarine.setOrigin(0.3894360906557691, 0.55348706567576);
         page7.add(buy_aquamarine);
-<<<<<<< HEAD
-
-        // sec-purplespringdress
-        const sec_purplespringdress = this.add.ellipse(657, 188, 128, 128);
-        sec_purplespringdress.scaleX = 0.2175016673872514;
-        sec_purplespringdress.scaleY = 0.21393876922214905;
-        sec_purplespringdress.isFilled = true;
-        sec_purplespringdress.fillAlpha = 0;
-        page7.add(sec_purplespringdress);
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
         // sec-purplespringdress
         const sec_purplespringdress = this.add.ellipse(657, 188, 128, 128);
@@ -809,9 +719,9 @@ export default class ClothingCatalog extends Book {
         const page6 = this.add.container(0, 2);
         page6.visible = false;
 
-        // page6_bg
-        const page6_bg = this.add.image(768, 431, "june22clothing", "page6");
-        page6.add(page6_bg);
+        // page6_2
+        const page6_2 = this.add.image(768, 431, "june22clothing", "page6");
+        page6.add(page6_2);
 
         // buy_bluesnorkel
         const buy_bluesnorkel = this.add.image(296, 354, "may22cat", "buy");
@@ -882,17 +792,6 @@ export default class ClothingCatalog extends Book {
         text_yellowflippers.text = "200";
         text_yellowflippers.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page6.add(text_yellowflippers);
-<<<<<<< HEAD
-
-        // sec-greenbikini
-        const sec_greenbikini = this.add.ellipse(545, 656, 128, 128);
-        sec_greenbikini.scaleX = 0.2175016673872514;
-        sec_greenbikini.scaleY = 0.21393876922214905;
-        sec_greenbikini.isFilled = true;
-        sec_greenbikini.fillAlpha = 0;
-        page6.add(sec_greenbikini);
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
         // sec-greenbikini
         const sec_greenbikini = this.add.ellipse(545, 656, 128, 128);
@@ -906,9 +805,9 @@ export default class ClothingCatalog extends Book {
         const page5 = this.add.container(0, 0);
         page5.visible = false;
 
-        // page5_bg
-        const page5_bg = this.add.image(768, 431, "june22clothing", "page5");
-        page5.add(page5_bg);
+        // page5
+        const page5 = this.add.image(768, 431, "june22clothing", "page5");
+        page5.add(page5);
 
         // buy_sagefish
         const buy_sagefish = this.add.image(627, 290, "may22cat", "buy");
@@ -930,10 +829,6 @@ export default class ClothingCatalog extends Book {
         text_greenrug.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page5.add(text_greenrug);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // sec-redshorts
         const sec_redshorts = this.add.ellipse(707, 407, 128, 128);
         sec_redshorts.scaleX = 0.2175016673872514;
@@ -958,23 +853,14 @@ export default class ClothingCatalog extends Book {
         sec_floralbikini.fillAlpha = 0;
         page5.add(sec_floralbikini);
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // page4
         const page4 = this.add.container(0, 2);
         page4.visible = false;
 
-        // page4_bg
-        const page4_bg = this.add.image(768, 431, "june22clothing", "page4");
-        page4.add(page4_bg);
+        // page4
+        const page4 = this.add.image(768, 431, "june22clothing", "page4");
+        page4.add(page4);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // sec-bluewaterwings
         const sec_bluewaterwings = this.add.ellipse(313, 643, 128, 128);
         sec_bluewaterwings.scaleX = 0.2175016673872514;
@@ -982,18 +868,6 @@ export default class ClothingCatalog extends Book {
         sec_bluewaterwings.isFilled = true;
         sec_bluewaterwings.fillAlpha = 0;
         page4.add(sec_bluewaterwings);
-<<<<<<< HEAD
-=======
-=======
-        // sec-blueballcap
-        const sec_blueballcap = this.add.ellipse(313, 643, 128, 128);
-        sec_blueballcap.scaleX = 0.2175016673872514;
-        sec_blueballcap.scaleY = 0.21393876922214905;
-        sec_blueballcap.isFilled = true;
-        sec_blueballcap.fillAlpha = 0;
-        page4.add(sec_blueballcap);
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
 
         // buy_2_3_1_1_1
         const buy_2_3_1_1_1 = this.add.image(607, 466, "may22cat", "buy");
@@ -1015,10 +889,6 @@ export default class ClothingCatalog extends Book {
         text_3_1.setStyle({ "align": "center", "color": "6f4100", "fontFamily": "Burbank Small", "fontSize": "32px" });
         page4.add(text_3_1);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // sec-blackhawaiishorts
         const sec_blackhawaiishorts = this.add.ellipse(1057, 283, 128, 128);
         sec_blackhawaiishorts.scaleX = 0.2175016673872514;
@@ -1035,18 +905,13 @@ export default class ClothingCatalog extends Book {
         sec_blueboarshorts.fillAlpha = 0;
         page4.add(sec_blueboarshorts);
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // page3
         const page3 = this.add.container(0, 0);
         page3.visible = false;
 
-        // page3_bg
-        const page3_bg = this.add.image(768, 431, "june22clothing", "page3");
-        page3.add(page3_bg);
+        // page3
+        const page3 = this.add.image(768, 431, "june22clothing", "page3");
+        page3.add(page3);
 
         // emerald-bg
         const emerald_bg = this.add.rectangle(338, 348, 128, 128);
@@ -1116,9 +981,9 @@ export default class ClothingCatalog extends Book {
         const page2 = this.add.container(-1, 1);
         page2.visible = false;
 
-        // page2_bg
-        const page2_bg = this.add.image(769, 431, "june22clothing", "page2");
-        page2.add(page2_bg);
+        // page2
+        const page2 = this.add.image(769, 431, "june22clothing", "page2");
+        page2.add(page2);
 
         // black-color
         const black_color = this.add.ellipse(855, 313, 500, 500);
@@ -1231,17 +1096,6 @@ export default class ClothingCatalog extends Book {
         aqua_color.isFilled = true;
         aqua_color.fillAlpha = 0;
         page2.add(aqua_color);
-<<<<<<< HEAD
-
-        // sec-ballonvender
-        const sec_ballonvender = this.add.ellipse(473, 187, 128, 128);
-        sec_ballonvender.scaleX = 0.2175016673872514;
-        sec_ballonvender.scaleY = 0.21393876922214905;
-        sec_ballonvender.isFilled = true;
-        sec_ballonvender.fillAlpha = 0;
-        page2.add(sec_ballonvender);
-=======
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
         // sec-ballonvender
         const sec_ballonvender = this.add.ellipse(473, 187, 128, 128);
@@ -1252,12 +1106,12 @@ export default class ClothingCatalog extends Book {
         page2.add(sec_ballonvender);
 
         // page1
-        const page1 = this.add.container(-2, 0);
+        const page1 = this.add.container(-2, 1);
         page1.visible = false;
 
-        // page1_bg
-        const page1_bg = this.add.image(765, 432, "june22clothing", "page1");
-        page1.add(page1_bg);
+        // page1_2
+        const page1_2 = this.add.image(765, 432, "june22clothing", "page1");
+        page1.add(page1_2);
 
         // page_right
         const page_right = this.add.image(937, 605, "catalogs-master", "nextpagebtn");
@@ -1278,11 +1132,7 @@ export default class ClothingCatalog extends Book {
         page1.add(sec_beachdress);
 
         // sec-creamsandals
-<<<<<<< HEAD
-        const sec_creamsandals = this.add.ellipse(918, 766, 128, 128);
-=======
         const sec_creamsandals = this.add.ellipse(918, 765, 128, 128);
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         sec_creamsandals.scaleX = 0.2175016673872514;
         sec_creamsandals.scaleY = 0.21393876922214905;
         sec_creamsandals.isFilled = true;
@@ -1584,7 +1434,6 @@ export default class ClothingCatalog extends Book {
         const buy_nauticalbootsButton = new Button(buy_nauticalboots);
         buy_nauticalbootsButton.spriteName = "buy2";
         buy_nauticalbootsButton.callback = () => this.interface.prompt.showItem(6044);
-<<<<<<< HEAD
 
         // buy_shipshapesuit (components)
         const buy_shipshapesuitButton = new Button(buy_shipshapesuit);
@@ -1797,226 +1646,6 @@ export default class ClothingCatalog extends Book {
         // sec_bluewaterwings (components)
         const sec_bluewaterwingsSimpleButton = new SimpleButton(sec_bluewaterwings);
         sec_bluewaterwingsSimpleButton.callback = () => this.interface.prompt.showItem(345);
-=======
-
-        // buy_shipshapesuit (components)
-        const buy_shipshapesuitButton = new Button(buy_shipshapesuit);
-        buy_shipshapesuitButton.spriteName = "buy1";
-        buy_shipshapesuitButton.callback = () => this.interface.prompt.showItem(4386);
-
-        // buy_shipshape (components)
-        const buy_shipshapeButton = new Button(buy_shipshape);
-        buy_shipshapeButton.spriteName = "buy1";
-        buy_shipshapeButton.callback = () => this.interface.prompt.showItem(1276);
-
-        // buy_treasuremaps (components)
-        const buy_treasuremapsButton = new Button(buy_treasuremaps);
-        buy_treasuremapsButton.spriteName = "buy2";
-        buy_treasuremapsButton.callback = () => this.interface.prompt.showItem(5109);
-
-        // sec_fishingvest (components)
-        const sec_fishingvestSimpleButton = new SimpleButton(sec_fishingvest);
-        sec_fishingvestSimpleButton.callback = () => this.interface.prompt.showItem(265);
-
-        // sec_grassskirt (components)
-        const sec_grassskirtSimpleButton = new SimpleButton(sec_grassskirt);
-        sec_grassskirtSimpleButton.callback = () => this.interface.prompt.showItem(212);
-
-        // buy_telescope (components)
-        const buy_telescopeButton = new Button(buy_telescope);
-        buy_telescopeButton.spriteName = "buy2";
-        buy_telescopeButton.callback = () => this.interface.prompt.showItem(5108);
-
-        // buy_thepirateer (components)
-        const buy_thepirateerButton = new Button(buy_thepirateer);
-        buy_thepirateerButton.spriteName = "buy1";
-        buy_thepirateerButton.callback = () => this.interface.prompt.showItem(1277);
-
-        // buy_crowsnestvest (components)
-        const buy_crowsnestvestButton = new Button(buy_crowsnestvest);
-        buy_crowsnestvestButton.spriteName = "buy2";
-        buy_crowsnestvestButton.callback = () => this.interface.prompt.showItem(4385);
-
-        // buy_raggedyrags (components)
-        const buy_raggedyragsButton = new Button(buy_raggedyrags);
-        buy_raggedyragsButton.spriteName = "buy1";
-        buy_raggedyragsButton.callback = () => this.interface.prompt.showItem(4388);
-
-        // buy_buccaneer (components)
-        const buy_buccaneerButton = new Button(buy_buccaneer);
-        buy_buccaneerButton.spriteName = "buy2";
-        buy_buccaneerButton.callback = () => this.interface.prompt.showItem(1280);
-
-        // sec_lifegaurdshirt (components)
-        const sec_lifegaurdshirtSimpleButton = new SimpleButton(sec_lifegaurdshirt);
-        sec_lifegaurdshirtSimpleButton.callback = () => this.interface.prompt.showItem(297);
-
-        // buy_commanderhat (components)
-        const buy_commanderhatButton = new Button(buy_commanderhat);
-        buy_commanderhatButton.spriteName = "buy1";
-        buy_commanderhatButton.callback = () => this.interface.prompt.showItem(1155);
-
-        // buy_commanderoutfit (components)
-        const buy_commanderoutfitButton = new Button(buy_commanderoutfit);
-        buy_commanderoutfitButton.spriteName = "buy1";
-        buy_commanderoutfitButton.callback = () => this.interface.prompt.showItem(4229);
-
-        // buy_commanderboots (components)
-        const buy_commanderbootsButton = new Button(buy_commanderboots);
-        buy_commanderbootsButton.spriteName = "buy1";
-        buy_commanderbootsButton.callback = () => this.interface.prompt.showItem(6045);
-
-        // buy_swashbuckleroutfit (components)
-        const buy_swashbuckleroutfitButton = new Button(buy_swashbuckleroutfit);
-        buy_swashbuckleroutfitButton.spriteName = "buy2";
-        buy_swashbuckleroutfitButton.callback = () => this.interface.prompt.showItem(1154);
-
-        // buy_swashbucklerhat (components)
-        const buy_swashbucklerhatButton = new Button(buy_swashbucklerhat);
-        buy_swashbucklerhatButton.spriteName = "buy2";
-        buy_swashbucklerhatButton.callback = () => this.interface.prompt.showItem(1154);
-
-        // sec_hawaiinhat (components)
-        const sec_hawaiinhatSimpleButton = new SimpleButton(sec_hawaiinhat);
-        sec_hawaiinhatSimpleButton.callback = () => this.interface.prompt.showItem(211);
-
-        // buy_waterwings (components)
-        const buy_waterwingsButton = new Button(buy_waterwings);
-        buy_waterwingsButton.spriteName = "buy2";
-        buy_waterwingsButton.callback = () => this.interface.prompt.showItem(325);
-
-        // buy_crabcostume (components)
-        const buy_crabcostumeButton = new Button(buy_crabcostume);
-        buy_crabcostumeButton.spriteName = "buy2";
-        buy_crabcostumeButton.callback = () => this.interface.prompt.showItem(14212);
-
-        // buy_squidlid (components)
-        const buy_squidlidButton = new Button(buy_squidlid);
-        buy_squidlidButton.spriteName = "buy2";
-        buy_squidlidButton.callback = () => this.interface.prompt.showItem(1160);
-
-        // buy_mopbucket (components)
-        const buy_mopbucketButton = new Button(buy_mopbucket);
-        buy_mopbucketButton.spriteName = "buy1";
-        buy_mopbucketButton.callback = () => this.interface.prompt.showItem(14212);
-
-        // buy_yellowsnorkel (components)
-        const buy_yellowsnorkelButton = new Button(buy_yellowsnorkel);
-        buy_yellowsnorkelButton.spriteName = "buy1";
-        buy_yellowsnorkelButton.callback = () => this.interface.prompt.showItem(135);
-
-        // sec_marcas (components)
-        const sec_marcasSimpleButton = new SimpleButton(sec_marcas);
-        sec_marcasSimpleButton.callback = () => this.interface.prompt.showItem(335);
-
-        // sec_fishinghat (components)
-        const sec_fishinghatSimpleButton = new SimpleButton(sec_fishinghat);
-        sec_fishinghatSimpleButton.callback = () => this.interface.prompt.showItem(446);
-
-        // buy_razzmatazz (components)
-        const buy_razzmatazzButton = new Button(buy_razzmatazz);
-        buy_razzmatazzButton.spriteName = "buy1";
-        buy_razzmatazzButton.callback = () => this.interface.prompt.showItem(1156);
-
-        // buy_coralmermaid (components)
-        const buy_coralmermaidButton = new Button(buy_coralmermaid);
-        buy_coralmermaidButton.spriteName = "buy2";
-        buy_coralmermaidButton.callback = () => this.interface.prompt.showItem(4230);
-
-        // buy_tropicalmermaid (components)
-        const buy_tropicalmermaidButton = new Button(buy_tropicalmermaid);
-        buy_tropicalmermaidButton.spriteName = "buy2";
-        buy_tropicalmermaidButton.callback = () => this.interface.prompt.showItem(4231);
-
-        // buy_aquamarine (components)
-        const buy_aquamarineButton = new Button(buy_aquamarine);
-        buy_aquamarineButton.spriteName = "buy2";
-        buy_aquamarineButton.callback = () => this.interface.prompt.showItem(1157);
-
-        // sec_purplespringdress (components)
-        const sec_purplespringdressSimpleButton = new SimpleButton(sec_purplespringdress);
-        sec_purplespringdressSimpleButton.callback = () => this.interface.prompt.showItem(4189);
-
-        // buy_bluesnorkel (components)
-        const buy_bluesnorkelButton = new Button(buy_bluesnorkel);
-        buy_bluesnorkelButton.spriteName = "buy";
-        buy_bluesnorkelButton.callback = () => this.interface.prompt.showItem(132);
-        buy_bluesnorkelButton.activeFrame = false;
-
-        // buy_blueracing (components)
-        const buy_blueracingButton = new Button(buy_blueracing);
-        buy_blueracingButton.spriteName = "buy";
-        buy_blueracingButton.callback = () => this.interface.prompt.showItem(4113);
-        buy_blueracingButton.activeFrame = false;
-
-        // buy_blueflippers (components)
-        const buy_blueflippersButton = new Button(buy_blueflippers);
-        buy_blueflippersButton.spriteName = "buy";
-        buy_blueflippersButton.callback = () => this.interface.prompt.showItem(364);
-        buy_blueflippersButton.activeFrame = false;
-
-        // buy_blackscuba (components)
-        const buy_blackscubaButton = new Button(buy_blackscuba);
-        buy_blackscubaButton.spriteName = "buy";
-        buy_blackscubaButton.callback = () => this.interface.prompt.showItem(2003);
-        buy_blackscubaButton.activeFrame = false;
-
-        // buy_scubatank (components)
-        const buy_scubatankButton = new Button(buy_scubatank);
-        buy_scubatankButton.spriteName = "buy";
-        buy_scubatankButton.callback = () => this.interface.prompt.showItem(308);
-        buy_scubatankButton.activeFrame = false;
-
-        // buy_greenwetsuit (components)
-        const buy_greenwetsuitButton = new Button(buy_greenwetsuit);
-        buy_greenwetsuitButton.spriteName = "buy";
-        buy_greenwetsuitButton.callback = () => this.interface.prompt.showItem(4114);
-        buy_greenwetsuitButton.activeFrame = false;
-
-        // buy_yellowflippers (components)
-        const buy_yellowflippersButton = new Button(buy_yellowflippers);
-        buy_yellowflippersButton.spriteName = "buy";
-        buy_yellowflippersButton.callback = () => this.interface.prompt.showItem(367);
-        buy_yellowflippersButton.activeFrame = false;
-
-        // sec_greenbikini (components)
-        const sec_greenbikiniSimpleButton = new SimpleButton(sec_greenbikini);
-        sec_greenbikiniSimpleButton.callback = () => this.interface.prompt.showItem(4097);
-
-        // buy_sagefish (components)
-        const buy_sagefishButton = new Button(buy_sagefish);
-        buy_sagefishButton.spriteName = "buy";
-        buy_sagefishButton.callback = () => this.interface.prompt.showItem(4455);
-        buy_sagefishButton.activeFrame = false;
-
-        // buy_squidzoi (components)
-        const buy_squidzoiButton = new Button(buy_squidzoi);
-        buy_squidzoiButton.spriteName = "buy";
-        buy_squidzoiButton.callback = () => this.interface.prompt.showItem(767);
-        buy_squidzoiButton.activeFrame = false;
-
-<<<<<<< HEAD
-        // sec_redshorts (components)
-        const sec_redshortsSimpleButton = new SimpleButton(sec_redshorts);
-        sec_redshortsSimpleButton.callback = () => this.interface.prompt.showItem(10267);
-
-        // sec_pinkswimsuit (components)
-        const sec_pinkswimsuitSimpleButton = new SimpleButton(sec_pinkswimsuit);
-        sec_pinkswimsuitSimpleButton.callback = () => this.interface.prompt.showItem(269);
-
-        // sec_floralbikini (components)
-        const sec_floralbikiniSimpleButton = new SimpleButton(sec_floralbikini);
-        sec_floralbikiniSimpleButton.callback = () => this.interface.prompt.showItem(4236);
-
-        // sec_bluewaterwings (components)
-        const sec_bluewaterwingsSimpleButton = new SimpleButton(sec_bluewaterwings);
-        sec_bluewaterwingsSimpleButton.callback = () => this.interface.prompt.showItem(345);
-=======
-        // sec_blueballcap (components)
-        const sec_blueballcapSimpleButton = new SimpleButton(sec_blueballcap);
-        sec_blueballcapSimpleButton.callback = () => this.interface.prompt.showItem(345);
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
 
         // buy_2_3_1_1_1 (components)
         const buy_2_3_1_1_1Button = new Button(buy_2_3_1_1_1);
@@ -2030,10 +1659,6 @@ export default class ClothingCatalog extends Book {
         buy_3_1Button.callback = () => this.interface.prompt.showItem(4112);
         buy_3_1Button.activeFrame = false;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
         // sec_blackhawaiishorts (components)
         const sec_blackhawaiishortsSimpleButton = new SimpleButton(sec_blackhawaiishorts);
         sec_blackhawaiishortsSimpleButton.callback = () => this.interface.prompt.showItem(4096);
@@ -2042,8 +1667,6 @@ export default class ClothingCatalog extends Book {
         const sec_blueboarshortsSimpleButton = new SimpleButton(sec_blueboarshorts);
         sec_blueboarshortsSimpleButton.callback = () => this.interface.prompt.showItem(4095);
 
-<<<<<<< HEAD
-=======
         // emerald_bg (components)
         const emerald_bgSimpleButton = new SimpleButton(emerald_bg);
         emerald_bgSimpleButton.callback = () => this.interface.prompt.showItem(9102);
@@ -2131,100 +1754,6 @@ export default class ClothingCatalog extends Book {
         // aqua_color (components)
         const aqua_colorSimpleButton = new SimpleButton(aqua_color);
         aqua_colorSimpleButton.callback = () => this.interface.prompt.showItem(15);
-
-        // sec_ballonvender (components)
-        const sec_ballonvenderSimpleButton = new SimpleButton(sec_ballonvender);
-        sec_ballonvenderSimpleButton.callback = () => this.interface.prompt.showItem(4418);
-=======
->>>>>>> 3506b9410d581948428c4d9de98b3efe4a3dcd80
-        // emerald_bg (components)
-        const emerald_bgSimpleButton = new SimpleButton(emerald_bg);
-        emerald_bgSimpleButton.callback = () => this.interface.prompt.showItem(9102);
-
-        // camp_bg (components)
-        const camp_bgSimpleButton = new SimpleButton(camp_bg);
-        camp_bgSimpleButton.callback = () => this.interface.prompt.showItem(9103);
-
-        // tropical_bg (components)
-        const tropical_bgSimpleButton = new SimpleButton(tropical_bg);
-        tropical_bgSimpleButton.callback = () => this.interface.prompt.showItem(9038);
-
-        // treasure_bg (components)
-        const treasure_bgSimpleButton = new SimpleButton(treasure_bg);
-        treasure_bgSimpleButton.callback = () => this.interface.prompt.showItem(960);
-
-        // ice_fishing_bg (components)
-        const ice_fishing_bgSimpleButton = new SimpleButton(ice_fishing_bg);
-        ice_fishing_bgSimpleButton.callback = () => this.interface.prompt.showItem(936);
-
-        // day_beach_bg (components)
-        const day_beach_bgSimpleButton = new SimpleButton(day_beach_bg);
-        day_beach_bgSimpleButton.callback = () => this.interface.prompt.showItem(9063);
-
-        // beach_bg (components)
-        const beach_bgSimpleButton = new SimpleButton(beach_bg);
-        beach_bgSimpleButton.callback = () => this.interface.prompt.showItem(912);
-
-        // deep_bg (components)
-        const deep_bgSimpleButton = new SimpleButton(deep_bg);
-        deep_bgSimpleButton.callback = () => this.interface.prompt.showItem(9128);
-
-        // black_color (components)
-        const black_colorSimpleButton = new SimpleButton(black_color);
-        black_colorSimpleButton.callback = () => this.interface.prompt.showItem(4);
-
-        // dark_blue_color (components)
-        const dark_blue_colorSimpleButton = new SimpleButton(dark_blue_color);
-        dark_blue_colorSimpleButton.callback = () => this.interface.prompt.showItem(1);
-
-        // red_color (components)
-        const red_colorSimpleButton = new SimpleButton(red_color);
-        red_colorSimpleButton.callback = () => this.interface.prompt.showItem(5);
-
-        // green_color (components)
-        const green_colorSimpleButton = new SimpleButton(green_color);
-        green_colorSimpleButton.callback = () => this.interface.prompt.showItem(2);
-
-        // orange_color (components)
-        const orange_colorSimpleButton = new SimpleButton(orange_color);
-        orange_colorSimpleButton.callback = () => this.interface.prompt.showItem(6);
-
-        // brown_color (components)
-        const brown_colorSimpleButton = new SimpleButton(brown_color);
-        brown_colorSimpleButton.callback = () => this.interface.prompt.showItem(9);
-
-        // peach_color (components)
-        const peach_colorSimpleButton = new SimpleButton(peach_color);
-        peach_colorSimpleButton.callback = () => this.interface.prompt.showItem(10);
-
-        // yellow_color (components)
-        const yellow_colorSimpleButton = new SimpleButton(yellow_color);
-        yellow_colorSimpleButton.callback = () => this.interface.prompt.showItem(7);
-
-        // light_blue_color (components)
-        const light_blue_colorSimpleButton = new SimpleButton(light_blue_color);
-        light_blue_colorSimpleButton.callback = () => this.interface.prompt.showItem(12);
-
-        // pink_color (components)
-        const pink_colorSimpleButton = new SimpleButton(pink_color);
-        pink_colorSimpleButton.callback = () => this.interface.prompt.showItem(3);
-
-        // dark_green_color (components)
-        const dark_green_colorSimpleButton = new SimpleButton(dark_green_color);
-        dark_green_colorSimpleButton.callback = () => this.interface.prompt.showItem(11);
-
-        // dark_purple_color (components)
-        const dark_purple_colorSimpleButton = new SimpleButton(dark_purple_color);
-        dark_purple_colorSimpleButton.callback = () => this.interface.prompt.showItem(8);
-
-        // lime_green_color (components)
-        const lime_green_colorSimpleButton = new SimpleButton(lime_green_color);
-        lime_green_colorSimpleButton.callback = () => this.interface.prompt.showItem(13);
-
-        // aqua_color (components)
-        const aqua_colorSimpleButton = new SimpleButton(aqua_color);
-        aqua_colorSimpleButton.callback = () => this.interface.prompt.showItem(15);
->>>>>>> 1e5223bf67a7602651f7a35c25f5f976ef338d5f
 
         // sec_ballonvender (components)
         const sec_ballonvenderSimpleButton = new SimpleButton(sec_ballonvender);
