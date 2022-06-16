@@ -50,10 +50,6 @@ export default class Beacon extends RoomScene {
         // crate
         this.add.image(331, 445, "beacon", "crate");
 
-        // main_beacon
-        const main_beacon = this.add.image(702, -87, "beaconuw", "main_beacon");
-        main_beacon.setOrigin(0.485192994157257, 0.027770241243949233);
-
         // binocular
         this.add.image(248, 267, "beaconuw", "binocular");
 
@@ -61,8 +57,11 @@ export default class Beacon extends RoomScene {
         const bottomrail = this.add.image(712.179443359375, 961.9216962032965, "beaconuw", "bottomrail");
         bottomrail.setOrigin(0.5044360693840665, 1.0296666844575377);
 
+        // main_beacon
+        this.add.image(709, 290, "beaconuw", "main_beacon");
+
         // lists
-        const sort = [main_beacon, bottomrail];
+        const sort = [bottomrail];
 
         // jetpack (components)
         const jetpackButton = new Button(jetpack);
