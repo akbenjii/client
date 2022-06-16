@@ -29,6 +29,7 @@ export default class Rink extends RoomScene {
         this.roomTriggers = {
             'forts': () => this.triggerRoom(801, 560, 400)
         }
+        this.music='bubble_boogie'
 
         /* END-USER-CTR-CODE */
     }

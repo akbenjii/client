@@ -26,6 +26,7 @@ export default class Dock extends RoomScene {
             'town': () => this.triggerRoom(100, 368, 640),
             'hydro': () => this.triggerGame('HydroHopper', 924)
         }
+        this.music='water_kongo'
 
         /* END-USER-CTR-CODE */
     }

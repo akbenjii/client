@@ -25,6 +25,7 @@ export default class Village extends RoomScene {
             'mtn': () => this.triggerRoom(230, 840, 320),
             'phone': null
         }
+        this.music='water_kongo'
 
         /* END-USER-CTR-CODE */
     }
