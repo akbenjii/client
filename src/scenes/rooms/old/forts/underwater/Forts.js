@@ -98,6 +98,8 @@ export default class Forts extends RoomScene {
             'plaza': () => this.triggerRoom(300, 340, 660)
         }
 
+        this.music='water_kongo'
+
         /* END-USER-CTR-CODE */
     }
 

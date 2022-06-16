@@ -23,6 +23,8 @@ export default class Beacon extends RoomScene {
             'jetpack': () => this.triggerGame("JetpackAdventure", 926),
         }
 
+        this.music='water_kongo'
+
         /* END-USER-CTR-CODE */
     }
 
