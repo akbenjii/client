@@ -233,8 +233,8 @@
                 "key": "fortsuw",
                 "frame": "layer19"
             },
-            "x": 332,
-            "y": 880
+            "x": 358,
+            "y": 884
         },
         {
             "type": "Sprite",
@@ -246,8 +246,8 @@
                 "key": "fortsuw",
                 "frame": "layer21"
             },
-            "x": 288,
-            "y": 781
+            "x": 314,
+            "y": 785
         },
         {
             "type": "Sprite",

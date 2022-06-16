@@ -1443,6 +1443,7 @@
             "label": "page8",
             "components": [],
             "y": -1,
+            "visible": false,
             "list": [
                 {
                     "type": "Image",

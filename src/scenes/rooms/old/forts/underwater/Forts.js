@@ -167,10 +167,10 @@ export default class Forts extends RoomScene {
         layer23_1_1.flipX = true;
 
         // layer19
-        const layer19 = this.add.sprite(332, 880, "fortsuw", "layer19");
+        const layer19 = this.add.sprite(358, 884, "fortsuw", "layer19");
 
         // layer21
-        const layer21 = this.add.sprite(288, 781, "fortsuw", "layer21");
+        const layer21 = this.add.sprite(314, 785, "fortsuw", "layer21");
 
         // bridge1
         const bridge1 = this.add.sprite(1269, 699, "fortsuw", "bridge1");

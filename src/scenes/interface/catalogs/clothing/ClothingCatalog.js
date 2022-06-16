@@ -618,6 +618,7 @@ export default class ClothingCatalog extends Book {
 
         // page8
         const page8 = this.add.container(0, -1);
+        page8.visible = false;
 
         // page8_bg
         const page8_bg = this.add.image(761, 431, "june22clothing", "page8");
