@@ -58,7 +58,7 @@ export default class Beacon extends RoomScene {
         bottomrail.setOrigin(0.5044360693840665, 1.0296666844575377);
 
         // main_beacon
-        this.add.image(709, 290, "beaconuw", "main_beacon");
+        this.add.image(726, 312, "beaconuw", "main_beacon");
 
         // lists
         const sort = [bottomrail];
