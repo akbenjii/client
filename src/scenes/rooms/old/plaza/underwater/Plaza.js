@@ -55,6 +55,7 @@ export default class Plaza extends RoomScene {
             'pizza': () => this.triggerRoom(330, 1200, 400),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
+        this.music='bubble_boogie'
 
         /* END-USER-CTR-CODE */
     }
