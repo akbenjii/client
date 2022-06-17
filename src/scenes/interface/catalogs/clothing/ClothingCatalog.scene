@@ -1009,7 +1009,7 @@
             "label": "page11",
             "components": [],
             "x": 761,
-            "y": 430,
+            "y": 431,
             "visible": false,
             "list": [
                 {
@@ -1178,7 +1178,7 @@
             "label": "page10",
             "components": [],
             "x": 761,
-            "y": 429,
+            "y": 428,
             "visible": false,
             "list": [
                 {
@@ -1311,7 +1311,7 @@
             "label": "page9",
             "components": [],
             "x": 761,
-            "y": 430,
+            "y": 433,
             "visible": false,
             "list": [
                 {
@@ -1442,7 +1442,6 @@
             "id": "730bc71e-5a7a-4a7e-8efa-74f0f2124f86",
             "label": "page8",
             "components": [],
-            "y": -1,
             "visible": false,
             "list": [
                 {
@@ -2762,7 +2761,7 @@
             "scope": "CLASS",
             "components": [],
             "x": 189,
-            "y": 41,
+            "y": 40,
             "visible": false,
             "list": [
                 {
@@ -2865,7 +2864,11 @@
                 "b1f50e90-cf0a-47f8-a325-a9affdc3cd6f",
                 "308134c3-e2e2-4a79-9da8-61e3a2f91835",
                 "730bc71e-5a7a-4a7e-8efa-74f0f2124f86",
-                "7776572e-39a3-4406-a915-c957a8f958e1"
+                "7776572e-39a3-4406-a915-c957a8f958e1",
+                "e6464571-d1d6-4d00-bfc8-be75209b128d",
+                "45a0b127-7ba2-4ada-90ee-0b20050cea9d",
+                "638814fb-01dd-4728-b37a-41db378cb0fc",
+                "57323182-a8fd-465a-b44f-517e0c4d1bb3"
             ]
         }
     ]
