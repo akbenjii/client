@@ -87,6 +87,11 @@ export default class Beach extends RoomScene {
         const chair_1 = this.add.image(961, 526, "beach", "chair_1");
         chair_1.setOrigin(0.5, 0.58778626);
 
+        // pin
+        const pin = this.add.image(606, 783, "582");
+        pin.scaleX = 1.2166666666666668;
+        pin.scaleY = 1.2166666666666668;
+
         // chair_1_front
         const chair_1_front = this.add.image(943, 542, "beach", "chair_1_front");
         chair_1_front.setOrigin(0.4, 0.67054264);
@@ -109,6 +114,10 @@ export default class Beach extends RoomScene {
         const lighthouse_doorMoveTo = new MoveTo(lighthouse_door);
         lighthouse_doorMoveTo.x = 480;
         lighthouse_doorMoveTo.y = 400;
+
+        // pin (components)
+        const pinSimpleButton = new SimpleButton(pin);
+        pinSimpleButton.callback = () => this.interface.prompt.showItem(582);;
 
         // bucket (components)
         const bucketSimpleButton = new SimpleButton(bucket);
