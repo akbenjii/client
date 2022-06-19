@@ -52,6 +52,7 @@ export default class Preload extends BaseScene {
         this.crumbs.strings = crumbs.strings
         this.crumbs.worlds = crumbs.worlds
         this.crumbs.stamps = crumbs.stamps
+        this.crumbs.puffles = crumbs.puffles
 
         // Start
         this.interface.hideLoading()

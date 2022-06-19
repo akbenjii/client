@@ -1,6 +1,7 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
 import PaperDollLoader from '@engine/loaders/PaperDollLoader'
+import PaperDollPuffleLoader from '@engine/loaders/PaperDollPuffleLoader'
 import TintedImage from '@engine/utils/tint/TintedImage'
 
 
@@ -41,6 +42,7 @@ export default class PaperDoll extends BaseContainer {
         this.items = this.setItems()
 
         this.paperDollLoader = new PaperDollLoader(scene, this)
+        this.paperDollPuffleLoader = new PaperDollPuffleLoader(scene, this)
         this.isInputEnabled = false
 
         /* END-USER-CTR-CODE */
@@ -85,7 +87,12 @@ export default class PaperDoll extends BaseContainer {
             this.disableInput()
         }
 
+        penguin.puffle = 2
+
         this.paperDollLoader.loadItems(penguin)
+        if (penguin.puffle) {
+            this.paperDollPuffleLoader.loadPuffle(this.world.crumbs.puffles[penguin.puffle].name)
+        }
     }
 
     /**

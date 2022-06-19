@@ -19,7 +19,6 @@ import NewMap from '../map/NewMap'
 import Moderator from '../moderator/Moderator'
 import ModActions from '../modactions/ModActions'
 import PlayerCard from '../playercard/PlayerCard'
-import PuffleCare from '../puffle/PuffleCare'
 import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
 import Manage from '../manage/Manage'
@@ -111,8 +110,6 @@ export default class Main extends BaseScene {
         this.buddy;
         /** @type {PlayerCard} */
         this.playerCard;
-        /** @type {PuffleCare} */
-        this.puffleCare;
         /** @type {ActionsMenu} */
         this.actionsMenu;
         /** @type {EmotesMenu} */
@@ -299,11 +296,6 @@ export default class Main extends BaseScene {
         const playerCard = new PlayerCard(this, 446, 436);
         playerCard.visible = false;
         widgetLayer.add(playerCard);
-
-        // puffleCare
-        const puffleCare = new PuffleCare(this, 551, 480);
-        puffleCare.visible = false;
-        widgetLayer.add(puffleCare);
 
         // actionsMenu
         const actionsMenu = new ActionsMenu(this, 366, 872);
@@ -515,7 +507,6 @@ export default class Main extends BaseScene {
         this.widgetLayer = widgetLayer;
         this.buddy = buddy;
         this.playerCard = playerCard;
-        this.puffleCare = puffleCare;
         this.actionsMenu = actionsMenu;
         this.emotesMenu = emotesMenu;
         this.safe = safe;

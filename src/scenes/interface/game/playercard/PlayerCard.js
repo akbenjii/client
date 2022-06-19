@@ -209,6 +209,10 @@ export default class PlayerCard extends BaseContainer {
             if (this.world.mascots[x].id == penguin.id) this.username.text = this.world.mascots[x].name
         }
 
+        if (penguin.puffle && !items.puffle){
+            items.puffle = penguin.puffle
+        }
+
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)
 

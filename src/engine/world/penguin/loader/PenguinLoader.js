@@ -1,5 +1,5 @@
 import SpriteLoader from './SpriteLoader'
-
+import PuffleLoader from './PuffleLoader'
 
 export default class PenguinLoader extends SpriteLoader {
 
@@ -13,12 +13,16 @@ export default class PenguinLoader extends SpriteLoader {
             align: 'center',
             fixedWidth: 250
         }
+        
     }
 
     loadPenguin(penguin) {
+        this.ploader = new PuffleLoader(penguin)
+
         this.addPenguin(penguin)
         this.addShadow(penguin)
         this.addInput(penguin)
+        this.addPuffle(penguin)
     }
 
     addPenguin(penguin) {
@@ -66,4 +70,20 @@ export default class PenguinLoader extends SpriteLoader {
         this.world.interface.showCard(id)
     }
 
+    addPuffle(penguin) {
+        if (!penguin.puffle) return
+        let color = this.world.crumbs.puffles[penguin.puffle].name
+		
+		if (!this.ploader.textureExists(`puffle_${color}`)) {
+			this.ploader.loadPuffle(color)
+		}
+		else {
+			this.loadPuffle(penguin, color)
+		}
+    }
+
+    loadPuffle(penguin, color) {
+        if (!penguin.puffle) return
+        this.loadSprite(penguin, `puffle_${color}`, 3, 60)
+    }
 }
