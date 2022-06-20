@@ -281,10 +281,8 @@
                 "key": "coffeeuw",
                 "frame": "boarduw"
             },
-            "x": 880,
-            "y": 695,
-            "originX": 0.5190839694656488,
-            "originY": 0.8827586206896552
+            "x": 885,
+            "y": 649
         }
     ],
     "plainObjects": [],

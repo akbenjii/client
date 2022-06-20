@@ -121,6 +121,9 @@ export default class Rink extends RoomScene {
         // plant90001
         const plant90001 = this.add.sprite(664, 314, "rinkuw", "plant90001");
 
+        // water
+        this.add.image(821, 553, "water");
+
         // lists
         const sort = [ball, plant120001, plant100001];
 

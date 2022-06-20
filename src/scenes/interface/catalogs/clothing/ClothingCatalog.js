@@ -1167,7 +1167,7 @@ export default class ClothingCatalog extends Book {
         buttons.add(close_right_1);
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page13, page9, page10, page11, page12];
+        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, page13];
 
         // block (components)
         new Interactive(block);
@@ -1506,7 +1506,7 @@ export default class ClothingCatalog extends Book {
         // buy_swashbuckleroutfit (components)
         const buy_swashbuckleroutfitButton = new Button(buy_swashbuckleroutfit);
         buy_swashbuckleroutfitButton.spriteName = "buy2";
-        buy_swashbuckleroutfitButton.callback = () => this.interface.prompt.showItem(1154);
+        buy_swashbuckleroutfitButton.callback = () => this.interface.prompt.showItem(4228);
 
         // buy_swashbucklerhat (components)
         const buy_swashbucklerhatButton = new Button(buy_swashbucklerhat);

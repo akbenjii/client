@@ -558,6 +558,17 @@
             "text": "AM",
             "fontFamily": "Burbank Small",
             "fontSize": "20px"
+        },
+        {
+            "type": "Image",
+            "id": "bc0cca61-8617-4c14-a4cc-6ae77f45ab75",
+            "label": "water",
+            "components": [],
+            "texture": {
+                "key": "water"
+            },
+            "x": 762,
+            "y": 648
         }
     ],
     "plainObjects": [],

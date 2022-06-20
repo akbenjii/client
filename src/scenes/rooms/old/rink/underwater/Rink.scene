@@ -316,6 +316,17 @@
             },
             "x": 664,
             "y": 314
+        },
+        {
+            "type": "Image",
+            "id": "ee7ef18e-5d07-4b72-b274-85c63a2ed61e",
+            "label": "water",
+            "components": [],
+            "texture": {
+                "key": "water"
+            },
+            "x": 821,
+            "y": 553
         }
     ],
     "plainObjects": [],

@@ -1389,7 +1389,7 @@
                         "Button"
                     ],
                     "Button.spriteName": "buy2",
-                    "Button.callback": "() => this.interface.prompt.showItem(1154)",
+                    "Button.callback": "() => this.interface.prompt.showItem(4228)",
                     "texture": {
                         "key": "clothingcatalog",
                         "frame": "buy2"
@@ -2864,11 +2864,11 @@
                 "b1f50e90-cf0a-47f8-a325-a9affdc3cd6f",
                 "308134c3-e2e2-4a79-9da8-61e3a2f91835",
                 "730bc71e-5a7a-4a7e-8efa-74f0f2124f86",
-                "7776572e-39a3-4406-a915-c957a8f958e1",
                 "e6464571-d1d6-4d00-bfc8-be75209b128d",
                 "45a0b127-7ba2-4ada-90ee-0b20050cea9d",
                 "638814fb-01dd-4728-b37a-41db378cb0fc",
-                "57323182-a8fd-465a-b44f-517e0c4d1bb3"
+                "57323182-a8fd-465a-b44f-517e0c4d1bb3",
+                "7776572e-39a3-4406-a915-c957a8f958e1"
             ]
         }
     ]

@@ -260,6 +260,9 @@ export default class Forts extends RoomScene {
         am_pm.text = "AM";
         am_pm.setStyle({ "fontFamily": "Burbank Small", "fontSize": "20px" });
 
+        // water
+        this.add.image(762, 648, "water");
+
         // lists
         const sort = [blue_pole, blue_flag, layer19, plant2, tree1];
 

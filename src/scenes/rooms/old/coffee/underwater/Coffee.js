@@ -107,8 +107,7 @@ export default class Coffee extends RoomScene {
         balluw0002.setOrigin(0.5217391304347826, 0.5368421052631579);
 
         // boarduw
-        const boarduw = this.add.image(880, 695, "coffeeuw", "boarduw");
-        boarduw.setOrigin(0.5190839694656488, 0.8827586206896552);
+        this.add.image(885, 649, "coffeeuw", "boarduw");
 
         // lists
         const sort = [beans, bag, sign_back, counter_front, counter_back];
