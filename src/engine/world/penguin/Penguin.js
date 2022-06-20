@@ -23,7 +23,6 @@ export default class Penguin extends BaseContainer {
         this.depth = this.y
         this.tween
         this.direction
-        this.puffle = 2
 
         this.nameTag = penguinLoader.addName(this)
 

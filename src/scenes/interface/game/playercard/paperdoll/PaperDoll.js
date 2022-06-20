@@ -87,11 +87,9 @@ export default class PaperDoll extends BaseContainer {
             this.disableInput()
         }
 
-        penguin.puffle = 2
-
         this.paperDollLoader.loadItems(penguin)
-        if (penguin.puffle) {
-            this.paperDollPuffleLoader.loadPuffle(this.world.crumbs.puffles[penguin.puffle].name)
+        if (penguin.puffle && penguin.puffle !== 0 && penguin.id) {
+            this.network.send('get_puffle_color', { puffle: penguin.puffle, penguinId: penguin.id })
         }
     }
 

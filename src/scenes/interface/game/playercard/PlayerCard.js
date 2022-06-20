@@ -212,6 +212,9 @@ export default class PlayerCard extends BaseContainer {
         if (penguin.puffle && !items.puffle){
             items.puffle = penguin.puffle
         }
+        if (penguin.id && !items.id){
+            items.id = penguin.id
+        }
 
         // Paper doll
         this.paperDoll.loadDoll(items, penguin.isClient)

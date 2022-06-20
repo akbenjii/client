@@ -20,6 +20,10 @@ export default class PenguinFactory {
 
         if (user.stealthMode) user.username = user.username + ' (Hidden)'
 
+        if (user.puffle && user.puffle !== 0){
+            this.world.network.send('get_puffle_color', {puffle: user.puffle, penguinId: user.id})
+        }
+
         if (user.id == client.id) {
             client.penguin = new ClientPenguin(user, room, this.penguinLoader)
             return client.penguin
