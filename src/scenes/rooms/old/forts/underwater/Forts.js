@@ -98,6 +98,8 @@ export default class Forts extends RoomScene {
             'plaza': () => this.triggerRoom(300, 340, 660)
         }
 
+        this.music='water_kongo'
+
         /* END-USER-CTR-CODE */
     }
 
@@ -167,10 +169,10 @@ export default class Forts extends RoomScene {
         layer23_1_1.flipX = true;
 
         // layer19
-        const layer19 = this.add.sprite(336, 880, "fortsuw", "layer19");
+        const layer19 = this.add.sprite(358, 884, "fortsuw", "layer19");
 
         // layer21
-        const layer21 = this.add.sprite(289, 780, "fortsuw", "layer21");
+        const layer21 = this.add.sprite(314, 785, "fortsuw", "layer21");
 
         // bridge1
         const bridge1 = this.add.sprite(1269, 699, "fortsuw", "bridge1");
@@ -259,7 +261,7 @@ export default class Forts extends RoomScene {
         am_pm.setStyle({ "fontFamily": "Burbank Small", "fontSize": "20px" });
 
         // lists
-        const sort = [blue_pole, blue_flag, layer19, plant1, plant2, tree1];
+        const sort = [blue_pole, blue_flag, layer19, plant2, tree1];
 
         // blue_flag (components)
         const blue_flagAnimation = new Animation(blue_flag);

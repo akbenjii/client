@@ -21,6 +21,7 @@ export default class Cove extends RoomScene {
         this.roomTriggers =  {
             'forest': () => this.triggerRoom(809, 1190, 750)
         }
+        this.music='bubble_boogie'
 
         /* END-USER-CTR-CODE */
     }

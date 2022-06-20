@@ -450,7 +450,7 @@ export default class ClothingCatalog extends Book {
         page12.add(flag_button_515);
 
         // page11
-        const page11 = this.add.container(761, 430);
+        const page11 = this.add.container(761, 431);
         page11.visible = false;
 
         // page11_bg
@@ -516,7 +516,7 @@ export default class ClothingCatalog extends Book {
         page11.add(sec_grassskirt);
 
         // page10
-        const page10 = this.add.container(761, 429);
+        const page10 = this.add.container(761, 428);
         page10.visible = false;
 
         // page10_bg
@@ -567,7 +567,7 @@ export default class ClothingCatalog extends Book {
         page10.add(sec_lifegaurdshirt);
 
         // page9
-        const page9 = this.add.container(761, 430);
+        const page9 = this.add.container(761, 433);
         page9.visible = false;
 
         // page9_bg
@@ -617,7 +617,7 @@ export default class ClothingCatalog extends Book {
         page9.add(sec_hawaiinhat);
 
         // page8
-        const page8 = this.add.container(0, -1);
+        const page8 = this.add.container(0, 0);
         page8.visible = false;
 
         // page8_bg
@@ -1141,7 +1141,7 @@ export default class ClothingCatalog extends Book {
         page1.add(sec_creamsandals);
 
         // buttons
-        const buttons = this.add.container(189, 41);
+        const buttons = this.add.container(189, 40);
         buttons.visible = false;
 
         // coins
@@ -1167,7 +1167,7 @@ export default class ClothingCatalog extends Book {
         buttons.add(close_right_1);
 
         // lists
-        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page13];
+        const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page13, page9, page10, page11, page12];
 
         // block (components)
         new Interactive(block);
@@ -1535,7 +1535,7 @@ export default class ClothingCatalog extends Book {
         // buy_mopbucket (components)
         const buy_mopbucketButton = new Button(buy_mopbucket);
         buy_mopbucketButton.spriteName = "buy1";
-        buy_mopbucketButton.callback = () => this.interface.prompt.showItem(14212);
+        buy_mopbucketButton.callback = () => this.interface.prompt.showItem(5084);
 
         // buy_yellowsnorkel (components)
         const buy_yellowsnorkelButton = new Button(buy_yellowsnorkel);

@@ -25,6 +25,7 @@ export default class Town extends RoomScene {
             'dance': () => this.triggerRoom(120, 300, 560),
             'gift': () => this.triggerRoom(130, 1036, 520),
         }
+        this.music='bubble_boogie'
 
         /* END-USER-CTR-CODE */
     }

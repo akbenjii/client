@@ -189,6 +189,22 @@
         },
         {
             "type": "Image",
+            "id": "73361637-54c8-419b-989c-d2c885757390",
+            "label": "pin",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(582);",
+            "texture": {
+                "key": "582"
+            },
+            "x": 606,
+            "y": 783,
+            "scaleX": 1.2166666666666668,
+            "scaleY": 1.2166666666666668
+        },
+        {
+            "type": "Image",
             "id": "7dd9eb62-1537-4f6c-b67f-74fcd38f2154",
             "label": "chair_1_front",
             "components": [],

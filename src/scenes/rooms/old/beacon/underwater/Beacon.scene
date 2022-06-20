@@ -78,20 +78,6 @@
         },
         {
             "type": "Image",
-            "id": "c92d72f9-8790-40e8-8bbf-667aaa7f1d42",
-            "label": "main_beacon",
-            "components": [],
-            "texture": {
-                "key": "beaconuw",
-                "frame": "main beacon"
-            },
-            "x": 702,
-            "y": -87,
-            "originX": 0.485192994157257,
-            "originY": 0.027770241243949233
-        },
-        {
-            "type": "Image",
             "id": "148e9458-7337-40d2-8bc4-f281f4f1890e",
             "label": "binocular",
             "components": [],
@@ -115,6 +101,18 @@
             "y": 961.9216962032965,
             "originX": 0.5044360693840665,
             "originY": 1.0296666844575377
+        },
+        {
+            "type": "Image",
+            "id": "219aadf0-07f8-4921-b5f3-465d9998edb8",
+            "label": "main_beacon",
+            "components": [],
+            "texture": {
+                "key": "beaconuw",
+                "frame": "main_beacon"
+            },
+            "x": 726,
+            "y": 312
         }
     ],
     "plainObjects": [],
@@ -129,7 +127,6 @@
             "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
             "label": "sort",
             "objectIds": [
-                "c92d72f9-8790-40e8-8bbf-667aaa7f1d42",
                 "100af2a3-d6bd-400a-ab97-7c8dca11581f"
             ]
         }
