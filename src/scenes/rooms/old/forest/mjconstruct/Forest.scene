@@ -22,27 +22,13 @@
             "label": "bg",
             "components": [],
             "texture": {
-                "key": "forest",
-                "frame": "bg"
+                "key": "mjc-forest",
+                "frame": "testbg.png"
             },
             "x": -24,
             "y": -13,
             "originX": 0,
             "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "6e3db976-9917-4d00-b9c1-bf0c18983238",
-            "label": "rock0001",
-            "components": [],
-            "texture": {
-                "key": "forest",
-                "frame": "rock0001"
-            },
-            "x": 254,
-            "y": 681,
-            "originX": 0.6005747126436781,
-            "originY": 0.7300884955752213
         },
         {
             "type": "Image",
@@ -60,6 +46,31 @@
         },
         {
             "type": "Image",
+            "id": "3c3139c3-b2f5-435a-906f-1e1246605c68",
+            "label": "cac_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "cac.png"
+            },
+            "x": 275,
+            "y": 675.1922809869769,
+            "originY": 0.7108649065641125
+        },
+        {
+            "type": "Image",
+            "id": "da9b4717-0ef3-4c70-b2f0-6779c087416e",
+            "label": "barrel_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "barrel.png"
+            },
+            "x": 157,
+            "y": 574
+        },
+        {
+            "type": "Image",
             "id": "68230858-5ed1-4a66-b956-6f9ba462bf8b",
             "label": "fg",
             "components": [],
@@ -71,6 +82,30 @@
             "y": 969,
             "originX": 0,
             "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "1b4c8e25-fb7c-4e57-8181-a3ff06cc1db3",
+            "label": "back_logs_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "back_logs.png"
+            },
+            "x": 1204,
+            "y": 415
+        },
+        {
+            "type": "Image",
+            "id": "2b423f5b-9fd2-4e50-8286-907ad5886737",
+            "label": "front_log_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "front_log.png"
+            },
+            "x": 1192,
+            "y": 425
         },
         {
             "type": "Image",
@@ -101,6 +136,18 @@
         },
         {
             "type": "Image",
+            "id": "82f3edbe-a2b0-462e-9253-422490b17f52",
+            "label": "cac_right_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "cac_right.png"
+            },
+            "x": 1416,
+            "y": 516
+        },
+        {
+            "type": "Image",
             "id": "44a1f1df-8536-406f-a92e-d43130ae3799",
             "label": "rail",
             "components": [],
@@ -125,6 +172,114 @@
             "y": 681,
             "originX": 0.4794520547945205,
             "originY": 0.9397590361445783
+        },
+        {
+            "type": "Image",
+            "id": "3a4d6127-88be-45bb-b8d3-fb31df780d6b",
+            "label": "hay_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "hay.png"
+            },
+            "x": 378,
+            "y": 369
+        },
+        {
+            "type": "Image",
+            "id": "3938452a-44fd-4590-bf23-4b4bf866303e",
+            "label": "cone_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "cone.png"
+            },
+            "x": 254,
+            "y": 379
+        },
+        {
+            "type": "Image",
+            "id": "bbe7405b-def8-42d6-bac5-0e501766091f",
+            "label": "cone_png_1",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "cone.png"
+            },
+            "x": 509,
+            "y": 317
+        },
+        {
+            "type": "Image",
+            "id": "7a28658e-ecd9-4794-a381-1a1d63291679",
+            "label": "cone_png_2",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "cone.png"
+            },
+            "x": 451,
+            "y": 424
+        },
+        {
+            "type": "Image",
+            "id": "532919f7-d659-4e00-a709-db43b19ba3c9",
+            "label": "other_cone_png_1_1",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "other_cone.png"
+            },
+            "x": 1110,
+            "y": 583
+        },
+        {
+            "type": "Image",
+            "id": "f858aa99-5e9e-49e0-a01d-de974aa174d3",
+            "label": "coffee_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "coffee.png"
+            },
+            "x": 1035,
+            "y": 619
+        },
+        {
+            "type": "Image",
+            "id": "1b493747-e264-4474-8bce-5d37d88e2c03",
+            "label": "other_cone_png",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "other_cone.png"
+            },
+            "x": 908,
+            "y": 646
+        },
+        {
+            "type": "Image",
+            "id": "63b9c4b6-9743-4b45-8c2c-c1840e4c151d",
+            "label": "other_cone_png_1",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "other_cone.png"
+            },
+            "x": 1027,
+            "y": 742
+        },
+        {
+            "type": "Image",
+            "id": "a0045453-6a5e-46d7-b458-f83d18e756f0",
+            "label": "other_cone_png_2",
+            "components": [],
+            "texture": {
+                "key": "mjc-forest",
+                "frame": "other_cone.png"
+            },
+            "x": 1171,
+            "y": 685
         }
     ],
     "plainObjects": [],
@@ -144,7 +299,17 @@
                 "f375e9d0-76b5-4bff-a7bc-68ab12b63736",
                 "68230858-5ed1-4a66-b956-6f9ba462bf8b",
                 "a0c5ffb3-138e-40ad-a79c-f9bb8cb88507",
-                "6e3db976-9917-4d00-b9c1-bf0c18983238"
+                "3c3139c3-b2f5-435a-906f-1e1246605c68",
+                "da9b4717-0ef3-4c70-b2f0-6779c087416e",
+                "3938452a-44fd-4590-bf23-4b4bf866303e",
+                "bbe7405b-def8-42d6-bac5-0e501766091f",
+                "7a28658e-ecd9-4794-a381-1a1d63291679",
+                "3a4d6127-88be-45bb-b8d3-fb31df780d6b",
+                "f858aa99-5e9e-49e0-a01d-de974aa174d3",
+                "1b493747-e264-4474-8bce-5d37d88e2c03",
+                "63b9c4b6-9743-4b45-8c2c-c1840e4c151d",
+                "a0045453-6a5e-46d7-b458-f83d18e756f0",
+                "532919f7-d659-4e00-a709-db43b19ba3c9"
             ]
         }
     ]
