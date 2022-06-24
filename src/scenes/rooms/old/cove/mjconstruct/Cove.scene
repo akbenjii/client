@@ -1,5 +1,5 @@
 {
-    "id": "d9ec2b45-0f20-4af2-9643-f8f729be3d70",
+    "id": "3dd6bef7-7aa0-47b9-a51e-062c376d7bce",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -451,6 +451,46 @@
             "x": 1310,
             "y": 493,
             "originY": 0.5185185185185185
+        },
+        {
+            "type": "Image",
+            "id": "a906c087-4178-4b0d-a362-26e8e5c5ef32",
+            "label": "shadows",
+            "components": [],
+            "texture": {
+                "key": "mjc-cove",
+                "frame": "shadows"
+            },
+            "x": 840,
+            "y": 486
+        },
+        {
+            "type": "Image",
+            "id": "9dc6cab8-fa81-4a61-9504-c4bae58528be",
+            "label": "right_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-cove",
+                "frame": "right_box"
+            },
+            "x": 926,
+            "y": 412,
+            "scaleX": 0.6425939087230266,
+            "scaleY": 0.6425939087230266
+        },
+        {
+            "type": "Image",
+            "id": "e445d0c3-6a6e-4a8a-8350-ea187a28b939",
+            "label": "left_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-cove",
+                "frame": "left_box"
+            },
+            "x": 770,
+            "y": 453,
+            "scaleX": 0.6425939087230266,
+            "scaleY": 0.6425939087230266
         }
     ],
     "plainObjects": [],
