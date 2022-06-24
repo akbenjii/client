@@ -176,6 +176,115 @@
             "y": 748,
             "originX": 0.5043478260869565,
             "originY": 0.46
+        },
+        {
+            "type": "Image",
+            "id": "5d81afbf-7ec6-48cc-8358-e21aa041c684",
+            "label": "red_balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "red_balloons"
+            },
+            "x": 877,
+            "y": 236,
+            "angle": 15
+        },
+        {
+            "type": "Image",
+            "id": "ffaad2b7-7755-4f0c-ae95-7e8b4fc9c96b",
+            "label": "red_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "red_sign"
+            },
+            "x": 603,
+            "y": 88
+        },
+        {
+            "type": "Image",
+            "id": "9f1d49ec-d40b-438f-a6d1-05cd6f375f0c",
+            "label": "blue_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "blue_sign"
+            },
+            "x": 1443,
+            "y": 245
+        },
+        {
+            "type": "Image",
+            "id": "4faec9a9-b431-497d-97ae-4a9eac03ba8a",
+            "label": "flag_entry",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "flag_entry"
+            },
+            "x": 1220,
+            "y": 237
+        },
+        {
+            "type": "Image",
+            "id": "7fed27e5-0551-431e-9d62-288badd4868c",
+            "label": "flags",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "flags"
+            },
+            "x": 289,
+            "y": 481
+        },
+        {
+            "type": "Image",
+            "id": "db5a4476-89f4-4fb1-965c-ad2e3f1ddb46",
+            "label": "line_flag",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "line_flag"
+            },
+            "x": 282,
+            "y": 471
+        },
+        {
+            "type": "Image",
+            "id": "d42457a9-c6cd-4c09-a46c-f324c88f5bd1",
+            "label": "blue_balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "blue_balloons"
+            },
+            "x": 1443,
+            "y": 466
+        },
+        {
+            "type": "Image",
+            "id": "f71b4971-51e5-4553-bd6a-442efb4c3737",
+            "label": "banners",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "banners"
+            },
+            "x": 311,
+            "y": 36
+        },
+        {
+            "type": "Image",
+            "id": "119103ff-6d00-4fc4-9e9f-6d34d5352411",
+            "label": "streamers",
+            "components": [],
+            "texture": {
+                "key": "pg-book",
+                "frame": "streamers"
+            },
+            "x": 732,
+            "y": 24
         }
     ],
     "plainObjects": [],

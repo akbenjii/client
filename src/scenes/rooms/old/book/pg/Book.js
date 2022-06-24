@@ -19,7 +19,7 @@ export default class Book extends RoomScene {
         this.roomTriggers = {
             'coffee': () => this.triggerRoom(110, 1120, 800)
         }
-        this.music = 'coffee'
+        this.music = '240'
 
         /* END-USER-CTR-CODE */
     }
@@ -68,6 +68,34 @@ export default class Book extends RoomScene {
         // table_4
         const table_4 = this.add.image(1208, 748, "book", "table");
         table_4.setOrigin(0.5043478260869565, 0.46);
+
+        // red_balloons
+        const red_balloons = this.add.image(877, 236, "pg-book", "red_balloons");
+        red_balloons.angle = 15;
+
+        // red_sign
+        this.add.image(603, 88, "pg-book", "red_sign");
+
+        // blue_sign
+        this.add.image(1443, 245, "pg-book", "blue_sign");
+
+        // flag_entry
+        this.add.image(1220, 237, "pg-book", "flag_entry");
+
+        // flags
+        this.add.image(289, 481, "pg-book", "flags");
+
+        // line_flag
+        this.add.image(282, 471, "pg-book", "line_flag");
+
+        // blue_balloons
+        this.add.image(1443, 466, "pg-book", "blue_balloons");
+
+        // banners
+        this.add.image(311, 36, "pg-book", "banners");
+
+        // streamers
+        this.add.image(732, 24, "pg-book", "streamers");
 
         // lists
         const sort = [table_4, table_2, table_1, table, chair_table, chair_front, chair_back];
