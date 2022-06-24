@@ -124,8 +124,37 @@ export default class Rink extends RoomScene {
         // snacks_ring
         this.add.image(1250, 200, "rink", "snacks_ring");
 
+        // shadows
+        this.add.image(759, 554, "mjc-rink", "shadows");
+
+        // cone
+        const cone = this.add.image(995, 599, "mjc-rink", "cone");
+
+        // cone_1
+        const cone_1 = this.add.image(1146, 523, "mjc-rink", "cone");
+
+        // right_box
+        const right_box = this.add.image(1055, 412, "mjc-rink", "right_box");
+
+        // mid_right_box
+        const mid_right_box = this.add.image(923, 470, "mjc-rink", "mid_right_box");
+
+        // left_tabl
+        const left_tabl = this.add.image(423, 602, "mjc-rink", "left_tabl");
+        left_tabl.scaleX = 0.8;
+        left_tabl.scaleY = 0.8;
+        left_tabl.flipX = true;
+
+        // left_box
+        const left_box = this.add.image(506, 447, "mjc-rink", "left_box");
+        left_box.scaleX = 0.8;
+        left_box.scaleY = 0.8;
+
+        // music_box
+        const music_box = this.add.image(588, 543, "mjc-rink", "music_box");
+
         // lists
-        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border];
+        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border, cone, cone_1, mid_right_box, right_box, left_tabl, left_box, music_box];
 
         this.sort = sort;
 
