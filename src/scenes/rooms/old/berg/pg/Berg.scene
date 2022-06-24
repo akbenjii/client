@@ -51,6 +51,141 @@
             "x": 1255,
             "y": 325,
             "originY": 0.4014336917562724
+        },
+        {
+            "type": "Image",
+            "id": "22fcfd4f-22bb-48a5-b89e-0d967c8c3918",
+            "label": "flags",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "flags"
+            },
+            "x": 802,
+            "y": 160
+        },
+        {
+            "type": "Image",
+            "id": "676ca199-eec4-4a46-9c9b-c78b96d41ee8",
+            "label": "poles",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "poles"
+            },
+            "x": 703,
+            "y": 196
+        },
+        {
+            "type": "Sprite",
+            "id": "7ba37647-a8ea-4e31-9233-b4b44dc7d9d3",
+            "label": "winner",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "winner0003"
+            },
+            "x": 899,
+            "y": 199
+        },
+        {
+            "type": "Image",
+            "id": "3f0859c0-cc98-48d2-992a-84257ded1f2c",
+            "label": "podium",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "podium"
+            },
+            "x": 502,
+            "y": 254
+        },
+        {
+            "type": "Image",
+            "id": "ee0a335f-44b7-4150-8518-072a4835a2b7",
+            "label": "lights_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "lights_sign"
+            },
+            "x": 139,
+            "y": 238
+        },
+        {
+            "type": "Image",
+            "id": "cae692af-57ff-437f-b7de-71efadba96d9",
+            "label": "track",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "track"
+            },
+            "x": 679,
+            "y": 536
+        },
+        {
+            "type": "Image",
+            "id": "02d1cecd-9caf-482e-9de6-44ee041eec0d",
+            "label": "left_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "left_sign"
+            },
+            "x": 280,
+            "y": 327
+        },
+        {
+            "type": "Image",
+            "id": "1e893f31-66ec-4c32-a465-6fca825d2207",
+            "label": "right_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "right_sign"
+            },
+            "x": 450,
+            "y": 588
+        },
+        {
+            "type": "Image",
+            "id": "0febcb90-ffb9-4f4c-86ab-725f2ef001b8",
+            "label": "rightest_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "rightest_sign"
+            },
+            "x": 1007,
+            "y": 541
+        },
+        {
+            "type": "Image",
+            "id": "f245c0ba-3faa-43cc-bd42-6d904d1af3d6",
+            "label": "top_right_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "top_right_sign"
+            },
+            "x": 1094,
+            "y": 340
+        },
+        {
+            "type": "Image",
+            "id": "dd6fcf0a-e250-4517-9225-6c3fff79d502",
+            "label": "mid_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-berg",
+                "frame": "mid_sign"
+            },
+            "x": 480.8026440673506,
+            "y": 441.4079322020519,
+            "originX": 0.5185494832553689,
+            "originY": 0.5735995625938831
         }
     ],
     "plainObjects": [],
@@ -59,5 +194,17 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "05a5eaf2-ed49-49c9-99d6-17534496e791",
+            "label": "sort",
+            "objectIds": [
+                "02d1cecd-9caf-482e-9de6-44ee041eec0d",
+                "1e893f31-66ec-4c32-a465-6fca825d2207",
+                "0febcb90-ffb9-4f4c-86ab-725f2ef001b8",
+                "dd6fcf0a-e250-4517-9225-6c3fff79d502"
+            ]
+        }
+    ]
 }
