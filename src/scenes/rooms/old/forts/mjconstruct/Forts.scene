@@ -288,6 +288,109 @@
             "align": "center",
             "fontFamily": "Burbank Small",
             "fontSize": "45px"
+        },
+        {
+            "type": "Image",
+            "id": "272d2864-9333-40ad-b657-0276bc8ada38",
+            "label": "shadows",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "shadows"
+            },
+            "x": 757,
+            "y": 672
+        },
+        {
+            "type": "Image",
+            "id": "09387970-d469-4b8f-b121-323d1cadea74",
+            "label": "right_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "right_box"
+            },
+            "x": 1259,
+            "y": 539,
+            "scaleX": 0.9,
+            "scaleY": 0.9,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "7dd9700c-98ef-45d1-a7dd-27805d437927",
+            "label": "back_left_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "back_left_box"
+            },
+            "x": 210,
+            "y": 627
+        },
+        {
+            "type": "Image",
+            "id": "f28200e1-f8ed-40ff-bb1e-a74575edfc6a",
+            "label": "left_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "left_box"
+            },
+            "x": 210,
+            "y": 662
+        },
+        {
+            "type": "Image",
+            "id": "68586d7b-00eb-407e-bd60-9d469ed1321c",
+            "label": "blue_paint",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "blue_paint"
+            },
+            "x": 1113,
+            "y": 495,
+            "scaleX": 0.7,
+            "scaleY": 0.7
+        },
+        {
+            "type": "Image",
+            "id": "a10e93fc-b627-45af-bdc2-3de66b5cfdea",
+            "label": "stack_wood",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "stack_wood"
+            },
+            "x": 897,
+            "y": 726
+        },
+        {
+            "type": "Image",
+            "id": "b9f11fc0-307b-402c-a15f-5787d4c69b36",
+            "label": "worktable",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "worktable"
+            },
+            "x": 1145,
+            "y": 736
+        },
+        {
+            "type": "Image",
+            "id": "50b5cbcf-948b-4181-84ff-f3a5d668451e",
+            "label": "red_paint",
+            "components": [],
+            "texture": {
+                "key": "mjc-forts",
+                "frame": "red_paint"
+            },
+            "x": 477,
+            "y": 752,
+            "scaleX": 0.7,
+            "scaleY": 0.7
         }
     ],
     "plainObjects": [],
@@ -309,7 +412,12 @@
                 "160a46a9-aa94-4a18-bf7b-bc756cfe9394",
                 "56c1b41f-3f4f-4dc2-bf62-3703d68a7d75",
                 "6291cd2e-fc87-4b49-9dfe-87efcf8dca79",
-                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146"
+                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146",
+                "7dd9700c-98ef-45d1-a7dd-27805d437927",
+                "f28200e1-f8ed-40ff-bb1e-a74575edfc6a",
+                "09387970-d469-4b8f-b121-323d1cadea74",
+                "a10e93fc-b627-45af-bdc2-3de66b5cfdea",
+                "b9f11fc0-307b-402c-a15f-5787d4c69b36"
             ]
         }
     ]

@@ -130,8 +130,39 @@ export default class Forts extends RoomScene {
         clockTime.text = "12:58";
         clockTime.setStyle({ "align": "center", "fontFamily": "Burbank Small", "fontSize": "45px" });
 
+        // shadows
+        this.add.image(757, 672, "mjc-forts", "shadows");
+
+        // right_box
+        const right_box = this.add.image(1259, 539, "mjc-forts", "right_box");
+        right_box.scaleX = 0.9;
+        right_box.scaleY = 0.9;
+        right_box.flipX = true;
+
+        // back_left_box
+        const back_left_box = this.add.image(210, 627, "mjc-forts", "back_left_box");
+
+        // left_box
+        const left_box = this.add.image(210, 662, "mjc-forts", "left_box");
+
+        // blue_paint
+        const blue_paint = this.add.image(1113, 495, "mjc-forts", "blue_paint");
+        blue_paint.scaleX = 0.7;
+        blue_paint.scaleY = 0.7;
+
+        // stack_wood
+        const stack_wood = this.add.image(897, 726, "mjc-forts", "stack_wood");
+
+        // worktable
+        const worktable = this.add.image(1145, 736, "mjc-forts", "worktable");
+
+        // red_paint
+        const red_paint = this.add.image(477, 752, "mjc-forts", "red_paint");
+        red_paint.scaleX = 0.7;
+        red_paint.scaleY = 0.7;
+
         // lists
-        const sort = [red_flag, red_pole, blue_pole, blue_flag, blue_fort, red_fort_front, red_fort, snowballs];
+        const sort = [red_flag, red_pole, blue_pole, blue_flag, blue_fort, red_fort_front, red_fort, snowballs, back_left_box, left_box, right_box, stack_wood, worktable];
 
         // tower (components)
         const towerAnimation = new Animation(tower);
