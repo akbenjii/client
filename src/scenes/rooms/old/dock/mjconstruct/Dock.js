@@ -95,8 +95,33 @@ export default class Dock extends RoomScene {
         zone.isFilled = true;
         zone.fillColor = 65280;
 
+        // stage
+        this.add.image(763, 247, "mjc-dock", "stage");
+
+        // cone
+        const cone = this.add.image(680, 232, "mjc-dock", "cone");
+
+        // cone_1
+        const cone_1 = this.add.image(875, 200, "mjc-dock", "cone");
+
+        // shadows
+        this.add.image(908, 550, "mjc-dock", "shadows");
+
+        // right_box
+        this.add.image(1103, 543, "mjc-dock", "right_box");
+
+        // mid_box
+        const mid_box = this.add.image(857, 513, "mjc-dock", "mid_box");
+        mid_box.scaleX = 0.8077514335623961;
+        mid_box.scaleY = 0.8077514335623961;
+
+        // left_box
+        const left_box = this.add.image(655, 418, "mjc-dock", "left_box");
+        left_box.scaleX = 0.8077514335623961;
+        left_box.scaleY = 0.8077514335623961;
+
         // lists
-        const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box];
+        const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box, cone, cone_1];
 
         // boat (components)
         const boatButton = new Button(boat);

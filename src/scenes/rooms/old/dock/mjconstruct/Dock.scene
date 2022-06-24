@@ -223,6 +223,94 @@
             "fillColor": "#00ff00",
             "width": 135,
             "height": 160
+        },
+        {
+            "type": "Image",
+            "id": "d3cc3d72-1e22-4fb4-9872-3604befa4471",
+            "label": "stage",
+            "components": [],
+            "texture": {
+                "key": "mjc-dock",
+                "frame": "stage"
+            },
+            "x": 763,
+            "y": 247
+        },
+        {
+            "type": "Image",
+            "id": "00ed4a7b-933c-4f64-82ad-cefdb860dde2",
+            "label": "cone",
+            "components": [],
+            "texture": {
+                "key": "mjc-dock",
+                "frame": "cone"
+            },
+            "x": 680,
+            "y": 232
+        },
+        {
+            "type": "Image",
+            "id": "a5138f00-8753-47c3-beb5-c4e99caaa836",
+            "label": "cone_1",
+            "components": [],
+            "texture": {
+                "key": "mjc-dock",
+                "frame": "cone"
+            },
+            "x": 875,
+            "y": 200
+        },
+        {
+            "type": "Image",
+            "id": "ec9bb7e9-aaab-488c-8e9c-a45c2847bfe6",
+            "label": "shadows",
+            "components": [],
+            "texture": {
+                "key": "mjc-dock",
+                "frame": "shadows"
+            },
+            "x": 908,
+            "y": 550
+        },
+        {
+            "type": "Image",
+            "id": "ea6234dd-f06c-4ddf-898b-3566ca7a362d",
+            "label": "right_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-dock",
+                "frame": "right_box"
+            },
+            "x": 1103,
+            "y": 543
+        },
+        {
+            "type": "Image",
+            "id": "5835afdc-738a-4c0f-b28a-50037c237adf",
+            "label": "mid_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-dock",
+                "frame": "mid_box"
+            },
+            "x": 857,
+            "y": 513,
+            "scaleX": 0.8077514335623961,
+            "scaleY": 0.8077514335623961
+        },
+        {
+            "type": "Image",
+            "id": "1b26d29a-eec9-4ddf-8371-09ca14b36b6f",
+            "label": "left_box",
+            "components": [],
+            "texture": {
+                "key": "mjc-dock",
+                "frame": "left_box"
+            },
+            "x": 655,
+            "y": 418,
+            "scaleX": 0.8077514335623961,
+            "scaleY": 0.8077514335623961
         }
     ],
     "plainObjects": [],
@@ -245,7 +333,9 @@
                 "9e9fae00-3cf7-4877-a335-f8effc61638f",
                 "64b572bb-5e25-49eb-9f38-01a536a9605e",
                 "3a0e34c9-8797-4190-b347-45bbeb255dd3",
-                "7f5d0769-ef22-41fe-9394-3218ff57c8da"
+                "7f5d0769-ef22-41fe-9394-3218ff57c8da",
+                "00ed4a7b-933c-4f64-82ad-cefdb860dde2",
+                "a5138f00-8753-47c3-beb5-c4e99caaa836"
             ]
         }
     ]
