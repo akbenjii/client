@@ -8,7 +8,8 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/old/forts/forts-pack.json"
+            "client/assets/media/rooms/old/forts/forts-pack.json",
+            "client/assets/media/rooms/old/forts/pg/pgforts-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Forts",
@@ -29,6 +30,58 @@
             "y": -18,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "4da552be-2d5f-49fd-ab2e-32f85d1d3354",
+            "label": "trail",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "trail"
+            },
+            "x": 815.5336856276047,
+            "y": 896.6538976740572,
+            "originX": 0.5072947961410005,
+            "originY": 1.0157917840767468
+        },
+        {
+            "type": "Image",
+            "id": "185c978a-4f5e-4611-bc2c-43bbf18ca290",
+            "label": "hockey_trig",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "hockey_trig"
+            },
+            "x": 907,
+            "y": 224
+        },
+        {
+            "type": "Image",
+            "id": "25c17292-1cf1-4b35-86e1-fd7a76bd1388",
+            "label": "snow_left",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "snow_left"
+            },
+            "x": 241,
+            "y": 391
+        },
+        {
+            "type": "Image",
+            "id": "9bdc2229-6b3a-4874-9fb2-e53e9334e777",
+            "label": "left_inner_upper_rope",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "left_inner_upper_rope"
+            },
+            "x": 539.8771991416851,
+            "y": 781.1710942063739,
+            "originX": 0.4770873556075875,
+            "originY": 0.975473317839883
         },
         {
             "type": "Image",
@@ -82,6 +135,20 @@
             "x": 993,
             "y": 424,
             "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "37dd473e-bbd4-4fa7-979c-97b716777d5a",
+            "label": "right_lower_rope",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "right_lower_rope"
+            },
+            "x": 1272.122800858315,
+            "y": 867.0789935626377,
+            "originX": 0.5059623341221562,
+            "originY": 0.941744256465911
         },
         {
             "type": "Image",
@@ -221,7 +288,7 @@
             "Animation.key": "red_flag",
             "Animation.end": 16,
             "texture": {
-                "key": "forts",
+                "key": "pg-forts",
                 "frame": "red_flag0001"
             },
             "x": 626,
@@ -288,6 +355,181 @@
             "align": "center",
             "fontFamily": "Burbank Small",
             "fontSize": "45px"
+        },
+        {
+            "type": "Image",
+            "id": "d7e19a2c-046d-4dab-a219-36db5a66751f",
+            "label": "bottom_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "bottom_flags"
+            },
+            "x": 449,
+            "y": 279
+        },
+        {
+            "type": "Image",
+            "id": "6d00b384-5a92-4a8b-8a67-68a59b8ca64e",
+            "label": "peng_stad",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "peng_stad"
+            },
+            "x": 646,
+            "y": 245
+        },
+        {
+            "type": "Image",
+            "id": "0cae3d20-a415-492a-ab79-a31166f91d7d",
+            "label": "peng_stad_text",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "peng_stad_text"
+            },
+            "x": 647,
+            "y": 226,
+            "scaleX": 0.7954759345831319,
+            "scaleY": 0.7954759345831319
+        },
+        {
+            "type": "Image",
+            "id": "6ab012ab-86c3-41a5-88f3-3745803ce326",
+            "label": "red_seats",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "red_seats"
+            },
+            "x": 265,
+            "y": 242
+        },
+        {
+            "type": "Image",
+            "id": "b9316d85-241b-4189-b90e-3df257c1a2e2",
+            "label": "red_fort_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "red_fort_flags"
+            },
+            "x": 584,
+            "y": 632
+        },
+        {
+            "type": "Image",
+            "id": "2fe09049-a9dd-42d7-a6dd-c4aeba3ecb90",
+            "label": "left_trees",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "left_trees"
+            },
+            "x": 127,
+            "y": 626
+        },
+        {
+            "type": "Image",
+            "id": "d90dc566-e833-48c6-8f3e-65408abd6592",
+            "label": "left_inner_rope",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "left_inner_rope"
+            },
+            "x": 208,
+            "y": 466
+        },
+        {
+            "type": "Image",
+            "id": "bcad5e2e-30e8-4251-b882-cf9a1946eaa9",
+            "label": "right_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "right_sign"
+            },
+            "x": 1397,
+            "y": 693,
+            "originY": 0.4307715835939066
+        },
+        {
+            "type": "Image",
+            "id": "8793bef1-8a29-4ade-a630-02cc961cb00c",
+            "label": "left_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "left_sign"
+            },
+            "x": 448,
+            "y": 726
+        },
+        {
+            "type": "Image",
+            "id": "44ea7b72-208e-4246-b70a-b73e3c13083d",
+            "label": "blue_fort_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "blue_fort_flags"
+            },
+            "x": 952,
+            "y": 427
+        },
+        {
+            "type": "Image",
+            "id": "1a00b388-b565-446d-ade1-2ddf52cfeadc",
+            "label": "blue_fort_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "blue_fort_sign"
+            },
+            "x": 1086,
+            "y": 441
+        },
+        {
+            "type": "Image",
+            "id": "9ac33aa3-6fb8-4e8f-92bd-fa8fd0f4e00d",
+            "label": "red_fort_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "red_fort_sign"
+            },
+            "x": 733,
+            "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "52311126-e603-47a7-9131-11a7a71a3ba6",
+            "label": "right_upper_rope",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "right_upper_rope"
+            },
+            "x": 1324.0261117905147,
+            "y": 728.1270845756127,
+            "originX": 0.6230365021144391,
+            "originY": 0.9383648612746027
+        },
+        {
+            "type": "Image",
+            "id": "59949969-c985-4c02-832b-787fd5845c12",
+            "label": "mid_inner_rope",
+            "components": [],
+            "texture": {
+                "key": "pg-forts",
+                "frame": "mid_inner_rope"
+            },
+            "x": 598.1535010728937,
+            "y": 658.1842012874724,
+            "originX": 0.5119312586050455,
+            "originY": 0.5241750025545088
         }
     ],
     "plainObjects": [],
@@ -309,7 +551,12 @@
                 "160a46a9-aa94-4a18-bf7b-bc756cfe9394",
                 "56c1b41f-3f4f-4dc2-bf62-3703d68a7d75",
                 "6291cd2e-fc87-4b49-9dfe-87efcf8dca79",
-                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146"
+                "1f0cdaf0-e9e6-4541-a76f-2a26400b2146",
+                "52311126-e603-47a7-9131-11a7a71a3ba6",
+                "37dd473e-bbd4-4fa7-979c-97b716777d5a",
+                "9bdc2229-6b3a-4874-9fb2-e53e9334e777",
+                "8793bef1-8a29-4ade-a630-02cc961cb00c",
+                "bcad5e2e-30e8-4251-b882-cf9a1946eaa9"
             ]
         }
     ]

@@ -11,7 +11,7 @@
             "client/assets/media/rooms/old/rink/pg/gamesrink-pack.json"
         ],
         "createMethodName": "_create",
-        "sceneKey": "Rink",
+        "sceneKey": "GamesRink",
         "borderWidth": 1520,
         "borderHeight": 960
     },
@@ -85,8 +85,10 @@
                 "key": "pg-partyroom",
                 "frame": "fg"
             },
-            "x": 765,
-            "y": 715
+            "x": 763,
+            "y": 715,
+            "scaleX": 1.0180669338742292,
+            "scaleY": 1.0180669338742292
         },
         {
             "type": "Image",
@@ -146,7 +148,9 @@
                 "frame": "outer_trees"
             },
             "x": 763,
-            "y": 420
+            "y": 420,
+            "scaleX": 1.0151951293913304,
+            "scaleY": 1.0151951293913304
         },
         {
             "type": "Image",

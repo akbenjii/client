@@ -3,10 +3,10 @@ import RoomScene from '@scenes/rooms/RoomScene'
 
 /* START OF COMPILED CODE */
 
-export default class Rink extends RoomScene {
+export default class GamesRink extends RoomScene {
 
     constructor() {
-        super("Rink");
+        super("GamesRink");
 
         /** @type {Array<any>} */
         this.sort;
@@ -17,6 +17,7 @@ export default class Rink extends RoomScene {
         this.roomTriggers = {
             'forts': () => this.triggerRoom(801, 560, 400)
         }
+        this.music='240'
 
         /* END-USER-CTR-CODE */
     }
@@ -46,7 +47,9 @@ export default class Rink extends RoomScene {
         this.add.image(1058, 806, "pg-partyroom", "rock_bottom");
 
         // fg
-        this.add.image(765, 715, "pg-partyroom", "fg");
+        const fg = this.add.image(763, 715, "pg-partyroom", "fg");
+        fg.scaleX = 1.0180669338742292;
+        fg.scaleY = 1.0180669338742292;
 
         // right_trees
         this.add.image(1330, 191, "pg-partyroom", "right_trees");
@@ -61,7 +64,9 @@ export default class Rink extends RoomScene {
         this.add.image(1419, 320, "pg-partyroom", "blue_sign");
 
         // outer_trees
-        this.add.image(763, 420, "pg-partyroom", "outer_trees");
+        const outer_trees = this.add.image(763, 420, "pg-partyroom", "outer_trees");
+        outer_trees.scaleX = 1.0151951293913304;
+        outer_trees.scaleY = 1.0151951293913304;
 
         // rock_top
         this.add.image(478, 223, "pg-partyroom", "rock_top");
