@@ -14,7 +14,9 @@ export default class Dock extends RoomScene {
         this.boat;
         /** @type {Phaser.GameObjects.Sprite} */
         this.rings;
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fire_mountain;
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Rectangle>} */
         this.sort;
 
 
@@ -26,6 +28,8 @@ export default class Dock extends RoomScene {
             'town': () => this.triggerRoom(100, 368, 640),
             'hydro': () => this.triggerGame('HydroHopper', 924)
         }
+        this.roomAnims = true
+        this.music='213'
 
         /* END-USER-CTR-CODE */
     }
@@ -40,8 +44,21 @@ export default class Dock extends RoomScene {
     _create() {
 
         // dock_bg_2005
-        const dock_bg_2005 = this.add.image(-48, 0, "dock", "bg");
+        const dock_bg_2005 = this.add.image(-48, 0, "pg-dock", "bg_test");
         dock_bg_2005.setOrigin(0, 0);
+
+        // shadows
+        this.add.image(952, 443, "pg-dock", "shadows");
+
+        // trail
+        this.add.image(772, 527, "pg-dock", "trail");
+
+        // right_trees
+        this.add.image(1385, 487, "pg-dock", "right_trees");
+
+        // bottom_rope
+        const bottom_rope = this.add.image(774, 925.4038968254793, "pg-dock", "bottom_rope");
+        bottom_rope.setOrigin(0.5, 1.165615338316542);
 
         // post_1
         const post_1 = this.add.image(443, 592, "dock", "post_1");
@@ -83,11 +100,8 @@ export default class Dock extends RoomScene {
         const rings = this.add.sprite(632, 668, "dock", "rings0001");
         rings.setOrigin(0.4975124378109453, 0.8127659574468085);
 
-        // right_sign
-        this.add.image(1366, 270, "dock", "right_sign");
-
-        // left_sign
-        this.add.image(120, 345, "dock", "left_sign");
+        // upper_rope
+        this.add.image(799, 464, "pg-dock", "upper_rope");
 
         // zone
         const zone = this.add.rectangle(631, 633, 135, 160);
@@ -95,8 +109,80 @@ export default class Dock extends RoomScene {
         zone.isFilled = true;
         zone.fillColor = 65280;
 
+        // break_sign
+        this.add.image(562, 164, "pg-dock", "break_sign");
+
+        // coffee_stand
+        const coffee_stand = this.add.image(982, 209, "pg-dock", "coffee_stand");
+        coffee_stand.setOrigin(0.5228081990685929, 0.7792487883304994);
+
+        // resulting_spill
+        this.add.image(1118, 305, "pg-dock", "resulting_spill");
+
+        // spill_coffee
+        this.add.image(1153, 292, "pg-dock", "spill_coffee");
+
+        // chair
+        const chair = this.add.image(723, 394, "pg-dock", "chair");
+
+        // chair_1
+        const chair_1 = this.add.image(872, 396, "pg-dock", "chair");
+        chair_1.flipX = true;
+
+        // left_table
+        const left_table = this.add.image(813, 425, "pg-dock", "left_table");
+        left_table.angle = -21;
+        left_table.setOrigin(0.4541006063491494, 0.7113315097623216);
+        left_table.flipX = true;
+
+        // chair_2
+        const chair_2 = this.add.image(1008, 360, "pg-dock", "chair");
+
+        // chair_1_1
+        const chair_1_1 = this.add.image(1152, 359, "pg-dock", "chair");
+        chair_1_1.flipX = true;
+
+        // left_table_1
+        const left_table_1 = this.add.image(1072, 398, "pg-dock", "left_table");
+        left_table_1.angle = 21;
+        left_table_1.setOrigin(0.5966025246423126, 0.7975379253731029);
+
+        // chair_3
+        const chair_3 = this.add.image(936, 596, "pg-dock", "chair");
+
+        // chair_1_2
+        const chair_1_2 = this.add.image(1096, 602, "pg-dock", "chair");
+        chair_1_2.setOrigin(0.47762945911386245, 0.5177765905255914);
+        chair_1_2.flipX = true;
+
+        // bottom_table
+        const bottom_table = this.add.image(1009, 637, "pg-dock", "bottom_table");
+        bottom_table.angle = 15;
+        bottom_table.setOrigin(0.5487013705409769, 0.7006174581589748);
+
+        // bottom_table_coffee
+        const bottom_table_coffee = this.add.image(1012, 582, "pg-dock", "bottom_table_coffee");
+        bottom_table_coffee.angle = 14;
+
+        // fire_mountain
+        const fire_mountain = this.add.sprite(275, 55, "pg-dock", "fire_mountain0001");
+        fire_mountain.scaleX = 0.20389227085632977;
+        fire_mountain.scaleY = 0.20389227085632977;
+
+        // fire_holder
+        this.add.image(274, 74, "pg-dock", "fire_holder");
+
+        // left_rope_far
+        this.add.image(17, 335, "pg-dock", "left_rope_far");
+
+        // left_sign
+        const left_sign = this.add.image(491, 389, "pg-dock", "left_sign");
+
+        // right_sign
+        const right_sign = this.add.image(1261, 326, "pg-dock", "right_sign");
+
         // lists
-        const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box];
+        const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box, chair, left_table, left_table_1, chair_2, chair_1_1, chair_3, chair_1_2, bottom_table, coffee_stand, bottom_rope, chair_1, zone, left_sign, right_sign];
 
         // boat (components)
         const boatButton = new Button(boat);
@@ -121,6 +207,7 @@ export default class Dock extends RoomScene {
 
         this.boat = boat;
         this.rings = rings;
+        this.fire_mountain = fire_mountain;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -131,6 +218,7 @@ export default class Dock extends RoomScene {
 
     create() {
         super.create()
+        this.fire_mountain.play('mountain_flame')
 
         this.up = false
 
