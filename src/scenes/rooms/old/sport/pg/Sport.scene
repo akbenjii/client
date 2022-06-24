@@ -1,0 +1,270 @@
+{
+    "id": "e900284a-c1eb-40c2-b225-1e1ebefe8588",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/sport/sport-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Sport",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "676cc899-fbe4-44cd-bc0f-72e201d9b658",
+            "label": "bg_sport",
+            "components": [],
+            "texture": {
+                "key": "2005_ss_bg"
+            },
+            "x": 760,
+            "y": 480,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "4907a3f5-f9e8-4870-b492-9db2090f1236",
+            "label": "box_png-sports",
+            "components": [],
+            "texture": {
+                "key": "sport",
+                "frame": "box.png"
+            },
+            "x": 42,
+            "y": 782
+        },
+        {
+            "type": "Image",
+            "id": "ce33728d-37a5-4f0a-b5e2-a2bc615d7efb",
+            "label": "orange_thing_png",
+            "components": [],
+            "texture": {
+                "key": "sport",
+                "frame": "orange-thing.png"
+            },
+            "x": 100,
+            "y": 667,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "c3c302b2-3ca9-4f53-9808-235dcd85afa9",
+            "label": "door-sports",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door-sports",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 1080,
+            "MoveTo.y": 466,
+            "texture": {
+                "key": "sport",
+                "frame": "door-sports"
+            },
+            "x": 1020,
+            "y": 134,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "a9d18d21-43ae-404c-8a07-6c953e747c7c",
+            "label": "light_png",
+            "components": [],
+            "texture": {
+                "key": "sport",
+                "frame": "light.png"
+            },
+            "x": 1422,
+            "y": 98,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "b5bf0ced-cfbc-41db-8b72-2706dad60698",
+            "label": "table_png",
+            "components": [],
+            "texture": {
+                "key": "sport",
+                "frame": "table.png"
+            },
+            "x": 1345,
+            "y": 555,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "0945ebf8-ca9b-4203-9031-e1fdd526df72",
+            "label": "phonesport",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPhoneOver()",
+            "texture": {
+                "key": "sport",
+                "frame": "phone0001.png"
+            },
+            "x": 1417.9999999999998,
+            "y": 593.6782389860813,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originX": 0.49999999999999717,
+            "originY": 0.9512601707596817
+        },
+        {
+            "type": "Sprite",
+            "id": "c98542c7-5e2f-4022-8e9a-8b486df20292",
+            "label": "regsports",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onRegOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onRegOut()",
+            "texture": {
+                "key": "sport",
+                "frame": "register-hover0001.png"
+            },
+            "x": 1272.0518969377288,
+            "y": 579.2111665465218,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originX": 0.4261133151493179,
+            "originY": 1.3618967702581766
+        },
+        {
+            "type": "Image",
+            "id": "07b903f9-610f-43de-8030-8d7c0c13f7b0",
+            "label": "sshop-book",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "sshop-book",
+            "Button.callback": "() => this.interface.loadExternal('ClothingCatalog')",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "sport-og",
+                "frame": "sshop-book"
+            },
+            "x": 1340,
+            "y": 1055,
+            "originX": 0,
+            "originY": 2
+        },
+        {
+            "type": "Image",
+            "id": "27b05c71-82a8-4f5e-bf19-7212afa14bcd",
+            "label": "tube2_png",
+            "components": [],
+            "texture": {
+                "key": "sport",
+                "frame": "tube2.png"
+            },
+            "x": 168,
+            "y": 757
+        },
+        {
+            "type": "Image",
+            "id": "4781c3e1-9403-4ae2-bbde-de05c4fc7ee8",
+            "label": "tube1_png",
+            "components": [],
+            "texture": {
+                "key": "sport",
+                "frame": "tube1.png"
+            },
+            "x": 168,
+            "y": 808
+        },
+        {
+            "type": "Sprite",
+            "id": "179bd9f8-c8f2-4eef-b41f-e72cf07e1524",
+            "label": "speakersport",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onSpeakerOver()",
+            "texture": {
+                "key": "sport",
+                "frame": "speaker0001.png"
+            },
+            "x": -2,
+            "y": 170,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "a52ec4e6-f4e1-41c1-a6bd-d8e7003382e1",
+            "label": "ss-book-hover",
+            "components": [],
+            "texture": {
+                "key": "ss-book-hover"
+            },
+            "x": 1413,
+            "y": 868,
+            "alpha": 0,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "ded248dc-7c46-427c-8ecb-8d8d666fa207",
+            "label": "secret_room",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "secret-room",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 429,
+            "MoveTo.y": 550,
+            "texture": {
+                "key": "sport-og",
+                "frame": "secret-room"
+            },
+            "x": 402,
+            "y": 420
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1681a4fd-4c56-40ad-ac4f-dad90fd8df81",
+            "label": "sort",
+            "objectIds": [
+                "c98542c7-5e2f-4022-8e9a-8b486df20292",
+                "0945ebf8-ca9b-4203-9031-e1fdd526df72",
+                "b5bf0ced-cfbc-41db-8b72-2706dad60698"
+            ]
+        }
+    ]
+}

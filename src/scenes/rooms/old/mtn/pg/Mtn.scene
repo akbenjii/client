@@ -1,0 +1,582 @@
+{
+    "id": "c6f5636b-d3ba-4ce2-bc1d-af06cb6a7d61",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/mtn/mtn-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Mtn",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "9276e7ab-0fd9-44c4-a644-321d4c8c2888",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "bg"
+            },
+            "x": -21,
+            "y": -19,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "eaf9e9be-ca78-4327-be22-3bddc6fb28a7",
+            "label": "chair",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "chair/chair",
+            "Animation.end": 87,
+            "texture": {
+                "key": "mtn",
+                "frame": "chair/chair0001"
+            },
+            "x": 846,
+            "y": 75,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "1abbdc89-c43a-40a3-9750-3d0d7a800f8e",
+            "label": "mountain",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "mountain"
+            },
+            "x": -21,
+            "y": 214,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "9aa8b583-902d-4dfe-a8cf-cc853faf2676",
+            "label": "pole",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "pole"
+            },
+            "x": 727,
+            "y": 359,
+            "originX": 0.6204081632653061,
+            "originY": 0.9194630872483222
+        },
+        {
+            "type": "Image",
+            "id": "124720c1-f214-45b6-88d4-0325da8e2114",
+            "label": "sled",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "sled"
+            },
+            "x": 532,
+            "y": 284,
+            "originX": 0.8289473684210527,
+            "originY": 0.7647058823529411
+        },
+        {
+            "type": "Image",
+            "id": "cd1933ae-fcd6-41e3-96e7-4b9b0636560b",
+            "label": "catalog_small",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "catalog_small"
+            },
+            "x": 520,
+            "y": 407,
+            "originX": 0.49230769230769234,
+            "originY": 3.685185185185185
+        },
+        {
+            "type": "Image",
+            "id": "1c5792fa-1ebb-4c76-80a3-3844bf374b53",
+            "label": "barrier_1",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "barrier_1"
+            },
+            "x": 282,
+            "y": 533,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "74c6b487-49c2-4d99-91de-5cbcd18b710c",
+            "label": "barrier_1_1",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "barrier_1"
+            },
+            "x": 341,
+            "y": 572,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "3f89ca97-4ee3-4e70-a2c7-cc6c53d3a3bd",
+            "label": "barrier_1_2",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "barrier_1"
+            },
+            "x": 404,
+            "y": 612,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "c083ad69-215c-4727-aa47-c688074f9421",
+            "label": "barrier_1_3",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "barrier_1"
+            },
+            "x": 584,
+            "y": 697,
+            "angle": -15,
+            "originY": 0.45901639344262296
+        },
+        {
+            "type": "Image",
+            "id": "2d86727f-e5d7-4a89-a46d-846b9a9f71d9",
+            "label": "barrier_2",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "barrier_2"
+            },
+            "x": 654,
+            "y": 707,
+            "originX": 0.48,
+            "originY": 0.47761194029850745
+        },
+        {
+            "type": "Image",
+            "id": "41ffb611-2532-4e73-8664-f5143a98ab87",
+            "label": "barrier_2_1",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "barrier_2"
+            },
+            "x": 902,
+            "y": 747,
+            "originX": 0.48,
+            "originY": 0.47761194029850745
+        },
+        {
+            "type": "Image",
+            "id": "c78f0d5e-64d2-4bf0-a7bf-d520a4b369a4",
+            "label": "barrier_1_4",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "barrier_1"
+            },
+            "x": 1120,
+            "y": 651,
+            "originY": 0.45901639344262296,
+            "flipX": true
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "02e8351f-9f29-4051-9849-3bbbddc6f6b2",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat11",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "x": 1155,
+            "y": 638,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "8cc0a685-0b54-41bb-b9e7-4eda7a2d30a4",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat10",
+            "sitFrame": 24,
+            "offsetX": -100,
+            "offsetY": -70,
+            "components": [],
+            "x": 1093,
+            "y": 676,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "597ca950-0087-4d7f-9de5-8d1c5398a36b",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat9",
+            "sitFrame": 17,
+            "offsetX": -10,
+            "offsetY": -90,
+            "components": [],
+            "x": 955,
+            "y": 744,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "8a9bb92e-9230-4dbc-8230-8cdee802ff6e",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat8",
+            "sitFrame": 17,
+            "offsetX": -10,
+            "offsetY": -90,
+            "components": [],
+            "x": 857,
+            "y": 745,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "4c265076-721c-4771-af6a-a97326296074",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat7",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -70,
+            "components": [],
+            "x": 698,
+            "y": 703,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "20e8b41d-be5a-4d36-a616-0def9e56e144",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat6",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -70,
+            "components": [],
+            "x": 561,
+            "y": 673,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "4d168170-6546-463f-a9b9-9ba6e5bea7ce",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat5",
+            "sitFrame": 18,
+            "offsetX": 10,
+            "offsetY": -110,
+            "components": [],
+            "x": 612,
+            "y": 713,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "d5eb78f1-0571-400c-9abc-45fc98cf6944",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat4",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 252,
+            "y": 519,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "39c72255-323b-48ea-a437-2e3915eb61d3",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat3",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 307,
+            "y": 550,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "c2949750-a722-445d-9dc8-31102e520741",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat2",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 369,
+            "y": 590,
+            "visible": false
+        },
+        {
+            "prefabId": "70bb238e-a4a2-4e0d-befb-3abd3b04f9ec",
+            "id": "50081472-c653-42f0-a728-d2165700933c",
+            "unlock": [
+                "frame",
+                "sitFrame",
+                "offsetX",
+                "offsetY",
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "mtnSeat1",
+            "sitFrame": 18,
+            "offsetX": 90,
+            "offsetY": -70,
+            "components": [],
+            "x": 433,
+            "y": 618,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "85cf3723-7671-4140-a0c0-d0f430f57910",
+            "label": "express",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "express"
+            },
+            "x": 1065,
+            "y": 809,
+            "originX": 0.4647887323943662,
+            "originY": 0.875
+        },
+        {
+            "type": "Image",
+            "id": "7bbb8294-2b6c-499d-a669-848e6a4508ca",
+            "label": "penguin_run",
+            "components": [],
+            "texture": {
+                "key": "mtn",
+                "frame": "penguin_run"
+            },
+            "x": 524,
+            "y": 606,
+            "originX": 0.6390977443609023,
+            "originY": 0.943089430894309
+        },
+        {
+            "type": "Rectangle",
+            "id": "ef9b8944-1657-4c42-93e1-635ccc3f68d1",
+            "label": "zone4",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 1127,
+            "y": 657,
+            "angle": -33,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 180,
+            "height": 90
+        },
+        {
+            "type": "Rectangle",
+            "id": "d637b1ba-4403-4f67-8df7-3e2a39c20182",
+            "label": "zone3",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 899,
+            "y": 753,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 180,
+            "height": 90
+        },
+        {
+            "type": "Rectangle",
+            "id": "fae5d3e7-f9ac-4eb1-af04-c7191621bab5",
+            "label": "zone2",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 633,
+            "y": 709,
+            "angle": 11,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 200,
+            "height": 90
+        },
+        {
+            "type": "Rectangle",
+            "id": "e7292dc1-8f98-4fc6-b456-4d5a059a7447",
+            "label": "zone1",
+            "components": [
+                "MoveTo"
+            ],
+            "x": 334,
+            "y": 568,
+            "angle": 33,
+            "visible": false,
+            "alpha": 0.5,
+            "isFilled": true,
+            "fillColor": "#00ff00",
+            "width": 230,
+            "height": 90
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5ae19c1d-cf39-4d6e-a5fa-935dde376775",
+            "label": "sort",
+            "objectIds": [
+                "7bbb8294-2b6c-499d-a669-848e6a4508ca",
+                "85cf3723-7671-4140-a0c0-d0f430f57910",
+                "9aa8b583-902d-4dfe-a8cf-cc853faf2676"
+            ]
+        },
+        {
+            "id": "50ae0d6b-f6fe-43cd-95bf-30cca672f3b5",
+            "label": "seats100",
+            "objectIds": [
+                "d5eb78f1-0571-400c-9abc-45fc98cf6944",
+                "39c72255-323b-48ea-a437-2e3915eb61d3",
+                "c2949750-a722-445d-9dc8-31102e520741",
+                "50081472-c653-42f0-a728-d2165700933c"
+            ]
+        },
+        {
+            "id": "b7d373e1-2011-49f3-bcab-780ba486d3a2",
+            "label": "seats101",
+            "objectIds": [
+                "20e8b41d-be5a-4d36-a616-0def9e56e144",
+                "4d168170-6546-463f-a9b9-9ba6e5bea7ce",
+                "4c265076-721c-4771-af6a-a97326296074"
+            ]
+        },
+        {
+            "id": "8516ca30-9631-4346-a00e-49dd0c77be70",
+            "label": "seats102",
+            "objectIds": [
+                "8a9bb92e-9230-4dbc-8230-8cdee802ff6e",
+                "597ca950-0087-4d7f-9de5-8d1c5398a36b"
+            ]
+        },
+        {
+            "id": "40251ac7-a077-49fa-a22f-5ab7edfd2970",
+            "label": "seats103",
+            "objectIds": [
+                "8cc0a685-0b54-41bb-b9e7-4eda7a2d30a4",
+                "02e8351f-9f29-4051-9849-3bbbddc6f6b2"
+            ]
+        }
+    ]
+}

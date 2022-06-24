@@ -1,0 +1,424 @@
+{
+    "id": "9c59d10b-18d3-41b7-91ea-bb2881586b13",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/pizza/pizza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pizza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d0cfa4ba-ab30-4119-873c-a8d53a9b3649",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "bg.png"
+            },
+            "x": 760,
+            "y": 483,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ef9415db-d5f4-4f8f-8c9a-efbdc88c2928",
+            "label": "bead_door_hover0001_png",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "bead-door.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Pizzatron 3000",
+            "MoveTo.x": 384,
+            "MoveTo.y": 405,
+            "texture": {
+                "key": "pizza",
+                "frame": "bead-door.png"
+            },
+            "x": 385,
+            "y": 241,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ad4b0ec4-6dba-41d9-a8ff-158d371f25bd",
+            "label": "piano_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "piano.png"
+            },
+            "x": 1265.6137794715412,
+            "y": 446.7720125239132,
+            "originX": 0.1497106693675879,
+            "originY": 0.6223623642170768
+        },
+        {
+            "type": "Image",
+            "id": "9adaefc9-6c53-46f5-8055-7d1770cb32b2",
+            "label": "door_png",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 837,
+            "MoveTo.y": 260,
+            "texture": {
+                "key": "pizza",
+                "frame": "door.png"
+            },
+            "x": 837,
+            "y": 265,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "388a1503-f19e-4571-8a4b-986fc10e0d9f",
+            "label": "pizza_pan_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pizza-pan.png"
+            },
+            "x": 187,
+            "y": 515,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ad3f711b-129a-48e8-9f6d-140a1b274e9a",
+            "label": "oven_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "oven.png"
+            },
+            "x": 110,
+            "y": 457,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ff3f49b7-cf8c-46cc-b659-d7f08cbbce2c",
+            "label": "foreground_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "foreground.png"
+            },
+            "x": 112,
+            "y": 874,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "3b151ac8-987e-450a-b475-2341eed910f9",
+            "label": "chair1_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair1.png"
+            },
+            "x": 414,
+            "y": 609,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "7ce131d9-d215-42e6-9be8-eec417c8d274",
+            "label": "chair2_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair2.png"
+            },
+            "x": 577,
+            "y": 609,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "6a89f1c7-8080-4aff-abdf-bd379ab63cec",
+            "label": "chair3_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair3.png"
+            },
+            "x": 677,
+            "y": 719,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "42a60545-eaf0-46cf-9e37-86a9e9d5f061",
+            "label": "chair4_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair4.png"
+            },
+            "x": 840,
+            "y": 719
+        },
+        {
+            "type": "Image",
+            "id": "10052db6-24f2-4671-8a2e-6fa20de0c8f2",
+            "label": "chair5_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair5.png"
+            },
+            "x": 987,
+            "y": 687,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "63b3a44c-7c80-4b00-9190-71e68ce2991e",
+            "label": "chair6_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "chair6.png"
+            },
+            "x": 1159,
+            "y": 687,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "665558e4-4b4a-44e1-89b8-956170cd15cb",
+            "label": "table1_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "table1.png"
+            },
+            "x": 494,
+            "y": 664,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "907aa007-7e7d-4885-a14a-4d909d297533",
+            "label": "table2_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "table2.png"
+            },
+            "x": 763,
+            "y": 775,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "048c5276-2f77-4a67-8aad-a2f4c99da239",
+            "label": "table3_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "table3.png"
+            },
+            "x": 1071,
+            "y": 735,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "ae9541d7-60c0-4547-857a-54c70dedbf8c",
+            "label": "candle_fire10001_png",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "candle-fire10001.png"
+            },
+            "x": 497.5719885381547,
+            "y": 720.801146184529,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "originX": 0.3095984717539598,
+            "originY": 6.846717608201288
+        },
+        {
+            "type": "Image",
+            "id": "294e365a-6a35-4087-b7b4-dfa24bc9c77a",
+            "label": "big_table_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "big-table.png"
+            },
+            "x": 528,
+            "y": 433,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "e064cf44-4cdd-4ad3-b14d-5ad54bd22dd3",
+            "label": "candle_fire2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "candle-fire10001.png"
+            },
+            "x": 760.4280114618452,
+            "y": 782.8207450199438,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "originX": 0.6904015282460326,
+            "originY": 4.625366445330838
+        },
+        {
+            "type": "Sprite",
+            "id": "ae35bdc6-af14-4d45-807f-fa3f4d09c53b",
+            "label": "register0001_png",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onRegOver()",
+            "SimpleButton.hoverOutCallback": "",
+            "texture": {
+                "key": "pizza",
+                "frame": "register0001.png"
+            },
+            "x": 463,
+            "y": 458.6180623621998,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originY": 1.526408462818685
+        },
+        {
+            "type": "Sprite",
+            "id": "1b50965b-ae9a-4c0a-967a-354011cbbc38",
+            "label": "candle_fire3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "candle-fire10001.png"
+            },
+            "x": 1069.4280114618452,
+            "y": 749.9608023291703,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "originX": 0.6904015282460326,
+            "originY": 4.9427023257409015
+        },
+        {
+            "type": "Sprite",
+            "id": "0bad3f81-8722-48dd-8a55-7fb1fca8a05a",
+            "label": "book_hover0001_png",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBookOver()",
+            "texture": {
+                "key": "pizza",
+                "frame": "book-hover0001.png"
+            },
+            "x": 587.5714581291339,
+            "y": 461.1420886425158,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originX": 0.46759919553938006,
+            "originY": 2.263818792824983
+        },
+        {
+            "type": "Sprite",
+            "id": "c4da58e9-3488-4c70-802f-853d43c5b5e1",
+            "label": "steam",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "smoke0001.png"
+            },
+            "x": 43,
+            "y": 165
+        },
+        {
+            "type": "Sprite",
+            "id": "abb691cb-dc75-432c-b4f0-140d4d532da9",
+            "label": "fire",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "fire0001.png"
+            },
+            "x": 110,
+            "y": 770,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fbd9b42a-8e35-4ff1-897b-b203942a3729",
+            "label": "sort",
+            "objectIds": [
+                "ad4b0ec4-6dba-41d9-a8ff-158d371f25bd",
+                "3b151ac8-987e-450a-b475-2341eed910f9",
+                "7ce131d9-d215-42e6-9be8-eec417c8d274",
+                "6a89f1c7-8080-4aff-abdf-bd379ab63cec",
+                "42a60545-eaf0-46cf-9e37-86a9e9d5f061",
+                "10052db6-24f2-4671-8a2e-6fa20de0c8f2",
+                "63b3a44c-7c80-4b00-9190-71e68ce2991e",
+                "ae9541d7-60c0-4547-857a-54c70dedbf8c",
+                "665558e4-4b4a-44e1-89b8-956170cd15cb",
+                "e064cf44-4cdd-4ad3-b14d-5ad54bd22dd3",
+                "907aa007-7e7d-4885-a14a-4d909d297533",
+                "1b50965b-ae9a-4c0a-967a-354011cbbc38",
+                "048c5276-2f77-4a67-8aad-a2f4c99da239",
+                "294e365a-6a35-4087-b7b4-dfa24bc9c77a",
+                "ae35bdc6-af14-4d45-807f-fa3f4d09c53b",
+                "0bad3f81-8722-48dd-8a55-7fb1fca8a05a"
+            ]
+        }
+    ]
+}

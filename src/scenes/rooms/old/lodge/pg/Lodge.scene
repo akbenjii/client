@@ -1,0 +1,424 @@
+{
+    "id": "4b4600f5-4de5-434c-8255-c1b7d7d775f8",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/lodge/lodge-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Lodge",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "89ce85fe-fda7-4306-a7f2-2c320fbab811",
+            "label": "bg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "bg"
+            },
+            "x": 766.729415226033,
+            "y": 491.21569204338834,
+            "originX": 0.5043248169833117,
+            "originY": 0.5115150842334583
+        },
+        {
+            "type": "Image",
+            "id": "88448b99-23ca-4433-82a8-40b75fe91423",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 184,
+            "MoveTo.y": 626,
+            "texture": {
+                "key": "lodge",
+                "frame": "door"
+            },
+            "x": 135,
+            "y": 456
+        },
+        {
+            "type": "Image",
+            "id": "53e3dc25-0ed5-456d-ab6b-fcf13df0fceb",
+            "label": "footrest",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "footrest"
+            },
+            "x": 1322,
+            "y": 791,
+            "originX": 0.49295775,
+            "originY": 0.47222222
+        },
+        {
+            "type": "Image",
+            "id": "c015247e-c4dd-45b4-a287-6530da7dbc01",
+            "label": "chair",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "chair"
+            },
+            "x": 1409,
+            "y": 807,
+            "originX": 0.5017064846416383,
+            "originY": 0.5018450184501845
+        },
+        {
+            "type": "Sprite",
+            "id": "043cb8a8-f3ae-44fd-ad07-20c2ca07c4a2",
+            "label": "fire",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "fire",
+            "Animation.end": 10,
+            "texture": {
+                "key": "lodge",
+                "frame": "fire0001"
+            },
+            "x": 1334,
+            "y": 468,
+            "scaleX": 1.02,
+            "scaleY": 1.02,
+            "originX": 0.5061728395061729
+        },
+        {
+            "type": "Image",
+            "id": "0503fb33-c16c-42c7-8a78-de9df070e30f",
+            "label": "candle",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCandleOver()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "lodge",
+                "frame": "candle"
+            },
+            "x": 450,
+            "y": 259,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "e8d1f6c0-99c5-4d3b-b85e-7caa97bdc37b",
+            "label": "flame",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame",
+            "Animation.end": 14,
+            "texture": {
+                "key": "lodge",
+                "frame": "flame0001"
+            },
+            "x": 518,
+            "y": 230,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "4c73c395-fe4c-4c5e-bf81-76e1385e4876",
+            "label": "flame_out",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "flame_out",
+            "Animation.end": 30,
+            "Animation.repeat": 0,
+            "Animation.autoPlay": false,
+            "Animation.showOnStart": true,
+            "Animation.hideOnComplete": true,
+            "texture": {
+                "key": "lodge",
+                "frame": "flame_out0001"
+            },
+            "x": 518,
+            "y": 198,
+            "originX": 0,
+            "originY": 0,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "982b7015-0e97-4f1c-be35-6780bb3352c4",
+            "label": "table3",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "table3",
+            "Button.callback": "() => this.triggerWaddle(104)",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "lodge",
+                "frame": "table3"
+            },
+            "x": 1011,
+            "y": 577,
+            "scaleX": -1,
+            "originY": 0.6985294117647058
+        },
+        {
+            "type": "Image",
+            "id": "1575f191-d637-44ba-9011-6c3fe163d165",
+            "label": "table3_1",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "table3",
+            "Button.callback": "() => this.triggerWaddle(105)",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "lodge",
+                "frame": "table3"
+            },
+            "x": 889,
+            "y": 711,
+            "scaleX": -1,
+            "originY": 0.6985294117647058
+        },
+        {
+            "type": "Image",
+            "id": "6bdaad25-4419-484e-9138-5b8c83ecfba1",
+            "label": "table3_1_1",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "table3",
+            "Button.callback": "() => this.triggerWaddle(106)",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "lodge",
+                "frame": "table3"
+            },
+            "x": 1117,
+            "y": 703,
+            "originY": 0.6985294117647058
+        },
+        {
+            "type": "Image",
+            "id": "9ae13f4e-ff05-4b54-8faa-7ecfee6b2725",
+            "label": "fishing_door",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "fishing_door",
+            "Button.hoverCallback": "() => this.onDoorOver()",
+            "Button.hoverOutCallback": "() =>this.onDoorOut()",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Ice Fishing",
+            "MoveTo.x": 960,
+            "MoveTo.y": 460,
+            "texture": {
+                "key": "lodge",
+                "frame": "fishing_door"
+            },
+            "x": 951,
+            "y": 254,
+            "originX": 0.2916666666666667,
+            "originY": 0.3961218836565097
+        },
+        {
+            "type": "Sprite",
+            "id": "e111e6ca-e2dc-4400-9dca-5d9eff2ab60f",
+            "label": "fish",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "fish0001"
+            },
+            "x": 1015,
+            "y": 370,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "47b3072e-20f5-4d63-91d6-afcbbfacb69c",
+            "label": "rods",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "rods"
+            },
+            "x": 828,
+            "y": 351
+        },
+        {
+            "type": "Image",
+            "id": "94bb990e-2ae4-4cc0-b070-5ee6ecddbb02",
+            "label": "catalog_small0001",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "catalog_small0001"
+            },
+            "x": 838,
+            "y": 263,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "3d3c7c67-c5ab-438c-ac2c-37a1efc1677c",
+            "label": "catalog_small_tape",
+            "components": [],
+            "texture": {
+                "key": "lodge",
+                "frame": "catalog_small_tape"
+            },
+            "x": 855,
+            "y": 261,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "ed5db074-82d9-4bd3-a52a-f7052380f8c0",
+            "label": "bait",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "bait",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "lodge",
+                "frame": "bait"
+            },
+            "x": 842,
+            "y": 439,
+            "originX": 0.5060240963855421
+        },
+        {
+            "type": "Ellipse",
+            "id": "d2c8e94c-e91c-4313-8312-3d74cf1c050e",
+            "label": "ellipse",
+            "components": [],
+            "x": 928,
+            "y": 592,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "aa78ed4b-2a75-49f1-97eb-bab47fadfd90",
+            "label": "ellipse_1",
+            "components": [],
+            "x": 1084,
+            "y": 510,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "8d507c3b-b680-460b-939e-9f32f1323ef7",
+            "label": "ellipse_2",
+            "components": [],
+            "x": 821,
+            "y": 750,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "33aabb4b-6c81-44ce-b71f-affd41f06002",
+            "label": "ellipse_3",
+            "components": [],
+            "x": 967,
+            "y": 665,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "77fcc290-858b-4f98-8e77-55400d35c4ab",
+            "label": "ellipse_4",
+            "components": [],
+            "x": 1053,
+            "y": 632,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "588fc8b6-07cc-47d2-9ce9-6d9b724ac872",
+            "label": "ellipse_5",
+            "components": [],
+            "x": 1172,
+            "y": 724,
+            "visible": false,
+            "width": 50,
+            "height": 50
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "c17b59e1-6b76-4fd3-8fcf-ba6c957a2587",
+            "label": "sort",
+            "objectIds": [
+                "88448b99-23ca-4433-82a8-40b75fe91423",
+                "53e3dc25-0ed5-456d-ab6b-fcf13df0fceb",
+                "c015247e-c4dd-45b4-a287-6530da7dbc01",
+                "982b7015-0e97-4f1c-be35-6780bb3352c4"
+            ]
+        },
+        {
+            "id": "81362400-3f0a-4f86-af55-f110469d3231",
+            "label": "seats104",
+            "objectIds": [
+                "aa78ed4b-2a75-49f1-97eb-bab47fadfd90",
+                "d2c8e94c-e91c-4313-8312-3d74cf1c050e"
+            ]
+        },
+        {
+            "id": "fa7203a7-851a-4f50-89f1-527a6e210f4f",
+            "label": "seats105",
+            "objectIds": [
+                "33aabb4b-6c81-44ce-b71f-affd41f06002",
+                "8d507c3b-b680-460b-939e-9f32f1323ef7"
+            ]
+        },
+        {
+            "id": "6c0176f6-9d0c-46cb-89ab-11c421ae4f81",
+            "label": "seats106",
+            "objectIds": [
+                "77fcc290-858b-4f98-8e77-55400d35c4ab",
+                "588fc8b6-07cc-47d2-9ce9-6d9b724ac872"
+            ]
+        }
+    ]
+}
