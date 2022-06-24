@@ -22,8 +22,8 @@
             "label": "bg",
             "components": [],
             "texture": {
-                "key": "forest",
-                "frame": "bg"
+                "key": "pg-forest",
+                "frame": "test"
             },
             "x": -24,
             "y": -13,
@@ -32,17 +32,17 @@
         },
         {
             "type": "Image",
-            "id": "6e3db976-9917-4d00-b9c1-bf0c18983238",
-            "label": "rock0001",
+            "id": "ac8d4c2b-a3e4-427d-a658-f0882f2537b5",
+            "label": "bottom_rope",
             "components": [],
             "texture": {
-                "key": "forest",
-                "frame": "rock0001"
+                "key": "pg-forest",
+                "frame": "bottom_rope"
             },
-            "x": 254,
-            "y": 681,
-            "originX": 0.6005747126436781,
-            "originY": 0.7300884955752213
+            "x": 692.2336764974109,
+            "y": 405.06971009859444,
+            "originX": 0.5443671910832643,
+            "originY": 0.7085215442858688
         },
         {
             "type": "Image",
@@ -81,7 +81,7 @@
                 "key": "forest",
                 "frame": "middle"
             },
-            "x": 781,
+            "x": 776,
             "y": 548,
             "originY": 0.608540925266904
         },
@@ -114,17 +114,69 @@
         },
         {
             "type": "Image",
-            "id": "610c10a8-e1b6-47bf-9293-ac3f7bf11de7",
-            "label": "sign",
+            "id": "02297d13-9290-4af9-a01f-8cdef50681c3",
+            "label": "left_green_sign",
             "components": [],
             "texture": {
-                "key": "forest",
-                "frame": "sign"
+                "key": "pg-forest",
+                "frame": "left_green_sign"
             },
-            "x": 1317,
-            "y": 681,
-            "originX": 0.4794520547945205,
-            "originY": 0.9397590361445783
+            "x": 470,
+            "y": 266
+        },
+        {
+            "type": "Image",
+            "id": "a70e6d23-acde-401c-ae48-8e9d73747ea7",
+            "label": "right_green_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-forest",
+                "frame": "right_green_sign"
+            },
+            "x": 1216,
+            "y": 450
+        },
+        {
+            "type": "Image",
+            "id": "497a8c1e-0ae9-4461-9955-61f7b56c99ba",
+            "label": "top_rope",
+            "components": [],
+            "texture": {
+                "key": "pg-forest",
+                "frame": "top_rope"
+            },
+            "x": 709,
+            "y": 265,
+            "originX": 0.5253246356183233,
+            "originY": 0.5573771192956499
+        },
+        {
+            "type": "Image",
+            "id": "274b768c-713f-443f-a78d-e04642115cf0",
+            "label": "right_ropes",
+            "components": [],
+            "texture": {
+                "key": "pg-forest",
+                "frame": "right_ropes"
+            },
+            "x": 1376.635247899926,
+            "y": 759.7461933891996,
+            "originX": 0.5089848785710224,
+            "originY": 1.0353053663434968
+        },
+        {
+            "type": "Image",
+            "id": "18b9e0a0-5e12-4676-982d-ae15a808d9b4",
+            "label": "bottom_rope_right",
+            "components": [],
+            "texture": {
+                "key": "pg-forest",
+                "frame": "bottom_rope_right"
+            },
+            "x": 1192.3088196557358,
+            "y": 846.9217493989994,
+            "originX": 0.4715686039741561,
+            "originY": 1.0275222877084322
         }
     ],
     "plainObjects": [],
@@ -139,12 +191,13 @@
             "id": "adc6dee8-ab4a-4215-92af-f5272ec15c19",
             "label": "sort",
             "objectIds": [
-                "610c10a8-e1b6-47bf-9293-ac3f7bf11de7",
                 "44a1f1df-8536-406f-a92e-d43130ae3799",
                 "f375e9d0-76b5-4bff-a7bc-68ab12b63736",
                 "68230858-5ed1-4a66-b956-6f9ba462bf8b",
                 "a0c5ffb3-138e-40ad-a79c-f9bb8cb88507",
-                "6e3db976-9917-4d00-b9c1-bf0c18983238"
+                "ac8d4c2b-a3e4-427d-a658-f0882f2537b5",
+                "274b768c-713f-443f-a78d-e04642115cf0",
+                "18b9e0a0-5e12-4676-982d-ae15a808d9b4"
             ]
         }
     ]
