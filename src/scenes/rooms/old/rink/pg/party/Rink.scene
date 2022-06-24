@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/old/rink/rink-pack.json"
+            "client/assets/media/rooms/old/rink/pg/gamesrink-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Rink",
@@ -18,323 +18,197 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "1cbd9670-8af9-419a-a0a4-06e6d95c1257",
-            "label": "bg",
+            "id": "dffa24bc-5fc5-4a8d-9592-1b8ba3429347",
+            "label": "sky",
             "components": [],
             "texture": {
-                "key": "rink",
+                "key": "pg-partyroom",
+                "frame": "sky"
+            },
+            "x": 772,
+            "y": 113
+        },
+        {
+            "type": "Image",
+            "id": "b822d87a-527b-4f7c-a003-bea504d8d36f",
+            "label": "bg_trees",
+            "components": [],
+            "texture": {
+                "key": "pg-partyroom",
+                "frame": "bg_trees"
+            },
+            "x": 764,
+            "y": 114
+        },
+        {
+            "type": "Image",
+            "id": "c4badd1c-565a-4666-9e48-2ef1b5c44ab3",
+            "label": "fence_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-partyroom",
+                "frame": "fence_flags"
+            },
+            "x": 766,
+            "y": 108
+        },
+        {
+            "type": "Image",
+            "id": "28122ab8-3f78-4423-92d1-a109604171d5",
+            "label": "bg_1",
+            "components": [],
+            "texture": {
+                "key": "pg-partyroom",
                 "frame": "bg"
             },
-            "x": -33,
-            "y": -7,
-            "originX": 0,
-            "originY": 0
+            "x": 764,
+            "y": 572
         },
         {
             "type": "Image",
-            "id": "139351a3-ad27-4f1c-b1cc-cb39e13fb57d",
-            "label": "rink_border",
+            "id": "897dbd39-ccc7-493b-ada9-af487db6346a",
+            "label": "rock_bottom",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "rink_border"
+                "key": "pg-partyroom",
+                "frame": "rock_bottom"
             },
-            "x": 444,
-            "y": 335,
-            "originX": 0.30707692,
-            "originY": 0.42490372
+            "x": 1058,
+            "y": 806
         },
         {
             "type": "Image",
-            "id": "8d069f94-5f09-4127-8056-9e6adf5c877d",
-            "label": "sports",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "sports"
-            },
-            "x": 1390,
-            "y": 250,
-            "originX": 0.52966102,
-            "originY": 0.80970149
-        },
-        {
-            "type": "Image",
-            "id": "5efbc284-3a48-4070-afaa-7e75fdd7fa7a",
-            "label": "sports_door0001",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "sports_door0001"
-            },
-            "x": 1327,
-            "y": 280,
-            "originX": 0.5125,
-            "originY": 0.62962963
-        },
-        {
-            "type": "Image",
-            "id": "dd5aac14-4403-46f8-89e5-bf4c0af9d7e1",
-            "label": "ball",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "ball"
-            },
-            "x": 765,
-            "y": 537,
-            "originY": 0.7037037,
-            "visible": false
-        },
-        {
-            "type": "Image",
-            "id": "8d678d53-c165-41fb-84fa-af61ae034f40",
-            "label": "fish_dogs",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "fish_dogs"
-            },
-            "x": 166,
-            "y": 242,
-            "originX": 0.51492537,
-            "originY": 0.79347826
-        },
-        {
-            "type": "Image",
-            "id": "ef1c8365-1a0f-48ec-ad08-058a520546e3",
-            "label": "left_bleachers",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "left_bleachers"
-            },
-            "x": 105,
-            "y": 258,
-            "originX": 0.44444444,
-            "originY": 0.16260163
-        },
-        {
-            "type": "Image",
-            "id": "1a5fbcad-92bb-46b9-8009-7b1decadfe73",
-            "label": "bleachers_rail",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "bleachers_rail"
-            },
-            "x": 38,
-            "y": 558,
-            "originX": 0.82231405,
-            "originY": 0.78181818
-        },
-        {
-            "type": "Image",
-            "id": "71d3ac56-d068-41fc-a032-34745024edf5",
-            "label": "right_bleachers",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "right_bleachers"
-            },
-            "x": 1415,
-            "y": 258,
-            "originX": 0.5473251,
-            "originY": 0.16531165
-        },
-        {
-            "type": "Image",
-            "id": "75874fb2-e84e-4279-8d62-8c6a59cb2bb5",
-            "label": "bleachers_rail_1",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "bleachers_rail"
-            },
-            "x": 1482,
-            "y": 558,
-            "originX": 0.82231405,
-            "originY": 0.78181818,
-            "flipX": true
-        },
-        {
-            "type": "Image",
-            "id": "0e99bf40-ebdd-49df-9cd2-299b87a4eb9b",
-            "label": "drink",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "drink"
-            },
-            "x": 70,
-            "y": 485,
-            "originY": 0.75510204
-        },
-        {
-            "type": "Image",
-            "id": "4696c680-3ebf-4d19-b173-930fa9100e32",
+            "id": "aceb8856-4a28-4d9a-80dd-fd6f7a0425ac",
             "label": "fg",
             "components": [],
             "texture": {
-                "key": "rink",
+                "key": "pg-partyroom",
                 "frame": "fg"
             },
-            "x": -64,
-            "y": 1046.9173886139422,
-            "originX": 0,
-            "originY": 0.9998385876423137
+            "x": 765,
+            "y": 715
         },
         {
             "type": "Image",
-            "id": "3e1b4e7e-0f5b-4cda-ac6e-248ce8878e73",
-            "label": "trash",
+            "id": "9e38ed30-677b-4176-9cc7-d2403b1f79ac",
+            "label": "right_trees",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "trash"
+                "key": "pg-partyroom",
+                "frame": "right_trees"
             },
-            "x": 858,
-            "y": 214,
-            "originX": 0.44117647,
-            "originY": 0.69642857
+            "x": 1330,
+            "y": 191
         },
         {
             "type": "Image",
-            "id": "a37ff0c1-0127-4006-a381-ce6757c35c1d",
-            "label": "snacks",
+            "id": "9036a1bd-20d6-4d75-b2a7-2e5082b237a3",
+            "label": "left_trees",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "snacks"
+                "key": "pg-partyroom",
+                "frame": "left_trees"
             },
-            "x": 1046,
-            "y": 230,
-            "originX": 0.44080605,
-            "originY": 0.79461279
+            "x": 230,
+            "y": 236
         },
         {
             "type": "Image",
-            "id": "32361733-5092-4745-9a30-10cddef6d1e5",
-            "label": "stand_base",
+            "id": "f93e7cad-0c37-4658-9c1e-cfee9d9d74ac",
+            "label": "red_sign",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "stand_base"
+                "key": "pg-partyroom",
+                "frame": "red_sign"
             },
-            "x": 731,
-            "y": 126,
-            "originX": 0.99404762,
-            "originY": 0.36328125
+            "x": 142,
+            "y": 322
         },
         {
             "type": "Image",
-            "id": "be5cc6f5-703e-4a40-894f-ec6d5d3d7cc9",
-            "label": "stand_middle",
+            "id": "bb2bf816-d014-43a3-b7c1-a3c0dbbabedc",
+            "label": "blue_sign",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "stand_middle"
+                "key": "pg-partyroom",
+                "frame": "blue_sign"
             },
-            "x": 528,
-            "y": 167,
-            "originX": 0.51265823,
-            "originY": 0.42537313
+            "x": 1419,
+            "y": 320
         },
         {
             "type": "Image",
-            "id": "623653b5-a2d7-4918-8598-d48314177fe6",
-            "label": "stand_top",
+            "id": "d2ec7eb3-9a53-4237-9a2d-ba63d7841d97",
+            "label": "outer_trees",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "stand_top"
+                "key": "pg-partyroom",
+                "frame": "outer_trees"
             },
-            "x": 522,
-            "y": 236,
-            "originX": 0.50117647,
-            "originY": 2.57831325
+            "x": 763,
+            "y": 420
         },
         {
             "type": "Image",
-            "id": "e98107c1-00e5-4038-af33-9c09f0215d15",
-            "label": "goal_back",
+            "id": "afbe7a38-2028-4ceb-a985-19a8560a1d5f",
+            "label": "rock_top",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "goal_back"
+                "key": "pg-partyroom",
+                "frame": "rock_top"
             },
-            "x": 1258,
-            "y": 441,
-            "originX": 0.97183099,
-            "originY": 0.48863636
+            "x": 478,
+            "y": 223
         },
         {
             "type": "Image",
-            "id": "d2fc417b-d621-42bf-b36f-9ceb490309a9",
-            "label": "goal",
+            "id": "5d3bb642-e277-4869-b142-d8a10b2f9204",
+            "label": "left_net_back",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "goal"
+                "key": "pg-partyroom",
+                "frame": "left_net_back"
             },
-            "x": 1273,
-            "y": 578,
-            "originX": 0.58571429,
-            "originY": 0.91902834
+            "x": 318,
+            "y": 418
         },
         {
             "type": "Image",
-            "id": "e0207549-cdcf-46ef-bc96-f47224bdbf9e",
-            "label": "goal_back_1",
+            "id": "95b4d50a-8cb8-43c1-a2dd-36b155ed833e",
+            "label": "left_net_front",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "goal_back"
+                "key": "pg-partyroom",
+                "frame": "left_net_front"
             },
-            "x": 262,
-            "y": 441,
-            "originX": 0.97183099,
-            "originY": 0.48863636,
+            "x": 276,
+            "y": 460
+        },
+        {
+            "type": "Image",
+            "id": "e1436e0a-d068-4405-bd03-1e65b205929f",
+            "label": "left_net_back_1",
+            "components": [],
+            "texture": {
+                "key": "pg-partyroom",
+                "frame": "left_net_back"
+            },
+            "x": 1248,
+            "y": 418,
             "flipX": true
         },
         {
             "type": "Image",
-            "id": "22bb19b8-4dba-44de-b801-0c1a933e24e7",
-            "label": "goal_1",
+            "id": "c9ac5faa-b88a-4976-9c82-4e9b94dda989",
+            "label": "left_net_front_1",
             "components": [],
             "texture": {
-                "key": "rink",
-                "frame": "goal"
+                "key": "pg-partyroom",
+                "frame": "left_net_front"
             },
-            "x": 247,
-            "y": 578,
-            "originX": 0.58571429,
-            "originY": 0.91902834,
+            "x": 1291,
+            "y": 460,
             "flipX": true
-        },
-        {
-            "type": "Image",
-            "id": "1daf781a-48ce-435e-8a67-ff83a00acf18",
-            "label": "snacks_door0001",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "snacks_door0001"
-            },
-            "x": 1214,
-            "y": 185
-        },
-        {
-            "type": "Image",
-            "id": "9b6face9-4978-4553-9f5a-f1a87ad0a76a",
-            "label": "snacks_ring",
-            "components": [],
-            "texture": {
-                "key": "rink",
-                "frame": "snacks_ring"
-            },
-            "x": 1250,
-            "y": 200
         }
     ],
     "plainObjects": [],
@@ -347,28 +221,7 @@
     "lists": [
         {
             "id": "9e830a7e-9e8a-466e-aec7-18c94d7d6d64",
-            "label": "sort",
-            "objectIds": [
-                "4696c680-3ebf-4d19-b173-930fa9100e32",
-                "dd5aac14-4403-46f8-89e5-bf4c0af9d7e1",
-                "e98107c1-00e5-4038-af33-9c09f0215d15",
-                "d2fc417b-d621-42bf-b36f-9ceb490309a9",
-                "e0207549-cdcf-46ef-bc96-f47224bdbf9e",
-                "22bb19b8-4dba-44de-b801-0c1a933e24e7",
-                "a37ff0c1-0127-4006-a381-ce6757c35c1d",
-                "5efbc284-3a48-4070-afaa-7e75fdd7fa7a",
-                "8d069f94-5f09-4127-8056-9e6adf5c877d",
-                "71d3ac56-d068-41fc-a032-34745024edf5",
-                "75874fb2-e84e-4279-8d62-8c6a59cb2bb5",
-                "1a5fbcad-92bb-46b9-8009-7b1decadfe73",
-                "ef1c8365-1a0f-48ec-ad08-058a520546e3",
-                "8d678d53-c165-41fb-84fa-af61ae034f40",
-                "be5cc6f5-703e-4a40-894f-ec6d5d3d7cc9",
-                "32361733-5092-4745-9a30-10cddef6d1e5",
-                "623653b5-a2d7-4918-8598-d48314177fe6",
-                "3e1b4e7e-0f5b-4cda-ac6e-248ce8878e73",
-                "139351a3-ad27-4f1c-b1cc-cb39e13fb57d"
-            ]
+            "label": "sort"
         }
     ]
 }
