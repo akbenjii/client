@@ -376,6 +376,89 @@
             "visible": false,
             "width": 50,
             "height": 50
+        },
+        {
+            "type": "Image",
+            "id": "f250bce4-77c5-49e0-9d55-a29ddb5f3f81",
+            "label": "mullet",
+            "components": [],
+            "texture": {
+                "key": "pg-lodge",
+                "frame": "mullet"
+            },
+            "x": 665,
+            "y": 184
+        },
+        {
+            "type": "Image",
+            "id": "d2e43133-e76b-4f11-8329-c5a434c97e6b",
+            "label": "moose",
+            "components": [],
+            "texture": {
+                "key": "pg-lodge",
+                "frame": "moose"
+            },
+            "x": 161,
+            "y": 127
+        },
+        {
+            "type": "Image",
+            "id": "8cc6ef51-488b-4966-9cc4-2b8c089a2de2",
+            "label": "red_balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-lodge",
+                "frame": "red_balloons"
+            },
+            "x": 69,
+            "y": 892
+        },
+        {
+            "type": "Image",
+            "id": "9aa06572-0686-420f-8ea2-309f2e3fe8f9",
+            "label": "blue_balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-lodge",
+                "frame": "blue_balloons"
+            },
+            "x": 1442,
+            "y": 459
+        },
+        {
+            "type": "Image",
+            "id": "fefcff3a-0986-437b-a536-ca25b682e6bb",
+            "label": "go_blue",
+            "components": [],
+            "texture": {
+                "key": "pg-lodge",
+                "frame": "go_blue"
+            },
+            "x": 1095,
+            "y": 191
+        },
+        {
+            "type": "Image",
+            "id": "5583b53f-e541-497d-b84e-eeb9bb7f2463",
+            "label": "go_red",
+            "components": [],
+            "texture": {
+                "key": "pg-lodge",
+                "frame": "go_red"
+            },
+            "x": 539,
+            "y": 133
+        },
+        {
+            "type": "Image",
+            "id": "96dbfc03-c4c2-42a8-9868-6cec055b71cc",
+            "label": "banners",
+            "components": [],
+            "texture": {
+                "key": "pg-lodge",
+                "frame": "banners"
+            },
+            "x": 761
         }
     ],
     "plainObjects": [],

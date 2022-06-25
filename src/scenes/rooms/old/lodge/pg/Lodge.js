@@ -35,7 +35,7 @@ export default class Lodge extends RoomScene {
             'village': () => this.triggerRoom(200, 940, 540),
             'fish': () => this.triggerGame("IceFishing", 904)
         }
-        this.music = '589'
+        this.music = '248'
         this.roomAnims = true
 
         this.waddles = {}
@@ -146,6 +146,27 @@ export default class Lodge extends RoomScene {
         // ellipse_5
         const ellipse_5 = this.add.ellipse(1172, 724, 50, 50);
         ellipse_5.visible = false;
+
+        // mullet
+        this.add.image(665, 184, "pg-lodge", "mullet");
+
+        // moose
+        this.add.image(161, 127, "pg-lodge", "moose");
+
+        // red_balloons
+        this.add.image(69, 892, "pg-lodge", "red_balloons");
+
+        // blue_balloons
+        this.add.image(1442, 459, "pg-lodge", "blue_balloons");
+
+        // go_blue
+        this.add.image(1095, 191, "pg-lodge", "go_blue");
+
+        // go_red
+        this.add.image(539, 133, "pg-lodge", "go_red");
+
+        // banners
+        this.add.image(761, 0, "pg-lodge", "banners");
 
         // lists
         const sort = [door, footrest, chair, table3];
