@@ -12,6 +12,10 @@ export default class Coffee extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.board;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.redfp;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.fp_table;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -24,7 +28,7 @@ export default class Coffee extends RoomScene {
             'book': () => this.triggerRoom(111, 1200, 580)
         }
         this.roomAnims = true
-        this.music = 'coffee'
+        this.music = '240'
 
         this.boardToggle = true
 
@@ -43,6 +47,9 @@ export default class Coffee extends RoomScene {
         // bg
         const bg = this.add.image(0, -7, "coffee", "bg");
         bg.setOrigin(0, 0);
+
+        // jersey
+        this.add.image(152, 231, "pg-coffee", "jersey");
 
         // lamp
         const lamp = this.add.image(172, -11, "coffee", "lamp");
@@ -108,6 +115,36 @@ export default class Coffee extends RoomScene {
         const door = this.add.image(724, 135, "coffee", "door");
         door.setOrigin(0, 0);
 
+        // banner
+        this.add.image(739, 64, "pg-coffee", "banner");
+
+        // redfp
+        const redfp = this.add.ellipse(135, 705, 128, 128);
+        redfp.scaleX = 0.947321254131059;
+        redfp.scaleY = 1.7683615255811924;
+        redfp.angle = 39;
+        redfp.isFilled = true;
+        redfp.fillAlpha = 0;
+
+        // fp_table
+        const fp_table = this.add.sprite(129, 680, "pg-coffee", "fp_table");
+
+        // facepaint
+        this.add.image(54, 540, "pg-coffee", "facepaint");
+
+        // soccer_banner
+        this.add.image(1294, 227, "pg-coffee", "soccer_banner");
+
+        // soccer
+        this.add.image(1281, 230, "pg-coffee", "soccer");
+
+        // tv
+        this.add.image(321, 80, "pg-coffee", "tv");
+
+        // tv_1
+        const tv_1 = this.add.image(904, 84, "pg-coffee", "tv");
+        tv_1.flipX = true;
+
         // lists
         const sort = [beans, bag, sign_front, sign_back, counter_front, counter_back, table];
 
@@ -148,6 +185,8 @@ export default class Coffee extends RoomScene {
         doorMoveTo.y = 392;
 
         this.board = board;
+        this.redfp = redfp;
+        this.fp_table = fp_table;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -155,6 +194,19 @@ export default class Coffee extends RoomScene {
 
 
     /* START-USER-CODE */
+
+    create(){
+        super.create()
+
+        this.roomZones = {
+            'redfp': { 
+                key: this.redfp,
+                callback: () => this.interface.prompt.showItem(133)
+            }
+        }
+
+        super.addZones()
+    }
 
     onBoardClick() {
         let animation = (this.boardToggle) ? 'board1' : 'board2'

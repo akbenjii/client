@@ -31,6 +31,18 @@
         },
         {
             "type": "Image",
+            "id": "12f55059-6af5-4514-a5c2-b306ca29ed22",
+            "label": "jersey",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "jersey"
+            },
+            "x": 152,
+            "y": 231
+        },
+        {
+            "type": "Image",
             "id": "acd6c4d4-4d4d-4825-b2bf-b4f31174a258",
             "label": "lamp",
             "components": [],
@@ -283,6 +295,108 @@
             "y": 135,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "4b1ebb61-27e0-46c0-abe0-49361f361889",
+            "label": "banner",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "banner"
+            },
+            "x": 739,
+            "y": 64
+        },
+        {
+            "type": "Ellipse",
+            "id": "db5e603b-fc11-4b2b-b296-eb1aa9b90d8c",
+            "label": "redfp",
+            "scope": "CLASS",
+            "components": [],
+            "x": 135,
+            "y": 705,
+            "scaleX": 0.947321254131059,
+            "scaleY": 1.7683615255811924,
+            "angle": 39,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Sprite",
+            "id": "4cf94c0a-d896-4306-b228-715828e6f91d",
+            "label": "fp_table",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "fp_table"
+            },
+            "x": 129,
+            "y": 680
+        },
+        {
+            "type": "Image",
+            "id": "69579954-e023-4c53-9eac-594ade156796",
+            "label": "facepaint",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "facepaint"
+            },
+            "x": 54,
+            "y": 540
+        },
+        {
+            "type": "Image",
+            "id": "1ef2a410-45db-43ec-8f5d-35bc274eee9c",
+            "label": "soccer_banner",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "soccer_banner"
+            },
+            "x": 1294,
+            "y": 227
+        },
+        {
+            "type": "Image",
+            "id": "f419bdcd-e7c8-47d6-837a-5ad5e2100629",
+            "label": "soccer",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "soccer"
+            },
+            "x": 1281,
+            "y": 230
+        },
+        {
+            "type": "Image",
+            "id": "369c3a3a-c505-4834-86b0-14a959e8cd63",
+            "label": "tv",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "tv"
+            },
+            "x": 321,
+            "y": 80
+        },
+        {
+            "type": "Image",
+            "id": "a9410d7f-c055-4f3c-9a79-7d7863f04886",
+            "label": "tv_1",
+            "components": [],
+            "texture": {
+                "key": "pg-coffee",
+                "frame": "tv"
+            },
+            "x": 904,
+            "y": 84,
+            "flipX": true
         }
     ],
     "plainObjects": [],

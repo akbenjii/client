@@ -32,6 +32,66 @@
         },
         {
             "type": "Image",
+            "id": "ab8cd62a-b5d4-4c24-a403-ff262089c0e7",
+            "label": "tv",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "tv"
+            },
+            "x": 788,
+            "y": 311
+        },
+        {
+            "type": "Image",
+            "id": "091d5f49-f025-4551-86ea-bb435c1a1412",
+            "label": "sled_racing_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "sled_racing_sign"
+            },
+            "x": 494,
+            "y": 343
+        },
+        {
+            "type": "Image",
+            "id": "6e60d0f4-4235-4727-bc95-11db480bf1ca",
+            "label": "snow_stuff",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "snow_stuff"
+            },
+            "x": 760,
+            "y": 558
+        },
+        {
+            "type": "Image",
+            "id": "8452edef-f852-420d-891c-2816077a6a61",
+            "label": "lift_snow",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "lift_snow"
+            },
+            "x": 277,
+            "y": 214
+        },
+        {
+            "type": "Image",
+            "id": "2db26f9c-e2e3-4c56-a08c-0f6a9c58b347",
+            "label": "lower_sled",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "lower_sled"
+            },
+            "x": 141,
+            "y": 458
+        },
+        {
+            "type": "Image",
             "id": "8f355d69-ebb4-4d3a-88da-8435a41f5dee",
             "label": "lodge_door",
             "components": [
@@ -47,7 +107,7 @@
                 "frame": "lodge_door"
             },
             "x": 1075,
-            "y": 318,
+            "y": 317,
             "originX": 0.27807486631016043,
             "originY": 0.5560538116591929
         },
@@ -61,7 +121,7 @@
                 "frame": "lodge_stairs"
             },
             "x": 972,
-            "y": 444
+            "y": 443
         },
         {
             "type": "Image",
@@ -73,7 +133,7 @@
                 "frame": "lodge_front"
             },
             "x": 1087,
-            "y": 389,
+            "y": 388,
             "originX": 0.4807692307692308,
             "originY": 0.5352112676056338
         },
@@ -87,7 +147,7 @@
                 "frame": "lodge_snow"
             },
             "x": 1104,
-            "y": 429,
+            "y": 428,
             "originX": 0.5368217054263565,
             "originY": 0.4838709677419355
         },
@@ -101,7 +161,7 @@
                 "frame": "phone"
             },
             "x": 1373,
-            "y": 316
+            "y": 315
         },
         {
             "type": "Image",
@@ -120,7 +180,7 @@
                 "frame": "phone_door"
             },
             "x": 1350,
-            "y": 387,
+            "y": 386,
             "originX": 0.22797927461139897,
             "originY": 0.6206896551724138
         },
@@ -134,7 +194,7 @@
                 "frame": "phone_snow"
             },
             "x": 1361,
-            "y": 595,
+            "y": 594,
             "originX": 0.509090909090909,
             "originY": 0.5272727272727272
         },
@@ -148,7 +208,7 @@
                 "frame": "lift"
             },
             "x": 348,
-            "y": 200
+            "y": 199
         },
         {
             "type": "Sprite",
@@ -164,21 +224,7 @@
                 "frame": "smoke0001"
             },
             "x": 1110,
-            "y": 32
-        },
-        {
-            "type": "Image",
-            "id": "90385a83-2876-4b63-acb7-cc4d4f0e540f",
-            "label": "left_sign",
-            "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "left_sign"
-            },
-            "x": 133,
-            "y": 677,
-            "originX": 0.4444444444444444,
-            "originY": 0.5217391304347826
+            "y": 31
         },
         {
             "type": "Image",
@@ -190,35 +236,9 @@
                 "frame": "right_sign"
             },
             "x": 1471,
-            "y": 668,
+            "y": 667,
             "originX": 0.4861111111111111,
             "originY": 0.7831325301204819
-        },
-        {
-            "type": "Image",
-            "id": "e8099f35-1e7b-451e-a295-ad3348c46dd4",
-            "label": "tours",
-            "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "tours"
-            },
-            "x": 792,
-            "y": 483,
-            "originY": 0.8846153846153846
-        },
-        {
-            "type": "Image",
-            "id": "b11a8fd1-6631-47b7-afb6-828357023244",
-            "label": "tours_text",
-            "components": [],
-            "texture": {
-                "key": "village",
-                "frame": "tours_text"
-            },
-            "x": 794,
-            "y": 505.2201404552512,
-            "originY": 3.9212529261510674
         },
         {
             "type": "Sprite",
@@ -235,7 +255,306 @@
                 "frame": "chair0001"
             },
             "x": 292,
-            "y": 150
+            "y": 149
+        },
+        {
+            "type": "Image",
+            "id": "16dbf7ea-5a33-4aa0-a811-e814c3364aee",
+            "label": "track",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "track"
+            },
+            "x": 732,
+            "y": 796
+        },
+        {
+            "type": "Image",
+            "id": "770bcc41-72ee-4ffa-8858-2e2cb8c7209b",
+            "label": "snow_trees",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "snow_trees"
+            },
+            "x": 176,
+            "y": 660,
+            "scaleX": 1.0881824282865682,
+            "scaleY": 1.0881824282865682
+        },
+        {
+            "type": "Image",
+            "id": "04de4dbf-f28d-415d-83f7-7b25ac528519",
+            "label": "marathon_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "marathon_sign"
+            },
+            "x": 1139,
+            "y": 727
+        },
+        {
+            "type": "Image",
+            "id": "e4d701b1-67ba-4f24-b861-583b553b3009",
+            "label": "upper_sled",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "upper_sled"
+            },
+            "x": 209,
+            "y": 247
+        },
+        {
+            "type": "Image",
+            "id": "71689d5c-337e-400b-9574-6c8840d91da5",
+            "label": "tour_stand",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
+            "texture": {
+                "key": "pg-village",
+                "frame": "tour_stand"
+            },
+            "x": 246.8178712854658,
+            "y": 744.1008333053408,
+            "originX": 0.5230520157199321,
+            "originY": 0.7215869762441004,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "75088431-4190-499f-9df4-c684facde947",
+            "label": "epf_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "epf_flags"
+            },
+            "x": 1546,
+            "y": 146
+        },
+        {
+            "type": "Image",
+            "id": "3e26e409-2d2c-4cfe-ab7f-bf3c33ab958d",
+            "label": "green_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "green_flags"
+            },
+            "x": 1219,
+            "y": 152
+        },
+        {
+            "type": "Sprite",
+            "id": "35d2d809-93ee-4864-8ade-66e021b2b6a8",
+            "label": "lift_sign",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "lift_sign0001"
+            },
+            "x": 597,
+            "y": 142
+        },
+        {
+            "type": "Image",
+            "id": "20f0dd3d-89cf-4af0-ac5a-c38ab609d473",
+            "label": "start_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "start_sign"
+            },
+            "x": 1105,
+            "y": 475
+        },
+        {
+            "type": "Image",
+            "id": "425bcc2b-0c1b-403a-ae21-04942281efc6",
+            "label": "right_start_stick",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "right_start_stick"
+            },
+            "x": 1194,
+            "y": 505
+        },
+        {
+            "type": "Image",
+            "id": "e8595dd8-8d6d-408e-a993-43e6f4e44995",
+            "label": "rope_down_1",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_down_1"
+            },
+            "x": 1105,
+            "y": 616
+        },
+        {
+            "type": "Image",
+            "id": "4f4a6426-a8e5-4757-a3bd-77b09f180b6a",
+            "label": "rope_down_2",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_down_2"
+            },
+            "x": 974,
+            "y": 639
+        },
+        {
+            "type": "Image",
+            "id": "a9908380-f2b0-40df-96e8-063249542a49",
+            "label": "rope_down_3",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_down_3"
+            },
+            "x": 852,
+            "y": 666
+        },
+        {
+            "type": "Image",
+            "id": "94f60dcc-404c-4f9c-840d-2ac8194d8b7d",
+            "label": "rope_down_4",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_down_4"
+            },
+            "x": 552,
+            "y": 801
+        },
+        {
+            "type": "Image",
+            "id": "675034ac-059a-4522-801e-5e1080f8561f",
+            "label": "rope_down_5",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_down_5"
+            },
+            "x": 436,
+            "y": 910
+        },
+        {
+            "type": "Image",
+            "id": "1d9c63f4-3c2a-46b0-8f8d-6837ab89b138",
+            "label": "rope_up_1",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_up_1"
+            },
+            "x": 955,
+            "y": 556
+        },
+        {
+            "type": "Image",
+            "id": "a5ab928f-3d7f-463d-be7a-074948aeda67",
+            "label": "rope_up_2",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_up_2"
+            },
+            "x": 846,
+            "y": 566
+        },
+        {
+            "type": "Image",
+            "id": "2c4fdd57-2470-4b83-b9da-d62645d4c60b",
+            "label": "rope_up_3",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_up_3"
+            },
+            "x": 735,
+            "y": 588
+        },
+        {
+            "type": "Image",
+            "id": "cc73cb17-3c06-4cca-8f8c-d82cf645e450",
+            "label": "rope_up_4",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_up_4"
+            },
+            "x": 449,
+            "y": 692
+        },
+        {
+            "type": "Image",
+            "id": "4e067b3a-eb8b-44fe-9be3-8c927d12edf9",
+            "label": "rope_up_5",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_up_5"
+            },
+            "x": 325,
+            "y": 783
+        },
+        {
+            "type": "Image",
+            "id": "7537b898-03e3-4379-932f-d41613970e6b",
+            "label": "rope_up_6",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_up_6"
+            },
+            "x": 203,
+            "y": 869
+        },
+        {
+            "type": "Image",
+            "id": "753cd66c-4bc3-41d7-aed2-1d4bfc26f947",
+            "label": "rope_up_7",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "rope_up_7"
+            },
+            "x": 73,
+            "y": 893
+        },
+        {
+            "type": "Image",
+            "id": "7c1104d5-f871-4f0c-8bbb-d55df37f5a79",
+            "label": "green_flag_mountain",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "green_flag_mountain"
+            },
+            "x": 415,
+            "y": 389,
+            "angle": -8
+        },
+        {
+            "type": "Sprite",
+            "id": "d64ade53-3ea7-46bc-8160-01339350a3c8",
+            "label": "sled_penguins",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pg-village",
+                "frame": "sled_penguins0001"
+            },
+            "x": 783,
+            "y": 286
         }
     ],
     "plainObjects": [],
@@ -250,8 +569,22 @@
             "id": "528d71e2-a474-4325-aa76-2ccaa2e1016f",
             "label": "sort",
             "objectIds": [
-                "e8099f35-1e7b-451e-a295-ad3348c46dd4",
-                "b11a8fd1-6631-47b7-afb6-828357023244"
+                "04de4dbf-f28d-415d-83f7-7b25ac528519",
+                "425bcc2b-0c1b-403a-ae21-04942281efc6",
+                "20f0dd3d-89cf-4af0-ac5a-c38ab609d473",
+                "e8595dd8-8d6d-408e-a993-43e6f4e44995",
+                "4f4a6426-a8e5-4757-a3bd-77b09f180b6a",
+                "94f60dcc-404c-4f9c-840d-2ac8194d8b7d",
+                "675034ac-059a-4522-801e-5e1080f8561f",
+                "1d9c63f4-3c2a-46b0-8f8d-6837ab89b138",
+                "a5ab928f-3d7f-463d-be7a-074948aeda67",
+                "2c4fdd57-2470-4b83-b9da-d62645d4c60b",
+                "cc73cb17-3c06-4cca-8f8c-d82cf645e450",
+                "4e067b3a-eb8b-44fe-9be3-8c927d12edf9",
+                "71689d5c-337e-400b-9574-6c8840d91da5",
+                "7537b898-03e3-4379-932f-d41613970e6b",
+                "753cd66c-4bc3-41d7-aed2-1d4bfc26f947",
+                "a9908380-f2b0-40df-96e8-063249542a49"
             ]
         }
     ]
