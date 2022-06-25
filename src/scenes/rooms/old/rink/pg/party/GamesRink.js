@@ -8,6 +8,8 @@ export default class GamesRink extends RoomScene {
     constructor() {
         super("GamesRink");
 
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.hockey_stick;
         /** @type {Array<any>} */
         this.sort;
 
@@ -85,9 +87,36 @@ export default class GamesRink extends RoomScene {
         const left_net_front_1 = this.add.image(1291, 460, "pg-partyroom", "left_net_front");
         left_net_front_1.flipX = true;
 
+        // stick_1
+        const stick_1 = this.add.image(515, 176, "stick");
+        stick_1.scaleX = 0.4429601120842577;
+        stick_1.scaleY = 0.4429601120842577;
+        stick_1.angle = -38;
+        stick_1.flipX = true;
+
+        // stick_2
+        const stick_2 = this.add.image(552, 176, "stick");
+        stick_2.scaleX = 0.4429601120842577;
+        stick_2.scaleY = 0.4429601120842577;
+        stick_2.angle = 25;
+
+        // stick
+        const stick = this.add.image(541, 172, "stick");
+        stick.scaleX = 0.4429601120842577;
+        stick.scaleY = 0.4429601120842577;
+        stick.angle = 50;
+
+        // hockey_stick
+        const hockey_stick = this.add.ellipse(542, 237, 128, 128);
+        hockey_stick.scaleX = 0.9533734349476273;
+        hockey_stick.scaleY = 0.30372556000761564;
+        hockey_stick.isFilled = true;
+        hockey_stick.fillAlpha = 0;
+
         // lists
         const sort = [];
 
+        this.hockey_stick = hockey_stick;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -95,6 +124,18 @@ export default class GamesRink extends RoomScene {
 
 
     /* START-USER-CODE */
+    create(){
+        super.create()
+
+        this.roomZones = {
+            'redfp': { 
+                key: this.hockey_stick,
+                callback: () => this.interface.prompt.showItem(220)
+            }
+        }
+
+        super.addZones()
+    }
     /* END-USER-CODE */
 }
 

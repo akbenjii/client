@@ -213,6 +213,64 @@
             "x": 1291,
             "y": 460,
             "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "dd2cce90-4898-4e69-95b2-5317300c3473",
+            "label": "stick_1",
+            "components": [],
+            "texture": {
+                "key": "stick"
+            },
+            "x": 515,
+            "y": 176,
+            "scaleX": 0.4429601120842577,
+            "scaleY": 0.4429601120842577,
+            "angle": -38,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "3a0fd814-be3c-4a6d-a8d3-1b087d6460ca",
+            "label": "stick_2",
+            "components": [],
+            "texture": {
+                "key": "stick"
+            },
+            "x": 552,
+            "y": 176,
+            "scaleX": 0.4429601120842577,
+            "scaleY": 0.4429601120842577,
+            "angle": 25
+        },
+        {
+            "type": "Image",
+            "id": "ae4478ee-4be5-4710-874d-cacf8eb7d295",
+            "label": "stick",
+            "components": [],
+            "texture": {
+                "key": "stick"
+            },
+            "x": 541,
+            "y": 172,
+            "scaleX": 0.4429601120842577,
+            "scaleY": 0.4429601120842577,
+            "angle": 50
+        },
+        {
+            "type": "Ellipse",
+            "id": "dd3dd21d-2a43-4ff7-aa87-a6fc0644f562",
+            "label": "hockey_stick",
+            "scope": "CLASS",
+            "components": [],
+            "x": 542,
+            "y": 237,
+            "scaleX": 0.9533734349476273,
+            "scaleY": 0.30372556000761564,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
