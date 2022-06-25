@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Button, MoveTo, ShowHint, Zone } from '@components/components'
+import { Animation, Button, MoveTo, ShowHint, Zone, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -14,6 +14,8 @@ export default class Dock extends RoomScene {
         this.boat;
         /** @type {Phaser.GameObjects.Sprite} */
         this.rings;
+        /** @type {Phaser.GameObjects.Image} */
+        this.coffee_stand;
         /** @type {Phaser.GameObjects.Sprite} */
         this.fire_mountain;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Rectangle>} */
@@ -205,8 +207,13 @@ export default class Dock extends RoomScene {
         const zoneZone = new Zone(zone);
         zoneZone.hoverCallback = () => this.onRingsOver();
 
+        // coffee_stand (components)
+        const coffee_standSimpleButton = new SimpleButton(coffee_stand);
+        coffee_standSimpleButton.callback = () => this.interface.prompt.showItem(5551);
+
         this.boat = boat;
         this.rings = rings;
+        this.coffee_stand = coffee_stand;
         this.fire_mountain = fire_mountain;
         this.sort = sort;
 

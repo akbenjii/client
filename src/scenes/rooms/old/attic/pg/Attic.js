@@ -19,6 +19,7 @@ export default class Attic extends RoomScene {
         this.roomTriggers = {
             'lodge': () => this.triggerRoom(220, 1146, 562)
         }
+        this.music='248'
 
         /* END-USER-CTR-CODE */
     }
@@ -36,9 +37,25 @@ export default class Attic extends RoomScene {
         const bg = this.add.image(0, 0, "attic", "bg");
         bg.setOrigin(0, 0);
 
+        // hq_signs
+        this.add.image(392, 415, "pg-attic", "hq_signs");
+
+        // red_balloons
+        this.add.image(386, 380, "pg-attic", "red_balloons");
+
+        // couches
+        this.add.image(417, 545, "pg-attic", "couches");
+
         // arm
         const arm = this.add.image(225, 611, "attic", "arm");
         arm.setOrigin(0.497143, 0.649402);
+
+        // attic_pg
+        this.add.image(739, 502, "pg-attic", "attic_pg");
+
+        // box
+        const box = this.add.image(-1, 970, "pg-attic", "box");
+        box.setOrigin(0, 1);
 
         // horse
         const horse = this.add.sprite(1369, 639, "attic", "horse0001");
@@ -69,9 +86,8 @@ export default class Attic extends RoomScene {
         table4.setOrigin(0.4251497005988024, 0.6060606060606061);
         table4.visible = false;
 
-        // box
-        const box = this.add.image(-1, 970, "attic", "box");
-        box.setOrigin(0, 1);
+        // rvb
+        this.add.image(788, 138, "pg-attic", "rvb");
 
         // lists
         const sort = [box, table2, arm, table3, table1, table1_1, table4, horse];

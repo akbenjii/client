@@ -30,6 +30,42 @@
         },
         {
             "type": "Image",
+            "id": "32df575d-de3d-4e4a-9c63-623ee0713e4f",
+            "label": "hq_signs",
+            "components": [],
+            "texture": {
+                "key": "pg-attic",
+                "frame": "hq_signs"
+            },
+            "x": 392,
+            "y": 415
+        },
+        {
+            "type": "Image",
+            "id": "75aed21b-63b2-4522-a665-f47647965f3d",
+            "label": "red_balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-attic",
+                "frame": "red_balloons"
+            },
+            "x": 386,
+            "y": 380
+        },
+        {
+            "type": "Image",
+            "id": "fcba26ac-bba0-45ae-9331-821571e44dd7",
+            "label": "couches",
+            "components": [],
+            "texture": {
+                "key": "pg-attic",
+                "frame": "couches"
+            },
+            "x": 417,
+            "y": 545
+        },
+        {
+            "type": "Image",
             "id": "5415a75b-9831-4ffa-a621-3222772839b7",
             "label": "arm",
             "components": [],
@@ -41,6 +77,32 @@
             "y": 611,
             "originX": 0.497143,
             "originY": 0.649402
+        },
+        {
+            "type": "Image",
+            "id": "c07f7899-cb0d-4738-bcd4-065056f99c08",
+            "label": "attic_pg",
+            "components": [],
+            "texture": {
+                "key": "pg-attic",
+                "frame": "attic_pg"
+            },
+            "x": 739,
+            "y": 502
+        },
+        {
+            "type": "Image",
+            "id": "65a936ef-a9a8-486c-977e-31ccc0f17219",
+            "label": "box",
+            "components": [],
+            "texture": {
+                "key": "pg-attic",
+                "frame": "box"
+            },
+            "x": -1,
+            "y": 970,
+            "originX": 0,
+            "originY": 1
         },
         {
             "type": "Sprite",
@@ -176,17 +238,15 @@
         },
         {
             "type": "Image",
-            "id": "65a936ef-a9a8-486c-977e-31ccc0f17219",
-            "label": "box",
+            "id": "481cf6d7-827a-4988-9193-a31ee2d5fdc3",
+            "label": "rvb",
             "components": [],
             "texture": {
-                "key": "attic",
-                "frame": "box"
+                "key": "pg-attic",
+                "frame": "rvb"
             },
-            "x": -1,
-            "y": 970,
-            "originX": 0,
-            "originY": 1
+            "x": 788,
+            "y": 138
         }
     ],
     "plainObjects": [],

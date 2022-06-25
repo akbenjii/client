@@ -277,7 +277,11 @@
             "type": "Image",
             "id": "a65ac4ba-518d-4b23-9bb2-75af50773589",
             "label": "coffee_stand",
-            "components": [],
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(5551)",
             "texture": {
                 "key": "pg-dock",
                 "frame": "coffee_stand"
