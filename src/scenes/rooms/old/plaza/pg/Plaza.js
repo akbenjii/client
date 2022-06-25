@@ -10,6 +10,8 @@ export default class Plaza extends RoomScene {
     constructor() {
         super("Plaza");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.stage;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -25,6 +27,8 @@ export default class Plaza extends RoomScene {
             'pizza': () => this.triggerRoom(330, 1200, 400),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
+        this.roomAnims = true
+        this.music = '213'
 
         /* END-USER-CTR-CODE */
     }
@@ -42,8 +46,14 @@ export default class Plaza extends RoomScene {
         const bg = this.add.image(-18, -2, "plaza", "bg");
         bg.setOrigin(0, 0);
 
-        // image
-        this.add.image(765, 225, "plazasky");
+        // track
+        this.add.image(761, 637, "pg-plaza", "track");
+
+        // pet_shop
+        this.add.image(450, 297, "pg-plaza", "pet_shop");
+
+        // stage
+        const stage = this.add.sprite(837, 240, "pg-plaza", "stage0001");
 
         // pet_door
         const pet_door = this.add.image(333, 489, "plaza", "pet_door");
@@ -57,23 +67,21 @@ export default class Plaza extends RoomScene {
         const pizza_door = this.add.image(1194, 410, "plaza", "pizza_door");
         pizza_door.setOrigin(0.5311, 0.442211);
 
-        // stage_lights_back
-        const stage_lights_back = this.add.sprite(851, 174, "plaza", "stage_lights_back0001");
-        stage_lights_back.setOrigin(0.5011764705882353, 0.5);
+        // rope_under_3
+        this.add.image(93, 585, "pg-plaza", "rope_under_3");
 
-        // stage_screen
-        this.add.image(847, 221, "plaza", "stage_screen");
+        // rope_under_2
+        this.add.image(50, 542, "pg-plaza", "rope_under_2");
 
-        // stage_lights_front
-        const stage_lights_front = this.add.sprite(853, 166, "plaza", "stage_lights_front0001");
+        // rope_under_4
+        this.add.image(134, 622, "pg-plaza", "rope_under_4");
+
+        // rope_under_5
+        this.add.image(135, 688, "pg-plaza", "rope_under_5");
 
         // lamp
         const lamp = this.add.image(129, 827, "plaza", "lamp");
         lamp.setOrigin(0.5099009900990099, 0.9323076923076923);
-
-        // title
-        const title = this.add.image(725, 200, "plaza", "title");
-        title.setOrigin(0, 0);
 
         // stage_door_1
         const stage_door_1 = this.add.image(733, 385, "plaza", "stage_door_1");
@@ -87,12 +95,104 @@ export default class Plaza extends RoomScene {
         const tickets = this.add.image(846, 457, "plaza", "tickets");
         tickets.setOrigin(0.49612403100775193, 0.9247311827956989);
 
-        // text
-        const text = this.add.image(851, 248, "plaza", "text");
-        text.setOrigin(0.5, 0.49333333333333335);
+        // puffle
+        this.add.image(250, 205, "pg-plaza", "puffle");
+
+        // upper_rope_1
+        this.add.image(137, 429, "pg-plaza", "upper_rope_1");
+
+        // left_blue_flags
+        this.add.image(72, 279, "pg-plaza", "left_blue_flags");
+
+        // puffle_sign
+        this.add.image(488, 390, "pg-plaza", "puffle_sign");
+
+        // balloons
+        this.add.image(848, 323, "pg-plaza", "balloons");
+
+        // team_blue
+        this.add.image(1359, 166, "pg-plaza", "team_blue");
+
+        // upper_rope_2
+        this.add.image(261, 565, "pg-plaza", "upper_rope_2");
+
+        // upper_rope_3
+        this.add.image(276, 621, "pg-plaza", "upper_rope_3");
+
+        // upper_rope_4
+        const upper_rope_4 = this.add.image(327, 666, "pg-plaza", "upper_rope_4");
+
+        // upper_rope_5
+        this.add.image(375, 726, "pg-plaza", "upper_rope_5");
+
+        // upper_rope_6
+        const upper_rope_6 = this.add.image(540, 772, "pg-plaza", "upper_rope_6");
+
+        // upper_rope_7
+        this.add.image(1084, 771, "pg-plaza", "upper_rope_7");
+
+        // upper_rope_13
+        this.add.image(1436, 533, "pg-plaza", "upper_rope_13");
+
+        // upper_rope_11
+        this.add.image(1331, 603, "pg-plaza", "upper_rope_11");
+
+        // upper_rope_10
+        this.add.image(1282, 654, "pg-plaza", "upper_rope_10");
+
+        // upper_rope_9
+        this.add.image(1290, 707, "pg-plaza", "upper_rope_9");
+
+        // upper_rope_8
+        const upper_rope_8 = this.add.image(1274, 750, "pg-plaza", "upper_rope_8");
+
+        // rope_under_1
+        this.add.image(16, 496, "pg-plaza", "rope_under_1");
+
+        // rope_under_6
+        const rope_under_6 = this.add.image(163, 740, "pg-plaza", "rope_under_6");
+
+        // rope_under_7
+        const rope_under_7 = this.add.image(231, 778, "pg-plaza", "rope_under_7");
+
+        // rope_under_8
+        const rope_under_8 = this.add.image(292, 839, "pg-plaza", "rope_under_8");
+
+        // rope_under_14
+        const rope_under_14 = this.add.image(1493, 651, "pg-plaza", "rope_under_14");
+
+        // rope_under_13
+        const rope_under_13 = this.add.image(1445, 697, "pg-plaza", "rope_under_13");
+
+        // rope_under_12
+        const rope_under_12 = this.add.image(1449, 752, "pg-plaza", "rope_under_12");
+
+        // rope_under_11
+        const rope_under_11 = this.add.image(1431, 814, "pg-plaza", "rope_under_11");
+
+        // rope_under_10
+        const rope_under_10 = this.add.image(1348, 864, "pg-plaza", "rope_under_10");
+
+        // rope_under_9
+        const rope_under_9 = this.add.image(807, 885, "pg-plaza", "rope_under_9");
+
+        // left_sign
+        const left_sign = this.add.image(639, 725, "pg-plaza", "left_sign");
+
+        // right_sign
+        const right_sign = this.add.image(998, 725, "pg-plaza", "right_sign");
+
+        // mid_flags
+        this.add.image(845, 60, "pg-plaza", "mid_flags");
+
+        // right_flags
+        this.add.image(1503, 252, "pg-plaza", "right_flags");
+
+        // lamp_flags
+        this.add.image(12, 646, "pg-plaza", "lamp_flags");
 
         // lists
-        const sort = [lamp, tickets];
+        const sort = [lamp, tickets, upper_rope_4, upper_rope_6, upper_rope_8, rope_under_7, rope_under_6, rope_under_8, rope_under_9, rope_under_10, rope_under_11, rope_under_12, rope_under_13, rope_under_14, left_sign, right_sign];
 
         // pet_door (components)
         const pet_doorButton = new Button(pet_door);
@@ -121,16 +221,6 @@ export default class Plaza extends RoomScene {
         pizza_doorMoveTo.x = 1152;
         pizza_doorMoveTo.y = 500;
 
-        // stage_lights_back (components)
-        const stage_lights_backAnimation = new Animation(stage_lights_back);
-        stage_lights_backAnimation.key = "stage_lights_back";
-        stage_lights_backAnimation.end = 16;
-
-        // stage_lights_front (components)
-        const stage_lights_frontAnimation = new Animation(stage_lights_front);
-        stage_lights_frontAnimation.key = "stage_lights_front";
-        stage_lights_frontAnimation.end = 16;
-
         // stage_door_1 (components)
         const stage_door_1Button = new Button(stage_door_1);
         stage_door_1Button.spriteName = "stage_door_1";
@@ -153,6 +243,7 @@ export default class Plaza extends RoomScene {
         ticketsMoveTo.x = 846;
         ticketsMoveTo.y = 426;
 
+        this.stage = stage;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -160,6 +251,10 @@ export default class Plaza extends RoomScene {
 
 
     /* START-USER-CODE */
+    create() {
+        super.create()
+        this.stage.play('pgstage')
+    }
     /* END-USER-CODE */
 }
 
