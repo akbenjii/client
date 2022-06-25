@@ -81,7 +81,13 @@ export default class PenguinLoader extends SpriteLoader {
     }
 
     loadPuffle(penguin, color) {
-        if (!penguin.puffle) return
-        penguin.pufflesprite = this.loadSprite(penguin, `puffle_${color}`, 3, 60)
+        if (!penguin.puffle || !penguin.active || this.world.client.hasPuffle) return
+
+        penguin.pufflesprite = penguin.room.add.sprite(60, 0, `puffle_${color}`, '1_1')
+        penguin.pufflesprite.depth = 3
+
+        penguin.add(penguin.pufflesprite)
+
+        this.world.client.hasPuffle = true
     }
 }

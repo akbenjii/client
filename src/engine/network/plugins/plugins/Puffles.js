@@ -10,6 +10,7 @@ export default class Puffles extends Plugin {
             'get_wellbeing': this.getWellbeing,
             'get_puffle_color': this.getPuffleColor,
             'stop_walking': this.stopWalking,
+            'walk_puffle': this.walkPuffle
         }
     }
 
@@ -24,9 +25,9 @@ export default class Puffles extends Plugin {
     getWellbeing(args) {
         if (!this.world.room.isIgloo) return
 
-        args.name = this.world.room.puffles[args.puffleId].name
-
-        this.interface.main.puffleCare._showCard(args)
+        this.interface.main.puffleCare.showPuffle(args)
+        this.interface.main.puffleCare.x = this.world.room.puffles[args.puffleId].x
+        this.interface.main.puffleCare.y = this.world.room.puffles[args.puffleId].y
     }
 
     getPuffleColor(args) {
@@ -44,14 +45,50 @@ export default class Puffles extends Plugin {
         if (!this.world.room) return
 
         let penguin = this.world.room.penguins[args.user]
-        if (penguin.pufflesprite) {
-            penguin.pufflesprite.visible = false
-            penguin.pufflesprite.destroy()
+        let puffle = this.world.room.penguins[args.user].pufflesprite
+        if (puffle) {
+            puffle.destroy()
+            this.world.client.hasPuffle = false
         }
         let playercard = this.world.interface.main.playerCard
         if (playercard.visible && (playercard.id === args.user)) {
-            penguin.pufflesprite.visible = false
             playercard.paperDoll.puffle.destroy()
         }
+        if (penguin.puffle !== 0) {
+            penguin.puffle = 0
+        }
+
+        if (this.world.room.isIgloo) {
+            this.world.room.spawnPuffles(this.world.room.puffleArray)
+        }
+    }
+
+    walkPuffle(args) {
+        if (!this.world.room) return
+
+        let penguin = this.world.room.penguins[args.user]
+        let puffle = this.world.room.penguins[args.user].pufflesprite
+        if (puffle) {
+            puffle.destroy()
+            this.world.client.hasPuffle = false
+        }
+        let playercard = this.world.interface.main.playerCard
+        if (playercard.visible && (playercard.id === args.user)) {
+            playercard.paperDoll.puffle.destroy()
+        }
+
+        if (this.world.room.isIgloo) {
+
+            puffle = this.world.room.puffles[args.puffle]
+
+            if (puffle) {
+                puffle.destroy()
+            }
+
+        }
+
+        penguin.puffle = args.puffle
+        this.network.send('get_puffle_color', {puffle: args.puffle, penguinId: args.user})
+        
     }
 }

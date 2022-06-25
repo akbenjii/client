@@ -472,26 +472,6 @@
             "y": 61
         },
         {
-            "type": "Image",
-            "id": "aa4c7523-66ae-4907-bdbe-07bb6b80b482",
-            "label": "party_interface",
-            "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onPIntOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onPIntOut()",
-            "SimpleButton.callback": "() => {this.underwater.visible = true}",
-            "texture": {
-                "key": "partyinterface_uw",
-                "frame": "4518"
-            },
-            "x": 1432,
-            "y": 82,
-            "scaleX": 0.4,
-            "scaleY": 0.4
-        },
-        {
             "type": "Container",
             "id": "ce0ace0d-84c5-4c35-86f9-390fd7926a06",
             "label": "mod_btn",
@@ -630,22 +610,6 @@
                     "components": [],
                     "x": 446,
                     "y": 436,
-                    "visible": false,
-                    "nestedPrefabs": []
-                },
-                {
-                    "prefabId": "00690da0-e05f-48fd-8310-c43600a5a9da",
-                    "id": "019ddc56-478d-449a-970f-76ca8d47ed89",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "visible"
-                    ],
-                    "label": "puffleCare",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 551,
-                    "y": 480,
                     "visible": false,
                     "nestedPrefabs": []
                 }
@@ -831,18 +795,18 @@
             ]
         },
         {
-            "prefabId": "339f8c5b-fb4a-48a0-8bfc-6efe7e524517",
-            "id": "a69bfcef-ab23-4c72-9a49-832ab092d43e",
+            "prefabId": "c7faec64-0731-43ba-ac67-c99b18aab3f7",
+            "id": "917dbd67-de6b-432c-97a1-264013a8be83",
             "unlock": [
                 "x",
                 "y",
                 "visible"
             ],
-            "label": "underwater",
+            "label": "puffleCare",
             "scope": "CLASS",
             "components": [],
-            "x": 760,
-            "y": 480,
+            "x": 500,
+            "y": 583,
             "visible": false,
             "nestedPrefabs": []
         }

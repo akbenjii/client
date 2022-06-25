@@ -43,6 +43,8 @@ export default class Puffle extends BaseContainer {
         if (this.world.client.penguin.puffle == this.id) return
 
         this.sprite = this.room.add.sprite(this.xpos, this.ypos, `puffle_${this.color}`, '1_1')
+
+        this.sprite.scale = 1.25
         
         this.x = this.sprite.x
         this.y = this.sprite.y
@@ -232,6 +234,14 @@ export default class Puffle extends BaseContainer {
             this.isTweening = false
             this.addPuffleInput()
         }, this)
+    }
+
+    destroy(){
+        this.sprite.destroy()
+        if (this.tween) {
+            this.tween.remove()
+        }
+        this.room.puffles[this.id] = null
     }
 
     /*========== Frames ==========*/

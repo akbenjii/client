@@ -1,0 +1,290 @@
+{
+    "id": "c7faec64-0731-43ba-ac67-c99b18aab3f7",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "7e8a6336-4ce9-494d-8366-9384790132a3",
+            "label": "container_1",
+            "components": [],
+            "x": 540,
+            "y": 611.180446264649,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "022c7af9-027f-460c-9978-91b2fb5e55a2",
+                    "label": "puffle_care_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffle_care/bg"
+                    },
+                    "y": -257.180449803358
+                },
+                {
+                    "type": "Sprite",
+                    "id": "405d6414-396a-49b0-a335-8d3bbe1860e3",
+                    "label": "care_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "puffle_care/care_btn",
+                    "Button.callback": "() => this.onCare()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffle_care/care_btn"
+                    },
+                    "y": -103.18044980335799
+                },
+                {
+                    "type": "Sprite",
+                    "id": "bd8ecc0a-d2e7-4693-8cd8-3238d4095ce0",
+                    "label": "walk_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "puffle_care/walk_btn",
+                    "Button.callback": "() => this.onWalk()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffle_care/walk_btn"
+                    },
+                    "x": -75,
+                    "y": -47.18044980335799
+                },
+                {
+                    "type": "Sprite",
+                    "id": "fd7802bd-a077-4b9f-93ed-847925abb49f",
+                    "label": "swap_btn",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "puffle_care/swap_btn",
+                    "Button.callback": "() => this.onSwap()",
+                    "texture": {
+                        "key": "main",
+                        "frame": "puffle_care/swap_btn"
+                    },
+                    "x": 75,
+                    "y": -47.18044980335799
+                },
+                {
+                    "type": "Container",
+                    "id": "863cf307-afba-4f05-af6d-8fcd5bc3676c",
+                    "label": "rest",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -177.180449803358,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "9ff37cf2-ec55-422e-8246-d4619b04048b",
+                            "label": "rest_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar_back"
+                            }
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d582e940-46a8-44d5-8b2b-d5913062acce",
+                            "label": "rest_bar",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar"
+                            },
+                            "x": 13
+                        },
+                        {
+                            "type": "Image",
+                            "id": "389d55bc-a5af-47a2-9ec0-0a659c038946",
+                            "label": "rest_icon",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/rest_icon"
+                            },
+                            "x": -45
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "08cdd9a6-0b3f-46fc-a7ad-48e730707013",
+                    "label": "clean",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -222.180449803358,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "90db2ae1-5e4f-4cbb-8cda-f2aa34d6fba1",
+                            "label": "clean_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar_back"
+                            }
+                        },
+                        {
+                            "type": "Image",
+                            "id": "74300acb-4a95-452d-b757-9782555ca0f0",
+                            "label": "clean_bar",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar"
+                            },
+                            "x": 13
+                        },
+                        {
+                            "type": "Image",
+                            "id": "443a3c6a-cec3-4fc3-8296-044d08b2afb4",
+                            "label": "clean_icon",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/clean_icon"
+                            },
+                            "x": -45
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "7e3c70f6-cd3a-42f3-8515-422dac260790",
+                    "label": "play",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -267.180449803358,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "23080e6e-029c-4f84-9205-7ca957099f1c",
+                            "label": "play_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar_back"
+                            }
+                        },
+                        {
+                            "type": "Image",
+                            "id": "8d942045-42ec-4622-92b1-c4013e52ba8e",
+                            "label": "play_bar",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar"
+                            },
+                            "x": 13
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b5311cf2-6f17-4a11-bc4c-e8b7342ec57a",
+                            "label": "play_icon",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/play_icon"
+                            },
+                            "x": -45
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "657895ce-fd9b-4f71-ad46-40c1ad877a02",
+                    "label": "food",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -312.180449803358,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "50179c47-c81a-4b7e-8bcd-17c8c7678e3f",
+                            "label": "food_bg",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar_back"
+                            }
+                        },
+                        {
+                            "type": "Image",
+                            "id": "46cc03ae-1524-4b42-be70-3fa752c6a970",
+                            "label": "food_bar",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/bar"
+                            },
+                            "x": 13
+                        },
+                        {
+                            "type": "Image",
+                            "id": "81f2b60e-329e-4722-a36d-dbb94bf1f3cf",
+                            "label": "food_icon",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "main",
+                                "frame": "puffle_care/food_icon"
+                            },
+                            "x": -45
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "b867a401-ceb1-4613-91db-a1785d5e606a",
+                    "label": "name_txt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -352.180449803358,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Puffle Name",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "18px",
+                    "fontStyle": "bold",
+                    "color": "#000000ff"
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
