@@ -171,7 +171,8 @@ export default class Village extends RoomScene {
         const rope_up_7 = this.add.image(73, 893, "pg-village", "rope_up_7");
 
         // green_flag_mountain
-        this.add.image(421, 403, "pg-village", "green_flag_mountain");
+        const green_flag_mountain = this.add.image(415, 389, "pg-village", "green_flag_mountain");
+        green_flag_mountain.angle = -8;
 
         // sled_penguins
         const sled_penguins = this.add.sprite(783, 286, "pg-village", "sled_penguins0001");
@@ -206,6 +207,10 @@ export default class Village extends RoomScene {
         chairAnimation.end = 179;
         chairAnimation.repeatDelay = 1500;
 
+        // tour_stand (components)
+        const tour_standSimpleButton = new SimpleButton(tour_stand);
+        tour_standSimpleButton.callback = () => this.interface.prompt.showItem(428);
+
         this.lift_sign = lift_sign;
         this.sled_penguins = sled_penguins;
         this.sort = sort;
@@ -218,7 +223,7 @@ export default class Village extends RoomScene {
     create() {
         super.create()
         this.lift_sign.play('pg_liftsign')
-		this.sled_penguins.play('penguin_sled')
+        this.sled_penguins.play('penguin_sled')
     }
     /* END-USER-CODE */
 }

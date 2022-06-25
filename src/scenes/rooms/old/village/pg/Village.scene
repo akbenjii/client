@@ -311,7 +311,10 @@
             "type": "Image",
             "id": "71689d5c-337e-400b-9574-6c8840d91da5",
             "label": "tour_stand",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
             "texture": {
                 "key": "pg-village",
                 "frame": "tour_stand"
@@ -536,8 +539,9 @@
                 "key": "pg-village",
                 "frame": "green_flag_mountain"
             },
-            "x": 421,
-            "y": 403
+            "x": 415,
+            "y": 389,
+            "angle": -8
         },
         {
             "type": "Sprite",
