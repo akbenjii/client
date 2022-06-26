@@ -25,6 +25,7 @@ export default class Rink extends RoomScene {
     _preload() {
 
         this.load.pack("rink-pack", "assets/media/rooms/old/rink/rink-pack.json");
+        this.load.pack("sport-pack", "assets/media/rooms/old/sport/sport-pack.json");
     }
 
     /** @returns {void} */
@@ -124,8 +125,18 @@ export default class Rink extends RoomScene {
         // snacks_ring
         this.add.image(1250, 200, "rink", "snacks_ring");
 
+        // book_sports
+        const book_sports = this.add.image(1414, 1111.244075129439, "sport", "book-sports");
+        book_sports.setOrigin(0.5, 2.552033959411991);
+
         // lists
         const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border];
+
+        // book_sports (components)
+        const book_sportsButton = new Button(book_sports);
+        book_sportsButton.spriteName = "book-sports";
+        book_sportsButton.callback = () => this.interface.loadExternal('SportsCatalog');
+        book_sportsButton.activeFrame = false;
 
         this.sort = sort;
 

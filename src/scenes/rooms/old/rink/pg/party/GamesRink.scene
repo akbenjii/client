@@ -8,7 +8,8 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/old/rink/pg/gamesrink-pack.json"
+            "client/assets/media/rooms/old/rink/pg/gamesrink-pack.json",
+            "client/assets/media/rooms/old/sport/sport-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "GamesRink",
@@ -271,6 +272,24 @@
             "fillAlpha": 0,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "4a2d20ed-b0ac-4490-96c4-805169078aaa",
+            "label": "book_sports",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "book-sports",
+            "Button.callback": "() => this.interface.loadExternal('SportsCatalog')",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "sport",
+                "frame": "book-sports"
+            },
+            "x": 1414,
+            "y": 1111.244075129439,
+            "originY": 2.552033959411991
         }
     ],
     "plainObjects": [],

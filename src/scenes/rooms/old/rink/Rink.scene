@@ -8,7 +8,8 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/old/rink/rink-pack.json"
+            "client/assets/media/rooms/old/rink/rink-pack.json",
+            "client/assets/media/rooms/old/sport/sport-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Rink",
@@ -335,6 +336,24 @@
             },
             "x": 1250,
             "y": 200
+        },
+        {
+            "type": "Image",
+            "id": "546821ff-56e5-4a78-b97d-d1af0c966000",
+            "label": "book_sports",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "book-sports",
+            "Button.callback": "() => this.interface.loadExternal('SportsCatalog')",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "sport",
+                "frame": "book-sports"
+            },
+            "x": 1414,
+            "y": 1111.244075129439,
+            "originY": 2.552033959411991
         }
     ],
     "plainObjects": [],

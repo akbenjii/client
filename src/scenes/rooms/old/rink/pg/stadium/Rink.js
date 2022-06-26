@@ -1,3 +1,5 @@
+import { Button, Interactive, SimpleButton } from '@components/components'
+
 import RoomScene from '@scenes/rooms/RoomScene'
 
 
@@ -28,6 +30,7 @@ export default class Rink extends RoomScene {
     _preload() {
 
         this.load.pack("rink-pack", "assets/media/rooms/old/rink/rink-pack.json");
+        this.load.pack("sport-pack", "assets/media/rooms/old/sport/sport-pack.json");
     }
 
     /** @returns {void} */
@@ -75,8 +78,18 @@ export default class Rink extends RoomScene {
         // pg_blimp
         const pg_blimp = this.add.sprite(752, 76, "pg-stadium", "blimp0001");
 
+        // book_sports
+        const book_sports = this.add.image(1414, 1111.244075129439, "sport", "book-sports");
+        book_sports.setOrigin(0.5, 2.552033959411991);
+
         // lists
-        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, sports_door0001, rink_border];
+        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, sports_door0001, rink_border, book_sports];
+
+        // book_sports (components)
+        const book_sportsButton = new Button(book_sports);
+        book_sportsButton.spriteName = "book-sports";
+        book_sportsButton.callback = () => this.interface.loadExternal('SportsCatalog');
+        book_sportsButton.activeFrame = false;
 
         this.pg_blimp = pg_blimp;
         this.sort = sort;

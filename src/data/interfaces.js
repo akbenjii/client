@@ -8,7 +8,8 @@ const interfaces = {
 	'Hydro': require('@scenes/interface/catalogs/hydro/Hydro').default,
 	'Waves': require('@scenes/interface/catalogs/waves/Waves').default,
 	'Fishing': require('@scenes/interface/catalogs/fishing/Fishing').default,
-	'Stampbook': require('@scenes/interface/game/stampbook/Stampbook').default
+	'Stampbook': require('@scenes/interface/game/stampbook/Stampbook').default,
+    'SportsCatalog': require('@scenes/interface/catalogs/sports/SportsCatalog').default
 }
 
 export default interfaces

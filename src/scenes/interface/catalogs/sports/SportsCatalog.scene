@@ -1,0 +1,1715 @@
+{
+    "id": "021e3755-191a-4190-91d7-e572cb8fca60",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "client/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json",
+            "client/assets/media/interface/catalogs/sports/jul22-sports.json",
+            "client/assets/media/interface/catalogs/clothing/july22/jul22-pack.json",
+            "client/assets/media/interface/catalogs/clothing/sep05-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "SportsCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "4ab2a5fe-17c8-484d-9fd7-0efa2a728931",
+            "label": "page8",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ffebf059-bef9-417f-8bb4-53dcfade284a",
+                    "label": "page8_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page8_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "f7957aa1-e003-45e2-b038-abe4549dd798",
+                    "label": "close_left_16",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 486,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "3db8745d-1e98-4b25-9830-d1c64ee27b5b",
+                    "label": "page_left_16",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 485,
+                    "y": 588,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "47e1e717-b254-45c3-a308-5f87e783e2d6",
+            "label": "page7",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "c16adb5a-8af7-47ce-b1c0-ed7fabe5affa",
+                    "label": "page7_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page7_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "c0084f62-5bff-4f23-a13b-eaa93db790e8",
+                    "label": "close_left_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "b7279771-a2cf-4b73-a41f-bf3fa6e62cbb",
+                    "label": "page_right_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "5f1f54eb-b9d2-459e-8d32-a5255d49b0d8",
+                    "label": "close_right_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "c339aa5e-608d-4089-b8f5-f879c3394e49",
+                    "label": "page_left_8",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "58323ece-510c-4b51-ac50-7de37c6cd6a2",
+                    "label": "small_buy0001_png_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(712)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 604,
+                    "y": 465
+                },
+                {
+                    "type": "Image",
+                    "id": "137cb765-90d7-4824-afd5-d4e49d8cbfc2",
+                    "label": "coin_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 446,
+                    "y": 462
+                },
+                {
+                    "type": "Image",
+                    "id": "8959bbdc-7e2f-4099-a9c9-2a94b769bc18",
+                    "label": "coin_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 266,
+                    "y": 704
+                },
+                {
+                    "type": "Image",
+                    "id": "4e2fdba0-5b25-4202-9c68-8a9696380557",
+                    "label": "small_buy0001_png_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(711)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 424,
+                    "y": 707
+                },
+                {
+                    "type": "Image",
+                    "id": "76e929a8-4756-4207-a573-0923d35650fa",
+                    "label": "bg_holder_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(920)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 943,
+                    "y": 400,
+                    "angle": -15
+                },
+                {
+                    "type": "Image",
+                    "id": "abd50c91-f9e5-480c-8cd6-4a18f6e1343f",
+                    "label": "bg_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "bg_3"
+                    },
+                    "x": 943,
+                    "y": 400,
+                    "scaleX": 0.95,
+                    "scaleY": 0.95,
+                    "angle": -3
+                },
+                {
+                    "type": "Image",
+                    "id": "2815cb2e-51a8-46de-b7c6-59383c5aa133",
+                    "label": "shadow_bg_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 943,
+                    "y": 407,
+                    "angle": -15
+                },
+                {
+                    "type": "Image",
+                    "id": "57ae4ef1-f723-4f52-af50-9c4664f21b3b",
+                    "label": "bg_holder_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(993)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 1177,
+                    "y": 443,
+                    "angle": 16
+                },
+                {
+                    "type": "Image",
+                    "id": "a14ca4c8-f7fc-426a-98b9-bf052ebf7ede",
+                    "label": "bg_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "bg_2"
+                    },
+                    "x": 1177,
+                    "y": 443,
+                    "scaleX": 0.95,
+                    "scaleY": 0.95,
+                    "angle": 9
+                },
+                {
+                    "type": "Image",
+                    "id": "40ce2fd9-a12d-42ce-87e3-8b44cac9b499",
+                    "label": "shadow_bg_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 1177,
+                    "y": 450,
+                    "angle": 16
+                },
+                {
+                    "type": "Image",
+                    "id": "e4afc5ab-163c-438e-b84b-60e533527947",
+                    "label": "bg_holder_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg_holder",
+                    "Button.callback": "() => this.interface.prompt.showItem(918)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "bg_holder"
+                    },
+                    "x": 933,
+                    "y": 646,
+                    "angle": 3
+                },
+                {
+                    "type": "Image",
+                    "id": "ccd61061-1fbe-4861-971e-abd8e51c6240",
+                    "label": "bg_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "bg_4"
+                    },
+                    "x": 933,
+                    "y": 646,
+                    "scaleX": 0.95,
+                    "scaleY": 0.95,
+                    "angle": -1
+                },
+                {
+                    "type": "Image",
+                    "id": "5ac3a3f4-5d96-4682-9b3e-a629cae0338d",
+                    "label": "shadow_bg_2_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "shadow_bg"
+                    },
+                    "x": 933,
+                    "y": 653,
+                    "angle": 3
+                },
+                {
+                    "type": "Image",
+                    "id": "2821f041-e4d5-442a-a34c-d221b65e2131",
+                    "label": "big_coin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "big_coin"
+                    },
+                    "x": 1192,
+                    "y": 651
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "cc898319-17c1-4dcf-b656-866c5c824787",
+            "label": "page6",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7dfe9484-1e14-4fb2-8798-d1429b448d92",
+                    "label": "page6_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page6_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "93dae916-cfa2-4f11-a554-917b1e313ae2",
+                    "label": "coin_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "coin"
+                    },
+                    "x": 1183,
+                    "y": 612
+                },
+                {
+                    "type": "Image",
+                    "id": "92fd00aa-42ba-4b9a-987d-214671e26c9a",
+                    "label": "small_buy0001_png_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(321)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1229,
+                    "y": 674
+                },
+                {
+                    "type": "Image",
+                    "id": "a3742a17-54e9-4c1d-8582-fda3f74e0645",
+                    "label": "close_left_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "4339366e-8d39-4bcb-808b-0c9840b98eea",
+                    "label": "page_right_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "0b31d1d8-f618-4b04-90c6-1a7a2a110f43",
+                    "label": "close_right_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ee61800d-a788-4302-a4ef-1205ae7af142",
+                    "label": "page_left_7",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "3efba9f7-ca0f-48ab-9cf7-e5fe0377ea63",
+                    "label": "sec-bpom",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(333)",
+                    "x": 565,
+                    "y": 260,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "52795fb5-3169-4ddf-a6b3-c4c31cdd70fd",
+                    "label": "sec-rpom",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(330)",
+                    "x": 290,
+                    "y": 214,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "d8a2cdc7-ecf9-4fd3-b637-e495f6019cb9",
+                    "label": "sec-gpom",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5138)",
+                    "x": 688,
+                    "y": 88,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "3e03774c-acd4-4daa-b7f1-4d59b0437eec",
+                    "label": "sec-opom",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(329)",
+                    "x": 327,
+                    "y": 588,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "b3e53bc1-ef79-4563-a3c2-70c78f20967f",
+                    "label": "sec-ypom",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(5139)",
+                    "x": 686,
+                    "y": 625,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "1f90e500-817a-4b7b-8b04-d0f7c3e38b8a",
+            "label": "page5",
+            "components": [],
+            "x": 16,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "04824754-2dd5-4286-8237-ae5ba7657a01",
+                    "label": "page5_done",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22",
+                        "frame": "page5_done"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "3c056b4f-d169-4f40-a11e-70a0c3920280",
+                    "label": "page5_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page5_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "5cb012ad-88e2-42f8-a653-570e2673e43a",
+                    "label": "coin_3_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 525,
+                    "y": 330
+                },
+                {
+                    "type": "Image",
+                    "id": "cfe35aae-7389-4605-a91c-f490c40abcfd",
+                    "label": "coin_2_1_1_1_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 839,
+                    "y": 705
+                },
+                {
+                    "type": "Image",
+                    "id": "6f2fc0a9-f640-4b37-916d-3e5f548bf546",
+                    "label": "coin_2_1_2_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 1044,
+                    "y": 474
+                },
+                {
+                    "type": "Image",
+                    "id": "92a10471-b294-4905-96ba-d714bd2c99fb",
+                    "label": "coin_2_2_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 845,
+                    "y": 243
+                },
+                {
+                    "type": "Image",
+                    "id": "b9208fff-ce8f-4b28-8fbc-b514116a6ea8",
+                    "label": "coin_2_1_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 258,
+                    "y": 690
+                },
+                {
+                    "type": "Image",
+                    "id": "ed42ee72-693b-4e58-b747-7197fae65eed",
+                    "label": "small_buy0001_png_1_2_3_1_1_2_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(717)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 996,
+                    "y": 706
+                },
+                {
+                    "type": "Image",
+                    "id": "d1cdebdd-2436-4dcd-b4e2-3f6d1cb3bf52",
+                    "label": "small_buy0001_png_1_2_3_1_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(436)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1209,
+                    "y": 474
+                },
+                {
+                    "type": "Image",
+                    "id": "0589324e-09cd-4fdf-99e9-186bf1bf1f1d",
+                    "label": "small_buy0001_png_1_2_3_1_1_3_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(435)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1009,
+                    "y": 245
+                },
+                {
+                    "type": "Image",
+                    "id": "6c53fdae-363b-4e48-ad04-6c95a4323cee",
+                    "label": "small_buy0001_png_1_2_3_1_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(791)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 412,
+                    "y": 689
+                },
+                {
+                    "type": "Image",
+                    "id": "34f136dd-b55e-4340-a805-df99588f5709",
+                    "label": "small_buy0001_png_1_2_3_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(792)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 677,
+                    "y": 329
+                },
+                {
+                    "type": "Image",
+                    "id": "eac49ba3-115d-45a8-9ac3-78e9c42a71f2",
+                    "label": "close_left_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "bf1b4bcc-9f1a-4933-be66-c9a90a61bc03",
+                    "label": "page_right_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ecb9109b-274b-4f5a-a29f-2ed1713633ef",
+                    "label": "close_right_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "27d49408-bded-4073-8a42-4301a27c83a1",
+                    "label": "page_left_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f9126b13-eddc-4efb-bce9-aaee92cbaaf8",
+            "label": "page4",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "828746fc-d5a8-4a0a-b9cf-a7ad42d1f80c",
+                    "label": "page4_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page4_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "d674694c-0daf-4c66-ad33-5ea20a35558a",
+                    "label": "small_buy0001_png_1_2_3_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(349)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 568,
+                    "y": 215
+                },
+                {
+                    "type": "Image",
+                    "id": "22a85e69-9559-4914-8d1f-9dcf251e40ec",
+                    "label": "small_buy0001_png_1_2_3_1_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(255)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 407,
+                    "y": 673
+                },
+                {
+                    "type": "Image",
+                    "id": "a3314ad3-6583-4a53-8780-2d5099497b6a",
+                    "label": "small_buy0001_png_1_2_3_1_1_3_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(254)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 641,
+                    "y": 488
+                },
+                {
+                    "type": "Image",
+                    "id": "b0804f1e-22ee-4612-a788-6fbe3dbfe907",
+                    "label": "small_buy0001_png_1_2_3_1_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(836)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1237,
+                    "y": 315
+                },
+                {
+                    "type": "Image",
+                    "id": "81c2fd0e-dc1e-4e50-bd2c-9145be66d3b0",
+                    "label": "small_buy0001_png_1_2_3_1_1_2_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(837)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 969,
+                    "y": 674
+                },
+                {
+                    "type": "Image",
+                    "id": "7e57ca9d-004d-4b7e-9496-b53fe5b78e0b",
+                    "label": "coin_2_1_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 259,
+                    "y": 671
+                },
+                {
+                    "type": "Image",
+                    "id": "1c2d1938-4560-4215-829a-21f40c950a9c",
+                    "label": "coin_2_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 492,
+                    "y": 488
+                },
+                {
+                    "type": "Image",
+                    "id": "471f84bb-88a0-495b-9bbf-c65506b588d3",
+                    "label": "coin_2_1_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 1087,
+                    "y": 312
+                },
+                {
+                    "type": "Image",
+                    "id": "d579225c-3af6-4c88-b6c5-7289b547fa38",
+                    "label": "coin_2_1_1_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 816,
+                    "y": 669
+                },
+                {
+                    "type": "Image",
+                    "id": "41a8eca3-7efd-4155-9dbf-56f284b6a22f",
+                    "label": "coin_3_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 408,
+                    "y": 217
+                },
+                {
+                    "type": "Image",
+                    "id": "b3a9fbc4-565a-4e5a-9aea-a3a7547e38a8",
+                    "label": "close_left_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "f062f4e4-8dc4-48be-b7ef-f63b49c9bf60",
+                    "label": "page_right_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ce8ae001-3f26-40f5-a47b-210567ed864c",
+                    "label": "close_right_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d95da955-598f-4df2-afe2-3791f4077617",
+                    "label": "page_left_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "728da035-9db8-4ef8-96c3-9154dba6d325",
+            "label": "page3",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "b8334dbb-967e-404d-82b8-a119520264f1",
+                    "label": "page3_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page3_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "5ac976ac-b958-4890-a15e-dc0653fa0329",
+                    "label": "coin_3",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 276,
+                    "y": 237
+                },
+                {
+                    "type": "Image",
+                    "id": "9f8b3d63-3921-49b4-b72e-03256f46aee1",
+                    "label": "coin_2_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 1205,
+                    "y": 461
+                },
+                {
+                    "type": "Image",
+                    "id": "6ebf7400-de77-430a-9a7c-9bc0d027e3cd",
+                    "label": "coin_2_1_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 944,
+                    "y": 265
+                },
+                {
+                    "type": "Image",
+                    "id": "ffc97dd6-3df1-4d9c-a455-09ff91863b68",
+                    "label": "coin_2_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 474,
+                    "y": 469
+                },
+                {
+                    "type": "Image",
+                    "id": "3505fb46-86e8-4096-9e00-9f556e17b756",
+                    "label": "coin_2_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 1024,
+                    "y": 623
+                },
+                {
+                    "type": "Image",
+                    "id": "59e42da3-51f7-43b9-8222-4bfc5da60ac9",
+                    "label": "coin_2_1_1_1_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 266,
+                    "y": 698
+                },
+                {
+                    "type": "Image",
+                    "id": "de9d111e-a0b6-457d-b910-5b2c41a460bb",
+                    "label": "small_buy0001_png_1_2_3_1_1_2_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(385)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 929,
+                    "y": 686
+                },
+                {
+                    "type": "Image",
+                    "id": "6a25b5b0-9ae5-4a66-b208-f0b21815ea8e",
+                    "label": "small_buy0001_png_1_2_3_1_1_2_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(778)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1129,
+                    "y": 464
+                },
+                {
+                    "type": "Image",
+                    "id": "4abcc127-a350-4db0-968f-c70349742e62",
+                    "label": "small_buy0001_png_1_2_3_1_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(775)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 859,
+                    "y": 263
+                },
+                {
+                    "type": "Image",
+                    "id": "11a76f76-3a1b-4498-80bc-50ac0d74cf18",
+                    "label": "small_buy0001_png_1_2_3_1_1_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(726)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 628,
+                    "y": 467
+                },
+                {
+                    "type": "Image",
+                    "id": "8200f42c-4e97-4a87-8495-abc8fd383b89",
+                    "label": "small_buy0001_png_1_2_3_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(727)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 416,
+                    "y": 696
+                },
+                {
+                    "type": "Image",
+                    "id": "fe7d84c3-8e45-4a71-bdc0-4add0d28a7d9",
+                    "label": "small_buy0001_png_1_2_3_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(719)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 438,
+                    "y": 234
+                },
+                {
+                    "type": "Image",
+                    "id": "f52ffc00-7e22-42f0-8a2f-a1d036001306",
+                    "label": "close_left_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d34b44f4-a88a-4d36-a5bb-07e0fc2be75e",
+                    "label": "page_right_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d957ad53-351c-4239-9f2e-bbc05536e79c",
+                    "label": "close_right_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "9f10de8c-a83a-497d-a538-1cf26b83afa1",
+                    "label": "page_left_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "ed64c47b-deaa-41cf-af07-35e55e0ce529",
+            "label": "page2",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "5fb3b48b-7f04-4fde-837b-4d4286fbb4f8",
+                    "label": "page2_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page2_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "3311fd77-58ef-472f-80c0-47efb005b12d",
+                    "label": "small_buy0001_png_1_2_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(4005)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 577,
+                    "y": 328
+                },
+                {
+                    "type": "Image",
+                    "id": "a72440c4-6ecf-46cc-8ac3-338ba324258b",
+                    "label": "coin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 536,
+                    "y": 260
+                },
+                {
+                    "type": "Image",
+                    "id": "c7b93825-4b76-437d-ac57-e71ea95e008c",
+                    "label": "coin_2",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 326,
+                    "y": 581
+                },
+                {
+                    "type": "Image",
+                    "id": "27ba14e4-9129-4629-adda-149bb790ee14",
+                    "label": "coin_2_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 1012,
+                    "y": 189
+                },
+                {
+                    "type": "Image",
+                    "id": "7a180baa-dbf4-4a9d-a58d-e438839aa0fc",
+                    "label": "coin_2_1_1",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 1012,
+                    "y": 565
+                },
+                {
+                    "type": "Image",
+                    "id": "c7e0c5ea-f8c8-4012-8aab-d430873f6dbd",
+                    "label": "small_buy0001_png_1_2_3_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(4006)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 363,
+                    "y": 654
+                },
+                {
+                    "type": "Image",
+                    "id": "27fe4f1d-b3fd-4327-89ac-d3f042c2390f",
+                    "label": "small_buy0001_png_1_2_3_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(721)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 905,
+                    "y": 187
+                },
+                {
+                    "type": "Image",
+                    "id": "ff17f805-a0d5-4e82-8086-b583ecf3aefb",
+                    "label": "small_buy0001_png_1_2_3_1_1_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(720)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1202,
+                    "y": 187
+                },
+                {
+                    "type": "Image",
+                    "id": "de1ca07c-3cb7-42af-b641-2abfda99bf46",
+                    "label": "small_buy0001_png_1_2_3_1_1_2",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(462)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 898,
+                    "y": 715
+                },
+                {
+                    "type": "Image",
+                    "id": "67857936-a863-4a92-8c73-fc513fc99e35",
+                    "label": "small_buy0001_png_1_2_3_1_1_2_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(463)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 1202,
+                    "y": 715
+                },
+                {
+                    "type": "Image",
+                    "id": "72d9c11a-6b4e-4b41-a5a9-c78e5c6e1ed8",
+                    "label": "close_left",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "f398b410-b4b6-481d-aa00-f8e3ab7de420",
+                    "label": "page_right_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "e43a03ac-a4d7-4435-bc92-73a1b76c207e",
+                    "label": "close_right_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "548b9880-df47-40d0-ba58-9fdc21a5d0c4",
+                    "label": "page_left_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "017a9092-2f92-43e3-910e-733d797d9679",
+            "label": "page1",
+            "components": [],
+            "x": 13,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "f15e9588-b0bf-4eba-a1c1-a8eccfd4ca14",
+                    "label": "page1_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "page1_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "254bd29c-95f6-4d2e-9a2d-e5306392cb80",
+                    "label": "close_right_4_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 918,
+                    "y": 39,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "1688c88d-de80-4f2d-bb97-f107c82bcca3",
+                    "label": "page_right_4_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 916,
+                    "y": 588,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c0303408-3e8c-411a-a9e0-380b770a5afb",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 204,
+            "y": 59,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "e9bb9ec4-2a31-434d-bb4f-22cc6cc86fac",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1134,
+                    "y": 796,
+                    "originX": 1,
+                    "text": "YOUR COINS:",
+                    "fixedWidth": 600,
+                    "align": "right",
+                    "fontFamily": "CCComiccrazy",
+                    "fontSize": "32px",
+                    "stroke": "#000",
+                    "strokeThickness": 9
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5964968d-59ed-4f6f-b2a9-4c4deeb29dba",
+            "label": "pages",
+            "objectIds": [
+                "017a9092-2f92-43e3-910e-733d797d9679",
+                "ed64c47b-deaa-41cf-af07-35e55e0ce529",
+                "728da035-9db8-4ef8-96c3-9154dba6d325",
+                "f9126b13-eddc-4efb-bce9-aaee92cbaaf8",
+                "1f90e500-817a-4b7b-8b04-d0f7c3e38b8a",
+                "cc898319-17c1-4dcf-b656-866c5c824787",
+                "47e1e717-b254-45c3-a308-5f87e783e2d6",
+                "4ab2a5fe-17c8-484d-9fd7-0efa2a728931"
+            ]
+        }
+    ]
+}

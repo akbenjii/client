@@ -28,6 +28,7 @@ export default class GamesRink extends RoomScene {
     _preload() {
 
         this.load.pack("gamesrink-pack", "assets/media/rooms/old/rink/pg/gamesrink-pack.json");
+        this.load.pack("sport-pack", "assets/media/rooms/old/sport/sport-pack.json");
     }
 
     /** @returns {void} */
@@ -113,8 +114,18 @@ export default class GamesRink extends RoomScene {
         hockey_stick.isFilled = true;
         hockey_stick.fillAlpha = 0;
 
+        // book_sports
+        const book_sports = this.add.image(1414, 1111.244075129439, "sport", "book-sports");
+        book_sports.setOrigin(0.5, 2.552033959411991);
+
         // lists
         const sort = [];
+
+        // book_sports (components)
+        const book_sportsButton = new Button(book_sports);
+        book_sportsButton.spriteName = "book-sports";
+        book_sportsButton.callback = () => this.interface.loadExternal('SportsCatalog');
+        book_sportsButton.activeFrame = false;
 
         this.hockey_stick = hockey_stick;
         this.sort = sort;
