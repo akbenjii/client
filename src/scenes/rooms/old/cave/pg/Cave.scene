@@ -45,6 +45,30 @@
         },
         {
             "type": "Image",
+            "id": "915bf885-26fb-4a62-8b59-bf8ae2a1081b",
+            "label": "start",
+            "components": [],
+            "texture": {
+                "key": "pg-cave",
+                "frame": "start"
+            },
+            "x": 334,
+            "y": 714
+        },
+        {
+            "type": "Image",
+            "id": "462635ed-1511-4015-aa40-221b316b9ae0",
+            "label": "pool",
+            "components": [],
+            "texture": {
+                "key": "pg-cave",
+                "frame": "pool"
+            },
+            "x": 816,
+            "y": 696
+        },
+        {
+            "type": "Image",
             "id": "fdefcf39-9eb7-4760-9f83-fec3e2efa502",
             "label": "ceiling",
             "components": [],
@@ -172,21 +196,6 @@
             },
             "x": 669,
             "y": 455,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
-            "id": "67ded887-65de-4815-b18d-08fbcf274901",
-            "label": "board_1_1",
-            "components": [],
-            "texture": {
-                "key": "cave",
-                "frame": "board_1"
-            },
-            "x": 930,
-            "y": 440,
-            "angle": 10,
             "originX": 0,
             "originY": 0
         },
@@ -404,6 +413,43 @@
             "fillColor": "#00ff00",
             "width": 115,
             "height": 400
+        },
+        {
+            "type": "Image",
+            "id": "4875aa14-8ee1-4b06-9f69-a3c3da8b8361",
+            "label": "podium",
+            "components": [],
+            "texture": {
+                "key": "pg-cave",
+                "frame": "podium"
+            },
+            "x": 807,
+            "y": 474
+        },
+        {
+            "type": "Image",
+            "id": "64a7c6ff-761e-4ccc-a50d-447b26a560cb",
+            "label": "sign",
+            "components": [],
+            "texture": {
+                "key": "pg-cave",
+                "frame": "sign"
+            },
+            "x": 1209,
+            "y": 473
+        },
+        {
+            "type": "Sprite",
+            "id": "ee90e43f-5273-4001-9fcd-3adb215b419e",
+            "label": "winner",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pg-cave",
+                "frame": "winner0001"
+            },
+            "x": 763,
+            "y": 314
         }
     ],
     "plainObjects": [],

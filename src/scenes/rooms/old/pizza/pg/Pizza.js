@@ -35,7 +35,7 @@ export default class Pizza extends RoomScene {
             'pizzatron': () => this.triggerGame("Pizzatron", 910)
         }
         this.roomAnims = true
-        this.music = 'pizzaparlor'
+        this.music = '240'
         /* END-USER-CTR-CODE */
     }
 
@@ -177,14 +177,15 @@ export default class Pizza extends RoomScene {
         this.add.image(1046, 118, "pg-pizza", "fish_dish");
 
         // blue_fp
-        const blue_fp = this.add.image(1384.9092484187124, 439.2722547438631, "pg-pizza", "blue_fp");
-        blue_fp.setOrigin(0.49009122473323424, 0.5293096016068368);
+        const blue_fp = this.add.image(1303.9645307114743, 392.17710779658364, "pg-pizza", "blue_fp");
+        blue_fp.setOrigin(0.10646671740461695, 0.3092388561962317);
 
         // bluefp
-        const bluefp = this.add.ellipse(1385, 447, 128, 128);
+        const bluefp = this.add.ellipse(1358.5089308487866, 458.77379988757406, 128, 128);
         bluefp.scaleX = 0.947321254131059;
         bluefp.scaleY = 1.7683615255811924;
         bluefp.angle = -39;
+        bluefp.setOrigin(0.2691115465837397, 0.46677102651962343);
         bluefp.isFilled = true;
         bluefp.fillAlpha = 0;
 

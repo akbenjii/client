@@ -32,6 +32,20 @@
         },
         {
             "type": "Image",
+            "id": "a3695cfb-af97-45cf-9362-b645c3458ba1",
+            "label": "trail",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "trail"
+            },
+            "x": 525,
+            "y": 586,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
             "id": "9ce4c0b0-b105-4dd2-9cf7-48c92b24f169",
             "label": "cliff_1",
             "components": [],
@@ -43,6 +57,46 @@
             "y": 5,
             "originX": 0,
             "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "5a517575-2bbc-4220-87fd-e5bf1a6b2faf",
+            "label": "upper_rope_1",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_1"
+            },
+            "x": 268,
+            "y": 442
+        },
+        {
+            "type": "Image",
+            "id": "f9389419-1529-4690-ad62-afcd9198c57f",
+            "label": "upper_rope_2",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_2"
+            },
+            "x": 227.4961129331161,
+            "y": 812.5621648675448,
+            "originX": 0.35925881982842284,
+            "originY": 0.9747012878867318
+        },
+        {
+            "type": "Image",
+            "id": "83a22150-3792-4d77-af4d-c8cda3aceec8",
+            "label": "upper_rope_3",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_3"
+            },
+            "x": 552.9218376905052,
+            "y": 744.5310261430309,
+            "originX": 0.5893877995583794,
+            "originY": 0.6011493521318504
         },
         {
             "type": "Image",
@@ -248,6 +302,18 @@
         },
         {
             "type": "Image",
+            "id": "9d347d92-0bf7-464c-ba6d-9ff7e60e3bef",
+            "label": "podium",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "podium"
+            },
+            "x": 960,
+            "y": 239
+        },
+        {
+            "type": "Image",
             "id": "d6f0a2d4-34b0-4c24-8506-20a07c09702d",
             "label": "hut",
             "components": [
@@ -308,6 +374,18 @@
             "y": 884,
             "originX": 0.456,
             "originY": 0.6329113924050633
+        },
+        {
+            "type": "Image",
+            "id": "a636f501-a303-4365-8711-d9573623fd5c",
+            "label": "inner_rope_5",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_5"
+            },
+            "x": 311,
+            "y": 506
         },
         {
             "type": "Image",
@@ -451,6 +529,471 @@
             "x": 1310,
             "y": 493,
             "originY": 0.5185185185185185
+        },
+        {
+            "type": "Image",
+            "id": "1aa4cbbd-83d2-490a-9597-f910b0cdedcf",
+            "label": "upper_rope_4",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_4"
+            },
+            "x": 625.8436753810103,
+            "y": 707.6482696072732,
+            "originX": 0.5480459422626283,
+            "originY": 0.6372741207503677
+        },
+        {
+            "type": "Image",
+            "id": "47dba086-b5a3-4739-b732-94895c8ccf44",
+            "label": "upper_rope_5",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_5"
+            },
+            "x": 710,
+            "y": 666.5310261430309,
+            "originY": 0.6517240281977749
+        },
+        {
+            "type": "Image",
+            "id": "09dee2a2-8c97-4eba-a7ab-0fd44a110350",
+            "label": "upper_rope_6",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_6"
+            },
+            "x": 770.6643964723567,
+            "y": 620.1011048284225,
+            "angle": 16,
+            "originX": 0.27116885475871705,
+            "originY": 0.6852351107570154
+        },
+        {
+            "type": "Image",
+            "id": "cbd3549d-0227-4358-8a56-03662664db04",
+            "label": "upper_rope_7",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_7"
+            },
+            "x": 831,
+            "y": 463.4919449882834,
+            "originY": 0.727126272514244
+        },
+        {
+            "type": "Image",
+            "id": "110f0de4-61d3-4f5c-9f55-1babd85eacdf",
+            "label": "upper_rope_8",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_rope_8"
+            },
+            "x": 854,
+            "y": 572,
+            "originX": 0.5565246379560316,
+            "originY": 0.7044508181388447
+        },
+        {
+            "type": "Image",
+            "id": "f77fd1db-ef54-46e1-8483-38f68fc2d886",
+            "label": "upper_finish_2",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_finish_2"
+            },
+            "x": 839.9697214470024,
+            "y": 802.7916015555637,
+            "originX": 0.6659458726425995,
+            "originY": 1.2761223873103855
+        },
+        {
+            "type": "Image",
+            "id": "1f6c9c37-f8f5-4369-bdf7-588cd69483e8",
+            "label": "upper_finish_3",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_finish_3"
+            },
+            "x": 889.1921552095384,
+            "y": 867.3885698811815,
+            "originX": 0.4859853820846391,
+            "originY": 1.4820948743000322
+        },
+        {
+            "type": "Image",
+            "id": "07d3e917-fe4a-4ae8-8f70-6eb41124a695",
+            "label": "upper_finish_4",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "upper_finish_4"
+            },
+            "x": 979.620640120744,
+            "y": 910.7608512589796,
+            "originX": 0.41708595103947765,
+            "originY": 1.5587637138018753
+        },
+        {
+            "type": "Image",
+            "id": "cde5b65c-a4b2-4e43-8f9a-4dfc614e8a6c",
+            "label": "inner_rope_1",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_1"
+            },
+            "x": 599.7478556366896,
+            "y": 348.8186715328865,
+            "originX": 0.31692599351231365,
+            "originY": 0.38437431169198705
+        },
+        {
+            "type": "Image",
+            "id": "e0de1f22-f464-41b4-89df-396a203b43dc",
+            "label": "inner_rope_2",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_2"
+            },
+            "x": 601,
+            "y": 429
+        },
+        {
+            "type": "Image",
+            "id": "0616b5a3-5120-46b5-8b71-fbebc65c31ad",
+            "label": "inner_rope_3",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_3"
+            },
+            "x": 530,
+            "y": 454
+        },
+        {
+            "type": "Image",
+            "id": "2fa107a4-9a62-4b10-82a9-21153d4497fb",
+            "label": "inner_rope_4",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_4"
+            },
+            "x": 442,
+            "y": 474
+        },
+        {
+            "type": "Image",
+            "id": "210b8191-06bf-4a09-ba4a-3d8fd6ce60b6",
+            "label": "inner_rope_6",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_6"
+            },
+            "x": 205,
+            "y": 562,
+            "originX": 0.3812411036138706
+        },
+        {
+            "type": "Image",
+            "id": "da013959-2734-448c-8e4d-e226a5e3abfd",
+            "label": "inner_rope_7",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_7"
+            },
+            "x": 232,
+            "y": 595
+        },
+        {
+            "type": "Image",
+            "id": "5e411f57-2e84-4bdb-8983-18cb5593e850",
+            "label": "inner_rope_8",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_8"
+            },
+            "x": 303,
+            "y": 625
+        },
+        {
+            "type": "Image",
+            "id": "7b355e2e-b19c-4352-8345-84a251e3fd28",
+            "label": "inner_rope_9",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_9"
+            },
+            "x": 411,
+            "y": 667
+        },
+        {
+            "type": "Image",
+            "id": "52c56bcd-53c5-45c1-b2a5-934ea45eb6ab",
+            "label": "inner_rope_10",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_10"
+            },
+            "x": 519,
+            "y": 643
+        },
+        {
+            "type": "Image",
+            "id": "741125a2-0ee2-4b79-a8d3-e8beeaeb22dc",
+            "label": "inner_rope_11",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_11"
+            },
+            "x": 595,
+            "y": 606
+        },
+        {
+            "type": "Image",
+            "id": "b5d778a3-8c93-4fdd-92a2-81e31043135c",
+            "label": "inner_rope_12",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_12"
+            },
+            "x": 663,
+            "y": 564
+        },
+        {
+            "type": "Image",
+            "id": "088aea56-53db-479c-be37-d17fc35cb1e9",
+            "label": "inner_rope_13",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_13"
+            },
+            "x": 691,
+            "y": 533
+        },
+        {
+            "type": "Image",
+            "id": "afd5d4ae-8c7e-4143-b007-8b45364cf098",
+            "label": "inner_rope_14",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_14"
+            },
+            "x": 712,
+            "y": 417
+        },
+        {
+            "type": "Image",
+            "id": "9903ee18-30b3-4a65-af17-10cc3648a291",
+            "label": "inner_rope_15",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_15"
+            },
+            "x": 797,
+            "y": 379
+        },
+        {
+            "type": "Image",
+            "id": "a7a698d0-0ade-45b4-a42a-336f626b75c2",
+            "label": "inner_rope_16",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_16"
+            },
+            "x": 851,
+            "y": 372
+        },
+        {
+            "type": "Image",
+            "id": "9bdca19a-0768-4b91-8117-a5086f979527",
+            "label": "inner_rope_17",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_17"
+            },
+            "x": 897,
+            "y": 376
+        },
+        {
+            "type": "Image",
+            "id": "826deacd-0290-42e5-ad9a-4425ec35bab6",
+            "label": "inner_rope_18",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_18"
+            },
+            "x": 956,
+            "y": 437
+        },
+        {
+            "type": "Image",
+            "id": "6962e6c1-1b40-468c-9429-92bc24aefcb6",
+            "label": "inner_rope_19",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_rope_19"
+            },
+            "x": 960,
+            "y": 565
+        },
+        {
+            "type": "Image",
+            "id": "6c222042-1491-4c41-acc0-a0ea04fb0fef",
+            "label": "inner_finish_1",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_finish_1"
+            },
+            "x": 969.1796454610717,
+            "y": 775.7725546825064,
+            "originX": 0.6595476769127041,
+            "originY": 1.5769468191607603
+        },
+        {
+            "type": "Image",
+            "id": "bb5082f9-8e48-4f8b-9f3d-dac680a4e709",
+            "label": "inner_finish_2",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_finish_2"
+            },
+            "x": 1045,
+            "y": 826.6946819160761,
+            "originY": 2.0607924915373346
+        },
+        {
+            "type": "Image",
+            "id": "cbf38365-a068-4dad-8b05-48317875261c",
+            "label": "inner_finish_3",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "inner_finish_3"
+            },
+            "x": 1181,
+            "y": 910,
+            "originX": 0.5427359848873314,
+            "originY": 2.3188435168048396
+        },
+        {
+            "type": "Image",
+            "id": "835aea6a-00dc-4417-a5ed-5cc2b53852a5",
+            "label": "finish_line",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "finish_line"
+            },
+            "x": 1162,
+            "y": 874
+        },
+        {
+            "type": "Image",
+            "id": "bf58bca9-287c-4c4b-9c83-494ad683c7df",
+            "label": "green_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "green_sign"
+            },
+            "x": 579,
+            "y": 547
+        },
+        {
+            "type": "Image",
+            "id": "0969c81e-c22e-4722-92a5-961acd485a14",
+            "label": "left_bottom_buoy",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "left_bottom_buoy"
+            },
+            "x": 1025,
+            "y": 1110,
+            "originX": 0.3735278124423222,
+            "originY": 3.952497140445684
+        },
+        {
+            "type": "Image",
+            "id": "063c5e7a-c8e5-4392-b06b-942f1f5eaf8d",
+            "label": "left_buoy",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "left_buoy"
+            },
+            "x": 1030.3972543163206,
+            "y": 986.3700149338256,
+            "originX": 0.4499701556121809,
+            "originY": 1.454227763689639
+        },
+        {
+            "type": "Image",
+            "id": "5689df39-badf-4737-ae22-780c8d206f9a",
+            "label": "right_bottom_buoy",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "right_bottom_buoy"
+            },
+            "x": 1287,
+            "y": 1060,
+            "originX": 0.5178621433725952,
+            "originY": 4.806920009999881
+        },
+        {
+            "type": "Image",
+            "id": "09092a1a-b69f-4e53-9a27-f70097188f45",
+            "label": "right_buoy",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "right_buoy"
+            },
+            "x": 1289,
+            "y": 1008,
+            "originX": 0.5341710568867014,
+            "originY": 2.424183996413237
+        },
+        {
+            "type": "Image",
+            "id": "2194e68e-5d43-4a1e-a47d-29e11f01af54",
+            "label": "finish",
+            "components": [],
+            "texture": {
+                "key": "pg-cove",
+                "frame": "finish"
+            },
+            "x": 1152.8365288737816,
+            "y": 1080.9788325038733,
+            "originX": 0.5060017283456916,
+            "originY": 2.2416846596425977
         }
     ],
     "plainObjects": [],
@@ -490,7 +1033,43 @@
                 "1ec55d4a-8027-4492-8317-2ce1faa6c920",
                 "35270094-7aa8-4910-ade0-99f373a64195",
                 "b64c5402-0391-4e1d-812c-01a3d4f5c353",
-                "0a1bb735-7c0b-4413-ade9-13179d4f0837"
+                "0a1bb735-7c0b-4413-ade9-13179d4f0837",
+                "83a22150-3792-4d77-af4d-c8cda3aceec8",
+                "1aa4cbbd-83d2-490a-9597-f910b0cdedcf",
+                "47dba086-b5a3-4739-b732-94895c8ccf44",
+                "09dee2a2-8c97-4eba-a7ab-0fd44a110350",
+                "cbd3549d-0227-4358-8a56-03662664db04",
+                "110f0de4-61d3-4f5c-9f55-1babd85eacdf",
+                "f77fd1db-ef54-46e1-8483-38f68fc2d886",
+                "1f6c9c37-f8f5-4369-bdf7-588cd69483e8",
+                "07d3e917-fe4a-4ae8-8f70-6eb41124a695",
+                "cde5b65c-a4b2-4e43-8f9a-4dfc614e8a6c",
+                "e0de1f22-f464-41b4-89df-396a203b43dc",
+                "0616b5a3-5120-46b5-8b71-fbebc65c31ad",
+                "2fa107a4-9a62-4b10-82a9-21153d4497fb",
+                "a636f501-a303-4365-8711-d9573623fd5c",
+                "f9389419-1529-4690-ad62-afcd9198c57f",
+                "210b8191-06bf-4a09-ba4a-3d8fd6ce60b6",
+                "da013959-2734-448c-8e4d-e226a5e3abfd",
+                "5e411f57-2e84-4bdb-8983-18cb5593e850",
+                "7b355e2e-b19c-4352-8345-84a251e3fd28",
+                "52c56bcd-53c5-45c1-b2a5-934ea45eb6ab",
+                "741125a2-0ee2-4b79-a8d3-e8beeaeb22dc",
+                "b5d778a3-8c93-4fdd-92a2-81e31043135c",
+                "088aea56-53db-479c-be37-d17fc35cb1e9",
+                "afd5d4ae-8c7e-4143-b007-8b45364cf098",
+                "9903ee18-30b3-4a65-af17-10cc3648a291",
+                "a7a698d0-0ade-45b4-a42a-336f626b75c2",
+                "9bdca19a-0768-4b91-8117-a5086f979527",
+                "826deacd-0290-42e5-ad9a-4425ec35bab6",
+                "6962e6c1-1b40-468c-9429-92bc24aefcb6",
+                "6c222042-1491-4c41-acc0-a0ea04fb0fef",
+                "bb5082f9-8e48-4f8b-9f3d-dac680a4e709",
+                "bf58bca9-287c-4c4b-9c83-494ad683c7df",
+                "063c5e7a-c8e5-4392-b06b-942f1f5eaf8d",
+                "09092a1a-b69f-4e53-9a27-f70097188f45",
+                "5689df39-badf-4737-ae22-780c8d206f9a",
+                "2194e68e-5d43-4a1e-a47d-29e11f01af54"
             ]
         }
     ]

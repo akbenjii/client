@@ -10,6 +10,8 @@ export default class Cave extends RoomScene {
     constructor() {
         super("Cave");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.winner;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -21,6 +23,8 @@ export default class Cave extends RoomScene {
             'plaza': () => this.triggerRoom(300, 582, 588),
             'mine': () => this.triggerRoom(808, 256, 512)
         }
+		this.roomAnims = true
+		this.music = '249'
 
         /* END-USER-CTR-CODE */
     }
@@ -41,6 +45,12 @@ export default class Cave extends RoomScene {
         // bg
         const bg = this.add.image(0, -14, "cave", "bg");
         bg.setOrigin(0, 0);
+
+        // start
+        this.add.image(334, 714, "pg-cave", "start");
+
+        // pool
+        this.add.image(816, 696, "pg-cave", "pool");
 
         // ceiling
         const ceiling = this.add.image(1360, 743, "cave", "ceiling");
@@ -77,11 +87,6 @@ export default class Cave extends RoomScene {
         // board_1
         const board_1 = this.add.image(669, 455, "cave", "board_1");
         board_1.setOrigin(0, 0);
-
-        // board_1_1
-        const board_1_1 = this.add.image(930, 440, "cave", "board_1");
-        board_1_1.angle = 10;
-        board_1_1.setOrigin(0, 0);
 
         // board_2
         const board_2 = this.add.image(693, 457, "cave", "board_2");
@@ -148,6 +153,15 @@ export default class Cave extends RoomScene {
         zone.isFilled = true;
         zone.fillColor = 65280;
 
+        // podium
+        this.add.image(807, 474, "pg-cave", "podium");
+
+        // sign
+        this.add.image(1209, 473, "pg-cave", "sign");
+
+        // winner
+        const winner = this.add.sprite(763, 314, "pg-cave", "winner0001");
+
         // lists
         const sort = [line, water_water_11, water_water_10, water_water_9, water_water_8, water_water_7, water_water_6, water_water_5, water_water_4, water_water_3, water_water_2, water_water_1, ladder_front, ladder_back, chair_front, fg_2, ceiling, fg_3, fg_1];
 
@@ -163,6 +177,7 @@ export default class Cave extends RoomScene {
         const zoneZone = new Zone(zone);
         zoneZone.callback = () => this.onZoneClick();
 
+        this.winner = winner;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -170,6 +185,11 @@ export default class Cave extends RoomScene {
 
 
     /* START-USER-CODE */
+	
+    create() {
+        super.create()
+        this.winner.play('pgwinner')
+    }
 
     onZoneClick() {
         this.world.client.penguin.move(1266, 572)
