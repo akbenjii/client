@@ -31,6 +31,9 @@ export default class RuffleManager {
 		
 		window.killMinigame = this.killMinigame
 		window.killMinigame = killMinigame.bind(this)
+
+		window.killSwf = this.killSwf
+		window.killSwf = killSwf.bind(this)
 		
 		window.onSSEInit = this.onSSEInit
 		window.onSSEInit = onSSEInit.bind(this)
@@ -49,6 +52,21 @@ export default class RuffleManager {
 
 		window.playerWearingItem = this.playerWearingItem
 		window.playerWearingItem = playerWearingItem.bind(this)
+
+		window.getLocalizedString = this.getLocalizedString
+		window.getLocalizedString = getLocalizedString.bind(this)
+
+		window.getMyPuffleCount = this.getMyPuffleCount
+		window.getMyPuffleCount = getMyPuffleCount.bind(this)
+
+		window.getMyPlayerTotalCoins = this.getMyPlayerTotalCoins
+		window.getMyPlayerTotalCoins = getMyPlayerTotalCoins.bind(this)
+
+		window.getMyPlayerUsername = this.getMyPlayerUsername
+		window.getMyPlayerUsername = getMyPlayerUsername.bind(this)
+
+		window.adoptPuffle = this.adoptPuffle
+		window.adoptPuffle = adoptPuffle.bind(this)
 		
 		this.swfInstance = this.rufflePlayer.load({
 			url: "assets/media/games/swf/sse.swf",
@@ -70,11 +88,20 @@ export default class RuffleManager {
 		this.world.client.inMinigame = true
             
 	}
+
+	handleLoadOtherSwf(path){
+		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
+		ruffleplayer.play()
+		ruffleplayer.style.visibility = "visible";
+		ruffleplayer.volume = 0.05;
+		
+		ruffleplayer.loadOtherSwf(path)
+	}
 	
 	onSSEInit() {
 		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
 		
-		ruffleplayer.setMediaPath("/assets/media/games/swf/")
+		ruffleplayer.setMediaPath("/assets/media/games/swf/", "/assets/media/swf/")
 		
 		console.log("sse + ruffle init")
 
@@ -93,6 +120,12 @@ export default class RuffleManager {
 		this.world.client.inMinigame = false
 		
 		this.world.network.send('end_ruffle_mingame', { coins: coins, game: game })
+	}
+
+	killSwf(){
+		var ruffleplayer = document.getElementsByTagName("ruffle-player")[0]
+		ruffleplayer.style.visibility = "hidden";
+		ruffleplayer.pause()
 	}
 
 	setCannonData(data){
@@ -178,5 +211,23 @@ export default class RuffleManager {
 		return uncompressed
 	}
 
-	
+	getLocalizedString(key){
+		return this.world.getString(key)
+	}
+
+	getMyPuffleCount(){
+		return this.world.client.pufflecount
+	}
+
+	getMyPlayerTotalCoins(){
+		return this.world.client.coins
+	}
+
+	getMyPlayerUsername(){
+		return this.world.client.penguin.username
+	}
+
+	adoptPuffle(type, name){
+		this.world.network.send('adopt_puffle', { type: type, name: name })
+	}
 }

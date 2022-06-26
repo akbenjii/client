@@ -31,6 +31,7 @@ export default class WorldController extends BaseScene {
 
         this.network.send('get_pin')
         this.network.send('get_mascots')
+        this.network.send('get_puffle_count')
     }
 
     setClient(args) {

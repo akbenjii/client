@@ -10,7 +10,9 @@ export default class Puffles extends Plugin {
             'get_wellbeing': this.getWellbeing,
             'get_puffle_color': this.getPuffleColor,
             'stop_walking': this.stopWalking,
-            'walk_puffle': this.walkPuffle
+            'walk_puffle': this.walkPuffle,
+            'get_puffle_count': this.getPuffleCount,
+            'adopt_puffle': this.adoptPuffle
         }
     }
 
@@ -106,5 +108,15 @@ export default class Puffles extends Plugin {
         penguin.puffle = args.puffle
         this.network.send('get_puffle_color', {puffle: args.puffle, penguinId: args.user})
         
+    }
+
+    getPuffleCount(args) {
+        this.world.client.pufflecount = args.count
+    }
+
+    adoptPuffle(args) {
+        args.user = this.world.client.penguin.id
+        this.walkPuffle(args)
+        this.world.client.coins = args.coins
     }
 }

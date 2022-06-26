@@ -316,8 +316,15 @@ export default class CoinsPrompt extends BaseContainer {
                 category = 0
         }
 
-        this.icon.setFrame(`icons/${game.toLowerCase()}`)
-        this.gameName.text = this.world.getString(game)
+        if (game == "Gift from a moderator!") {
+            this.icon.setFrame("icons/aquagrabber")
+            this.gameName.text = "Gift from a moderator!"
+        }
+        else {
+            this.icon.setFrame(`icons/${game.toLowerCase()}`)
+            this.gameName.text = this.world.getString(game)
+        }
+        
         this.coinsEarned.text = `Coins earned: ${coins.toString()}`
         this.totalCoins.text = `Your total coins: ${this.world.client.coins.toString()}`
         this.visible = true
