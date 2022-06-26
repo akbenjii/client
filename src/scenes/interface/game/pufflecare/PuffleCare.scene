@@ -18,7 +18,7 @@
             "label": "container_1",
             "components": [],
             "x": 540,
-            "y": 611.180446264649,
+            "y": 579.1919207281734,
             "list": [
                 {
                     "type": "Image",
@@ -30,7 +30,7 @@
                         "key": "main",
                         "frame": "puffle_care/bg"
                     },
-                    "y": -257.180449803358
+                    "y": -225.19195060965637
                 },
                 {
                     "type": "Sprite",
@@ -46,7 +46,7 @@
                         "key": "main",
                         "frame": "puffle_care/care_btn"
                     },
-                    "y": -103.18044980335799
+                    "y": -71.19195060965637
                 },
                 {
                     "type": "Sprite",
@@ -63,7 +63,7 @@
                         "frame": "puffle_care/walk_btn"
                     },
                     "x": -75,
-                    "y": -47.18044980335799
+                    "y": -15.191950609656374
                 },
                 {
                     "type": "Sprite",
@@ -80,7 +80,7 @@
                         "frame": "puffle_care/swap_btn"
                     },
                     "x": 75,
-                    "y": -47.18044980335799
+                    "y": -15.191950609656374
                 },
                 {
                     "type": "Container",
@@ -88,7 +88,7 @@
                     "label": "rest",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -177.180449803358,
+                    "y": -145.19195060965637,
                     "list": [
                         {
                             "type": "Image",
@@ -133,7 +133,7 @@
                     "label": "clean",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -222.180449803358,
+                    "y": -190.19195060965637,
                     "list": [
                         {
                             "type": "Image",
@@ -178,7 +178,7 @@
                     "label": "play",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -267.180449803358,
+                    "y": -235.19195060965637,
                     "list": [
                         {
                             "type": "Image",
@@ -223,7 +223,7 @@
                     "label": "food",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -312.180449803358,
+                    "y": -280.1919506096564,
                     "list": [
                         {
                             "type": "Image",
@@ -268,7 +268,7 @@
                     "label": "name_txt",
                     "scope": "CLASS",
                     "components": [],
-                    "y": -352.180449803358,
+                    "y": -320.1919506096564,
                     "originX": 0.5,
                     "originY": 0.5,
                     "text": "Puffle Name",

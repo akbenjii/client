@@ -6,26 +6,26 @@ import { Button } from "@scenes/components/components"
 export default class PuffleCare extends BaseContainer {
 
     constructor(scene, x, y) {
-        super(scene, x ?? 540, y ?? 611.180446264649);
+        super(scene, x ?? 540, y ?? 579.1919207281734);
 
         // puffle_care_bg
-        const puffle_care_bg = scene.add.image(0, -257.180449803358, "main", "puffle_care/bg");
+        const puffle_care_bg = scene.add.image(0, -225.19195060965637, "main", "puffle_care/bg");
         this.add(puffle_care_bg);
 
         // care_btn
-        const care_btn = scene.add.sprite(0, -103.18044980335799, "main", "puffle_care/care_btn");
+        const care_btn = scene.add.sprite(0, -71.19195060965637, "main", "puffle_care/care_btn");
         this.add(care_btn);
 
         // walk_btn
-        const walk_btn = scene.add.sprite(-75, -47.18044980335799, "main", "puffle_care/walk_btn");
+        const walk_btn = scene.add.sprite(-75, -15.191950609656374, "main", "puffle_care/walk_btn");
         this.add(walk_btn);
 
         // swap_btn
-        const swap_btn = scene.add.sprite(75, -47.18044980335799, "main", "puffle_care/swap_btn");
+        const swap_btn = scene.add.sprite(75, -15.191950609656374, "main", "puffle_care/swap_btn");
         this.add(swap_btn);
 
         // rest
-        const rest = scene.add.container(0, -177.180449803358);
+        const rest = scene.add.container(0, -145.19195060965637);
         this.add(rest);
 
         // rest_bg
@@ -41,7 +41,7 @@ export default class PuffleCare extends BaseContainer {
         rest.add(rest_icon);
 
         // clean
-        const clean = scene.add.container(0, -222.180449803358);
+        const clean = scene.add.container(0, -190.19195060965637);
         this.add(clean);
 
         // clean_bg
@@ -57,7 +57,7 @@ export default class PuffleCare extends BaseContainer {
         clean.add(clean_icon);
 
         // play
-        const play = scene.add.container(0, -267.180449803358);
+        const play = scene.add.container(0, -235.19195060965637);
         this.add(play);
 
         // play_bg
@@ -73,7 +73,7 @@ export default class PuffleCare extends BaseContainer {
         play.add(play_icon);
 
         // food
-        const food = scene.add.container(0, -312.180449803358);
+        const food = scene.add.container(0, -280.1919506096564);
         this.add(food);
 
         // food_bg
@@ -89,7 +89,7 @@ export default class PuffleCare extends BaseContainer {
         food.add(food_icon);
 
         // name_txt
-        const name_txt = scene.add.text(0, -352.180449803358, "", {});
+        const name_txt = scene.add.text(0, -320.1919506096564, "", {});
         name_txt.setOrigin(0.5, 0.5);
         name_txt.text = "Puffle Name";
         name_txt.setStyle({ "color": "#000000ff", "fontFamily": "Burbank Small", "fontSize": "18px", "fontStyle": "bold" });
@@ -182,7 +182,7 @@ export default class PuffleCare extends BaseContainer {
 
     /* START-USER-CODE */
 
-    showPuffle(args){
+    showPuffle(args, walking = false){
         this.visible = true
 
         let restpos = Math.floor((100 - args.rest) * -0.67)
@@ -241,7 +241,7 @@ export default class PuffleCare extends BaseContainer {
         }
         this.food_bar.x = foodpos;
 
-        this.name_txt.text = this.world.room.puffles[args.puffleId].name
+        this.name_txt.text = args.name
 
         if (args.puffleId !== this.world.client.penguin.puffle){
             this.swap_btn.visible = false

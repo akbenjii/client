@@ -40,6 +40,8 @@ export default class Main extends BaseScene {
         /** @type {Phaser.GameObjects.Image} */
         this.chat_box;
         /** @type {Phaser.GameObjects.Image} */
+        this.puffle_button_disabled;
+        /** @type {Phaser.GameObjects.Sprite} */
         this.puffle_button;
         /** @type {Phaser.GameObjects.Image} */
         this.puffle_icon;
@@ -160,8 +162,12 @@ export default class Main extends BaseScene {
         // chat_box
         const chat_box = this.add.image(748, 929, "main", "chat-box");
 
+        // puffle_button_disabled
+        const puffle_button_disabled = this.add.image(246, 930, "main", "blue-button-disabled");
+
         // puffle_button
-        const puffle_button = this.add.image(246, 930, "main", "blue-button-disabled");
+        const puffle_button = this.add.sprite(246, 930, "main", "blue-button");
+        puffle_button.visible = false;
 
         // puffle_icon
         const puffle_icon = this.add.image(245, 929, "main", "puffle-icon-disabled");
@@ -357,13 +363,18 @@ export default class Main extends BaseScene {
 
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
-        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
+        const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
 
         // dock (components)
         new Interactive(dock);
 
         // chat_box (components)
         new Interactive(chat_box);
+
+        // puffle_button (components)
+        const puffle_buttonButton = new Button(puffle_button);
+        puffle_buttonButton.spriteName = "blue-button";
+        puffle_buttonButton.callback = () => this.onPuffleClick();
 
         // emote_button (components)
         const emote_buttonButton = new Button(emote_button);
@@ -459,6 +470,7 @@ export default class Main extends BaseScene {
         this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
+        this.puffle_button_disabled = puffle_button_disabled;
         this.puffle_button = puffle_button;
         this.puffle_icon = puffle_icon;
         this.emote_button = emote_button;
@@ -908,6 +920,10 @@ export default class Main extends BaseScene {
         this.party_interface.scaleX = 0.4
         this.party_interface.scaleY= 0.4
     }
+	
+	onPuffleClick(){
+		
+	}
 
     /* END-USER-CODE */
 }

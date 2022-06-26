@@ -59,8 +59,8 @@ export default class Puffle extends BaseContainer {
 
         this.room.puffles[this.id] = this
 
-        // the puffle will decide whether or not to walk every 5 seconds
-        setInterval(this.puffleAi.bind(this), 5000)
+        // the puffle will decide whether or not to walk every 3 seconds
+        this.moveInterval = setInterval(this.puffleAi.bind(this), 3000)
     }
 
     addPuffleInput() {
@@ -110,17 +110,31 @@ export default class Puffle extends BaseContainer {
             // gets the letter code for the direction
             var direction = arrayentry[0]
 
-            // chooses a random co-ordinate to walk to, between 50 and 120(horizontally) or 100 (vertically) pixels to move 
-            let xmove = arrayentry[1] * Phaser.Math.Between(50, 120)
-            let ymove = arrayentry[2] * Phaser.Math.Between(50, 100)
+            // chooses a random co-ordinate to walk to, between 50 and 250 pixels to move
+            let movedist = Phaser.Math.Between(50, 250)
+            let xmove = arrayentry[1] * movedist
+            let ymove = arrayentry[2] * movedist
 
             // finds the final position that the puffle will end up in after moving
             let xdest = this.x + xmove
             let ydest = this.y + ymove
 
+            let tries = 0
+
             // if the puffle is going to walk into an area that in not accessible, or too close to the edge of the screen, it will not walk
-            if (this.room.matter.containsPoint(this.room.block, xdest, ydest) || xdest > 1320 || ydest > 760) {
-                return
+            while (this.room.matter.containsPoint(this.room.block, xdest, ydest) || xdest > 1320 || ydest > 760 || xdest < 200 || ydest < 200) {
+                console.log("tried to move to " + xdest + ", " + ydest)
+                if (isNaN(xdest) || isNaN(ydest) || tries > 50) return
+                // chooses a random co-ordinate to walk to, between 50 and 250 pixels to move
+                movedist = Phaser.Math.Between(50, 250)
+                xmove = arrayentry[1] * movedist
+                ymove = arrayentry[2] * movedist
+
+                // finds the final position that the puffle will end up in after moving
+                xdest = this.x + xmove
+                ydest = this.y + ymove
+
+                tries = tries + 1
             }
 
             // starts the animation for the puffle walking
@@ -139,11 +153,15 @@ export default class Puffle extends BaseContainer {
             // adds the tween for the puffle to change its screen position each frame
             this.addMoveTween(path)
         }
+
+        if (this.world.interface.main.puffleCare.visible && this.world.interface.main.puffleCare.args.puffleId == this.id) {
+            this.world.interface.main.puffleCare.visible = false
+        }
     }
 
     getPath(target) {
         // sets the speed for the puffle to walk at. higher is faster (obviously)
-        const speed = 100
+        const speed = 110
 
         // calculates the distance between the puffle and the final destination
         // there should be a phaser math component (Phaser.Math.Distance.BetweenPoints) for this, but it kept breaking for me
@@ -241,6 +259,7 @@ export default class Puffle extends BaseContainer {
         if (this.tween) {
             this.tween.remove()
         }
+        clearInterval(this.moveInterval)
         this.room.puffles[this.id] = null
     }
 

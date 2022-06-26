@@ -74,7 +74,6 @@ export default class WorldController extends BaseScene {
     }
 
     addPenguins() {
-        this.world.client.hasPuffle = false
         this.room.penguins = this.penguinFactory.createPenguins(this.room.waiting, this.room)
         this.room.isReady = true
 

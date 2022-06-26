@@ -25,9 +25,17 @@ export default class Puffles extends Plugin {
     getWellbeing(args) {
         if (!this.world.room.isIgloo) return
 
-        this.interface.main.puffleCare.showPuffle(args)
-        this.interface.main.puffleCare.x = this.world.room.puffles[args.puffleId].x
-        this.interface.main.puffleCare.y = this.world.room.puffles[args.puffleId].y
+        
+        if (args.puffleId == this.world.client.penguin.puffle) {
+            this.interface.main.puffleCare.showPuffle(args, true)
+            this.interface.main.puffleCare.x = this.world.client.penguin.x + 60
+            this.interface.main.puffleCare.y = this.world.client.penguin.y
+        }
+        else {
+            this.interface.main.puffleCare.showPuffle(args)
+            this.interface.main.puffleCare.x = this.world.room.puffles[args.puffleId].x
+            this.interface.main.puffleCare.y = this.world.room.puffles[args.puffleId].y
+        }
     }
 
     getPuffleColor(args) {
@@ -39,6 +47,10 @@ export default class Puffles extends Plugin {
         if (playercard.visible && (playercard.id === args.penguinId)) {
             playercard.paperDoll.paperDollPuffleLoader.loadPuffle(this.world.crumbs.puffles[args.color].name)
         }
+
+        if (args.penguinId == this.world.client.penguin.id) {
+            this.interface.showPuffle(this.world.crumbs.puffles[args.color].name)
+        }
     }
 
     stopWalking(args) {
@@ -48,7 +60,7 @@ export default class Puffles extends Plugin {
         let puffle = this.world.room.penguins[args.user].pufflesprite
         if (puffle) {
             puffle.destroy()
-            this.world.client.hasPuffle = false
+            penguin.hasPuffle = false
         }
         let playercard = this.world.interface.main.playerCard
         if (playercard.visible && (playercard.id === args.user)) {
@@ -61,6 +73,10 @@ export default class Puffles extends Plugin {
         if (this.world.room.isIgloo) {
             this.world.room.spawnPuffles(this.world.room.puffleArray)
         }
+
+        if (args.user == this.world.client.penguin.id) {
+            this.interface.showPuffle(0)
+        }
     }
 
     walkPuffle(args) {
@@ -70,7 +86,7 @@ export default class Puffles extends Plugin {
         let puffle = this.world.room.penguins[args.user].pufflesprite
         if (puffle) {
             puffle.destroy()
-            this.world.client.hasPuffle = false
+            penguin.hasPuffle = false
         }
         let playercard = this.world.interface.main.playerCard
         if (playercard.visible && (playercard.id === args.user)) {

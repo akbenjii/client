@@ -81,13 +81,37 @@ export default class PenguinLoader extends SpriteLoader {
     }
 
     loadPuffle(penguin, color) {
-        if (!penguin.puffle || !penguin.active || this.world.client.hasPuffle) return
+        if (!penguin.puffle || !penguin.active || penguin.hasPuffle) return
 
         penguin.pufflesprite = penguin.room.add.sprite(60, 0, `puffle_${color}`, '1_1')
         penguin.pufflesprite.depth = 3
 
         penguin.add(penguin.pufflesprite)
 
-        this.world.client.hasPuffle = true
+        penguin.hasPuffle = true
+
+         if (this.world.client.penguin.id == this.world.room.id) {
+           this.addPuffleInput(penguin)
+        }
+        
+    }
+
+    addPuffleInput(penguin) {
+        // creates the hitbox to open the puffle care menu
+        penguin.pufflesprite.hitArea = new Phaser.Geom.Ellipse(25, 25, 50, 50)
+        penguin.pufflesprite.setInteractive({
+            cursor: 'pointer',
+            hitArea: penguin.pufflesprite.hitArea,
+            hitAreaCallback: Phaser.Geom.Ellipse.Contains
+        })
+        penguin.pufflesprite.on('pointerup', () => this.onPuffleClick(penguin.puffle))
+        penguin.pufflesprite.isButton = true
+    }
+
+    onPuffleClick(puffle) {
+        // sends a packet to the server which requests the wellbeing information for the care menu to use
+        this.world.network.send('get_wellbeing', {
+            puffle: puffle
+        })
     }
 }

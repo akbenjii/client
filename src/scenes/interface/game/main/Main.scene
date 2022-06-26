@@ -69,7 +69,7 @@
         {
             "type": "Image",
             "id": "6791cf27-2369-4375-b006-df8d483ad73a",
-            "label": "puffle_button",
+            "label": "puffle_button_disabled",
             "scope": "CLASS",
             "components": [],
             "texture": {
@@ -78,6 +78,24 @@
             },
             "x": 246,
             "y": 930
+        },
+        {
+            "type": "Sprite",
+            "id": "5215c199-23cd-42ca-8ee7-02979cce3d84",
+            "label": "puffle_button",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "blue-button",
+            "Button.callback": "() => this.onPuffleClick()",
+            "texture": {
+                "key": "main",
+                "frame": "blue-button"
+            },
+            "x": 246,
+            "y": 930,
+            "visible": false
         },
         {
             "type": "Image",
