@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Zone, MoveTo } from '@components/components'
+import { Animation, Zone, MoveTo, SimpleButton } from '@components/components'
 
 import MtnSeat from './MtnSeat'
 
@@ -12,6 +12,10 @@ export default class Mtn extends RoomScene {
     constructor() {
         super("Mtn");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.logs;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.flames;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
         /** @type {MtnSeat[]} */
@@ -33,6 +37,8 @@ export default class Mtn extends RoomScene {
             'waddle102': () => this.triggerWaddle(102),
             'waddle103': () => this.triggerWaddle(103),
         }
+        this.roomAnims = true
+        this.music = '240'
 
         this.waddles = {}
         /* END-USER-CTR-CODE */
@@ -59,17 +65,11 @@ export default class Mtn extends RoomScene {
         const mountain = this.add.image(-21, 214, "mtn", "mountain");
         mountain.setOrigin(0, 0);
 
-        // pole
-        const pole = this.add.image(727, 359, "mtn", "pole");
-        pole.setOrigin(0.6204081632653061, 0.9194630872483222);
+        // ridge_run
+        this.add.image(319, 298, "pg-mtn", "ridge_run");
 
-        // sled
-        const sled = this.add.image(532, 284, "mtn", "sled");
-        sled.setOrigin(0.8289473684210527, 0.7647058823529411);
-
-        // catalog_small
-        const catalog_small = this.add.image(520, 407, "mtn", "catalog_small");
-        catalog_small.setOrigin(0.49230769230769234, 3.685185185185185);
+        // sled_racer
+        this.add.image(578, 254, "pg-mtn", "sled_racer");
 
         // barrier_1
         const barrier_1 = this.add.image(282, 533, "mtn", "barrier_1");
@@ -195,8 +195,38 @@ export default class Mtn extends RoomScene {
         zone1.isFilled = true;
         zone1.fillColor = 65280;
 
+        // blue_sign
+        this.add.image(1253, 426, "pg-mtn", "blue_sign");
+
+        // gob_back
+        this.add.image(729, 293, "pg-mtn", "gob_back");
+
+        // gob_back_rings
+        this.add.image(727, 300, "pg-mtn", "gob_back_rings");
+
+        // logs
+        const logs = this.add.sprite(604, 212, "pg-mtn", "lod_add0001");
+
+        // flames
+        const flames = this.add.sprite(736, 71, "pg-mtn", "flames0001");
+
+        // gob_front
+        this.add.image(733, 341, "pg-mtn", "gob_front");
+
+        // gob_rings
+        this.add.image(735, 326, "pg-mtn", "gob_rings");
+
+        // extinguisher
+        this.add.image(357, 357, "pg-mtn", "extinguisher");
+
+        // inner_flags
+        const inner_flags = this.add.image(1141, 283, "pg-mtn", "inner_flags");
+
+        // outer_flags
+        this.add.image(935, 215, "pg-mtn", "outer_flags");
+
         // lists
-        const sort = [penguin_run, express, pole];
+        const sort = [penguin_run, express, inner_flags];
         const seats100 = [mtnSeat4, mtnSeat3, mtnSeat2, mtnSeat1];
         const seats101 = [mtnSeat6, mtnSeat5, mtnSeat7];
         const seats102 = [mtnSeat8, mtnSeat9];
@@ -274,6 +304,12 @@ export default class Mtn extends RoomScene {
         // zone1 (components)
         new MoveTo(zone1);
 
+        // logs (components)
+        const logsSimpleButton = new SimpleButton(logs);
+        logsSimpleButton.callback = () => this.onLogClick();
+
+        this.logs = logs;
+        this.flames = flames;
         this.sort = sort;
         this.seats100 = seats100;
         this.seats101 = seats101;
@@ -285,6 +321,15 @@ export default class Mtn extends RoomScene {
 
 
     /* START-USER-CODE */
+    create() {
+        super.create()
+        this.flames.play('pgflame')
+    }
+
+    onLogClick() {
+        this.logs.play('pglogs')
+    }
+
         triggerWaddle(id) {
         if (this.world.client.activeSeat) {
             return

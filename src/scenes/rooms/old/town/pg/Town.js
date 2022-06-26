@@ -159,8 +159,8 @@ export default class Town extends RoomScene {
         gift_doorButton.activeFrame = false;
         gift_doorButton.pixelPerfect = true;
         const gift_doorMoveTo = new MoveTo(gift_door);
-        gift_doorMoveTo.x = 1010;
-        gift_doorMoveTo.y = 466;
+        gift_doorMoveTo.x = 1100;
+        gift_doorMoveTo.y = 460;
 
         // canopy (components)
         const canopySimpleButton = new SimpleButton(canopy);

@@ -64,45 +64,27 @@
         },
         {
             "type": "Image",
-            "id": "9aa8b583-902d-4dfe-a8cf-cc853faf2676",
-            "label": "pole",
+            "id": "41568455-083f-4754-a560-e7ff7cd21d91",
+            "label": "ridge_run",
             "components": [],
             "texture": {
-                "key": "mtn",
-                "frame": "pole"
+                "key": "pg-mtn",
+                "frame": "ridge_run"
             },
-            "x": 727,
-            "y": 359,
-            "originX": 0.6204081632653061,
-            "originY": 0.9194630872483222
+            "x": 319,
+            "y": 298
         },
         {
             "type": "Image",
-            "id": "124720c1-f214-45b6-88d4-0325da8e2114",
-            "label": "sled",
+            "id": "862ad342-267c-46a5-8ab8-1e8c4e9c34d5",
+            "label": "sled_racer",
             "components": [],
             "texture": {
-                "key": "mtn",
-                "frame": "sled"
+                "key": "pg-mtn",
+                "frame": "sled_racer"
             },
-            "x": 532,
-            "y": 284,
-            "originX": 0.8289473684210527,
-            "originY": 0.7647058823529411
-        },
-        {
-            "type": "Image",
-            "id": "cd1933ae-fcd6-41e3-96e7-4b9b0636560b",
-            "label": "catalog_small",
-            "components": [],
-            "texture": {
-                "key": "mtn",
-                "frame": "catalog_small"
-            },
-            "x": 520,
-            "y": 407,
-            "originX": 0.49230769230769234,
-            "originY": 3.685185185185185
+            "x": 578,
+            "y": 254
         },
         {
             "type": "Image",
@@ -524,6 +506,131 @@
             "fillColor": "#00ff00",
             "width": 230,
             "height": 90
+        },
+        {
+            "type": "Image",
+            "id": "9765ee90-8cd5-4cd5-8369-095f4022a0d7",
+            "label": "blue_sign",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "blue_sign"
+            },
+            "x": 1253,
+            "y": 426
+        },
+        {
+            "type": "Image",
+            "id": "13f2ceb8-417f-4d8a-ab43-a2cd889456d3",
+            "label": "gob_back",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "gob_back"
+            },
+            "x": 729,
+            "y": 293
+        },
+        {
+            "type": "Image",
+            "id": "63f5cac3-09a3-4f2b-8ba0-6a00ba710324",
+            "label": "gob_back_rings",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "gob_back_rings"
+            },
+            "x": 727,
+            "y": 300
+        },
+        {
+            "type": "Sprite",
+            "id": "133783f6-2eaf-4f47-9961-fb2a34b4a581",
+            "label": "logs",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onLogClick()",
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "lod_add0001"
+            },
+            "x": 604,
+            "y": 212
+        },
+        {
+            "type": "Sprite",
+            "id": "7fad018a-a0e4-4473-823b-9d5d1bce3825",
+            "label": "flames",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "flames0001"
+            },
+            "x": 736,
+            "y": 71
+        },
+        {
+            "type": "Image",
+            "id": "5e94493e-c7fd-4337-a039-70ec6af475f4",
+            "label": "gob_front",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "gob_front"
+            },
+            "x": 733,
+            "y": 341
+        },
+        {
+            "type": "Image",
+            "id": "f07ecc9e-8c27-4283-9197-7e4613544fc8",
+            "label": "gob_rings",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "gob_rings"
+            },
+            "x": 735,
+            "y": 326
+        },
+        {
+            "type": "Image",
+            "id": "454ef2fc-1ed8-4844-ba2b-68b5f82c8daa",
+            "label": "extinguisher",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "extinguisher"
+            },
+            "x": 357,
+            "y": 357
+        },
+        {
+            "type": "Image",
+            "id": "27868713-2561-412a-ac50-ce16d18fc800",
+            "label": "inner_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "inner_flags"
+            },
+            "x": 1141,
+            "y": 283
+        },
+        {
+            "type": "Image",
+            "id": "999b64c5-2cf1-47e7-b888-eff7459ede57",
+            "label": "outer_flags",
+            "components": [],
+            "texture": {
+                "key": "pg-mtn",
+                "frame": "outer_flags"
+            },
+            "x": 935,
+            "y": 215
         }
     ],
     "plainObjects": [],
@@ -540,7 +647,7 @@
             "objectIds": [
                 "7bbb8294-2b6c-499d-a669-848e6a4508ca",
                 "85cf3723-7671-4140-a0c0-d0f430f57910",
-                "9aa8b583-902d-4dfe-a8cf-cc853faf2676"
+                "27868713-2561-412a-ac50-ce16d18fc800"
             ]
         },
         {

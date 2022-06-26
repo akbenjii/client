@@ -118,8 +118,8 @@
             "Button.spriteName": "gift_door",
             "Button.activeFrame": false,
             "Button.pixelPerfect": true,
-            "MoveTo.x": 1010,
-            "MoveTo.y": 466,
+            "MoveTo.x": 1100,
+            "MoveTo.y": 460,
             "texture": {
                 "key": "town",
                 "frame": "gift_door"
