@@ -23,6 +23,8 @@ export default class Pizza extends RoomScene {
         this.steam;
         /** @type {Phaser.GameObjects.Sprite} */
         this.fire;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.bluefp;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
         this.sort;
 
@@ -47,7 +49,7 @@ export default class Pizza extends RoomScene {
     _create() {
 
         // bg_png
-        const bg_png = this.add.image(760, 483, "pizza", "bg.png");
+        const bg_png = this.add.image(760, 483, "pg-pizza", "bg");
         bg_png.scaleX = 1.02;
         bg_png.scaleY = 1.02;
 
@@ -56,9 +58,11 @@ export default class Pizza extends RoomScene {
         bead_door_hover0001_png.scaleX = 1.02;
         bead_door_hover0001_png.scaleY = 1.02;
 
-        // piano_png
-        const piano_png = this.add.image(1265.6137794715412, 446.7720125239132, "pizza", "piano.png");
-        piano_png.setOrigin(0.1497106693675879, 0.6223623642170768);
+        // curtain
+        this.add.image(575, 222, "pg-pizza", "curtain");
+
+        // just_blue
+        this.add.image(987, 195, "pg-pizza", "just_blue");
 
         // door_png
         const door_png = this.add.image(837, 265, "pizza", "door.png");
@@ -166,8 +170,26 @@ export default class Pizza extends RoomScene {
         fire.scaleX = 1.02;
         fire.scaleY = 1.02;
 
+        // menu
+        this.add.image(220, 162, "pg-pizza", "menu");
+
+        // fish_dish
+        this.add.image(1046, 118, "pg-pizza", "fish_dish");
+
+        // blue_fp
+        const blue_fp = this.add.image(1384.9092484187124, 439.2722547438631, "pg-pizza", "blue_fp");
+        blue_fp.setOrigin(0.49009122473323424, 0.5293096016068368);
+
+        // bluefp
+        const bluefp = this.add.ellipse(1385, 447, 128, 128);
+        bluefp.scaleX = 0.947321254131059;
+        bluefp.scaleY = 1.7683615255811924;
+        bluefp.angle = -39;
+        bluefp.isFilled = true;
+        bluefp.fillAlpha = 0;
+
         // lists
-        const sort = [piano_png, chair1_png, chair2_png, chair3_png, chair4_png, chair5_png, chair6_png, candle_fire10001_png, table1_png, candle_fire2, table2_png, candle_fire3, table3_png, big_table_png, register0001_png, book_hover0001_png];
+        const sort = [chair1_png, chair2_png, chair3_png, chair4_png, chair5_png, chair6_png, candle_fire10001_png, table1_png, candle_fire2, table2_png, candle_fire3, table3_png, big_table_png, register0001_png, book_hover0001_png, blue_fp];
 
         // bead_door_hover0001_png (components)
         const bead_door_hover0001_pngButton = new Button(bead_door_hover0001_png);
@@ -205,6 +227,7 @@ export default class Pizza extends RoomScene {
         this.book_hover0001_png = book_hover0001_png;
         this.steam = steam;
         this.fire = fire;
+        this.bluefp = bluefp;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -220,6 +243,14 @@ export default class Pizza extends RoomScene {
         this.candle_fire10001_png.play("candles")
         this.candle_fire2.play("candles")
         this.candle_fire3.play("candles")
+        this.roomZones = {
+            'bluefp': { 
+                key: this.bluefp,
+                callback: () => this.interface.prompt.showItem(134)
+            }
+        }
+
+        super.addZones()
     }
 
     onRegOver() {

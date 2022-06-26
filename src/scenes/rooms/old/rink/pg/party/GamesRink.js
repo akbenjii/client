@@ -1,3 +1,5 @@
+import { Button, Interactive, SimpleButton } from '@components/components'
+
 import RoomScene from '@scenes/rooms/RoomScene'
 
 

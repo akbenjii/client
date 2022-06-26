@@ -1,5 +1,5 @@
 {
-    "id": "9c59d10b-18d3-41b7-91ea-bb2881586b13",
+    "id": "6e0f401f-eb4a-4d36-894a-521fb04c0234",
     "sceneType": "SCENE",
     "settings": {
         "compilerInsertSpaces": true,
@@ -22,8 +22,8 @@
             "label": "bg_png",
             "components": [],
             "texture": {
-                "key": "pizza",
-                "frame": "bg.png"
+                "key": "pg-pizza",
+                "frame": "bg"
             },
             "x": 760,
             "y": 483,
@@ -56,17 +56,27 @@
         },
         {
             "type": "Image",
-            "id": "ad4b0ec4-6dba-41d9-a8ff-158d371f25bd",
-            "label": "piano_png",
+            "id": "55ff5ac0-3917-4a5b-abe9-4e7600203bae",
+            "label": "curtain",
             "components": [],
             "texture": {
-                "key": "pizza",
-                "frame": "piano.png"
+                "key": "pg-pizza",
+                "frame": "curtain"
             },
-            "x": 1265.6137794715412,
-            "y": 446.7720125239132,
-            "originX": 0.1497106693675879,
-            "originY": 0.6223623642170768
+            "x": 575,
+            "y": 222
+        },
+        {
+            "type": "Image",
+            "id": "89a25c9a-c8c7-45ce-9a26-075f1d74de3b",
+            "label": "just_blue",
+            "components": [],
+            "texture": {
+                "key": "pg-pizza",
+                "frame": "just_blue"
+            },
+            "x": 987,
+            "y": 195
         },
         {
             "type": "Image",
@@ -388,6 +398,60 @@
             "y": 770,
             "scaleX": 1.02,
             "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "000d9010-3722-45b2-b6f7-baf4e2172ad9",
+            "label": "menu",
+            "components": [],
+            "texture": {
+                "key": "pg-pizza",
+                "frame": "menu"
+            },
+            "x": 220,
+            "y": 162
+        },
+        {
+            "type": "Image",
+            "id": "7d6157dd-57c1-45f1-81a2-a0d2005cb5b4",
+            "label": "fish_dish",
+            "components": [],
+            "texture": {
+                "key": "pg-pizza",
+                "frame": "fish_dish"
+            },
+            "x": 1046,
+            "y": 118
+        },
+        {
+            "type": "Image",
+            "id": "d50b23e5-2c19-45f7-a57a-6e0a31d9f3fb",
+            "label": "blue_fp",
+            "components": [],
+            "texture": {
+                "key": "pg-pizza",
+                "frame": "blue_fp"
+            },
+            "x": 1384.9092484187124,
+            "y": 439.2722547438631,
+            "originX": 0.49009122473323424,
+            "originY": 0.5293096016068368
+        },
+        {
+            "type": "Ellipse",
+            "id": "1041a977-08cc-4da7-a598-11a0701e7683",
+            "label": "bluefp",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1385,
+            "y": 447,
+            "scaleX": 0.947321254131059,
+            "scaleY": 1.7683615255811924,
+            "angle": -39,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
@@ -402,7 +466,6 @@
             "id": "fbd9b42a-8e35-4ff1-897b-b203942a3729",
             "label": "sort",
             "objectIds": [
-                "ad4b0ec4-6dba-41d9-a8ff-158d371f25bd",
                 "3b151ac8-987e-450a-b475-2341eed910f9",
                 "7ce131d9-d215-42e6-9be8-eec417c8d274",
                 "6a89f1c7-8080-4aff-abdf-bd379ab63cec",
@@ -417,7 +480,8 @@
                 "048c5276-2f77-4a67-8aad-a2f4c99da239",
                 "294e365a-6a35-4087-b7b4-dfa24bc9c77a",
                 "ae35bdc6-af14-4d45-807f-fa3f4d09c53b",
-                "0bad3f81-8722-48dd-8a55-7fb1fca8a05a"
+                "0bad3f81-8722-48dd-8a55-7fb1fca8a05a",
+                "d50b23e5-2c19-45f7-a57a-6e0a31d9f3fb"
             ]
         }
     ]
