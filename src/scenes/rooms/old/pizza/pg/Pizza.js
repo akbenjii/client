@@ -196,7 +196,7 @@ export default class Pizza extends RoomScene {
         this.add.image(710, 53, "pg-pizza", "flags");
 
         // balloons
-        this.add.image(1488, 664, "pg-pizza", "balloons");
+        this.add.image(1498, 699, "pg-pizza", "balloons");
 
         // lists
         const sort = [chair1_png, chair2_png, chair3_png, chair4_png, chair5_png, chair6_png, candle_fire10001_png, table1_png, candle_fire2, table2_png, candle_fire3, table3_png, big_table_png, register0001_png, book_hover0001_png, blue_fp];
