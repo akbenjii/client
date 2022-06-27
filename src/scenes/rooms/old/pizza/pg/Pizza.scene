@@ -454,6 +454,42 @@
             "fillAlpha": 0,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "61b2d72d-596a-4b83-9129-41fad8c55c2b",
+            "label": "cashflags",
+            "components": [],
+            "texture": {
+                "key": "pg-pizza",
+                "frame": "cashflags"
+            },
+            "x": 534,
+            "y": 433
+        },
+        {
+            "type": "Image",
+            "id": "294c0888-fda8-4a83-a2c2-cf60e128a46f",
+            "label": "flags",
+            "components": [],
+            "texture": {
+                "key": "pg-pizza",
+                "frame": "flags"
+            },
+            "x": 710,
+            "y": 53
+        },
+        {
+            "type": "Image",
+            "id": "77d1298b-35e0-445b-83e3-6f455abb17f4",
+            "label": "balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-pizza",
+                "frame": "balloons"
+            },
+            "x": 1488,
+            "y": 664
         }
     ],
     "plainObjects": [],
