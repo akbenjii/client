@@ -58,10 +58,7 @@ export default class RoomScene extends BaseScene {
         if (this.world.client.roomsWaddled.length >= 20) {
             this.world.client.stampEarned(15)
         }
-        console.log(this.world.client.roomsWaddled)
-		console.log(this.client)
-		
-		console.log(this.mar_check.every(elem => this.world.client.roomsWaddled.indexOf(elem) > -1))
+
 		if (this.mar_check.every(elem => this.world.client.roomsWaddled.indexOf(elem) > -1) === true) {
 			this.interface.main.penguingames.check_mar.visible = true
 		}
