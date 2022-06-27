@@ -4,7 +4,7 @@
   "description": "A rewrite of the Club Penguin client in HTML5",
   "scripts": {
     "devclient": "webpack serve --host=0.0.0.0",
-    "editor": "phasereditor2d-launcher -project . -max-number-files 100000",
+    "editor": "phasereditor2d-launcher -project . -max-number-files 100000 -public",
     "build": "webpack --mode production --env obfuscate=true",
     "build-crumbs": "node ./utils/build-crumbs.js"
   },

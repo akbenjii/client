@@ -9,7 +9,7 @@ export default class Game extends Phaser.Game {
     constructor(config) {
         super(config)
 
-        if (window.location.hostname == 'play.cpforever.net' || window.location.hostname == 'localhost') {
+        if (window.location.hostname == 'play.cpforever.net' || window.location.hostname == 'localhost' || window.location.hostname == 'supersecretdevserverdirkdispoggers.cpforever.net') {
             this.crumbs = config.crumbs
             this.network = new Network(this)
 
