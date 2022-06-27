@@ -32,6 +32,42 @@
         },
         {
             "type": "Image",
+            "id": "0f3bd165-1759-49e6-a657-f3a7b87536db",
+            "label": "go_team",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "go_team"
+            },
+            "x": 516,
+            "y": 200
+        },
+        {
+            "type": "Image",
+            "id": "13006788-27f2-48a6-b73b-dbfe9a3ca2d4",
+            "label": "trail",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "trail"
+            },
+            "x": 904,
+            "y": 559
+        },
+        {
+            "type": "Image",
+            "id": "746c4424-79ad-452a-839b-33c6ce6d3092",
+            "label": "upper_rope_92",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_92"
+            },
+            "x": 1388,
+            "y": 413
+        },
+        {
+            "type": "Image",
             "id": "4012baa0-518e-4853-9e83-d20c84ba503d",
             "label": "lighthouse_door",
             "components": [
@@ -94,6 +130,18 @@
         },
         {
             "type": "Image",
+            "id": "80d83be1-8188-46a7-89d1-a666a6d17c86",
+            "label": "balloons",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "balloons"
+            },
+            "x": 265,
+            "y": 271
+        },
+        {
+            "type": "Image",
             "id": "e6eeb0bc-357d-45f6-944b-5b556e34731d",
             "label": "net",
             "components": [],
@@ -148,77 +196,365 @@
             "originY": 0
         },
         {
-            "type": "Image",
-            "id": "415dd9a9-d5e8-447e-8cb4-a51fdfd7a503",
-            "label": "chair_2",
-            "components": [],
-            "texture": {
-                "key": "beach",
-                "frame": "chair_2"
-            },
-            "x": 1060,
-            "y": 501,
-            "originX": 0.5185185185185185,
-            "originY": 0.6060606060606061
-        },
-        {
-            "type": "Image",
-            "id": "7c8f2975-d88a-4e02-8a8b-2c1f0ffdb26b",
-            "label": "chair_2_front",
-            "components": [],
-            "texture": {
-                "key": "beach",
-                "frame": "chair_2_front"
-            },
-            "x": 1053,
-            "y": 522,
-            "originY": 0.6764705882352942
-        },
-        {
-            "type": "Image",
-            "id": "c372b672-3064-41e6-b681-70b5180c1b28",
-            "label": "chair_1",
-            "components": [],
-            "texture": {
-                "key": "beach",
-                "frame": "chair_1"
-            },
-            "x": 961,
-            "y": 526,
-            "originY": 0.58778626
-        },
-        {
-            "type": "Image",
-            "id": "7dd9eb62-1537-4f6c-b67f-74fcd38f2154",
-            "label": "chair_1_front",
-            "components": [],
-            "texture": {
-                "key": "beach",
-                "frame": "chair_1_front"
-            },
-            "x": 943,
-            "y": 542,
-            "originX": 0.4,
-            "originY": 0.67054264
-        },
-        {
             "type": "Sprite",
-            "id": "88cb8488-1341-4273-9776-5481d3092d3b",
-            "label": "bucket",
+            "id": "304deba0-cfb5-4579-99e4-a1cb4c646610",
+            "label": "fire",
             "scope": "CLASS",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onBucketOver()",
-            "SimpleButton.pixelPerfect": true,
+            "components": [],
             "texture": {
-                "key": "beach",
-                "frame": "bucket/bucket0001"
+                "key": "pg-beach",
+                "frame": "fire0001"
             },
-            "x": 1078,
-            "y": 612,
-            "originX": 0.8863109,
-            "originY": 0.94611727
+            "x": 1037,
+            "y": 72,
+            "scaleX": 0.2354890337076162,
+            "scaleY": 0.2354890337076162
+        },
+        {
+            "type": "Image",
+            "id": "a0fb27d3-37fb-4d7a-8903-2e21feb85127",
+            "label": "fire_holder",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "fire_holder"
+            },
+            "x": 1036,
+            "y": 94
+        },
+        {
+            "type": "Image",
+            "id": "0008ecfd-fec2-4be4-a390-f2d3cec87e94",
+            "label": "start",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "start"
+            },
+            "x": 933,
+            "y": 246
+        },
+        {
+            "type": "Image",
+            "id": "53952227-1778-4ac8-a851-2f5e97d288af",
+            "label": "gatorade",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "gatorade"
+            },
+            "x": 998.7586770421385,
+            "y": 520.965291831446,
+            "originX": 0.47680830549618813,
+            "originY": 0.6233252460673298
+        },
+        {
+            "type": "Image",
+            "id": "97261731-d8d2-4e4d-92f8-ac758abe0d88",
+            "label": "rock",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "rock"
+            },
+            "x": 282,
+            "y": 668
+        },
+        {
+            "type": "Image",
+            "id": "a4a733aa-859f-44c6-bab7-6d69b19cd071",
+            "label": "bench",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "bench"
+            },
+            "x": 757.7586770421385,
+            "y": 678.2644617368975,
+            "originX": 0.4775050516829979,
+            "originY": 0.4312162341487991
+        },
+        {
+            "type": "Image",
+            "id": "d741400c-3e5e-478f-a20f-3d089b849e52",
+            "label": "upper_rope_1",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_1"
+            },
+            "x": 744,
+            "y": 326
+        },
+        {
+            "type": "Image",
+            "id": "2dff9e55-39ed-4064-889d-0134595cbbe6",
+            "label": "upper_rope_3",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_3"
+            },
+            "x": 284,
+            "y": 522
+        },
+        {
+            "type": "Image",
+            "id": "432f492c-dccf-4023-ae2b-65e3a063b793",
+            "label": "upper_rope_4",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_4"
+            },
+            "x": 315.3340966139988,
+            "y": 574.6679797802544,
+            "originX": 0.3837991834980474,
+            "originY": 0.29683787069733775
+        },
+        {
+            "type": "Image",
+            "id": "d517270b-2250-4cc9-9ae2-c7972d231b76",
+            "label": "upper_rope_5",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_5"
+            },
+            "x": 433,
+            "y": 652,
+            "originX": 0.4945358546166038,
+            "originY": 0.5168766009309959
+        },
+        {
+            "type": "Image",
+            "id": "146b184c-fe68-4b19-9b60-937b86aa06a6",
+            "label": "upper_rope_6",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_6"
+            },
+            "x": 514,
+            "y": 703
+        },
+        {
+            "type": "Image",
+            "id": "82296fa9-5709-4974-8f86-92655fff5130",
+            "label": "upper_rope91",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope91"
+            },
+            "x": 1266,
+            "y": 514
+        },
+        {
+            "type": "Image",
+            "id": "125b63ba-9d2b-4469-9613-177ab7c9151f",
+            "label": "upper_rope_7",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_7"
+            },
+            "x": 777,
+            "y": 794
+        },
+        {
+            "type": "Image",
+            "id": "c3f25f53-f8ea-4a40-9622-f32f0ba0b619",
+            "label": "upper_rope_8",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_8"
+            },
+            "x": 1036,
+            "y": 741
+        },
+        {
+            "type": "Image",
+            "id": "9b696485-5d97-4b5c-8716-288fe221036f",
+            "label": "upper_rope_9",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "upper_rope_9"
+            },
+            "x": 1176,
+            "y": 640
+        },
+        {
+            "type": "Image",
+            "id": "d7df8da9-5d2f-4bd6-a223-566467154f73",
+            "label": "green_sign_2",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "green_sign_2"
+            },
+            "x": 909,
+            "y": 601
+        },
+        {
+            "type": "Image",
+            "id": "a97e8d70-c191-4967-8767-34fad9c404af",
+            "label": "green_sign_1",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "green_sign_1"
+            },
+            "x": 630,
+            "y": 312
+        },
+        {
+            "type": "Image",
+            "id": "053a451e-2282-4202-8cdd-c543a9f0df3c",
+            "label": "inner_rope_1",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_1"
+            },
+            "x": 867.9922390760437,
+            "y": 299.94850219502354,
+            "originX": 0.6450676042197792,
+            "originY": 0.17168519679906633
+        },
+        {
+            "type": "Image",
+            "id": "79bce6ab-d900-47d8-ba7a-3b50218b9a08",
+            "label": "inner_rope_2",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_2"
+            },
+            "x": 465,
+            "y": 508
+        },
+        {
+            "type": "Image",
+            "id": "3e505fce-90a5-495d-969f-a5ef04642727",
+            "label": "inner_rope_3",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_3"
+            },
+            "x": 473,
+            "y": 559
+        },
+        {
+            "type": "Image",
+            "id": "3796e3e0-adbd-4a62-883d-d010bdfcdeca",
+            "label": "inner_rope_4",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_4"
+            },
+            "x": 563,
+            "y": 612
+        },
+        {
+            "type": "Image",
+            "id": "8f5bcd26-8500-4c5c-acf1-8c63f88119d1",
+            "label": "inner_rope_5",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_5"
+            },
+            "x": 634,
+            "y": 679
+        },
+        {
+            "type": "Image",
+            "id": "799cf4ea-cc6f-42be-9ac5-d24f49d475dc",
+            "label": "inner_rope_6",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_6"
+            },
+            "x": 792,
+            "y": 727
+        },
+        {
+            "type": "Image",
+            "id": "9279ebac-37e7-4f94-b450-854a78b3ef8b",
+            "label": "inner_rope_7",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_7"
+            },
+            "x": 948,
+            "y": 672
+        },
+        {
+            "type": "Image",
+            "id": "58e3675d-bd28-440d-b2f5-89e9a175582c",
+            "label": "inner_rope_8",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_8"
+            },
+            "x": 1028,
+            "y": 624
+        },
+        {
+            "type": "Image",
+            "id": "1d2f296b-b057-4345-a8ee-b6054a170161",
+            "label": "inner_rope_9",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_9"
+            },
+            "x": 1108,
+            "y": 583
+        },
+        {
+            "type": "Image",
+            "id": "954077a3-801d-427e-beeb-aa1887e9371b",
+            "label": "inner_rope_92",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_92"
+            },
+            "x": 1091,
+            "y": 477
+        },
+        {
+            "type": "Image",
+            "id": "d26f8c0d-f78b-43c9-b0b1-820e6076f49f",
+            "label": "inner_rope_91",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_91"
+            },
+            "x": 1125,
+            "y": 534
+        },
+        {
+            "type": "Image",
+            "id": "23502976-028e-4af4-b034-caf16b3edc02",
+            "label": "inner_rope_93",
+            "components": [],
+            "texture": {
+                "key": "pg-beach",
+                "frame": "inner_rope_93"
+            },
+            "x": 1283,
+            "y": 390
         }
     ],
     "plainObjects": [],
@@ -233,15 +569,33 @@
             "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
             "label": "sort",
             "objectIds": [
-                "88cb8488-1341-4273-9776-5481d3092d3b",
-                "7dd9eb62-1537-4f6c-b67f-74fcd38f2154",
-                "c372b672-3064-41e6-b681-70b5180c1b28",
-                "7c8f2975-d88a-4e02-8a8b-2c1f0ffdb26b",
-                "415dd9a9-d5e8-447e-8cb4-a51fdfd7a503",
                 "e6eeb0bc-357d-45f6-944b-5b556e34731d",
                 "60d6901e-4fdf-4814-bf8f-7f012aaa7678",
                 "b2b4b1cb-12e9-4604-9913-ed9514d3f98c",
-                "a8d842d4-6bc1-4716-85f4-0f36cc59f6d3"
+                "a8d842d4-6bc1-4716-85f4-0f36cc59f6d3",
+                "2dff9e55-39ed-4064-889d-0134595cbbe6",
+                "432f492c-dccf-4023-ae2b-65e3a063b793",
+                "d517270b-2250-4cc9-9ae2-c7972d231b76",
+                "146b184c-fe68-4b19-9b60-937b86aa06a6",
+                "125b63ba-9d2b-4469-9613-177ab7c9151f",
+                "c3f25f53-f8ea-4a40-9622-f32f0ba0b619",
+                "9b696485-5d97-4b5c-8716-288fe221036f",
+                "746c4424-79ad-452a-839b-33c6ce6d3092",
+                "ecf3d23d-1704-4df6-9e8d-59c0d57d7f21",
+                "d7df8da9-5d2f-4bd6-a223-566467154f73",
+                "53952227-1778-4ac8-a851-2f5e97d288af",
+                "053a451e-2282-4202-8cdd-c543a9f0df3c",
+                "79bce6ab-d900-47d8-ba7a-3b50218b9a08",
+                "3e505fce-90a5-495d-969f-a5ef04642727",
+                "3796e3e0-adbd-4a62-883d-d010bdfcdeca",
+                "8f5bcd26-8500-4c5c-acf1-8c63f88119d1",
+                "799cf4ea-cc6f-42be-9ac5-d24f49d475dc",
+                "9279ebac-37e7-4f94-b450-854a78b3ef8b",
+                "58e3675d-bd28-440d-b2f5-89e9a175582c",
+                "1d2f296b-b057-4345-a8ee-b6054a170161",
+                "d26f8c0d-f78b-43c9-b0b1-820e6076f49f",
+                "954077a3-801d-427e-beeb-aa1887e9371b",
+                "23502976-028e-4af4-b034-caf16b3edc02"
             ]
         }
     ]
