@@ -1,0 +1,98 @@
+{
+    "id": "c61a40df-26bb-479a-af3b-c54b2568be12",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "724feabd-bd10-4925-b47c-939fdb25b8e4",
+            "label": "container_1",
+            "components": [],
+            "x": 228,
+            "y": 775,
+            "list": [
+                {
+                    "type": "Sprite",
+                    "id": "79593e27-a7c3-40d5-8797-56aa9a6a0d68",
+                    "label": "text_bg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "party-prompt",
+                        "frame": "text-bg"
+                    },
+                    "x": 716,
+                    "y": 37
+                },
+                {
+                    "type": "Sprite",
+                    "id": "25a37562-70a6-4fe2-9cc7-afaf9b40b617",
+                    "label": "mascot",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "party-prompt",
+                        "frame": "aunt-artic-headphones"
+                    },
+                    "x": 27,
+                    "y": 25
+                },
+                {
+                    "type": "Container",
+                    "id": "1037faa2-30fb-4744-b39f-653b97263e1f",
+                    "label": "ok",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1100,
+                    "y": 80,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "0aca8fb7-2ef4-4188-be33-4324f1777231",
+                            "label": "ok_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "ok-btn",
+                            "Button.callback": "() => {this.visible = false}",
+                            "texture": {
+                                "key": "party-prompt",
+                                "frame": "ok-btn"
+                            }
+                        },
+                        {
+                            "type": "Text",
+                            "id": "1af349d1-c67f-4b91-bcfb-06a0ac721eee",
+                            "label": "ok-text",
+                            "components": [],
+                            "y": 1,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "OK",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "20px",
+                            "fontStyle": "bold",
+                            "color": "#3c3c3cff"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
