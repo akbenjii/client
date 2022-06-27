@@ -285,6 +285,22 @@
             },
             "x": 732,
             "y": 24
+        },
+        {
+            "type": "Image",
+            "id": "eda65a45-b00a-47cb-a0d0-4d7ddfb494ff",
+            "label": "base_pin",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(589)",
+            "texture": {
+                "key": "589"
+            },
+            "x": 181,
+            "y": 388,
+            "scaleX": 0.4537394869170155,
+            "scaleY": 0.4537394869170155
         }
     ],
     "plainObjects": [],

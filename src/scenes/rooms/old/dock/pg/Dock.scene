@@ -513,6 +513,22 @@
             },
             "x": 1261,
             "y": 326
+        },
+        {
+            "type": "Image",
+            "id": "9663bac6-fb23-432a-9c4c-0ec87df1cd2e",
+            "label": "bball_pin",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(613)",
+            "texture": {
+                "key": "613"
+            },
+            "x": 655,
+            "y": 189,
+            "scaleX": 0.41565576025380957,
+            "scaleY": 0.41565576025380957
         }
     ],
     "plainObjects": [],

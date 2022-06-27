@@ -183,6 +183,11 @@ export default class Dock extends RoomScene {
         // right_sign
         const right_sign = this.add.image(1261, 326, "pg-dock", "right_sign");
 
+        // bball_pin
+        const bball_pin = this.add.image(655, 189, "613");
+        bball_pin.scaleX = 0.41565576025380957;
+        bball_pin.scaleY = 0.41565576025380957;
+
         // lists
         const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box, chair, left_table, left_table_1, chair_2, chair_1_1, chair_3, chair_1_2, bottom_table, coffee_stand, bottom_rope, chair_1, zone, left_sign, right_sign];
 
@@ -210,6 +215,10 @@ export default class Dock extends RoomScene {
         // coffee_stand (components)
         const coffee_standSimpleButton = new SimpleButton(coffee_stand);
         coffee_standSimpleButton.callback = () => this.interface.prompt.showItem(5551);
+
+        // bball_pin (components)
+        const bball_pinSimpleButton = new SimpleButton(bball_pin);
+        bball_pinSimpleButton.callback = () => this.interface.prompt.showItem(613);
 
         this.boat = boat;
         this.rings = rings;

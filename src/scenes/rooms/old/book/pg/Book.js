@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Button, MoveTo, ShowHint } from '@components/components'
+import { Button, MoveTo, ShowHint, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -97,6 +97,11 @@ export default class Book extends RoomScene {
         // streamers
         this.add.image(732, 24, "pg-book", "streamers");
 
+        // base_pin
+        const base_pin = this.add.image(181, 388, "589");
+        base_pin.scaleX = 0.4537394869170155;
+        base_pin.scaleY = 0.4537394869170155;
+
         // lists
         const sort = [table_4, table_2, table_1, table, chair_table, chair_front, chair_back];
 
@@ -140,6 +145,10 @@ export default class Book extends RoomScene {
         new MoveTo(table_4);
         const table_4ShowHint = new ShowHint(table_4);
         table_4ShowHint.text = "Play Mancala";
+
+        // base_pin (components)
+        const base_pinSimpleButton = new SimpleButton(base_pin);
+        base_pinSimpleButton.callback = () => this.interface.prompt.showItem(589);
 
         this.sort = sort;
 

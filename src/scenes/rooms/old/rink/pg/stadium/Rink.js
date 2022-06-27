@@ -12,6 +12,10 @@ export default class Rink extends RoomScene {
 
         /** @type {Phaser.GameObjects.Sprite} */
         this.pg_blimp;
+        /** @type {Phaser.GameObjects.Image} */
+        this.spin;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.soccer_pin;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -82,6 +86,18 @@ export default class Rink extends RoomScene {
         const book_sports = this.add.image(1414, 1111.244075129439, "sport", "book-sports");
         book_sports.setOrigin(0.5, 2.552033959411991);
 
+        // spin
+        const spin = this.add.image(781, 475, "561");
+        spin.scaleX = 0.6464836304732878;
+        spin.scaleY = 0.6464836304732878;
+
+        // soccer_pin
+        const soccer_pin = this.add.ellipse(782, 473, 128, 128);
+        soccer_pin.scaleX = 0.5556653150031384;
+        soccer_pin.scaleY = 0.4700144737280961;
+        soccer_pin.isFilled = true;
+        soccer_pin.fillAlpha = 0;
+
         // lists
         const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, sports_door0001, rink_border, book_sports];
 
@@ -92,6 +108,8 @@ export default class Rink extends RoomScene {
         book_sportsButton.activeFrame = false;
 
         this.pg_blimp = pg_blimp;
+        this.spin = spin;
+        this.soccer_pin = soccer_pin;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -102,6 +120,14 @@ export default class Rink extends RoomScene {
     create() {
         super.create()
         this.pg_blimp.play('pg_blimp')
+        this.roomZones = {
+            'soccer_pin': { 
+                key: this.soccer_pin,
+                callback: () => this.interface.prompt.showItem(561)
+            }
+        }
+
+        super.addZones()
     }
     /* END-USER-CODE */
 }

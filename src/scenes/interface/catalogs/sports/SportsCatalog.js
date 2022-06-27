@@ -34,6 +34,12 @@ export default class SportsCatalog extends Book {
     /** @returns {void} */
     _create() {
 
+        // block
+        const block = this.add.rectangle(760, 480, 1520, 960);
+        block.isFilled = true;
+        block.fillColor = 0;
+        block.fillAlpha = 0.2;
+
         // page8
         const page8 = this.add.container(14, 19);
         page8.visible = false;
@@ -542,6 +548,9 @@ export default class SportsCatalog extends Book {
 
         // lists
         const pages = [page1, page2, page3, page4, page5, page6, page7, page8];
+
+        // block (components)
+        new Interactive(block);
 
         // close_left_16 (components)
         const close_left_16Button = new Button(close_left_16);

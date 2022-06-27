@@ -12,6 +12,8 @@ export default class GamesRink extends RoomScene {
 
         /** @type {Phaser.GameObjects.Ellipse} */
         this.hockey_stick;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.hockey_pin;
         /** @type {Array<any>} */
         this.sort;
 
@@ -120,6 +122,20 @@ export default class GamesRink extends RoomScene {
         const book_sports = this.add.image(1414, 1111.244075129439, "sport", "book-sports");
         book_sports.setOrigin(0.5, 2.552033959411991);
 
+        // stick_1_1
+        const stick_1_1 = this.add.image(1038, 177, "stick");
+        stick_1_1.scaleX = 0.4429601120842577;
+        stick_1_1.scaleY = 0.4429601120842577;
+        stick_1_1.angle = -38;
+        stick_1_1.flipX = true;
+
+        // hockey_pin
+        const hockey_pin = this.add.ellipse(1033, 237, 128, 128);
+        hockey_pin.scaleX = 0.9533734349476273;
+        hockey_pin.scaleY = 0.30372556000761564;
+        hockey_pin.isFilled = true;
+        hockey_pin.fillAlpha = 0;
+
         // lists
         const sort = [];
 
@@ -130,6 +146,7 @@ export default class GamesRink extends RoomScene {
         book_sportsButton.activeFrame = false;
 
         this.hockey_stick = hockey_stick;
+        this.hockey_pin = hockey_pin;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -141,9 +158,13 @@ export default class GamesRink extends RoomScene {
         super.create()
 
         this.roomZones = {
-            'redfp': { 
+            'hockey_stick': { 
                 key: this.hockey_stick,
                 callback: () => this.interface.prompt.showItem(220)
+            },
+			'hockey_pin': { 
+                key: this.hockey_pin,
+                callback: () => this.interface.prompt.showItem(560)
             }
         }
 

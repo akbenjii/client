@@ -21,6 +21,21 @@
     },
     "displayList": [
         {
+            "type": "Rectangle",
+            "id": "0c7859bf-3140-40c7-bb0b-f95b4bc534a3",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
             "type": "Container",
             "id": "4ab2a5fe-17c8-484d-9fd7-0efa2a728931",
             "label": "page8",

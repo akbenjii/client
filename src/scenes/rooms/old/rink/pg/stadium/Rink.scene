@@ -175,6 +175,35 @@
             "x": 1414,
             "y": 1111.244075129439,
             "originY": 2.552033959411991
+        },
+        {
+            "type": "Image",
+            "id": "ec57b7d9-6d1e-4940-bea3-1cd49a9b5509",
+            "label": "spin",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "561"
+            },
+            "x": 781,
+            "y": 475,
+            "scaleX": 0.6464836304732878,
+            "scaleY": 0.6464836304732878
+        },
+        {
+            "type": "Ellipse",
+            "id": "f87b0316-ccc2-4e61-9b56-c9c6f66e7d20",
+            "label": "soccer_pin",
+            "scope": "CLASS",
+            "components": [],
+            "x": 782,
+            "y": 473,
+            "scaleX": 0.5556653150031384,
+            "scaleY": 0.4700144737280961,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [],
