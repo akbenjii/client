@@ -20,6 +20,10 @@ export default class RoomScene extends BaseScene {
         this.isReady = false
         // Array of users to be added once ready
         this.waiting = []
+		this.mar_check = [800, 200, 100, 400, 801, 300, 809, 810]
+		this.swim_check = [806]
+		this.berg_check = [805]
+		this.medal_check = [800, 200, 100, 400, 801, 300, 809, 810, 805, 806]
     }
 
     get client() {
@@ -54,6 +58,22 @@ export default class RoomScene extends BaseScene {
         if (this.world.client.roomsWaddled.length >= 20) {
             this.world.client.stampEarned(15)
         }
+        console.log(this.world.client.roomsWaddled)
+		console.log(this.client)
+		
+		console.log(this.mar_check.every(elem => this.world.client.roomsWaddled.indexOf(elem) > -1))
+		if (this.mar_check.every(elem => this.world.client.roomsWaddled.indexOf(elem) > -1) === true) {
+			this.interface.main.penguingames.check_mar.visible = true
+		}
+		if (this.swim_check.every(elem => this.world.client.roomsWaddled.indexOf(elem) > -1) === true) {
+			this.interface.main.penguingames.check_swim.visible = true
+		}
+		if (this.berg_check.every(elem => this.world.client.roomsWaddled.indexOf(elem) > -1) === true) {
+			this.interface.main.penguingames.check_berg.visible = true
+		}
+		if (this.medal_check.every(elem => this.world.client.roomsWaddled.indexOf(elem) > -1) === true) {
+			this.interface.main.penguingames.claim.visible = true
+		}
     }
 	
     preload() {

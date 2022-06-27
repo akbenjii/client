@@ -1,0 +1,163 @@
+{
+    "id": "daf39fc8-fc0e-406f-93dc-3b12f19b138d",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "8bb89fb5-8fd3-4d6d-a8b9-f11a53a7735f",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "9d274e25-df95-406f-883b-f4102166d431",
+                    "label": "block",
+                    "scope": "CLASS",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Image",
+                    "id": "1ad37d27-55d3-42f9-99bc-a57724ea848c",
+                    "label": "board",
+                    "components": [],
+                    "texture": {
+                        "key": "pg-interface",
+                        "frame": "board"
+                    },
+                    "x": 11,
+                    "y": -48,
+                    "scaleX": 1.4547045565854764,
+                    "scaleY": 1.4547045565854764
+                },
+                {
+                    "type": "Image",
+                    "id": "bc0ae1de-ea10-4503-a491-e9bf989df16b",
+                    "label": "claim",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "claim",
+                    "Button.callback": "() => this.interface.prompt.showItem(3003)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "pg-interface",
+                        "frame": "claim"
+                    },
+                    "x": -7,
+                    "y": 148,
+                    "scaleX": 1.4547045565854764,
+                    "scaleY": 1.4547045565854764,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "8da7a322-ec0a-4a04-854a-da33a1db50b9",
+                    "label": "check_mar",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pg-interface",
+                        "frame": "check"
+                    },
+                    "x": -71,
+                    "y": -67,
+                    "scaleX": 1.4547045565854764,
+                    "scaleY": 1.4547045565854764,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "49bbdcc9-f34e-4c4e-be67-2e31f8bc2dd8",
+                    "label": "check_berg",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pg-interface",
+                        "frame": "check"
+                    },
+                    "x": -69,
+                    "y": -29,
+                    "scaleX": 1.4547045565854764,
+                    "scaleY": 1.4547045565854764,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "062779e3-88c7-4fe4-b47d-62ad5c4bcc3e",
+                    "label": "check_swim",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pg-interface",
+                        "frame": "check"
+                    },
+                    "x": -69,
+                    "y": 8,
+                    "scaleX": 1.4547045565854764,
+                    "scaleY": 1.4547045565854764,
+                    "visible": false
+                },
+                {
+                    "type": "Image",
+                    "id": "5ac44541-7d2c-4f48-af37-066e28afea18",
+                    "label": "grey_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "grey-button",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-button"
+                    },
+                    "x": 310,
+                    "y": -403,
+                    "scaleX": 0.892380938710045,
+                    "scaleY": 0.892380938710045
+                },
+                {
+                    "type": "Image",
+                    "id": "923db44c-7439-4101-9ca5-34985680fa58",
+                    "label": "grey_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "grey-x"
+                    },
+                    "x": 310,
+                    "y": -403,
+                    "scaleX": 1.091114033141114,
+                    "scaleY": 1.091114033141114
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

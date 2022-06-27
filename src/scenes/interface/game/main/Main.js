@@ -24,6 +24,7 @@ import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
 import Manage from '../manage/Manage'
 import Underwater from '../underwater/Underwater'
+import PenguinGames from '../penguingames/PenguinGames'
 
 
 /* START OF COMPILED CODE */
@@ -137,6 +138,8 @@ export default class Main extends BaseScene {
         this.stampEarnedBody;
         /** @type {PuffleCare} */
         this.puffleCare;
+        /** @type {PenguinGames} */
+        this.penguingames;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -361,6 +364,16 @@ export default class Main extends BaseScene {
         this.add.existing(puffleCare);
         puffleCare.visible = false;
 
+        // pg
+        const pg = this.add.image(1457, 61, "pg");
+        pg.scaleX = 0.35;
+        pg.scaleY = 0.35;
+
+        // penguingames
+        const penguingames = new PenguinGames(this, 760, 480);
+        this.add.existing(penguingames);
+        penguingames.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -467,6 +480,10 @@ export default class Main extends BaseScene {
         const chat_buttonShowHint = new ShowHint(chat_button);
         chat_buttonShowHint.text = "Messages";
 
+        // pg (components)
+        const pgSimpleButton = new SimpleButton(pg);
+        pgSimpleButton.callback = () => {this.penguingames.visible = true};;
+
         this.pinContainer = pinContainer;
         this.dock = dock;
         this.chat_box = chat_box;
@@ -519,6 +536,7 @@ export default class Main extends BaseScene {
         this.stampEarnedHeader = stampEarnedHeader;
         this.stampEarnedBody = stampEarnedBody;
         this.puffleCare = puffleCare;
+        this.penguingames = penguingames;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -920,10 +938,10 @@ export default class Main extends BaseScene {
         this.party_interface.scaleX = 0.4
         this.party_interface.scaleY= 0.4
     }
-	
-	onPuffleClick(){
-		
-	}
+
+    onPuffleClick(){
+
+    }
 
     /* END-USER-CODE */
 }

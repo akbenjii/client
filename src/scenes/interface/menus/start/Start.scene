@@ -27,10 +27,10 @@
         {
             "type": "Image",
             "id": "47adb54d-d36d-4395-9917-47fda53b0830",
-            "label": "cpf_beta",
+            "label": "pgames",
             "components": [],
             "texture": {
-                "key": "cpf_beta"
+                "key": "pgames"
             },
             "x": 760,
             "y": 420

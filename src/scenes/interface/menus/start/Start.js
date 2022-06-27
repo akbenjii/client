@@ -21,8 +21,8 @@ export default class Start extends BaseScene {
         const bg = this.add.image(0, 0, "load", "bg");
         bg.setOrigin(0, 0);
 
-        // cpf_beta
-        this.add.image(760, 420, "cpf_beta");
+        // pgames
+        this.add.image(760, 420, "pgames");
 
         // bottom
         this.add.image(760, 766, "start", "bottom");

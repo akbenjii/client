@@ -827,6 +827,38 @@
             "y": 583,
             "visible": false,
             "nestedPrefabs": []
+        },
+        {
+            "type": "Image",
+            "id": "109935d0-deb5-4d91-ac6b-9066fd5f553e",
+            "label": "pg",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => {this.penguingames.visible = true};",
+            "texture": {
+                "key": "pg"
+            },
+            "x": 1457,
+            "y": 61,
+            "scaleX": 0.35,
+            "scaleY": 0.35
+        },
+        {
+            "prefabId": "daf39fc8-fc0e-406f-93dc-3b12f19b138d",
+            "id": "cec96a45-1eb1-4f95-bd97-b3d2e59dfa53",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "penguingames",
+            "scope": "CLASS",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "visible": false,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],
