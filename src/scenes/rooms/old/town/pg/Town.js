@@ -113,9 +113,6 @@ export default class Town extends RoomScene {
         const box_3 = this.add.image(1148, 581, "town", "box_3");
         box_3.setOrigin(0.4943820224719101, 0.5569620253164557);
 
-        // flag_line_stadium
-        this.add.image(1440, 360, "pg-town", "flag_line_stadium");
-
         // chair_2
         const chair_2 = this.add.image(436, 462, "town", "chair_2");
         chair_2.setOrigin(0.49382716049382713, 0.27358490566037735);

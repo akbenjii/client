@@ -288,18 +288,6 @@
         },
         {
             "type": "Image",
-            "id": "70b4f4a9-6e79-4d77-ac2f-f6758c4af5e8",
-            "label": "flag_line_stadium",
-            "components": [],
-            "texture": {
-                "key": "pg-town",
-                "frame": "flag_line_stadium"
-            },
-            "x": 1440,
-            "y": 360
-        },
-        {
-            "type": "Image",
             "id": "97ca136f-d936-4bb2-8db1-381245bfaa5b",
             "label": "chair_2",
             "components": [],
