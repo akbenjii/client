@@ -177,7 +177,7 @@ class Sled extends GameScene {
         this.delta = currentTime - this.lastTime
 
         // Prevents changes if game has been in the background
-        this.delta = delta
+        //this.delta = delta
 
         this.players.map(player => player.update())
 
@@ -293,41 +293,10 @@ class Sled extends GameScene {
 
     playText() {
         this.hideWaiting()
-
-        let tweenIn = {
-            scale: { from: 0.45, to: 1 }
-        }
-
-        let tweenOut = {
-            scale: { from: 1, to: 0.45 },
-            delay: 600
-        }
-
-        this.tweens.timeline({
-            targets: this.text,
-            duration: 100,
-            ease: Phaser.Math.Easing.Back.InOut,
-
-            onComplete: () => this.onTextComplete(),
-
-            tweens: [
-                {
-                    ...tweenIn,
-                    onStart: () => this.text.setTexture('sled', 'text/ready')
-                },
-                tweenOut,
-                {
-                    ...tweenIn,
-                    onStart: () => this.text.setTexture('sled', 'text/set')
-                },
-                tweenOut,
-                {
-                    ...tweenIn,
-                    onStart: () => this.text.setTexture('sled', 'text/go'),
-                },
-                tweenOut
-            ]
-        })
+        this.text.setTexture('sled', 'text/ready')
+        setTimeout(() => this.text.setTexture('sled', 'text/set'), 600)
+        setTimeout(() => this.text.setTexture('sled', 'text/go'), 1200)
+        setTimeout(() => this.onTextComplete(), 1800)
     }
 
     hideWaiting() {

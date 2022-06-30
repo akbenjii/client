@@ -1,6 +1,11 @@
 import BaseContainer from '@scenes/base/BaseContainer'
 
-import { Button, Interactive, ShowHint, SimpleButton } from '@components/components'
+import {
+    Button,
+    Interactive,
+    ShowHint,
+    SimpleButton
+} from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -121,14 +126,28 @@ export default class PenguinGames extends BaseContainer {
         const games_text = scene.add.text(143, -364, "", {});
         games_text.setOrigin(0.5, 0.5);
         games_text.text = "GAMES";
-        games_text.setStyle({ "color": "#b52121ff", "fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold", "stroke": "#341111ff", "strokeThickness":10});
+        games_text.setStyle({
+            "color": "#b52121ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "70px",
+            "fontStyle": "bold",
+            "stroke": "#341111ff",
+            "strokeThickness": 10
+        });
         this.add(games_text);
 
         // penguin_text
         const penguin_text = scene.add.text(-143, -364, "", {});
         penguin_text.setOrigin(0.5, 0.5);
         penguin_text.text = "PENGUIN";
-        penguin_text.setStyle({ "color": "#164887ff", "fontFamily": "Burbank Small", "fontSize": "70px", "fontStyle": "bold", "stroke": "#0b2341ff", "strokeThickness":10});
+        penguin_text.setStyle({
+            "color": "#164887ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "70px",
+            "fontStyle": "bold",
+            "stroke": "#0b2341ff",
+            "strokeThickness": 10
+        });
         this.add(penguin_text);
 
         // blue
@@ -140,14 +159,24 @@ export default class PenguinGames extends BaseContainer {
         const blue_team = scene.add.text(452, 0, "", {});
         blue_team.setOrigin(0.5, 0.5);
         blue_team.text = "blue team";
-        blue_team.setStyle({ "color": "#164887ff", "fontFamily": "Burbank Small", "fontSize": "50px", "stroke": "#ffffffff" });
+        blue_team.setStyle({
+            "color": "#164887ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "stroke": "#ffffffff"
+        });
         blue.add(blue_team);
 
         // you_are_on_blue
         const you_are_on_blue = scene.add.text(161, 0, "", {});
         you_are_on_blue.setOrigin(0.5, 0.5);
         you_are_on_blue.text = "You are on the";
-        you_are_on_blue.setStyle({ "color": "#3a2c12ff", "fontFamily": "Burbank Small", "fontSize": "50px", "stroke": "#ffffffff" });
+        you_are_on_blue.setStyle({
+            "color": "#3a2c12ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "stroke": "#ffffffff"
+        });
         blue.add(you_are_on_blue);
 
         // red
@@ -159,14 +188,24 @@ export default class PenguinGames extends BaseContainer {
         const red_team = scene.add.text(443, 0, "", {});
         red_team.setOrigin(0.5, 0.5);
         red_team.text = "red team";
-        red_team.setStyle({ "color": "#b52121ff", "fontFamily": "Burbank Small", "fontSize": "50px", "stroke": "#ffffffff" });
+        red_team.setStyle({
+            "color": "#b52121ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "stroke": "#ffffffff"
+        });
         red.add(red_team);
 
         // you_are_on_red
         const you_are_on_red = scene.add.text(166, 0, "", {});
         you_are_on_red.setOrigin(0.5, 0.5);
         you_are_on_red.text = "You are on the";
-        you_are_on_red.setStyle({ "color": "#3a2c12ff", "fontFamily": "Burbank Small", "fontSize": "50px", "stroke": "#ffffffff" });
+        you_are_on_red.setStyle({
+            "color": "#3a2c12ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "stroke": "#ffffffff"
+        });
         red.add(you_are_on_red);
 
         // red_overall_score
@@ -174,7 +213,15 @@ export default class PenguinGames extends BaseContainer {
         red_overall_score.angle = -90;
         red_overall_score.setOrigin(0.5, 0.5);
         red_overall_score.text = "RED SCORE: 0000000000";
-        red_overall_score.setStyle({ "align": "center", "color": "#b52121ff", "fontFamily": "Burbank Small", "fontSize": "60px", "fontStyle": "bold", "stroke": "#341111ff", "strokeThickness":10});
+        red_overall_score.setStyle({
+            "align": "center",
+            "color": "#b52121ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "60px",
+            "fontStyle": "bold",
+            "stroke": "#341111ff",
+            "strokeThickness": 10
+        });
         this.add(red_overall_score);
 
         // blue_overall_score
@@ -182,7 +229,14 @@ export default class PenguinGames extends BaseContainer {
         blue_overall_score.angle = 90;
         blue_overall_score.setOrigin(0.5, 0.5);
         blue_overall_score.text = "BLUE SCORE: 0000000000";
-        blue_overall_score.setStyle({ "color": "#164887ff", "fontFamily": "Burbank Small", "fontSize": "60px", "fontStyle": "bold", "stroke": "#0b2341ff", "strokeThickness":10});
+        blue_overall_score.setStyle({
+            "color": "#164887ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "60px",
+            "fontStyle": "bold",
+            "stroke": "#0b2341ff",
+            "strokeThickness": 10
+        });
         this.add(blue_overall_score);
 
         // overall
@@ -194,42 +248,82 @@ export default class PenguinGames extends BaseContainer {
         const overall_blue_leaderboard = scene.add.text(1027.8959304183136, 616.5908186858155, "", {});
         overall_blue_leaderboard.setOrigin(0.5, 0);
         overall_blue_leaderboard.text = "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000";
-        overall_blue_leaderboard.setStyle({ "align": "center", "color": "#164887ff", "fontFamily": "Burbank Small", "fontSize": "40px", "stroke": "#000000ff" });
+        overall_blue_leaderboard.setStyle({
+            "align": "center",
+            "color": "#164887ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "stroke": "#000000ff"
+        });
         overall.add(overall_blue_leaderboard);
 
         // top_blue_players
         const top_blue_players = scene.add.text(1027.8959304183136, 570.5908186858155, "", {});
         top_blue_players.setOrigin(0.5, 0.5);
         top_blue_players.text = "Top Blue Players";
-        top_blue_players.setStyle({ "color": "#164887ff", "fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold", "stroke": "#0b2341ff", "strokeThickness":10});
+        top_blue_players.setStyle({
+            "color": "#164887ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "fontStyle": "bold",
+            "stroke": "#0b2341ff",
+            "strokeThickness": 10
+        });
         overall.add(top_blue_players);
 
         // overall_red_leaderboard
         const overall_red_leaderboard = scene.add.text(487.8959304183135, 616.5908186858155, "", {});
         overall_red_leaderboard.setOrigin(0.5, 0);
         overall_red_leaderboard.text = "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000";
-        overall_red_leaderboard.setStyle({ "align": "center", "color": "#b52121ff", "fontFamily": "Burbank Small", "fontSize": "40px", "stroke": "#000000ff" });
+        overall_red_leaderboard.setStyle({
+            "align": "center",
+            "color": "#b52121ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "stroke": "#000000ff"
+        });
         overall.add(overall_red_leaderboard);
 
         // top_red_players
         const top_red_players = scene.add.text(487.8959304183135, 572.5908186858155, "", {});
         top_red_players.setOrigin(0.5, 0.5);
         top_red_players.text = "Top Red Players";
-        top_red_players.setStyle({ "align": "center", "color": "#b52121ff", "fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold", "stroke": "#341111ff", "strokeThickness":10});
+        top_red_players.setStyle({
+            "align": "center",
+            "color": "#b52121ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "fontStyle": "bold",
+            "stroke": "#341111ff",
+            "strokeThickness": 10
+        });
         overall.add(top_red_players);
 
         // your_overall_score
         const your_overall_score = scene.add.text(757.8959304183136, 472.59081868581546, "", {});
         your_overall_score.setOrigin(0.5, 0.5);
         your_overall_score.text = "Your Score: 00000000";
-        your_overall_score.setStyle({ "align": "center", "color": "#816530ff", "fontFamily": "Burbank Small", "fontSize": "50px", "fontStyle": "bold", "stroke": "#1a150cff", "strokeThickness":10});
+        your_overall_score.setStyle({
+            "align": "center",
+            "color": "#816530ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "fontStyle": "bold",
+            "stroke": "#1a150cff",
+            "strokeThickness": 10
+        });
         overall.add(your_overall_score);
 
         // pick_game_text
         const pick_game_text = scene.add.text(757.8959304183136, 351.59081868581546, "", {});
         pick_game_text.setOrigin(0.5, 0.5);
         pick_game_text.text = "Pick Game";
-        pick_game_text.setStyle({ "color": "#3a2c12ff", "fontFamily": "Burbank Small", "fontSize": "50px", "stroke": "#ffffffff" });
+        pick_game_text.setStyle({
+            "color": "#3a2c12ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "stroke": "#ffffffff"
+        });
         overall.add(pick_game_text);
 
         // pick_game_button
@@ -240,7 +334,15 @@ export default class PenguinGames extends BaseContainer {
         const overall_leaderboard = scene.add.text(757.8959304183136, 290.59081868581546, "", {});
         overall_leaderboard.setOrigin(0.5, 0.5);
         overall_leaderboard.text = "OVERALL LEADERBOARD";
-        overall_leaderboard.setStyle({ "align": "center", "color": "#816530ff", "fontFamily": "Burbank Small", "fontSize": "50px", "fontStyle": "bold", "stroke": "#1a150cff", "strokeThickness":10});
+        overall_leaderboard.setStyle({
+            "align": "center",
+            "color": "#816530ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "fontStyle": "bold",
+            "stroke": "#1a150cff",
+            "strokeThickness": 10
+        });
         overall.add(overall_leaderboard);
 
         // game
@@ -252,35 +354,70 @@ export default class PenguinGames extends BaseContainer {
         const blue_game_leaderboard = scene.add.text(1029.9886136603106, 612.9322254090836, "", {});
         blue_game_leaderboard.setOrigin(0.5, 0);
         blue_game_leaderboard.text = "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000";
-        blue_game_leaderboard.setStyle({ "align": "center", "color": "#164887ff", "fontFamily": "Burbank Small", "fontSize": "40px", "stroke": "#000000ff" });
+        blue_game_leaderboard.setStyle({
+            "align": "center",
+            "color": "#164887ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "stroke": "#000000ff"
+        });
         game.add(blue_game_leaderboard);
 
         // blue_game_score
         const blue_game_score = scene.add.text(1029.9886136603106, 566.9322254090836, "", {});
         blue_game_score.setOrigin(0.5, 0.5);
         blue_game_score.text = "Blue Score: 000000000";
-        blue_game_score.setStyle({ "color": "#164887ff", "fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold", "stroke": "#0b2341ff", "strokeThickness":10});
+        blue_game_score.setStyle({
+            "color": "#164887ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "fontStyle": "bold",
+            "stroke": "#0b2341ff",
+            "strokeThickness": 10
+        });
         game.add(blue_game_score);
 
         // red_game_leaderboard
         const red_game_leaderboard = scene.add.text(489.98861366031065, 612.9322254090836, "", {});
         red_game_leaderboard.setOrigin(0.5, 0);
         red_game_leaderboard.text = "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000";
-        red_game_leaderboard.setStyle({ "align": "center", "color": "#b52121ff", "fontFamily": "Burbank Small", "fontSize": "40px", "stroke": "#000000ff" });
+        red_game_leaderboard.setStyle({
+            "align": "center",
+            "color": "#b52121ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "stroke": "#000000ff"
+        });
         game.add(red_game_leaderboard);
 
         // red_game_score
         const red_game_score = scene.add.text(489.98861366031065, 568.9322254090836, "", {});
         red_game_score.setOrigin(0.5, 0.5);
         red_game_score.text = "Red Score: 00000000";
-        red_game_score.setStyle({ "align": "center", "color": "#b52121ff", "fontFamily": "Burbank Small", "fontSize": "40px", "fontStyle": "bold", "stroke": "#341111ff", "strokeThickness":10});
+        red_game_score.setStyle({
+            "align": "center",
+            "color": "#b52121ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "40px",
+            "fontStyle": "bold",
+            "stroke": "#341111ff",
+            "strokeThickness": 10
+        });
         game.add(red_game_score);
 
         // your_game_score
         const your_game_score = scene.add.text(759.9886136603106, 468.93222540908357, "", {});
         your_game_score.setOrigin(0.5, 0.5);
         your_game_score.text = "Your Score: 00000000";
-        your_game_score.setStyle({ "align": "center", "color": "#816530ff", "fontFamily": "Burbank Small", "fontSize": "50px", "fontStyle": "bold", "stroke": "#1a150cff", "strokeThickness":10});
+        your_game_score.setStyle({
+            "align": "center",
+            "color": "#816530ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "fontStyle": "bold",
+            "stroke": "#1a150cff",
+            "strokeThickness": 10
+        });
         game.add(your_game_score);
 
         // game_icon
@@ -291,7 +428,15 @@ export default class PenguinGames extends BaseContainer {
         const game_name = scene.add.text(760, 318, "", {});
         game_name.setOrigin(0.5, 0.5);
         game_name.text = "Aqua Grabber";
-        game_name.setStyle({ "align": "center", "color": "#2fbccaff", "fontFamily": "Burbank Small", "fontSize": "50px", "fontStyle": "bold", "stroke": "#0f1e40ff", "strokeThickness":10});
+        game_name.setStyle({
+            "align": "center",
+            "color": "#2fbccaff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "fontStyle": "bold",
+            "stroke": "#0f1e40ff",
+            "strokeThickness": 10
+        });
         game.add(game_name);
 
         // fg
@@ -315,7 +460,12 @@ export default class PenguinGames extends BaseContainer {
         const return_overall_text = scene.add.text(760, 843, "", {});
         return_overall_text.setOrigin(0.5, 0.5);
         return_overall_text.text = "Return to the overall leaderboard";
-        return_overall_text.setStyle({ "color": "#3a2c12ff", "fontFamily": "Burbank Small", "fontSize": "50px", "stroke": "#ffffffff" });
+        return_overall_text.setStyle({
+            "color": "#3a2c12ff",
+            "fontFamily": "Burbank Small",
+            "fontSize": "50px",
+            "stroke": "#ffffffff"
+        });
         gamepicker.add(return_overall_text);
 
         // return_overall_button
@@ -384,7 +534,9 @@ export default class PenguinGames extends BaseContainer {
         // grey_button (components)
         const grey_buttonButton = new Button(grey_button);
         grey_buttonButton.spriteName = "grey-button";
-        grey_buttonButton.callback = () => { this.visible = false };
+        grey_buttonButton.callback = () => {
+            this.visible = false
+        };
 
         // return_overall_button (components)
         const return_overall_buttonSimpleButton = new SimpleButton(return_overall_button);
@@ -523,8 +675,7 @@ export default class PenguinGames extends BaseContainer {
         if (this.world.party.partyCompletion.team == "blue") {
             this.red.visible = false
             this.blue.visible = true
-        }
-        else {
+        } else {
             this.red.visible = true
             this.blue.visible = false
         }
@@ -532,11 +683,13 @@ export default class PenguinGames extends BaseContainer {
         this.blue_overall_score.text = "Loading blue score..."
         this.overall_blue_leaderboard.text = "Loading blue leaderboard..."
         this.overall_red_leaderboard.text = "Loading red leaderboard..."
+        this.games = ["aquagrabber", "astrobarrier", "beancounters", "cartsurfer", "hydrohopper", "icefishing", "jetpackadventure", "pizzatron", "four", "puffleroundup", "sled", "thinice"]
+        this.your_overall_score.text = "Loading your score..."
 
         this.world.network.send('get_team_scores')
     }
 
-    pickGame(){
+    pickGame() {
         this.tab = "picker"
 
         this.gamepicker.visible = true
@@ -544,7 +697,7 @@ export default class PenguinGames extends BaseContainer {
         this.overall.visible = false
     }
 
-    returnOverall(){
+    returnOverall() {
         this.tab = "overall"
 
         this.gamepicker.visible = false
@@ -569,12 +722,13 @@ export default class PenguinGames extends BaseContainer {
 
         if (this.world.party.partyCompletion[leaderboard]) {
             this.your_game_score.text = `Your Score: ${this.world.party.partyCompletion[leaderboard]}`
-        }
-        else {
+        } else {
             this.your_game_score.text = "Your Score: 0"
         }
 
-        this.world.network.send('get_leaderboard_data', { game: leaderboard })
+        this.world.network.send('get_leaderboard_data', {
+            game: leaderboard
+        })
     }
 
     getLeaderboardData(data) {
@@ -582,7 +736,7 @@ export default class PenguinGames extends BaseContainer {
             for (let x in data.blueLeaderboard) {
                 data.blueLeaderboard[x] = data.blueLeaderboard[x].join(': ')
             }
-            for (let x in data.red) {
+            for (let x in data.redLeaderboard) {
                 data.redLeaderboard[x] = data.redLeaderboard[x].join(': ')
             }
             this.blue_game_leaderboard.text = data.blueLeaderboard.join("\n")
@@ -593,8 +747,27 @@ export default class PenguinGames extends BaseContainer {
     }
 
     getTeamScores(data) {
-        this.red_overall_score.text = `RED SCORE: ${data.red}`
-        this.blue_overall_score.text = `BLUE SCORE: ${data.blue}`
+        if (this.tab == "overall") {
+            for (let x in data.blueLeaderboard) {
+                data.blueLeaderboard[x] = data.blueLeaderboard[x].join(': ')
+            }
+            for (let x in data.redLeaderboard) {
+                data.redLeaderboard[x] = data.redLeaderboard[x].join(': ')
+            }
+            this.overall_blue_leaderboard.text = data.blueLeaderboard.join("\n")
+            this.overall_red_leaderboard.text = data.redLeaderboard.join("\n")
+            this.red_overall_score.text = `RED SCORE: ${data.red}`
+            this.blue_overall_score.text = `BLUE SCORE: ${data.blue}`
+
+            let yourTotal = 0
+            for (var game of this.games) {
+                if (this.world.party.partyCompletion[game]) {
+                    yourTotal = parseInt(yourTotal) + parseInt(this.world.party.partyCompletion[game])
+                }
+            }
+            this.your_overall_score.text = `Your Score: ${yourTotal}`
+        }
+
     }
 
     /* END-USER-CODE */

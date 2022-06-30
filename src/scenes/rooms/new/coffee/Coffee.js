@@ -173,8 +173,8 @@ export default class Coffee extends RoomScene {
         beanTrolleySimpleButton.hoverCallback = () => this.onBeansOver();
         beanTrolleySimpleButton.hoverOutCallback = () => this.onBeansOut();
         const beanTrolleyMoveTo = new MoveTo(beanTrolley);
-        beanTrolleyMoveTo.x = 1360;
-        beanTrolleyMoveTo.y = 760;
+        beanTrolleyMoveTo.x = 1420;
+        beanTrolleyMoveTo.y = 800;
         const beanTrolleyShowHint = new ShowHint(beanTrolley);
         beanTrolleyShowHint.text = "Bean Counters";
 

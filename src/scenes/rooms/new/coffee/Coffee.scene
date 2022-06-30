@@ -337,8 +337,8 @@
             ],
             "SimpleButton.hoverCallback": "() => this.onBeansOver()",
             "SimpleButton.hoverOutCallback": "() => this.onBeansOut()",
-            "MoveTo.x": 1360,
-            "MoveTo.y": 760,
+            "MoveTo.x": 1420,
+            "MoveTo.y": 800,
             "ShowHint.text": "Bean Counters",
             "texture": {
                 "key": "coffeeShop-new",

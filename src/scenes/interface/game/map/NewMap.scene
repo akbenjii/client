@@ -593,8 +593,7 @@
                                 "frame": "games/pufflelaunch0001"
                             },
                             "x": 749,
-                            "y": 423,
-                            "visible": false
+                            "y": 423
                         },
                         {
                             "type": "Sprite",
@@ -737,14 +736,18 @@
                             "id": "b6eec7b7-9004-4973-aa22-9c3e15422163",
                             "label": "icefishingupgrades",
                             "scope": "CLASS",
-                            "components": [],
+                            "components": [
+                                "SimpleButton",
+                                "ShowHint"
+                            ],
+                            "SimpleButton.callback": "() => this.onRoomClick(220)",
+                            "ShowHint.text": "Ice Fishing Game Upgrades",
                             "texture": {
                                 "key": "map-new",
                                 "frame": "shops/icefishingupgrades0001"
                             },
                             "x": 170,
-                            "y": 241,
-                            "visible": false
+                            "y": 241
                         },
                         {
                             "type": "Sprite",

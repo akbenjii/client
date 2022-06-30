@@ -254,11 +254,14 @@ export default class FindFour extends BaseContainer {
 
 
         if (this.world.client.id == turn) {
+            this.hover.setTexture('four', 'counter_1')
             this.hover.visible = true
             this.hitbox.visible = true
         }
         else {
             this.hover.setTexture('four', 'counter_2')
+            this.hover.visible = false
+            this.hitbox.visible = false
         }
     }
 

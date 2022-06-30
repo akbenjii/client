@@ -258,7 +258,6 @@ export default class NewMap extends BaseContainer {
 
         // cannon
         const cannon = scene.add.sprite(749, 423, "map-new", "games/pufflelaunch0001");
-        cannon.visible = false;
         games_container.add(cannon);
 
         // rescue
@@ -305,7 +304,6 @@ export default class NewMap extends BaseContainer {
 
         // icefishingupgrades
         const icefishingupgrades = scene.add.sprite(170, 241, "map-new", "shops/icefishingupgrades0001");
-        icefishingupgrades.visible = false;
         shops_container.add(icefishingupgrades);
 
         // martialartworks
@@ -566,6 +564,12 @@ export default class NewMap extends BaseContainer {
         sledSimpleButton.callback = () => this.onRoomClick(230);
         const sledShowHint = new ShowHint(sled);
         sledShowHint.text = "Sled Racing";
+
+        // icefishingupgrades (components)
+        const icefishingupgradesSimpleButton = new SimpleButton(icefishingupgrades);
+        icefishingupgradesSimpleButton.callback = () => this.onRoomClick(220);
+        const icefishingupgradesShowHint = new ShowHint(icefishingupgrades);
+        icefishingupgradesShowHint.text = "Ice Fishing Game Upgrades";
 
         // musiccatalog (components)
         const musiccatalogSimpleButton = new SimpleButton(musiccatalog);
