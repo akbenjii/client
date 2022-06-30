@@ -79,7 +79,7 @@
         {
             "type": "Sprite",
             "id": "7ba37647-a8ea-4e31-9233-b4b44dc7d9d3",
-            "label": "winner",
+            "label": "winner_berg",
             "scope": "CLASS",
             "components": [],
             "texture": {

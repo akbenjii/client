@@ -25,7 +25,7 @@ export default class Beach extends RoomScene {
             'ship': null
         }
         this.roomAnims = true
-		this.music = '213'
+        this.music = '213'
 
         /* END-USER-CTR-CODE */
     }
@@ -69,7 +69,8 @@ export default class Beach extends RoomScene {
         fish.setOrigin(0.4782608695652174, 0.4956521739130435);
 
         // balloons
-        this.add.image(265, 271, "pg-beach", "balloons");
+        const balloons = this.add.image(271.17283950617286, 408.03703703703707, "pg-beach", "balloons");
+        balloons.setOrigin(0.5307106443093177, 0.9791504791504793);
 
         // net
         const net = this.add.image(290, 465, "beach", "net");
@@ -182,7 +183,7 @@ export default class Beach extends RoomScene {
         const inner_rope_93 = this.add.image(1283, 390, "pg-beach", "inner_rope_93");
 
         // lists
-        const sort = [net, fish, buoy, cage, upper_rope_3, upper_rope_4, upper_rope_5, upper_rope_6, upper_rope_7, upper_rope_8, upper_rope_9, upper_rope_92, fg, green_sign_2, gatorade, inner_rope_1, inner_rope_2, inner_rope_3, inner_rope_4, inner_rope_5, inner_rope_6, inner_rope_7, inner_rope_8, inner_rope_9, inner_rope_91, inner_rope_92, inner_rope_93];
+        const sort = [net, fish, buoy, cage, upper_rope_3, upper_rope_4, upper_rope_5, upper_rope_6, upper_rope_7, upper_rope_8, upper_rope_9, upper_rope_92, fg, green_sign_2, gatorade, inner_rope_1, inner_rope_2, inner_rope_3, inner_rope_4, inner_rope_5, inner_rope_6, inner_rope_7, inner_rope_8, inner_rope_9, inner_rope_91, inner_rope_92, inner_rope_93, balloons];
 
         // lighthouse_door (components)
         const lighthouse_doorButton = new Button(lighthouse_door);

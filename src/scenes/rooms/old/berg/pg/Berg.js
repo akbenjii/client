@@ -13,7 +13,7 @@ export default class Berg extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.aqua;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.winner;
+        this.winner_berg;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -53,8 +53,8 @@ export default class Berg extends RoomScene {
         // poles
         this.add.image(703, 196, "pg-berg", "poles");
 
-        // winner
-        const winner = this.add.sprite(899, 199, "pg-berg", "winner0003");
+        // winner_berg
+        const winner_berg = this.add.sprite(899, 199, "pg-berg", "winner0003");
 
         // podium
         this.add.image(502, 254, "pg-berg", "podium");
@@ -94,7 +94,7 @@ export default class Berg extends RoomScene {
         aquaShowHint.text = "Aqua Grabber";
 
         this.aqua = aqua;
-        this.winner = winner;
+        this.winner_berg = winner_berg;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -113,7 +113,7 @@ export default class Berg extends RoomScene {
 
         this.aqua.on('animationcomplete', (animation) => this.onAquaAnimComplete(animation))
         this.aqua.play('aqua_float')
-        this.winner.play('pgwinner')
+        this.winner_berg.play('pgwinner-berg')
     }
 
     onAquaAnimComplete(animation) {

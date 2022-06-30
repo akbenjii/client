@@ -720,10 +720,6 @@ export default class ClothingCatalog extends Book {
         const big_coin_1 = this.add.image(1035, 196, "jul22", "big_coin");
         page12.add(big_coin_1);
 
-        // coin_1_1_1_1_2_1_1_1_1_1_1_1
-        const coin_1_1_1_1_2_1_1_1_1_1_1_1 = this.add.image(930, 861, "jul22", "coin");
-        page12.add(coin_1_1_1_1_2_1_1_1_1_1_1_1);
-
         // coin_1_1_1_1_2_1_1_1_1_1_2
         const coin_1_1_1_1_2_1_1_1_1_1_2 = this.add.image(346, 179, "jul22", "coin");
         page12.add(coin_1_1_1_1_2_1_1_1_1_1_2);
