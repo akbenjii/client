@@ -5,6 +5,7 @@ import PenguinFactory from './penguin/PenguinFactory'
 import RoomFactory from './room/RoomFactory'
 import IglooFactory from './room/IglooFactory'
 import RuffleManager from './minigame/RuffleManager'
+import PartyController from './PartyController'
 
 
 export default class WorldController extends BaseScene {
@@ -27,7 +28,8 @@ export default class WorldController extends BaseScene {
         this.penguinFactory = new PenguinFactory(this)
         this.roomFactory = new RoomFactory(this)
         this.iglooFactory = new IglooFactory(this)
-		this.RuffleManager = new RuffleManager(this, RuffleHolder, this.crumbs)
+        this.RuffleManager = new RuffleManager(this, RuffleHolder, this.crumbs)
+        this.party = new PartyController(this)
 
         this.network.send('get_pin')
         this.network.send('get_mascots')

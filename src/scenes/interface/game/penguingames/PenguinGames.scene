@@ -38,90 +38,474 @@
                 {
                     "type": "Image",
                     "id": "1ad37d27-55d3-42f9-99bc-a57724ea848c",
-                    "label": "board",
-                    "components": [],
-                    "texture": {
-                        "key": "pg-interface",
-                        "frame": "board"
-                    },
-                    "x": 11,
-                    "y": -48,
-                    "scaleX": 1.4547045565854764,
-                    "scaleY": 1.4547045565854764
-                },
-                {
-                    "type": "Image",
-                    "id": "bc0ae1de-ea10-4503-a491-e9bf989df16b",
-                    "label": "claim",
-                    "scope": "CLASS",
-                    "components": [
-                        "Button"
-                    ],
-                    "Button.spriteName": "claim",
-                    "Button.callback": "() => this.interface.prompt.showItem(3003)",
-                    "Button.activeFrame": false,
-                    "texture": {
-                        "key": "pg-interface",
-                        "frame": "claim"
-                    },
-                    "x": -7,
-                    "y": 148,
-                    "scaleX": 1.4547045565854764,
-                    "scaleY": 1.4547045565854764,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "8da7a322-ec0a-4a04-854a-da33a1db50b9",
-                    "label": "check_mar",
+                    "label": "bg",
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "pg-interface",
-                        "frame": "check"
+                        "frame": "bg"
                     },
-                    "x": -71,
-                    "y": -67,
-                    "scaleX": 1.4547045565854764,
-                    "scaleY": 1.4547045565854764,
-                    "visible": false
+                    "x": 18,
+                    "y": 9
+                },
+                {
+                    "type": "Text",
+                    "id": "0c7f76f1-bae6-4d1c-bbd4-2c258e89be34",
+                    "label": "games_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 143,
+                    "y": -364,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "GAMES",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "70px",
+                    "fontStyle": "bold",
+                    "color": "#b52121ff",
+                    "stroke": "#341111ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Text",
+                    "id": "c35d02b8-6ce5-4fe7-8ba0-74cce8ce7aec",
+                    "label": "penguin_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -143,
+                    "y": -364,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "PENGUIN",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "70px",
+                    "fontStyle": "bold",
+                    "color": "#164887ff",
+                    "stroke": "#0b2341ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Container",
+                    "id": "ad5a4337-4a3b-48ca-bbd3-ce09703699e6",
+                    "label": "blue",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -295,
+                    "y": -301,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "f3573ad9-3ddb-418f-9b14-9ea0abe42889",
+                            "label": "blue_team",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 452,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "blue team",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "color": "#164887ff",
+                            "stroke": "#ffffffff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "0be2f25e-1654-4bd8-90c9-25c842b06c53",
+                            "label": "you_are_on_blue",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 161,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "You are on the",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "color": "#3a2c12ff",
+                            "stroke": "#ffffffff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "10ffbf15-775f-46df-b2a2-2b8a25bbdf48",
+                    "label": "red",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -287,
+                    "y": -301,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "6d6158fc-587e-494f-8722-1fe796f529ac",
+                            "label": "red_team",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 443,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "red team",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "color": "#b52121ff",
+                            "stroke": "#ffffffff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "6257527b-0202-4e4a-a7e9-8a2c84732418",
+                            "label": "you_are_on_red",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 166,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "You are on the",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "color": "#3a2c12ff",
+                            "stroke": "#ffffffff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "4838cc97-6f97-48c9-93fa-269a565319e6",
+                    "label": "red_overall_score",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -620,
+                    "angle": -90,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "RED SCORE: 0000000000",
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "60px",
+                    "fontStyle": "bold",
+                    "color": "#b52121ff",
+                    "stroke": "#341111ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Text",
+                    "id": "b1482060-8886-4b7f-a614-7fada622877c",
+                    "label": "blue_overall_score",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 629,
+                    "y": 1,
+                    "angle": 90,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "BLUE SCORE: 0000000000",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "60px",
+                    "fontStyle": "bold",
+                    "color": "#164887ff",
+                    "stroke": "#0b2341ff",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Container",
+                    "id": "38487401-1966-4504-8416-7fafbf22d7b0",
+                    "label": "overall",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -757.89596285841,
+                    "y": -482.590802352304,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "b6d7a8c1-b121-4279-a3c7-cec777a82a90",
+                            "label": "overall_blue_leaderboard",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1027.8959304183136,
+                            "y": 616.5908186858155,
+                            "originX": 0.5,
+                            "text": "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "color": "#164887ff",
+                            "stroke": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "c9cf7577-32c3-4829-a10a-08ff48830aae",
+                            "label": "top_blue_players",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1027.8959304183136,
+                            "y": 570.5908186858155,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Top Blue Players",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "fontStyle": "bold",
+                            "color": "#164887ff",
+                            "stroke": "#0b2341ff",
+                            "strokeThickness": 10
+                        },
+                        {
+                            "type": "Text",
+                            "id": "fa129157-e01a-4941-870c-f794964fef5a",
+                            "label": "overall_red_leaderboard",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 487.8959304183135,
+                            "y": 616.5908186858155,
+                            "originX": 0.5,
+                            "text": "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "color": "#b52121ff",
+                            "stroke": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d3e5863b-07c3-4d6d-b393-9e8774a4d492",
+                            "label": "top_red_players",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 487.8959304183135,
+                            "y": 572.5908186858155,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Top Red Players",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "fontStyle": "bold",
+                            "color": "#b52121ff",
+                            "stroke": "#341111ff",
+                            "strokeThickness": 10
+                        },
+                        {
+                            "type": "Text",
+                            "id": "88f706ec-9a83-4650-ad22-dde38ef6be43",
+                            "label": "your_overall_score",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 757.8959304183136,
+                            "y": 472.59081868581546,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your Score: 00000000",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#816530ff",
+                            "stroke": "#1a150cff",
+                            "strokeThickness": 10
+                        },
+                        {
+                            "type": "Text",
+                            "id": "195f52e3-77fa-47e6-b8c5-b5da855c3e0d",
+                            "label": "pick_game_text",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 757.8959304183136,
+                            "y": 351.59081868581546,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Pick Game",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "color": "#3a2c12ff",
+                            "stroke": "#ffffffff"
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "638fa6ce-c661-4569-94da-cfdd685c702e",
+                            "label": "pick_game_button",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.pickGame()",
+                            "x": 757.8959304183136,
+                            "y": 355,
+                            "width": 250,
+                            "height": 85
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d4c5d9bd-e9e1-48c5-99cf-854e0f5dd3d7",
+                            "label": "overall_leaderboard",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 757.8959304183136,
+                            "y": 290.59081868581546,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "OVERALL LEADERBOARD",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#816530ff",
+                            "stroke": "#1a150cff",
+                            "strokeThickness": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "9f0294c9-7e61-4d78-9989-40cfe10dbf4a",
+                    "label": "game",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -760,
+                    "y": -480,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "33d37831-83fb-44a5-b715-58c68b6b30b6",
+                            "label": "blue_game_leaderboard",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1029.9886136603106,
+                            "y": 612.9322254090836,
+                            "originX": 0.5,
+                            "text": "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "color": "#164887ff",
+                            "stroke": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "39e86195-a857-4e64-af71-f92df7ec6f18",
+                            "label": "blue_game_score",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 1029.9886136603106,
+                            "y": 566.9322254090836,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Blue Score: 000000000",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "fontStyle": "bold",
+                            "color": "#164887ff",
+                            "stroke": "#0b2341ff",
+                            "strokeThickness": 10
+                        },
+                        {
+                            "type": "Text",
+                            "id": "80b66be3-6fa3-4475-8bf7-61652f97f7fd",
+                            "label": "red_game_leaderboard",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 489.98861366031065,
+                            "y": 612.9322254090836,
+                            "originX": 0.5,
+                            "text": "1: Username - 00000000\n2: Username - 00000000\n3: Username - 00000000\n4: Username - 00000000\n5: Username - 00000000",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "color": "#b52121ff",
+                            "stroke": "#000000ff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "96b31c84-4f16-49d8-b8a4-528406c9afbd",
+                            "label": "red_game_score",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 489.98861366031065,
+                            "y": 568.9322254090836,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Red Score: 00000000",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "40px",
+                            "fontStyle": "bold",
+                            "color": "#b52121ff",
+                            "stroke": "#341111ff",
+                            "strokeThickness": 10
+                        },
+                        {
+                            "type": "Text",
+                            "id": "5ac3b05a-0336-46cb-98a0-7839cd3df009",
+                            "label": "your_game_score",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 759.9886136603106,
+                            "y": 468.93222540908357,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Your Score: 00000000",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#816530ff",
+                            "stroke": "#1a150cff",
+                            "strokeThickness": 10
+                        },
+                        {
+                            "type": "Image",
+                            "id": "5ad342a4-c1d3-4616-b9c7-474ef264e6ca",
+                            "label": "game_icon",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.pickGame()",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/aquagrabber"
+                            },
+                            "x": 760,
+                            "y": 311
+                        },
+                        {
+                            "type": "Text",
+                            "id": "7606e2f6-232a-4463-b32b-19b1e16cfa74",
+                            "label": "game_name",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 760,
+                            "y": 318,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Aqua Grabber",
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "fontStyle": "bold",
+                            "color": "#2fbccaff",
+                            "stroke": "#0f1e40ff",
+                            "strokeThickness": 10
+                        }
+                    ]
                 },
                 {
                     "type": "Image",
-                    "id": "49bbdcc9-f34e-4c4e-be67-2e31f8bc2dd8",
-                    "label": "check_berg",
+                    "id": "83aebf4c-9a09-49e7-be53-845fc2242e01",
+                    "label": "fg",
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "pg-interface",
-                        "frame": "check"
-                    },
-                    "x": -69,
-                    "y": -29,
-                    "scaleX": 1.4547045565854764,
-                    "scaleY": 1.4547045565854764,
-                    "visible": false
-                },
-                {
-                    "type": "Image",
-                    "id": "062779e3-88c7-4fe4-b47d-62ad5c4bcc3e",
-                    "label": "check_swim",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "pg-interface",
-                        "frame": "check"
-                    },
-                    "x": -69,
-                    "y": 8,
-                    "scaleX": 1.4547045565854764,
-                    "scaleY": 1.4547045565854764,
-                    "visible": false
+                        "frame": "fg"
+                    }
                 },
                 {
                     "type": "Image",
                     "id": "5ac44541-7d2c-4f48-af37-066e28afea18",
                     "label": "grey_button",
+                    "scope": "CLASS",
                     "components": [
                         "Button"
                     ],
@@ -131,24 +515,279 @@
                         "key": "main",
                         "frame": "grey-button"
                     },
-                    "x": 310,
-                    "y": -403,
-                    "scaleX": 0.892380938710045,
-                    "scaleY": 0.892380938710045
+                    "x": 729,
+                    "y": -447
                 },
                 {
                     "type": "Image",
                     "id": "923db44c-7439-4101-9ca5-34985680fa58",
                     "label": "grey_x",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "main",
                         "frame": "grey-x"
                     },
-                    "x": 310,
-                    "y": -403,
-                    "scaleX": 1.091114033141114,
-                    "scaleY": 1.091114033141114
+                    "x": 729,
+                    "y": -447
+                },
+                {
+                    "type": "Container",
+                    "id": "6b0a6e6e-eff5-4e34-9952-0a31aa75248b",
+                    "label": "gamepicker",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -760,
+                    "y": -480,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "956305b5-5970-4ee7-9a12-7cb8d46e6ec4",
+                            "label": "return_overall_text",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 760,
+                            "y": 843,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Return to the overall leaderboard",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "50px",
+                            "color": "#3a2c12ff",
+                            "stroke": "#ffffffff"
+                        },
+                        {
+                            "type": "Rectangle",
+                            "id": "7d831cd4-fab8-4d02-8ef9-ec07609a52d4",
+                            "label": "return_overall_button",
+                            "scope": "CLASS",
+                            "components": [
+                                "SimpleButton"
+                            ],
+                            "SimpleButton.callback": "() => this.returnOverall()",
+                            "x": 760,
+                            "y": 847,
+                            "width": 800,
+                            "height": 85
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d42e9154-d0ae-4cde-85a8-814bfc42a3e0",
+                            "label": "pick_thinice",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Thin Ice",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"thinice\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/thinice"
+                            },
+                            "x": 1105,
+                            "y": 700
+                        },
+                        {
+                            "type": "Image",
+                            "id": "d773f4f4-2337-4307-a7df-d8624a79dbb1",
+                            "label": "pick_sled",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Sled Racing",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"sled\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/sled"
+                            },
+                            "x": 875,
+                            "y": 700
+                        },
+                        {
+                            "type": "Image",
+                            "id": "01a72b7f-2cbc-4258-8a6c-739e127d313e",
+                            "label": "pick_roundup",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Puffle Roundup",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"puffleroundup\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/puffleroundup"
+                            },
+                            "x": 645,
+                            "y": 700
+                        },
+                        {
+                            "type": "Image",
+                            "id": "39ddba23-2c1c-45a2-b2fc-a2187b2b14e9",
+                            "label": "pick_four",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Find Four",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"four\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/four"
+                            },
+                            "x": 415,
+                            "y": 700
+                        },
+                        {
+                            "type": "Image",
+                            "id": "629adced-8a51-455b-9aa3-60ffcd466d1e",
+                            "label": "pick_pizzatron",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Pizzatron 3000",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"pizzatron\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/pizzatron"
+                            },
+                            "x": 1105,
+                            "y": 500
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e9a73b44-9d5f-4d89-ae32-02b73f6f491b",
+                            "label": "pick_jpa",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Jet Pack Adventure",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"jetpackadventure\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/jetpackadventure"
+                            },
+                            "x": 875,
+                            "y": 500
+                        },
+                        {
+                            "type": "Image",
+                            "id": "bda6cc57-25fd-4b09-aed7-83242f1a96ad",
+                            "label": "pick_fishing",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Ice Fishing",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"icefishing\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/icefishing"
+                            },
+                            "x": 645,
+                            "y": 500
+                        },
+                        {
+                            "type": "Image",
+                            "id": "8679ad2c-7c9b-45f5-9b3a-783635174a4d",
+                            "label": "pick_hydro",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Hydro Hopper",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"hydrohopper\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/hydrohopper"
+                            },
+                            "x": 415,
+                            "y": 500
+                        },
+                        {
+                            "type": "Image",
+                            "id": "946e58ef-eab2-4149-a90a-3918b7a7abdb",
+                            "label": "pick_cart",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Cart Surfer",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"cartsurfer\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/cartsurfer"
+                            },
+                            "x": 1105,
+                            "y": 300
+                        },
+                        {
+                            "type": "Image",
+                            "id": "384e660e-6e8a-49b4-bec8-7c80169afa5c",
+                            "label": "pick_bean",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Bean Counters",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"beancounters\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/beancounters"
+                            },
+                            "x": 875,
+                            "y": 300
+                        },
+                        {
+                            "type": "Image",
+                            "id": "35f88887-03ed-4c38-aac8-aae419e29e0a",
+                            "label": "pick_astro",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Astro Barrier",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"astrobarrier\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/astrobarrier"
+                            },
+                            "x": 645,
+                            "y": 300
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9a60514d-4047-4e60-a5b0-a1338d35a2bf",
+                            "label": "pick_aqua",
+                            "scope": "CLASS",
+                            "components": [
+                                "ShowHint",
+                                "SimpleButton"
+                            ],
+                            "ShowHint.text": "Aqua Grabber",
+                            "SimpleButton.callback": "() => this.showLeaderboard(\"aquagrabber\")",
+                            "texture": {
+                                "key": "endscreens",
+                                "frame": "icons/aquagrabber"
+                            },
+                            "x": 415,
+                            "y": 300
+                        }
+                    ]
                 }
             ]
         }

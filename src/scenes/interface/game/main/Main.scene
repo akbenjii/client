@@ -835,7 +835,7 @@
             "components": [
                 "SimpleButton"
             ],
-            "SimpleButton.callback": "() => {this.penguingames.visible = true};",
+            "SimpleButton.callback": "() => {this.penguingames.create()};",
             "texture": {
                 "key": "pg"
             },
@@ -857,6 +857,22 @@
             "components": [],
             "x": 760,
             "y": 480,
+            "visible": false,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "c61a40df-26bb-479a-af3b-c54b2568be12",
+            "id": "6a12d813-ea18-41ba-b921-568474f37672",
+            "unlock": [
+                "x",
+                "y",
+                "visible"
+            ],
+            "label": "prompt",
+            "scope": "CLASS",
+            "components": [],
+            "x": 0,
+            "y": 0,
             "visible": false,
             "nestedPrefabs": []
         }

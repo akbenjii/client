@@ -60,6 +60,7 @@ export default class Puffles extends Plugin {
 
         let penguin = this.world.room.penguins[args.user]
         let puffle = this.world.room.penguins[args.user].pufflesprite
+        const prevPuffle = penguin.puffle
         if (puffle) {
             puffle.destroy()
             penguin.hasPuffle = false
@@ -71,13 +72,11 @@ export default class Puffles extends Plugin {
         if (penguin.puffle !== 0) {
             penguin.puffle = 0
         }
-
-        if (this.world.room.isIgloo) {
-            this.world.room.spawnPuffles(this.world.room.puffleArray)
-        }
-
         if (args.user == this.world.client.penguin.id) {
             this.interface.showPuffle(0)
+        }
+        if (this.world.room.id == args.user) {
+            this.world.room.spawnPuffle(prevPuffle)
         }
     }
 

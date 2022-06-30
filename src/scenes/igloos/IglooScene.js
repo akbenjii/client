@@ -334,6 +334,14 @@ export default class IglooScene extends RoomScene {
         }
     }
 
+    spawnPuffle(puffle) {
+        for (var x in this.puffleArray) {
+            if (this.puffleArray[x].id == puffle) {
+                new Puffle(this.puffleArray[x], this)
+            }
+        }
+    }
+
     addPenguin(id, penguin) {
         super.addPenguin(id, penguin)
 
@@ -344,6 +352,13 @@ export default class IglooScene extends RoomScene {
         if (this.id === this.world.client.id && Object.keys(this.penguins).length >= 30) {
             this.world.client.stampEarned(28)
         }
+    }
+
+    stop(){
+        for (let p in this.puffles) {
+            this.puffles[p].destroy()
+        }
+        super.stop()
     }
 
 }

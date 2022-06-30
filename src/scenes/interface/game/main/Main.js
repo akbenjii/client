@@ -25,6 +25,7 @@ import Settings from '../settings/Settings'
 import Manage from '../manage/Manage'
 import Underwater from '../underwater/Underwater'
 import PenguinGames from '../penguingames/PenguinGames'
+import Prompt from '../prompt/Prompt'
 
 
 /* START OF COMPILED CODE */
@@ -140,6 +141,8 @@ export default class Main extends BaseScene {
         this.puffleCare;
         /** @type {PenguinGames} */
         this.penguingames;
+        /** @type {Prompt} */
+        this.prompt;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
         this.hideOnSleep;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|ChatLog>} */
@@ -374,6 +377,11 @@ export default class Main extends BaseScene {
         this.add.existing(penguingames);
         penguingames.visible = false;
 
+        // prompt
+        const prompt = new Prompt(this, 0, 0);
+        this.add.existing(prompt);
+        prompt.visible = false;
+
         // lists
         const hideOnSleep = [playerCard, buddy, moderator];
         const interfaceList = [dock, help_icon, help_button, igloo_icon, igloo_button, buddies_icon, buddies_button, player_button, chat_send_icon, chat_send_button, snowball_icon, snowball_button, action_icon, action_button, emote_button, puffle_icon, puffle_button_disabled, chat_box, map_button, news_button, mod_m, chatLog, badge_member, emote_icon];
@@ -482,7 +490,7 @@ export default class Main extends BaseScene {
 
         // pg (components)
         const pgSimpleButton = new SimpleButton(pg);
-        pgSimpleButton.callback = () => {this.penguingames.visible = true};;
+        pgSimpleButton.callback = () => {this.penguingames.create()};;
 
         this.pinContainer = pinContainer;
         this.dock = dock;
@@ -537,6 +545,7 @@ export default class Main extends BaseScene {
         this.stampEarnedBody = stampEarnedBody;
         this.puffleCare = puffleCare;
         this.penguingames = penguingames;
+        this.prompt = prompt;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;
 
@@ -666,6 +675,10 @@ export default class Main extends BaseScene {
 
         window.show = this.show
         window.show = show.bind(this)
+
+        // init partycontroller
+
+        this.world.party.getPartyCompletion()
     }
 
     onSleep(sys, data) {

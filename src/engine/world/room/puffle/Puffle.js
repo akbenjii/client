@@ -10,7 +10,7 @@ export default class Puffle extends BaseContainer {
         let ypos = Phaser.Math.Between(200, 760)
 
         // makes sure the spawn position is not blocked by the blockmap
-        while (room.matter.containsPoint(room.block, xpos, ypos)) {
+        while (!room.matter.containsPoint(room.pet, xpos, ypos)) {
             xpos = Phaser.Math.Between(200, 1320)
             ypos = Phaser.Math.Between(200, 760)
         }
@@ -122,8 +122,7 @@ export default class Puffle extends BaseContainer {
             let tries = 0
 
             // if the puffle is going to walk into an area that in not accessible, or too close to the edge of the screen, it will not walk
-            while (this.room.matter.containsPoint(this.room.block, xdest, ydest) || xdest > 1320 || ydest > 760 || xdest < 200 || ydest < 200) {
-                console.log("tried to move to " + xdest + ", " + ydest)
+            while (!this.room.matter.containsPoint(this.room.pet, xdest, ydest) || xdest > 1320 || ydest > 760 || xdest < 200 || ydest < 200) {
                 if (isNaN(xdest) || isNaN(ydest) || tries > 50) return
                 // chooses a random co-ordinate to walk to, between 50 and 250 pixels to move
                 movedist = Phaser.Math.Between(50, 250)

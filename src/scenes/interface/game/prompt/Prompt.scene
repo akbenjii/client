@@ -17,9 +17,22 @@
             "id": "724feabd-bd10-4925-b47c-939fdb25b8e4",
             "label": "container_1",
             "components": [],
-            "x": 228,
-            "y": 775,
             "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "44c6a993-c39b-4d3b-a01c-9327dd38b2f9",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "x": 760,
+                    "y": 480,
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
                 {
                     "type": "Sprite",
                     "id": "79593e27-a7c3-40d5-8797-56aa9a6a0d68",
@@ -30,8 +43,8 @@
                         "key": "party-prompt",
                         "frame": "text-bg"
                     },
-                    "x": 716,
-                    "y": 37
+                    "x": 943.8114427689433,
+                    "y": 812.9086006697796
                 },
                 {
                     "type": "Sprite",
@@ -43,8 +56,8 @@
                         "key": "party-prompt",
                         "frame": "aunt-artic-headphones"
                     },
-                    "x": 27,
-                    "y": 25
+                    "x": 254.81144276894324,
+                    "y": 800.9086006697796
                 },
                 {
                     "type": "Container",
@@ -52,8 +65,8 @@
                     "label": "ok",
                     "scope": "CLASS",
                     "components": [],
-                    "x": 1100,
-                    "y": 80,
+                    "x": 1327.8114427689434,
+                    "y": 859.9086006697796,
                     "list": [
                         {
                             "type": "Image",
@@ -82,6 +95,65 @@
                             "fontSize": "20px",
                             "fontStyle": "bold",
                             "color": "#3c3c3cff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "de0689c7-bab1-4ca6-ac2b-c30806354940",
+                    "label": "text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 528.8114427689433,
+                    "y": 744.9086006697796,
+                    "text": "This is a text field. This should be defined in the prompt function. If you are seeing this message, there has been an error, please report it!\nThis is a text field. This should be defined in the prompt function. If you are seeing this message, there has been an error, please report it!",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "25px",
+                    "color": "#434343ff",
+                    "wordWrapWidth": 900
+                },
+                {
+                    "type": "Container",
+                    "id": "556731c4-4861-4c84-b764-ddf2768470fd",
+                    "label": "pg_teampicker",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 732.8114427689433,
+                    "y": 484.9086006697796,
+                    "visible": false,
+                    "list": [
+                        {
+                            "type": "Sprite",
+                            "id": "abf16f1d-d60f-4e78-8386-b5e8996f2b7a",
+                            "label": "blueteam_btn",
+                            "scope": "CLASS",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "pg-blueteam-btn",
+                            "Button.callback": "() => {this.world.party.pickTeam(\"blue\");this.visible=false}",
+                            "Button.activeFrame": false,
+                            "texture": {
+                                "key": "party-prompt",
+                                "frame": "pg-blueteam-btn"
+                            }
+                        },
+                        {
+                            "type": "Sprite",
+                            "id": "3d252c0f-b581-4459-a61d-4ba41f101ec8",
+                            "label": "redteam_btn",
+                            "scope": "CLASS",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "pg-redteam-btn",
+                            "Button.callback": "() => {this.world.party.pickTeam(\"red\");this.visible=false}",
+                            "Button.activeFrame": false,
+                            "texture": {
+                                "key": "party-prompt",
+                                "frame": "pg-redteam-btn"
+                            },
+                            "x": 470
                         }
                     ]
                 }
