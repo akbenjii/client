@@ -2022,18 +2022,6 @@
                 },
                 {
                     "type": "Image",
-                    "id": "86a8e365-678e-46bb-8000-9596ef6f391d",
-                    "label": "coin_1_1_1_1_2_1_1_1_1_1_1_1",
-                    "components": [],
-                    "texture": {
-                        "key": "jul22",
-                        "frame": "coin"
-                    },
-                    "x": 930,
-                    "y": 861
-                },
-                {
-                    "type": "Image",
                     "id": "8d70ef19-1716-4d2c-938c-6ed2f77a65cf",
                     "label": "coin_1_1_1_1_2_1_1_1_1_1_2",
                     "components": [],
