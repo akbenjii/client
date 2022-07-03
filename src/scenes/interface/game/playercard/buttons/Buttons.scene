@@ -18,7 +18,7 @@
             "id": "6ac0cd17-7552-4894-a5cc-93d2081afaa3",
             "label": "container_1",
             "components": [],
-            "x": 760,
+            "x": 790.6731008322703,
             "y": 480,
             "list": [
                 {
@@ -37,7 +37,7 @@
                         "key": "main",
                         "frame": "blue-button-disabled"
                     },
-                    "x": 150
+                    "x": 179.32691352599045
                 },
                 {
                     "type": "Image",
@@ -55,7 +55,7 @@
                         "key": "main",
                         "frame": "blue-button-disabled"
                     },
-                    "x": 90
+                    "x": 119.32691352599045
                 },
                 {
                     "type": "Image",
@@ -73,7 +73,7 @@
                         "key": "main",
                         "frame": "blue-button-disabled"
                     },
-                    "x": 30
+                    "x": -0.6730864740095512
                 },
                 {
                     "type": "Image",
@@ -91,7 +91,27 @@
                         "key": "main",
                         "frame": "blue-button-disabled"
                     },
-                    "x": -30
+                    "x": -60.67308647400955
+                },
+                {
+                    "type": "Image",
+                    "id": "dac3a748-a577-4cda-b986-cf15dcd1986c",
+                    "label": "mail_button",
+                    "scope": "CLASS",
+                    "components": [
+                        "Button",
+                        "ShowHint"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => this.onMailClick()",
+                    "ShowHint.text": "Send Postcard",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button-disabled"
+                    },
+                    "x": 59.32691192626953,
+                    "y": 0.6971156016820146,
+                    "originY": 0.5124484928871789
                 },
                 {
                     "type": "Image",
@@ -109,7 +129,7 @@
                         "key": "main",
                         "frame": "blue-button-disabled"
                     },
-                    "x": -90
+                    "x": -120.67308647400955
                 },
                 {
                     "type": "Image",
@@ -127,7 +147,7 @@
                         "key": "main",
                         "frame": "blue-button-disabled"
                     },
-                    "x": -150
+                    "x": -180.67308647400955
                 },
                 {
                     "type": "Image",
@@ -139,7 +159,7 @@
                         "key": "main",
                         "frame": "mod-icon-disabled"
                     },
-                    "x": 150,
+                    "x": 179.32691352599045,
                     "y": -1
                 },
                 {
@@ -152,7 +172,7 @@
                         "key": "main",
                         "frame": "ignore-icon-disabled"
                     },
-                    "x": 90,
+                    "x": 119.32691352599045,
                     "y": -2
                 },
                 {
@@ -165,7 +185,7 @@
                         "key": "main",
                         "frame": "stamps-icon-disabled"
                     },
-                    "x": 30,
+                    "x": -0.6730864740095512,
                     "y": -2
                 },
                 {
@@ -178,8 +198,20 @@
                         "key": "main",
                         "frame": "igloo-icon-disabled"
                     },
-                    "x": -30,
+                    "x": -60.67308647400955,
                     "y": -2
+                },
+                {
+                    "type": "Image",
+                    "id": "cfb82a86-19c5-46d2-9431-ee6919e20269",
+                    "label": "mail_icon",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "mail-icon-disabled"
+                    },
+                    "x": 59.32691352599045
                 },
                 {
                     "type": "Image",
@@ -191,7 +223,7 @@
                         "key": "main",
                         "frame": "help-icon-disabled"
                     },
-                    "x": -90,
+                    "x": -120.67308647400955,
                     "y": -2
                 },
                 {
@@ -204,7 +236,7 @@
                         "key": "main",
                         "frame": "buddies-icon-disabled"
                     },
-                    "x": -150,
+                    "x": -180.67308647400955,
                     "y": -2
                 }
             ]

@@ -13,8 +13,8 @@ export default class Pet extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'adoption': () => this.unimplementedPrompt(),
-            //'adoption': () => this.world.RuffleManager.handleLoadOtherSwf("petShopAdopt.swf"),
+            //'adoption': () => this.unimplementedPrompt(),
+            'adoption': () => this.world.RuffleManager.handleLoadOtherSwf("petShopAdopt.swf"),
             'cannon': () => this.triggerGame("PuffleLaunch", 925),
             'hotel': () => this.unimplementedPrompt(),
             'park': () => this.triggerGame("PuffleRoundup", 925),

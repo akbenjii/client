@@ -8,7 +8,7 @@ import { Button, ShowHint } from '@components/components'
 export default class Buttons extends BaseContainer {
 
     constructor(scene, x, y) {
-        super(scene, x ?? 760, y ?? 480);
+        super(scene, x ?? 790.6731008322703, y ?? 480);
 
         /** @type {Phaser.GameObjects.Image} */
         this.report_button;
@@ -18,6 +18,8 @@ export default class Buttons extends BaseContainer {
         this.stamps_button;
         /** @type {Phaser.GameObjects.Image} */
         this.igloo_button;
+        /** @type {Phaser.GameObjects.Image} */
+        this.mail_button;
         /** @type {Phaser.GameObjects.Image} */
         this.profile_button;
         /** @type {Phaser.GameObjects.Image} */
@@ -31,57 +33,68 @@ export default class Buttons extends BaseContainer {
         /** @type {Phaser.GameObjects.Image} */
         this.igloo_icon;
         /** @type {Phaser.GameObjects.Image} */
+        this.mail_icon;
+        /** @type {Phaser.GameObjects.Image} */
         this.profile_icon;
         /** @type {Phaser.GameObjects.Image} */
         this.buddy_icon;
 
 
         // report_button
-        const report_button = scene.add.image(150, 0, "main", "blue-button-disabled");
+        const report_button = scene.add.image(179.32691352599045, 0, "main", "blue-button-disabled");
         this.add(report_button);
 
         // ignore_button
-        const ignore_button = scene.add.image(90, 0, "main", "blue-button-disabled");
+        const ignore_button = scene.add.image(119.32691352599045, 0, "main", "blue-button-disabled");
         this.add(ignore_button);
 
         // stamps_button
-        const stamps_button = scene.add.image(30, 0, "main", "blue-button-disabled");
+        const stamps_button = scene.add.image(-0.6730864740095512, 0, "main", "blue-button-disabled");
         this.add(stamps_button);
 
         // igloo_button
-        const igloo_button = scene.add.image(-30, 0, "main", "blue-button-disabled");
+        const igloo_button = scene.add.image(-60.67308647400955, 0, "main", "blue-button-disabled");
         this.add(igloo_button);
 
+        // mail_button
+        const mail_button = scene.add.image(59.32691192626953, 0.6971156016820146, "main", "blue-button-disabled");
+        mail_button.setOrigin(0.5, 0.5124484928871789);
+        this.add(mail_button);
+
         // profile_button
-        const profile_button = scene.add.image(-90, 0, "main", "blue-button-disabled");
+        const profile_button = scene.add.image(-120.67308647400955, 0, "main", "blue-button-disabled");
         this.add(profile_button);
 
         // buddy_button
-        const buddy_button = scene.add.image(-150, 0, "main", "blue-button-disabled");
+        const buddy_button = scene.add.image(-180.67308647400955, 0, "main", "blue-button-disabled");
         this.add(buddy_button);
 
         // report_icon
-        const report_icon = scene.add.image(150, -1, "main", "mod-icon-disabled");
+        const report_icon = scene.add.image(179.32691352599045, -1, "main", "mod-icon-disabled");
         this.add(report_icon);
 
         // ignore_icon
-        const ignore_icon = scene.add.image(90, -2, "main", "ignore-icon-disabled");
+        const ignore_icon = scene.add.image(119.32691352599045, -2, "main", "ignore-icon-disabled");
         this.add(ignore_icon);
 
         // stamps_icon
-        const stamps_icon = scene.add.image(30, -2, "main", "stamps-icon-disabled");
+        const stamps_icon = scene.add.image(-0.6730864740095512, -2, "main", "stamps-icon-disabled");
         this.add(stamps_icon);
 
         // igloo_icon
-        const igloo_icon = scene.add.image(-30, -2, "main", "igloo-icon-disabled");
+        const igloo_icon = scene.add.image(-60.67308647400955, -2, "main", "igloo-icon-disabled");
         this.add(igloo_icon);
 
+        // mail_icon
+        const mail_icon = scene.add.image(59.32691352599045, 0, "main", "mail-icon-disabled");
+        this.add(mail_icon);
+
         // profile_icon
-        const profile_icon = scene.add.image(-90, -2, "main", "help-icon-disabled");
+        const profile_icon = scene.add.image(-120.67308647400955, -2, "main", "help-icon-disabled");
         this.add(profile_icon);
 
         // buddy_icon
-        const buddy_icon = scene.add.image(-150, -2, "main", "buddies-icon-disabled");
+        const buddy_icon = scene.add.image(-180.67308647400955, -2, "main", "buddies-icon-disabled");
         this.add(buddy_icon);
 
         // report_button (components)
@@ -112,6 +125,13 @@ export default class Buttons extends BaseContainer {
         const igloo_buttonShowHint = new ShowHint(igloo_button);
         igloo_buttonShowHint.text = "Visit Igloo";
 
+        // mail_button (components)
+        const mail_buttonButton = new Button(mail_button);
+        mail_buttonButton.spriteName = "blue-button";
+        mail_buttonButton.callback = () => this.onMailClick();
+        const mail_buttonShowHint = new ShowHint(mail_button);
+        mail_buttonShowHint.text = "Send Postcard";
+
         // profile_button (components)
         const profile_buttonButton = new Button(profile_button);
         profile_buttonButton.spriteName = "blue-button";
@@ -130,18 +150,20 @@ export default class Buttons extends BaseContainer {
         this.ignore_button = ignore_button;
         this.stamps_button = stamps_button;
         this.igloo_button = igloo_button;
+        this.mail_button = mail_button;
         this.profile_button = profile_button;
         this.buddy_button = buddy_button;
         this.report_icon = report_icon;
         this.ignore_icon = ignore_icon;
         this.stamps_icon = stamps_icon;
         this.igloo_icon = igloo_icon;
+        this.mail_icon = mail_icon;
         this.profile_icon = profile_icon;
         this.buddy_icon = buddy_icon;
 
         /* START-USER-CTR-CODE */
 
-        this.buttonNames = ['buddy', 'profile', 'igloo', 'stamps', 'ignore', 'report']
+        this.buttonNames = ['buddy', 'profile', 'igloo', 'stamps', 'ignore', 'report', 'mail']
         this.buttons = this.initButtons()
 
         /* END-USER-CTR-CODE */
@@ -175,12 +197,12 @@ export default class Buttons extends BaseContainer {
         switch (relationship) {
             case 'online':
                 this.enableButton('buddy', 'buddies-remove-icon', 'Remove Buddy')
-                this.enableButtons(['profile', 'igloo', 'stamps', 'report'])
+                this.enableButtons(['profile', 'igloo', 'stamps', 'report', 'mail'])
                 break
 
             case 'offline':
                 this.enableButton('buddy', 'buddies-remove-icon', 'Remove Buddy')
-                this.enableButtons(['igloo', 'stamps', 'report'])
+                this.enableButtons(['igloo', 'stamps', 'report', 'mail'])
                 break
 
             case 'ignore':
@@ -193,7 +215,7 @@ export default class Buttons extends BaseContainer {
                 break
 
             default:
-                this.enableButtons(['buddy', 'stamps', 'ignore', 'report'])
+                this.enableButtons(['buddy', 'stamps', 'ignore', 'report', 'mail'])
                 break
         }
 
@@ -272,6 +294,10 @@ export default class Buttons extends BaseContainer {
     onStampClick() {
         this.interface.loadExternal('Stampbook') 
         this.interface.stampbookId = this.parentContainer.id
+    }
+
+    onMailClick(){
+        this.world.RuffleManager.handleLoadOtherSwf("mail.swf", {username: this.parentContainer.username.text})
     }
 
     onReportClick() {
