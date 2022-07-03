@@ -22,7 +22,7 @@ export default class Start extends BaseScene {
         bg.setOrigin(0, 0);
 
         // pgames
-        this.add.image(760, 420, "pgames");
+        this.add.image(760, 375, "logosplash");
 
         // bottom
         this.add.image(760, 766, "start", "bottom");
@@ -30,7 +30,7 @@ export default class Start extends BaseScene {
         // blog-text
         const blog_text = this.add.text(363, 885, "", {});
         blog_text.setOrigin(0.5, 0.5);
-        blog_text.text = "CHECK OUT WHAT'S NEW";
+        blog_text.text = "JOIN OUR DISCORD";
         blog_text.setStyle({ "align": "center", "fixedWidth":300,"fontFamily": "Burbank Small", "fontSize": "20px", "fontStyle": "italic", "stroke": "#ffffffff" });
 
         // blogButton
@@ -60,7 +60,7 @@ export default class Start extends BaseScene {
 
         // blogButton (components)
         const blogButtonSimpleButton = new SimpleButton(blogButton);
-        blogButtonSimpleButton.callback = () => window.open('https://cpforever.net/blog', '_blank').focus();;
+        blogButtonSimpleButton.callback = () => window.open('https:/discord.gg/cpf', '_blank').focus();;
 
         // createButton (components)
         const createButtonButton = new Button(createButton);

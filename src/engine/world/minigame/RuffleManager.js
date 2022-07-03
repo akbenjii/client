@@ -67,6 +67,12 @@ export default class RuffleManager {
 
 		window.adoptPuffle = this.adoptPuffle
 		window.adoptPuffle = adoptPuffle.bind(this)
+
+		window.getPostcards = this.getPostcards
+		window.getPostcards = getPostcards.bind(this)
+
+		window.deletePostcard = this.deletePostcard
+		window.deletePostcard = deletePostcard.bind(this)
 		
 		this.swfInstance = this.rufflePlayer.load({
 			url: "assets/media/games/swf/sse.swf",
@@ -230,4 +236,15 @@ export default class RuffleManager {
 	adoptPuffle(type, name){
 		this.world.network.send('adopt_puffle', { type: type, name: name })
 	}
+
+	getPostcards() {
+		return this.world.client.postcards
+	}
+
+	deletePostcard(index) {
+		this.world.client.postcards.splice(index, 1)
+		clearTimeout(this.postcardTimeout)
+		this.postcardTimeout = setTimeout(() => this.world.network.send('update_postcards', { postcardArray: this.world.client.postcards }, 1000))
+	}
+
 }

@@ -185,7 +185,7 @@ export default class PuffleCare extends BaseContainer {
     showPuffle(args, walking = false){
         this.visible = true
 
-        let restpos = Math.floor((100 - args.rest) * -0.67)
+        let restpos = 13 + Math.floor((100 - args.rest) * -0.67)
         if (restpos < -30) {
             this.rest_bar.setFrame("puffle_care/bar_shorter")
             restpos = restpos + 27
@@ -199,7 +199,7 @@ export default class PuffleCare extends BaseContainer {
         }
         this.rest_bar.x = restpos;
 
-        let cleanpos = Math.floor((100 - args.clean) * -0.67)
+        let cleanpos = 13 + Math.floor((100 - args.clean) * -0.67)
         if (cleanpos < -30) {
             this.clean_bar.setFrame("puffle_care/bar_shorter")
             cleanpos = cleanpos + 27
@@ -213,7 +213,7 @@ export default class PuffleCare extends BaseContainer {
         }
         this.clean_bar.x = cleanpos;
 
-        let playpos = Math.floor((100 - args.play) * -0.67)
+        let playpos = 13 + Math.floor((100 - args.play) * -0.67)
         if (playpos < -30) {
             this.play_bar.setFrame("puffle_care/bar_shorter")
             playpos = playpos + 27
@@ -227,7 +227,7 @@ export default class PuffleCare extends BaseContainer {
         }
         this.play_bar.x = playpos;
 
-        let foodpos = Math.floor((100 - args.food) * -0.67)
+        let foodpos = 13 + Math.floor((100 - args.food) * -0.67)
         if (foodpos < -30) {
             this.food_bar.setFrame("puffle_care/bar_shorter")
             foodpos = foodpos + 27

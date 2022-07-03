@@ -356,7 +356,7 @@ export default class IglooScene extends RoomScene {
 
     stop(){
         for (let p in this.puffles) {
-            this.puffles[p].destroy()
+            if (this.puffles[p]) this.puffles[p].destroy()
         }
         super.stop()
     }

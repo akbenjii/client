@@ -467,9 +467,27 @@
                 "key": "main",
                 "frame": "buddy-button"
             },
-            "x": 170,
+            "x": 269,
             "y": 58,
             "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "c77d9303-6faa-472c-83e7-725f82e2b2eb",
+            "label": "mail_btn",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "mail-button",
+            "Button.callback": "() => {this.world.RuffleManager.handleLoadOtherSwf(\"mail.swf\")}",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "main",
+                "frame": "mail-button"
+            },
+            "x": 170,
+            "y": 45
         },
         {
             "type": "Image",
@@ -825,38 +843,6 @@
             "components": [],
             "x": 500,
             "y": 583,
-            "visible": false,
-            "nestedPrefabs": []
-        },
-        {
-            "type": "Image",
-            "id": "109935d0-deb5-4d91-ac6b-9066fd5f553e",
-            "label": "pg",
-            "components": [
-                "SimpleButton"
-            ],
-            "SimpleButton.callback": "() => {this.penguingames.create()};",
-            "texture": {
-                "key": "pg"
-            },
-            "x": 1457,
-            "y": 61,
-            "scaleX": 0.35,
-            "scaleY": 0.35
-        },
-        {
-            "prefabId": "daf39fc8-fc0e-406f-93dc-3b12f19b138d",
-            "id": "cec96a45-1eb1-4f95-bd97-b3d2e59dfa53",
-            "unlock": [
-                "x",
-                "y",
-                "visible"
-            ],
-            "label": "penguingames",
-            "scope": "CLASS",
-            "components": [],
-            "x": 760,
-            "y": 480,
             "visible": false,
             "nestedPrefabs": []
         },

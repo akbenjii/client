@@ -120,6 +120,8 @@ export default class Penguin extends BaseContainer {
             : _frame
 
         for (let sprite of sprites) {
+            if (sprite.animating) return
+
             let key = `${sprite.texture.key}_${frame}`
 
             if (!this.world.anims.exists(key)) {
@@ -213,6 +215,9 @@ export default class Penguin extends BaseContainer {
             onUpdate: () => this.onMoveUpdate(),
             onComplete: () => this.onMoveComplete()
         })
+
+        this.prevX = this.x
+        this.prevY = this.y
     }
 
     onMoveUpdate() {
@@ -225,6 +230,17 @@ export default class Penguin extends BaseContainer {
         if (this.balloon) {
             this.updateBalloon()
         }
+
+        let xoffset = this.x - this.prevX
+        let yoffset = this.y - this.prevY
+
+        if (this.pufflesprite && this.pufflesprite.animating) {
+            this.pufflesprite.x -= xoffset
+            this.pufflesprite.y -= yoffset
+        }
+
+        this.prevX = this.x
+        this.prevY = this.y
     }
 
     onMoveComplete() {
@@ -260,4 +276,15 @@ export default class Penguin extends BaseContainer {
         }
     }
 
+    playPuffleAnim(anim) {
+        if (!this.pufflesprite) return
+        this.pufflesprite.play(`puffle_${this.pufflesprite.color}_${anim}`)
+        this.pufflesprite.animating = true
+        this.pufflesprite.once('animationcomplete', () => {
+            this.pufflesprite.animating = false
+            this.pufflesprite.setTexture("puffle_" + this.pufflesprite.color, this.direction + "_1")
+            this.pufflesprite.x = 60
+            this.pufflesprite.y = 0
+        })
+    }
 }

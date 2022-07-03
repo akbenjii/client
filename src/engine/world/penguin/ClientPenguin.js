@@ -29,6 +29,7 @@ export default class ClientPenguin extends Penguin {
     rotate(x, y) {
         let angle = PathEngine.getAngle(this.pos, { x: x, y: y + 80 })
         let direction = PathEngine.getDirection(angle)
+        this.direction = direction
 
         this.playFrame(direction)
     }

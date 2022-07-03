@@ -13,7 +13,7 @@ export default class PenguinLoader extends SpriteLoader {
             align: 'center',
             fixedWidth: 250
         }
-        
+
     }
 
     loadPenguin(penguin) {
@@ -44,9 +44,13 @@ export default class PenguinLoader extends SpriteLoader {
     addName(penguin) {
         let x = penguin.x
         let y = penguin.y + 40
-		if (penguin.username_approved == 1) { var nameTag = penguin.room.add.text(x, y, penguin.username, this.nameStyle) }
-		if (penguin.username_approved != 1) { var nameTag = penguin.room.add.text(x, y, "P" + penguin.id, this.nameStyle) }
-        
+        if (penguin.username_approved == 1) {
+            var nameTag = penguin.room.add.text(x, y, penguin.username, this.nameStyle)
+        }
+        if (penguin.username_approved != 1) {
+            var nameTag = penguin.room.add.text(x, y, "P" + penguin.id, this.nameStyle)
+        }
+
         nameTag.setOrigin(0.5)
         nameTag.depth = penguin.depth + 2000 // Keep nametag above everything else
 
@@ -71,13 +75,12 @@ export default class PenguinLoader extends SpriteLoader {
 
     addPuffle(penguin, puffle) {
         let color = this.world.crumbs.puffles[puffle].name
-		
-		if (!this.ploader.textureExists(`puffle_${color}`)) {
-			this.ploader.loadPuffle(color)
-		}
-		else {
-			this.loadPuffle(penguin, color)
-		}
+
+        if (!this.ploader.textureExists(`puffle_${color}`)) {
+            this.ploader.loadPuffle(color)
+        } else {
+            this.loadPuffle(penguin, color)
+        }
     }
 
     loadPuffle(penguin, color) {
@@ -87,13 +90,12 @@ export default class PenguinLoader extends SpriteLoader {
         penguin.pufflesprite.depth = 3
 
         penguin.add(penguin.pufflesprite)
-
+        penguin.pufflesprite.color = color
         penguin.hasPuffle = true
 
-         if (this.world.client.penguin.id == this.world.room.id) {
-           this.addPuffleInput(penguin)
+        if (this.world.client.penguin.id == this.world.room.id) {
+            this.addPuffleInput(penguin)
         }
-        
     }
 
     addPuffleInput(penguin) {

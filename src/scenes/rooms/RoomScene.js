@@ -44,7 +44,8 @@ export default class RoomScene extends BaseScene {
         this.addInput()
 
         this.sound.pauseOnBlur = false
-        if (this.music) this.addMusic()
+        if (!this.music) this.music = 0
+        this.addMusic()
 
         if (this.waddles) this.getWaddles()
 
@@ -61,10 +62,6 @@ export default class RoomScene extends BaseScene {
     }
 	
     preload() {
-        if (this.music && !this.cache.audio.exists(this.music)) {
-            this.load.audio(this.music, `assets/media/music/${this.music}.mp3`)
-        }
-
         if (this.crumbs.pin.id && this.crumbs.pin.room === this.id) {
             this.load.image('pin', `assets/media/clothing/icon/${this.crumbs.pin.id}.png`)
         }
@@ -119,7 +116,7 @@ export default class RoomScene extends BaseScene {
 
     addMusic() {
         if (!this.world.muteMusic) {
-            this.sound.play(this.music, { loop: true })
+            this.world.MusicController.addMusic(this.music)
         }
     }
 
@@ -149,7 +146,7 @@ export default class RoomScene extends BaseScene {
 
     stop() {
         this.interface.main.snowballFactory.clearBalls()
-        this.sound.stopAll()
+        //this.sound.stopAll()
         this.scene.stop()
     }
 

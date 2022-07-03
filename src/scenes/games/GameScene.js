@@ -1,7 +1,7 @@
-import BaseScene from '@scenes/base/BaseScene'
+import RoomScene from '@scenes/rooms/RoomScene'
 
 
-export default class GameScene extends BaseScene {
+export default class GameScene extends RoomScene {
 
     constructor(key) {
         super(key)
@@ -25,20 +25,10 @@ export default class GameScene extends BaseScene {
         this._create()
 
         this.sound.pauseOnBlur = false
-        if (this.music) this.addMusic()
+        if (!this.music) this.music = 0
+        this.addMusic()
 
         this.interface.hideLoading()
-    }
-
-    addMusic() {
-        if (this.cache.audio.exists(this.music)){
-        	if (localStorage.muteMusic != 'true') this.sound.play(this.music, { loop: true })
-		}
-    }
-
-    stop() {
-        this.sound.stopAll()
-        this.scene.stop()
     }
 
 }

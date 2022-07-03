@@ -2,7 +2,7 @@ export default class PartyController {
 
     constructor(world) {
         this.world = world
-        this.party = "PenguinGames0722"
+        this.party = null
         this.partyCompletion = {}
     }
 
@@ -16,8 +16,5 @@ export default class PartyController {
 
     setPartyCompletion(partyCompletion) {
         if (partyCompletion) this.partyCompletion = partyCompletion
-        if (!this.partyCompletion || !this.partyCompletion.team) {
-            this.world.interface.main.prompt.showPgFirstLogin()
-        }
     }
 }

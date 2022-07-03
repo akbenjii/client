@@ -24,7 +24,6 @@ import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
 import Manage from '../manage/Manage'
 import Underwater from '../underwater/Underwater'
-import PenguinGames from '../penguingames/PenguinGames'
 import Prompt from '../prompt/Prompt'
 
 
@@ -91,6 +90,8 @@ export default class Main extends BaseScene {
         this.map_button;
         /** @type {Phaser.GameObjects.Image} */
         this.request_button;
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.mail_btn;
         /** @type {Phaser.GameObjects.Image} */
         this.news_button;
         /** @type {Phaser.GameObjects.Container} */
@@ -139,8 +140,6 @@ export default class Main extends BaseScene {
         this.stampEarnedBody;
         /** @type {PuffleCare} */
         this.puffleCare;
-        /** @type {PenguinGames} */
-        this.penguingames;
         /** @type {Prompt} */
         this.prompt;
         /** @type {Array<PlayerCard|Buddy|Moderator>} */
@@ -252,8 +251,11 @@ export default class Main extends BaseScene {
         const map_button = this.add.sprite(90, 888, "main", "map-button");
 
         // request_button
-        const request_button = this.add.image(170, 58, "main", "buddy-button");
+        const request_button = this.add.image(269, 58, "main", "buddy-button");
         request_button.visible = false;
+
+        // mail_btn
+        const mail_btn = this.add.sprite(170, 45, "main", "mail-button");
 
         // news_button
         const news_button = this.add.image(70, 61, "main", "news-button");
@@ -367,16 +369,6 @@ export default class Main extends BaseScene {
         this.add.existing(puffleCare);
         puffleCare.visible = false;
 
-        // pg
-        const pg = this.add.image(1457, 61, "pg");
-        pg.scaleX = 0.35;
-        pg.scaleY = 0.35;
-
-        // penguingames
-        const penguingames = new PenguinGames(this, 760, 480);
-        this.add.existing(penguingames);
-        penguingames.visible = false;
-
         // prompt
         const prompt = new Prompt(this, 0, 0);
         this.add.existing(prompt);
@@ -469,6 +461,12 @@ export default class Main extends BaseScene {
         request_buttonButton.callback = () => this.onRequestClick();
         request_buttonButton.activeFrame = false;
 
+        // mail_btn (components)
+        const mail_btnButton = new Button(mail_btn);
+        mail_btnButton.spriteName = "mail-button";
+        mail_btnButton.callback = () => {this.world.RuffleManager.handleLoadOtherSwf("mail.swf")};
+        mail_btnButton.activeFrame = false;
+
         // news_button (components)
         const news_buttonButton = new Button(news_button);
         news_buttonButton.spriteName = "news-button";
@@ -487,10 +485,6 @@ export default class Main extends BaseScene {
         chat_buttonButton.callback = () => this.safe.visible = true;
         const chat_buttonShowHint = new ShowHint(chat_button);
         chat_buttonShowHint.text = "Messages";
-
-        // pg (components)
-        const pgSimpleButton = new SimpleButton(pg);
-        pgSimpleButton.callback = () => {this.penguingames.create()};;
 
         this.pinContainer = pinContainer;
         this.dock = dock;
@@ -520,6 +514,7 @@ export default class Main extends BaseScene {
         this.crosshair = crosshair;
         this.map_button = map_button;
         this.request_button = request_button;
+        this.mail_btn = mail_btn;
         this.news_button = news_button;
         this.mod_btn = mod_btn;
         this.mod_button = mod_button;
@@ -544,7 +539,6 @@ export default class Main extends BaseScene {
         this.stampEarnedHeader = stampEarnedHeader;
         this.stampEarnedBody = stampEarnedBody;
         this.puffleCare = puffleCare;
-        this.penguingames = penguingames;
         this.prompt = prompt;
         this.hideOnSleep = hideOnSleep;
         this.interfaceList = interfaceList;

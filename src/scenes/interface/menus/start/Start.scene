@@ -30,10 +30,10 @@
             "label": "pgames",
             "components": [],
             "texture": {
-                "key": "pgames"
+                "key": "logosplash"
             },
             "x": 760,
-            "y": 420
+            "y": 375
         },
         {
             "type": "Image",
@@ -56,7 +56,7 @@
             "y": 885,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "CHECK OUT WHAT'S NEW",
+            "text": "JOIN OUR DISCORD",
             "fixedWidth": 300,
             "align": "center",
             "fontFamily": "Burbank Small",
@@ -71,7 +71,7 @@
             "components": [
                 "SimpleButton"
             ],
-            "SimpleButton.callback": "() => window.open('https://cpforever.net/blog', '_blank').focus();",
+            "SimpleButton.callback": "() => window.open('https:/discord.gg/cpf', '_blank').focus();",
             "texture": {
                 "key": "start",
                 "frame": "blog"

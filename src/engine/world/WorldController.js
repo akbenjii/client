@@ -25,6 +25,7 @@ export default class WorldController extends BaseScene {
 
 		if (window.location.hostname == "localhost") window.world = this
 
+        this.MusicController = this.scene.get("MusicController")
         this.penguinFactory = new PenguinFactory(this)
         this.roomFactory = new RoomFactory(this)
         this.iglooFactory = new IglooFactory(this)
