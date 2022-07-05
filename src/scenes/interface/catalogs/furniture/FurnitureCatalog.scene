@@ -677,6 +677,78 @@
                     "y": 677,
                     "scaleX": 0.8485573892810738,
                     "scaleY": 0.8485573892810738
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "f08aa02c-0d7d-451d-a16a-c29d42db92f8",
+                    "label": "sec_hb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(688)",
+                    "x": 613,
+                    "y": 478,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2f342e75-079d-47f5-bca3-55a20491ae94",
+                    "label": "sec_winb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(685)",
+                    "x": 1084,
+                    "y": 671,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "f52ada41-2d1c-4598-9ba5-a89e4e70bcd1",
+                    "label": "sec_bam",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(777)",
+                    "x": 951,
+                    "y": 190,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "99f1ff77-75d8-473c-8e17-2dbf2dc21e8c",
+                    "label": "sec_window",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(560)",
+                    "x": 286,
+                    "y": 200,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
@@ -880,6 +952,24 @@
                     "y": 405,
                     "scaleX": 0.8485573892810738,
                     "scaleY": 0.8485573892810738
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2e13db1b-af54-4f9d-a271-de302e4a0297",
+                    "label": "sec_ml",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(106)",
+                    "x": 895,
+                    "y": 222,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
@@ -1101,6 +1191,42 @@
                     "y": 414,
                     "scaleX": 0.8485573892810738,
                     "scaleY": 0.8485573892810738
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "4b45dc08-6dc7-41e7-b2e8-6b09032979db",
+                    "label": "sec_ar",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(694)",
+                    "x": 964,
+                    "y": 379,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "d0a9e59d-079e-411d-99d0-90da99a600f4",
+                    "label": "sec_pap",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(356)",
+                    "x": 1203,
+                    "y": 407,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
@@ -1322,6 +1448,78 @@
                     "y": 661,
                     "scaleX": 0.8485573892810738,
                     "scaleY": 0.8485573892810738
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "6eb836eb-acda-47ef-9b07-0fc5e934c8f8",
+                    "label": "sec_pb",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(392)",
+                    "x": 858,
+                    "y": 615,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "2337fb0a-f0a5-4408-addb-264e804611e3",
+                    "label": "sec_or",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(151)",
+                    "x": 636,
+                    "y": 512,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "86289182-baaa-4859-a2da-f44cd9befe7f",
+                    "label": "sec_rr",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(152)",
+                    "x": 286,
+                    "y": 479,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "60491f06-216d-4f09-96be-548a0ac7d548",
+                    "label": "sec_mr",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(494)",
+                    "x": 345,
+                    "y": 124,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
@@ -1543,6 +1741,42 @@
                     "y": 647,
                     "scaleX": 0.8485573892810738,
                     "scaleY": 0.8485573892810738
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "def44872-2fc7-46c5-89fe-5d56126d317e",
+                    "label": "sec_sr",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(351)",
+                    "x": 613,
+                    "y": 577,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "142846bc-5702-4b5c-912a-a07b80487d50",
+                    "label": "sec_hd",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(596)",
+                    "x": 1010,
+                    "y": 537,
+                    "scaleX": 0.226648688900411,
+                    "scaleY": 0.226648688900411,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
@@ -1746,6 +1980,42 @@
                     "y": 655,
                     "scaleX": 0.8485573892810738,
                     "scaleY": 0.8485573892810738
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "42a6757f-2d2a-46ff-8f74-1313f226488f",
+                    "label": "sec_ag",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(514)",
+                    "x": 347,
+                    "y": 580,
+                    "scaleX": 0.4114263934541442,
+                    "scaleY": 0.4322169016004844,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "61086200-cbcf-422b-9ab7-1c9f83ab95dd",
+                    "label": "sec_gs",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(413)",
+                    "x": 1195,
+                    "y": 276,
+                    "scaleX": 0.4114263934541442,
+                    "scaleY": 0.4322169016004844,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },
@@ -1788,11 +2058,13 @@
                     "unlock": [
                         "item",
                         "x",
-                        "y"
+                        "y",
+                        "Button.callback"
                     ],
                     "label": "buyButton_1",
                     "item": 418,
                     "components": [],
+                    "Button.callback": "() => this.scene.buy(this.item)",
                     "x": 264,
                     "y": 403
                 },
@@ -1929,6 +2201,42 @@
                     "components": [],
                     "x": 850,
                     "y": 660
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "5f13582d-7c1b-4b50-b185-1312d83300e0",
+                    "label": "sec_torch",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(342)",
+                    "x": 892,
+                    "y": 132,
+                    "scaleX": 0.4114263934541442,
+                    "scaleY": 0.4322169016004844,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "a2f8d293-9100-4309-a987-ca0ed472e4f0",
+                    "label": "sec_eg",
+                    "scope": "CLASS",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showFurniture(515)",
+                    "x": 363,
+                    "y": 346,
+                    "scaleX": 0.4114263934541442,
+                    "scaleY": 0.4322169016004844,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
                 }
             ]
         },

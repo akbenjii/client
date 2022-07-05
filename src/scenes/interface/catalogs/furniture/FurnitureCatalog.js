@@ -1,4 +1,4 @@
-import { Button, Interactive } from '@components/components'
+import { Button, Interactive, SimpleButton } from '@components/components'
 
 import Book from '@scenes/interface/books/Book'
 import BuyButton from './buttons/BuyButton'
@@ -11,6 +11,40 @@ export default class FurnitureCatalog extends Book {
     constructor() {
         super("FurnitureCatalog");
 
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_hb;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_winb;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_bam;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_window;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_ml;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_ar;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_pap;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_pb;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_or;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_rr;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_mr;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_sr;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_hd;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_ag;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_gs;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_torch;
+        /** @type {Phaser.GameObjects.Ellipse} */
+        this.sec_eg;
         /** @type {Phaser.GameObjects.Container} */
         this.buttons;
         /** @type {Phaser.GameObjects.Text} */
@@ -243,6 +277,38 @@ export default class FurnitureCatalog extends Book {
         buyButton_5111_1_111.scaleY = 0.8485573892810738;
         page8.add(buyButton_5111_1_111);
 
+        // sec_hb
+        const sec_hb = this.add.ellipse(613, 478, 128, 128);
+        sec_hb.scaleX = 0.226648688900411;
+        sec_hb.scaleY = 0.226648688900411;
+        sec_hb.isFilled = true;
+        sec_hb.fillAlpha = 0;
+        page8.add(sec_hb);
+
+        // sec_winb
+        const sec_winb = this.add.ellipse(1084, 671, 128, 128);
+        sec_winb.scaleX = 0.226648688900411;
+        sec_winb.scaleY = 0.226648688900411;
+        sec_winb.isFilled = true;
+        sec_winb.fillAlpha = 0;
+        page8.add(sec_winb);
+
+        // sec_bam
+        const sec_bam = this.add.ellipse(951, 190, 128, 128);
+        sec_bam.scaleX = 0.226648688900411;
+        sec_bam.scaleY = 0.226648688900411;
+        sec_bam.isFilled = true;
+        sec_bam.fillAlpha = 0;
+        page8.add(sec_bam);
+
+        // sec_window
+        const sec_window = this.add.ellipse(286, 200, 128, 128);
+        sec_window.scaleX = 0.226648688900411;
+        sec_window.scaleY = 0.226648688900411;
+        sec_window.isFilled = true;
+        sec_window.fillAlpha = 0;
+        page8.add(sec_window);
+
         // page7
         const page7 = this.add.container(0, 0);
         page7.visible = false;
@@ -306,6 +372,14 @@ export default class FurnitureCatalog extends Book {
         buyButton_5111_1_11.scaleX = 0.8485573892810738;
         buyButton_5111_1_11.scaleY = 0.8485573892810738;
         page7.add(buyButton_5111_1_11);
+
+        // sec_ml
+        const sec_ml = this.add.ellipse(895, 222, 128, 128);
+        sec_ml.scaleX = 0.226648688900411;
+        sec_ml.scaleY = 0.226648688900411;
+        sec_ml.isFilled = true;
+        sec_ml.fillAlpha = 0;
+        page7.add(sec_ml);
 
         // page6
         const page6 = this.add.container(0, 0);
@@ -377,6 +451,22 @@ export default class FurnitureCatalog extends Book {
         buyButton_5111_1_1.scaleY = 0.8485573892810738;
         page6.add(buyButton_5111_1_1);
 
+        // sec_ar
+        const sec_ar = this.add.ellipse(964, 379, 128, 128);
+        sec_ar.scaleX = 0.226648688900411;
+        sec_ar.scaleY = 0.226648688900411;
+        sec_ar.isFilled = true;
+        sec_ar.fillAlpha = 0;
+        page6.add(sec_ar);
+
+        // sec_pap
+        const sec_pap = this.add.ellipse(1203, 407, 128, 128);
+        sec_pap.scaleX = 0.226648688900411;
+        sec_pap.scaleY = 0.226648688900411;
+        sec_pap.isFilled = true;
+        sec_pap.fillAlpha = 0;
+        page6.add(sec_pap);
+
         // page5
         const page5 = this.add.container(0, 0);
         page5.visible = false;
@@ -446,6 +536,38 @@ export default class FurnitureCatalog extends Book {
         buyButton_5_11_1_11.scaleX = 0.8485573892810738;
         buyButton_5_11_1_11.scaleY = 0.8485573892810738;
         page5.add(buyButton_5_11_1_11);
+
+        // sec_pb
+        const sec_pb = this.add.ellipse(858, 615, 128, 128);
+        sec_pb.scaleX = 0.226648688900411;
+        sec_pb.scaleY = 0.226648688900411;
+        sec_pb.isFilled = true;
+        sec_pb.fillAlpha = 0;
+        page5.add(sec_pb);
+
+        // sec_or
+        const sec_or = this.add.ellipse(636, 512, 128, 128);
+        sec_or.scaleX = 0.226648688900411;
+        sec_or.scaleY = 0.226648688900411;
+        sec_or.isFilled = true;
+        sec_or.fillAlpha = 0;
+        page5.add(sec_or);
+
+        // sec_rr
+        const sec_rr = this.add.ellipse(286, 479, 128, 128);
+        sec_rr.scaleX = 0.226648688900411;
+        sec_rr.scaleY = 0.226648688900411;
+        sec_rr.isFilled = true;
+        sec_rr.fillAlpha = 0;
+        page5.add(sec_rr);
+
+        // sec_mr
+        const sec_mr = this.add.ellipse(345, 124, 128, 128);
+        sec_mr.scaleX = 0.226648688900411;
+        sec_mr.scaleY = 0.226648688900411;
+        sec_mr.isFilled = true;
+        sec_mr.fillAlpha = 0;
+        page5.add(sec_mr);
 
         // page4
         const page4 = this.add.container(0, 0);
@@ -517,6 +639,22 @@ export default class FurnitureCatalog extends Book {
         buyButton_5_11_1_1.scaleY = 0.8485573892810738;
         page4.add(buyButton_5_11_1_1);
 
+        // sec_sr
+        const sec_sr = this.add.ellipse(613, 577, 128, 128);
+        sec_sr.scaleX = 0.226648688900411;
+        sec_sr.scaleY = 0.226648688900411;
+        sec_sr.isFilled = true;
+        sec_sr.fillAlpha = 0;
+        page4.add(sec_sr);
+
+        // sec_hd
+        const sec_hd = this.add.ellipse(1010, 537, 128, 128);
+        sec_hd.scaleX = 0.226648688900411;
+        sec_hd.scaleY = 0.226648688900411;
+        sec_hd.isFilled = true;
+        sec_hd.fillAlpha = 0;
+        page4.add(sec_hd);
+
         // page3
         const page3 = this.add.container(0, 0);
         page3.visible = false;
@@ -581,6 +719,22 @@ export default class FurnitureCatalog extends Book {
         buyButton_5_2_1.scaleY = 0.8485573892810738;
         page3.add(buyButton_5_2_1);
 
+        // sec_ag
+        const sec_ag = this.add.ellipse(347, 580, 128, 128);
+        sec_ag.scaleX = 0.4114263934541442;
+        sec_ag.scaleY = 0.4322169016004844;
+        sec_ag.isFilled = true;
+        sec_ag.fillAlpha = 0;
+        page3.add(sec_ag);
+
+        // sec_gs
+        const sec_gs = this.add.ellipse(1195, 276, 128, 128);
+        sec_gs.scaleX = 0.4114263934541442;
+        sec_gs.scaleY = 0.4322169016004844;
+        sec_gs.isFilled = true;
+        sec_gs.fillAlpha = 0;
+        page3.add(sec_gs);
+
         // page2
         const page2 = this.add.container(0, 0);
         page2.visible = false;
@@ -634,6 +788,22 @@ export default class FurnitureCatalog extends Book {
         // buyButton_4_1
         const buyButton_4_1 = new BuyButton(this, 850, 660);
         page2.add(buyButton_4_1);
+
+        // sec_torch
+        const sec_torch = this.add.ellipse(892, 132, 128, 128);
+        sec_torch.scaleX = 0.4114263934541442;
+        sec_torch.scaleY = 0.4322169016004844;
+        sec_torch.isFilled = true;
+        sec_torch.fillAlpha = 0;
+        page2.add(sec_torch);
+
+        // sec_eg
+        const sec_eg = this.add.ellipse(363, 346, 128, 128);
+        sec_eg.scaleX = 0.4114263934541442;
+        sec_eg.scaleY = 0.4322169016004844;
+        sec_eg.isFilled = true;
+        sec_eg.fillAlpha = 0;
+        page2.add(sec_eg);
 
         // page1
         const page1 = this.add.container(0, 0);
@@ -798,6 +968,22 @@ export default class FurnitureCatalog extends Book {
         // buyButton_5111_1_111 (prefab fields)
         buyButton_5111_1_111.item = 344;
 
+        // sec_hb (components)
+        const sec_hbSimpleButton = new SimpleButton(sec_hb);
+        sec_hbSimpleButton.callback = () => this.interface.prompt.showFurniture(688);
+
+        // sec_winb (components)
+        const sec_winbSimpleButton = new SimpleButton(sec_winb);
+        sec_winbSimpleButton.callback = () => this.interface.prompt.showFurniture(685);
+
+        // sec_bam (components)
+        const sec_bamSimpleButton = new SimpleButton(sec_bam);
+        sec_bamSimpleButton.callback = () => this.interface.prompt.showFurniture(777);
+
+        // sec_window (components)
+        const sec_windowSimpleButton = new SimpleButton(sec_window);
+        sec_windowSimpleButton.callback = () => this.interface.prompt.showFurniture(560);
+
         // buyButton_51111 (prefab fields)
         buyButton_51111.item = 107;
 
@@ -837,6 +1023,10 @@ export default class FurnitureCatalog extends Book {
 
         // buyButton_5111_1_11 (prefab fields)
         buyButton_5111_1_11.item = 181;
+
+        // sec_ml (components)
+        const sec_mlSimpleButton = new SimpleButton(sec_ml);
+        sec_mlSimpleButton.callback = () => this.interface.prompt.showFurniture(106);
 
         // buyButton_5111 (prefab fields)
         buyButton_5111.item = 373;
@@ -881,6 +1071,14 @@ export default class FurnitureCatalog extends Book {
         // buyButton_5111_1_1 (prefab fields)
         buyButton_5111_1_1.item = 375;
 
+        // sec_ar (components)
+        const sec_arSimpleButton = new SimpleButton(sec_ar);
+        sec_arSimpleButton.callback = () => this.interface.prompt.showFurniture(694);
+
+        // sec_pap (components)
+        const sec_papSimpleButton = new SimpleButton(sec_pap);
+        sec_papSimpleButton.callback = () => this.interface.prompt.showFurniture(356);
+
         // buyButton_511 (prefab fields)
         buyButton_511.item = 180;
 
@@ -923,6 +1121,22 @@ export default class FurnitureCatalog extends Book {
 
         // buyButton_5_11_1_11 (prefab fields)
         buyButton_5_11_1_11.item = 182;
+
+        // sec_pb (components)
+        const sec_pbSimpleButton = new SimpleButton(sec_pb);
+        sec_pbSimpleButton.callback = () => this.interface.prompt.showFurniture(392);
+
+        // sec_or (components)
+        const sec_orSimpleButton = new SimpleButton(sec_or);
+        sec_orSimpleButton.callback = () => this.interface.prompt.showFurniture(151);
+
+        // sec_rr (components)
+        const sec_rrSimpleButton = new SimpleButton(sec_rr);
+        sec_rrSimpleButton.callback = () => this.interface.prompt.showFurniture(152);
+
+        // sec_mr (components)
+        const sec_mrSimpleButton = new SimpleButton(sec_mr);
+        sec_mrSimpleButton.callback = () => this.interface.prompt.showFurniture(494);
 
         // buyButton_51 (prefab fields)
         buyButton_51.item = 412;
@@ -967,6 +1181,14 @@ export default class FurnitureCatalog extends Book {
         // buyButton_5_11_1_1 (prefab fields)
         buyButton_5_11_1_1.item = 417;
 
+        // sec_sr (components)
+        const sec_srSimpleButton = new SimpleButton(sec_sr);
+        sec_srSimpleButton.callback = () => this.interface.prompt.showFurniture(351);
+
+        // sec_hd (components)
+        const sec_hdSimpleButton = new SimpleButton(sec_hd);
+        sec_hdSimpleButton.callback = () => this.interface.prompt.showFurniture(596);
+
         // buyButton_5 (prefab fields)
         buyButton_5.item = 414;
 
@@ -1007,11 +1229,23 @@ export default class FurnitureCatalog extends Book {
         // buyButton_5_2_1 (prefab fields)
         buyButton_5_2_1.item = 352;
 
+        // sec_ag (components)
+        const sec_agSimpleButton = new SimpleButton(sec_ag);
+        sec_agSimpleButton.callback = () => this.interface.prompt.showFurniture(514);
+
+        // sec_gs (components)
+        const sec_gsSimpleButton = new SimpleButton(sec_gs);
+        sec_gsSimpleButton.callback = () => this.interface.prompt.showFurniture(413);
+
         // buyButton (prefab fields)
         buyButton.item = 411;
 
         // buyButton_1 (prefab fields)
         buyButton_1.item = 418;
+
+        // buyButton_1 (components)
+        const buyButton_1Button = Button.getComponent(buyButton_1);
+        buyButton_1Button.callback = () => this.scene.buy(this.item);
 
         // buyButton_2 (prefab fields)
         buyButton_2.item = 355;
@@ -1047,6 +1281,14 @@ export default class FurnitureCatalog extends Book {
         // buyButton_4_1 (prefab fields)
         buyButton_4_1.item = 164;
 
+        // sec_torch (components)
+        const sec_torchSimpleButton = new SimpleButton(sec_torch);
+        sec_torchSimpleButton.callback = () => this.interface.prompt.showFurniture(342);
+
+        // sec_eg (components)
+        const sec_egSimpleButton = new SimpleButton(sec_eg);
+        sec_egSimpleButton.callback = () => this.interface.prompt.showFurniture(515);
+
         // close_right (components)
         const close_rightButton = new Button(close_right);
         close_rightButton.spriteName = "close_right";
@@ -1058,6 +1300,23 @@ export default class FurnitureCatalog extends Book {
         page_rightButton.callback = () => this.nextPage();
         page_rightButton.activeFrame = false;
 
+        this.sec_hb = sec_hb;
+        this.sec_winb = sec_winb;
+        this.sec_bam = sec_bam;
+        this.sec_window = sec_window;
+        this.sec_ml = sec_ml;
+        this.sec_ar = sec_ar;
+        this.sec_pap = sec_pap;
+        this.sec_pb = sec_pb;
+        this.sec_or = sec_or;
+        this.sec_rr = sec_rr;
+        this.sec_mr = sec_mr;
+        this.sec_sr = sec_sr;
+        this.sec_hd = sec_hd;
+        this.sec_ag = sec_ag;
+        this.sec_gs = sec_gs;
+        this.sec_torch = sec_torch;
+        this.sec_eg = sec_eg;
         this.buttons = buttons;
         this.coins = coins;
         this.pages = pages;
