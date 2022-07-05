@@ -1,0 +1,952 @@
+{
+    "id": "c806495c-7679-4bcf-a6a0-443ba8bd53c1",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/stage/stage-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Stage",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "97675478-9075-47e5-9c56-021943a2bb92",
+            "label": "stage_bg",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "stage_bg"
+            },
+            "x": 765,
+            "y": 521
+        },
+        {
+            "type": "Sprite",
+            "id": "2a8efbe3-a01f-49a3-9ae1-000917e17774",
+            "label": "net",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "basketball_net0001"
+            },
+            "x": 547,
+            "y": 237
+        },
+        {
+            "type": "Sprite",
+            "id": "49d8c552-481b-43f9-84dc-6fac665dc941",
+            "label": "yb",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "sb_yellow_anim0001"
+            },
+            "x": 694,
+            "y": 61
+        },
+        {
+            "type": "Sprite",
+            "id": "6e82c5ca-e6d0-4f87-98d7-1293037fa58c",
+            "label": "bb",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "sb_brown_anim0001"
+            },
+            "x": 547,
+            "y": 58
+        },
+        {
+            "type": "Sprite",
+            "id": "114edea7-4062-4e64-96d7-f4d4d0ed2812",
+            "label": "ob",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "sb_orange_anim0001"
+            },
+            "x": 414,
+            "y": 78
+        },
+        {
+            "type": "Image",
+            "id": "76e4001c-3c4c-4e7b-b9e0-ef1fb85c219f",
+            "label": "stage_above",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "stage_above"
+            },
+            "x": 760,
+            "y": 251
+        },
+        {
+            "type": "Image",
+            "id": "ccf1232e-10a6-419f-9b82-7c5900f0b46b",
+            "label": "middle_light",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "middle_light"
+            },
+            "x": 763,
+            "y": 274
+        },
+        {
+            "type": "Image",
+            "id": "0c49e7ea-adb9-4c21-9eea-5ffa55fd1e91",
+            "label": "lights",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "lights"
+            },
+            "x": 765,
+            "y": 304
+        },
+        {
+            "type": "Image",
+            "id": "c60ea4f2-5670-43d5-b48f-807767e2fb65",
+            "label": "left_side_back",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_side_back"
+            },
+            "x": 79,
+            "y": 242
+        },
+        {
+            "type": "Image",
+            "id": "81af54fd-5ed6-48c1-aaef-ead95d79c21f",
+            "label": "behind_right_booth",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "behind_right_booth"
+            },
+            "x": 1447,
+            "y": 252,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "6e09ff6c-7e32-4b57-a369-f54ec6c3e81e",
+            "label": "left_right_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_right_chair"
+            },
+            "x": 134,
+            "y": 214
+        },
+        {
+            "type": "Image",
+            "id": "cf56ce91-76c8-4c85-8ec1-cd3d62527215",
+            "label": "right_left_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_left_chair"
+            },
+            "x": 1389,
+            "y": 217
+        },
+        {
+            "type": "Image",
+            "id": "610adb38-8289-4a65-8f50-89e358e6c29f",
+            "label": "right_side",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_side"
+            },
+            "x": 1330,
+            "y": 400
+        },
+        {
+            "type": "Image",
+            "id": "a512c62b-961a-4379-b120-e755f05a8c25",
+            "label": "left_side",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_side"
+            },
+            "x": 190,
+            "y": 400
+        },
+        {
+            "type": "Image",
+            "id": "cbf002d4-c7a4-44eb-ab79-7ad087d3a2a5",
+            "label": "door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "door",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "stage",
+                "frame": "door"
+            },
+            "x": 121,
+            "y": 582
+        },
+        {
+            "type": "Image",
+            "id": "e4ef736a-c83c-42bb-a71e-e2b4743c7019",
+            "label": "left_left_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_left_chair"
+            },
+            "x": 85,
+            "y": 308
+        },
+        {
+            "type": "Image",
+            "id": "90cb7793-79a2-45e5-95e1-f41ee041c1a9",
+            "label": "left_front_arm",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_front_arm"
+            },
+            "x": 67,
+            "y": 342
+        },
+        {
+            "type": "Image",
+            "id": "3df689ee-32b2-47fe-9f0d-e521fed9ad56",
+            "label": "right_right_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_right_chair"
+            },
+            "x": 1438,
+            "y": 310
+        },
+        {
+            "type": "Image",
+            "id": "d6a11333-4dfb-4a8b-a91d-30b51af26b81",
+            "label": "left_door_front",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_door_front"
+            },
+            "x": 75,
+            "y": 590
+        },
+        {
+            "type": "Image",
+            "id": "34f82df9-3ca5-46e0-883c-3ab5ba875980",
+            "label": "left_hold",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_hold"
+            },
+            "x": 108.30923502947462,
+            "y": 385.65593861825465,
+            "originX": 0.5203265803277105,
+            "originY": 0.8279995166791705
+        },
+        {
+            "type": "Image",
+            "id": "491818db-4c71-45dc-a2fa-8b76e11e6a86",
+            "label": "right_front_arm",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_front_arm"
+            },
+            "x": 1459,
+            "y": 343
+        },
+        {
+            "type": "Image",
+            "id": "ac091935-a31f-499f-96db-b3b66a42c38b",
+            "label": "right_hold",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_hold"
+            },
+            "x": 1414,
+            "y": 383.1729969759188,
+            "originY": 0.7769527320938489
+        },
+        {
+            "type": "Image",
+            "id": "d7826b01-15ae-4943-b0dc-5004a8fa6c29",
+            "label": "left_side_fg",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_side_fg"
+            },
+            "x": 134,
+            "y": 469
+        },
+        {
+            "type": "Image",
+            "id": "d82674f1-7cd0-4348-8c3f-8b1346ebe677",
+            "label": "right_side_fg",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_side_fg"
+            },
+            "x": 1384,
+            "y": 469,
+            "flipX": true
+        },
+        {
+            "type": "Sprite",
+            "id": "f590f07f-3deb-4a2c-be59-9ffcade94ae9",
+            "label": "trunk",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onTrunkOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onTrunkOut()",
+            "texture": {
+                "key": "stage",
+                "frame": "trunk0001"
+            },
+            "x": 1369,
+            "y": 626
+        },
+        {
+            "type": "Sprite",
+            "id": "46b80aa8-d1b0-4487-a702-3f562d6aae53",
+            "label": "vending",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onVendingOver()",
+            "texture": {
+                "key": "stage",
+                "frame": "vending"
+            },
+            "x": 1189,
+            "y": 422
+        },
+        {
+            "type": "Image",
+            "id": "2b3bb4f0-eef2-4a5c-913a-ba01709d86fa",
+            "label": "left_top_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_top_chair"
+            },
+            "x": 195,
+            "y": 743
+        },
+        {
+            "type": "Image",
+            "id": "c301a977-5cac-4ba6-86b8-d59fde9cf7fd",
+            "label": "left_top_chair_2",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_top_chair_2"
+            },
+            "x": 288,
+            "y": 761
+        },
+        {
+            "type": "Image",
+            "id": "1428cde0-d9a6-4fc6-a967-451045c41cdf",
+            "label": "left_top_chair_3",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_top_chair_3"
+            },
+            "x": 387,
+            "y": 774
+        },
+        {
+            "type": "Image",
+            "id": "f6c9c756-6600-4e22-a5e1-d892d1976437",
+            "label": "left_top_chair_4",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_top_chair_4"
+            },
+            "x": 492,
+            "y": 799
+        },
+        {
+            "type": "Image",
+            "id": "78004b65-4675-42fc-85da-ef7f452390cb",
+            "label": "left_top_chair_5",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_top_chair_5"
+            },
+            "x": 601,
+            "y": 818
+        },
+        {
+            "type": "Image",
+            "id": "16d5fba3-fc7b-4502-b171-8f8f7cb3c26d",
+            "label": "left_bottom_chair_1",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_bottom_chair_1"
+            },
+            "x": 147,
+            "y": 841
+        },
+        {
+            "type": "Image",
+            "id": "8c74aa52-a05f-4a88-a4f8-02de5e4706b6",
+            "label": "left_bottom_chair_2",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_bottom_chair_2"
+            },
+            "x": 240,
+            "y": 859
+        },
+        {
+            "type": "Image",
+            "id": "fbb5b76d-7bc1-4da9-8dfc-6a0f7f3aa55b",
+            "label": "left_bottom_chair_3",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_bottom_chair_3"
+            },
+            "x": 350,
+            "y": 873
+        },
+        {
+            "type": "Image",
+            "id": "f5a49917-6e23-43e9-910f-e4e5adedcb4b",
+            "label": "right_top_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_top_chair"
+            },
+            "x": 1347,
+            "y": 741
+        },
+        {
+            "type": "Image",
+            "id": "928d479d-4756-4323-b024-bba8a4309e9f",
+            "label": "right_top_chair_1",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_top_chair_1"
+            },
+            "x": 1253,
+            "y": 762
+        },
+        {
+            "type": "Image",
+            "id": "045d43db-c70d-4f5e-b189-9b43777d99cc",
+            "label": "right_top_chair_2",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_top_chair_2"
+            },
+            "x": 1152,
+            "y": 786
+        },
+        {
+            "type": "Image",
+            "id": "cef5c638-79b1-4643-b89d-5e9b4c456da3",
+            "label": "right_top_chair_3",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_top_chair_3"
+            },
+            "x": 1046,
+            "y": 807
+        },
+        {
+            "type": "Image",
+            "id": "f877d2f5-e71e-4d2f-9e6e-9f297766f52b",
+            "label": "right_top_chair_4",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_top_chair_4"
+            },
+            "x": 928,
+            "y": 822
+        },
+        {
+            "type": "Image",
+            "id": "f9dc6623-03eb-4a5d-9f5c-a265b51aeeb3",
+            "label": "left_bottom_chair_4",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_bottom_chair_4"
+            },
+            "x": 460,
+            "y": 882
+        },
+        {
+            "type": "Image",
+            "id": "58319368-70ca-441c-8576-699bdb641efa",
+            "label": "left_bottom_chair_5",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_bottom_chair_5"
+            },
+            "x": 578,
+            "y": 894
+        },
+        {
+            "type": "Image",
+            "id": "8d16cafa-2dde-4ca5-9738-a4c229a4977f",
+            "label": "right_bottom_chair_1",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_bottom_chair_1"
+            },
+            "x": 1378,
+            "y": 832
+        },
+        {
+            "type": "Image",
+            "id": "45c65fe1-5790-46ed-910f-e72b697bae54",
+            "label": "right_bottom_chair_2",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_bottom_chair_2"
+            },
+            "x": 1287,
+            "y": 854
+        },
+        {
+            "type": "Image",
+            "id": "9f7eec27-7ca6-4d27-8381-f76cf761901a",
+            "label": "right_bottom_chair_3",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_bottom_chair_3"
+            },
+            "x": 1179,
+            "y": 872
+        },
+        {
+            "type": "Image",
+            "id": "74c321dd-2ef0-45d6-82ae-8e7bd1cee840",
+            "label": "right_bottom_chair_4",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_bottom_chair_4"
+            },
+            "x": 1072,
+            "y": 890
+        },
+        {
+            "type": "Image",
+            "id": "1ffd154a-8113-4703-bc22-ce6b3f1ed949",
+            "label": "right_bottom_chair_5",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_bottom_chair_5"
+            },
+            "x": 958,
+            "y": 902
+        },
+        {
+            "type": "Image",
+            "id": "1d426e12-a92b-4182-afc4-f10aa4e15486",
+            "label": "costume_cat",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "costume_cat",
+            "Button.callback": "() => this.interface.loadExternal('CostumeCatalog')",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "stage",
+                "frame": "costume_cat"
+            },
+            "x": 1426,
+            "y": 886
+        },
+        {
+            "type": "Image",
+            "id": "e56ac852-cdc0-4d3f-9d86-7132227f546f",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "table"
+            },
+            "x": 545,
+            "y": 645
+        },
+        {
+            "type": "Image",
+            "id": "d7c43ba5-884d-4f61-98a8-0a806fb4b154",
+            "label": "left_table_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_table_chair"
+            },
+            "x": 449,
+            "y": 661
+        },
+        {
+            "type": "Image",
+            "id": "5e8f79d1-038d-4f96-9707-fb9e2d041396",
+            "label": "middle_table_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "middle_table_chair"
+            },
+            "x": 520,
+            "y": 675
+        },
+        {
+            "type": "Image",
+            "id": "45612b06-3539-43a7-92a9-08277cb4c6e3",
+            "label": "right_table_chair",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_table_chair"
+            },
+            "x": 597,
+            "y": 686
+        },
+        {
+            "type": "Image",
+            "id": "1ba48ab2-386a-4fe3-8a03-1e3c326776a5",
+            "label": "switchbox",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "switchbox"
+            },
+            "x": 771,
+            "y": 887
+        },
+        {
+            "type": "Sprite",
+            "id": "67df425e-fd0a-43f6-8453-e077262d55e3",
+            "label": "left_sb_button",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onLeftSbButton()",
+            "texture": {
+                "key": "stage",
+                "frame": "left_sb_button0001"
+            },
+            "x": 677,
+            "y": 815
+        },
+        {
+            "type": "Sprite",
+            "id": "54bd2089-1f8c-405d-b76f-f69187615e3a",
+            "label": "left_sb_button_2",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onLeftSbButton2()",
+            "texture": {
+                "key": "stage",
+                "frame": "left_sb_button_20001"
+            },
+            "x": 702,
+            "y": 815
+        },
+        {
+            "type": "Sprite",
+            "id": "1724ae4a-e825-42c5-b35e-2a1170061b94",
+            "label": "sb_orange_button",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onObClick()",
+            "texture": {
+                "key": "stage",
+                "frame": "sb_orange_button0001"
+            },
+            "x": 731,
+            "y": 804
+        },
+        {
+            "type": "Sprite",
+            "id": "4df78597-99fa-4092-84b0-78809cf12a00",
+            "label": "sb_brown_button",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onBbClick()",
+            "texture": {
+                "key": "stage",
+                "frame": "sb_brown_button0001"
+            },
+            "x": 750,
+            "y": 822
+        },
+        {
+            "type": "Sprite",
+            "id": "a6a853c1-4ac9-440f-b644-726aeff4b37d",
+            "label": "sb_yellow_button",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onYbClick()",
+            "texture": {
+                "key": "stage",
+                "frame": "sb_yellow_button0001"
+            },
+            "x": 775,
+            "y": 804
+        },
+        {
+            "type": "Sprite",
+            "id": "3351b6f9-4acd-44c3-9892-22ada3439ee2",
+            "label": "right_sb_button",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onRightSbButton()",
+            "texture": {
+                "key": "stage",
+                "frame": "right_sb_button0001"
+            },
+            "x": 806,
+            "y": 815
+        },
+        {
+            "type": "Sprite",
+            "id": "6ede1a5c-9e11-4488-87ba-eb9575ce7bd3",
+            "label": "right_sb_button_2",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onRightSbButton2()",
+            "texture": {
+                "key": "stage",
+                "frame": "right_sb_button_20001"
+            },
+            "x": 826,
+            "y": 815
+        },
+        {
+            "type": "Sprite",
+            "id": "6d825aa3-3b9b-45a3-a023-10263d6cc1b0",
+            "label": "yellow_pully",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.onPulleyClick()",
+            "texture": {
+                "key": "stage",
+                "frame": "yellow_pully0001"
+            },
+            "x": 858,
+            "y": 803
+        },
+        {
+            "type": "Sprite",
+            "id": "e4fda2fd-5b8e-4d28-be6a-7219624d0e09",
+            "label": "locker_4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "locker_40001"
+            },
+            "x": 1114,
+            "y": 273
+        },
+        {
+            "type": "Sprite",
+            "id": "7dcce974-19cf-4624-a929-b890729be6fb",
+            "label": "locker_3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "locker_30001"
+            },
+            "x": 1071,
+            "y": 274
+        },
+        {
+            "type": "Sprite",
+            "id": "fbe07798-8afd-4c1b-b14b-bc3d357b31e4",
+            "label": "locker_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "locker_20001"
+            },
+            "x": 1027,
+            "y": 274
+        },
+        {
+            "type": "Sprite",
+            "id": "5aea23fd-18c3-431d-b8fd-4ae72b4b07af",
+            "label": "locker_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "locker_10001"
+            },
+            "x": 983,
+            "y": 274
+        },
+        {
+            "type": "Image",
+            "id": "f40f0f54-7989-45cf-86eb-32c218fdb834",
+            "label": "yellow_door",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "yellow_door",
+            "texture": {
+                "key": "stage",
+                "frame": "yellow_door"
+            },
+            "x": 873,
+            "y": 369
+        },
+        {
+            "type": "Image",
+            "id": "6cb50825-a7b1-498d-a2a0-79148487af39",
+            "label": "right_table_chair_back",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "right_table_chair_back"
+            },
+            "x": 607,
+            "y": 678,
+            "originY": 0.7218970307091754
+        },
+        {
+            "type": "Image",
+            "id": "64278ad6-7de7-4bea-a63d-05caed7ff4c6",
+            "label": "middle_table_chair_back",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "middle_table_chair_back"
+            },
+            "x": 505,
+            "y": 660,
+            "originX": 0.43960199164128877,
+            "originY": 0.6365520188979551
+        },
+        {
+            "type": "Image",
+            "id": "c6032442-b266-4878-81b8-00ce345d5f56",
+            "label": "left_table_chair_back",
+            "components": [],
+            "texture": {
+                "key": "stage",
+                "frame": "left_table_chair_back"
+            },
+            "x": 438,
+            "y": 651.7776116299486,
+            "originY": 0.756035035433666
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "90cb7793-79a2-45e5-95e1-f41ee041c1a9",
+                "34f82df9-3ca5-46e0-883c-3ab5ba875980",
+                "491818db-4c71-45dc-a2fa-8b76e11e6a86",
+                "ac091935-a31f-499f-96db-b3b66a42c38b",
+                "58319368-70ca-441c-8576-699bdb641efa",
+                "f9dc6623-03eb-4a5d-9f5c-a265b51aeeb3",
+                "fbb5b76d-7bc1-4da9-8dfc-6a0f7f3aa55b",
+                "8c74aa52-a05f-4a88-a4f8-02de5e4706b6",
+                "16d5fba3-fc7b-4502-b171-8f8f7cb3c26d",
+                "78004b65-4675-42fc-85da-ef7f452390cb",
+                "f6c9c756-6600-4e22-a5e1-d892d1976437",
+                "1428cde0-d9a6-4fc6-a967-451045c41cdf",
+                "c301a977-5cac-4ba6-86b8-d59fde9cf7fd",
+                "2b3bb4f0-eef2-4a5c-913a-ba01709d86fa",
+                "1ffd154a-8113-4703-bc22-ce6b3f1ed949",
+                "74c321dd-2ef0-45d6-82ae-8e7bd1cee840",
+                "9f7eec27-7ca6-4d27-8381-f76cf761901a",
+                "45c65fe1-5790-46ed-910f-e72b697bae54",
+                "8d16cafa-2dde-4ca5-9738-a4c229a4977f",
+                "f5a49917-6e23-43e9-910f-e4e5adedcb4b",
+                "f877d2f5-e71e-4d2f-9e6e-9f297766f52b",
+                "cef5c638-79b1-4643-b89d-5e9b4c456da3",
+                "045d43db-c70d-4f5e-b189-9b43777d99cc",
+                "928d479d-4756-4323-b024-bba8a4309e9f",
+                "e56ac852-cdc0-4d3f-9d86-7132227f546f",
+                "1d426e12-a92b-4182-afc4-f10aa4e15486",
+                "6cb50825-a7b1-498d-a2a0-79148487af39",
+                "64278ad6-7de7-4bea-a63d-05caed7ff4c6",
+                "c6032442-b266-4878-81b8-00ce345d5f56"
+            ]
+        }
+    ]
+}

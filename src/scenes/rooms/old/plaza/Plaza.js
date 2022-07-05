@@ -20,8 +20,8 @@ export default class Plaza extends RoomScene {
             'forts': () => this.triggerRoom(801, 1284, 720),
             'pet': () => this.triggerRoom(310, 818, 520),
             'cave': () => { this.triggerRoom(806, 1180, 614); this.world.client.stampEarned(10); },
-            'stage1': () => this.unimplementedPrompt(),
-            'stage2': () => this.unimplementedPrompt(),
+            'stage1': () => this.triggerRoom(340, 240, 660),
+            'stage2': () => this.triggerRoom(340, 240, 660),
             'pizza': () => this.triggerRoom(330, 1200, 400),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
@@ -71,10 +71,6 @@ export default class Plaza extends RoomScene {
         const lamp = this.add.image(129, 827, "plaza", "lamp");
         lamp.setOrigin(0.5099009900990099, 0.9323076923076923);
 
-        // title
-        const title = this.add.image(725, 200, "plaza", "title");
-        title.setOrigin(0, 0);
-
         // stage_door_1
         const stage_door_1 = this.add.image(733, 385, "plaza", "stage_door_1");
         stage_door_1.setOrigin(0.5045871559633027, 0.4567901234567901);
@@ -90,6 +86,11 @@ export default class Plaza extends RoomScene {
         // text
         const text = this.add.image(851, 248, "plaza", "text");
         text.setOrigin(0.5, 0.49333333333333335);
+
+        // text_1
+        const text_1 = this.add.text(751, 197, "", {});
+        text_1.text = "TEAM BLUE'S\nRALLY DEBUT";
+        text_1.setStyle({ "align": "center", "color": "#352b2bff", "fontFamily": "Burbank Small", "fontSize": "32px" });
 
         // lists
         const sort = [lamp, tickets];

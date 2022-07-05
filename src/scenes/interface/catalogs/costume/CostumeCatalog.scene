@@ -1,0 +1,864 @@
+{
+    "id": "d95df785-73c8-4ed8-b25b-c617021091a2",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "snapWidth": 260,
+        "snapHeight": 260,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "Book",
+        "preloadPackFiles": [
+            "client/assets/media/interface/catalogs/clothing/clothingcatalog-pack.json",
+            "client/assets/media/interface/catalogs/sports/jul22-sports.json",
+            "client/assets/media/interface/catalogs/clothing/july22/jul22-pack.json",
+            "client/assets/media/interface/catalogs/clothing/sep05-pack.json",
+            "client/assets/media/interface/catalogs/costume/costume-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "CostumeCatalog",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "0c7859bf-3140-40c7-bb0b-f95b4bc534a3",
+            "label": "block",
+            "components": [
+                "Interactive"
+            ],
+            "x": 760,
+            "y": 480,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.2,
+            "width": 1520,
+            "height": 960
+        },
+        {
+            "type": "Container",
+            "id": "4ab2a5fe-17c8-484d-9fd7-0efa2a728931",
+            "label": "page6",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "f214c1d8-2ec8-458c-8e20-d91de18938e8",
+                    "label": "page_6_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "page_6_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "f7957aa1-e003-45e2-b038-abe4549dd798",
+                    "label": "close_left_16",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 486,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "3db8745d-1e98-4b25-9830-d1c64ee27b5b",
+                    "label": "page_left_16",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 485,
+                    "y": 588,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "1f90e500-817a-4b7b-8b04-d0f7c3e38b8a",
+            "label": "page5",
+            "components": [],
+            "x": 16,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "ffc75522-b4b2-496d-bf5e-eb67f6c87085",
+                    "label": "page_5_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "page_5_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "ed42ee72-693b-4e58-b747-7197fae65eed",
+                    "label": "buy_director",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(489)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 360,
+                    "y": 271
+                },
+                {
+                    "type": "Image",
+                    "id": "eac49ba3-115d-45a8-9ac3-78e9c42a71f2",
+                    "label": "close_left_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "bf1b4bcc-9f1a-4933-be66-c9a90a61bc03",
+                    "label": "page_right_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ecb9109b-274b-4f5a-a29f-2ed1713633ef",
+                    "label": "close_right_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "27d49408-bded-4073-8a42-4301a27c83a1",
+                    "label": "page_left_6",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "2ee61559-bf00-4800-a1fb-08e96e0043d3",
+                    "label": "bg",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "bg",
+                    "Button.callback": "() => this.interface.prompt.showItem(998)",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "costume",
+                        "frame": "bg"
+                    },
+                    "x": 468,
+                    "y": 619
+                },
+                {
+                    "type": "Image",
+                    "id": "da1fb7a3-8d0f-4783-b37a-332ee768321f",
+                    "label": "bg_purch",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "bg_purch"
+                    },
+                    "x": 468,
+                    "y": 619,
+                    "scaleX": 0.6514250751313656,
+                    "scaleY": 0.6514250751313656
+                },
+                {
+                    "type": "Image",
+                    "id": "4f516e0c-1ff5-4ab3-949e-520384227e25",
+                    "label": "shadow",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "shadow"
+                    },
+                    "x": 468,
+                    "y": 619
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "f9126b13-eddc-4efb-bce9-aaee92cbaaf8",
+            "label": "page4",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "50a20c90-b004-4b0b-b468-c359a1022c86",
+                    "label": "page_4_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "page_4_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "b3a9fbc4-565a-4e5a-9aea-a3a7547e38a8",
+                    "label": "close_left_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "f062f4e4-8dc4-48be-b7ef-f63b49c9bf60",
+                    "label": "page_right_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "ce8ae001-3f26-40f5-a47b-210567ed864c",
+                    "label": "close_right_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d95da955-598f-4df2-afe2-3791f4077617",
+                    "label": "page_left_5",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "abb11428-268b-4148-9837-ada69d0dd869",
+                    "label": "buy_btrack",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(771)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 268,
+                    "y": 652,
+                    "angle": -28,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "9d451b1f-d9a5-45cf-8d78-d9854d1c4c6d",
+                    "label": "buy_redcheer",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4003)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 955,
+                    "y": 369,
+                    "angle": 12,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "67093cd1-c8ad-4928-b284-ac59112c4f16",
+                    "label": "buy_rtrack",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(4004)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 858,
+                    "y": 606,
+                    "angle": -12,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "831b88ad-69e4-4f62-b6b9-7e295ca2a0f9",
+                    "label": "buy_bluecheer",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(4002)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 616,
+                    "y": 224,
+                    "angle": -45.00000000000006,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "722e4785-32b6-44f9-8c31-a7ed10dcd2e5",
+                    "label": "buy_bpom",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(333)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 273,
+                    "y": 166,
+                    "angle": 44,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "fd937a9d-04ef-401e-ad64-4fa9d34823d5",
+                    "label": "buy_redpom",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(330)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 1000,
+                    "y": 97,
+                    "angle": 36,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Ellipse",
+                    "id": "b79c15d8-814e-4f6c-bff3-cdbc9a4e87c2",
+                    "label": "sec-dball",
+                    "components": [
+                        "SimpleButton"
+                    ],
+                    "SimpleButton.callback": "() => this.interface.prompt.showItem(617)",
+                    "x": 1141,
+                    "y": 643,
+                    "scaleX": 0.3423781066406252,
+                    "scaleY": 0.3011570029001281,
+                    "isFilled": true,
+                    "fillAlpha": 0,
+                    "width": 128,
+                    "height": 128
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "728da035-9db8-4ef8-96c3-9154dba6d325",
+            "label": "page3",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "e93b3b9b-cc26-460a-91d5-13ccef18b0ea",
+                    "label": "page_3_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "page_3_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "5ac976ac-b958-4890-a15e-dc0653fa0329",
+                    "label": "coin_3",
+                    "components": [],
+                    "texture": {
+                        "key": "jul22-sport",
+                        "frame": "coin"
+                    },
+                    "x": 679,
+                    "y": 256
+                },
+                {
+                    "type": "Image",
+                    "id": "de9d111e-a0b6-457d-b910-5b2c41a460bb",
+                    "label": "buy_moose",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "small-buy0001.png",
+                    "Button.callback": "() => this.interface.prompt.showItem(479)",
+                    "texture": {
+                        "key": "Sep2005",
+                        "frame": "small-buy0001.png"
+                    },
+                    "x": 880,
+                    "y": 221
+                },
+                {
+                    "type": "Image",
+                    "id": "f52ffc00-7e22-42f0-8a2f-a1d036001306",
+                    "label": "close_left_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d34b44f4-a88a-4d36-a5bb-07e0fc2be75e",
+                    "label": "page_right_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "d957ad53-351c-4239-9f2e-bbc05536e79c",
+                    "label": "close_right_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "9f10de8c-a83a-497d-a538-1cf26b83afa1",
+                    "label": "page_left_3",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "ed64c47b-deaa-41cf-af07-35e55e0ce529",
+            "label": "page2",
+            "components": [],
+            "x": 14,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "76dbd420-db51-4e5c-930f-9d0c80717308",
+                    "label": "page_2_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "page_2_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "72d9c11a-6b4e-4b41-a5a9-c78e5c6e1ed8",
+                    "label": "close_left",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_left",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_left"
+                    },
+                    "x": 195,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "f398b410-b4b6-481d-aa00-f8e3ab7de420",
+                    "label": "page_right_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 1207,
+                    "y": 587,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "e43a03ac-a4d7-4435-bc92-73a1b76c207e",
+                    "label": "close_right_4",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 1206,
+                    "y": 38,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "548b9880-df47-40d0-ba58-9fdc21a5d0c4",
+                    "label": "page_left_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_left",
+                    "Button.callback": "() => this.prevPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_left"
+                    },
+                    "x": 193,
+                    "y": 586,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "52f7dbfa-752e-4972-9f5b-e210933f504f",
+                    "label": "buy_ref",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy1",
+                    "Button.callback": "() => this.interface.prompt.showItem(722)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy1"
+                    },
+                    "x": 279,
+                    "y": 217,
+                    "angle": 23,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "cae23526-657f-4cf2-ab65-771b79ab3654",
+                    "label": "buy_whistle",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "buy2",
+                    "Button.callback": "() => this.interface.prompt.showItem(3002)",
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "buy2"
+                    },
+                    "x": 618,
+                    "y": 203,
+                    "angle": -18,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "017a9092-2f92-43e3-910e-733d797d9679",
+            "label": "page1",
+            "components": [],
+            "x": 13,
+            "y": 19,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "50629f87-2674-4fb7-8bf0-09cd0b691c26",
+                    "label": "page_1_fin",
+                    "components": [],
+                    "texture": {
+                        "key": "costume",
+                        "frame": "page_1_fin"
+                    },
+                    "x": 765,
+                    "y": 432
+                },
+                {
+                    "type": "Image",
+                    "id": "254bd29c-95f6-4d2e-9a2d-e5306392cb80",
+                    "label": "close_right_4_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "close_right",
+                    "Button.callback": "() => this.close()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "close_right"
+                    },
+                    "x": 918,
+                    "y": 39,
+                    "originX": 0,
+                    "originY": 0
+                },
+                {
+                    "type": "Image",
+                    "id": "1688c88d-de80-4f2d-bb97-f107c82bcca3",
+                    "label": "page_right_4_1",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "page_right",
+                    "Button.callback": "() => this.nextPage()",
+                    "Button.activeFrame": false,
+                    "texture": {
+                        "key": "clothingcatalog",
+                        "frame": "page_right"
+                    },
+                    "x": 916,
+                    "y": 588,
+                    "originX": 0,
+                    "originY": 0
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "c0303408-3e8c-411a-a9e0-380b770a5afb",
+            "label": "buttons",
+            "scope": "CLASS",
+            "components": [],
+            "x": 204,
+            "y": 59,
+            "visible": false,
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "e9bb9ec4-2a31-434d-bb4f-22cc6cc86fac",
+                    "label": "coins",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 1134,
+                    "y": 796,
+                    "originX": 1,
+                    "text": "YOUR COINS:",
+                    "fixedWidth": 600,
+                    "align": "right",
+                    "fontFamily": "CCComiccrazy",
+                    "fontSize": "32px",
+                    "stroke": "#000",
+                    "strokeThickness": 9
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "5964968d-59ed-4f6f-b2a9-4c4deeb29dba",
+            "label": "pages",
+            "objectIds": [
+                "017a9092-2f92-43e3-910e-733d797d9679",
+                "ed64c47b-deaa-41cf-af07-35e55e0ce529",
+                "728da035-9db8-4ef8-96c3-9154dba6d325",
+                "f9126b13-eddc-4efb-bce9-aaee92cbaaf8",
+                "1f90e500-817a-4b7b-8b04-d0f7c3e38b8a",
+                "4ab2a5fe-17c8-484d-9fd7-0efa2a728931"
+            ]
+        }
+    ]
+}

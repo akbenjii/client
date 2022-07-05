@@ -168,20 +168,6 @@
         },
         {
             "type": "Image",
-            "id": "73ddca4b-f3a4-41ff-921b-240bad12cbe8",
-            "label": "title",
-            "components": [],
-            "texture": {
-                "key": "plaza",
-                "frame": "title"
-            },
-            "x": 725,
-            "y": 200,
-            "originX": 0,
-            "originY": 0
-        },
-        {
-            "type": "Image",
             "id": "51061cdc-f70a-4e59-b0f3-2a5aa91e8040",
             "label": "stage_door_1",
             "components": [
@@ -253,6 +239,19 @@
             "x": 851,
             "y": 248,
             "originY": 0.49333333333333335
+        },
+        {
+            "type": "Text",
+            "id": "d23558f9-0ec1-46c4-9150-572b39a1c443",
+            "label": "text_1",
+            "components": [],
+            "x": 751,
+            "y": 197,
+            "text": "TEAM BLUE'S\nRALLY DEBUT",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "32px",
+            "color": "#352b2bff"
         }
     ],
     "plainObjects": [],

@@ -22,8 +22,8 @@ export default class Plaza extends RoomScene {
             'forts': () => this.triggerRoom(801, 1284, 720),
             'pet': () => this.triggerRoom(310, 818, 520),
             'cave': () => { this.triggerRoom(806, 1180, 614); this.world.client.stampEarned(10); },
-            'stage1': () => this.unimplementedPrompt(),
-            'stage2': () => this.unimplementedPrompt(),
+            'stage1': () => this.triggerRoom(340, 240, 660),
+            'stage2': () => this.triggerRoom(340, 240, 660),
             'pizza': () => this.triggerRoom(330, 1200, 400),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
