@@ -132,7 +132,7 @@ export default class Rink extends RoomScene {
         book_sports.setOrigin(0.5, 2.552033959411991);
 
         // lists
-        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border];
+        const sort = [fg, ball, goal_back, goal, goal_back_1, goal_1, snacks, sports_door0001, sports, right_bleachers, bleachers_rail_1, bleachers_rail, left_bleachers, fish_dogs, stand_middle, stand_base, stand_top, trash, rink_border, book_sports];
 
         // book_sports (components)
         const book_sportsButton = new Button(book_sports);

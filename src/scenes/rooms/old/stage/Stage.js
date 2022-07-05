@@ -287,7 +287,9 @@ export default class Stage extends RoomScene {
         const doorButton = new Button(door);
         doorButton.spriteName = "door";
         doorButton.activeFrame = false;
-        new MoveTo(door);
+        const doorMoveTo = new MoveTo(door);
+        doorMoveTo.x = 152;
+        doorMoveTo.y = 660;
 
         // trunk (components)
         const trunkSimpleButton = new SimpleButton(trunk);

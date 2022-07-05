@@ -199,6 +199,8 @@
             ],
             "Button.spriteName": "door",
             "Button.activeFrame": false,
+            "MoveTo.x": 152,
+            "MoveTo.y": 660,
             "texture": {
                 "key": "stage",
                 "frame": "door"
