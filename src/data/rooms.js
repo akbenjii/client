@@ -71,7 +71,7 @@ if (localStorage.clientMode == "legacy") {
         },
         300: {
             key: 'Plaza',
-            scene: require('@rooms/old/plaza/Plaza').default,
+            scene: require('@rooms/old/plaza/ffc/Plaza').default,
             x: 760,
             y: 680
         },
@@ -107,7 +107,7 @@ if (localStorage.clientMode == "legacy") {
         },
         400: {
             key: 'Beach',
-            scene: require('@rooms/old/beach/Beach').default,
+            scene: require('@rooms/old/beach/ffc/Beach').default,
             x: 840,
             y: 680
         },
@@ -119,7 +119,7 @@ if (localStorage.clientMode == "legacy") {
         },
         411: {
             key: 'Beacon',
-            scene: require('@rooms/old/beacon/Beacon').default,
+            scene: require('@rooms/old/beacon/ffc/Beacon').default,
             x: 410,
             y: 800
         },
@@ -179,7 +179,7 @@ if (localStorage.clientMode == "legacy") {
         },
         809: {
             key: 'Forest',
-            scene: require('@rooms/old/forest/Forest').default,
+            scene: require('@rooms/old/forest/ffc/Forest').default,
             x: 760,
             y: 430
         },

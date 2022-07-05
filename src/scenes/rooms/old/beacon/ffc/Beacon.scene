@@ -1,0 +1,242 @@
+{
+    "id": "7ecba816-3721-474b-ae84-d5395d010323",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/beacon/beacon-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beacon",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "edce8a24-9fb9-4aef-a422-33ed59eeb3ba",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "bg"
+            },
+            "x": -14,
+            "y": -11,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "e0e83f45-9ffd-415a-9aac-3dda455acd5f",
+            "label": "jp_holder",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "jp_holder"
+            },
+            "x": 1203,
+            "y": 443
+        },
+        {
+            "type": "Sprite",
+            "id": "9363d98b-8770-4724-be2a-e99431f370f1",
+            "label": "jetpack",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "jetpack",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1270,
+            "MoveTo.y": 575,
+            "ShowHint.text": "Jetpack Adventure",
+            "texture": {
+                "key": "beacon",
+                "frame": "jetpack"
+            },
+            "x": 1326,
+            "y": 538
+        },
+        {
+            "type": "Image",
+            "id": "134ff058-d696-4c5e-9d54-e308a0a86fae",
+            "label": "warning",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "warning"
+            },
+            "x": 233,
+            "y": 716
+        },
+        {
+            "type": "Image",
+            "id": "67ef6814-9dfa-45a0-95ae-a405c3cfd22e",
+            "label": "front_rail",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "front_rail"
+            },
+            "x": 712.179443359375,
+            "y": 961.9216962032965,
+            "originX": 0.5044360693840665,
+            "originY": 1.0296666844575377
+        },
+        {
+            "type": "Image",
+            "id": "49eccf24-79ec-49f1-8ca7-89d5efe7ef5d",
+            "label": "crate",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "crate"
+            },
+            "x": 331,
+            "y": 445
+        },
+        {
+            "type": "Image",
+            "id": "8e11f8b7-2ed3-4dff-ab5d-080cd38fdfc3",
+            "label": "tele",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "tele"
+            },
+            "x": 250,
+            "y": 295
+        },
+        {
+            "type": "Image",
+            "id": "8d314643-489e-4145-9957-02c300b00278",
+            "label": "wires",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "wires"
+            },
+            "x": 705,
+            "y": 584
+        },
+        {
+            "type": "Image",
+            "id": "b77b5825-96f3-42d6-86da-0bf5c8ebddb9",
+            "label": "metal",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "metal"
+            },
+            "x": 651,
+            "y": 590
+        },
+        {
+            "type": "Image",
+            "id": "c5787b87-c52e-4a8e-aff2-b78d4163f3e9",
+            "label": "rod",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "rod"
+            },
+            "x": 796,
+            "y": 644
+        },
+        {
+            "type": "Image",
+            "id": "34e4b41b-cd2f-479c-b9e0-4a6498c84260",
+            "label": "beacon",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "beacon"
+            },
+            "x": 712.4922644078002,
+            "y": 674.2536338428522,
+            "originX": 0.491526560627385,
+            "originY": 0.9330732761835777
+        },
+        {
+            "type": "Image",
+            "id": "78baa546-729e-4dc5-aa90-ab7213be8e52",
+            "label": "left_box",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "left_box"
+            },
+            "x": 391,
+            "y": 674.882325417265,
+            "originY": 0.6970752848433048
+        },
+        {
+            "type": "Image",
+            "id": "62263308-7fa7-4e6b-a6d6-64ee950d2832",
+            "label": "right_box",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "right_box"
+            },
+            "x": 1001.1795593203329,
+            "y": 686.3900610094647,
+            "originX": 0.5624459817709724,
+            "originY": 0.7639873268592465
+        },
+        {
+            "type": "Image",
+            "id": "3c6069bf-8a2a-4181-a6b7-f74c323ffffe",
+            "label": "cone",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "cone"
+            },
+            "x": 873,
+            "y": 802
+        },
+        {
+            "type": "Image",
+            "id": "3316674e-4cb7-4c3b-8c01-396283dbd4bc",
+            "label": "cone_1",
+            "components": [],
+            "texture": {
+                "key": "ffc-beacon",
+                "frame": "cone"
+            },
+            "x": 1135,
+            "y": 724,
+            "flipX": true
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "67ef6814-9dfa-45a0-95ae-a405c3cfd22e",
+                "78baa546-729e-4dc5-aa90-ab7213be8e52",
+                "c5787b87-c52e-4a8e-aff2-b78d4163f3e9",
+                "34e4b41b-cd2f-479c-b9e0-4a6498c84260",
+                "134ff058-d696-4c5e-9d54-e308a0a86fae",
+                "62263308-7fa7-4e6b-a6d6-64ee950d2832",
+                "3c6069bf-8a2a-4181-a6b7-f74c323ffffe"
+            ]
+        }
+    ]
+}

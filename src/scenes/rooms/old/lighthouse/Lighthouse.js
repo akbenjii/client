@@ -29,6 +29,7 @@ export default class Lighthouse extends RoomScene {
             'beacon': () => this.triggerRoom(411, 272, 680)
         }
         this.roomAnims = true
+		this.music = 'alehouse'
 
         /* END-USER-CTR-CODE */
     }
@@ -160,7 +161,7 @@ export default class Lighthouse extends RoomScene {
     }
 
     onTopOver() {
-        this.to_top0001.play('top_top')
+        this.to_top0001.play('to_top')
     }
 
     /* END-USER-CODE */
