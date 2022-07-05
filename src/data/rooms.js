@@ -5,7 +5,7 @@ if (localStorage.clientMode == "legacy") {
     rooms = {
         100: {
             key: 'Town',
-            scene: require('@rooms/old/town/Town').default,
+            scene: require('@rooms/old/town/ffc/Town').default,
             x: 760,
             y: 660
         },
@@ -125,7 +125,7 @@ if (localStorage.clientMode == "legacy") {
         },
         800: {
             key: 'Dock',
-            scene: require('@rooms/old/dock/Dock').default,
+            scene: require('@rooms/old/dock/ffc/Dock').default,
             x: 800,
             y: 400
         },
