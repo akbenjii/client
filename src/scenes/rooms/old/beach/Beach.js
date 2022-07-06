@@ -25,6 +25,7 @@ export default class Beach extends RoomScene {
             'ship': null
         }
         this.roomAnims = true
+		this.music = '583'
 
         /* END-USER-CTR-CODE */
     }
