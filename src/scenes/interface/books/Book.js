@@ -78,4 +78,9 @@ export default class Book extends BaseScene {
         this.scene.stop()
     }
 
+    unimplementedPrompt(){
+        let prompt = this.game.scene.getScene('InterfaceController').prompt
+        prompt.showError('This feature is not yet implemented!\nCPForever is in development, and is being\nactively updated. Check back soon!',)
+    }
+
 }
