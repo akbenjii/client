@@ -451,6 +451,27 @@
             "x": 1310,
             "y": 493,
             "originY": 0.5185185185185185
+        },
+        {
+            "type": "Image",
+            "id": "b0961ea5-237c-4f47-8e6f-b8fb9a5c66a4",
+            "label": "firework",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(614)",
+            "texture": {
+                "key": "firework"
+            },
+            "x": 259,
+            "y": 340,
+            "scaleX": 0.13976192905485785,
+            "scaleY": 0.13976192905485785,
+            "alpha": 0.5,
+            "alphaTopLeft": 0.5,
+            "alphaTopRight": 0.5,
+            "alphaBottomLeft": 0.5,
+            "alphaBottomRight": 0.5
         }
     ],
     "plainObjects": [],

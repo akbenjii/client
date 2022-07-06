@@ -1,6 +1,6 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
-import { Animation, Button, MoveTo } from '@components/components'
+import { Animation, Button, MoveTo, SimpleButton } from '@components/components'
 
 
 /* START OF COMPILED CODE */
@@ -19,7 +19,7 @@ export default class Cove extends RoomScene {
         this.roomTriggers =  {
             'forest': () => this.triggerRoom(809, 1190, 750)
         }
-		this.music = 'cove'
+        this.music = 'cove'
 
         /* END-USER-CTR-CODE */
     }
@@ -157,6 +157,16 @@ export default class Cove extends RoomScene {
         const hut_stool = this.add.image(1310, 493, "cove", "hut_stool");
         hut_stool.setOrigin(0.5, 0.5185185185185185);
 
+        // firework
+        const firework = this.add.image(259, 340, "firework");
+        firework.scaleX = 0.13976192905485785;
+        firework.scaleY = 0.13976192905485785;
+        firework.alpha = 0.5;
+        firework.alphaTopLeft = 0.5;
+        firework.alphaTopRight = 0.5;
+        firework.alphaBottomLeft = 0.5;
+        firework.alphaBottomRight = 0.5;
+
         // lists
         const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, hut_wall, boards, rock_1, fire, chair_arm, binoculars, silver_board, rock_3, rock_2, rock_4, fg];
 
@@ -172,6 +182,10 @@ export default class Cove extends RoomScene {
         const fireAnimation = new Animation(fire);
         fireAnimation.key = "fire";
         fireAnimation.end = 10;
+
+        // firework (components)
+        const fireworkSimpleButton = new SimpleButton(firework);
+        fireworkSimpleButton.callback = () => this.interface.prompt.showItem(614);
 
         this.sort = sort;
 
