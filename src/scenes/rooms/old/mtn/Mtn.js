@@ -33,6 +33,7 @@ export default class Mtn extends RoomScene {
             'waddle102': () => this.triggerWaddle(102),
             'waddle103': () => this.triggerWaddle(103),
         }
+		this.music = 'mountain'
 
         this.waddles = {}
         /* END-USER-CTR-CODE */

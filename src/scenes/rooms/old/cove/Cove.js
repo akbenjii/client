@@ -19,7 +19,7 @@ export default class Cove extends RoomScene {
         this.roomTriggers =  {
             'forest': () => this.triggerRoom(809, 1190, 750)
         }
-		this.music = '216'
+		this.music = 'cove'
 
         /* END-USER-CTR-CODE */
     }
