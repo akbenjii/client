@@ -271,14 +271,13 @@ export default class IglooCatalog extends Book {
 
         // page1
         const page1 = this.add.container(0, 0);
-        page1.visible = false;
 
         // page_1_fin
         const page_1_fin = this.add.image(765, 432, "igloojul22", "page_1_fin");
         page1.add(page_1_fin);
 
         // next_page0001_png
-        const next_page0001_png = this.add.image(979, 691, "Sep2005", "next-page0001.png");
+        const next_page0001_png = this.add.image(984, 691, "Sep2005", "next-page0001.png");
         page1.add(next_page0001_png);
 
         // close_right_4_1

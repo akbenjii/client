@@ -841,7 +841,6 @@
             "id": "2f9f293f-2e21-4e6c-80f4-da94bf036675",
             "label": "page1",
             "components": [],
-            "visible": false,
             "list": [
                 {
                     "type": "Image",
@@ -869,7 +868,7 @@
                         "key": "Sep2005",
                         "frame": "next-page0001.png"
                     },
-                    "x": 979,
+                    "x": 984,
                     "y": 691
                 },
                 {
