@@ -55,7 +55,7 @@ export default class Stage extends RoomScene {
             'costume': () => this.interface.loadExternal('CostumeCatalog')
         }
         this.roomAnims = true
-        this.music = '33'
+        this.music = 'peprally'
         this.boardToggle = true
         /* END-USER-CTR-CODE */
     }
