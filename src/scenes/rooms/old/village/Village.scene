@@ -198,7 +198,10 @@
             "type": "Image",
             "id": "e8099f35-1e7b-451e-a295-ad3348c46dd4",
             "label": "tours",
-            "components": [],
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.callback": "() => this.interface.prompt.showItem(428)",
             "texture": {
                 "key": "village",
                 "frame": "tours"

@@ -115,6 +115,10 @@ export default class Village extends RoomScene {
         smokeAnimation.key = "smoke";
         smokeAnimation.end = 5;
 
+        // tours (components)
+        const toursSimpleButton = new SimpleButton(tours);
+        toursSimpleButton.callback = () => this.interface.prompt.showItem(428);
+
         // chair (components)
         const chairAnimation = new Animation(chair);
         chairAnimation.key = "chair";
