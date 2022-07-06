@@ -21,6 +21,7 @@ export default class Berg extends RoomScene {
         this.roomTriggers = {
             'aqua': () => this.triggerGame("AquaGrabber", 916)
         }
+		this.music = '584'
 
         /* END-USER-CTR-CODE */
     }
