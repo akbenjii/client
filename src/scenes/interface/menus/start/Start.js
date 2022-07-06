@@ -22,7 +22,9 @@ export default class Start extends BaseScene {
         bg.setOrigin(0, 0);
 
         // pgames
-        this.add.image(760, 375, "logosplash");
+        const pgames = this.add.image(759, 432, "generic_start");
+        pgames.scaleX = 1.2359848604723156;
+        pgames.scaleY = 1.2359848604723156;
 
         // bottom
         this.add.image(760, 766, "start", "bottom");

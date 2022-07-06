@@ -30,10 +30,12 @@
             "label": "pgames",
             "components": [],
             "texture": {
-                "key": "logosplash"
+                "key": "generic_start"
             },
-            "x": 760,
-            "y": 375
+            "x": 759,
+            "y": 432,
+            "scaleX": 1.2359848604723156,
+            "scaleY": 1.2359848604723156
         },
         {
             "type": "Image",

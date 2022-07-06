@@ -1243,10 +1243,6 @@ export default class FurnitureCatalog extends Book {
         // buyButton_1 (prefab fields)
         buyButton_1.item = 418;
 
-        // buyButton_1 (components)
-        const buyButton_1Button = Button.getComponent(buyButton_1);
-        buyButton_1Button.callback = () => this.scene.buy(this.item);
-
         // buyButton_2 (prefab fields)
         buyButton_2.item = 355;
 

@@ -2058,13 +2058,11 @@
                     "unlock": [
                         "item",
                         "x",
-                        "y",
-                        "Button.callback"
+                        "y"
                     ],
                     "label": "buyButton_1",
                     "item": 418,
                     "components": [],
-                    "Button.callback": "() => this.scene.buy(this.item)",
                     "x": 264,
                     "y": 403
                 },
