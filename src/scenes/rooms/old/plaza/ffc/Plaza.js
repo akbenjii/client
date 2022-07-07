@@ -25,7 +25,7 @@ export default class Plaza extends RoomScene {
             'pizza': () => this.triggerRoom(330, 1200, 400),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
-		this.music = '677'
+        this.music = '677'
 
         /* END-USER-CTR-CODE */
     }
@@ -104,7 +104,8 @@ export default class Plaza extends RoomScene {
         scaffold.setOrigin(0.3235067085645369, 0.7348478471760627);
 
         // box
-        const box = this.add.image(382, 705, "ffc-plaza", "box");
+        const box = this.add.image(380.30649121915695, 757.4987722061338, "ffc-plaza", "box");
+        box.setOrigin(0.49069500669866456, 0.779248788330499);
 
         // coffee
         const coffee = this.add.image(896, 809.9226651847426, "ffc-plaza", "coffee");

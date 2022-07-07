@@ -25,7 +25,7 @@ export default class Beach extends RoomScene {
             'ship': null
         }
         this.roomAnims = true
-		this.music = '583'
+        this.music = '583'
 
         /* END-USER-CTR-CODE */
     }
@@ -111,13 +111,16 @@ export default class Beach extends RoomScene {
         brick_wall.setOrigin(0.4862984726469012, 0.6282961197608353);
 
         // box
-        const box = this.add.image(400, 474, "ffc-beach", "box");
+        const box = this.add.image(398.8888888888889, 521.7777777777778, "ffc-beach", "box");
+        box.setOrigin(0.4938271604938273, 0.7541371158392438);
 
         // cone
-        const cone = this.add.image(817, 486, "ffc-beach", "cone");
+        const cone = this.add.image(814.7777777777778, 510.44444444444446, "ffc-beach", "cone");
+        cone.setOrigin(0.47635933806146624, 0.7182539682539684);
 
         // cone_1
-        const cone_1 = this.add.image(1183, 505, "ffc-beach", "cone");
+        const cone_1 = this.add.image(1183, 527.2222222222222, "ffc-beach", "cone");
+        cone_1.setOrigin(0.5, 0.6984126984126979);
         cone_1.flipX = true;
 
         // lists

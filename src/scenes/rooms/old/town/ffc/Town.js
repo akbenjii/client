@@ -29,7 +29,7 @@ export default class Town extends RoomScene {
             'dance': () => this.triggerRoom(120, 300, 560),
             'gift': () => this.triggerRoom(130, 1036, 520),
         }
-		this.music = 'town'
+        this.music = 'town'
 
         /* END-USER-CTR-CODE */
     }
@@ -125,24 +125,28 @@ export default class Town extends RoomScene {
         this.add.image(722, 761, "ffc-town", "shadows");
 
         // box
-        const box = this.add.image(439, 656, "ffc-town", "box");
+        const box = this.add.image(434.1144445459, 704.8555545409997, "ffc-town", "box");
+        box.setOrigin(0.47285802525500015, 0.7598699709627644);
 
         // wood
         this.add.image(705, 669, "ffc-town", "wood");
 
         // cone
-        const cone = this.add.image(765, 835, "ffc-town", "cone");
+        const cone = this.add.image(765, 844.7711109081998, "ffc-town", "cone");
         cone.scaleX = 1.2293812897166345;
         cone.scaleY = 1.2293812897166345;
+        cone.setOrigin(0.5, 0.5883110040482519);
 
         // cone_1
-        const cone_1 = this.add.image(1060, 692, "ffc-town", "cone");
+        const cone_1 = this.add.image(1060, 709.09944408935, "ffc-town", "cone");
         cone_1.scaleX = 1.2293812897166345;
         cone_1.scaleY = 1.2293812897166345;
+        cone_1.setOrigin(0.5, 0.6545442570844431);
         cone_1.flipX = true;
 
         // sign
-        const sign = this.add.image(566, 803, "ffc-town", "sign");
+        const sign = this.add.image(566, 822.5422218163999, "ffc-town", "sign");
+        sign.setOrigin(0.5, 0.6503247832030761);
 
         // warning
         const warning = this.add.image(888, 719, "ffc-town", "warning");

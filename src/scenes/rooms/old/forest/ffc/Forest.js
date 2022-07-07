@@ -53,7 +53,8 @@ export default class Forest extends RoomScene {
         fg.setOrigin(0, 1);
 
         // box
-        const box = this.add.image(823, 307, "ffc-forest", "box");
+        const box = this.add.image(817, 334, "ffc-forest", "box");
+        box.setOrigin(0.4625, 0.6753246753246753);
 
         // table
         const table = this.add.image(528, 378, "ffc-forest", "table");
@@ -75,18 +76,21 @@ export default class Forest extends RoomScene {
         sign.setOrigin(0.4794520547945205, 0.9397590361445783);
 
         // balloon_box
-        const balloon_box = this.add.image(944, 312, "ffc-forest", "balloon_box");
+        const balloon_box = this.add.image(943, 369, "ffc-forest", "balloon_box");
+        balloon_box.setOrigin(0.4945652173913043, 0.7766990291262136);
 
         // extinguisher
-        const extinguisher = this.add.image(1033, 345, "ffc-forest", "extinguisher");
+        const extinguisher = this.add.image(1037, 393.99999999999994, "ffc-forest", "extinguisher");
         extinguisher.scaleX = 0.5913328597450803;
         extinguisher.scaleY = 0.5913328597450803;
+        extinguisher.setOrigin(0.5593366648406293, 0.9164002635675342);
 
         // wood
         this.add.image(1072, 686, "ffc-forest", "wood");
 
         // sign_1
-        const sign_1 = this.add.image(310, 298, "ffc-forest", "sign");
+        const sign_1 = this.add.image(315, 338, "ffc-forest", "sign");
+        sign_1.setOrigin(0.5306748466257669, 0.6515151515151515);
 
         // lists
         const sort = [sign, rail, middle, fg, tree, rock0001, box, balloon_box, extinguisher, table, sign_1];
