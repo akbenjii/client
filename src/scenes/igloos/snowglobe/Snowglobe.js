@@ -1,5 +1,4 @@
-
-// You can write more code here
+import IglooScene from '../IglooScene'
 
 /* START OF COMPILED CODE */
 
@@ -9,7 +8,10 @@ export default class Snowglobe extends IglooScene {
         super("Snowglobe");
 
         /* START-USER-CTR-CODE */
-        // Write your code here.
+        this.floorSpawn = [760, 760]
+        this.wallSpawn = [750, 320]
+        this.wallBounds = [580, 1000]
+        this.floorFrame = 1
         /* END-USER-CTR-CODE */
     }
 
