@@ -474,20 +474,6 @@
             "visible": false,
             "list": [
                 {
-                    "prefabId": "dd2cf1b5-b2d6-447c-8482-206fa3c10657",
-                    "id": "09a074a7-f7de-461c-a4d5-78609827d01b",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "igloo"
-                    ],
-                    "label": "upgradeButton_2",
-                    "igloo": 1,
-                    "components": [],
-                    "x": 584,
-                    "y": 526
-                },
-                {
                     "type": "Image",
                     "id": "a6ba47a2-7ff1-438c-b65f-848d7962b7fb",
                     "label": "page_3_fin",

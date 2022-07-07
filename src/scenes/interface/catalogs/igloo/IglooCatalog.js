@@ -171,10 +171,6 @@ export default class IglooCatalog extends Book {
         const page3 = this.add.container(0, 0);
         page3.visible = false;
 
-        // upgradeButton_2
-        const upgradeButton_2 = new UpgradeButton(this, 584, 526);
-        page3.add(upgradeButton_2);
-
         // page_3_fin
         const page_3_fin = this.add.image(765, 432, "igloojul22", "page_3_fin");
         page3.add(page_3_fin);
@@ -403,9 +399,6 @@ export default class IglooCatalog extends Book {
         page_left_1_11Button.spriteName = "page_left";
         page_left_1_11Button.callback = () => this.prevPage();
         page_left_1_11Button.activeFrame = false;
-
-        // upgradeButton_2 (prefab fields)
-        upgradeButton_2.igloo = 1;
 
         // small_buy0001_png_1_2_2_2_2_1_1_1_1_1 (components)
         const small_buy0001_png_1_2_2_2_2_1_1_1_1_1Button = new Button(small_buy0001_png_1_2_2_2_2_1_1_1_1_1);
