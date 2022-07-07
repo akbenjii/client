@@ -28,7 +28,7 @@ export default class MusicController extends Phaser.Scene {
         if (key !== 'music/' + this.music || key === this.musicPlaying) {
             return
         }
-        this.sound.play(key)
+        this.sound.play(key, { loop: true })
         this.musicPlaying = key
     }
 
