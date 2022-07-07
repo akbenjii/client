@@ -384,9 +384,11 @@ export default class Stage extends RoomScene {
     onPulleyClick() {
         this.yellow_pully.play('yelpulley')
         this.net.play('yellowpuffle')
+		this.world.client.stampEarned(9)
     }
 
     onRightSbButton2() {
+		this.world.client.stampEarned(9)
         this.right_sb_button_2.play('rightsb2')
         let animation = (this.boardToggle) ? 'locker4_start' : 'locker4_end'
 
@@ -395,6 +397,7 @@ export default class Stage extends RoomScene {
     }
 
     onRightSbButton() {
+		this.world.client.stampEarned(9)
         this.right_sb_button.play('rightsb')
         let rbanimation = (this.boardToggle) ? 'locker3_start' : 'locker3_end'
 
@@ -403,6 +406,7 @@ export default class Stage extends RoomScene {
     }
 
     onLeftSbButton() {
+		this.world.client.stampEarned(9)
         this.left_sb_button.play('leftsb')
         let lbanimation = (this.boardToggle) ? 'locker1_start' : 'locker1_end'
 
@@ -411,6 +415,7 @@ export default class Stage extends RoomScene {
     }
 
     onLeftSbButton2() {
+		this.world.client.stampEarned(9)
         this.left_sb_button_2.play('leftsb2')
         let lbtanimation = (this.boardToggle) ? 'locker2_start' : 'locker2_end'
 
@@ -419,16 +424,19 @@ export default class Stage extends RoomScene {
     }
 
     onYbClick() {
+		this.world.client.stampEarned(9)
         this.sb_yellow_button.play('ybutton')
         this.yb.play('yb')
     }
 
     onBbClick() {
+		this.world.client.stampEarned(9)
         this.sb_brown_button.play('bbutton')
         this.bb.play('bb')
     }
 
     onObClick() {
+		this.world.client.stampEarned(9)
         this.sb_orange_button.play('obutton')
         this.ob.play('ob')
     }
