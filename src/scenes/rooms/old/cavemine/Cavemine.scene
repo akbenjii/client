@@ -1,0 +1,261 @@
+{
+    "id": "841ab77b-3230-438c-b39f-9e48995a84c2",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/cave/cave-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Cavemine",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d69d78b1-5ab6-430d-a017-1417a01c22fc",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "bg"
+            },
+            "x": 754,
+            "y": 494
+        },
+        {
+            "type": "Image",
+            "id": "ea1acfe3-3f3a-44fa-866b-7501a5c46d52",
+            "label": "snowball_sign",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "snowball_sign"
+            },
+            "x": 782,
+            "y": 201
+        },
+        {
+            "type": "Image",
+            "id": "aa0c1f4d-f76a-4ac0-b400-aff0bb994ef0",
+            "label": "slime",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "slime"
+            },
+            "x": 1305,
+            "y": 325
+        },
+        {
+            "type": "Image",
+            "id": "33c9dcc8-4177-42df-a275-ae80e1eba320",
+            "label": "snowball_tube0001",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "snowball_tube0001"
+            },
+            "x": 922,
+            "y": 208
+        },
+        {
+            "type": "Image",
+            "id": "78c3d5be-3c67-46a6-aad1-7b993b249a1a",
+            "label": "rocks",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "rocks"
+            },
+            "x": 818,
+            "y": 397
+        },
+        {
+            "type": "Image",
+            "id": "8e3b9c47-50bf-41ae-b318-42db07581da9",
+            "label": "microwave",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "microwave"
+            },
+            "x": 1067,
+            "y": 275
+        },
+        {
+            "type": "Image",
+            "id": "e68da655-08d7-4a44-9b2a-6db7fed85624",
+            "label": "cavedoor",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "cavedoor"
+            },
+            "x": 105,
+            "y": 266
+        },
+        {
+            "type": "Image",
+            "id": "34ed42e4-1435-40f9-9309-5dc14898aa49",
+            "label": "mine_notice0001",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "mine_notice0001"
+            },
+            "x": 361,
+            "y": 552
+        },
+        {
+            "type": "Image",
+            "id": "3317e233-fcbd-4563-8c33-ba6bc5a8939c",
+            "label": "bottom_stair",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "bottom_stair"
+            },
+            "x": 541,
+            "y": 352
+        },
+        {
+            "type": "Image",
+            "id": "03fadc01-4882-4931-a750-f7506da353f3",
+            "label": "platform",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "platform"
+            },
+            "x": 435,
+            "y": 211
+        },
+        {
+            "type": "Image",
+            "id": "8790b9b7-8c06-4137-bba2-86163076bf51",
+            "label": "computer_front_right",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "computer_front_right"
+            },
+            "x": 1330,
+            "y": 812
+        },
+        {
+            "type": "Image",
+            "id": "2eb871a2-e406-4417-8186-ae4a21721b80",
+            "label": "shovel",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "shovel"
+            },
+            "x": 1010,
+            "y": 552
+        },
+        {
+            "type": "Image",
+            "id": "cde445e3-61e9-469e-ad52-7b70fc64a0fc",
+            "label": "birdhousething",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "birdhousething"
+            },
+            "x": 198,
+            "y": 37
+        },
+        {
+            "type": "Image",
+            "id": "a244958e-bdae-48d9-82c8-b260f0984a50",
+            "label": "chairs",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "chairs"
+            },
+            "x": 472,
+            "y": 100
+        },
+        {
+            "type": "Image",
+            "id": "b9dafeec-1e6b-4fb4-809d-75dda7fb050b",
+            "label": "bulbs0003",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "bulbs0003"
+            },
+            "x": 784,
+            "y": 41
+        },
+        {
+            "type": "Image",
+            "id": "e50df0a3-832d-438d-beb5-ca731a2f4d15",
+            "label": "coffee_table",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "coffee_table"
+            },
+            "x": 275,
+            "y": 150
+        },
+        {
+            "type": "Image",
+            "id": "3d898423-2a66-49db-bd57-4933602d69a9",
+            "label": "coffee_mugs_behind_table",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "coffee_mugs_behind_table"
+            },
+            "x": 238,
+            "y": 141
+        },
+        {
+            "type": "Image",
+            "id": "4cb7b4d9-7ad4-40dc-8db9-5d522792867f",
+            "label": "minehat",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "minehat"
+            },
+            "x": 386,
+            "y": 325
+        },
+        {
+            "type": "Image",
+            "id": "df6dda9d-c4d2-465e-96e4-611590d27c14",
+            "label": "coffee0001",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "coffee0001"
+            },
+            "x": 261,
+            "y": 123
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "811d25fb-0793-4398-b923-90101be1057c",
+            "label": "sort"
+        }
+    ]
+}
