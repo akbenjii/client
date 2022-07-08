@@ -8,7 +8,7 @@
         "superClassName": "RoomScene",
         "preloadMethodName": "_preload",
         "preloadPackFiles": [
-            "client/assets/media/rooms/old/cave/cave-pack.json"
+            "client/assets/media/rooms/old/cavemine/cavemine-pack.json"
         ],
         "createMethodName": "_create",
         "sceneKey": "Cavemine",

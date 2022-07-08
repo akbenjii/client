@@ -17,9 +17,13 @@ export default class Cavemine extends RoomScene {
         /* START-USER-CTR-CODE */
 
         this.roomTriggers = {
-            'boiler': () => this.triggerRoom(804, 590, 560),
-            'plaza': () => this.triggerRoom(300, 582, 588),
-            'mine': () => this.triggerRoom(808, 256, 512)
+         'minehat': () => this.interface.prompt.showItem(429),
+         'lake': () => this.unimplementedPrompt(),
+         'mine': () => this.triggerRoom(808, 1200, 400)
+        }
+
+        this.constantTriggers = {
+            'minearea' : () => this.turnOnMining(),
         }
 
         /* END-USER-CTR-CODE */
@@ -28,7 +32,7 @@ export default class Cavemine extends RoomScene {
     /** @returns {void} */
     _preload() {
 
-        this.load.pack("cave-pack", "assets/media/rooms/old/cave/cave-pack.json");
+        this.load.pack("cavemine-pack", "assets/media/rooms/old/cavemine/cavemine-pack.json");
     }
 
     /** @returns {void} */

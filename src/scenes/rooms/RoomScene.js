@@ -15,6 +15,9 @@ export default class RoomScene extends BaseScene {
         this.block = null
         // Trigger collision bodies
         this.triggers = null
+        // this.constantTriggers = null
+        // this.mining = false
+        // this.constantUpdates = null
 
         // If room is fully loaded
         this.isReady = false
@@ -40,6 +43,7 @@ export default class RoomScene extends BaseScene {
         this.sortChildren()
 
         if (this.roomPhysics) this.addPhysics()
+        // if (this.roomPhysics) this.addConstantPhysics()
         if (this.roomAnims) this.addAnims()
         this.addInput()
 
@@ -178,10 +182,13 @@ export default class RoomScene extends BaseScene {
 
     addPhysics() {
         this.matter.world.setBounds(0, 0, this.game.config.width, this.game.config.height)
-
         this.block = this.addBody('block', 0x111111)
         this.triggers = this.addTriggers()
     }
+
+    // addConstantPhysics() {
+    //     this.constantTriggers = this.addConstantTriggers()
+    // }
 
     addBody(key, color = null) {
         if (!this.roomPhysics[key]) return null
@@ -201,7 +208,7 @@ export default class RoomScene extends BaseScene {
 
     addTriggers() {
         if (!this.roomTriggers) return null
-
+ 
         let triggers = []
 
         for (let t in this.roomTriggers) {
@@ -210,9 +217,23 @@ export default class RoomScene extends BaseScene {
             trigger.callback = this.roomTriggers[t]
             triggers.push(trigger)
         }
-
         return triggers
+
     }
+
+    // addConstantTriggers() {
+    //     if (!this.constantTriggers) return null
+    //     if (this.constantTriggers == null) return null
+
+    //     let triggers = []
+    //     for (let t in this.constantTriggers) {
+    //         let trigger = this.addBody(t, 0x00FF00)
+
+    //         trigger.callback = this.constantTriggers[t]
+    //         triggers.push(trigger)
+    //     }
+    //     return triggers
+    // }
 	
 	addZones() {
 		if (!this.roomZones) return null
@@ -227,7 +248,6 @@ export default class RoomScene extends BaseScene {
 
     triggerRoom(id, x, y) {
         let room = this.crumbs.scenes.rooms[id]
-
         this.world.client.sendJoinRoom(id, room.key, x, y)
     }
 	
@@ -235,6 +255,33 @@ export default class RoomScene extends BaseScene {
 		let prompt = this.game.scene.getScene('InterfaceController').prompt
         prompt.showWindow('Do you want to play ' + this.getString(minigame) + '?', "dual",  () => this.joinGame(minigame, id))
     }
+
+    turnOnMining() {
+        if (!this.mining) this.mining = true;
+    }
+
+    // update() {
+    //     this.triggerMining();
+    //     if (this.constantUpdates) {
+    //         if (this.roomPhysics) this.addConstantPhysics()
+    //     }  
+    // }
+
+    // triggerMining() {
+    //     if (this.mining) {
+    //         console.log(this.constantTriggers)
+    //         let penguin = this.world.client.penguin;
+    //         const allEqual = arr => arr.every( v => v === arr[0] )
+    //         if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
+    //             console.log(penguin.frame)
+    //             if (penguin.frame == 26) {
+    //                 let coinValues = [5,10,25,50,100];
+    //             }
+    //         } else {
+    //             this.mining = false;
+    //         }
+    //     }
+    // }
 	
 	joinGame(minigame, id){
 		this.world.loadMinigame(minigame)
