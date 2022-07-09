@@ -267,6 +267,20 @@
             },
             "x": 261,
             "y": 124
+        },
+        {
+            "type": "Sprite",
+            "id": "0eed7e6f-a796-41a1-9ce9-d8dda0719431",
+            "label": "coin0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "coin0001"
+            },
+            "x": -89,
+            "y": 525,
+            "visible": false
         }
     ],
     "plainObjects": [],
@@ -279,7 +293,10 @@
     "lists": [
         {
             "id": "811d25fb-0793-4398-b923-90101be1057c",
-            "label": "sort"
+            "label": "sort",
+            "objectIds": [
+                "0eed7e6f-a796-41a1-9ce9-d8dda0719431"
+            ]
         }
     ]
 }
