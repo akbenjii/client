@@ -1,0 +1,163 @@
+{
+    "id": "8997fa57-f6b7-48e7-af87-6916ea1a89d7",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/forest/forest-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Forest",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "c950c10d-f767-46a9-a2bc-890d526129ab",
+            "label": "bg_1",
+            "components": [],
+            "texture": {
+                "key": "fof-forest",
+                "frame": "bg"
+            },
+            "x": 760,
+            "y": 480
+        },
+        {
+            "type": "Image",
+            "id": "a0c5ffb3-138e-40ad-a79c-f9bb8cb88507",
+            "label": "tree",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "tree"
+            },
+            "x": -17,
+            "y": 272,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "68230858-5ed1-4a66-b956-6f9ba462bf8b",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "fof-forest",
+                "frame": "bottom"
+            },
+            "x": -1,
+            "y": 988,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Image",
+            "id": "956385da-974c-4842-8041-66c0c32df5ea",
+            "label": "stairs",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "stairs"
+            },
+            "x": 1129,
+            "y": 302,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "44a1f1df-8536-406f-a92e-d43130ae3799",
+            "label": "rail",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "rail"
+            },
+            "x": 1441,
+            "y": 831,
+            "originY": 0.5885714285714285
+        },
+        {
+            "type": "Image",
+            "id": "610c10a8-e1b6-47bf-9293-ac3f7bf11de7",
+            "label": "sign",
+            "components": [],
+            "texture": {
+                "key": "forest",
+                "frame": "sign"
+            },
+            "x": 1317,
+            "y": 681,
+            "originX": 0.4794520547945205,
+            "originY": 0.9397590361445783
+        },
+        {
+            "type": "Image",
+            "id": "73065090-6c8e-4b1a-9325-8b8cffd078c1",
+            "label": "balloon_sign",
+            "components": [],
+            "texture": {
+                "key": "fof-forest",
+                "frame": "balloon_sign"
+            },
+            "x": 504,
+            "y": 159
+        },
+        {
+            "type": "Image",
+            "id": "33cde0ef-37f2-48dd-b1dc-513239aa2b9e",
+            "label": "ballons_right",
+            "components": [],
+            "texture": {
+                "key": "fof-forest",
+                "frame": "ballons_right"
+            },
+            "x": 1446,
+            "y": 520
+        },
+        {
+            "type": "Image",
+            "id": "994a49e8-1cee-4e92-b751-6f2d1ff1cf61",
+            "label": "balloondoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "balloondoor",
+            "Button.activeFrame": false,
+            "texture": {
+                "key": "fof-forest",
+                "frame": "balloondoor"
+            },
+            "x": 993.4319312289283,
+            "y": 508.8403438553587,
+            "originX": 0.4590044556408053,
+            "originY": 0.7328279557356451
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "adc6dee8-ab4a-4215-92af-f5272ec15c19",
+            "label": "sort",
+            "objectIds": [
+                "610c10a8-e1b6-47bf-9293-ac3f7bf11de7",
+                "44a1f1df-8536-406f-a92e-d43130ae3799",
+                "68230858-5ed1-4a66-b956-6f9ba462bf8b",
+                "a0c5ffb3-138e-40ad-a79c-f9bb8cb88507"
+            ]
+        }
+    ]
+}
