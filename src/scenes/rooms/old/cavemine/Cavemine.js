@@ -21,7 +21,7 @@ export default class Cavemine extends RoomScene {
          'minehat': () => this.interface.prompt.showItem(429),
          'lake': () => this.unimplementedPrompt(),
          'mine': () => this.triggerRoom(808, 1200, 400),
-		 'minearea' : () => this.triggerMining()
+         'minearea' : () => this.triggerMining()
         }
 
         // this.constantTriggers = {
@@ -43,32 +43,38 @@ export default class Cavemine extends RoomScene {
         // bg
         this.add.image(754, 494, "cavemine", "bg");
 
+        // waterfall0001
+        this.add.image(1220, 325, "cavemine", "waterfall0001");
+
         // snowball_sign
         this.add.image(782, 201, "cavemine", "snowball_sign");
 
         // slime
         this.add.image(1305, 325, "cavemine", "slime");
 
+        // wirebehindmachine
+        this.add.image(1000, 197, "cavemine", "wirebehindmachine");
+
         // snowball_tube0001
         this.add.image(922, 208, "cavemine", "snowball_tube0001");
 
-        // rocks
-        this.add.image(818, 397, "cavemine", "rocks");
-
         // microwave
-        this.add.image(1067, 275, "cavemine", "microwave");
+        this.add.image(1075, 279, "cavemine", "microwave");
+
+        // rocks
+        this.add.image(724, 439, "cavemine", "rocks");
+
+        // platform
+        this.add.image(435, 211, "cavemine", "platform");
+
+        // bottom_stair
+        this.add.image(586, 382, "cavemine", "bottom_stair");
 
         // cavedoor
         this.add.image(105, 266, "cavemine", "cavedoor");
 
-        // mine_notice0001
-        this.add.image(361, 552, "cavemine", "mine_notice0001");
-
-        // bottom_stair
-        this.add.image(541, 352, "cavemine", "bottom_stair");
-
-        // platform
-        this.add.image(435, 211, "cavemine", "platform");
+        // mine_notice
+        this.add.image(361, 552, "cavemine", "mine_notice");
 
         // computer_front_right
         this.add.image(1330, 812, "cavemine", "computer_front_right");
@@ -95,7 +101,7 @@ export default class Cavemine extends RoomScene {
         this.add.image(386, 325, "cavemine", "minehat");
 
         // coffee0001
-        this.add.image(261, 123, "cavemine", "coffee0001");
+        this.add.image(261, 124, "cavemine", "coffee0001");
 
         // lists
         const sort = [];

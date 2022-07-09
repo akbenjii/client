@@ -30,6 +30,18 @@
         },
         {
             "type": "Image",
+            "id": "79f74767-71e8-41c8-9315-cb689014e20f",
+            "label": "waterfall0001",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "waterfall0001"
+            },
+            "x": 1220,
+            "y": 325
+        },
+        {
+            "type": "Image",
             "id": "ea1acfe3-3f3a-44fa-866b-7501a5c46d52",
             "label": "snowball_sign",
             "components": [],
@@ -54,6 +66,18 @@
         },
         {
             "type": "Image",
+            "id": "9154b765-e19e-4646-b310-ef34ca3993d4",
+            "label": "wirebehindmachine",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "wirebehindmachine"
+            },
+            "x": 1000,
+            "y": 197
+        },
+        {
+            "type": "Image",
             "id": "33c9dcc8-4177-42df-a275-ae80e1eba320",
             "label": "snowball_tube0001",
             "components": [],
@@ -66,18 +90,6 @@
         },
         {
             "type": "Image",
-            "id": "78c3d5be-3c67-46a6-aad1-7b993b249a1a",
-            "label": "rocks",
-            "components": [],
-            "texture": {
-                "key": "cavemine",
-                "frame": "rocks"
-            },
-            "x": 818,
-            "y": 397
-        },
-        {
-            "type": "Image",
             "id": "8e3b9c47-50bf-41ae-b318-42db07581da9",
             "label": "microwave",
             "components": [],
@@ -85,8 +97,44 @@
                 "key": "cavemine",
                 "frame": "microwave"
             },
-            "x": 1067,
-            "y": 275
+            "x": 1075,
+            "y": 279
+        },
+        {
+            "type": "Image",
+            "id": "78c3d5be-3c67-46a6-aad1-7b993b249a1a",
+            "label": "rocks",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "rocks"
+            },
+            "x": 724,
+            "y": 439
+        },
+        {
+            "type": "Image",
+            "id": "03fadc01-4882-4931-a750-f7506da353f3",
+            "label": "platform",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "platform"
+            },
+            "x": 435,
+            "y": 211
+        },
+        {
+            "type": "Image",
+            "id": "3317e233-fcbd-4563-8c33-ba6bc5a8939c",
+            "label": "bottom_stair",
+            "components": [],
+            "texture": {
+                "key": "cavemine",
+                "frame": "bottom_stair"
+            },
+            "x": 586,
+            "y": 382
         },
         {
             "type": "Image",
@@ -103,38 +151,14 @@
         {
             "type": "Image",
             "id": "34ed42e4-1435-40f9-9309-5dc14898aa49",
-            "label": "mine_notice0001",
+            "label": "mine_notice",
             "components": [],
             "texture": {
                 "key": "cavemine",
-                "frame": "mine_notice0001"
+                "frame": "mine_notice"
             },
             "x": 361,
             "y": 552
-        },
-        {
-            "type": "Image",
-            "id": "3317e233-fcbd-4563-8c33-ba6bc5a8939c",
-            "label": "bottom_stair",
-            "components": [],
-            "texture": {
-                "key": "cavemine",
-                "frame": "bottom_stair"
-            },
-            "x": 541,
-            "y": 352
-        },
-        {
-            "type": "Image",
-            "id": "03fadc01-4882-4931-a750-f7506da353f3",
-            "label": "platform",
-            "components": [],
-            "texture": {
-                "key": "cavemine",
-                "frame": "platform"
-            },
-            "x": 435,
-            "y": 211
         },
         {
             "type": "Image",
@@ -242,7 +266,7 @@
                 "frame": "coffee0001"
             },
             "x": 261,
-            "y": 123
+            "y": 124
         }
     ],
     "plainObjects": [],
