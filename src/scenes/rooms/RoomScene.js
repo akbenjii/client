@@ -258,6 +258,7 @@ export default class RoomScene extends BaseScene {
 
     turnOnMining() {
         if (!this.mining) this.mining = true;
+        console.log(this.mining)
     }
 
     // update() {
@@ -267,19 +268,25 @@ export default class RoomScene extends BaseScene {
     //     }  
     // }
 
+    // getPenguinFrame() {
+    //     return this.world.client.penguin.frame
+    // }
+
     // triggerMining() {
-    //     if (this.mining) {
-    //         console.log(this.constantTriggers)
-    //         let penguin = this.world.client.penguin;
-    //         const allEqual = arr => arr.every( v => v === arr[0] )
-    //         if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
-    //             console.log(penguin.frame)
-    //             if (penguin.frame == 26) {
-    //                 let coinValues = [5,10,25,50,100];
-    //             }
-    //         } else {
-    //             this.mining = false;
+    //     let penguin = this.world.client.penguin;
+    //     console.log(penguin)
+    //     const allEqual = arr => arr.every( v => v === arr[0] )
+    //     console.log("outer frame:", penguin.frame)
+    //     var frame_check = setInterval(function () {this.getPenguinFrame}, 2000);
+    //     console.log(frame_check)
+    //     if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
+    //         console.log(frame_check)
+    //         if (frame_check == 26) {
+    //             console.log('dancing')
+    //             let coinValues = [5,10,25,50,100];
     //         }
+    //     } else {
+    //         this.mining = false;
     //     }
     // }
 	

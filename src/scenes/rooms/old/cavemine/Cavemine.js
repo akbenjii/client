@@ -1,6 +1,7 @@
 import RoomScene from '@scenes/rooms/RoomScene'
 
 import { Animation, Button, MoveTo, Zone } from '@components/components'
+import { setInterval, setTimeout } from 'core-js';
 
 
 /* START OF COMPILED CODE */
@@ -19,12 +20,13 @@ export default class Cavemine extends RoomScene {
         this.roomTriggers = {
          'minehat': () => this.interface.prompt.showItem(429),
          'lake': () => this.unimplementedPrompt(),
-         'mine': () => this.triggerRoom(808, 1200, 400)
+         'mine': () => this.triggerRoom(808, 1200, 400),
+		 'minearea' : () => this.triggerMining()
         }
 
-        this.constantTriggers = {
-            'minearea' : () => this.turnOnMining(),
-        }
+        // this.constantTriggers = {
+        //     'minearea' : () => this.turnOnMining(),
+        // }
 
         /* END-USER-CTR-CODE */
     }
@@ -106,8 +108,36 @@ export default class Cavemine extends RoomScene {
 
     /* START-USER-CODE */
 
+    create() {
+        super.create()
+        console.log(this.network)
+    }
+
     onZoneClick() {
         this.world.client.penguin.move(1266, 572)
+    }
+
+    getPenguinFrame() {
+        return this.world.client.penguin.frame
+    }
+
+    addMiningCoins(id, coins) {
+        this.network.send('add_coins', {id: id, coins: coins})
+    }
+
+    triggerMining() {
+        let penguin = this.world.client.penguin;
+        console.log(penguin)
+        const allEqual = arr => arr.every( v => v === arr[0] )
+        if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
+            var keyObj = this.input.keyboard.addKey('D'); 
+            let coinValues = ['5', '10', '25', '50', '100'];
+            keyObj.once('down', function(event) {setTimeout(() => {
+                    let sampled_coins = coinValues[Math.floor(Math.random()*coinValues.length)]
+                    console.log(sampled_coins)
+                    this.addMiningCoins(penguin.id, sampled_coins)
+            }, 3000);});
+        }
     }
 
     /* END-USER-CODE */
