@@ -10,6 +10,8 @@ export default class Plaza extends RoomScene {
     constructor() {
         super("Plaza");
 
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.stage10001;
         /** @type {Phaser.GameObjects.Image[]} */
         this.sort;
 
@@ -25,7 +27,7 @@ export default class Plaza extends RoomScene {
             'pizza': () => this.triggerRoom(330, 1200, 400),
             'forest': () => this.triggerRoom(809, 270, 430)
         }
-		this.music = '677'
+        this.music = '677'
 
         /* END-USER-CTR-CODE */
     }
@@ -40,8 +42,25 @@ export default class Plaza extends RoomScene {
     _create() {
 
         // bg
-        const bg = this.add.image(-18, -2, "plaza", "bg");
+        const bg = this.add.image(-18, -1, "plaza", "bg");
         bg.setOrigin(0, 0);
+
+        // bg1
+        const bg1 = this.add.image(0, 0, "mjplaza", "bg1");
+        bg1.setOrigin(0, 0);
+
+        // snowmj
+        const snowmj = this.add.image(0, 235, "snowmj");
+        snowmj.setOrigin(0, 0);
+
+        // pizza10001
+        this.add.image(1258, 277, "mjplaza", "pizza10001");
+
+        // puffleshop10001
+        this.add.image(450, 295, "mjplaza", "puffleshop10001");
+
+        // stage10001
+        const stage10001 = this.add.sprite(822, 220, "mjplaza", "stage10001");
 
         // image
         this.add.image(765, 225, "plazasky");
@@ -58,19 +77,11 @@ export default class Plaza extends RoomScene {
         const pizza_door = this.add.image(1194, 410, "plaza", "pizza_door");
         pizza_door.setOrigin(0.5311, 0.442211);
 
-        // stage_lights_back
-        const stage_lights_back = this.add.sprite(851, 174, "plaza", "stage_lights_back0001");
-        stage_lights_back.setOrigin(0.5011764705882353, 0.5);
-
         // stage_screen
         this.add.image(847, 221, "plaza", "stage_screen");
 
         // stage_lights_front
         const stage_lights_front = this.add.sprite(853, 166, "plaza", "stage_lights_front0001");
-
-        // lamp
-        const lamp = this.add.image(129, 827, "plaza", "lamp");
-        lamp.setOrigin(0.5099009900990099, 0.9323076923076923);
 
         // stage_door_1
         const stage_door_1 = this.add.image(733, 385, "plaza", "stage_door_1");
@@ -81,7 +92,7 @@ export default class Plaza extends RoomScene {
         stage_door_2.setOrigin(0.5045871559633027, 0.4567901234567901);
 
         // tickets
-        const tickets = this.add.image(846, 457, "plaza", "tickets");
+        const tickets = this.add.image(846, 456, "plaza", "tickets");
         tickets.setOrigin(0.49612403100775193, 0.9247311827956989);
 
         // text
@@ -93,8 +104,35 @@ export default class Plaza extends RoomScene {
         text_1.text = "TEAM BLUE'S\nRALLY DEBUT";
         text_1.setStyle({ "align": "center", "color": "#352b2bff", "fontFamily": "Burbank Small", "fontSize": "32px" });
 
+        // pufflehead1
+        this.add.image(236, 211, "mjplaza", "pufflehead1");
+
+        // boombox1
+        const boombox1 = this.add.image(1156, 838, "mjplaza", "boombox1");
+
+        // table1
+        const table1 = this.add.image(792, 804, "mjplaza", "table1");
+
+        // tree3
+        this.add.image(1441, 662, "mjplaza", "tree3");
+
+        // tree1
+        this.add.image(151, 679, "mjplaza", "tree1");
+
+        // logo1
+        this.add.image(182, 776, "mjplaza", "logo1");
+
+        // head2
+        this.add.image(1224, 116, "mjplaza", "head2");
+
+        // guitar1
+        this.add.image(1412, 202, "mjplaza", "guitar1");
+
+        // table10001
+        const table10001 = this.add.image(414, 771, "mjplaza", "table10001");
+
         // lists
-        const sort = [lamp, tickets];
+        const sort = [tickets, table1, table10001];
 
         // pet_door (components)
         const pet_doorButton = new Button(pet_door);
@@ -123,11 +161,6 @@ export default class Plaza extends RoomScene {
         pizza_doorMoveTo.x = 1152;
         pizza_doorMoveTo.y = 500;
 
-        // stage_lights_back (components)
-        const stage_lights_backAnimation = new Animation(stage_lights_back);
-        stage_lights_backAnimation.key = "stage_lights_back";
-        stage_lights_backAnimation.end = 16;
-
         // stage_lights_front (components)
         const stage_lights_frontAnimation = new Animation(stage_lights_front);
         stage_lights_frontAnimation.key = "stage_lights_front";
@@ -155,6 +188,11 @@ export default class Plaza extends RoomScene {
         ticketsMoveTo.x = 846;
         ticketsMoveTo.y = 426;
 
+        // boombox1 (components)
+        const boombox1SimpleButton = new SimpleButton(boombox1);
+        boombox1SimpleButton.callback = () => this.interface.prompt.showItem(5016);
+
+        this.stage10001 = stage10001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -162,6 +200,10 @@ export default class Plaza extends RoomScene {
 
 
     /* START-USER-CODE */
+    create() {
+        super.create()
+        this.stage10001.play("mjplaza_stage");
+    }
     /* END-USER-CODE */
 }
 

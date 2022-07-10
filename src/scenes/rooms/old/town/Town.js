@@ -182,6 +182,7 @@ export default class Town extends RoomScene {
 
 
     /* START-USER-CODE */
+    
 
     onCanopyOver() {
         this.disco.setFrame('disco-hover')
