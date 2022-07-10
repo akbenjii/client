@@ -9,6 +9,7 @@ export default class RoomFactory {
 
     createRoom(id) {
         let config = this.rooms[id]
+        console.log(this.scene.manager.keys)
 
         if (config.key in this.scene.manager.keys) {
             this.scene.start(config.key)

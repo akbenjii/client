@@ -353,7 +353,7 @@ if (localStorage.clientMode == "vanilla") {
             y: 790
         },
         321: {
-            key: 'Dojoext',
+            key: 'DojoExt',
             scene: require('@rooms/new/dojoext/Dojoext').default,
             x: 780,
             y: 790
