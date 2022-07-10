@@ -48,7 +48,7 @@ export default class WorldController extends BaseScene {
             return this.createRoom(id, users)
         }
 
-        this.room.events.once('shutdown', () => this.createRoom(id, users), this)
+        this.room.events.once('shutdown', () => this.createRoom(id, users))
         this.room.stop()
     }
 
