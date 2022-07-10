@@ -278,6 +278,51 @@ export default class Penguin extends BaseContainer {
 
     playPuffleAnim(anim) {
         if (!this.pufflesprite) return
+        let x;
+        let y;
+        switch (anim) {
+            case 'adopt':
+                x = 0
+                y = -60
+                break
+            case 'dive':
+                x = 150
+                y = 50
+                break
+            case 'eat':
+                x = 60
+                y = -80
+                break
+            case 'hydrant':
+                x = 100
+                y = 10
+                break
+            case 'maxed':
+                x = 75
+                y = -50
+                break
+            case 'jumpspin':
+                x = 60
+                y = -20
+                break
+            case 'jumpforward':
+                x = 80
+                y = -5
+                break
+            case 'roll':
+                x = 110
+                y = 0
+                break
+            case 'standonhead':
+                x = 75
+                y = -15
+                break
+            default:
+                x = 60
+                y = 0
+        }
+        this.pufflesprite.x = x
+        this.pufflesprite.y = y
         this.pufflesprite.play(`puffle_${this.pufflesprite.color}_${anim}`)
         this.pufflesprite.animating = true
         this.pufflesprite.once('animationcomplete', () => {

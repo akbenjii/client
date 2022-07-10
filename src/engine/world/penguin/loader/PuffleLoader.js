@@ -15,7 +15,7 @@ export default class PuffleLoader extends BaseLoader {
         let mainKey = this.getKey(puffle)
 
         let interval = setInterval(() => {
-            if (this.textureExists(mainKey) && this.textureExists(mainKey + "_adopt") && this.textureExists(mainKey + "_dig") && this.textureExists(mainKey + "_dive") && this.textureExists(mainKey + "_eat") && this.textureExists(mainKey + "_hydrant") && this.textureExists(mainKey + "_maxed") && this.textureExists(mainKey + "_scratchpost") && this.textureExists(mainKey + "_splash") && this.textureExists(mainKey + "_tireswing") && this.textureExists(mainKey + "_weightlifting") && this.textureExists(mainKey + "_jumpforward") && this.textureExists(mainKey + "_jumpspin") && this.textureExists(mainKey + "_nuzzle") && this.textureExists(mainKey + "_roll") && this.textureExists(mainKey + "_standonhead") && this.textureExists(mainKey + "_speak")) {
+            if (this.textureExists(mainKey) && this.textureExists(mainKey + "_dig") && this.textureExists(mainKey + "_dive") && this.textureExists(mainKey + "_eat") && this.textureExists(mainKey + "_hydrant") && this.textureExists(mainKey + "_maxed") && this.textureExists(mainKey + "_scratchpost") && this.textureExists(mainKey + "_splash") && this.textureExists(mainKey + "_tireswing") && this.textureExists(mainKey + "_weightlifting") && this.textureExists(mainKey + "_jumpforward") && this.textureExists(mainKey + "_jumpspin") && this.textureExists(mainKey + "_nuzzle") && this.textureExists(mainKey + "_roll") && this.textureExists(mainKey + "_standonhead") && this.textureExists(mainKey + "_speak")) {
                 this.onFileComplete(mainKey, puffle)
                 clearInterval(interval)
             }
@@ -46,6 +46,8 @@ export default class PuffleLoader extends BaseLoader {
             return
         }
 
+        if (this.penguin.room.anims.exists(`puffle_${puffle}_dig`)) return
+        
         this.createAnim(`puffle_${puffle}_adopt`, 'Sprite')
         this.createAnim(`puffle_${puffle}_dig`, 'Sprite')
         this.createAnim(`puffle_${puffle}_dive`, 'Sprite')
