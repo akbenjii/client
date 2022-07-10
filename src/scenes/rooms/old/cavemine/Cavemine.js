@@ -11,7 +11,9 @@ export default class Cavemine extends RoomScene {
     constructor() {
         super("Cavemine");
 
-        /** @type {Array<any>} */
+        /** @type {Phaser.GameObjects.Sprite} */
+        this.coin0001;
+        /** @type {Phaser.GameObjects.Sprite[]} */
         this.sort;
 
 
@@ -21,13 +23,13 @@ export default class Cavemine extends RoomScene {
          'minehat': () => this.interface.prompt.showItem(429),
          'lake': () => this.unimplementedPrompt(),
          'mine': () => this.triggerRoom(808, 1200, 400),
-         'minearea' : () => this.triggerMining()
+         'minearea' : () => this.coinsInterval = setInterval(() => this.checkMining(), 1000)
         }
 
-        // this.constantTriggers = {
-        //     'minearea' : () => this.turnOnMining(),
-        // }
-
+        this.coinsEarned = 0;
+        this.probability = function(n) {
+            return !!n && Math.random() <= n;
+       };
         /* END-USER-CTR-CODE */
     }
 
@@ -103,9 +105,14 @@ export default class Cavemine extends RoomScene {
         // coffee0001
         this.add.image(261, 124, "cavemine", "coffee0001");
 
-        // lists
-        const sort = [];
+        // coin0001
+        const coin0001 = this.add.sprite(-89, 525, "cavemine", "coin0001");
+        coin0001.visible = false;
 
+        // lists
+        const sort = [coin0001];
+
+        this.coin0001 = coin0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -117,6 +124,7 @@ export default class Cavemine extends RoomScene {
     create() {
         super.create()
         console.log(this.network)
+        this.coin0001.depth = 1000;
     }
 
     onZoneClick() {
@@ -131,18 +139,31 @@ export default class Cavemine extends RoomScene {
         this.network.send('add_coins', {id: id, coins: coins})
     }
 
-    triggerMining() {
+    checkMining() {
         let penguin = this.world.client.penguin;
-        console.log(penguin)
-        const allEqual = arr => arr.every( v => v === arr[0] )
-        if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
-            var keyObj = this.input.keyboard.addKey('D'); 
-            let coinValues = ['5', '10', '25', '50', '100'];
-            keyObj.once('down', function(event) {setTimeout(() => {
-                    let sampled_coins = coinValues[Math.floor(Math.random()*coinValues.length)]
-                    console.log(sampled_coins)
-                    this.addMiningCoins(penguin.id, sampled_coins)
-            }, 3000);});
+        if (this.matter.containsPoint(this.triggers[3], penguin.x, penguin.y)) {
+            const allEqual = arr => arr.every( v => v === arr[0] )
+            if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]) && penguin.frame == 26)  {
+                let coinValues = [5, 10, 25, 50, 100];
+                if (this.probability(.2)) {
+                    if (this.coinsEarned >= 100) {
+                        clearInterval(this.coinsInterval);
+                        this.coinsEarned = 0;
+                        return;
+                    }
+                    this.coin0001.setPosition(penguin.x, penguin.y-120)
+                    this.coin0001.visible = true;
+                    this.coin0001.playReverse({key:'coin', repeat: 0}).once('animationcomplete', () => {
+                        this.coin0001.visible = false;
+                    }, this);
+                    let coinsToGive = coinValues[Math.floor(Math.random() * coinValues.length)]
+                    this.coinsEarned = this.coinsEarned + coinsToGive;
+                    this.addMiningCoins(penguin.id, coinsToGive)
+                }
+            }
+        } else {
+            clearInterval(this.coinsInterval)
+            this.coinsEarned = 0;
         }
     }
 

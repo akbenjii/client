@@ -15,9 +15,6 @@ export default class RoomScene extends BaseScene {
         this.block = null
         // Trigger collision bodies
         this.triggers = null
-        // this.constantTriggers = null
-        // this.mining = false
-        // this.constantUpdates = null
 
         // If room is fully loaded
         this.isReady = false
@@ -43,7 +40,6 @@ export default class RoomScene extends BaseScene {
         this.sortChildren()
 
         if (this.roomPhysics) this.addPhysics()
-        // if (this.roomPhysics) this.addConstantPhysics()
         if (this.roomAnims) this.addAnims()
         this.addInput()
 
@@ -186,10 +182,6 @@ export default class RoomScene extends BaseScene {
         this.triggers = this.addTriggers()
     }
 
-    // addConstantPhysics() {
-    //     this.constantTriggers = this.addConstantTriggers()
-    // }
-
     addBody(key, color = null) {
         if (!this.roomPhysics[key]) return null
 
@@ -220,21 +212,6 @@ export default class RoomScene extends BaseScene {
         return triggers
 
     }
-
-    // addConstantTriggers() {
-    //     if (!this.constantTriggers) return null
-    //     if (this.constantTriggers == null) return null
-
-    //     let triggers = []
-    //     for (let t in this.constantTriggers) {
-    //         let trigger = this.addBody(t, 0x00FF00)
-
-    //         trigger.callback = this.constantTriggers[t]
-    //         triggers.push(trigger)
-    //     }
-    //     return triggers
-    // }
-	
 	addZones() {
 		if (!this.roomZones) return null
 		
@@ -260,35 +237,6 @@ export default class RoomScene extends BaseScene {
         if (!this.mining) this.mining = true;
         console.log(this.mining)
     }
-
-    // update() {
-    //     this.triggerMining();
-    //     if (this.constantUpdates) {
-    //         if (this.roomPhysics) this.addConstantPhysics()
-    //     }  
-    // }
-
-    // getPenguinFrame() {
-    //     return this.world.client.penguin.frame
-    // }
-
-    // triggerMining() {
-    //     let penguin = this.world.client.penguin;
-    //     console.log(penguin)
-    //     const allEqual = arr => arr.every( v => v === arr[0] )
-    //     console.log("outer frame:", penguin.frame)
-    //     var frame_check = setInterval(function () {this.getPenguinFrame}, 2000);
-    //     console.log(frame_check)
-    //     if ([429].includes(penguin.head) && allEqual([penguin.body, penguin.feet, penguin.hand, penguin.neck, penguin.face]))  {
-    //         console.log(frame_check)
-    //         if (frame_check == 26) {
-    //             console.log('dancing')
-    //             let coinValues = [5,10,25,50,100];
-    //         }
-    //     } else {
-    //         this.mining = false;
-    //     }
-    // }
 	
 	joinGame(minigame, id){
 		this.world.loadMinigame(minigame)
