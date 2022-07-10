@@ -46,6 +46,8 @@ export default class PuffleLoader extends BaseLoader {
             return
         }
 
+        if (this.penguin.room.anims.exists(`puffle_${puffle}_dig`)) return
+        
         this.createAnim(`puffle_${puffle}_adopt`, 'Sprite')
         this.createAnim(`puffle_${puffle}_dig`, 'Sprite')
         this.createAnim(`puffle_${puffle}_dive`, 'Sprite')
