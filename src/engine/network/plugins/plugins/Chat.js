@@ -20,7 +20,7 @@ export default class Chat extends Plugin {
     }
 
     filteredMessage(args) {
-        if (this.world.room.isReady && this.world.client.penguin.rank > 3) {
+        if (this.world.room.isReady && (this.world.client.penguin.rank > 3 || args.id == this.world.client.id)) {
             this.interface.showTextBalloon(args.id, args.message, true)
         }
     }

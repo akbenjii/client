@@ -23,8 +23,8 @@ import PuffleCare from '../pufflecare/PuffleCare'
 import Safe from '../floating/safe/Safe'
 import Settings from '../settings/Settings'
 import Manage from '../manage/Manage'
-import Underwater from '../underwater/Underwater'
 import Prompt from '../prompt/Prompt'
+import Snitch from '../snitch/Snitch'
 
 
 /* START OF COMPILED CODE */
@@ -100,10 +100,6 @@ export default class Main extends BaseScene {
         this.mod_button;
         /** @type {Phaser.GameObjects.Sprite} */
         this.mod_m;
-        /** @type {Settings} */
-        this.settings;
-        /** @type {Manage} */
-        this.manage;
         /** @type {ModActions} */
         this.modActions;
         /** @type {Moderator} */
@@ -114,6 +110,12 @@ export default class Main extends BaseScene {
         this.buddy;
         /** @type {PlayerCard} */
         this.playerCard;
+        /** @type {Settings} */
+        this.settings;
+        /** @type {Manage} */
+        this.manage;
+        /** @type {Snitch} */
+        this.snitch;
         /** @type {ActionsMenu} */
         this.actionsMenu;
         /** @type {EmotesMenu} */
@@ -272,16 +274,6 @@ export default class Main extends BaseScene {
         const mod_m = this.add.sprite(0, 0, "main", "mod/m");
         mod_btn.add(mod_m);
 
-        // settings
-        const settings = new Settings(this, 760, 480);
-        this.add.existing(settings);
-        settings.visible = false;
-
-        // manage
-        const manage = new Manage(this, 760, 480);
-        this.add.existing(manage);
-        manage.visible = false;
-
         // modActions
         const modActions = new ModActions(this, 760, 460);
         this.add.existing(modActions);
@@ -304,6 +296,21 @@ export default class Main extends BaseScene {
         const playerCard = new PlayerCard(this, 446, 436);
         playerCard.visible = false;
         widgetLayer.add(playerCard);
+
+        // settings
+        const settings = new Settings(this, 760, 480);
+        this.add.existing(settings);
+        settings.visible = false;
+
+        // manage
+        const manage = new Manage(this, 760, 480);
+        this.add.existing(manage);
+        manage.visible = false;
+
+        // snitch
+        const snitch = new Snitch(this, 760, 480);
+        this.add.existing(snitch);
+        snitch.visible = false;
 
         // actionsMenu
         const actionsMenu = new ActionsMenu(this, 366, 872);
@@ -519,13 +526,14 @@ export default class Main extends BaseScene {
         this.mod_btn = mod_btn;
         this.mod_button = mod_button;
         this.mod_m = mod_m;
-        this.settings = settings;
-        this.manage = manage;
         this.modActions = modActions;
         this.moderator = moderator;
         this.widgetLayer = widgetLayer;
         this.buddy = buddy;
         this.playerCard = playerCard;
+        this.settings = settings;
+        this.manage = manage;
+        this.snitch = snitch;
         this.actionsMenu = actionsMenu;
         this.emotesMenu = emotesMenu;
         this.safe = safe;
@@ -742,7 +750,6 @@ export default class Main extends BaseScene {
 
         this.chatInput.clearText()
 
-        this.balloonFactory.showTextBalloon(this.world.client.id, text)
         this.network.send('send_message', { message: text })
     }
 

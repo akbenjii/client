@@ -304,6 +304,10 @@ export default class Buttons extends BaseContainer {
         if (this.world.client.isModerator) {
             this.showWarn()
         }
+		else {
+			this.interface.main.snitch.visible = true
+			this.interface.main.snitch.returnToStep1(this.parentContainer.id)
+		}
     }
 
     showRequestBuddy() {
