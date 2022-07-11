@@ -1,0 +1,64 @@
+{
+    "id": "a69102de-326a-400d-9617-6fce7c1563b9",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/berg/berg-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Berg",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "c0bcb47b-e4c4-4ade-8c6e-effc6aedf257",
+            "label": "bergbgfof",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-berg",
+                "frame": "bergbgfof0001"
+            },
+            "x": -16,
+            "y": 1,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "0f7a085f-d758-4ba2-98d1-1de608d7e4bf",
+            "label": "aqua",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onAquaOver()",
+            "SimpleButton.callback": "() => this.onAquaClick()",
+            "SimpleButton.pixelPerfect": true,
+            "ShowHint.text": "Aqua Grabber",
+            "texture": {
+                "key": "berg",
+                "frame": "aqua0001"
+            },
+            "x": 1255,
+            "y": 325,
+            "originY": 0.4014336917562724
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
