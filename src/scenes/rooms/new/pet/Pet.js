@@ -50,19 +50,20 @@ export default class Pet extends RoomScene {
         const pufflescapefg = this.add.sprite(1020, 136, "pet-new", "pufflescapefg");
 
         // cannon_layer1
-        const cannon_layer1 = this.add.sprite(1215, 242, "pet-new", "cannon_layer1");
+        const cannon_layer1 = this.add.sprite(1215, 236, "pet-new", "cannon_layer1");
 
         // cannon_layer2
-        const cannon_layer2 = this.add.sprite(1208, 188, "pet-new", "cannon_layer20001");
+        const cannon_layer2 = this.add.sprite(1208, 182, "pet-new", "cannon_layer20001");
 
         // cannonlayer3
-        const cannonlayer3 = this.add.sprite(1232, 307, "pet-new", "cannonlayer3");
+        const cannonlayer3 = this.add.sprite(1231, 302, "pet-new", "cannonlayer3");
+        cannonlayer3.scaleX = 1.02;
 
         // cannonlayer4
-        const cannonlayer4 = this.add.sprite(1259, 255, "pet-new", "cannonlayer40001");
+        const cannonlayer4 = this.add.sprite(1259, 249, "pet-new", "cannonlayer40001");
 
         // cannon_layer5
-        const cannon_layer5 = this.add.sprite(1230, 217, "pet-new", "cannon_layer5");
+        const cannon_layer5 = this.add.sprite(1230, 211, "pet-new", "cannon_layer5");
 
         // plazadoor
         const plazadoor = this.add.sprite(776, 211, "pet-new", "plazadoor");
@@ -74,7 +75,7 @@ export default class Pet extends RoomScene {
         const parkdoor = this.add.sprite(1479, 362, "pet-new", "parkdoor");
 
         // mainbuthigher
-        const mainbuthigher = this.add.sprite(790, 495, "pet-new", "mainbuthigher");
+        const mainbuthigher = this.add.sprite(790, 496, "pet-new", "mainbuthigher");
 
         // oberry_fall
         const oberry_fall = this.add.sprite(583, 181, "pet-new", "oberry_fall0001");
@@ -319,6 +320,7 @@ export default class Pet extends RoomScene {
         // carealtar (components)
         const carealtarButton = new Button(carealtar);
         carealtarButton.spriteName = "carealtar";
+        carealtarButton.activeFrame = false;
 
         // hotel_door (components)
         const hotel_doorButton = new Button(hotel_door);
