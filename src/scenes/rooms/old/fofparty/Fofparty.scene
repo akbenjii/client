@@ -1,0 +1,384 @@
+{
+    "id": "8efb9c70-c66f-4313-a4af-3d84c3eced25",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/fofparty/fofparty-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Fofparty",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "b740ba62-9a5d-43c5-bb96-22fb545ecba4",
+            "label": "sky",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "sky"
+            },
+            "x": 762,
+            "y": 294
+        },
+        {
+            "type": "Sprite",
+            "id": "2e20530f-6ff3-4669-97a8-82e967a0a536",
+            "label": "bigcloud",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "otherpartycloud0001"
+            },
+            "x": 623,
+            "y": 94
+        },
+        {
+            "type": "Sprite",
+            "id": "c9458617-8cad-4e47-8872-5d40acab8b77",
+            "label": "cloud",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "partycloud0001"
+            },
+            "x": 531,
+            "y": 172
+        },
+        {
+            "type": "Image",
+            "id": "d0e554b5-6958-40c2-bbd0-59ad0146bfc6",
+            "label": "bgtrees",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "bgtrees"
+            },
+            "x": 221,
+            "y": 239
+        },
+        {
+            "type": "Image",
+            "id": "b3ecc1dc-d6c7-4e89-bb44-a51ab3f8bf50",
+            "label": "morebgtrees",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "morebgtrees"
+            },
+            "x": 768,
+            "y": 542
+        },
+        {
+            "type": "Image",
+            "id": "f83ba14b-b7cb-4d6c-8dbe-f06bbf3d9570",
+            "label": "finishbalholder",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "finishbalholder"
+            },
+            "x": 272,
+            "y": 303
+        },
+        {
+            "type": "Image",
+            "id": "52002ae1-731e-4386-b805-118abf1c7b07",
+            "label": "finishballoon",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "finishballoon"
+            },
+            "x": 261,
+            "y": 174
+        },
+        {
+            "type": "Image",
+            "id": "fb172951-bb3b-4e1f-bba1-ebf9aef4e327",
+            "label": "leftsigns",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "leftsigns"
+            },
+            "x": 244,
+            "y": 345
+        },
+        {
+            "type": "Image",
+            "id": "d0e36b6c-0f01-463a-beb2-68ef328baf85",
+            "label": "leftsign",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "leftsign"
+            },
+            "x": 128.27748252622806,
+            "y": 632.6648951573684,
+            "originX": 0.5753219786885156,
+            "originY": 0.7790336937779105
+        },
+        {
+            "type": "Image",
+            "id": "54c25f11-6d6e-42ef-825c-d783da4854fd",
+            "label": "gas",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "gas"
+            },
+            "x": 45,
+            "y": 695.921454568193,
+            "originY": 0.8469723322629672
+        },
+        {
+            "type": "Image",
+            "id": "c192fc67-ede3-4c40-a8d8-71d73fdc6e72",
+            "label": "exit",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "exit"
+            },
+            "x": 1388,
+            "y": 261
+        },
+        {
+            "type": "Image",
+            "id": "7c46a731-1812-4951-ac6e-a104fe40b491",
+            "label": "righttree",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "righttree"
+            },
+            "x": 1530,
+            "y": 416
+        },
+        {
+            "type": "Image",
+            "id": "c3aa3870-6c1f-4c05-87bf-93cb42e700ac",
+            "label": "jetpacks",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "jetpacks"
+            },
+            "x": 400,
+            "y": 814,
+            "originX": 0.5334146646441124,
+            "originY": 0.6832417093386804
+        },
+        {
+            "type": "Image",
+            "id": "90c310a9-5d27-4538-bf29-3a6e86cf3f43",
+            "label": "barrels",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "barrels"
+            },
+            "x": 1474,
+            "y": 692,
+            "originX": 0.5296889877499954,
+            "originY": 0.8054028488978009
+        },
+        {
+            "type": "Image",
+            "id": "d6a81a97-d0c3-496e-8bcf-26fe3b9b60ee",
+            "label": "gas_1",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "gas"
+            },
+            "x": 1337,
+            "y": 691,
+            "originY": 0.8469723322629672,
+            "flipX": true
+        },
+        {
+            "type": "Image",
+            "id": "3d11d403-8630-4a1d-82cb-398e3c40e393",
+            "label": "table",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "table"
+            },
+            "x": 1283,
+            "y": 792
+        },
+        {
+            "type": "Image",
+            "id": "0b51f374-02e1-40a6-8227-c1950fc0adc6",
+            "label": "soda",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "soda"
+            },
+            "x": 1459,
+            "y": 988
+        },
+        {
+            "type": "Image",
+            "id": "a309caa2-f56d-4d1a-8222-ea5993b15895",
+            "label": "holdas",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "holdas"
+            },
+            "x": 792,
+            "y": 667
+        },
+        {
+            "type": "Image",
+            "id": "596c3a10-b6e6-4128-a5d2-22ec216b58cd",
+            "label": "leftfire",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "leftfire"
+            },
+            "x": 534.8733285649168,
+            "y": 508.6900071526248,
+            "originX": 0.36805066831847033,
+            "originY": 0.7310239151966716
+        },
+        {
+            "type": "Image",
+            "id": "452eb7ca-8cae-49d6-80df-fdc95ec56c7d",
+            "label": "right",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "right"
+            },
+            "x": 989.9746657129833,
+            "y": 519.2533428701664,
+            "originX": 0.47732328068588775,
+            "originY": 0.8018506450507238
+        },
+        {
+            "type": "Sprite",
+            "id": "39f4dc58-15f7-4b4a-8ddf-359b4408ae15",
+            "label": "balloon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "balloon0001"
+            },
+            "x": 782.651110822588,
+            "y": 715.3111601600417,
+            "originX": 0.498340007648472,
+            "originY": 1.1152714332204032
+        },
+        {
+            "type": "Image",
+            "id": "e1801f88-eeba-4a9f-8e30-9e9d17db48a1",
+            "label": "backfireholder",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "backfireholder"
+            },
+            "x": 786,
+            "y": 547.3066909026088,
+            "originY": 5.4326672725652205
+        },
+        {
+            "type": "Sprite",
+            "id": "c09db6ac-0ed8-4974-a480-47d76223dace",
+            "label": "fire",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "fire0001"
+            },
+            "x": 783.4873046875,
+            "y": 554.1722168486423,
+            "originX": 0.47050544350648144,
+            "originY": 2.207716256074019
+        },
+        {
+            "type": "Image",
+            "id": "c89e9d9e-130d-4bef-8080-eafccf59b9cc",
+            "label": "frontfireholder",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "frontfireholder"
+            },
+            "x": 788.2563335717541,
+            "y": 580.2026742961331,
+            "originX": 0.5088483669480554,
+            "originY": 0.7464255095431163
+        },
+        {
+            "type": "Image",
+            "id": "56853368-fae9-4c1a-8b46-5a7e181af3f6",
+            "label": "hotsauce",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "hotsauce"
+            },
+            "x": 216,
+            "y": 527
+        },
+        {
+            "type": "Image",
+            "id": "44531a99-50a2-41e3-a69b-9ef93108c70b",
+            "label": "wires",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "wires"
+            },
+            "x": 780.8452519157264,
+            "y": 631.23972655586,
+            "originX": 0.46650221378716444,
+            "originY": 0.5769796511118178
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "d0e36b6c-0f01-463a-beb2-68ef328baf85",
+                "54c25f11-6d6e-42ef-825c-d783da4854fd",
+                "3d11d403-8630-4a1d-82cb-398e3c40e393",
+                "90c310a9-5d27-4538-bf29-3a6e86cf3f43",
+                "596c3a10-b6e6-4128-a5d2-22ec216b58cd",
+                "c89e9d9e-130d-4bef-8080-eafccf59b9cc",
+                "452eb7ca-8cae-49d6-80df-fdc95ec56c7d",
+                "c09db6ac-0ed8-4974-a480-47d76223dace",
+                "e1801f88-eeba-4a9f-8e30-9e9d17db48a1",
+                "39f4dc58-15f7-4b4a-8ddf-359b4408ae15",
+                "44531a99-50a2-41e3-a69b-9ef93108c70b"
+            ]
+        }
+    ]
+}

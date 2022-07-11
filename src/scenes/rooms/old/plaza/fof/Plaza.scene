@@ -1,0 +1,399 @@
+{
+    "id": "347b27b5-4b9e-4f26-95f3-b16befdcdaac",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/plaza/plaza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Plaza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "fb3a02e1-470c-4b33-a3f0-ea6bbe0ed425",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "bg"
+            },
+            "x": -18,
+            "y": -2,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "62feec7b-5aac-4950-8f85-a28290d57a5b",
+            "label": "image",
+            "components": [],
+            "texture": {
+                "key": "plazasky"
+            },
+            "x": 765,
+            "y": 225
+        },
+        {
+            "type": "Image",
+            "id": "b088bd28-e66a-4915-9c6d-6e13ba34aa14",
+            "label": "strings",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "strings"
+            },
+            "x": 782,
+            "y": 137
+        },
+        {
+            "type": "Sprite",
+            "id": "cfffd10b-5e78-45e1-9331-4bbca1a411de",
+            "label": "propplaza",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "propplaza0001"
+            },
+            "x": 50,
+            "y": 445,
+            "scaleX": 0.28,
+            "scaleY": 0.28
+        },
+        {
+            "type": "Image",
+            "id": "b5aa6a6f-2330-448f-8d8e-061689730d83",
+            "label": "propholder",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "propholder"
+            },
+            "x": 50,
+            "y": 516,
+            "scaleX": 0.28,
+            "scaleY": 0.28
+        },
+        {
+            "type": "Image",
+            "id": "924c61e4-abb7-4066-8ec9-f7a98abdba1a",
+            "label": "pet_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "pet_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 340,
+            "MoveTo.y": 540,
+            "texture": {
+                "key": "plaza",
+                "frame": "pet_door"
+            },
+            "x": 333,
+            "y": 489,
+            "originX": 0.473118,
+            "originY": 0.678218
+        },
+        {
+            "type": "Image",
+            "id": "8765e580-25dd-483f-8083-9cff48de2f75",
+            "label": "cave_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "cave_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 560,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "plaza",
+                "frame": "cave_door"
+            },
+            "x": 564,
+            "y": 510,
+            "originX": 0.473684,
+            "originY": 0.781513
+        },
+        {
+            "type": "Image",
+            "id": "b523771a-425c-42a3-8512-8209c7bc2d7a",
+            "label": "pizza_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "pizza_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 1152,
+            "MoveTo.y": 500,
+            "texture": {
+                "key": "plaza",
+                "frame": "pizza_door"
+            },
+            "x": 1194,
+            "y": 410,
+            "originX": 0.5311,
+            "originY": 0.442211
+        },
+        {
+            "type": "Sprite",
+            "id": "4cbdd610-b504-42d8-8743-1fbda48c3c9b",
+            "label": "stage_lights_back",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "stage_lights_back",
+            "Animation.end": 16,
+            "texture": {
+                "key": "plaza",
+                "frame": "stage_lights_back0001"
+            },
+            "x": 851,
+            "y": 174,
+            "originX": 0.5011764705882353
+        },
+        {
+            "type": "Image",
+            "id": "1d1d724b-4983-4e2d-962f-0cddd22b1c1f",
+            "label": "stage_screen",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "stage_screen"
+            },
+            "x": 847,
+            "y": 221
+        },
+        {
+            "type": "Sprite",
+            "id": "bc77f388-6cf6-4a0d-a2e2-aa77337d24e0",
+            "label": "stage_lights_front",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "stage_lights_front",
+            "Animation.end": 16,
+            "texture": {
+                "key": "plaza",
+                "frame": "stage_lights_front0001"
+            },
+            "x": 853,
+            "y": 166
+        },
+        {
+            "type": "Image",
+            "id": "3c244503-0b2b-4120-b579-0cbc656e15db",
+            "label": "lights",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "lights"
+            },
+            "x": 130,
+            "y": 834.1071262380094,
+            "originY": 0.8693135544022872
+        },
+        {
+            "type": "Image",
+            "id": "d1edf127-2391-44cd-a58f-48dc7184c82b",
+            "label": "lamp",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "lamp"
+            },
+            "x": 129,
+            "y": 827,
+            "originX": 0.5099009900990099,
+            "originY": 0.9323076923076923
+        },
+        {
+            "type": "Image",
+            "id": "51061cdc-f70a-4e59-b0f3-2a5aa91e8040",
+            "label": "stage_door_1",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "stage_door_1",
+            "Button.activeFrame": false,
+            "MoveTo.x": 730,
+            "MoveTo.y": 460,
+            "texture": {
+                "key": "plaza",
+                "frame": "stage_door_1"
+            },
+            "x": 733,
+            "y": 385,
+            "originX": 0.5045871559633027,
+            "originY": 0.4567901234567901
+        },
+        {
+            "type": "Image",
+            "id": "50a9ce54-f89e-4569-b0b8-86b834c33508",
+            "label": "stage_door_2",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "stage_door_2",
+            "Button.activeFrame": false,
+            "MoveTo.x": 960,
+            "MoveTo.y": 460,
+            "texture": {
+                "key": "plaza",
+                "frame": "stage_door_2"
+            },
+            "x": 958,
+            "y": 385,
+            "originX": 0.5045871559633027,
+            "originY": 0.4567901234567901
+        },
+        {
+            "type": "Image",
+            "id": "e6064661-b8d1-44d5-baa6-27a0f534f6a5",
+            "label": "tickets",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "MoveTo.x": 846,
+            "MoveTo.y": 426,
+            "texture": {
+                "key": "plaza",
+                "frame": "tickets"
+            },
+            "x": 846,
+            "y": 457,
+            "originX": 0.49612403100775193,
+            "originY": 0.9247311827956989
+        },
+        {
+            "type": "Image",
+            "id": "4778c541-1443-4ddf-b416-858568a08728",
+            "label": "text",
+            "components": [],
+            "texture": {
+                "key": "plaza",
+                "frame": "text"
+            },
+            "x": 851,
+            "y": 248,
+            "originY": 0.49333333333333335
+        },
+        {
+            "type": "Text",
+            "id": "d23558f9-0ec1-46c4-9150-572b39a1c443",
+            "label": "text_1",
+            "components": [],
+            "x": 751,
+            "y": 197,
+            "text": "TEAM BLUE'S\nRALLY DEBUT",
+            "align": "center",
+            "fontFamily": "Burbank Small",
+            "fontSize": "32px",
+            "color": "#352b2bff"
+        },
+        {
+            "type": "Image",
+            "id": "56b94428-a5ec-4685-90de-2e4533325f30",
+            "label": "balloon",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "balloon"
+            },
+            "x": 64.93834387525126,
+            "y": 903.7989802521776,
+            "originX": 0.5887792603519189,
+            "originY": 0.8716891700067002
+        },
+        {
+            "type": "Image",
+            "id": "a461f6f5-8075-44b9-8bf6-2f3d650e302f",
+            "label": "cloudsonwall",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "cloudsonwall"
+            },
+            "x": 843,
+            "y": 291
+        },
+        {
+            "type": "Image",
+            "id": "fc1e30c4-4e59-43f7-9097-8a66456be07f",
+            "label": "greenhats",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "greenhats"
+            },
+            "x": 1204,
+            "y": 795
+        },
+        {
+            "type": "Image",
+            "id": "d1a582cb-88be-461a-a8ad-4bff91053753",
+            "label": "rightlights",
+            "components": [],
+            "texture": {
+                "key": "fof-plaza",
+                "frame": "rightlights"
+            },
+            "x": 1412,
+            "y": 864,
+            "originX": 0.6198936472431653,
+            "originY": 0.8225204710841232
+        },
+        {
+            "type": "Ellipse",
+            "id": "5421d7d5-37c0-429a-af23-c11f12e05842",
+            "label": "greenprop",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1200,
+            "y": 802,
+            "scaleX": 1.4804944119135839,
+            "scaleY": 1.8655415710751233,
+            "angle": 53,
+            "isFilled": true,
+            "fillAlpha": 0,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "9c185332-22f1-4d89-8194-2666eda5e6ad",
+            "label": "sort",
+            "objectIds": [
+                "d1edf127-2391-44cd-a58f-48dc7184c82b",
+                "e6064661-b8d1-44d5-baa6-27a0f534f6a5",
+                "56b94428-a5ec-4685-90de-2e4533325f30",
+                "3c244503-0b2b-4120-b579-0cbc656e15db"
+            ]
+        }
+    ]
+}
