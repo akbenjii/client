@@ -13,8 +13,6 @@ export default class Beach extends RoomScene {
         /** @type {Phaser.GameObjects.Sprite} */
         this.scloudbeach;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.hcloudbeach;
-        /** @type {Phaser.GameObjects.Sprite} */
         this.bucket;
         /** @type {Phaser.GameObjects.Sprite} */
         this.propbeach;
@@ -58,10 +56,7 @@ export default class Beach extends RoomScene {
         this.add.image(773, 484, "fof-beach", "otherbg");
 
         // scloudbeach
-        const scloudbeach = this.add.sprite(764, 121, "fof-beach", "scloudbeach0001");
-
-        // hcloudbeach
-        const hcloudbeach = this.add.sprite(657, 66, "fof-beach", "hcloudbeach0001");
+        const scloudbeach = this.add.sprite(742, 91, "fof-beach", "clouddock0001");
 
         // leftlightsnow
         this.add.image(197, 339, "fof-beach", "leftlightsnow");
@@ -242,7 +237,6 @@ export default class Beach extends RoomScene {
         bucketSimpleButton.pixelPerfect = true;
 
         this.scloudbeach = scloudbeach;
-        this.hcloudbeach = hcloudbeach;
         this.bucket = bucket;
         this.propbeach = propbeach;
         this.proptopbeach0001 = proptopbeach0001;
@@ -265,9 +259,6 @@ export default class Beach extends RoomScene {
         this.scloudbeach.play('scloudbeach')
         this.cloudTween()
         this.onCloudTweenComplete()
-        this.hcloudbeach.play('hcloudbeach')
-        this.bigCloudTween()
-        this.onBigCloudTweenComplete()
     }
 
     cloudTween() {
@@ -289,27 +280,7 @@ export default class Beach extends RoomScene {
             onComplete: () => this.cloudTween()
         });
     }
-
-    bigCloudTween() {
-        let tween = this.tweens.add({
-            targets: this.hcloudbeach,
-            y: 66,
-            delay: 0,
-            duration: 4800,
-            onComplete: () => this.onBigCloudTweenComplete()
-        });
-    }
-
-    onBigCloudTweenComplete() {
-        let tween = this.tweens.add({
-            targets: this.hcloudbeach,
-            y: 94,
-            delay: 0,
-            duration: 4800,
-            onComplete: () => this.bigCloudTween()
-        });
-    }
-
+	
     onBucketOver() {
         let frame = this.bucket.frame.name
         frame = frame.substr(frame.length - 4)

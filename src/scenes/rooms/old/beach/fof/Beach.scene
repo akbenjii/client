@@ -48,23 +48,10 @@
             "components": [],
             "texture": {
                 "key": "fof-beach",
-                "frame": "scloudbeach0001"
+                "frame": "clouddock0001"
             },
-            "x": 764,
-            "y": 121
-        },
-        {
-            "type": "Sprite",
-            "id": "02b51d10-daf9-4af8-8715-fb1c9c5933d6",
-            "label": "hcloudbeach",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "fof-beach",
-                "frame": "hcloudbeach0001"
-            },
-            "x": 657,
-            "y": 66
+            "x": 742,
+            "y": 91
         },
         {
             "type": "Image",
