@@ -17,628 +17,1033 @@
     "displayList": [
         {
             "type": "Sprite",
-            "id": "1ed5c6f8-dd05-4d41-a805-e9e6f0bf7b77",
-            "label": "bg_outside",
+            "id": "c21f1414-1e8d-4e20-ae67-79237f09dd77",
+            "label": "bg",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "bg_outside.png"
+                "frame": "bg"
             },
-            "x": 929,
-            "y": 311
+            "x": 938,
+            "y": 325
         },
         {
             "type": "Sprite",
-            "id": "26e89580-ebb1-4996-97bb-2e00ab28a12a",
+            "id": "02954104-d020-44df-93d6-b3fa6bccdec5",
+            "label": "pufflescapebg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflescapebg"
+            },
+            "x": 1001,
+            "y": 200
+        },
+        {
+            "type": "Sprite",
+            "id": "c631d15e-bcea-4290-bd3c-0f1b938cda15",
             "label": "pufflescape",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "pufflescape_bg.png"
+                "frame": "pufflescape0001"
             },
-            "x": 990,
-            "y": 187
-        },
-        {
-            "type": "Sprite",
-            "id": "22aed092-cbc0-4074-9259-6b369942a1dc",
-            "label": "pufflescape_ball",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "pufflescape_ball0001.png"
-            },
-            "x": 1001,
-            "y": 218
-        },
-        {
-            "type": "Sprite",
-            "id": "96958960-f9a9-41d8-bafe-fd838beb0741",
-            "label": "pufflescape_top",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "pufflescape_top.png"
-            },
-            "x": 1011,
-            "y": 120
-        },
-        {
-            "type": "Sprite",
-            "id": "268cd9a6-6716-4436-8765-daa999111f61",
-            "label": "puffle_launch_door",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_launch_door0001.png"
-            },
-            "x": 1197,
-            "y": 166
-        },
-        {
-            "type": "Sprite",
-            "id": "aa55e888-e9a5-4a20-83e1-37350166410a",
-            "label": "puffle_launch_bg",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_launch_bg.png"
-            },
-            "x": 1218,
-            "y": 285
-        },
-        {
-            "type": "Sprite",
-            "id": "7ea63c57-0b15-4935-913d-c365952d11ef",
-            "label": "puffle_launch_cannon",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_launch_cannon0001.png"
-            },
-            "x": 1243,
+            "x": 1013,
             "y": 234
         },
         {
             "type": "Sprite",
-            "id": "83ba8e7e-fe86-4731-b02e-141d6e53d256",
-            "label": "puffle_launch_foreground",
+            "id": "567d8796-7703-42fb-9694-9797867905d3",
+            "label": "pufflescapefg",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "puffle_launch_foreground.png"
+                "frame": "pufflescapefg"
             },
-            "x": 1214,
-            "y": 195
+            "x": 1020,
+            "y": 136
         },
         {
             "type": "Sprite",
-            "id": "bda603f8-2654-4f04-a84d-31db84cf5c81",
-            "label": "plaza_door",
+            "id": "77537ea0-2aa4-436c-96fc-cd177d2be847",
+            "label": "cannon_layer1",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "plaza_door0001.png"
+                "frame": "cannon_layer1"
             },
-            "x": 766,
-            "y": 192
+            "x": 1215,
+            "y": 242
         },
         {
             "type": "Sprite",
-            "id": "e4ca09ab-fed9-4e3d-b76b-9817cbb095b4",
-            "label": "room_bg",
+            "id": "017462b6-ed33-4dd5-bcf2-401bfee6b040",
+            "label": "cannon_layer2",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "room_bg.png"
+                "frame": "cannon_layer20001"
             },
-            "x": 774,
-            "y": 478
+            "x": 1208,
+            "y": 188
         },
         {
             "type": "Sprite",
-            "id": "af19e7c2-dfa4-46b0-a175-162c732b582a",
-            "label": "park_door",
+            "id": "db6d330c-66e3-4a9f-a352-66852b6e7438",
+            "label": "cannonlayer3",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "park_door0001.png"
+                "frame": "cannonlayer3"
             },
-            "x": 1461,
-            "y": 340
+            "x": 1232,
+            "y": 307
         },
         {
             "type": "Sprite",
-            "id": "61cbbc22-2627-4ad1-9ea4-598eada8d3be",
-            "label": "room_bg_higher",
+            "id": "d78c5d8e-7536-49fe-af6b-7e3b716f9a35",
+            "label": "cannonlayer4",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "room_bg_higher.png"
+                "frame": "cannonlayer40001"
             },
-            "x": 775,
-            "y": 478
+            "x": 1259,
+            "y": 255
         },
         {
             "type": "Sprite",
-            "id": "38ad658a-f851-45f8-835f-3d0e23344972",
-            "label": "exit",
+            "id": "62531a22-25dd-4dab-b357-f6db22c02def",
+            "label": "cannon_layer5",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "exit0001.png"
+                "frame": "cannon_layer5"
             },
-            "x": 1473,
-            "y": 142
+            "x": 1230,
+            "y": 217
         },
         {
             "type": "Sprite",
-            "id": "9a01c665-4e26-427b-965a-88b081b6f0d5",
+            "id": "02c2fb38-caf1-4793-be02-d7c670127cea",
+            "label": "plazadoor",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "plazadoor",
+            "Button.hoverCallback": "() => this.sound.add(\"petShop-DoorPetOpen\").play()",
+            "Button.hoverOutCallback": "() => this.sound.add(\"petShop-DoorPetClose\").play()",
+            "Button.activeFrame": false,
+            "MoveTo.x": 775,
+            "MoveTo.y": 300,
+            "texture": {
+                "key": "pet-new",
+                "frame": "plazadoor"
+            },
+            "x": 776,
+            "y": 211
+        },
+        {
+            "type": "Sprite",
+            "id": "8ce30afc-18b4-443a-ac90-5f20d8675723",
+            "label": "main",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "main"
+            },
+            "x": 784,
+            "y": 497
+        },
+        {
+            "type": "Sprite",
+            "id": "8ba9ded1-53c4-48e0-ab04-a854bd28a0bb",
+            "label": "parkdoor",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "parkdoor",
+            "Button.hoverCallback": "() => this.sound.add(\"petShop-DoorRightOpen\").play()",
+            "Button.hoverOutCallback": "() => this.sound.add(\"petShop-DoorRightClose\").play()",
+            "Button.activeFrame": false,
+            "ShowHint.text": "Puffle Roundup\n",
+            "MoveTo.x": 1440,
+            "MoveTo.y": 496,
+            "texture": {
+                "key": "pet-new",
+                "frame": "parkdoor"
+            },
+            "x": 1479,
+            "y": 362
+        },
+        {
+            "type": "Sprite",
+            "id": "41ba3b11-dd96-4f39-935c-2079d19d5f32",
+            "label": "mainbuthigher",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "mainbuthigher"
+            },
+            "x": 790,
+            "y": 495
+        },
+        {
+            "type": "Sprite",
+            "id": "f754081c-be3d-4764-9454-4d6828ec7822",
+            "label": "oberry_fall",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_fall0001"
+            },
+            "x": 583,
+            "y": 181
+        },
+        {
+            "type": "Sprite",
+            "id": "8f696e0b-fd85-4628-be44-693f0501dc18",
+            "label": "sometubes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "sometubes"
+            },
+            "x": 855,
+            "y": 217
+        },
+        {
+            "type": "Sprite",
+            "id": "ca4a4e01-e702-4bdb-881b-f6c800072610",
+            "label": "oberry_machine",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_machine"
+            },
+            "x": 567,
+            "y": 394
+        },
+        {
+            "type": "Sprite",
+            "id": "c06713f5-23d1-488b-a256-2de70dc40e9d",
+            "label": "oberry_pad",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_pad"
+            },
+            "x": 610,
+            "y": 442
+        },
+        {
+            "type": "Sprite",
+            "id": "539cb6d1-9bdc-4cff-af6f-6b79333c1a43",
+            "label": "oberry_shoot",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "oberry_shoot"
+            },
+            "x": 507,
+            "y": 312
+        },
+        {
+            "type": "Sprite",
+            "id": "48b939e7-8b6f-47db-9e7c-4e3828f34430",
+            "label": "pufflearea",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflearea"
+            },
+            "x": 318,
+            "y": 360
+        },
+        {
+            "type": "Sprite",
+            "id": "6aa4b0c3-4b25-4731-b8ae-4b29d1f6044b",
+            "label": "purple_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "purple_body"
+            },
+            "x": 291,
+            "y": 293
+        },
+        {
+            "type": "Sprite",
+            "id": "9dd83ec3-3d32-4f8f-8037-12ea64c878ef",
+            "label": "purple_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "purple_eyes0001"
+            },
+            "x": 292,
+            "y": 294
+        },
+        {
+            "type": "Sprite",
+            "id": "b1a19b42-1a13-4fb0-a9d4-407414839541",
+            "label": "purple_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "purple_jump0001"
+            },
+            "x": 291,
+            "y": 268,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "1ecd30fb-b4cd-42a7-8149-71a9f1d1efe0",
+            "label": "white_lookaround",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "white_lookaround0001"
+            },
+            "x": 387,
+            "y": 296
+        },
+        {
+            "type": "Sprite",
+            "id": "bffce166-2c26-4902-8e3a-21c623c5c752",
+            "label": "green_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "green_body"
+            },
+            "x": 239,
+            "y": 361
+        },
+        {
+            "type": "Sprite",
+            "id": "c3650b10-f341-4efb-9e1a-f14776150766",
+            "label": "green_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "green_eyes0001"
+            },
+            "x": 241,
+            "y": 362
+        },
+        {
+            "type": "Sprite",
+            "id": "14fc135c-3f1c-4a0a-be6a-5d6c1e5b22b5",
+            "label": "green_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "green_jump0001"
+            },
+            "x": 240,
+            "y": 336,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "f8169957-0e74-463d-8829-c8fba8225186",
+            "label": "brown_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "brown_body"
+            },
+            "x": 295,
+            "y": 354
+        },
+        {
+            "type": "Sprite",
+            "id": "0ac3e306-49c8-46e2-99d4-8c6928a0be95",
+            "label": "brown_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "brown_eyes0001"
+            },
+            "x": 301,
+            "y": 356
+        },
+        {
+            "type": "Sprite",
+            "id": "b256707f-705a-41fd-b248-3830b3c2317f",
+            "label": "brown_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "brown_jump0001"
+            },
+            "x": 300,
+            "y": 329,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "290d3a10-bf2b-4140-814f-3f97883d7965",
+            "label": "yellow_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellow_body"
+            },
+            "x": 357,
+            "y": 355
+        },
+        {
+            "type": "Sprite",
+            "id": "a78be032-f042-4445-b6c5-207b033b6fff",
+            "label": "yellow_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellow_eyes0001"
+            },
+            "x": 364,
+            "y": 357
+        },
+        {
+            "type": "Sprite",
+            "id": "25b0cfc9-2889-42cc-adab-6d8dcf36dfbf",
+            "label": "yellow_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellow_jump0001"
+            },
+            "x": 363,
+            "y": 330,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "ba3f9c1f-a279-4f42-bbec-5ea8dfb73782",
+            "label": "border_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "border_idle0001"
+            },
+            "x": 280,
+            "y": 402
+        },
+        {
+            "type": "Sprite",
+            "id": "5a27c43a-a6e8-4ba7-ad4d-5594aef0b9c3",
+            "label": "border_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "border_jump0001"
+            },
+            "x": 280,
+            "y": 371,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "26a62f7c-b398-4f79-9f0e-4f2df1ec768e",
+            "label": "tabby_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "tabby_idle0001"
+            },
+            "x": 337,
+            "y": 404
+        },
+        {
+            "type": "Sprite",
+            "id": "6c490c7e-70a4-4208-9218-ddc5dcbb5e27",
+            "label": "tabby_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "tabby_jump0001"
+            },
+            "x": 338,
+            "y": 371,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "23e082ab-4ffa-4fb0-a007-7bd073d271e3",
+            "label": "red_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "red_body"
+            },
+            "x": 389,
+            "y": 390
+        },
+        {
+            "type": "Sprite",
+            "id": "706dc791-aea6-4c9b-9483-df9738a166ef",
+            "label": "red_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "red_eyes0001"
+            },
+            "x": 390,
+            "y": 391
+        },
+        {
+            "type": "Sprite",
+            "id": "13c163fb-d4c1-4ed2-aabf-246316940184",
+            "label": "red_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "red_jump0001"
+            },
+            "x": 389,
+            "y": 365,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "b43a90db-7bd5-47ee-a8c9-270045d8974a",
+            "label": "blue_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "blue_body"
+            },
+            "x": 237,
+            "y": 431
+        },
+        {
+            "type": "Sprite",
+            "id": "c619081c-9c4a-4e9e-aadd-abceb04bc419",
+            "label": "blue_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "blue_eyes0001"
+            },
+            "x": 245,
+            "y": 433
+        },
+        {
+            "type": "Sprite",
+            "id": "b931d6ea-76f3-4402-8a6c-8e715bd5d5f8",
+            "label": "blue_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "blue_jump0001"
+            },
+            "x": 243,
+            "y": 406,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "cf596e1a-45fa-4027-8d5e-5f1988ae6c08",
+            "label": "pufflearea_front",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflearea_front"
+            },
+            "x": 413,
+            "y": 270
+        },
+        {
+            "type": "Sprite",
+            "id": "a7ba9c9a-2b34-4b6b-b157-25ac7d2df6da",
+            "label": "light",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "light"
+            },
+            "x": 106,
+            "y": 334
+        },
+        {
+            "type": "Sprite",
+            "id": "3d1d9f3a-a567-44b9-81d2-35af41bb14e9",
+            "label": "main_fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "main_fg"
+            },
+            "x": 781,
+            "y": 411
+        },
+        {
+            "type": "Sprite",
+            "id": "db86e8df-6cff-4273-a6df-97d492998bc0",
+            "label": "pufflearea_floor",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pufflearea_floor"
+            },
+            "x": 332,
+            "y": 470
+        },
+        {
+            "type": "Sprite",
+            "id": "8bc705ef-0b1f-45f5-9614-1384d7fdb3dd",
+            "label": "orange_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "orange_idle0001"
+            },
+            "x": 400,
+            "y": 182
+        },
+        {
+            "type": "Sprite",
+            "id": "298f4a48-f6fc-474d-ad1c-fb825e16aa9b",
+            "label": "orange_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "orange_jump0001"
+            },
+            "x": 400,
+            "y": 157,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "e3a59b7f-7a9f-4ff6-b85e-60e327a83857",
+            "label": "pink_body",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pink_body"
+            },
+            "x": 278,
+            "y": 204
+        },
+        {
+            "type": "Sprite",
+            "id": "8fffe568-e2d9-41ba-b370-f66dac0065fb",
+            "label": "pink_eyes",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pink_eyes0001"
+            },
+            "x": 284,
+            "y": 206
+        },
+        {
+            "type": "Sprite",
+            "id": "34f28167-397b-4dc4-b728-b557000a22e4",
+            "label": "pink_jump",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "pink_jump0001"
+            },
+            "x": 279,
+            "y": 179,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "6a592269-023c-43f0-9a73-0093afa718dd",
+            "label": "black_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "black_idle"
+            },
+            "x": 456,
+            "y": 170
+        },
+        {
+            "type": "Sprite",
+            "id": "f09210d0-3c84-4d13-bb44-fd12640a1f64",
+            "label": "apollo_idle",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "apollo_idle0001"
+            },
+            "x": 343,
+            "y": 196
+        },
+        {
+            "type": "Sprite",
+            "id": "cb5334f3-f94d-43c0-8a18-2048123d6abf",
             "label": "rug",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "rug.png"
+                "frame": "rug"
             },
-            "x": 765,
-            "y": 686
+            "x": 775,
+            "y": 702
         },
         {
             "type": "Sprite",
-            "id": "3093ca8c-cbcc-46ce-a67e-c5b451ac27e0",
-            "label": "rug_puffles",
+            "id": "1772c759-4c53-499e-903b-f77c66193b07",
+            "label": "rug_puffle_blue",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "rug_puffles0001.png"
+                "frame": "rug_puffle_blue"
             },
-            "x": 777,
-            "y": 680
+            "x": 790,
+            "y": 692
         },
         {
             "type": "Sprite",
-            "id": "ec271e64-a907-4b58-8973-c04dadac70b9",
-            "label": "pipes_pink",
+            "id": "67629a2b-3bed-4ff5-88f4-285102e84a55",
+            "label": "cart_back",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "pipes_pink.png"
+                "frame": "cart_back"
             },
-            "x": 849,
-            "y": 199
+            "x": 1235,
+            "y": 462
         },
         {
             "type": "Sprite",
-            "id": "835d7b7f-6adf-4536-8acf-ed4c69482225",
-            "label": "goldberrymachine",
+            "id": "6b4a5ab8-a3a2-49c0-8e4d-691ebbefba07",
+            "label": "cart_front",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "goldberrymachine0001.png"
+                "frame": "cart_front"
             },
-            "x": 557,
-            "y": 170
+            "x": 1224,
+            "y": 532
         },
         {
             "type": "Sprite",
-            "id": "9410a7cc-8218-49d6-a004-b107f7621acc",
-            "label": "goldberry_bottom",
+            "id": "1c2ca154-50dc-424e-aecb-433885617287",
+            "label": "railing_left",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "goldberry_bottom.png"
+                "frame": "railing_left"
             },
-            "x": 551,
-            "y": 378
+            "x": 1336,
+            "y": 499
         },
         {
             "type": "Sprite",
-            "id": "a9249178-e507-4c63-a78c-b37817ebd4b5",
-            "label": "goldberry_spout",
+            "id": "4fe68f68-9427-4d2c-872c-63c0f5d7f993",
+            "label": "railing_right",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "goldberry_spout0001.png"
+                "frame": "railing_right"
             },
-            "x": 506,
-            "y": 292
+            "x": 1446,
+            "y": 582
         },
         {
             "type": "Sprite",
-            "id": "f0590951-49db-48ae-a1e7-303cb1b992a1",
-            "label": "house_puffles",
+            "id": "5751cec7-a006-400d-83ae-4a288ee5e909",
+            "label": "surfboard",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "house_puffles.png"
+                "frame": "surfboard"
             },
-            "x": 316,
-            "y": 345
+            "x": 1470,
+            "y": 610
         },
         {
             "type": "Sprite",
-            "id": "663066d9-69c9-4c4e-b795-68af0d105455",
-            "label": "wood_bar",
+            "id": "a9eef244-f8e0-435f-bf6f-581c219b4306",
+            "label": "highbedback",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "wood_bar.png"
+                "frame": "highbedback"
             },
-            "x": 313,
-            "y": 463
+            "x": 1346,
+            "y": 699
         },
         {
             "type": "Sprite",
-            "id": "842c164a-ec0c-4a76-af8b-17154dd2e519",
-            "label": "puffle_items_eight",
+            "id": "8a7241de-f6a8-466e-aeaa-a21c59f1244f",
+            "label": "highbedfront",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "puffle_items_eight.png"
+                "frame": "highbedfront"
             },
-            "x": 1217,
-            "y": 476
+            "x": 1342,
+            "y": 854
         },
         {
             "type": "Sprite",
-            "id": "4e25505c-36ee-4252-a04f-63550d318885",
-            "label": "house_light",
+            "id": "861dee6c-02e7-4e89-b938-22d3984a6d7e",
+            "label": "carealtar",
+            "scope": "CLASS",
+            "components": [
+                "Button"
+            ],
+            "Button.spriteName": "carealtar",
+            "texture": {
+                "key": "pet-new",
+                "frame": "carealtar"
+            },
+            "x": 272,
+            "y": 529
+        },
+        {
+            "type": "Sprite",
+            "id": "619f6c7f-6361-49c2-9d36-b5cb1008d5fa",
+            "label": "dualfood",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "house_light0001.png"
+                "frame": "dualfood"
             },
-            "x": 87,
-            "y": 333
+            "x": 1040,
+            "y": 883
         },
         {
             "type": "Sprite",
-            "id": "217a80a6-2eb9-44ad-a5bb-59bf6eace144",
-            "label": "hut_foreground",
+            "id": "e317a480-41ea-4b68-9cf9-78be9668833a",
+            "label": "skateboard",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "hut_foreground.png"
+                "frame": "skateboard"
             },
-            "x": 766,
-            "y": 402
+            "x": 979,
+            "y": 798
         },
         {
             "type": "Sprite",
-            "id": "c1721301-4972-4450-8cbe-0d7b1fbb913e",
-            "label": "railing_2",
+            "id": "a4460590-b65a-4d6f-9e7f-f72682391b7b",
+            "label": "ball",
             "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "pet-new",
-                "frame": "railing.png"
+                "frame": "ball"
             },
-            "x": 1322,
-            "y": 482
-        },
-        {
-            "type": "Sprite",
-            "id": "c28fd55d-869c-432a-bf96-57a76a1fbcc6",
-            "label": "railing_1",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "railing.png"
-            },
-            "x": 1419,
-            "y": 570,
-            "angle": -6
-        },
-        {
-            "type": "Sprite",
-            "id": "97ce26e3-fe48-4ce3-9c02-4f069db5bfdd",
-            "label": "adoption_sign",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "adoption_sign0001.png"
-            },
-            "x": 324,
-            "y": 138
-        },
-        {
-            "type": "Sprite",
-            "id": "1cc3f71b-46df-4ae1-8fae-a1141cc7ed04",
-            "label": "top_puffles",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "top_puffles.png"
-            },
-            "x": 353,
-            "y": 175
-        },
-        {
-            "type": "Sprite",
-            "id": "e326f561-9d47-422c-889a-1b53da6dc3d2",
-            "label": "puffle_items_seven",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_items_seven.png"
-            },
-            "x": 1440,
-            "y": 616
-        },
-        {
-            "type": "Sprite",
-            "id": "cb52ec88-ea36-405c-afd4-7506a82d04ac",
-            "label": "puffle_items_six",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_items_six.png"
-            },
-            "x": 1325,
-            "y": 817
-        },
-        {
-            "type": "Sprite",
-            "id": "6c745628-0599-4fe9-bc67-24c7dbc535f6",
-            "label": "book",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "book0001.png"
-            },
-            "x": 268,
-            "y": 522
-        },
-        {
-            "type": "Sprite",
-            "id": "b6473473-2cdd-406a-b442-5e1eba9727b6",
-            "label": "goldberry_pad",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "goldberry_pad0001.png"
-            },
-            "x": 254,
+            "x": 490,
             "y": 431
         },
         {
             "type": "Sprite",
-            "id": "f50c0ba1-c7b3-47a0-9b9b-f51548162d36",
+            "id": "5acce23e-0398-4ae7-bce7-13cbba0d5dab",
+            "label": "stackedbowls",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "stackedbowls"
+            },
+            "x": 918,
+            "y": 417
+        },
+        {
+            "type": "Sprite",
+            "id": "5242fbab-03a9-4c77-9e0c-fd364365acd9",
+            "label": "yellowbowl",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "yellowbowl"
+            },
+            "x": 953,
+            "y": 453
+        },
+        {
+            "type": "Sprite",
+            "id": "ef28ee77-946e-44f7-89ef-d157110851f8",
             "label": "hotel_door",
             "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "hotel_door0001.png"
-            },
-            "x": 20,
-            "y": 566
-        },
-        {
-            "type": "Sprite",
-            "id": "564b3724-c546-415e-a8b6-16bd07f45436",
-            "label": "arch",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "arch.png"
-            },
-            "x": 22,
-            "y": 569
-        },
-        {
-            "type": "Sprite",
-            "id": "20b047ca-5f9f-4dff-9fbb-5cdba138729e",
-            "label": "hotel_puffle",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "hotel_puffle.png"
-            },
-            "x": 81,
-            "y": 315
-        },
-        {
-            "type": "Sprite",
-            "id": "4533b0ff-33b6-4b5b-8e72-9898e68e8cff",
-            "label": "puffle_items_five",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_items_five.png"
-            },
-            "x": 1006,
-            "y": 833
-        },
-        {
-            "type": "Sprite",
-            "id": "5d79a4c8-3603-4ed3-9ee3-a1ee858ed8f2",
-            "label": "puffle_items_four",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_items_four.png"
-            },
-            "x": 921,
-            "y": 418
-        },
-        {
-            "type": "Sprite",
-            "id": "3910a199-0f5d-4428-b060-8630986b991d",
-            "label": "puffle_items_two",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_items_two.png"
-            },
-            "x": 409,
-            "y": 864
-        },
-        {
-            "type": "Sprite",
-            "id": "59b1b6f2-fda7-42a4-9c98-e070673975b3",
-            "label": "puffle_items_three",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_items_three.png"
-            },
-            "x": 475,
-            "y": 409
-        },
-        {
-            "type": "Sprite",
-            "id": "2834ff3d-d0ea-4a4c-8725-e54af2d058f6",
-            "label": "puffle_items_one",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "puffle_items_one.png"
-            },
-            "x": 284,
-            "y": 584
-        },
-        {
-            "type": "Sprite",
-            "id": "138a08a7-b787-4a4c-8446-5bbdf116ae9f",
-            "label": "disco_ball",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "disco_ball.png"
-            },
-            "x": 46,
-            "y": 74
-        },
-        {
-            "type": "Sprite",
-            "id": "4bfb4a66-c8e2-47f0-b261-35b3cfcf55a1",
-            "label": "foreground",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "pet-new",
-                "frame": "foreground.png"
-            },
-            "x": 695,
-            "y": 856
-        },
-        {
-            "type": "Rectangle",
-            "id": "7046b252-dc31-4042-b7c3-f224d415bfc5",
-            "label": "hotelDoor_btn",
             "components": [
-                "SimpleButton",
+                "Button",
                 "MoveTo"
             ],
-            "SimpleButton.hoverCallback": "() => this.onHotelDoorOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onHotelDoorOut()",
-            "MoveTo.x": 100,
-            "MoveTo.y": 700,
-            "x": 84,
-            "y": 550,
-            "angle": -5,
-            "fillColor": "#00eee9",
-            "fillAlpha": 0.5,
-            "width": 128,
-            "height": 350
+            "Button.spriteName": "hotel_door",
+            "Button.hoverCallback": "() => this.sound.add(\"petShop-DoorMiddleOpen\").play()",
+            "Button.hoverOutCallback": "() => this.sound.add(\"petShop-DoorMiddleClose\").play()",
+            "Button.activeFrame": false,
+            "MoveTo.x": 120,
+            "MoveTo.y": 704,
+            "texture": {
+                "key": "pet-new",
+                "frame": "hotel_door"
+            },
+            "x": 79,
+            "y": 554
         },
         {
-            "type": "Rectangle",
-            "id": "b8cb2e8d-2fae-47b5-833d-e975dbec10d2",
-            "label": "puffle_btn",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onPufflesOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onPufflesOut()",
-            "MoveTo.x": 350,
-            "MoveTo.y": 450,
-            "x": 321,
-            "y": 347,
-            "angle": -5,
-            "fillColor": "#00eee9",
-            "fillAlpha": 0.5,
-            "width": 250,
-            "height": 250
+            "type": "Sprite",
+            "id": "44faa033-4c10-45de-9f7e-b590b389a3e6",
+            "label": "hotel_arch",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "hotel_arch"
+            },
+            "x": 34,
+            "y": 571
         },
         {
-            "type": "Rectangle",
-            "id": "e9cd9396-e9bb-4831-9f29-bf893495696e",
-            "label": "outside_btn",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onOutsideOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onOutsideOut()",
-            "MoveTo.x": 750,
-            "MoveTo.y": 300,
-            "x": 764,
-            "y": 200,
-            "fillColor": "#00eee9",
-            "fillAlpha": 0.5,
-            "width": 230,
-            "height": 180
+            "type": "Sprite",
+            "id": "f5993127-fa6d-4d01-986a-917657aea141",
+            "label": "stuff",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "stuff"
+            },
+            "x": 296,
+            "y": 601
         },
         {
-            "type": "Rectangle",
-            "id": "6c67e9b2-724f-4247-bb69-e49d517fca07",
-            "label": "pufflescape_btn",
-            "components": [
-                "SimpleButton",
-                "MoveTo"
-            ],
-            "SimpleButton.hoverCallback": "() => this.onPufflescapeOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onPufflescapeOut()",
-            "MoveTo.x": 1000,
-            "MoveTo.y": 300,
-            "x": 1009,
-            "y": 194,
-            "fillColor": "#00eee9",
-            "fillAlpha": 0.5,
-            "width": 150,
-            "height": 180
+            "type": "Sprite",
+            "id": "6d25b20f-8e96-4e0f-a3af-b00736c5b790",
+            "label": "skate",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "skate"
+            },
+            "x": 240,
+            "y": 673
+        },
+        {
+            "type": "Sprite",
+            "id": "e7f57db4-8fbc-4963-a58f-7b7603759936",
+            "label": "bed",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "bed"
+            },
+            "x": 326,
+            "y": 871
+        },
+        {
+            "type": "Sprite",
+            "id": "ea189764-37a9-4d4f-a9aa-4c06c739ecb4",
+            "label": "clawything",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "clawything"
+            },
+            "x": 557,
+            "y": 870
+        },
+        {
+            "type": "Sprite",
+            "id": "3e691c2c-ecb1-481d-a26b-2ecd78af6a28",
+            "label": "clawyfront",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "clawyfront"
+            },
+            "x": 580,
+            "y": 822
+        },
+        {
+            "type": "Sprite",
+            "id": "9d4249a9-4b8e-41cf-b246-8b4d1b2af076",
+            "label": "fg",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pet-new",
+                "frame": "fg"
+            },
+            "x": 698,
+            "y": 868
         },
         {
             "type": "Rectangle",
@@ -663,25 +1068,42 @@
         },
         {
             "type": "Rectangle",
-            "id": "914ec899-bc40-4fc0-ade0-c94d818009d2",
-            "label": "park_btn",
+            "id": "b8cb2e8d-2fae-47b5-833d-e975dbec10d2",
+            "label": "puffle_btn",
             "components": [
                 "SimpleButton",
-                "MoveTo",
-                "ShowHint"
+                "MoveTo"
             ],
-            "SimpleButton.hoverCallback": "() => this.onParkDoorOver()",
-            "SimpleButton.hoverOutCallback": "() => this.onParkDoorOut()",
-            "MoveTo.x": 1400,
-            "MoveTo.y": 500,
-            "ShowHint.text": "Puffle Roundup",
-            "x": 1457,
-            "y": 337,
-            "angle": 5,
+            "SimpleButton.hoverCallback": "() => this.onPufflesOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPufflesOut()",
+            "MoveTo.x": 350,
+            "MoveTo.y": 450,
+            "x": 321,
+            "y": 347,
+            "angle": -5,
+            "fillColor": "#00eee9",
+            "fillAlpha": 0.5,
+            "width": 250,
+            "height": 250
+        },
+        {
+            "type": "Rectangle",
+            "id": "6c67e9b2-724f-4247-bb69-e49d517fca07",
+            "label": "pufflescape_btn",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onPufflescapeOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onPufflescapeOut()",
+            "MoveTo.x": 1000,
+            "MoveTo.y": 300,
+            "x": 1009,
+            "y": 194,
             "fillColor": "#00eee9",
             "fillAlpha": 0.5,
             "width": 150,
-            "height": 290
+            "height": 180
         }
     ],
     "plainObjects": [],
