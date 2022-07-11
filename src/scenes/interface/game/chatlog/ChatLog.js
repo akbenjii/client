@@ -103,10 +103,10 @@ export default class ChatLog extends BaseContainer {
         return containers
     }
 
-    addMessage(id, username, message) {
+    addMessage(id, username, message, filtered = false) {
         if (this.messages.length == 20) this.messages.pop()
 
-        this.messages.unshift({ id: id, message: `${username}: ${message}` })
+        this.messages.unshift({ id: id, message: `${username}: ${message}`, filtered: filtered })
         this.updateMessages()
     }
 
@@ -116,6 +116,11 @@ export default class ChatLog extends BaseContainer {
 
             container.id = message.id
             container.text.text = message.message
+			if (message.filtered) {
+            	container.text.setColor('#ff0000')
+        	} else {
+            	container.text.setColor('#000000')
+        	}
         }
 
         if (this.dragging) {

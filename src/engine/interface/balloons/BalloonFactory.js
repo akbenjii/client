@@ -60,10 +60,10 @@ export default class BalloonFactory {
         }
 
 		if (penguin.username_approved == 1) {
-        	this.main.chatLog.addMessage(penguin.id, penguin.username, text)
+        	this.main.chatLog.addMessage(penguin.id, penguin.username, text, filtered)
 		}
 		else {
-			this.main.chatLog.addMessage(penguin.id, "P" + penguin.id, text)
+			this.main.chatLog.addMessage(penguin.id, "P" + penguin.id, text, filtered)
 		}
 
         if (!penguin.visible) {

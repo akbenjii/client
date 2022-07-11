@@ -1,0 +1,256 @@
+{
+    "id": "660de11c-0cd6-4b68-8d0c-bee940918a4d",
+    "sceneType": "PREFAB",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "BaseContainer",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "8bb89fb5-8fd3-4d6d-a8b9-f11a53a7735f",
+            "label": "container_1",
+            "components": [],
+            "x": 760,
+            "y": 480,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "9d274e25-df95-406f-883b-f4102166d431",
+                    "label": "block",
+                    "components": [
+                        "Interactive"
+                    ],
+                    "isFilled": true,
+                    "fillColor": "#000000",
+                    "fillAlpha": 0.2,
+                    "width": 1520,
+                    "height": 960
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "4e000c0f-ca29-40d6-955a-108ebfdb90f7",
+                    "label": "rectangle",
+                    "components": [
+                        "NineSlice"
+                    ],
+                    "NineSlice.corner": 50,
+                    "y": -22,
+                    "isFilled": true,
+                    "fillColor": "#0280CD",
+                    "width": 708,
+                    "height": 600
+                },
+                {
+                    "type": "Text",
+                    "id": "049efdf7-a9e9-4774-81b7-5a3c6b0e7c7e",
+                    "label": "header",
+                    "components": [],
+                    "y": -254,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Report Player",
+                    "fixedWidth": 600,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "40px",
+                    "fontStyle": "bold italic",
+                    "stroke": "#003366",
+                    "strokeThickness": 10
+                },
+                {
+                    "type": "Image",
+                    "id": "e656c20c-78a6-4d94-917f-6cf411b1f4d4",
+                    "label": "x_button",
+                    "components": [
+                        "Button"
+                    ],
+                    "Button.spriteName": "blue-button",
+                    "Button.callback": "() => { this.visible = false }",
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-button"
+                    },
+                    "x": 300,
+                    "y": -268
+                },
+                {
+                    "type": "Image",
+                    "id": "56d93af1-ac83-4be9-a548-efd7ba743bf2",
+                    "label": "blue_x",
+                    "components": [],
+                    "texture": {
+                        "key": "main",
+                        "frame": "blue-x"
+                    },
+                    "x": 300,
+                    "y": -270
+                },
+                {
+                    "prefabId": "c8bd80b3-7ef6-4945-950c-2ab697bd77e3",
+                    "id": "5ddb480c-aaef-48a1-9685-ae1847920306",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "visible"
+                    ],
+                    "label": "step2_buttons",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 0,
+                    "y": 133,
+                    "visible": false,
+                    "nestedPrefabs": []
+                },
+                {
+                    "type": "Text",
+                    "id": "34a9fb39-57b6-4156-8953-d2b4fe9b55a5",
+                    "label": "step2_text",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -208,
+                    "originX": 0.5,
+                    "visible": false,
+                    "text": "Error. Please try again.",
+                    "fixedWidth": 600,
+                    "align": "center",
+                    "fontFamily": "Burbank Small",
+                    "fontSize": "30px",
+                    "color": "#000000ff",
+                    "wordWrapWidth": 600
+                },
+                {
+                    "type": "Container",
+                    "id": "25dc7d72-7cdf-4d69-aa1f-bba0386c6700",
+                    "label": "step1",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": -193,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "b3e3fead-ef42-4727-9e87-ec76093a780a",
+                            "label": "igloo_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "help-button",
+                            "Button.callback": "() => this.enterStep2('igloo')",
+                            "texture": {
+                                "key": "main",
+                                "frame": "help-button"
+                            },
+                            "y": 371
+                        },
+                        {
+                            "type": "Text",
+                            "id": "005abee8-2c83-443c-93cb-da034c70a433",
+                            "label": "igloo_text",
+                            "components": [],
+                            "y": 370,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Inappropriate Igloo",
+                            "fixedWidth": 562,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "38px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "dc3db44a-5ad3-41a4-9dda-97413b3a08de",
+                            "label": "name_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "help-button",
+                            "Button.callback": "() => this.enterStep2('name')",
+                            "texture": {
+                                "key": "main",
+                                "frame": "help-button"
+                            },
+                            "y": 239
+                        },
+                        {
+                            "type": "Text",
+                            "id": "778debb8-a5fb-4286-9721-b825bcf63607",
+                            "label": "name_text",
+                            "components": [],
+                            "y": 238,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Inappropriate Penguin Name",
+                            "fixedWidth": 562,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "38px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff"
+                        },
+                        {
+                            "type": "Image",
+                            "id": "601cc5f2-06bb-4a01-a439-462f0b4932d6",
+                            "label": "lang_btn",
+                            "components": [
+                                "Button"
+                            ],
+                            "Button.spriteName": "help-button",
+                            "Button.callback": "() => this.enterStep2('lang')",
+                            "texture": {
+                                "key": "main",
+                                "frame": "help-button"
+                            },
+                            "y": 107
+                        },
+                        {
+                            "type": "Text",
+                            "id": "d8459f02-8216-49b8-9a56-e9a7ff51b303",
+                            "label": "lang_text",
+                            "components": [],
+                            "y": 106,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Inappropriate Language",
+                            "fixedWidth": 562,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "38px",
+                            "fontStyle": "bold",
+                            "color": "#ffffffff"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "502ffa53-fbc7-4cf2-bc81-43262b4d1979",
+                            "label": "subheading",
+                            "components": [],
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Why do you want to report this player?",
+                            "fixedWidth": 600,
+                            "align": "center",
+                            "fontFamily": "Burbank Small",
+                            "fontSize": "30px",
+                            "color": "#000000ff"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
