@@ -1,0 +1,682 @@
+{
+    "id": "b3178034-8268-49c5-8a26-5ea87b40aba1",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/beach/beach-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beach",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "fa323cc9-2080-461f-afbe-c946a17db360",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "bg"
+            },
+            "x": 773,
+            "y": 484
+        },
+        {
+            "type": "Image",
+            "id": "304ea32e-3a7d-4dbb-9ec4-41a7b3146e3d",
+            "label": "otherbg",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "otherbg"
+            },
+            "x": 773,
+            "y": 484
+        },
+        {
+            "type": "Sprite",
+            "id": "2524061e-85ba-4d96-bd1d-aa8d9ca0f505",
+            "label": "scloudbeach",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "clouddock0001"
+            },
+            "x": 742,
+            "y": 91
+        },
+        {
+            "type": "Image",
+            "id": "19993a1a-09a3-441e-bb82-adacfd86fb9a",
+            "label": "leftlightsnow",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "leftlightsnow"
+            },
+            "x": 197,
+            "y": 339
+        },
+        {
+            "type": "Image",
+            "id": "7bc249a6-cd78-44d8-bfc4-68a15ed786e2",
+            "label": "islandsnow",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "islandsnow"
+            },
+            "x": 831,
+            "y": 544
+        },
+        {
+            "type": "Image",
+            "id": "e0b960cd-83f0-4d1c-9c10-fa9f73aefc26",
+            "label": "villagetrees",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "villagetrees"
+            },
+            "x": 889,
+            "y": 203
+        },
+        {
+            "type": "Image",
+            "id": "77d23850-d55f-4a08-9acc-1c67468a9a1c",
+            "label": "village",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "village"
+            },
+            "x": 1104,
+            "y": 201
+        },
+        {
+            "type": "Image",
+            "id": "7ed895eb-edbf-493b-927c-20ffcb38411c",
+            "label": "rightsnowmound",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "rightsnowmound"
+            },
+            "x": 1312,
+            "y": 278
+        },
+        {
+            "type": "Image",
+            "id": "10b5311d-82ce-438b-bc34-378c14c5d346",
+            "label": "rightsnow",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "rightsnow"
+            },
+            "x": 1289,
+            "y": 309
+        },
+        {
+            "type": "Image",
+            "id": "02ab6a6c-5287-41ad-8d03-c042960caeb8",
+            "label": "leftsnow",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "leftsnow"
+            },
+            "x": 586,
+            "y": 309
+        },
+        {
+            "type": "Image",
+            "id": "1685ba35-3a90-47d2-8804-82185e1a8028",
+            "label": "lighthouse",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "lighthouse"
+            },
+            "x": 383,
+            "y": 199
+        },
+        {
+            "type": "Image",
+            "id": "4012baa0-518e-4853-9e83-d20c84ba503d",
+            "label": "lighthouse_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "lighthouse_door",
+            "Button.activeFrame": false,
+            "MoveTo.x": 480,
+            "MoveTo.y": 400,
+            "texture": {
+                "key": "beach",
+                "frame": "lighthouse_door"
+            },
+            "x": 383,
+            "y": 214,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "7570fab7-d1b5-4369-a037-ecef29afa00c",
+            "label": "ladder",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "ladder"
+            },
+            "x": 322,
+            "y": 187
+        },
+        {
+            "type": "Image",
+            "id": "a8d842d4-6bc1-4716-85f4-0f36cc59f6d3",
+            "label": "cage",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "cage"
+            },
+            "x": 232,
+            "y": 352,
+            "originX": 0.4935064935064935
+        },
+        {
+            "type": "Image",
+            "id": "60d6901e-4fdf-4814-bf8f-7f012aaa7678",
+            "label": "fish",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "fish"
+            },
+            "x": 198,
+            "y": 400,
+            "originX": 0.4782608695652174,
+            "originY": 0.4956521739130435
+        },
+        {
+            "type": "Image",
+            "id": "b2b4b1cb-12e9-4604-9913-ed9514d3f98c",
+            "label": "buoy",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "buoy"
+            },
+            "x": 194,
+            "y": 428,
+            "originX": 0.5185185185185185,
+            "originY": 0.4965034965034965
+        },
+        {
+            "type": "Image",
+            "id": "e6eeb0bc-357d-45f6-944b-5b556e34731d",
+            "label": "net",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "net"
+            },
+            "x": 290,
+            "y": 465,
+            "originX": 0.49767441860465117
+        },
+        {
+            "type": "Image",
+            "id": "ecf3d23d-1704-4df6-9e8d-59c0d57d7f21",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "fg"
+            },
+            "x": 1217,
+            "y": 293,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "6962a5eb-c8c8-4689-b4bb-23126518fcc1",
+            "label": "sign",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "sign"
+            },
+            "x": 1146,
+            "y": 323,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "d61413a7-c14f-4606-a0b5-9f2e391242f8",
+            "label": "chair_ground",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_ground"
+            },
+            "x": 906,
+            "y": 524,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "415dd9a9-d5e8-447e-8cb4-a51fdfd7a503",
+            "label": "chair_2",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_2"
+            },
+            "x": 1060,
+            "y": 501,
+            "originX": 0.5185185185185185,
+            "originY": 0.6060606060606061
+        },
+        {
+            "type": "Image",
+            "id": "7c8f2975-d88a-4e02-8a8b-2c1f0ffdb26b",
+            "label": "chair_2_front",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_2_front"
+            },
+            "x": 1053,
+            "y": 522,
+            "originY": 0.6764705882352942
+        },
+        {
+            "type": "Image",
+            "id": "c372b672-3064-41e6-b681-70b5180c1b28",
+            "label": "chair_1",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_1"
+            },
+            "x": 961,
+            "y": 526,
+            "originY": 0.58778626
+        },
+        {
+            "type": "Image",
+            "id": "ab985dcf-4cc3-4592-9b94-15a4eb899dac",
+            "label": "leftfence",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "leftfence"
+            },
+            "x": 418,
+            "y": 619,
+            "originX": 0.49319753403886046,
+            "originY": 0.7017417047903672
+        },
+        {
+            "type": "Image",
+            "id": "7dd9eb62-1537-4f6c-b67f-74fcd38f2154",
+            "label": "chair_1_front",
+            "components": [],
+            "texture": {
+                "key": "beach",
+                "frame": "chair_1_front"
+            },
+            "x": 943,
+            "y": 542,
+            "originX": 0.4,
+            "originY": 0.67054264
+        },
+        {
+            "type": "Sprite",
+            "id": "88cb8488-1341-4273-9776-5481d3092d3b",
+            "label": "bucket",
+            "scope": "CLASS",
+            "components": [
+                "SimpleButton"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onBucketOver()",
+            "SimpleButton.pixelPerfect": true,
+            "texture": {
+                "key": "beach",
+                "frame": "bucket/bucket0001"
+            },
+            "x": 1078,
+            "y": 612,
+            "originX": 0.8863109,
+            "originY": 0.94611727
+        },
+        {
+            "type": "Image",
+            "id": "376bc0cb-32a7-45cf-af18-84110c027bcb",
+            "label": "proprodbeach0001",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "proprodbeach0001"
+            },
+            "x": 764,
+            "y": 210,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Image",
+            "id": "3a95c2ac-9912-48a8-859c-56dc8b82e5ea",
+            "label": "propbasebeach",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "propbasebeach"
+            },
+            "x": 773,
+            "y": 288
+        },
+        {
+            "type": "Sprite",
+            "id": "7be0c8be-d53f-4320-8dc5-2e75280b6770",
+            "label": "propbeach",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "propbeach"
+            },
+            "x": 768,
+            "y": 154,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Sprite",
+            "id": "880c3df6-e9f2-47d8-b7cc-283cf68c2d49",
+            "label": "proptopbeach0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "proptopbeach0001"
+            },
+            "x": 764,
+            "y": 150,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Sprite",
+            "id": "080030cf-ab26-4f32-b8b4-08794aa4dffb",
+            "label": "proptopbeach0001_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "proptopbeach0001"
+            },
+            "x": 1295,
+            "y": 176,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Sprite",
+            "id": "b7ae3442-6955-4f27-862f-1175ebc82493",
+            "label": "propbeach_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "propbeach"
+            },
+            "x": 1299,
+            "y": 180,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Image",
+            "id": "9f62614a-3f21-4313-ba15-d7cd42e22596",
+            "label": "propbasebeach_1",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "propbasebeach"
+            },
+            "x": 1304,
+            "y": 314
+        },
+        {
+            "type": "Image",
+            "id": "8b8ac02f-c2b7-4894-8342-e3ecc1fc3b9b",
+            "label": "proprodbeach0001_1",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "proprodbeach0001"
+            },
+            "x": 1295,
+            "y": 236,
+            "scaleX": 0.3,
+            "scaleY": 0.3
+        },
+        {
+            "type": "Image",
+            "id": "50b98ee4-6947-4aba-8a1c-c32bb36ca58d",
+            "label": "backfrence",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "backfrence"
+            },
+            "x": 777,
+            "y": 300
+        },
+        {
+            "type": "Image",
+            "id": "0fe19ffe-0c98-4ac8-8d8d-2875cff89854",
+            "label": "leftpost",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "leftpost"
+            },
+            "x": 600,
+            "y": 285
+        },
+        {
+            "type": "Image",
+            "id": "96dcfa4a-4ac0-454b-82b8-fad7c85fda46",
+            "label": "rightpost",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "rightpost"
+            },
+            "x": 1086,
+            "y": 327
+        },
+        {
+            "type": "Image",
+            "id": "3ba1a5ef-629f-40af-95d8-b319a47dc127",
+            "label": "ground",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "ground"
+            },
+            "x": 709,
+            "y": 630
+        },
+        {
+            "type": "Image",
+            "id": "4cf342ee-fbe7-4915-b228-e36dd43c809f",
+            "label": "warning",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "warning"
+            },
+            "x": 1286,
+            "y": 595
+        },
+        {
+            "type": "Image",
+            "id": "305294ea-a1eb-4639-afe5-67d3b9034f94",
+            "label": "leftrocks",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "leftrocks"
+            },
+            "x": 307,
+            "y": 676
+        },
+        {
+            "type": "Image",
+            "id": "aa708f63-25de-4906-bdf4-eeff9eeac0a1",
+            "label": "rightrock",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "rightrock"
+            },
+            "x": 1298,
+            "y": 651
+        },
+        {
+            "type": "Image",
+            "id": "60ce24d5-4284-4154-9ce1-0e064eab5e37",
+            "label": "leftcloud",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "leftcloud"
+            },
+            "x": 600,
+            "y": 253
+        },
+        {
+            "type": "Image",
+            "id": "ed51ebc5-dd62-4d2b-81b4-4ace83894bd3",
+            "label": "rightcloud",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "rightcloud"
+            },
+            "x": 1094,
+            "y": 289
+        },
+        {
+            "type": "Image",
+            "id": "8a153a0f-ee07-4a01-a5f0-22eccd9f7e4a",
+            "label": "balloons",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "balloons"
+            },
+            "x": 110,
+            "y": 313
+        },
+        {
+            "type": "Image",
+            "id": "a8ba80b5-09a5-4a8c-8e9f-4963d0b4faaa",
+            "label": "fence",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "fence"
+            },
+            "x": 1083,
+            "y": 690
+        },
+        {
+            "type": "Image",
+            "id": "64232e02-48c6-4ca8-9f62-880091fdde9c",
+            "label": "sign_1",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "sign"
+            },
+            "x": 592,
+            "y": 674
+        },
+        {
+            "type": "Image",
+            "id": "764b95db-8a85-4238-a4bc-9089883d8dd3",
+            "label": "brick_wall",
+            "components": [],
+            "texture": {
+                "key": "ffc-beach",
+                "frame": "brick_wall"
+            },
+            "x": 803.9566677922525,
+            "y": 824.5599594789122,
+            "originX": 0.495040455806438,
+            "originY": 0.8343634521768737
+        },
+        {
+            "type": "Image",
+            "id": "3d8fde3a-53a9-448d-8035-7846681eebc2",
+            "label": "rightballoons",
+            "components": [],
+            "texture": {
+                "key": "fof-beach",
+                "frame": "rightballoons"
+            },
+            "x": 1441,
+            "y": 397
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "88cb8488-1341-4273-9776-5481d3092d3b",
+                "7dd9eb62-1537-4f6c-b67f-74fcd38f2154",
+                "c372b672-3064-41e6-b681-70b5180c1b28",
+                "7c8f2975-d88a-4e02-8a8b-2c1f0ffdb26b",
+                "415dd9a9-d5e8-447e-8cb4-a51fdfd7a503",
+                "e6eeb0bc-357d-45f6-944b-5b556e34731d",
+                "60d6901e-4fdf-4814-bf8f-7f012aaa7678",
+                "b2b4b1cb-12e9-4604-9913-ed9514d3f98c",
+                "a8d842d4-6bc1-4716-85f4-0f36cc59f6d3",
+                "764b95db-8a85-4238-a4bc-9089883d8dd3",
+                "64232e02-48c6-4ca8-9f62-880091fdde9c",
+                "a8ba80b5-09a5-4a8c-8e9f-4963d0b4faaa",
+                "4cf342ee-fbe7-4915-b228-e36dd43c809f",
+                "aa708f63-25de-4906-bdf4-eeff9eeac0a1",
+                "305294ea-a1eb-4639-afe5-67d3b9034f94",
+                "ab985dcf-4cc3-4592-9b94-15a4eb899dac"
+            ]
+        }
+    ]
+}
