@@ -1,0 +1,211 @@
+{
+    "id": "de5cc035-b5a7-4d91-89cf-566a16571f11",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/beacon/beacon-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Beacon",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "edce8a24-9fb9-4aef-a422-33ed59eeb3ba",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "bgfof"
+            },
+            "x": -14,
+            "y": -130,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "3eb58769-a011-4b4d-b11b-8fdd7301b021",
+            "label": "sbeaconcloud",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "sbeaconcloud0001"
+            },
+            "x": 727,
+            "y": 190
+        },
+        {
+            "type": "Sprite",
+            "id": "db0c78b0-c063-48c1-9001-5e3440bdc4ba",
+            "label": "lbeaconcloud",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "lbeaconcloud0001"
+            },
+            "x": 765,
+            "y": 94
+        },
+        {
+            "type": "Image",
+            "id": "e0e83f45-9ffd-415a-9aac-3dda455acd5f",
+            "label": "jp_holder",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "jp_holder"
+            },
+            "x": 1203,
+            "y": 443
+        },
+        {
+            "type": "Sprite",
+            "id": "9363d98b-8770-4724-be2a-e99431f370f1",
+            "label": "jetpack",
+            "scope": "CLASS",
+            "components": [
+                "Button",
+                "MoveTo",
+                "ShowHint"
+            ],
+            "Button.spriteName": "jetpack",
+            "Button.activeFrame": false,
+            "MoveTo.x": 1270,
+            "MoveTo.y": 575,
+            "ShowHint.text": "Jetpack Adventure",
+            "texture": {
+                "key": "beacon",
+                "frame": "jetpack"
+            },
+            "x": 1326,
+            "y": 538
+        },
+        {
+            "type": "Image",
+            "id": "67ef6814-9dfa-45a0-95ae-a405c3cfd22e",
+            "label": "front_rail",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "frontrail"
+            },
+            "x": 707,
+            "y": 1029,
+            "originX": 0.5044360693840665,
+            "originY": 1.0296666844575377
+        },
+        {
+            "type": "Image",
+            "id": "49eccf24-79ec-49f1-8ca7-89d5efe7ef5d",
+            "label": "crate",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "crate"
+            },
+            "x": 331,
+            "y": 445
+        },
+        {
+            "type": "Image",
+            "id": "2da7e4a6-de9c-41f4-a8f6-15297181c213",
+            "label": "telescope",
+            "components": [],
+            "texture": {
+                "key": "beacon",
+                "frame": "telescope"
+            },
+            "x": 248,
+            "y": 298
+        },
+        {
+            "type": "Sprite",
+            "id": "f0b2b3ef-0a4a-4866-aa63-19f1b4aa2e89",
+            "label": "proprodbeacon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "proprodbeacon0001"
+            },
+            "x": 716,
+            "y": 266
+        },
+        {
+            "type": "Image",
+            "id": "79935646-2a3c-4633-bb08-8005f925e5f3",
+            "label": "propbasebeacon",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "propbasebeacon"
+            },
+            "x": 709,
+            "y": 549
+        },
+        {
+            "type": "Image",
+            "id": "751322de-9f27-4579-bb6b-536836de3ccd",
+            "label": "holder",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "holder"
+            },
+            "x": 716,
+            "y": 376
+        },
+        {
+            "type": "Sprite",
+            "id": "b4b0db34-b514-4edc-b668-b96d4fa3e3a5",
+            "label": "propbeacon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "propbeacon0001"
+            },
+            "x": 718,
+            "y": 144
+        },
+        {
+            "type": "Sprite",
+            "id": "a42edcf2-facb-402f-bd30-6d91bdf1eb0f",
+            "label": "proptopbeacon",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-beacon",
+                "frame": "proptopbeacon0001"
+            },
+            "x": 714,
+            "y": 148
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "1bc796af-8118-4a54-b624-39e93ad42d65",
+            "label": "sort",
+            "objectIds": [
+                "67ef6814-9dfa-45a0-95ae-a405c3cfd22e"
+            ]
+        }
+    ]
+}
