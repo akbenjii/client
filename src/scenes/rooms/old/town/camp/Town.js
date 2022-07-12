@@ -258,7 +258,7 @@ export default class Town extends RoomScene {
         var now = new Date();
         var timeInHours = now.getUTCHours();
         console.log(timeInHours)
-        if (timeInHours > 1 && timeInHours < 16 ) {
+        if (timeInHours > 1 && timeInHours < 13 ) {
             this.nightbg.visible = true
             this.night.visible = true
             this.campfiretown.visible = true

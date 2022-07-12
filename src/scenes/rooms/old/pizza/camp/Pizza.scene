@@ -1,0 +1,401 @@
+{
+    "id": "2c49a14e-7f50-4c22-a431-88460f2faf2a",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/pizza/pizza-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Pizza",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "d0cfa4ba-ab30-4119-873c-a8d53a9b3649",
+            "label": "bg_png",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "messbg"
+            },
+            "x": 760,
+            "y": 483,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ef9415db-d5f4-4f8f-8c9a-efbdc88c2928",
+            "label": "bead_door_hover0001_png",
+            "components": [
+                "Button",
+                "ShowHint",
+                "MoveTo"
+            ],
+            "Button.spriteName": "bead-door.png",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "ShowHint.text": "Pizzatron 3000",
+            "MoveTo.x": 384,
+            "MoveTo.y": 405,
+            "texture": {
+                "key": "pizza",
+                "frame": "bead-door.png"
+            },
+            "x": 385,
+            "y": 241,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "388a1503-f19e-4571-8a4b-986fc10e0d9f",
+            "label": "pizza_pan_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "pizza-pan.png"
+            },
+            "x": 187,
+            "y": 515,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ad3f711b-129a-48e8-9f6d-140a1b274e9a",
+            "label": "oven_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "oven.png"
+            },
+            "x": 110,
+            "y": 457,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "ff3f49b7-cf8c-46cc-b659-d7f08cbbce2c",
+            "label": "foreground_png",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "foreground.png"
+            },
+            "x": 112,
+            "y": 874,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Sprite",
+            "id": "c4da58e9-3488-4c70-802f-853d43c5b5e1",
+            "label": "steam",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "smoke0001.png"
+            },
+            "x": 43,
+            "y": 165
+        },
+        {
+            "type": "Sprite",
+            "id": "abb691cb-dc75-432c-b4f0-140d4d532da9",
+            "label": "fire",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "pizza",
+                "frame": "fire0001.png"
+            },
+            "x": 110,
+            "y": 770,
+            "scaleX": 1.02,
+            "scaleY": 1.02
+        },
+        {
+            "type": "Image",
+            "id": "bca3b85e-c8f6-41eb-97f7-4c64c02fd554",
+            "label": "outside",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "outside"
+            },
+            "x": 844,
+            "y": 265
+        },
+        {
+            "type": "Image",
+            "id": "a8d5c0b9-cecd-44b8-b1fe-c215587ccae7",
+            "label": "outsidenight",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "outsidenight"
+            },
+            "x": 844,
+            "y": 265,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "87ef38fe-9e72-43ac-a2ab-77a0954d7632",
+            "label": "doorholder",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "doorholder"
+            },
+            "x": 834,
+            "y": 281
+        },
+        {
+            "type": "Image",
+            "id": "6f81b06e-8e73-4df0-bfbf-a86ec62aa72d",
+            "label": "messdoor",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "messdoor",
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "messdoor"
+            },
+            "x": 830.7639579732339,
+            "y": 426.5719554874926,
+            "originX": 0.47703490339137683,
+            "originY": 0.904463363948344
+        },
+        {
+            "type": "Image",
+            "id": "e02f4899-ddc7-4e9a-bdc6-ef9931942627",
+            "label": "windowright",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "windowright"
+            },
+            "x": 1064,
+            "y": 215
+        },
+        {
+            "type": "Image",
+            "id": "676a358a-3627-4cee-b108-c5de0f17c3ed",
+            "label": "leftwindow",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "leftwindow"
+            },
+            "x": 592,
+            "y": 197
+        },
+        {
+            "type": "Image",
+            "id": "d3d5c3a2-066f-4343-9f4f-8c5343b4daca",
+            "label": "cleanplates",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "cleanplates"
+            },
+            "x": 502,
+            "y": 377
+        },
+        {
+            "type": "Image",
+            "id": "83d8551e-1025-4365-94ce-fa6cceec483b",
+            "label": "righttable",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "righttable"
+            },
+            "x": 1305,
+            "y": 524
+        },
+        {
+            "type": "Image",
+            "id": "5dbf5b79-33fa-406d-ab46-7d6593032126",
+            "label": "midrightbench",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "midrightbench"
+            },
+            "x": 1102,
+            "y": 653
+        },
+        {
+            "type": "Image",
+            "id": "3a791a87-cd3f-494b-a2a2-9b06a1dcc658",
+            "label": "midtable",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "midtable"
+            },
+            "x": 1004,
+            "y": 659
+        },
+        {
+            "type": "Image",
+            "id": "d3af02f7-c61b-4b79-9743-e5108ac8845e",
+            "label": "leftleftbench",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "leftleftbench"
+            },
+            "x": 444,
+            "y": 716
+        },
+        {
+            "type": "Image",
+            "id": "57dab70a-bc20-440b-aeb8-e2353a6bd270",
+            "label": "leftrightbench",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "leftrightbench"
+            },
+            "x": 691,
+            "y": 747
+        },
+        {
+            "type": "Image",
+            "id": "9e62bd5d-a0c9-4cc5-8d32-dd509eefdd76",
+            "label": "lefttable",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "lefttable"
+            },
+            "x": 564,
+            "y": 699
+        },
+        {
+            "type": "Image",
+            "id": "a0c078a6-b5f5-42a7-a8aa-a96d9c93a9a1",
+            "label": "midleftbench",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "midleftbench"
+            },
+            "x": 887,
+            "y": 694
+        },
+        {
+            "type": "Image",
+            "id": "c5eb35ba-61a6-4e47-b689-bfa1379063c8",
+            "label": "rightbench",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "rightbench"
+            },
+            "x": 1411,
+            "y": 520
+        },
+        {
+            "type": "Image",
+            "id": "ebb9d982-8d11-48db-8b41-b93fd5ac5a37",
+            "label": "tablebottoms",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "tablebottoms"
+            },
+            "x": 924,
+            "y": 655
+        },
+        {
+            "type": "Image",
+            "id": "4e800a48-9c77-4939-83e7-1f045f1a7e33",
+            "label": "messyplates",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "messyplates"
+            },
+            "x": 610,
+            "y": 353
+        },
+        {
+            "type": "Image",
+            "id": "27b68043-0a50-45b5-8fd4-5e10cd019f88",
+            "label": "mess",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "mess"
+            },
+            "x": 795,
+            "y": 478
+        },
+        {
+            "type": "Image",
+            "id": "6c079473-bf8a-41ac-9776-c900ded49799",
+            "label": "signwash",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "signwash"
+            },
+            "x": 956,
+            "y": 287
+        },
+        {
+            "type": "Image",
+            "id": "a4b324e3-77df-42a7-bc2c-f3646af7ce94",
+            "label": "signholder",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "signholder"
+            },
+            "x": 1497,
+            "y": 211
+        },
+        {
+            "type": "Image",
+            "id": "eb8a130c-e03b-45f9-b7ed-2bd9a19d54c6",
+            "label": "leftbench",
+            "components": [],
+            "texture": {
+                "key": "camp-pizza",
+                "frame": "leftbench"
+            },
+            "x": 1206,
+            "y": 582
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "fbd9b42a-8e35-4ff1-897b-b203942a3729",
+            "label": "sort"
+        }
+    ]
+}

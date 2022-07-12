@@ -29,7 +29,7 @@ export default class Town extends RoomScene {
             'dance': () => this.triggerRoom(120, 300, 560),
             'gift': () => this.triggerRoom(130, 1036, 520),
         }
-		this.music = 'town'
+        this.music = 'town'
 
         /* END-USER-CTR-CODE */
     }
@@ -182,7 +182,7 @@ export default class Town extends RoomScene {
 
 
     /* START-USER-CODE */
-    
+
 
     onCanopyOver() {
         this.disco.setFrame('disco-hover')
