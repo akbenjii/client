@@ -3625,6 +3625,14 @@ export default class Stampbook extends Book {
 		this.pinsOnPage = []
     }
 
+	filterUsername(penguin) {
+		if (penguin.username_approved == 1) {
+            return penguin.username
+        } else {
+            return "P" + penguin.id
+        }
+	}
+
 	initStampbook(args, isPlayer) {
 
 		this.colorId = (isPlayer) ? this.world.client.stampbookColor : args.color
@@ -3636,7 +3644,7 @@ export default class Stampbook extends Book {
 		this.changeColor(this.colorId)
 		
 		this.stampsEarned = (isPlayer) ? this.world.client.stamps : args.stamps
-		this.username.text = (isPlayer) ? this.world.client.penguin.username : args.username
+		this.username.text = (isPlayer) ? this.filterUsername(this.world.client.penguin) : args.username
 
 		this.total.text = `Total Stamps ${this.stampsEarned.length}/${Object.keys(this.crumbs.stamps).length}`
 		this.stampnum.text = `${this.stampsEarned.length}/${Object.keys(this.crumbs.stamps).length}`

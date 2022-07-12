@@ -430,8 +430,12 @@ export default class IglooMap extends BaseContainer {
         this.items = items;
 
         /* START-USER-CTR-CODE */
-
-        username.text = this.world.client.penguin.username
+        let penguin = this.world.client.penguin;
+        if (penguin.username_approved == 1) {
+            username.text = penguin.username
+        } else {
+            username.text = "P" + penguin.id
+        }
 
         this.tween = scene.tweens.add({
             targets: this.spinner,
