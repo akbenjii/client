@@ -454,6 +454,12 @@ if (localStorage.clientMode == "vanilla") {
             x: 840,
             y: 480
         },
+        813: {
+            key: 'Cavemine',
+            scene: require('@rooms/old/cavemine/Cavemine').default,
+            x: 840,
+            y: 480
+        },
         916: {
             key: 'AquaGrabber',
             scene: require('@games/aquagrabber/AquaGrabber').default
