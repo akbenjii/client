@@ -18,12 +18,18 @@ export default class Cove extends RoomScene {
         this.night;
         /** @type {Phaser.GameObjects.Sprite} */
         this.mainfall;
+        /** @type {Phaser.GameObjects.Image} */
+        this.left_camp;
+        /** @type {Phaser.GameObjects.Image} */
+        this.smalltent;
         /** @type {Phaser.GameObjects.Sprite} */
         this.fall;
         /** @type {Phaser.GameObjects.Sprite} */
         this.fall_pit;
         /** @type {Phaser.GameObjects.Ellipse} */
         this.mallowzone;
+        /** @type {Phaser.GameObjects.Image} */
+        this.ghost0001;
         /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Rectangle>} */
         this.sort;
 
@@ -184,7 +190,7 @@ export default class Cove extends RoomScene {
         night.visible = false;
         night.isFilled = true;
         night.fillColor = 0;
-        night.fillAlpha = 0.4;
+        night.fillAlpha = 0.3;
 
         // fire
         const fire = this.add.sprite(435, 600, "cove", "fire0001");
@@ -201,10 +207,10 @@ export default class Cove extends RoomScene {
         const frontbridge = this.add.image(881, 530, "camp-cove", "frontbridge");
 
         // left_camp
-        this.add.image(256, 696, "camp-cove", "left_camp");
+        const left_camp = this.add.image(256, 696, "camp-cove", "left_camp");
 
         // smalltent
-        this.add.image(263, 484, "camp-cove", "smalltent");
+        const smalltent = this.add.image(263, 484, "camp-cove", "smalltent");
 
         // signs
         const signs = this.add.image(817.1644247572001, 531.3707075226015, "camp-cove", "signs");
@@ -230,8 +236,13 @@ export default class Cove extends RoomScene {
         mallowzone.isFilled = true;
         mallowzone.fillAlpha = 0;
 
+        // ghost0001
+        const ghost0001 = this.add.image(304.1891178884034, 1238.6300906045408, "camp-cove", "ghost0001");
+        ghost0001.setOrigin(0.5342174858972581, 3.201809182950651);
+        ghost0001.visible = false;
+
         // lists
-        const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, hut_wall, boards, rock_1, fire, chair_arm, binoculars, silver_board, rock_3, rock_2, rock_4, fg, night, backbridge, frontbridge, bush, signs, mallows];
+        const sort = [water_water_15, water_water_1, water_water_2, water_water_3, water_water_4, water_water_5, water_water_6, water_water_7, water_water_8, water_water_9, water_water_10, water_water_11, water_water_12, water_water_13, water_water_14, hut_wall, boards, rock_1, fire, chair_arm, binoculars, silver_board, rock_3, rock_2, rock_4, fg, night, backbridge, frontbridge, bush, signs, mallows, ghost0001];
 
         // hut (components)
         const hutButton = new Button(hut);
@@ -250,9 +261,12 @@ export default class Cove extends RoomScene {
         this.nightsky = nightsky;
         this.night = night;
         this.mainfall = mainfall;
+        this.left_camp = left_camp;
+        this.smalltent = smalltent;
         this.fall = fall;
         this.fall_pit = fall_pit;
         this.mallowzone = mallowzone;
+        this.ghost0001 = ghost0001;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -267,8 +281,8 @@ export default class Cove extends RoomScene {
         this.mainfall.play('campmainfall')
         this.fall.play('campfall')
         this.fall_pit.play('campfallpit')
-		
-		this.roomZones = {
+
+        this.roomZones = {
             'mallowzone': { 
                 key: this.mallowzone,
                 callback: () => this.interface.prompt.showItem(348)
@@ -280,10 +294,13 @@ export default class Cove extends RoomScene {
         var now = new Date();
         var timeInHours = now.getUTCHours();
         console.log(timeInHours)
-        if (timeInHours > 1 && timeInHours < 13 ) {
+        if (timeInHours > 1 && timeInHours < 20 ) {
             this.nightsky.visible = true
             this.sky.visible = false
             this.night.visible = true
+            this.ghost0001.visible = true
+            this.left_camp.visible = false
+            this.smalltent.visible = false
         }
     }
 

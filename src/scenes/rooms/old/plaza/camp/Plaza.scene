@@ -349,7 +349,7 @@
             "visible": false,
             "isFilled": true,
             "fillColor": "#000000",
-            "fillAlpha": 0.4,
+            "fillAlpha": 0.3,
             "width": 128,
             "height": 128
         },

@@ -32,7 +32,7 @@ export default class Dock extends RoomScene {
             'town': () => this.triggerRoom(100, 368, 640),
             'hydro': () => this.triggerGame('HydroHopper', 924)
         }
-		var now = new Date();
+        var now = new Date();
         var timeInHours = now.getUTCHours();
         if (timeInHours > 1 && timeInHours < 13 ) {
             this.music = 'crickets'
@@ -196,7 +196,7 @@ export default class Dock extends RoomScene {
         night.visible = false;
         night.isFilled = true;
         night.fillColor = 0;
-        night.fillAlpha = 0.4;
+        night.fillAlpha = 0.3;
 
         // lists
         const sort = [post_3, post_4, post_1, post_2, rings, bollard_2, bollard_1, dock, box, lilyrock, bushrock, leftbush];
@@ -239,16 +239,16 @@ export default class Dock extends RoomScene {
         super.create()
 
         this.up = false
-		
-		this.grillfire.play('grillfire')
+
+        this.grillfire.play('grillfire')
 
         this.time.addEvent({
             delay: 1500,
             callback: () => this.floatBoat(),
             loop: true
         })
-		
-		var now = new Date();
+
+        var now = new Date();
         var timeInHours = now.getUTCHours();
         console.log(timeInHours)
         if (timeInHours > 1 && timeInHours < 13 ) {

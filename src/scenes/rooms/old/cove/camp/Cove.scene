@@ -462,7 +462,7 @@
             "visible": false,
             "isFilled": true,
             "fillColor": "#000000",
-            "fillAlpha": 0.4,
+            "fillAlpha": 0.3,
             "width": 128,
             "height": 128
         },
@@ -527,6 +527,7 @@
             "type": "Image",
             "id": "e93187dc-4a79-4c6b-a8c6-273fa68bfa64",
             "label": "left_camp",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "camp-cove",
@@ -539,6 +540,7 @@
             "type": "Image",
             "id": "00bb494d-00f0-4f96-99be-17d46683a8b4",
             "label": "smalltent",
+            "scope": "CLASS",
             "components": [],
             "texture": {
                 "key": "camp-cove",
@@ -627,6 +629,22 @@
             "fillAlpha": 0,
             "width": 128,
             "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "dedaeeb1-0895-4a6d-bc86-28a690c43752",
+            "label": "ghost0001",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "camp-cove",
+                "frame": "ghost0001"
+            },
+            "x": 304.1891178884034,
+            "y": 1238.6300906045408,
+            "originX": 0.5342174858972581,
+            "originY": 3.201809182950651,
+            "visible": false
         }
     ],
     "plainObjects": [],
@@ -672,7 +690,8 @@
                 "c338cdb6-cb04-4ff7-b52d-f69e2f175907",
                 "808cf2a0-698e-4a56-b14c-37c156ae9ef3",
                 "ebe58142-ea1f-4003-8a0c-b817100b63fb",
-                "f959e331-dd0d-41cb-be5b-9c3c13cb0666"
+                "f959e331-dd0d-41cb-be5b-9c3c13cb0666",
+                "dedaeeb1-0895-4a6d-bc86-28a690c43752"
             ]
         }
     ]

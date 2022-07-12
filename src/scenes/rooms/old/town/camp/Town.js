@@ -176,7 +176,7 @@ export default class Town extends RoomScene {
         night.visible = false;
         night.isFilled = true;
         night.fillColor = 0;
-        night.fillAlpha = 0.4;
+        night.fillAlpha = 0.3;
 
         // campfireholdertown
         const campfireholdertown = this.add.image(677, 680, "camp-town", "campfireholdertown");

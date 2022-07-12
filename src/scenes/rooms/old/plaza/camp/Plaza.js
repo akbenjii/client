@@ -139,7 +139,7 @@ export default class Plaza extends RoomScene {
         night.visible = false;
         night.isFilled = true;
         night.fillColor = 0;
-        night.fillAlpha = 0.4;
+        night.fillAlpha = 0.3;
 
         // campfireholderplaza
         const campfireholderplaza = this.add.image(632, 646, "camp-plaza", "campfireholdertown");
