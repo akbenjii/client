@@ -110,8 +110,8 @@
             "label": "telescope",
             "components": [],
             "texture": {
-                "key": "beacon",
-                "frame": "telescope"
+                "key": "ffc-beacon",
+                "frame": "tele"
             },
             "x": 248,
             "y": 298

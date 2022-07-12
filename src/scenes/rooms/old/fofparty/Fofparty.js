@@ -28,7 +28,7 @@ export default class Fofparty extends RoomScene {
             'forest': () => this.triggerRoom(809, 700, 600),
             'jetpack': () => this.interface.prompt.showItem(3028)
         }
-        this.music = 'nimbus'
+        this.music = 'cumulo'
         /* END-USER-CTR-CODE */
     }
 

@@ -32,7 +32,7 @@ export default class Beacon extends RoomScene {
             'lighthouse': () => this.triggerRoom(410, 1320, 700),
             'jetpack': () => this.triggerGame("JetpackAdventure", 926),
         }
-		this.roomAnims = true
+        this.roomAnims = true
         this.music = 'nimbus'
 
         /* END-USER-CTR-CODE */
@@ -71,7 +71,7 @@ export default class Beacon extends RoomScene {
         this.add.image(331, 445, "beacon", "crate");
 
         // telescope
-        this.add.image(248, 298, "beacon", "telescope");
+        this.add.image(248, 298, "ffc-beacon", "tele");
 
         // proprodbeacon
         const proprodbeacon = this.add.sprite(716, 266, "fof-beacon", "proprodbeacon0001");
@@ -114,7 +114,7 @@ export default class Beacon extends RoomScene {
 
 
     /* START-USER-CODE */
-	
+
     create() {
         super.create()
         this.propbeacon.play('propbeacon')
@@ -126,7 +126,7 @@ export default class Beacon extends RoomScene {
         this.bigCloudTween()
         this.onBigCloudTweenComplete()
     }
-	
+
     cloudTween() {
         let tween = this.tweens.add({
             targets: this.sbeaconcloud,

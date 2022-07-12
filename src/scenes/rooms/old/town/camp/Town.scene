@@ -1,0 +1,571 @@
+{
+    "id": "4a986478-19c2-4816-9704-ab819c2b851d",
+    "sceneType": "SCENE",
+    "settings": {
+        "compilerInsertSpaces": true,
+        "javaScriptInitFieldsInConstructor": true,
+        "exportClass": true,
+        "superClassName": "RoomScene",
+        "preloadMethodName": "_preload",
+        "preloadPackFiles": [
+            "client/assets/media/rooms/old/town/town-pack.json"
+        ],
+        "createMethodName": "_create",
+        "sceneKey": "Town",
+        "borderWidth": 1520,
+        "borderHeight": 960
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "21bbb0a2-0327-46f9-8472-29a729848d75",
+            "label": "bg",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "bg"
+            },
+            "x": -10,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "c9458617-8cad-4e47-8872-5d40acab8b77",
+            "label": "cloud",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "cloud0001"
+            },
+            "x": 531,
+            "y": 172
+        },
+        {
+            "type": "Sprite",
+            "id": "2e20530f-6ff3-4669-97a8-82e967a0a536",
+            "label": "bigcloud",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "bigcloud0001"
+            },
+            "x": 623,
+            "y": 94
+        },
+        {
+            "type": "Image",
+            "id": "75bb9b49-6c3b-4be9-8093-848381decaf0",
+            "label": "background_banner",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "background_banner"
+            },
+            "x": 791,
+            "y": 143
+        },
+        {
+            "type": "Image",
+            "id": "aff00bfb-ab02-4ca9-9d9e-f314ec74b7e0",
+            "label": "build",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "build"
+            },
+            "x": 763,
+            "y": 294
+        },
+        {
+            "type": "Image",
+            "id": "79ce3240-4965-41fc-a51b-a2b6ec9c624d",
+            "label": "fg",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "fg"
+            },
+            "x": -63,
+            "y": 976,
+            "originX": 0,
+            "originY": 1
+        },
+        {
+            "type": "Sprite",
+            "id": "a00a31cf-261a-4b34-8489-9e57bd45766e",
+            "label": "leftproprod",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftproprod0001"
+            },
+            "x": 254.99999999999997,
+            "y": 980.9054996196071,
+            "scaleX": 0.35833351746872844,
+            "scaleY": 0.35833351746872844,
+            "originX": 0.49999999999999684,
+            "originY": 3.0180675298888864
+        },
+        {
+            "type": "Image",
+            "id": "e11a4055-3b82-4500-8bc8-d87c3efa4364",
+            "label": "leftpropbot",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftpropbot"
+            },
+            "x": 253.48075600304313,
+            "y": 990.7704477200308,
+            "scaleX": 0.35833351746872844,
+            "scaleY": 0.35833351746872844,
+            "originX": 0.4780983036029602,
+            "originY": 3.2523442467973567
+        },
+        {
+            "type": "Sprite",
+            "id": "29fd3d05-64b6-4898-a096-9ffb3780fec5",
+            "label": "leftprop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftprop0001"
+            },
+            "x": 249.96151733398438,
+            "y": 1000.0790511831398,
+            "scaleX": 0.35833351746872844,
+            "scaleY": 0.35833351746872844,
+            "originX": 0.4826836341294339,
+            "originY": 9.498969015615701
+        },
+        {
+            "type": "Sprite",
+            "id": "cc8d6379-faa8-495a-8e90-f7792addba4d",
+            "label": "leftproptop",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftproptop0001"
+            },
+            "x": 242.40377807617185,
+            "y": 1011.1559985924331,
+            "scaleX": 0.35833351746872844,
+            "scaleY": 0.35833351746872844,
+            "originX": -0.032609435109834245,
+            "originY": 23.10770402207377
+        },
+        {
+            "type": "Image",
+            "id": "ee943a05-82e6-40f3-b909-728c73d766d2",
+            "label": "left_sign",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "left_sign"
+            },
+            "x": 179,
+            "y": 450,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "51de414e-abf0-47b2-ba0b-07aa8057153f",
+            "label": "right_sign",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "right_sign"
+            },
+            "x": 1286,
+            "y": 465,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "b0692d84-8da0-4b15-bbb2-751704bee709",
+            "label": "coffee_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "coffee_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 550,
+            "MoveTo.y": 450,
+            "texture": {
+                "key": "town",
+                "frame": "coffee_door"
+            },
+            "x": 449,
+            "y": 305,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "5c2f7dd4-607f-4d1d-afcd-cb7b37bdbe0f",
+            "label": "gift_door",
+            "components": [
+                "Button",
+                "MoveTo"
+            ],
+            "Button.spriteName": "gift_door",
+            "Button.activeFrame": false,
+            "Button.pixelPerfect": true,
+            "MoveTo.x": 1010,
+            "MoveTo.y": 466,
+            "texture": {
+                "key": "town",
+                "frame": "gift_door"
+            },
+            "x": 995,
+            "y": 294,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "bfabdf1f-c4c7-4ece-8599-ca93c8326447",
+            "label": "canopy",
+            "components": [
+                "SimpleButton",
+                "MoveTo"
+            ],
+            "SimpleButton.hoverCallback": "() => this.onCanopyOver()",
+            "SimpleButton.hoverOutCallback": "() => this.onCanopyOut()",
+            "MoveTo.x": 684,
+            "MoveTo.y": 410,
+            "texture": {
+                "key": "town",
+                "frame": "canopy"
+            },
+            "x": 692,
+            "y": 464,
+            "originX": 0.49606299212598426,
+            "originY": 0.9403669724770642
+        },
+        {
+            "type": "Sprite",
+            "id": "45fa492b-a213-4d30-acbe-ebe11fa805c1",
+            "label": "canopy_lights",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "canopy_lights",
+            "Animation.end": 57,
+            "Animation.autoPlay": false,
+            "Animation.showOnStart": true,
+            "Animation.hideOnComplete": true,
+            "texture": {
+                "key": "town",
+                "frame": "canopy_lights0001"
+            },
+            "x": 648,
+            "y": 548,
+            "originX": 0,
+            "originY": 7.142857142857143,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "cae986f7-795f-4d18-9618-d35f387c2e18",
+            "label": "canopy_stars",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "canopy_stars"
+            },
+            "x": 647,
+            "y": 548,
+            "originX": 0,
+            "originY": 7.142857142857143
+        },
+        {
+            "type": "Sprite",
+            "id": "b0d00512-60c5-428b-b7ad-5146af3ba382",
+            "label": "disco_lights",
+            "scope": "CLASS",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "disco_lights",
+            "Animation.end": 57,
+            "Animation.autoPlay": false,
+            "Animation.showOnStart": true,
+            "Animation.hideOnComplete": true,
+            "texture": {
+                "key": "town",
+                "frame": "disco_lights0007"
+            },
+            "x": 766,
+            "y": 332,
+            "originX": 0,
+            "originY": 0,
+            "visible": false
+        },
+        {
+            "type": "Image",
+            "id": "c71b8a27-c71e-4eab-81e9-86a8b3bf87c1",
+            "label": "disco",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "disco"
+            },
+            "x": 648,
+            "y": 229,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Sprite",
+            "id": "c7026824-f8f6-4305-8fe6-dc81d73f5d02",
+            "label": "lights",
+            "components": [
+                "Animation"
+            ],
+            "Animation.key": "lights",
+            "Animation.end": 69,
+            "Animation.repeatDelay": 1,
+            "texture": {
+                "key": "town",
+                "frame": "lights0001"
+            },
+            "x": 518,
+            "y": -75,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "type": "Image",
+            "id": "d2f7523e-4ee3-4112-afea-1031b0bde58e",
+            "label": "box_1",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "box_1"
+            },
+            "x": 973,
+            "y": 432,
+            "originX": 0.49382716049382713,
+            "originY": 0.6268656716417911
+        },
+        {
+            "type": "Image",
+            "id": "0c94c016-2a42-4413-bfc0-abe028143024",
+            "label": "box_2",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "box_2"
+            },
+            "x": 954,
+            "y": 483,
+            "originX": 0.49504950495049505,
+            "originY": 0.6736842105263158
+        },
+        {
+            "type": "Image",
+            "id": "40a013ea-83e9-4eff-8634-46134d60d75a",
+            "label": "box_3",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "box_3"
+            },
+            "x": 1148,
+            "y": 581,
+            "originX": 0.4943820224719101,
+            "originY": 0.5569620253164557
+        },
+        {
+            "type": "Image",
+            "id": "97ca136f-d936-4bb2-8db1-381245bfaa5b",
+            "label": "chair_2",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "chair_2"
+            },
+            "x": 436,
+            "y": 462,
+            "originX": 0.49382716049382713,
+            "originY": 0.27358490566037735
+        },
+        {
+            "type": "Image",
+            "id": "52130162-4cfc-4f67-b4b2-fa16fd824ee2",
+            "label": "table_2",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "table_2"
+            },
+            "x": 485,
+            "y": 523,
+            "originY": 0.7864077669902912
+        },
+        {
+            "type": "Image",
+            "id": "da800ad3-3d6f-4c6b-be77-696bbf7e30b5",
+            "label": "chair_1",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "chair_1"
+            },
+            "x": 402,
+            "y": 511,
+            "originX": 0.49411764705882355,
+            "originY": 0.2857142857142857
+        },
+        {
+            "type": "Image",
+            "id": "dafb207c-e4d9-4941-83f8-9351f393e0a0",
+            "label": "table_1",
+            "components": [],
+            "texture": {
+                "key": "town",
+                "frame": "table_1"
+            },
+            "x": 455,
+            "y": 575,
+            "originX": 0.49572649572649574,
+            "originY": 0.7830188679245284
+        },
+        {
+            "type": "Image",
+            "id": "c83ec35f-3bb8-4c0b-abf5-001f3d45b420",
+            "label": "banners",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "banners"
+            },
+            "x": 803,
+            "y": 215
+        },
+        {
+            "type": "Image",
+            "id": "63087926-a1be-4767-9570-4f5aea98c5b0",
+            "label": "front_barrier",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "front_barrier"
+            },
+            "x": 774,
+            "y": 1074.6549837382897,
+            "originY": 1.8051505044475284
+        },
+        {
+            "type": "Sprite",
+            "id": "9aaf6665-343d-41d2-879c-5e698432adad",
+            "label": "leftproptop_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftproptop0001"
+            },
+            "x": 1423,
+            "y": 608,
+            "scaleX": 0.22,
+            "scaleY": 0.22,
+            "originX": -0.032609435109834245,
+            "originY": 23.10770402207377
+        },
+        {
+            "type": "Sprite",
+            "id": "79012170-b098-4f10-817e-c1dbbbd664fe",
+            "label": "leftprop_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftprop0001"
+            },
+            "x": 1431,
+            "y": 596,
+            "scaleX": 0.22,
+            "scaleY": 0.22,
+            "originX": 0.4826836341294339,
+            "originY": 9.498969015615701
+        },
+        {
+            "type": "Image",
+            "id": "4d9356bc-f147-499d-be22-f092c72271f8",
+            "label": "leftpropbot_1",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftpropbot"
+            },
+            "x": 1434,
+            "y": 587,
+            "scaleX": 0.22,
+            "scaleY": 0.22,
+            "originX": 0.4780983036029602,
+            "originY": 3.2523442467973567
+        },
+        {
+            "type": "Sprite",
+            "id": "855bed25-60b9-4d63-9054-6abc5cb8ba7d",
+            "label": "leftproprod_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "fof-town",
+                "frame": "leftproprod0001"
+            },
+            "x": 1436,
+            "y": 577,
+            "scaleX": 0.22,
+            "scaleY": 0.22,
+            "originX": 0.49999999999999684,
+            "originY": 3.0180675298888864
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "b1ee46a5-a8cc-4134-84ca-72009a3f91e3",
+            "label": "sort",
+            "objectIds": [
+                "79ce3240-4965-41fc-a51b-a2b6ec9c624d",
+                "0c94c016-2a42-4413-bfc0-abe028143024",
+                "d2f7523e-4ee3-4112-afea-1031b0bde58e",
+                "40a013ea-83e9-4eff-8634-46134d60d75a",
+                "97ca136f-d936-4bb2-8db1-381245bfaa5b",
+                "da800ad3-3d6f-4c6b-be77-696bbf7e30b5",
+                "dafb207c-e4d9-4941-83f8-9351f393e0a0",
+                "52130162-4cfc-4f67-b4b2-fa16fd824ee2",
+                "bfabdf1f-c4c7-4ece-8599-ca93c8326447",
+                "cae986f7-795f-4d18-9618-d35f387c2e18",
+                "45fa492b-a213-4d30-acbe-ebe11fa805c1",
+                "cc8d6379-faa8-495a-8e90-f7792addba4d",
+                "29fd3d05-64b6-4898-a096-9ffb3780fec5",
+                "e11a4055-3b82-4500-8bc8-d87c3efa4364",
+                "a00a31cf-261a-4b34-8489-9e57bd45766e",
+                "63087926-a1be-4767-9570-4f5aea98c5b0"
+            ]
+        }
+    ]
+}
