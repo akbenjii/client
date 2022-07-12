@@ -339,6 +339,20 @@
             },
             "x": 216,
             "y": 527
+        },
+        {
+            "type": "Image",
+            "id": "44531a99-50a2-41e3-a69b-9ef93108c70b",
+            "label": "wires",
+            "components": [],
+            "texture": {
+                "key": "fof-party",
+                "frame": "wires"
+            },
+            "x": 780.8452519157264,
+            "y": 631.23972655586,
+            "originX": 0.46650221378716444,
+            "originY": 0.5769796511118178
         }
     ],
     "plainObjects": [],
@@ -362,7 +376,8 @@
                 "452eb7ca-8cae-49d6-80df-fdc95ec56c7d",
                 "c09db6ac-0ed8-4974-a480-47d76223dace",
                 "e1801f88-eeba-4a9f-8e30-9e9d17db48a1",
-                "39f4dc58-15f7-4b4a-8ddf-359b4408ae15"
+                "39f4dc58-15f7-4b4a-8ddf-359b4408ae15",
+                "44531a99-50a2-41e3-a69b-9ef93108c70b"
             ]
         }
     ]

@@ -78,7 +78,7 @@
                 "frame": "cannon_layer1"
             },
             "x": 1215,
-            "y": 242
+            "y": 236
         },
         {
             "type": "Sprite",
@@ -91,7 +91,7 @@
                 "frame": "cannon_layer20001"
             },
             "x": 1208,
-            "y": 188
+            "y": 182
         },
         {
             "type": "Sprite",
@@ -103,8 +103,9 @@
                 "key": "pet-new",
                 "frame": "cannonlayer3"
             },
-            "x": 1232,
-            "y": 307
+            "x": 1231,
+            "y": 302,
+            "scaleX": 1.02
         },
         {
             "type": "Sprite",
@@ -117,7 +118,7 @@
                 "frame": "cannonlayer40001"
             },
             "x": 1259,
-            "y": 255
+            "y": 249
         },
         {
             "type": "Sprite",
@@ -130,7 +131,7 @@
                 "frame": "cannon_layer5"
             },
             "x": 1230,
-            "y": 217
+            "y": 211
         },
         {
             "type": "Sprite",
@@ -202,7 +203,7 @@
                 "frame": "mainbuthigher"
             },
             "x": 790,
-            "y": 495
+            "y": 496
         },
         {
             "type": "Sprite",
@@ -860,6 +861,7 @@
                 "Button"
             ],
             "Button.spriteName": "carealtar",
+            "Button.activeFrame": false,
             "texture": {
                 "key": "pet-new",
                 "frame": "carealtar"

@@ -128,8 +128,12 @@ export default class Fofparty extends RoomScene {
         // hotsauce
         this.add.image(216, 527, "fof-party", "hotsauce");
 
+        // wires
+        const wires = this.add.image(780.8452519157264, 631.23972655586, "fof-party", "wires");
+        wires.setOrigin(0.46650221378716444, 0.5769796511118178);
+
         // lists
-        const sort = [leftsign, gas, table, barrels, leftfire, frontfireholder, right, fire, backfireholder, balloon];
+        const sort = [leftsign, gas, table, barrels, leftfire, frontfireholder, right, fire, backfireholder, balloon, wires];
 
         this.bigcloud = bigcloud;
         this.cloud = cloud;
