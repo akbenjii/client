@@ -30,42 +30,30 @@
             "originY": 0
         },
         {
-            "type": "Sprite",
-            "id": "c9458617-8cad-4e47-8872-5d40acab8b77",
-            "label": "cloud",
+            "type": "Image",
+            "id": "50b0cb82-8c8f-4404-9a4e-09d3abfbeb2a",
+            "label": "nightbg",
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "cloud0001"
+                "key": "camp-town",
+                "frame": "nightbg"
             },
-            "x": 531,
-            "y": 172
-        },
-        {
-            "type": "Sprite",
-            "id": "2e20530f-6ff3-4669-97a8-82e967a0a536",
-            "label": "bigcloud",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "fof-town",
-                "frame": "bigcloud0001"
-            },
-            "x": 623,
-            "y": 94
+            "x": 774,
+            "y": 494,
+            "visible": false
         },
         {
             "type": "Image",
-            "id": "75bb9b49-6c3b-4be9-8093-848381decaf0",
-            "label": "background_banner",
+            "id": "acc04a25-b08d-435c-9566-62827b0ba272",
+            "label": "ground",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "background_banner"
+                "key": "camp-town",
+                "frame": "ground"
             },
-            "x": 791,
-            "y": 143
+            "x": 758,
+            "y": 661
         },
         {
             "type": "Image",
@@ -77,7 +65,7 @@
                 "frame": "build"
             },
             "x": 763,
-            "y": 294
+            "y": 293
         },
         {
             "type": "Image",
@@ -94,71 +82,43 @@
             "originY": 1
         },
         {
-            "type": "Sprite",
-            "id": "a00a31cf-261a-4b34-8489-9e57bd45766e",
-            "label": "leftproprod",
-            "scope": "CLASS",
+            "type": "Image",
+            "id": "ff126db3-8880-49ea-a646-aafac0f7f8a3",
+            "label": "lily_1",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "leftproprod0001"
+                "key": "camp-town",
+                "frame": "lily"
             },
-            "x": 254.99999999999997,
-            "y": 980.9054996196071,
-            "scaleX": 0.35833351746872844,
-            "scaleY": 0.35833351746872844,
-            "originX": 0.49999999999999684,
-            "originY": 3.0180675298888864
+            "x": 363,
+            "y": 698,
+            "flipX": true
         },
         {
             "type": "Image",
-            "id": "e11a4055-3b82-4500-8bc8-d87c3efa4364",
-            "label": "leftpropbot",
+            "id": "6561e1d1-40f5-4ef5-b32a-5a7ba541bfd5",
+            "label": "fgbush",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "leftpropbot"
+                "key": "camp-town",
+                "frame": "fgbush"
             },
-            "x": 253.48075600304313,
-            "y": 990.7704477200308,
-            "scaleX": 0.35833351746872844,
-            "scaleY": 0.35833351746872844,
-            "originX": 0.4780983036029602,
-            "originY": 3.2523442467973567
+            "x": 404,
+            "y": 789
         },
         {
-            "type": "Sprite",
-            "id": "29fd3d05-64b6-4898-a096-9ffb3780fec5",
-            "label": "leftprop",
-            "scope": "CLASS",
+            "type": "Image",
+            "id": "5153c210-f53b-4377-b509-c1fa64531f87",
+            "label": "camppenguin",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "leftprop0001"
+                "key": "camp-town",
+                "frame": "camppenguin"
             },
-            "x": 249.96151733398438,
-            "y": 1000.0790511831398,
-            "scaleX": 0.35833351746872844,
-            "scaleY": 0.35833351746872844,
-            "originX": 0.4826836341294339,
-            "originY": 9.498969015615701
-        },
-        {
-            "type": "Sprite",
-            "id": "cc8d6379-faa8-495a-8e90-f7792addba4d",
-            "label": "leftproptop",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "fof-town",
-                "frame": "leftproptop0001"
-            },
-            "x": 242.40377807617185,
-            "y": 1011.1559985924331,
-            "scaleX": 0.35833351746872844,
-            "scaleY": 0.35833351746872844,
-            "originX": -0.032609435109834245,
-            "originY": 23.10770402207377
+            "x": 198.62672890935013,
+            "y": 1001.8248616288461,
+            "originX": 0.4839058810842175,
+            "originY": 1.2798517368305742
         },
         {
             "type": "Image",
@@ -446,95 +406,100 @@
         },
         {
             "type": "Image",
-            "id": "c83ec35f-3bb8-4c0b-abf5-001f3d45b420",
-            "label": "banners",
+            "id": "d2657e4b-936a-4bba-b8ba-f5fc7c801a8f",
+            "label": "bushpost",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "banners"
+                "key": "camp-town",
+                "frame": "bushpost"
             },
-            "x": 803,
-            "y": 215
+            "x": 942,
+            "y": 569
         },
         {
             "type": "Image",
-            "id": "63087926-a1be-4767-9570-4f5aea98c5b0",
-            "label": "front_barrier",
+            "id": "febf01aa-8679-4eee-8101-11983dee12f5",
+            "label": "post",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "front_barrier"
+                "key": "camp-town",
+                "frame": "post"
             },
-            "x": 774,
-            "y": 1074.6549837382897,
-            "originY": 1.8051505044475284
-        },
-        {
-            "type": "Sprite",
-            "id": "9aaf6665-343d-41d2-879c-5e698432adad",
-            "label": "leftproptop_1",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "fof-town",
-                "frame": "leftproptop0001"
-            },
-            "x": 1423,
-            "y": 608,
-            "scaleX": 0.22,
-            "scaleY": 0.22,
-            "originX": -0.032609435109834245,
-            "originY": 23.10770402207377
-        },
-        {
-            "type": "Sprite",
-            "id": "79012170-b098-4f10-817e-c1dbbbd664fe",
-            "label": "leftprop_1",
-            "scope": "CLASS",
-            "components": [],
-            "texture": {
-                "key": "fof-town",
-                "frame": "leftprop0001"
-            },
-            "x": 1431,
-            "y": 596,
-            "scaleX": 0.22,
-            "scaleY": 0.22,
-            "originX": 0.4826836341294339,
-            "originY": 9.498969015615701
+            "x": 885,
+            "y": 476
         },
         {
             "type": "Image",
-            "id": "4d9356bc-f147-499d-be22-f092c72271f8",
-            "label": "leftpropbot_1",
+            "id": "9f844b3e-9ace-4eef-8358-086f9022a80b",
+            "label": "lily",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "leftpropbot"
+                "key": "camp-town",
+                "frame": "lily"
             },
-            "x": 1434,
-            "y": 587,
-            "scaleX": 0.22,
-            "scaleY": 0.22,
-            "originX": 0.4780983036029602,
-            "originY": 3.2523442467973567
+            "x": 1011,
+            "y": 793
         },
         {
-            "type": "Sprite",
-            "id": "855bed25-60b9-4d63-9054-6abc5cb8ba7d",
-            "label": "leftproprod_1",
+            "type": "Image",
+            "id": "70c248f8-df7b-4e19-824a-ae1c47fb7d74",
+            "label": "rightbush",
+            "components": [],
+            "texture": {
+                "key": "camp-town",
+                "frame": "rightbush"
+            },
+            "x": 1197,
+            "y": 732
+        },
+        {
+            "type": "Rectangle",
+            "id": "d104d3ad-b814-47b0-be2e-4248f18a24e4",
+            "label": "night",
+            "scope": "CLASS",
+            "components": [],
+            "x": 739,
+            "y": 1132,
+            "scaleX": 12.397097039253481,
+            "scaleY": 7.74841237866371,
+            "originX": 0.4910783059634098,
+            "originY": 1.1518593287200432,
+            "visible": false,
+            "isFilled": true,
+            "fillColor": "#000000",
+            "fillAlpha": 0.4,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Image",
+            "id": "3c508160-623d-4630-8fed-505cb51d5f30",
+            "label": "campfireholdertown",
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "fof-town",
-                "frame": "leftproprod0001"
+                "key": "camp-town",
+                "frame": "campfireholdertown"
             },
-            "x": 1436,
-            "y": 577,
-            "scaleX": 0.22,
-            "scaleY": 0.22,
-            "originX": 0.49999999999999684,
-            "originY": 3.0180675298888864
+            "x": 677,
+            "y": 680,
+            "visible": false
+        },
+        {
+            "type": "Sprite",
+            "id": "7b187733-4d2c-447e-872d-03272da481af",
+            "label": "campfiretown",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "camp-town",
+                "frame": "campfiretown0001"
+            },
+            "x": 688.0998786584661,
+            "y": 1222.8493438083085,
+            "originX": 0.5707595243185151,
+            "originY": 4.7597774816089045,
+            "visible": false
         }
     ],
     "plainObjects": [],
@@ -560,11 +525,13 @@
                 "bfabdf1f-c4c7-4ece-8599-ca93c8326447",
                 "cae986f7-795f-4d18-9618-d35f387c2e18",
                 "45fa492b-a213-4d30-acbe-ebe11fa805c1",
-                "cc8d6379-faa8-495a-8e90-f7792addba4d",
-                "29fd3d05-64b6-4898-a096-9ffb3780fec5",
-                "e11a4055-3b82-4500-8bc8-d87c3efa4364",
-                "a00a31cf-261a-4b34-8489-9e57bd45766e",
-                "63087926-a1be-4767-9570-4f5aea98c5b0"
+                "febf01aa-8679-4eee-8101-11983dee12f5",
+                "5153c210-f53b-4377-b509-c1fa64531f87",
+                "70c248f8-df7b-4e19-824a-ae1c47fb7d74",
+                "6561e1d1-40f5-4ef5-b32a-5a7ba541bfd5",
+                "ff126db3-8880-49ea-a646-aafac0f7f8a3",
+                "d104d3ad-b814-47b0-be2e-4248f18a24e4",
+                "7b187733-4d2c-447e-872d-03272da481af"
             ]
         }
     ]

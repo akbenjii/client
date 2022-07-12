@@ -38,7 +38,7 @@ export default class Cove extends RoomScene {
         if (timeInHours > 1 && timeInHours < 13 ) {
             this.music = 'crickets'
         } else {
-            this.music='cove'
+            this.music='campy'
         }
 
         /* END-USER-CTR-CODE */

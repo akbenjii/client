@@ -10,29 +10,21 @@ export default class Town extends RoomScene {
     constructor() {
         super("Town");
 
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.cloud;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.bigcloud;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.leftproprod;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.leftprop;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.leftproptop;
+        /** @type {Phaser.GameObjects.Image} */
+        this.nightbg;
         /** @type {Phaser.GameObjects.Sprite} */
         this.canopy_lights;
         /** @type {Phaser.GameObjects.Sprite} */
         this.disco_lights;
         /** @type {Phaser.GameObjects.Image} */
         this.disco;
+        /** @type {Phaser.GameObjects.Rectangle} */
+        this.night;
+        /** @type {Phaser.GameObjects.Image} */
+        this.campfireholdertown;
         /** @type {Phaser.GameObjects.Sprite} */
-        this.leftproptop_1;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.leftprop_1;
-        /** @type {Phaser.GameObjects.Sprite} */
-        this.leftproprod_1;
-        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite>} */
+        this.campfiretown;
+        /** @type {Array<Phaser.GameObjects.Image|Phaser.GameObjects.Sprite|Phaser.GameObjects.Rectangle>} */
         this.sort;
 
 
@@ -45,7 +37,13 @@ export default class Town extends RoomScene {
             'dance': () => this.triggerRoom(120, 300, 560),
             'gift': () => this.triggerRoom(130, 1036, 520),
         }
-        this.music = '277'
+        var now = new Date();
+        var timeInHours = now.getUTCHours();
+        if (timeInHours > 1 && timeInHours < 13 ) {
+            this.music = 'crickets'
+        } else {
+            this.music='campy'
+        }
 
         /* END-USER-CTR-CODE */
     }
@@ -63,45 +61,30 @@ export default class Town extends RoomScene {
         const bg = this.add.image(-10, 0, "town", "bg");
         bg.setOrigin(0, 0);
 
-        // cloud
-        const cloud = this.add.sprite(531, 172, "fof-town", "cloud0001");
+        // nightbg
+        const nightbg = this.add.image(774, 494, "camp-town", "nightbg");
+        nightbg.visible = false;
 
-        // bigcloud
-        const bigcloud = this.add.sprite(623, 94, "fof-town", "bigcloud0001");
-
-        // background_banner
-        this.add.image(791, 143, "fof-town", "background_banner");
+        // ground
+        this.add.image(758, 661, "camp-town", "ground");
 
         // build
-        this.add.image(763, 294, "fof-town", "build");
+        this.add.image(763, 293, "fof-town", "build");
 
         // fg
         const fg = this.add.image(-63, 976, "town", "fg");
         fg.setOrigin(0, 1);
 
-        // leftproprod
-        const leftproprod = this.add.sprite(254.99999999999997, 980.9054996196071, "fof-town", "leftproprod0001");
-        leftproprod.scaleX = 0.35833351746872844;
-        leftproprod.scaleY = 0.35833351746872844;
-        leftproprod.setOrigin(0.49999999999999684, 3.0180675298888864);
+        // lily_1
+        const lily_1 = this.add.image(363, 698, "camp-town", "lily");
+        lily_1.flipX = true;
 
-        // leftpropbot
-        const leftpropbot = this.add.image(253.48075600304313, 990.7704477200308, "fof-town", "leftpropbot");
-        leftpropbot.scaleX = 0.35833351746872844;
-        leftpropbot.scaleY = 0.35833351746872844;
-        leftpropbot.setOrigin(0.4780983036029602, 3.2523442467973567);
+        // fgbush
+        const fgbush = this.add.image(404, 789, "camp-town", "fgbush");
 
-        // leftprop
-        const leftprop = this.add.sprite(249.96151733398438, 1000.0790511831398, "fof-town", "leftprop0001");
-        leftprop.scaleX = 0.35833351746872844;
-        leftprop.scaleY = 0.35833351746872844;
-        leftprop.setOrigin(0.4826836341294339, 9.498969015615701);
-
-        // leftproptop
-        const leftproptop = this.add.sprite(242.40377807617185, 1011.1559985924331, "fof-town", "leftproptop0001");
-        leftproptop.scaleX = 0.35833351746872844;
-        leftproptop.scaleY = 0.35833351746872844;
-        leftproptop.setOrigin(-0.032609435109834245, 23.10770402207377);
+        // camppenguin
+        const camppenguin = this.add.image(198.62672890935013, 1001.8248616288461, "camp-town", "camppenguin");
+        camppenguin.setOrigin(0.4839058810842175, 1.2798517368305742);
 
         // left_sign
         const left_sign = this.add.image(179, 450, "town", "left_sign");
@@ -173,39 +156,39 @@ export default class Town extends RoomScene {
         const table_1 = this.add.image(455, 575, "town", "table_1");
         table_1.setOrigin(0.49572649572649574, 0.7830188679245284);
 
-        // banners
-        this.add.image(803, 215, "fof-town", "banners");
+        // bushpost
+        this.add.image(942, 569, "camp-town", "bushpost");
 
-        // front_barrier
-        const front_barrier = this.add.image(774, 1074.6549837382897, "fof-town", "front_barrier");
-        front_barrier.setOrigin(0.5, 1.8051505044475284);
+        // post
+        const post = this.add.image(885, 476, "camp-town", "post");
 
-        // leftproptop_1
-        const leftproptop_1 = this.add.sprite(1423, 608, "fof-town", "leftproptop0001");
-        leftproptop_1.scaleX = 0.22;
-        leftproptop_1.scaleY = 0.22;
-        leftproptop_1.setOrigin(-0.032609435109834245, 23.10770402207377);
+        // lily
+        this.add.image(1011, 793, "camp-town", "lily");
 
-        // leftprop_1
-        const leftprop_1 = this.add.sprite(1431, 596, "fof-town", "leftprop0001");
-        leftprop_1.scaleX = 0.22;
-        leftprop_1.scaleY = 0.22;
-        leftprop_1.setOrigin(0.4826836341294339, 9.498969015615701);
+        // rightbush
+        const rightbush = this.add.image(1197, 732, "camp-town", "rightbush");
 
-        // leftpropbot_1
-        const leftpropbot_1 = this.add.image(1434, 587, "fof-town", "leftpropbot");
-        leftpropbot_1.scaleX = 0.22;
-        leftpropbot_1.scaleY = 0.22;
-        leftpropbot_1.setOrigin(0.4780983036029602, 3.2523442467973567);
+        // night
+        const night = this.add.rectangle(739, 1132, 128, 128);
+        night.scaleX = 12.397097039253481;
+        night.scaleY = 7.74841237866371;
+        night.setOrigin(0.4910783059634098, 1.1518593287200432);
+        night.visible = false;
+        night.isFilled = true;
+        night.fillColor = 0;
+        night.fillAlpha = 0.4;
 
-        // leftproprod_1
-        const leftproprod_1 = this.add.sprite(1436, 577, "fof-town", "leftproprod0001");
-        leftproprod_1.scaleX = 0.22;
-        leftproprod_1.scaleY = 0.22;
-        leftproprod_1.setOrigin(0.49999999999999684, 3.0180675298888864);
+        // campfireholdertown
+        const campfireholdertown = this.add.image(677, 680, "camp-town", "campfireholdertown");
+        campfireholdertown.visible = false;
+
+        // campfiretown
+        const campfiretown = this.add.sprite(688.0998786584661, 1222.8493438083085, "camp-town", "campfiretown0001");
+        campfiretown.setOrigin(0.5707595243185151, 4.7597774816089045);
+        campfiretown.visible = false;
 
         // lists
-        const sort = [fg, box_2, box_1, box_3, chair_2, chair_1, table_1, table_2, canopy, canopy_stars, canopy_lights, leftproptop, leftprop, leftpropbot, leftproprod, front_barrier];
+        const sort = [fg, box_2, box_1, box_3, chair_2, chair_1, table_1, table_2, canopy, canopy_stars, canopy_lights, post, camppenguin, rightbush, fgbush, lily_1, night, campfiretown];
 
         // coffee_door (components)
         const coffee_doorButton = new Button(coffee_door);
@@ -255,17 +238,13 @@ export default class Town extends RoomScene {
         lightsAnimation.end = 69;
         lightsAnimation.repeatDelay = 1;
 
-        this.cloud = cloud;
-        this.bigcloud = bigcloud;
-        this.leftproprod = leftproprod;
-        this.leftprop = leftprop;
-        this.leftproptop = leftproptop;
+        this.nightbg = nightbg;
         this.canopy_lights = canopy_lights;
         this.disco_lights = disco_lights;
         this.disco = disco;
-        this.leftproptop_1 = leftproptop_1;
-        this.leftprop_1 = leftprop_1;
-        this.leftproprod_1 = leftproprod_1;
+        this.night = night;
+        this.campfireholdertown = campfireholdertown;
+        this.campfiretown = campfiretown;
         this.sort = sort;
 
         this.events.emit("scene-awake");
@@ -276,58 +255,16 @@ export default class Town extends RoomScene {
 
     create() {
         super.create()
-        this.leftprop.play('leftprop')
-        this.leftproprod.play('leftproprod')
-        this.leftproptop.play('leftproptop')
-        this.leftprop_1.play('leftprop')
-        this.leftproprod_1.play('leftproprod')
-        this.leftproptop_1.play('leftproptop')
-        this.cloud.play('cloud')
-        this.cloudTween()
-        this.onCloudTweenComplete()
-        this.bigcloud.play('bigcloud')
-        this.bigCloudTween()
-        this.onBigCloudTweenComplete()
-    }
-
-    cloudTween() {
-        let tween = this.tweens.add({
-            targets: this.cloud,
-            y: 172,
-            delay: 0,
-            duration: 5400,
-            onComplete: () => this.onCloudTweenComplete()
-        });
-    }
-
-    onCloudTweenComplete() {
-        let tween = this.tweens.add({
-            targets: this.cloud,
-            y: 70,
-            delay: 0,
-            duration: 5400,
-            onComplete: () => this.cloudTween()
-        });
-    }
-
-    bigCloudTween() {
-        let tween = this.tweens.add({
-            targets: this.bigcloud,
-            y: 94,
-            delay: 0,
-            duration: 4800,
-            onComplete: () => this.onBigCloudTweenComplete()
-        });
-    }
-
-    onBigCloudTweenComplete() {
-        let tween = this.tweens.add({
-            targets: this.bigcloud,
-            y: 60,
-            delay: 0,
-            duration: 4800,
-            onComplete: () => this.bigCloudTween()
-        });
+        var now = new Date();
+        var timeInHours = now.getUTCHours();
+        console.log(timeInHours)
+        if (timeInHours > 1 && timeInHours < 16 ) {
+            this.nightbg.visible = true
+            this.night.visible = true
+            this.campfiretown.visible = true
+            this.campfireholdertown.visible = true
+            this.campfiretown.play('campfiretown')
+        }
     }
 
     onCanopyOver() {
