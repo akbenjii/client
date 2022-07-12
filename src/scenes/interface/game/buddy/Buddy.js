@@ -215,13 +215,20 @@ export default class Buddy extends BaseContainer {
 
         return penguins.map(penguin => {
             // Map penguin to buddy item object
-            return { id: penguin.id, username: penguin.username }
+            return { id: penguin.id, username: this.filterUsername(penguin)}
         }).sort((a, b) => {
             // Then sort by username
             return a.username.toLowerCase().localeCompare(b.username.toLowerCase())
         })
     }
 
+	filterUsername(penguin) {
+		if (penguin.username_approved == 1) {
+            return penguin.username
+        } else {
+            return "P" + penguin.id
+        }
+	}
 
     /**
      * Gets the client ignores array, sorted alphabetically.

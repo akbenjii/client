@@ -121,4 +121,12 @@ export default class Buddy extends Plugin {
         }
     }
 
+    filterUsername(penguin) {
+		if (penguin.username_approved == 1) {
+            return penguin.username
+        } else {
+            return "P" + penguin.id
+        }
+	}
+
 }
